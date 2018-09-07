@@ -5,51 +5,51 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-AzsComputeQuota
+# Get-AzsDiskMigrationJob
 
 ## SYNOPSIS
-Returns quotas specifying the quota limits for compute objects.
+Returns the list of managed disk migration jobs.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-AzsComputeQuota [-Location <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-AzsComputeQuota [-Name] <String> [-Location <String>] [<CommonParameters>]
+Get-AzsDiskMigrationJob [-Status <String>] [-Location <String>] [<CommonParameters>]
 ```
 
 ### ResourceId
 ```
-Get-AzsComputeQuota -ResourceId <String> [<CommonParameters>]
+Get-AzsDiskMigrationJob -ResourceId <String> [<CommonParameters>]
+```
+
+### Get
+```
+Get-AzsDiskMigrationJob [-Location <String>] -Name <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a list of existing quotas.
+Returns a list of disk migration jobs.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Get-AzsComputeQuota -Location 'local'
-```
-
-Get all compute quotas at the specified location.
-
-### EXAMPLE 2
-```
-Get-AzsComputeQuota 'Default Quota'
+### Example 1
+```powershell
+PS C:\> Get-AzsDiskMigrationJob -location local
 ```
 
-Get a specific compute quota.
+Returns a list of managed disk migration jobs at the location local. 
+
+### Example 2
+```
+Get-AzsDiskMigrationJob -location local -Name "mymigrationName"
+```
+
+Get a specific managed disk migration job.
 
 ## PARAMETERS
 
 ### -Location
-{{Fill Location Description}}
+Location of the resource.
 
 ```yaml
 Type: String
@@ -64,15 +64,15 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the quota.
+The migration job guid name.
 
 ```yaml
 Type: String
 Parameter Sets: Get
-Aliases:
+Aliases: MigrationId
 
 Required: True
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -84,12 +84,27 @@ The resource id.
 ```yaml
 Type: String
 Parameter Sets: ResourceId
-Aliases: id
+Aliases: Id
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Status
+The parameters of disk migration job status.
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -100,7 +115,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### ComputeQuotaObject
+### Microsoft.AzureStack.Management.Compute.Admin.Models.DiskMigrationJob
+
 ## NOTES
 
 ## RELATED LINKS
