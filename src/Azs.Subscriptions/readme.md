@@ -45,19 +45,35 @@ In this directory, run AutoRest:
 ### AutoRest Configuration
 > see https://aka.ms/autorest
 
+# Azure PowerShell AutoRest Configuration
+
+> Values
 ``` yaml
-require:
-  - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/readme.azsautogen.md
+azure: true
+powershell: true
+branch: stackadmin
+repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
+metadata:
+  authors: Microsoft Corporation
+  owners: Microsoft Corporation
+  description: 'Microsoft Azure PowerShell: $(service-name) cmdlets'
+  copyright: Microsoft Corporation. All rights reserved.
+  tags: Azure ResourceManager ARM PSModule $(service-name)
+  companyName: Microsoft Corporation
+  requireLicenseAcceptance: true
+  licenseUri: https://aka.ms/azps-license
+  projectUri: https://github.com/Azure/azure-powershell
 ```
 
+> Names
 ``` yaml
+prefix: Azs
+namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
+
 subject-prefix: ''
 module-version: 0.0.1
 sanitize-names: false
-```
 
-``` yaml
 ### File Renames 
 module-name: Azs.Subscriptions 
 csproj: Azs.Subscriptions.csproj 
@@ -65,11 +81,54 @@ psd1: Azs.Subscriptions.psd1
 psm1: Azs.Subscriptions.psm1
 ```
 
-### Parameter default values
+> Folders
 ``` yaml
+clear-output-folder: true
+output-folder: .
+
+require:
+  - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/readme.md
+
+input-file:
+    - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/Microsoft.Subscriptions/preview/2015-11-01/Subscriptions.json
+    - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/Microsoft.Subscriptions/preview/2015-11-01/Offer.json
+
 directive:
+  ## rename/alias parameters
   - where:
+      verb: Get
+      subject: DelegatedProviderOffer
       parameter-name: OfferName
     set:
-      parameter-name: Name
+      alias: Name
+  ## Set default parameter value
+  - where:
+      verb: New
+      subject: Subscription
+      parameter-name: State
+    set:
+      default:
+        script: Write-Output "Enabled"
+  - where:
+      verb: New
+      subject: Subscription
+      parameter-name: SubscriptionId
+    set:
+      default:
+        script: "$([Guid]::NewGuid().ToString())"
+  ## variant removal (parameter *Definition*) from New cmdlet -- parameter set Create
+  - where:
+      verb: New
+      variant: Create
+    remove: true
+  ## variant removal (parameter InputObject) from New cmdlet -- parameter sets CreateViaIdentity and CreateViaIdentityExpanded
+  - where:
+      verb: New
+      variant: ^CreateViaIdentity(.*)
+    remove: true
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: New|Set
+      subject: Subscription
+    hide: true
 ```
