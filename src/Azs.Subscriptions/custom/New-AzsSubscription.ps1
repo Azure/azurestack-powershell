@@ -108,7 +108,7 @@ param(
         {
             $PSBoundParameters['SubscriptionId1'] = $PSBoundParameters['SubscriptionId']
         }
-        Azs.Subscription.internal\New-AzsSubscription @PSBoundParameters
+        Azs.Subscriptions.internal\New-AzsSubscription @PSBoundParameters
     }
 
 }
