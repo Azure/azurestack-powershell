@@ -88,13 +88,13 @@ directive:
       subject: Offer
     set:
       subject: AdminManagedOffer
-      alias: ManagedOffer
+      alias: Get-AzsManagedOffer
   - where:
       verb: Get
       subject: Quota
     set:
       subject: SubscriptionQuota
-      alias: SubscriptionsQuota
+      alias: Get-AzsSubscriptionsQuota
   - where:
       subject: Subscription
     set:
@@ -122,7 +122,7 @@ directive:
       subject: SubscriptionMoveSubscription
     set:
       subject: MoveUserSubscription
-      alias: MoveSubscription
+      alias: Test-AzsMoveSubscription
   - where:
       verb: Test
       subject: SubscriptionNameAvailability
@@ -176,6 +176,12 @@ directive:
       parameter-name: Name
       alias: Location
   - where:
+      verb: New
+      subject: OfferDelegation
+      parameter-name: PropertiesSubscriptionId
+    set:
+      parameter-name: TargetSubscriptionId
+  - where:
       subject: (.*)OfferDelegation$
       parameter-name: OfferDelegationName
     set:
@@ -220,13 +226,6 @@ directive:
     set:
       parameter-name: DestinationDelegatedProviderOffer
   - where:
-      verb: New
-      subject: Offer
-      parameter-name: State
-    set:
-      default:
-        script: Write-Output "Private"
-  - where:
       parameter-name: AddonPlans
     set:
       parameter-name: AddonPlanDefinition
@@ -241,6 +240,42 @@ directive:
       parameter-name: Subscription
     set:
       parameter-name: UserSubscriptionId
+## default values
+  - where:
+      verb: New
+      subject: Offer
+      parameter-name: State
+    set:
+      default:
+        script: Write-Output "Private"
+  - where:
+      verb: New
+      subject: UserSubscription
+      parameter-name: TargetSubscriptionId
+    set:
+      default:
+        script: "$([Guid]::NewGuid().ToString())"
+  - where:
+      verb: New
+      subject: UserSubscription
+      parameter-name: DelegatedProviderSubscriptionId
+    set:
+      default:
+        script: '(Get-AzContext).Subscription.Id'
+  - where:
+      verb: New
+      subject: UserSubscription
+      parameter-name: State
+    set:
+      default:
+        script: Write-Output "Enabled"
+  - where:
+      verb: New
+      subject: UserSubscription
+      parameter-name: RoutingResourceManagerType
+    set:
+      default:
+        script: Write-Output "Default"
 ## hide autorest generated cmdlet to use the custom one
   - where:
       verb: New
@@ -264,6 +299,10 @@ directive:
     hide: true
   - where:
       verb: Set
+      subject: UserSubscription
+    hide: true
+  - where:
+      verb: New
       subject: UserSubscription
     hide: true
 ```
