@@ -6,27 +6,10 @@ while(-not $mockingPath) {
 }
 . ($mockingPath | Select-Object -First 1).FullName
 
-function ValidateBaseResources {
-    param(
-        [Parameter(Mandatory = $true)]
-        $Resource
-    )
-
-    $Resource          | Should Not Be $null
-    $Resource.Id       | Should Not Be $null
-    $Resource.Name       | Should Not Be $null
-}
-function ValidateBaseResourceTenant {
-    param(
-        [Parameter(Mandatory = $true)]
-        $Tenant
-    )
-
-    $Tenant                  	| Should Not Be $null
-    $Tenant.SubscriptionId   | Should Not Be $null
-    $Tenant.TenantResourceUri   | Should Not Be $null
-}
 Describe 'Get-AzsVirtualNetwork' {
+        
+    . $PSScriptRoot\Common.ps1
+
     BeforeEach {
 
         function ValidateConfigurationState {
@@ -49,6 +32,21 @@ Describe 'Get-AzsVirtualNetwork' {
         $global:TestName = "TestGetAllVirtualNetworks"
 
         $networks = Get-AzsVirtualNetwork
+        foreach ($network in $networks) {
+            ValidateBaseResources $network
+            ValidateBaseResourceTenant $network
+            ValidateConfigurationState $network
+        }
+    }
+
+    # Uncomment this test once ODATA assembly has been added
+    It "TestGetAllVirtualNetworksOData" -Skip:$("TestGetAllVirtualNetworksOData" -in $global:SkippedTests) {
+        $global:TestName = "TestGetAllVirtualNetworksOData"
+
+        [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.Rest.Azure.OData.ODataQuery")
+        $oDataQuery = New-Object -TypeName [Microsoft.Rest.Azure.OData.ODataQuery] -ArgumentList VirtualNetwork
+        $oDataQuery.Top = 10
+        $networks = Get-AzsVirtualNetwork -Filter $oDataQuery
         foreach ($network in $networks) {
             ValidateBaseResources $network
             ValidateBaseResourceTenant $network
