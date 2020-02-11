@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1: Default Delete
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Remove-AzsNetworkQuota -Name NetworkQuota1
 
-{{ Add output here }}
+
 ```
 
-{{ Add description here }}
+Remove a network quota by name.
 
-### Example 2: {{ Add title here }}
+### Example 2: Create new Quota with parameters
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsNetworkQuota -Name NetworkQuota1 | Remove-AzsNetworkQuota
 
-{{ Add output here }}
+
 ```
 
-{{ Add description here }}
-
+Remove a network quota using a pipe.
