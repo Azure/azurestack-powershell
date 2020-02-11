@@ -79,9 +79,27 @@ directive:
     set:
       parameter-name: Name
 
+    # Default to Format-List for the LoadBalancer commandlets as there are many important fields
+  - where:
+      model-name: LoadBalancer
+    set:
+      suppress-format: true
+
     # Default to Format-List for the Quota commandlets as there are many important fields
   - where:
       model-name: Quota
+    set:
+      suppress-format: true
+
+    # Default to Format-List for the PublicIpAddress commandlets as there are many important fields
+  - where:
+      model-name: PublicIpAddress
+    set:
+      suppress-format: true
+
+    # Default to Format-List for the VirtualNetwork commandlets as there are many important fields
+  - where:
+      model-name: VirtualNetwork
     set:
       suppress-format: true
 
