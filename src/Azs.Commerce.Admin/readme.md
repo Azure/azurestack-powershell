@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.Commerce.Admin
-This directory contains the PowerShell module for the CommerceAdmin service.
+This directory contains the PowerShell module for the Commerce service.
 
 ---
 ## Status
@@ -48,14 +48,32 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/commerce/readme.azsautogen.md
-  - $(repo)/specification/azsadmin/resource-manager/commerce/readme.md
+
+input-file:
+  - $(repo)/specification/azsadmin/resource-manager/commerce/Microsoft.Commerce.Admin/preview/2015-06-01-preview/Commerce.json
 
 subject-prefix: ''
 module-version: 0.0.1
-
+```
 ### File Renames 
+``` yaml
 module-name: Azs.Commerce.Admin 
 csproj: Azs.Commerce.Admin.csproj 
 psd1: Azs.Commerce.Admin.psd1 
 psm1: Azs.Commerce.Admin.psm1
+```
+
+### Parameter default values
+``` yaml
+directive:
+  # Remove UpdateEncryption cmdlets
+  - where:
+      subject: CommerceEncryption
+    remove: true
+  # Rename cmdlet from Get-AzsSubscriberUsageAggregate to Get-AzsSubscriberUsage
+  - where:
+      verb: Get
+      subject: SubscriberUsageAggregate
+    set:
+      subject: SubscriberUsage
+```
