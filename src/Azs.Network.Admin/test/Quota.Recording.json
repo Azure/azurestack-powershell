@@ -1,0 +1,704 @@
+{
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVnetsPerSubscription\": 50\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "0fd6adfd-1984-4f95-9cfa-68ddd4b879c4" ],
+        "CommandName": [ "New-AzsNetworkQuota" ],
+        "FullCommandName": [ "New-AzsNetworkQuota_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "342" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "498f9f3a-a8b1-43f0-8956-c210226e713d" ],
+        "x-ms-request-id": [ "6f8db722-bbb4-4eb3-b492-ff3f0f96da53" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/6f8db722-bbb4-4eb3-b492-ff3f0f96da53?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1166" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T223950Z:498f9f3a-a8b1-43f0-8956-c210226e713d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:39:50 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvyoZQLKP2CWxfE6HOI9McRKbnoLm0BpkVezQytp6GOQUEb1aX9bsFzeXzuBTJQLHspPUKRU+yIeBMHoZZrMAmyH9utCeTlh93YBkbhK2ngYIhTx6RtXjNaRDh8boDsetjKkJW2EDVII3rxC4FLn6p" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "731" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForRemoval\",\r\n  \"etag\": \"W/\\\"18e4d81e-b103-47a6-b226-973c40d0342f\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "95b6284c-44c0-4647-8a32-38ddbaab8a81" ],
+        "CommandName": [ "Get-AzsNetworkQuota" ],
+        "FullCommandName": [ "Get-AzsNetworkQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "da26da3b-105a-40b6-8b58-702d8cc30aa3" ],
+        "x-ms-request-id": [ "46ef37a5-69a8-49e3-a9b9-b62fdf89544e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14850" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T223950Z:da26da3b-105a-40b6-8b58-702d8cc30aa3" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:39:50 GMT" ],
+        "ETag": [ "W/\"18e4d81e-b103-47a6-b226-973c40d0342f\"" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvyovi4NmZjyB4bInL2gj6tTnfaepKbpTFqohGsCAuuy1ZIxDSUdgGRYJnnQrrkA9TgXLKA4xNC11WdNvyooqm7oxB4m9rARZiuAaGE+YDeBgDoeCwsvfQZNZ5iXIY0aqVyCsWK/gn/mN7QSfIw1Lv" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "731" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForRemoval\",\r\n  \"etag\": \"W/\\\"18e4d81e-b103-47a6-b226-973c40d0342f\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15+3": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForRemoval?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "f754fff4-f29d-40c9-bcb8-3dd94959a6f7" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "10" ],
+        "x-ms-correlation-request-id": [ "26066ad1-e337-4193-91cd-0eae439e7abf" ],
+        "x-ms-request-id": [ "65965986-dcca-4700-9c31-dbaa9b76a036" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14999" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224019Z:26066ad1-e337-4193-91cd-0eae439e7abf" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:19 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvA4jR73k8lZxT018Y6HRrkS2ZDT3xUPCGE7Mp3iuSZ1CzbtDEr9V6VQgbS6LkEMxQqWtFajU9zZM4C7znkSTBTcyLBeJqrvgo1qv0PXa40kLcghC4bTtnzAfRZ6nO9D/biBSBnoT2GMAgz1U+426b" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3", "4" ],
+        "x-ms-client-request-id": [ "f754fff4-f29d-40c9-bcb8-3dd94959a6f7", "f754fff4-f29d-40c9-bcb8-3dd94959a6f7" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a3fcf1fe-730d-4d21-856a-e40e9aeab055" ],
+        "x-ms-request-id": [ "e9cd2cb9-13cf-40f4-ac1b-5bcbeb5cbf0e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14861" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224029Z:a3fcf1fe-730d-4d21-856a-e40e9aeab055" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:29 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3wNlTzrKvx7bKnN965TWOSN+iLz+ZiTtQYAjSmbOG3ycBw60NaamhLjsy3e3dkm/MX0IFwryw+hphMfLK5+B5UWY1QDEVlPShW1zf8OcQhjIKHcnLn3aepi0speRvfOZ5u5fvkHH+0NHUd/irVYZ" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "29" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3", "4", "5" ],
+        "x-ms-client-request-id": [ "f754fff4-f29d-40c9-bcb8-3dd94959a6f7", "f754fff4-f29d-40c9-bcb8-3dd94959a6f7", "f754fff4-f29d-40c9-bcb8-3dd94959a6f7" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 204,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "26066ad1-e337-4193-91cd-0eae439e7abf" ],
+        "x-ms-request-id": [ "65965986-dcca-4700-9c31-dbaa9b76a036" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14860" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224029Z:e15c99fc-e9bb-4898-bcfb-ba4bdba1ea9b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:29 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/65965986-dcca-4700-9c31-dbaa9b76a036?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv6lhZRwQp+cMAZq4iVhOKrYV8xPSAD/w7Vmq6yOMytbH45l4wjifGobFTFfeiovU+ZJtj8QGNEnmRhiVp+gu4F7LpVovbzckCu9l2vG/eFDMnLoQT16DNM8GUFT1DZ6pYiwZtrX4PuvWkpv7wrAuY" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuotaWithParams+$PUT+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxLoadBalancersPerSubscription\": 32,\r\n    \"maxNicsPerSubscription\": 4,\r\n    \"maxPublicIpsPerSubscription\": 32,\r\n    \"maxSecurityGroupsPerSubscription\": 2,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 32,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 16,\r\n    \"maxVnetsPerSubscription\": 32\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "6" ],
+        "x-ms-client-request-id": [ "268dcd52-772d-4776-b8af-759ab495a6f2" ],
+        "CommandName": [ "New-AzsNetworkQuota" ],
+        "FullCommandName": [ "New-AzsNetworkQuota_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "341" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a6b842ae-9f9a-49fb-9dfc-9164b4c2d2da" ],
+        "x-ms-request-id": [ "4577e2f1-4570-41bf-969e-1e7317ff9ad3" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/4577e2f1-4570-41bf-969e-1e7317ff9ad3?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1165" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224029Z:a6b842ae-9f9a-49fb-9dfc-9164b4c2d2da" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:29 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJOWEG7QgJ60rHoMjgHaEPWdC2Sz5nmFmE+zFUIeW04LdLK8rT4iSmYWeGPK/Cm6G/Pp7g3ggdvaSjoeqA24IAa4yEOaR6ZsS22XwX4Ap/6RjENJBwv9yLKqVUjpI59lwuV7esstDDTF+i2YOUo8/" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "750" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaWithParamsForRemoval\",\r\n  \"etag\": \"W/\\\"17085f12-9d0a-42da-8ea5-d53283a37eb1\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 32,\r\n    \"maxVnetsPerSubscription\": 32,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 16,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 32,\r\n    \"maxLoadBalancersPerSubscription\": 32,\r\n    \"maxNicsPerSubscription\": 4,\r\n    \"maxSecurityGroupsPerSubscription\": 2,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuotaWithParams+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "7" ],
+        "x-ms-client-request-id": [ "21e06bab-7633-4584-9cda-7e95d62035e9" ],
+        "CommandName": [ "Get-AzsNetworkQuota" ],
+        "FullCommandName": [ "Get-AzsNetworkQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "87d6efe2-6bfe-4248-8a4f-1d8885fc6a6c" ],
+        "x-ms-request-id": [ "34d23baa-3cf0-4a90-8426-1dcb1e29a841" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14859" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224030Z:87d6efe2-6bfe-4248-8a4f-1d8885fc6a6c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:29 GMT" ],
+        "ETag": [ "W/\"17085f12-9d0a-42da-8ea5-d53283a37eb1\"" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvPUHEEQ0Jjq8OU9cJi1lUA4E4ovu9zOkB6Ma5b+MEqNllzU2yjAHF3AynSkSZz+w0rxMMl2U9kAFzh96mcIwFt+UfF7O+l/eSK9AMDoSsGI6NFE7O6H0IuQ9Ij9WDjYD1TNVQEmZeV5k46r+eBjJT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "750" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaWithParamsForRemoval\",\r\n  \"etag\": \"W/\\\"17085f12-9d0a-42da-8ea5-d53283a37eb1\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 32,\r\n    \"maxVnetsPerSubscription\": 32,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 16,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 32,\r\n    \"maxLoadBalancersPerSubscription\": 32,\r\n    \"maxNicsPerSubscription\": 4,\r\n    \"maxSecurityGroupsPerSubscription\": 2,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuotaWithParams+$DELETE+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15+3": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaWithParamsForRemoval?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "8" ],
+        "x-ms-client-request-id": [ "bdbdc389-1f0f-44c2-b448-429be36987df" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "10" ],
+        "x-ms-correlation-request-id": [ "a29a3b80-d774-4513-a03d-ee0e940454d9" ],
+        "x-ms-request-id": [ "d0411495-593b-449a-99f6-20200c367ae4" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14998" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224040Z:a29a3b80-d774-4513-a03d-ee0e940454d9" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:40 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvX0egxcIMbiIdy5okeiUNp2CjVp29lY8dkWX1BO2Nph87mME78JuwENP7eHeR8FtFDAf3QrpxJ5oUIVbsserDOuCvwrxbKSE0kVGusd1X96JQnFIY8dECZzFoPnw3s+NCpThNGmGFI7S02XTuR/Ix" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuotaWithParams+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "8", "9" ],
+        "x-ms-client-request-id": [ "bdbdc389-1f0f-44c2-b448-429be36987df", "bdbdc389-1f0f-44c2-b448-429be36987df" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "44f060d5-398a-4a29-afd6-16f6b3671bc5" ],
+        "x-ms-request-id": [ "3d610e80-ece0-4311-8f30-04d3dd2ae412" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14858" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224051Z:44f060d5-398a-4a29-afd6-16f6b3671bc5" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:51 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBpqQebDf4wNp9jGsNs5Q9tVS+fP9dzBelTrxoT1gQnuUmavxqWCsBjTtt3GUh37pcw+Kl0/ahQU4r2nhrHR2JsfTCmeNN8fdNAytqkDKeEfKmRpP3DQlmWnDYVjg7sQvP195MqtlhybgSFkm5TOJ" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "29" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndDeleteQuotaWithParams+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "8", "9", "10" ],
+        "x-ms-client-request-id": [ "bdbdc389-1f0f-44c2-b448-429be36987df", "bdbdc389-1f0f-44c2-b448-429be36987df", "bdbdc389-1f0f-44c2-b448-429be36987df" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 204,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a29a3b80-d774-4513-a03d-ee0e940454d9" ],
+        "x-ms-request-id": [ "d0411495-593b-449a-99f6-20200c367ae4" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14857" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224051Z:ddaeb786-d41b-4426-9f5a-a173abb5702d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:51 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/d0411495-593b-449a-99f6-20200c367ae4?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvfENBnCwCcoiu2YWDG9kZMvo/Al6MpQkBgglI3MGOK5PAmNXcTMU5bPhHTQy6LdKkWz2GK3lvphLF/F0uai2yKHDlkMM3/fhHPgdLnrSC3HTZWm8lQoOifv6vJp6wF6KINEHHTefOTQnUkrjbTvhB" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVnetsPerSubscription\": 50\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "11" ],
+        "x-ms-client-request-id": [ "d8405089-9354-45a8-9ec6-b2c7e2c52e26" ],
+        "CommandName": [ "New-AzsNetworkQuota" ],
+        "FullCommandName": [ "New-AzsNetworkQuota_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "342" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "35cfe204-7019-4a3e-90f3-892f299f0423" ],
+        "x-ms-request-id": [ "06d77f4b-98dc-45d3-a8cc-956e960853fb" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/06d77f4b-98dc-45d3-a8cc-956e960853fb?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1164" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224051Z:35cfe204-7019-4a3e-90f3-892f299f0423" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:51 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvRoP+XpeMNPZL4E7wrgUX+05NF9yd4OngQZ7bSm++pMymYjTW5Z6sa504hKAfhZnyu6bmbpU7pHTYI/Eubhbf3ZLG9q1VKt/AGt1LFuUUmXXy6X9HpwPFi9CWOOkUxsOt9MpxnOhEFPP55xN+3TLu" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "729" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForUpdate\",\r\n  \"etag\": \"W/\\\"500d38a1-de16-4743-a13a-32edb91c70e8\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "12" ],
+        "x-ms-client-request-id": [ "8693bacf-c8a6-451b-9050-ee6c4738b631" ],
+        "CommandName": [ "Get-AzsNetworkQuota" ],
+        "FullCommandName": [ "Get-AzsNetworkQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1de79ed0-7e4a-483b-90e5-e14d15e22a8f" ],
+        "x-ms-request-id": [ "5ab912af-ecbc-4e38-9fe0-5c3dac93a1e3" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14856" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224051Z:1de79ed0-7e4a-483b-90e5-e14d15e22a8f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:40:51 GMT" ],
+        "ETag": [ "W/\"500d38a1-de16-4743-a13a-32edb91c70e8\"" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3uQSynKzFX4pt20fF9ngpziMsmXCXxPhYSKSfis3iFG0SEf/6UlR6EwxLSMCjaE3K6p7+zaDyCc8KG2hUS7trcil2g6FOXQQxLA11+vY2WRM++Mx+UjJw81RtHr8gMdOgJNQJaBTZh/wb7slPNmE" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "729" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForUpdate\",\r\n  \"etag\": \"W/\\\"500d38a1-de16-4743-a13a-32edb91c70e8\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxNicsPerSubscription\": 8\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "13" ],
+        "x-ms-client-request-id": [ "85f94f80-f2d7-43c9-b1a7-4207a3229a68" ],
+        "CommandName": [ "Set-AzsNetworkQuota" ],
+        "FullCommandName": [ "Set-AzsNetworkQuota_UpdateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "61" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d03a1760-b1b4-406b-a2e6-9e93b3385eb7" ],
+        "x-ms-request-id": [ "1682b274-1a15-4485-b068-c9eb44bfd131" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/1682b274-1a15-4485-b068-c9eb44bfd131?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1163" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224102Z:d03a1760-b1b4-406b-a2e6-9e93b3385eb7" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:41:02 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtMxTv0h44eCS18g3YnnifCfXNVl0ZY0HEXkmOG27bazdaWcZJ0dcFemWbKOKnujpbtotNANDc7xTmxQJFKF36mq0agrrAyp2+aqwVwgbPBNVufFxPMhVjWmawZwgLcgM2ffKAFQ7/VZ1eqSwSCmy" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "723" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForUpdate\",\r\n  \"etag\": \"W/\\\"9d3f30e2-9ccc-4a7f-a70d-ee0af66cab34\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 0,\r\n    \"maxVnetsPerSubscription\": 0,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 0,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 0,\r\n    \"maxLoadBalancersPerSubscription\": 0,\r\n    \"maxNicsPerSubscription\": 8,\r\n    \"maxSecurityGroupsPerSubscription\": 0,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "14" ],
+        "x-ms-client-request-id": [ "8a9ac2f6-ae98-4c99-a6f8-99e2c5f9fb34" ],
+        "CommandName": [ "Get-AzsNetworkQuota" ],
+        "FullCommandName": [ "Get-AzsNetworkQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "298adfd4-de54-4f26-bb83-d1c746ca153f" ],
+        "x-ms-request-id": [ "ae5e48c8-8627-4bac-8a99-73ae0100f797" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14855" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224102Z:298adfd4-de54-4f26-bb83-d1c746ca153f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:41:02 GMT" ],
+        "ETag": [ "W/\"9d3f30e2-9ccc-4a7f-a70d-ee0af66cab34\"" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+uwnoLzzzDsmWJ/o7mU6iKJeqUcLTTZZ1UPPlX6/Jg0wTXtuX9jJCSe24/SXmK1KgFcJRFiJTC0AAXVO9s1YTvjls1kDwkFib+KFoyj2Bk7H/SqKXlnvA5lsFfkqWz1WJ+3IKgIvbOqs/ULwIjm4" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "723" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"northwest/TestQuotaForUpdate\",\r\n  \"etag\": \"W/\\\"9d3f30e2-9ccc-4a7f-a70d-ee0af66cab34\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 0,\r\n    \"maxVnetsPerSubscription\": 0,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 0,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 0,\r\n    \"maxLoadBalancersPerSubscription\": 0,\r\n    \"maxNicsPerSubscription\": 8,\r\n    \"maxSecurityGroupsPerSubscription\": 0,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15+5": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/TestQuotaForUpdate?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "15" ],
+        "x-ms-client-request-id": [ "5762a247-8b68-47e5-a77f-74b64afc7cda" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "10" ],
+        "x-ms-correlation-request-id": [ "2c873244-36fd-4e07-8c9a-e8b725ba4949" ],
+        "x-ms-request-id": [ "6e48b4bf-3dfa-480b-9384-e5e94c042093" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14997" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224113Z:2c873244-36fd-4e07-8c9a-e8b725ba4949" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:41:12 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvKvuyaRZSN8zYLsJiBnvjIpb+4WPCJfSjpOxgM9hq6na4JeNCQhw5gj+jTmdcNgv2GF/wk2IX00r5vPOQqboUxG0KkODjT82pSFRlSa8EjQ1MFi6CVemEf/5nLq8CFxfB3oPbNpf2OzNVgt9j7oJ4" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15+6": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "15", "16" ],
+        "x-ms-client-request-id": [ "5762a247-8b68-47e5-a77f-74b64afc7cda", "5762a247-8b68-47e5-a77f-74b64afc7cda" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "95019746-bab3-4ea3-8a15-ccbe5811ec07" ],
+        "x-ms-request-id": [ "af8c9b32-e9e2-4b29-8e87-c19922135d4a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14854" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224123Z:95019746-bab3-4ea3-8a15-ccbe5811ec07" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:41:23 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSkHrwuw2dKFSueswDVB12F+fGFthFllwUQpp34Retd52FzMSDY4Dl1uP7JSQHOlv7jYSRxtWH+qfEl7zutEEkwD5dvU8nqU5OgJfZxtKKVOusLWN7HG/GuWkieatsuHmjx+VjXNlklMI4I6T4s+y" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "29" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"status\": \"Succeeded\"\r\n}"
+    }
+  },
+  "QuotasTests+[NoContext]+TestPutAndUpdateQuota+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15+7": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "15", "16", "17" ],
+        "x-ms-client-request-id": [ "5762a247-8b68-47e5-a77f-74b64afc7cda", "5762a247-8b68-47e5-a77f-74b64afc7cda", "5762a247-8b68-47e5-a77f-74b64afc7cda" ],
+        "CommandName": [ "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota", "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete", "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 204,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "2c873244-36fd-4e07-8c9a-e8b725ba4949" ],
+        "x-ms-request-id": [ "6e48b4bf-3dfa-480b-9384-e5e94c042093" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operations/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14853" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200210T224123Z:3befb0bc-d739-4b7f-99cf-54661d9c336b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 10 Feb 2020 22:41:23 GMT" ],
+        "Location": [ "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/westus/operationResults/6e48b4bf-3dfa-480b-9384-e5e94c042093?api-version=2015-06-15" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvcMTPvi8zE2PJC+RRgYFEV/HBxpsQzl0WhUts91kEnQjsCgNPts4p29E564IWWxpgh2GnQ90TKWNtD/WEsd5+NKE1k6vUO/KLnphVuboB21skcV9wbwExb7LQQ+UYXXjDmL6SMIzF4oKGBlHVimmz" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  }
+}
