@@ -88,5 +88,11 @@ directive:
           - Version
           - Summary
 
+  - where:
+      verb: New
+      subject: AzsGalleryItem
+    set:
+      alias: Add-AzsGalleryItem
+
 subject-prefix: ''
 module-version: 0.0.1
