@@ -14,20 +14,20 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Returns the requested edge gateway.
+
 .Description
-Returns the requested edge gateway.
+
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsedgegateway
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azsinfrastructureroleinstance
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IEdgeGateway
+System.Boolean
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+INPUTOBJECT <IFabricAdminIdentity>: 
   [Drive <String>]: Name of the storage drive.
   [EdgeGateway <String>]: Name of the edge gateway.
   [EdgeGatewayPool <String>]: Name of the edge gateway pool.
@@ -51,107 +51,94 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsedgegateway
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azsinfrastructureroleinstance
 #>
-function Get-AzsEdgeGateway {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IEdgeGateway])]
-[CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
+function Disable-AzsInfrastructureRoleInstance {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='Shutdown', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
-    [System.String]
-    # Location of the resource.
-    ${Location},
-
-    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Parameter(ParameterSetName='Shutdown', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Name of the edge gateway.
     ${Name},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Shutdown')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
+    [System.String]
+    ${Location},
+
+    [Parameter(ParameterSetName='Shutdown')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
-    # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Shutdown')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String[]]
-    # Subscription credentials that uniquely identify Microsoft Azure subscription.
-    # The subscription ID forms part of the URI for every service call.
+    [System.String]
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='ShutdownViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
-    # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
-
-    [Parameter(ParameterSetName='List')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Query')]
-    [System.String]
-    # OData filter parameter.
-    ${Filter},
 
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
     [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Azure')]
     [System.Management.Automation.PSObject]
-    # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
-    # Wait for .NET debugger to attach
     ${Break},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.SendAsyncStep[]]
-    # SendAsync Pipeline Steps to be appended to the front of the pipeline
     ${HttpPipelineAppend},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.SendAsyncStep[]]
-    # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
-    # Returns true when the command succeeds
+    ${NoWait},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
     ${PassThru},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Uri]
-    # The URI for the proxy server to use
     ${Proxy},
 
     [Parameter(DontShow)]
     [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.PSCredential]
-    # Credentials for a proxy server to use for the remote call
     ${ProxyCredential},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
-    # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
 )
 
@@ -165,6 +152,6 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Get-AzsEdgeGateway @PSBoundParameters
+    Azs.Fabric.Admin.internal\Disable-AzsInfrastructureRoleInstance @PSBoundParameters
 }
 }

@@ -14,15 +14,15 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Returns the requested edge gateway.
+Returns the requested software load balancer multiplexer instance.
 .Description
-Returns the requested edge gateway.
+Returns the requested software load balancer multiplexer instance.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsedgegateway
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsslbmuxinstance
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IEdgeGateway
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.ISlbMuxInstance
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -51,16 +51,16 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsedgegateway
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsslbmuxinstance
 #>
-function Get-AzsEdgeGateway {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IEdgeGateway])]
+function Get-AzsSlbMuxInstance {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.ISlbMuxInstance])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
     [Parameter(ParameterSetName='Get')]
     [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
@@ -68,7 +68,7 @@ param(
     [Parameter(ParameterSetName='Get', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Name of the edge gateway.
+    # Name of a SLB MUX instance.
     ${Name},
 
     [Parameter(ParameterSetName='Get')]
@@ -165,6 +165,6 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Get-AzsEdgeGateway @PSBoundParameters
+    Azs.Fabric.Admin.internal\Get-AzsSlbMuxInstance @PSBoundParameters
 }
 }
