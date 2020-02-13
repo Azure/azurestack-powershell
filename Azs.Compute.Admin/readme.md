@@ -105,6 +105,55 @@ directive:
       model-name: PlatformImage
     set:
       suppress-format: true
+  
+    # Rename property OsDiskOstype in PlatformImage model to OsType
+  - where:
+      property-name: OsDiskOstype
+      model-name: PlatformImage
+    set:
+      property-name: OsType
+
+    # Rename property OsDiskUri in PlatformImage model to OsUri
+  - where:
+      property-name: OsDiskUri
+      model-name: PlatformImage
+    set:
+      property-name: OsUri
+
+    # Rename property DetailBillingPartNumber in PlatformImage model to BillingPartNumber
+  - where:
+      property-name: DetailBillingPartNumber
+      model-name: PlatformImage
+    set:
+      property-name: BillingPartNumber
+
+    # Rename property DataDisk in PlatformImage model to DataDisks
+  - where:
+      property-name: DataDisk
+      model-name: PlatformImage
+    set:
+      property-name: DataDisks
+
+    # Rename property Sku in Disk model to DiskSku
+  - where:
+      property-name: Sku
+      model-name: Disk
+    set:
+      property-name: DiskSku
+
+    # Rename property MaxAllocationPremiumManagedDisksAndSnapshot in Disk model to PremiumManagedDiskAndSnapshotSize
+  - where:
+      property-name: MaxAllocationPremiumManagedDisksAndSnapshot
+      model-name: Quota
+    set:
+      property-name: PremiumManagedDiskAndSnapshotSize
+
+    # Rename property MaxAllocationStandardManagedDisksAndSnapshot in Disk model to StandardManagedDiskAndSnapshotSize
+  - where:
+      property-name: MaxAllocationStandardManagedDisksAndSnapshot
+      model-name: Quota
+    set:
+      property-name: StandardManagedDiskAndSnapshotSize
 
     # Default to Format-List for the Disk commandlets as there are many important fields
   - where:
@@ -150,20 +199,114 @@ directive:
     set:
       parameter-name: VmOsType
 
+	# Rename SourceBlobUri parameter to SourceBlob
   - where:
       parameter-name: SourceBlobUri
     set:
       parameter-name: SourceBlob
 
+	# Rename VmScaleSetEnabled parameter to VMScaleSetEnabled
   - where:
       parameter-name: VmScaleSetEnabled
     set:
       parameter-name: VMScaleSetEnabled
-
-  - where:
-      parameter-set: SupportMultipleExtension
-    set:
-      parameter-set: SupportMultipleExtensions
   
+	# Rename SupportMultipleExtension parameter to SupportMultipleExtensions
+  - where:
+      parameter-name: SupportMultipleExtension
+    set:
+      parameter-name: SupportMultipleExtensions
+
+	# Rename Id parameter in Get-AzsDisk to Name
+  - where:
+      parameter-name: Id
+      verb: Get
+      subject: Disk
+    set:
+      parameter-name: Name
+
+	# Set default value for CoresLimit parameter in New-AzsComputeQuota to 100 
+  - where:
+      parameter-name: CoresLimit
+      verb: New
+    set:
+      default:
+        script: '100'
+
+	# Set alias for CoresLimit parameter to CoresLimit
+  - where:
+      parameter-name: CoresLimit
+    set:
+      alias: CoresLimit
+
+	# Rename CoresLimit parameter to CoresCount
+  - where:
+      parameter-name: CoresLimit
+    set:
+      parameter-name: CoresCount
+
+	# Set default value for AvailabilitySetCount parameter in New-AzsComputeQuota to 10
+  - where:
+      parameter-name: AvailabilitySetCount
+      verb: New
+    set:
+      default:
+        script: '10'
+
+	# Set default value for VirtualMachineCount parameter in New-AzsComputeQuota to 100
+  - where:
+      parameter-name: VirtualMachineCount
+      verb: New
+    set:
+      default:
+        script: '100'
+
+	# Set default value for MaxAllocationStandardManagedDisksAndSnapshot parameter in New-AzsComputeQuota to 2048
+  - where:
+      parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
+      verb: New
+    set:
+      default:
+        script: '2048'
+
+	# Rename MaxAllocationStandardManagedDisksAndSnapshot parameter to StandardManagedDiskAndSnapshotSize
+  - where:
+      parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
+    set:
+      parameter-name: StandardManagedDiskAndSnapshotSize
+
+	# Set default value for MaxAllocationPremiumManagedDisksAndSnapshot parameter in New-AzsComputeQuota to 2048
+  - where:
+      parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
+      verb: New
+    set:
+      default:
+        script: '2048'
+
+	# Rename MaxAllocationPremiumManagedDisksAndSnapshot parameter to PremiumManagedDiskAndSnapshotSize
+  - where:
+      parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
+    set:
+      parameter-name: PremiumManagedDiskAndSnapshotSize
+
+	# Rename Disk parameter in New-AzsDiskMigrationJob to Disks
+  - where:
+      parameter-name: Disk
+      verb: New
+    set:
+      parameter-name: Disks
+
+	# Set alias for MigrationId parameter to MigrationId
+  - where:
+      parameter-name: MigrationId
+    set:
+      alias: MigrationId
+	
+	# Rename MigrationId parameter to Name
+  - where:
+      parameter-name: MigrationId
+    set:
+      parameter-name: Name
+
 subject-prefix: ''
 module-version: 0.0.1
