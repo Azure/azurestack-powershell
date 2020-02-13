@@ -97,10 +97,54 @@ directive:
     set:
       parameter-name: Name
       default:
-        script: (Get-AzLocation)[0].Name
+        script: (Get-AzLocation)[0].Location
   - where:
       subject: (.*)Run$
       parameter-name: RunName
     set:
       parameter-name: Name
+  - where:
+      model-name: Update
+    set:
+      format-table:
+        properties:
+          - Location
+          - DisplayName
+          - Name
+          - State
+          - Publisher
+        width:
+          Location: 15
+          DisplayName: 30
+          Name: 40
+          State: 20
+          Publisher: 15
+  - where:
+      model-name: UpdateLocation
+    set:
+      format-table:
+        properties:
+          - Name
+          - CurrentVersion
+          - CurrentOemVersion
+          - State
+        width:
+          Name: 20
+          CurrentVersion: 20
+          CurrentOemVersion: 20
+          State: 20
+  - where:
+      model-name: UpdateRun
+    set:
+      format-table:
+        properties:
+          - Name
+          - State
+          - ProgressStartTimeUtc
+          - ProgressEndTimeUtc
+        width:
+          Name: 40
+          State: 15
+          ProgressStartTimeUtc: 25
+          ProgressEndTimeUtcate: 25
 ```
