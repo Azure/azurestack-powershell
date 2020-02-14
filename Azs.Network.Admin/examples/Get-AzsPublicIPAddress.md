@@ -1,6 +1,6 @@
 ### Example 1: Default Get
 ```powershell
-PS C:\> Get-AzsNetworkQuota -Location northwest
+PS C:\> Get-AzsPublicIPAddress
 
 AllocationMethod  : Dynamic
 IPAddress         : 100.81.128.46
