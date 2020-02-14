@@ -92,7 +92,7 @@ directive:
       verb: New
       subject: AzsGalleryItem
     set:
-      alias: Add-AzsGalleryItem
+      verb: Add
 
 subject-prefix: ''
 module-version: 0.0.1
