@@ -48,7 +48,6 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/storage/readme.md
   - $(repo)/specification/azsadmin/resource-manager/storage/readme.azsautogen.md
 ```
 
