@@ -53,7 +53,7 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/commerce/Microsoft.Commerce.Admin/preview/2015-06-01-preview/Commerce.json
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 ```
 ### File Renames 
 ``` yaml
