@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsComputeQuota.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'Quota.Tests.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -186,7 +186,7 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
     It "TestDeleteNonExistingQuota" -Skip:$('TestDeleteNonExistingQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestDeleteNonExistingQuota'
 
-        {Remove-AzsComputeQuota -Location $global:Location -Name "thisdoesnotexistandifitdoesoops" -ErrorAction Stop} | Should Throw "Operation returned an invalid status code 'NotFound'"
+        {Remove-AzsComputeQuota -Location $global:Location -Name "thisdoesnotexistandifitdoesoops" -ErrorAction Stop} | Should Throw "The server responded with a Request Error, Status: NotFound"
     }
 
     It "TestCreateQuotaOnInvalidLocation" -Skip:$('TestCreateQuotaOnInvalidLocation' -in $global:SkippedTests) {
@@ -277,6 +277,6 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
             $quota.StandardManagedDiskAndSnapshotSize | Should be $_[4]
             $quota.PremiumManagedDiskAndSnapshotSize | Should be $_[5]
         }
-        $quota | Remove-AzsComputeQuota -Force
+        $quota | Remove-AzsComputeQuota
     }
 }

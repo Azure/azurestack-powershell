@@ -13,5 +13,5 @@ ProvisioningState : Succeeded
 Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions
 ```
 
-Add a Platform Image from Blob Storage. Use the a SasUri to specify the location of the PlatformImage.
+Add a Platform Image from Blob Storage. Use the a SasUri to specify the location of the PlatformImage, or use a publicly accessible URL.
 
