@@ -202,6 +202,11 @@ directive:
       property-name: NumberOfStorageAccount
     set:
       property-name: NumberOfStorageAccounts
+  - where:
+      model-name: StorageAccount
+      property-name: PrimaryEndpoint
+    set:
+      property-name: PrimaryEndpoints
 
     # Default to Format-List for the Settings, StorageQuota and Acquisition model as there are many important fields
   - where:
