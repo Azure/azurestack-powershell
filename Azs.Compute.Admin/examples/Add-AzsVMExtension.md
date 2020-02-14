@@ -4,8 +4,7 @@ PS C:\> Add-AzsVMExtension -Location "local" -Publisher "Microsoft" -Type "Micro
 
 Publisher                : <EDIT THIS>
 ComputeRole              : IaaS
-Id                       : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Admin/locati
-                           ons/local/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0
+Id                       : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Admin/locations/local/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0
 IsSystemExtension        : False
 Location                 : local
 Name                     :

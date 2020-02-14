@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsPlatformImage.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'PlatformImage.Tests.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -33,7 +33,8 @@ Describe 'Get-AzsPlatformImage' {
             $PlatformImage.Type     | Should Not Be $null
 
             # Subscriber Usage Aggregate
-            $PlatformImage.OsDisk    | Should Not Be $null
+            $PlatformImage.OsType    | Should Not Be $null
+            $PlatformImage.OsUri     | Should Not Be $null
             $PlatformImage.ProvisioningState    | Should Not Be $null
         }
 
@@ -103,8 +104,15 @@ Describe 'Get-AzsPlatformImage' {
             -OsUri $global:VHDUri
 
         $image | Should Not Be $null
-        $image.OsDisk.Uri | Should be $global:VHDUri
-        $image.OsDisk.OsType | Should be "Linux"
+        
+        $image | Should Not Be $null
+        Write-Debug "Image OSURI:"
+        Write-Debug $image.OsUri
+
+        Write-Debug "Global VHDUri:"
+        Write-Debug $global:VHDUri
+        $image.OsUri | Should be $global:VHDUri
+        $image.OsType | Should be "Linux"
 
         while ($image.ProvisioningState -eq "Creating") {
             # Start-Sleep -Seconds 30
@@ -113,6 +121,7 @@ Describe 'Get-AzsPlatformImage' {
                 -Location $script:Location `
                 -Publisher $script:Publisher `
                 -Offer $script:Offer `
+                -Sku $script:Sku `
                 -Version $script:version
         }
 
@@ -139,12 +148,13 @@ Describe 'Get-AzsPlatformImage' {
             -OsUri $global:VHDUri
 
         $image | Should Not Be $null
-        $image.OsDisk.Uri | Should be $global:VHDUri
+        $image.OsUri | Should be $global:VHDUri
 
         while ($image.ProvisioningState -ne "Succeeded") {
             $image = Get-AzsPlatformImage `
                 -Location $script:Location `
                 -Publisher $script:Publisher `
+                -Sku $script:Sku `
                 -Offer $script:Offer `
                 -Version $script:version
         }
