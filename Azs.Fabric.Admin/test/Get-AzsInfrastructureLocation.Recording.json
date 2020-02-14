@@ -5,8 +5,8 @@
       "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "57" ],
-        "x-ms-client-request-id": [ "345422aa-94e4-406f-be00-a0234ec8753a" ],
+        "x-ms-unique-id": [ "39" ],
+        "x-ms-client-request-id": [ "4f18b92f-e3c3-41ac-a5b3-dc5648688321" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -20,16 +20,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "4f9c059c-0e07-4d9e-91b0-e4113b1a3fcf" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14940" ],
-        "x-ms-request-id": [ "4f9c059c-0e07-4d9e-91b0-e4113b1a3fcf" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T193459Z:4f9c059c-0e07-4d9e-91b0-e4113b1a3fcf" ],
+        "x-ms-correlation-request-id": [ "5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14892" ],
+        "x-ms-request-id": [ "5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 19:34:59 GMT" ],
+        "Date": [ "Thu, 06 Feb 2020 23:32:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvlFTJLp+OxIe2YMWQIZizsc7QrbpYqi3pL3Nd7oEu52hqOELzwu9/NDe1bWo2kNMbSuLje+5eV/QGpi6vzqimXAnKBnu/QSnk9MoVFOBbd3tFNEgK/Lw7uHAjDmaQyg9DGdHFXhiesZKcUodtFNJZ" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBNcT144E9EYJWq1E6GTtGa6JWEchSyEzjoMMAwoux8NG5yfpo5CYDIopjaHpqBjOCC3dIncdSwjJQ8ihU4X3xIcA8i1NoRWR9fUbdDtBR0IXErAsYhGEj53eiCNgtE4lrz2D5zw59Jw92dbyUcrF" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "639" ],
@@ -45,8 +45,8 @@
       "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "58" ],
-        "x-ms-client-request-id": [ "32c15884-4178-4508-a6d2-b447726075e8" ],
+        "x-ms-unique-id": [ "40" ],
+        "x-ms-client-request-id": [ "730ca7d4-6a2f-4fcf-91ff-5504bbfca105" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -60,16 +60,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "125a3984-291b-46ee-b830-3f380fc6b1ab" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14939" ],
-        "x-ms-request-id": [ "125a3984-291b-46ee-b830-3f380fc6b1ab" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T193459Z:125a3984-291b-46ee-b830-3f380fc6b1ab" ],
+        "x-ms-correlation-request-id": [ "832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14891" ],
+        "x-ms-request-id": [ "832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 19:34:59 GMT" ],
+        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvni+YXD0QLGu1JLdbmF0FSeE254WelOtorwoc6tDt9pXdRMkcmLXcXyVSDtdzAm5MOjbGVvYkiDYNriuJAnK90mUu4YWwsvk71c3/HkiyNAh99yGMNXQGVhyPjeSIY68p5xTPIDbtruBLDgOtKAxD" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9g3uSmDxnpkUI1g0fS+C9TXCQ06fuy+dC7xsTV/vklkE/aHMU0Zl2UvjK0hdgFPulTqngVdXOQJWRbQmOZw7pQkql3o6gAoZxPKdEcxM2Y49DN8FFtVD4zkG55M3e+t4SKO3DGkKvsdSHW2avQDc" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "639" ],
@@ -85,8 +85,8 @@
       "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "59" ],
-        "x-ms-client-request-id": [ "26d8ea67-df64-4891-be72-b5a863636d3a" ],
+        "x-ms-unique-id": [ "41" ],
+        "x-ms-client-request-id": [ "1def560e-9d83-4123-addf-296a3a768a86" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -100,16 +100,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e4e54876-3182-4df0-aa89-ecaa9017118f" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14938" ],
-        "x-ms-request-id": [ "e4e54876-3182-4df0-aa89-ecaa9017118f" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T193459Z:e4e54876-3182-4df0-aa89-ecaa9017118f" ],
+        "x-ms-correlation-request-id": [ "c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14890" ],
+        "x-ms-request-id": [ "c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 19:34:59 GMT" ],
+        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuDzl3RcNNSea9LPYL2Wi8NhgFrEaXcysKWWIEA82NwjpdLj8cQsDKjdW82naUKtbPz829fgT3S8uzUuR29Vc9qiNWIu9t1AmLcANIMiGdH399tKWZFrE2vj7W2BWQBFJ/76R7jtb27IPMSAoGZlg" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZWWH8OnTix9yrrcjbASy/+EiQ9YCY8ClOoRR3/vBczZGur5O1jBSndw2mWN3OBu8WzP8q5G9W+ZADxprR3kL8FIH1NIJZuvoHQcbCPWskmmxSgcZACKiMsMfhy6/QXs0Z6jv1RIToZ/yJHsLV5a9" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "639" ],
@@ -125,8 +125,8 @@
       "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "60" ],
-        "x-ms-client-request-id": [ "c25408e8-9bf4-468f-9252-8bc89982e03c" ],
+        "x-ms-unique-id": [ "42" ],
+        "x-ms-client-request-id": [ "a8d10abe-ea25-41c4-bdaf-0f491dcf5b78" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -140,16 +140,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1fcffc09-35f4-45d6-a229-0d4b448e0fa2" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14937" ],
-        "x-ms-request-id": [ "1fcffc09-35f4-45d6-a229-0d4b448e0fa2" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T193459Z:1fcffc09-35f4-45d6-a229-0d4b448e0fa2" ],
+        "x-ms-correlation-request-id": [ "0cca7b83-cfb5-462a-9771-d5366f516665" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14889" ],
+        "x-ms-request-id": [ "0cca7b83-cfb5-462a-9771-d5366f516665" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200206T233301Z:0cca7b83-cfb5-462a-9771-d5366f516665" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 19:34:59 GMT" ],
+        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIJdvOAceBnzQ278zvpprKSOkGua/6pfopJvs+vdG2+YtAJ7JMzk08OanB5ZHF71IS/pLV/I6g7QCZcedW7svqly6u45kVIt5Eu86jIJFTJmAHE8jygDLEhzUehowE6ep2EVHeuvgpxEYH9DrxBQX" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvm16NutzrTGVWU6bjnzLWwByTJfiH+WvRFwafxEh7474Kx99+LtbyEYjtAszY2h4OuN577JtFnoi08DTzWtdRk7Gsd6mx6ntHqWTRkKVfk+4OcsgJUGsRswqqRgMBc/dESW+aZNSuUAASqzVj7xW6" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "639" ],
@@ -165,8 +165,8 @@
       "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "61" ],
-        "x-ms-client-request-id": [ "173be279-5d3f-4131-a923-d38ad5aa9c8f" ],
+        "x-ms-unique-id": [ "43" ],
+        "x-ms-client-request-id": [ "488eceb8-3223-4d1b-aad6-be568a87720b" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -180,16 +180,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f7dc1377-02b3-469d-8f8e-cadf004b5079" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14936" ],
-        "x-ms-request-id": [ "f7dc1377-02b3-469d-8f8e-cadf004b5079" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T193459Z:f7dc1377-02b3-469d-8f8e-cadf004b5079" ],
+        "x-ms-correlation-request-id": [ "eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14888" ],
+        "x-ms-request-id": [ "eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200206T233301Z:eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 19:34:59 GMT" ],
+        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvw6CYRKEaYNgWNIeWVFL1f7l2txDlUaaNCGyXm5TWc/sNWBODWOeFYviIImYOS5AO/Gzb5XxM0mIkoH+2usm4tsPfXl6zXVbJt12Kcb2fG1w552oveNTATZ9CnQAzO/tidotSY2duj96eywcdRDiy" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSnTrplZxG9AqiiaeVGUpKxBcLx2zDautJu+WkFbINjjVw4RWdrPP8RVCY38mh68OmJgDGTOMX2s8HPktkHPlXaK/qF5eoqAGQj9yJngQzZQOxoYo/UAxbmdHmRTktFd6NCkqHsdYfeaJUVkO+qTY" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "639" ],
