@@ -14,18 +14,30 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Returns the requested infrastructure role description.
+Repairs a node of the cluster.
 .Description
-Returns the requested infrastructure role description.
+Repairs a node of the cluster.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsinfrastructurerole
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/repair-azsscaleunitnode
+.Inputs
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IBareMetalNodeDescription
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IInfraRole
+System.Boolean
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+BAREMETALNODE <IBareMetalNodeDescription>: Description of a bare metal node used for ScaleOut operation on a cluster.
+  [BiosVersion <String>]: Bios version of the physical machine.
+  [BmciPv4Address <String>]: BMC address of the physical machine.
+  [ClusterName <String>]: Name of the cluster.
+  [ComputerName <String>]: Name of the computer.
+  [MacAddress <String>]: Name of the MAC address of the bare metal node.
+  [Model <String>]: Model of the physical machine.
+  [SerialNumber <String>]: Serial number of the physical machine.
+  [Vendor <String>]: Vendor of the physical machine.
 
 INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [Drive <String>]: Name of the storage drive.
@@ -51,55 +63,115 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsinfrastructurerole
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/repair-azsscaleunitnode
 #>
-function Get-AzsInfrastructureRole {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IInfraRole])]
-[CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
+function Repair-AzsScaleUnitNode {
+[OutputType([System.Boolean])]
+[CmdletBinding(DefaultParameterSetName='RepairExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Repair')]
+    [Parameter(ParameterSetName='RepairExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
     [System.String]
     # Location of the resource.
     ${Location},
 
-    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Parameter(ParameterSetName='Repair', Mandatory)]
+    [Parameter(ParameterSetName='RepairExpanded', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Infrastructure role name.
+    # Name of the scale unit node.
     ${Name},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Repair')]
+    [Parameter(ParameterSetName='RepairExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Repair')]
+    [Parameter(ParameterSetName='RepairExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String[]]
+    [System.String]
     # Subscription credentials that uniquely identify Microsoft Azure subscription.
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='RepairViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
     # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
 
-    [Parameter(ParameterSetName='List')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Query')]
+    [Parameter(ParameterSetName='Repair', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='RepairViaIdentity', Mandatory, ValueFromPipeline)]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IBareMetalNodeDescription]
+    # Description of a bare metal node used for ScaleOut operation on a cluster.
+    # To construct, see NOTES section for BAREMETALNODE properties and create a hash table.
+    ${BareMetalNode},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
     [System.String]
-    # OData filter parameter.
-    ${Filter},
+    # Bios version of the physical machine.
+    ${BiosVersion},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # BMC address of the physical machine.
+    ${BmciPv4Address},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Name of the cluster.
+    ${ClusterName},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Name of the computer.
+    ${ComputerName},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Name of the MAC address of the bare metal node.
+    ${MacAddress},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Model of the physical machine.
+    ${Model},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Serial number of the physical machine.
+    ${SerialNumber},
+
+    [Parameter(ParameterSetName='RepairExpanded')]
+    [Parameter(ParameterSetName='RepairViaIdentityExpanded')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
+    [System.String]
+    # Vendor of the physical machine.
+    ${Vendor},
 
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
@@ -108,6 +180,12 @@ param(
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command as a job
+    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
@@ -128,6 +206,12 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command asynchronously
+    ${NoWait},
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
@@ -155,6 +239,7 @@ param(
     ${ProxyUseDefaultCredentials}
 )
 
+
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
     if ($PSBoundParameters.ContainsKey(('Name')))
@@ -165,6 +250,7 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Get-AzsInfrastructureRole @PSBoundParameters
+    Azs.Fabric.Admin.internal\Repair-AzsScaleUnitNode @PSBoundParameters
 }
 }
+

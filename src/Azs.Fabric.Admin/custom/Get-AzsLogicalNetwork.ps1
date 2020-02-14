@@ -14,15 +14,15 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Returns the requested infrastructure role description.
+Returns the requested logical network.
 .Description
-Returns the requested infrastructure role description.
+Returns the requested logical network.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsinfrastructurerole
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azslogicalnetwork
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IInfraRole
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.ILogicalNetwork
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -51,10 +51,10 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsinfrastructurerole
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azslogicalnetwork
 #>
-function Get-AzsInfrastructureRole {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IInfraRole])]
+function Get-AzsLogicalNetwork {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.ILogicalNetwork])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
     [Parameter(ParameterSetName='Get')]
@@ -68,7 +68,7 @@ param(
     [Parameter(ParameterSetName='Get', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Infrastructure role name.
+    # Name of the logical network.
     ${Name},
 
     [Parameter(ParameterSetName='Get')]
@@ -165,6 +165,7 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Get-AzsInfrastructureRole @PSBoundParameters
+    Azs.Fabric.Admin.internal\Get-AzsLogicalNetwork @PSBoundParameters
 }
 }
+

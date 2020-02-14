@@ -60,7 +60,7 @@ param(
     [Parameter(ParameterSetName='Get')]
     [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
@@ -154,7 +154,6 @@ param(
     # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
 )
-
 
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
