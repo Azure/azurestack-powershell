@@ -55,29 +55,29 @@ https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azss
 #>
 function Disable-AzsScaleUnitNode {
 [OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='Start', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='Disable', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Disable')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
     [System.String]
     # Location of the resource.
     ${Location},
 
-    [Parameter(ParameterSetName='Start', Mandatory)]
+    [Parameter(ParameterSetName='Disable', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
     # Name of the scale unit node.
     ${Name},
 
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Disable')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Disable')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
@@ -85,7 +85,7 @@ param(
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='StartViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='DisableViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
     # Identity Parameter
