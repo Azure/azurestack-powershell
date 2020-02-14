@@ -133,6 +133,69 @@ directive:
       subject: LogicalNetwork
     hide: true
 
+  # [LogicalSubnet]
+  # [LogicalSubnet] Parameter rename
+  - where:
+      subject: LogicalSubnet
+      parameter-name: LogicalSubnet
+    set:
+      parameter-name: Name
+
+  # [LogicalSubnet] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: LogicalSubnet
+    hide: true
+
+  # [MacAddressPool]
+  # [MacAddressPool] Parameter rename
+  - where:
+      subject: MacAddressPool
+      parameter-name: MacAddressPool
+    set:
+      parameter-name: Name
+
+  # [MacAddressPool] Rename property name in LogicalNetwork
+  - where:
+      model-name: MacAddressPool
+      property-name: NumberOfAllocatedMacAddress
+    set:
+      property-name: NumberOfAllocatedMacAddresses
+
+  # [MacAddressPool] Rename property name in LogicalNetwork
+  - where:
+      model-name: MacAddressPool
+      property-name: NumberOfAvailableMacAddress
+    set:
+      property-name: NumberOfAvailableMacAddresses
+
+  # [MacAddressPool] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: MacAddressPool
+    hide: true
+
+  # [SlbMuxInstance]
+  # [SlbMuxInstance] Parameter rename
+  - where:
+      subject: SlbMuxInstance
+      parameter-name: SlbMuxInstance
+    set:
+      parameter-name: Name
+  
+  # [SlbMuxInstance] Property Rename
+  - where:
+      model-name: SlbMuxInstance
+      property-name: BgpPeer
+    set:
+      property-name: BgpPeers
+
+  # [SlbMuxInstance] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: SlbMuxInstance
+    hide: true
+
   # [EdgeGatewayPool]: Following changes are for EdgeGatewayPool
   # [EdgeGateway] Rename cmdlet parameter name in EdgeGatewayPool
   - where:
@@ -215,6 +278,19 @@ directive:
     hide: true
 
   # [ScaleUnit]: Following changes are for ScaleUnit
+  # [ScaleUnit]: Rename property name
+  - where:
+      model-name: ScaleUnit
+      property-name: TotalCapacityCore
+    set:
+      property-name: TotalCapacityOfCores
+
+  - where:
+      model-name: ScaleUnit
+      property-name: TotalCapacityMemoryGb
+    set:
+      property-name: TotalCapacityOfMemoryInGB
+
   # [ScaleUnit] Cmdlet parameter rename
   - where:
       subject: ScaleUnit
@@ -236,9 +312,40 @@ directive:
     set:
       parameter-name: Name
 
+  - where:
+      subject: ScaleUnitNodeMaintenanceMode
+      parameter-name: ScaleUnitNode
+    set:
+      parameter-name: Name
+
   # [ScaleUnitNode] Hide auto-generated
   - where:
       verb: Get
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Repair
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Start
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Stop
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Enable
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Disable
       subject: ScaleUnitNode
     hide: true
 
@@ -249,6 +356,18 @@ directive:
     set:
       property-name: ScaleUnitNodeStatus
 
+  - where:
+      model-name: ScaleUnitNode
+      property-name: CapacityCore
+    set:
+      property-name: CapacityOfCores
+
+  - where:
+      model-name: ScaleUnitNode
+      property-name: CapacityMemoryGb
+    set:
+      property-name: CapacityOfMemoryInGB
+
   # [ScaleUnitNode] Rename Invoke-ScaleUnitOut to Add-AzsScaleUnitNode
   - where:
       verb: Invoke
@@ -257,33 +376,81 @@ directive:
       verb: Add
       subject: ScaleUnitNode
 
-  # Rename Start-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
   - where:
       verb: Start
-      subject: ScaleUnitNodeMaintenanceMode
-    set:
-      verb: Disable
-      subject: ScaleUnitNode
-
-  # Rename Stop-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
-  - where:
-      verb: Stop
       subject: ScaleUnitNodeMaintenanceMode
     set:
       verb: Enable
       subject: ScaleUnitNode
 
+  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  - where:
+      verb: Stop
+      subject: ScaleUnitNodeMaintenanceMode
+    set:
+      verb: Disable
+      subject: ScaleUnitNode
+
+  # [FabricLocation] Following are for Fabric location.
   # Rename Get-AzsFabricLocation to Get-AzsInfrastructureLocation
   - where:
       subject: FabricLocation
     set:
       subject: InfrastructureLocation
 
-  # Rename Get-AzsInfraRole to Get-AzsInfrastructureRoleInstance
+  # [InfrastructureRoleInstance]
+  # [InfrastructureRoleInstance] Rename Subject
   - where:
       subject: InfraRoleInstance
     set:
       subject: InfrastructureRoleInstance
+
+  # [InfrastructureRoleInstance] Propertity rename
+  - where:
+      model-name: InfraRoleInstance
+      property-name: SizeCore
+    set:
+      property-name: NumberOfCores
+
+  - where:
+      model-name: InfraRoleInstance
+      property-name: SizeMemoryGb
+    set:
+      property-name: SizeMemoryInGB
+
+  # [InfrastructureRoleInstance] Parameter Raname
+  - where:
+      subject: InfraRoleInstance
+      parameter-name: InfraRoleInstance
+    set:
+      parameter-name: Name
+
+  # [InfrastructureRoleInstance] Supress default module
+  - where:
+      verb: Get
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Start
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Restart
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Stop
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Disable
+      subject: InfrastructureRoleInstance
+    hide: true
 
   # Rename Get-AzsFileShare to Get-AzsInfrastructureShare
   - where:
