@@ -340,13 +340,13 @@ directive:
     hide: true
 
   - where:
-      verb: Enable
-      subject: ScaleUnitNode
+      verb: Start
+      subject: ScaleUnitNodeMaintenanceMode
     hide: true
 
   - where:
-      verb: Disable
-      subject: ScaleUnitNode
+      verb: Stop
+      subject: ScaleUnitNodeMaintenanceMode
     hide: true
 
   # [ScaleUnitNode]: Rename property name
@@ -421,7 +421,7 @@ directive:
 
   # [InfrastructureRoleInstance] Parameter Raname
   - where:
-      subject: InfraRoleInstance
+      subject: InfrastructureRoleInstance
       parameter-name: InfraRoleInstance
     set:
       parameter-name: Name

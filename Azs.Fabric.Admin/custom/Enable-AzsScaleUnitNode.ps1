@@ -14,9 +14,9 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Stop maintenance mode for a scale unit node.
+Start maintenance mode for a scale unit node.
 .Description
-Stop maintenance mode for a scale unit node.
+Start maintenance mode for a scale unit node.
 .Example
 To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/enable-azsscaleunitnode
 .Inputs
@@ -55,29 +55,29 @@ https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/enable-azssc
 #>
 function Enable-AzsScaleUnitNode {
 [OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='Enable', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='Start', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Enable')]
+    [Parameter(ParameterSetName='Start')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
 
-    [Parameter(ParameterSetName='Enable', Mandatory)]
+    [Parameter(ParameterSetName='Start', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
     # Name of the scale unit node.
     ${Name},
 
-    [Parameter(ParameterSetName='Enable')]
+    [Parameter(ParameterSetName='Start')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Enable')]
+    [Parameter(ParameterSetName='Start')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
@@ -85,7 +85,7 @@ param(
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='EnableViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='StartViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
     # Identity Parameter
@@ -157,7 +157,6 @@ param(
     # Use the default credentials for the proxy
     ${ProxyUseDefaultCredentials}
 )
-
 
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
