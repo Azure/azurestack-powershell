@@ -17,14 +17,5 @@ VMScaleSetEnabled        : False
 VmosType                 : Windows
 ```
 
-Get a list of all Platform Images by leaving all parameters blank. 
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Get a list of all VMExtensions by leaving all parameters blank. 
 

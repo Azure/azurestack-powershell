@@ -1,18 +1,15 @@
-### Example 1: {{ Add title here }}
+### Example 1: Remove a Platform Image
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\>Remove-AzsPlatformImage -Location northwest -Offer UbuntuServer -Publisher Microsoft -Sku 16.04-LTS -Version 1.0.0
 ```
 
-{{ Add description here }}
+A successful call to remove a platform image will not return any output
 
-### Example 2: {{ Add title here }}
+### Example 2: Remove a Platform Image the Does Not Exist
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\>  Remove-AzsPlatformImage -Location northwest -Offer UbuntuServer -Publisher Microsoft -Sku 16.04-LTS -Version 1.1.6
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
+A successful call to remove a platform image that doesn't exist will not return any output
 
