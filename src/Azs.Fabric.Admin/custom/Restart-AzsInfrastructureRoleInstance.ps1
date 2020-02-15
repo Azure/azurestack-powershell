@@ -57,18 +57,18 @@ function Restart-AzsInfrastructureRoleInstance {
 [OutputType([System.Boolean])]
 [CmdletBinding(DefaultParameterSetName='Reboot', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Reboot', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [System.String]
-    # Name of an infrastructure role instance.
-    ${Name},
-
     [Parameter(ParameterSetName='Reboot')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
+
+    [Parameter(ParameterSetName='Reboot', Mandatory)]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
+    [System.String]
+    # Name of an infrastructure role instance.
+    ${Name},
 
     [Parameter(ParameterSetName='Reboot')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]

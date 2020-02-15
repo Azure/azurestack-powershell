@@ -59,7 +59,7 @@ function Start-AzsScaleUnitNode {
 param(
     [Parameter(ParameterSetName='PowerOn')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
