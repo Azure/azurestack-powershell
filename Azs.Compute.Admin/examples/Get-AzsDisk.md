@@ -1,8 +1,6 @@
 ### Example 1: Get All Disks 
 ```powershell
 PS C:\> Get-AzsDisk
-
-{{ Add output here }}
 ```
 Without any parameters, `Get-AzsDisk` will list all Disks. 
 
