@@ -103,6 +103,15 @@ directive:
       parameter-name: RunName
     set:
       parameter-name: Name
+    # Hide the auto-generated Get-Update and expose it through customized one
+  - where:
+      verb: Get
+      subject: Update
+    hide: true
+  - where:
+      subject: UpdateRun
+    hide: true
+    # Format Output Values
   - where:
       model-name: Update
     set:
