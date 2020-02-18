@@ -66,7 +66,7 @@ psd1: Azs.Deployment.Admin.psd1
 psm1: Azs.Deployment.Admin.psm1
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 
 ### Parameter default values
 directive:

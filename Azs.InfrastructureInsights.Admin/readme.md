@@ -58,7 +58,7 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ServiceHealth.json
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 
 ### File Renames 
 module-name: Azs.InfrastructureInsights.Admin 
