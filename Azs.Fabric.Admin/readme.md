@@ -66,8 +66,6 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/ScaleUnitNode.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/SlbMuxInstance.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageOperationResults.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StoragePool.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/FileShare.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2018-10-01/StorageSubSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Drive.json
@@ -532,6 +530,20 @@ directive:
       parameter-name: Volume
     set:
       parameter-name: Name
+
+  # Default to Format-List for the StorageSubSystem, FileShare and Volume model as there are many important fields
+  - where:
+      model-name: StorageSubSystem
+    set:
+      suppress-format: true
+  - where:
+      model-name: FileShare
+    set:
+      suppress-format: true
+  - where:
+      model-name: Volume
+    set:
+      suppress-format: true
 
   # Hide the auto-generated Get-AzsInfrastructureShare and expose it through customized one
   - where:
