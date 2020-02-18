@@ -138,13 +138,22 @@ param(
 
 process 
 {
+        # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
+        if ($PSBoundParameters.ContainsKey(('Name')))
+        {
+            $Name = $PSBoundParameters['Name']
+            if ($null -ne $Name -and $Name.Contains('/'))
+            {
+                $PSBoundParameters['Name'] = $Name.Split("/")[-1]
+            }
+        }
+
     Write-host "Have You Ran Test-Azurestack?" 
     $Readhost = Read-Host " ( Y / N ) " 
-    Switch ($ReadHost) 
+    Switch ($ReadHost.ToLower()) 
      { 
-       Y {Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters}
-       N {exit}
-       default {exit}
+       y {Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters}
+       default {Write-host "Please Run and Pass Test-Azurestack -UpdateReadiness before Installing the update"}
      }
 }
 
