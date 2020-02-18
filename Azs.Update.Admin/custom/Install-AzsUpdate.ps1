@@ -14,11 +14,11 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Get an instance of update run using the ID.
+Apply a specific update at an update location.
 .Description
-Get an instance of update run using the ID.
+Apply a specific update at an update location.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/get-azsupdaterun
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/install-azsupdate
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity
 .Outputs
@@ -35,51 +35,41 @@ INPUTOBJECT <IUpdateAdminIdentity>: Identity Parameter
   [UpdateLocation <String>]: The name of the update location.
   [UpdateName <String>]: Name of the update.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/get-azsupdaterun
+https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/install-azsupdate
 #>
-function Get-AzsUpdateRun {
+function Install-AzsUpdate {
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.Api20160501.IUpdateRun])]
-[CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
+[CmdletBinding(DefaultParameterSetName='Apply', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Apply')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # The name of the update location.
     ${Location},
 
-    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Parameter(ParameterSetName='Apply', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [System.String]
-    # Update run identifier.
+    # Name of the update.
     ${Name},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Apply')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Resource group name.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter(ParameterSetName='Apply')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String[]]
+    [System.String]
     # Subscription credentials which uniquely identify Microsoft Azure subscription.
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='Get', Mandatory)]
-    [Parameter(ParameterSetName='List', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
-    [System.String]
-    # Name of the update.
-    ${UpdateName},
-
-    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='ApplyViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity]
     # Identity Parameter
@@ -93,6 +83,12 @@ param(
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command as a job
+    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
@@ -114,6 +110,12 @@ param(
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
 
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command asynchronously
+    ${NoWait},
+
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
     [System.Uri]
@@ -134,28 +136,16 @@ param(
     ${ProxyUseDefaultCredentials}
 )
 
-process {
-    # Generated SDK does not support {location}/{updateName} for nested resource updateName, so extract the {updateName} part here
-    if ($PSBoundParameters.ContainsKey(('UpdateName')))
-    {
-        $UpdateName = $PSBoundParameters['UpdateName']
-        if ($null -ne $UpdateName -and $UpdateName.Contains('/'))
-        {
-            $PSBoundParameters['UpdateName'] = $UpdateName.Split("/")[-1]
-        }
-    }
-
-        # Generated SDK does not support {location}/{updateName}/{name} for nested resource name, so extract the {name} part here
-        if ($PSBoundParameters.ContainsKey(('Name')))
-        {
-            $Name = $PSBoundParameters['Name']
-            if ($null -ne $Name -and $Name.Contains('/'))
-            {
-                $PSBoundParameters['Name'] = $Name.Split("/")[-1]
-            }
-        }
-
-    Azs.Update.Admin.internal\Get-AzsUpdateRun @PSBoundParameters
+process 
+{
+    Write-host "Have You Ran Test-Azurestack?" 
+    $Readhost = Read-Host " ( Y / N ) " 
+    Switch ($ReadHost) 
+     { 
+       Y {Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters}
+       N {exit}
+       default {exit}
+     }
 }
 
 }
