@@ -107,6 +107,10 @@ directive:
   - where:
       subject: UpdateRun
     hide: true
+    # Hide the auto-generated Get-AzsUpdateRunTopLevel. This will effectively remove the commandlet since we dont have a customized one
+  - where:
+      subject: UpdateRunTopLevel
+    hide: true
     # Format Output Values
   - where:
       model-name: Update
