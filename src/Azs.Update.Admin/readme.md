@@ -103,11 +103,7 @@ directive:
       parameter-name: RunName
     set:
       parameter-name: Name
-    # Hide the auto-generated Get-Update and expose it through customized one
-  - where:
-      verb: Get
-      subject: Update
-    hide: true
+    # Hide the auto-generated Get-AzsUpdateRun and Resume-AzsUpdateRUn and expose it through customized one
   - where:
       subject: UpdateRun
     hide: true
