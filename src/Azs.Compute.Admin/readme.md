@@ -308,5 +308,18 @@ directive:
     set:
       parameter-name: Name
 
+  # Remove CancelViaIdentity parameter set in Stop-AzsDiskMigrationJob
+  - where:
+      verb: Stop
+      subject: DiskMigrationJob
+      variant: CancelViaIdentity
+    remove: true
+
+  # Hide the auto-generated New-AzsDiskMigrationJob and expose it through customized one
+  - where:
+      verb: New
+      subject: DiskMigrationJob
+    hide: true
+
 subject-prefix: ''
 module-version: 0.0.1

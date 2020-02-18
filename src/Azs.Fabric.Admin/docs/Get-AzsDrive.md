@@ -111,7 +111,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -159,7 +159,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -266,11 +266,23 @@ To create the parameters described below, construct a hash table containing the 
 
 #### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   - `[Drive <String>]`: Name of the storage drive.
+  - `[EdgeGateway <String>]`: Name of the edge gateway.
+  - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.
+  - `[FabricLocation <String>]`: Fabric location.
   - `[FileShare <String>]`: Fabric file share name.
+  - `[IPPool <String>]`: IP pool name.
   - `[Id <String>]`: Resource identity path
+  - `[InfraRole <String>]`: Infrastructure role name.
+  - `[InfraRoleInstance <String>]`: Name of an infrastructure role instance.
   - `[Location <String>]`: Location of the resource.
+  - `[LogicalNetwork <String>]`: Name of the logical network.
+  - `[LogicalSubnet <String>]`: Name of the logical subnet.
+  - `[MacAddressPool <String>]`: Name of the MAC address pool.
+  - `[Operation <String>]`: Operation identifier.
   - `[ResourceGroupName <String>]`: Name of the resource group.
   - `[ScaleUnit <String>]`: Name of the scale units.
+  - `[ScaleUnitNode <String>]`: Name of the scale unit node.
+  - `[SlbMuxInstance <String>]`: Name of a SLB MUX instance.
   - `[StorageSubSystem <String>]`: Name of the storage system.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Volume <String>]`: Name of the storage volume.
