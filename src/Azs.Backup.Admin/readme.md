@@ -171,4 +171,4 @@ directive:
     hide: true
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
