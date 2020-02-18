@@ -136,12 +136,12 @@ param(
 
 process {
     # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
-    if ($PSBoundParameters.ContainsKey(('UpdateName')))
+    if ($PSBoundParameters.ContainsKey(('Name')))
     {
-        $UpdateName = $PSBoundParameters['UpdateName']
-        if ($null -ne $UpdateName -and $UpdateName.Contains('/'))
+        $Name = $PSBoundParameters['Name']
+        if ($null -ne $Name -and $Name.Contains('/'))
         {
-            $PSBoundParameters['UpdateName'] = $Name.Split("/")[-1]
+            $PSBoundParameters['Name'] = $Name.Split("/")[-1]
         }
     }
 
