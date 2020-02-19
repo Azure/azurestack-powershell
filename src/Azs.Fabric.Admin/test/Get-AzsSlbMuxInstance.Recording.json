@@ -1,0 +1,242 @@
+{
+  "Get-AzsSlbMuxInstance+[NoContext]+TestListSlbMuxInstances+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "89333fdc-7f50-47db-950c-772de2bef5ac" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b615e640-2c5d-45bb-8276-06627a11462d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14945" ],
+        "x-ms-request-id": [ "b615e640-2c5d-45bb-8276-06627a11462d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230343Z:b615e640-2c5d-45bb-8276-06627a11462d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:43 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvH10G5z/Z6PtG9K3p2IBHAHKR5a07BlBhldo8A6lxkahUFZSU5MZfrpX/ZF+vab7IBhzhea78/a2UCQ4iruA+GL/2JDIr2uQjFq2NtlFIN/VPJDTBA+2SHOMD/FhuA0qJLnp2djIMhFA4jd/6TE0x" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "907" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}},{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02\",\"name\":\"redmond/n22r0903-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB02\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}]}"
+    }
+  },
+  "Get-AzsSlbMuxInstance+[NoContext]+TestGetSlbMuxInstance+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "97692955-7cee-49b3-b1f2-0a47d2c83337" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3b7cb652-657a-4d18-9067-c130b8b41118" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14944" ],
+        "x-ms-request-id": [ "3b7cb652-657a-4d18-9067-c130b8b41118" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230344Z:3b7cb652-657a-4d18-9067-c130b8b41118" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:43 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv74ap1auUDUv1hwuSbsL1vxUmw0JLwZwaQPgxDzuylTgddc8pYSaY6dOb29j8Qg+UsjTOWRdT842A+WTFEL+kzpaItXhI0jTv/VciyxxwOw39iTlzBcFTTIOiwZHqgzemFKhQNBWhkfgoiyqMwPfh" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "907" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}},{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02\",\"name\":\"redmond/n22r0903-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB02\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}]}"
+    }
+  },
+  "Get-AzsSlbMuxInstance+[NoContext]+TestGetSlbMuxInstance+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01?api-version=2016-05-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "27824f9c-60dd-4058-aead-a65e9fc54058" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "14048694-0309-478f-b3fe-934f5570076d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14943" ],
+        "x-ms-request-id": [ "14048694-0309-478f-b3fe-934f5570076d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230344Z:14048694-0309-478f-b3fe-934f5570076d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:43 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwNnbG3vBI4Hd1bIPGabGccxbVKrIGHeXXMCKdvK1peq0hSxLDnLNYckh7bGZH67fUzPyN8k+pyh/4J/8u/r53bzxK2JkmzCEGRcsHqPOzcwstRLk7XTFC/frXTLcTAyXCL3wKvkqPojb2nGc+RU+" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}"
+    }
+  },
+  "Get-AzsSlbMuxInstance+[NoContext]+TestGetAllSlbMuxInstances+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "4" ],
+        "x-ms-client-request-id": [ "65f2ebfb-74d0-4342-bdd7-b93e6a6a04d8" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d4fe842b-fd7e-4e29-9825-75db65c5d5f2" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14942" ],
+        "x-ms-request-id": [ "d4fe842b-fd7e-4e29-9825-75db65c5d5f2" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230344Z:d4fe842b-fd7e-4e29-9825-75db65c5d5f2" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:44 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvf7Tv1XtGRDlhoeximSgIYxnFxPdyXiVHMs5ZaFEao85DbWPHW0DAZWscwbLvDYxs/QHh3Z1OlcqmHtVTuOi1cFQuGMTR2Syc9UlICvCeMG1n6zINVFU9GfjeL3uAQIf0teDTQft6XpLbYHakZpk6" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "907" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}},{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02\",\"name\":\"redmond/n22r0903-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB02\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}]}"
+    }
+  },
+  "Get-AzsSlbMuxInstance+[NoContext]+TestGetAllSlbMuxInstances+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01?api-version=2016-05-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "5" ],
+        "x-ms-client-request-id": [ "34a2e4fe-480b-4d13-b245-68b2c118bbe3" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "f13d6b92-f44b-4507-8f81-1910817f1108" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14941" ],
+        "x-ms-request-id": [ "f13d6b92-f44b-4507-8f81-1910817f1108" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230344Z:f13d6b92-f44b-4507-8f81-1910817f1108" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:44 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv03pexMFR2eljKAaBSboN5Siw7Tz7ivO71KqP6WWkU1IWXetz4+twYCtGZ4y+0KPGguZOyTMLSFDNczwn8CwPz3RhJr3kVED2G+DKrqxPYAugXcDjHZsmbZ1VXu5q7t/KIrZzFfXP+EiJDM+1W9Ij" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}"
+    }
+  },
+  "Get-AzsSlbMuxInstance+[NoContext]+TestGetAllSlbMuxInstances+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02?api-version=2016-05-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "6" ],
+        "x-ms-client-request-id": [ "696fdba5-72af-4bc1-b06c-9e9cbb0c7941" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "891a1d90-b31b-43d2-a3b6-e38bf3012632" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14940" ],
+        "x-ms-request-id": [ "891a1d90-b31b-43d2-a3b6-e38bf3012632" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T230345Z:891a1d90-b31b-43d2-a3b6-e38bf3012632" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 23:03:44 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvCAaXTvJ49x+s+J0pxpbabp517vV3fEoAazze4D3K67hgF9CPlM06M36WFZVajs1vscLFDuWqwujznA1tV2phyIBvh+HvhovA6nh+rJltsCO3kQYH/SyBZL5h88lEMah+117/Ak4T4SCxbpmSfxp8" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02\",\"name\":\"redmond/n22r0903-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB02\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}"
+    }
+  }
+}
