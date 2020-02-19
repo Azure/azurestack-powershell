@@ -57,12 +57,6 @@ function Get-AzsInfrastructureRoleInstance {
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IInfraRoleInstance])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
-    [Parameter(ParameterSetName='Get', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
-    [System.String]
-    # Name of an infrastructure role instance.
-    ${Name},
-
     [Parameter(ParameterSetName='Get')]
     [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
@@ -70,6 +64,12 @@ param(
     [System.String]
     # Location of the resource.
     ${Location},
+
+    [Parameter(ParameterSetName='Get', Mandatory)]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
+    [System.String]
+    # Name of an infrastructure role instance.
+    ${Name},
 
     [Parameter(ParameterSetName='Get')]
     [Parameter(ParameterSetName='List')]

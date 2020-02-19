@@ -14,15 +14,15 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Power on a scale unit node.
+Return the requested IP pool.
 .Description
-Power on a scale unit node.
+Return the requested IP pool.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/start-azsscaleunitnode
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsippool
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-System.Boolean
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -51,46 +51,55 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/start-azsscaleunitnode
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsippool
 #>
-function Start-AzsScaleUnitNode {
-[OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='PowerOn', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+function Get-AzsIPPool {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool])]
+[CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
-    [Parameter(ParameterSetName='PowerOn')]
+    [Parameter(ParameterSetName='Get')]
+    [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
 
-    [Parameter(ParameterSetName='PowerOn', Mandatory)]
+    [Parameter(ParameterSetName='Get', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Name of the scale unit node.
+    # IP pool name.
     ${Name},
 
-    [Parameter(ParameterSetName='PowerOn')]
+    [Parameter(ParameterSetName='Get')]
+    [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='PowerOn')]
+    [Parameter(ParameterSetName='Get')]
+    [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String]
+    [System.String[]]
     # Subscription credentials that uniquely identify Microsoft Azure subscription.
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='PowerOnViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
     # Identity Parameter
     # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
     ${InputObject},
+
+    [Parameter(ParameterSetName='List')]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Query')]
+    [System.String]
+    # OData filter parameter.
+    ${Filter},
 
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
@@ -99,12 +108,6 @@ param(
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
-
-    [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
-    [System.Management.Automation.SwitchParameter]
-    # Run the command as a job
-    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
@@ -125,12 +128,6 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
-
-    [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
-    [System.Management.Automation.SwitchParameter]
-    # Run the command asynchronously
-    ${NoWait},
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
@@ -158,7 +155,6 @@ param(
     ${ProxyUseDefaultCredentials}
 )
 
-
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
     if ($PSBoundParameters.ContainsKey(('Name')))
@@ -169,7 +165,6 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Start-AzsScaleUnitNode @PSBoundParameters
+    Azs.Fabric.Admin.internal\Get-AzsIPPool @PSBoundParameters
 }
 }
-
