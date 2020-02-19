@@ -96,6 +96,12 @@ param(
     # Wait for .NET debugger to attach
     ${Break},
 
+    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    [Parameter(Mandatory = $false)]
+    [switch]
+    ${Force},
+
     [Parameter(DontShow)]
     [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
@@ -139,6 +145,7 @@ process
         if ($null -ne $UpdateName -and $UpdateName.Contains('/'))
         {
             $PSBoundParameters['UpdateName'] = $UpdateName.Split("/")[-1]
+            $UpdateName = $PSBoundParameters['UpdateName']
         }
     }
 
@@ -149,16 +156,14 @@ process
         if ($null -ne $Name -and $Name.Contains('/'))
         {
             $PSBoundParameters['Name'] = $Name.Split("/")[-1]
+            $Name = $PSBoundParameters['Name']
         }
     }
 
-    Write-host "Have You Ran Test-Azurestack?" 
-    $Readhost = Read-Host " ( Y / N ) " 
-    Switch ($ReadHost.ToLower()) 
-     { 
-       y {Azs.Update.Admin.internal\Resume-AzsUpdateRun @PSBoundParameters}
-       default {Write-host "Please Run and Pass Test-Azurestack -UpdateReadiness before Installing the update"}
-     }
+    if ($Force.IsPresent -or $PsCmdlet.ShouldContinue("Have You Ran Test-Azurestack?", "Resuming Update: $UpdateName Run: $Name")) {
+        $PSBoundParameters.Remove('Force') | Out-Null
+        Azs.Update.Admin.internal\Resume-AzsUpdateRun @PSBoundParameters
+    }
 }
 
 }
