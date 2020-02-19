@@ -236,21 +236,34 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Use the default credentials for the proxy
-    ${ProxyUseDefaultCredentials}
+    ${ProxyUseDefaultCredentials},
+
+    [Parameter(Mandatory = $false)]
+    [switch]
+    $Force
 )
 
 
 process {
-    # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
-    if ($PSBoundParameters.ContainsKey(('Name')))
-    {
-        if ($null -ne $Name -and $Name.Contains('/'))
+        # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
+        if ($PSBoundParameters.ContainsKey(('Name')))
         {
-            $PSBoundParameters['Name'] = $Name.Split("/")[-1]
+            if ($null -ne $Name -and $Name.Contains('/'))
+            {
+                $PSBoundParameters['Name'] = $Name.Split("/")[-1]
+            }
+        }
+
+        if ($PSCmdlet.ShouldProcess("$Name" , "Repair scale unit node")) {
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Repair scale unit node?", "Performing operation repair scale unit node for $Name")) {
+
+                if ($PSBoundParameters.ContainsKey(('Force'))){
+                    $null = $PSBoundParameters.Remove('Force')
+                }
+
+                Azs.Fabric.Admin.internal\Repair-AzsScaleUnitNode @PSBoundParameters
+            }
         }
     }
-
-    Azs.Fabric.Admin.internal\Repair-AzsScaleUnitNode @PSBoundParameters
-}
 }
 

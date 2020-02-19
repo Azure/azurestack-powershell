@@ -244,6 +244,11 @@ directive:
       subject: InfrastructureRole
     hide: true
 
+  - where:
+      verb: Restart
+      subject: InfrastructureRole
+    hide: true
+
   # [IPPool]: Following changes are for IpPool
   # [IPPool]: Rename property name
   - where:
