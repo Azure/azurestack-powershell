@@ -111,9 +111,9 @@ directive:
   - where:
       subject: UpdateRunTopLevel
     hide: true
-    # Hide the auto-generated Install-AzsUpdate and exposte it through customized one for the Test-Azurestack check
+    # Hide the auto-generated Install-AzsUpdate and Get-AzsUpdate and exposte it through customized one
   - where:
-      verb: Install
+      subject: Update
     hide: true
     # Format Output Values
   - where:
