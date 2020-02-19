@@ -1,18 +1,7 @@
-### Example 1: {{ Add title here }}
+### Example 1: Install-AzsUpdate By Name
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+PS C:\> Install-AzsUpdate -Name Microsoft1.1907.0.10
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
+Commandlet allows you to install specific updates by name.
+Note that there is a requirement that the update version is strictly greater than the current version.

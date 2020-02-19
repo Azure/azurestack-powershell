@@ -1,18 +1,40 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get All Updates
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsUpdate
 
-{{ Add output here }}
+Location        DisplayName                    Name                                     State                Publisher
+--------        -----------                    ----                                     -----                ---------
+northwest       AzS Update - 1.1907.0.10       northwest/Microsoft1.1907.0.10           Installed            Microsoft
+northwest       AzS Update - 1.1907.0.13       northwest/Microsoft1.1907.0.13           Installed            Microsoft
+northwest       AzS Update - 1.1907.0.20       northwest/Microsoft1.1907.0.20           Installed            Microsoft
 ```
 
-{{ Add description here }}
+Without any parameters, Get-AzsUpdate will list all updates that the stamp can discover
 
-### Example 2: {{ Add title here }}
+### Example 2: Get Update by Name
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsUpdate -Name Microsoft1.1907.0.10
+or
+PS C:\> Get-AzsUpdate -Name northwest/Microsoft1.1907.0.10
 
-{{ Add output here }}
+
+Location        DisplayName                    Name                                     State                Publisher
+--------        -----------                    ----                                     -----                ---------
+northwest       AzS Update - 1.1907.0.10       northwest/Microsoft1.1907.0.10           Installed            Microsoft
 ```
 
-{{ Add description here }}
+Will retrieve all updates that correspond to the specified Name
 
+
+### Example 3: Get All Updates by Location
+```powershell
+PS C:\> Get-AzsUpdate -Location northwest
+
+Location        DisplayName                    Name                                     State                Publisher
+--------        -----------                    ----                                     -----                ---------
+northwest       AzS Update - 1.1907.0.10       northwest/Microsoft1.1907.0.10           Installed            Microsoft
+northwest       AzS Update - 1.1907.0.13       northwest/Microsoft1.1907.0.13           Installed            Microsoft
+northwest       AzS Update - 1.1907.0.20       northwest/Microsoft1.1907.0.20           Installed            Microsoft
+```
+
+Will retrieve all updates within a specified Location. Currently, only one location is supported so this is the equivalent as just Get-AzsUpdate

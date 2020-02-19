@@ -1,18 +1,22 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get All Updates Locations
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsUpdateLocation
 
-{{ Add output here }}
+Name                 CurrentVersion       CurrentOemVersion    State
+----                 --------------       -----------------    -----
+northwest            1.1912.0.30          2.1.1907.4           AppliedSuccessfully
 ```
 
-{{ Add description here }}
+Without any parameters, this commandlet will retrieve all update locations
 
-### Example 2: {{ Add title here }}
+### Example 2: Get All Updates Locations by Name
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsUpdateLocation -Name northwest
 
-{{ Add output here }}
+Name                 CurrentVersion       CurrentOemVersion    State
+----                 --------------       -----------------    -----
+northwest            1.1912.0.30          2.1.1907.4           AppliedSuccessfully
 ```
 
-{{ Add description here }}
+Will retrieve all update locations that matches the specified Name parameter
 
