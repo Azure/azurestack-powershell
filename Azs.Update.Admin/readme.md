@@ -110,7 +110,7 @@ directive:
     # Hide the auto-generated Get-AzsUpdateRunTopLevel. This will effectively remove the commandlet since we dont have a customized one
   - where:
       subject: UpdateRunTopLevel
-    hide: true
+    remove: true
     # Hide the auto-generated Install-AzsUpdate and Get-AzsUpdate and exposte it through customized one
   - where:
       subject: Update
