@@ -17,7 +17,7 @@ VirtualMachineCount                : 100
 
 Any parameters that are not specified will be set to their default parameter, shown above.
 
-### Example 2: Create a Comute Quota with Custom Parameters
+### Example 2: Create a Compute Quota with Custom Parameters
 ```powershell
 PS C:\>  New-AzsComputeQuota -Name ExampleComputeQuotaWithCustomParameters -Location local -AvailabilitySetCount 9 -CoresCount 99 -PremiumManagedDiskAndSnapshotSize 1024 -StandardManagedDiskAndSnapshotSize 1024 -VirtualMachineCount 99 -VMScaleSetCount 2
 

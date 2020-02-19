@@ -36,12 +36,3 @@ VirtualMachineCount                : 100
 
 Specify the Quota's name on the command line to retrieve a specific quota. 
 
-### Example 3: (TODO) Get Compute Quota that Does Not Exist
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-

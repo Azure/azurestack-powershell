@@ -199,25 +199,21 @@ directive:
     set:
       parameter-name: VmOsType
 
-	# Rename SourceBlobUri parameter to SourceBlob
   - where:
       parameter-name: SourceBlobUri
     set:
       parameter-name: SourceBlob
 
-	# Rename VmScaleSetEnabled parameter to VMScaleSetEnabled
   - where:
       parameter-name: VmScaleSetEnabled
     set:
       parameter-name: VMScaleSetEnabled
   
-	# Rename SupportMultipleExtension parameter to SupportMultipleExtensions
   - where:
       parameter-name: SupportMultipleExtension
     set:
       parameter-name: SupportMultipleExtensions
 
-	# Rename Id parameter in Get-AzsDisk to Name
   - where:
       parameter-name: Id
       verb: Get
@@ -225,7 +221,7 @@ directive:
     set:
       parameter-name: Name
 
-	# Set default value for CoresLimit parameter in New-AzsComputeQuota to 100 
+# New Compute Quota --- CoresLimit parameter
   - where:
       parameter-name: CoresLimit
       verb: New
@@ -233,19 +229,17 @@ directive:
       default:
         script: '100'
 
-	# Set alias for CoresLimit parameter to CoresLimit
   - where:
       parameter-name: CoresLimit
     set:
       alias: CoresLimit
 
-	# Rename CoresLimit parameter to CoresCount
   - where:
       parameter-name: CoresLimit
     set:
       parameter-name: CoresCount
 
-	# Set default value for AvailabilitySetCount parameter in New-AzsComputeQuota to 10
+# New Compute Quota --- AvailabilitySetCount parameter
   - where:
       parameter-name: AvailabilitySetCount
       verb: New
@@ -253,7 +247,7 @@ directive:
       default:
         script: '10'
 
-	# Set default value for VirtualMachineCount parameter in New-AzsComputeQuota to 100
+# New Compute Quota --- VirtualMachineCount parameter
   - where:
       parameter-name: VirtualMachineCount
       verb: New
@@ -261,7 +255,7 @@ directive:
       default:
         script: '100'
 
-	# Set default value for MaxAllocationStandardManagedDisksAndSnapshot parameter in New-AzsComputeQuota to 2048
+# New Compute Quota --- MaxAllocationStandardManagedDisksAndSnapshot parameter
   - where:
       parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
       verb: New
@@ -269,13 +263,12 @@ directive:
       default:
         script: '2048'
 
-	# Rename MaxAllocationStandardManagedDisksAndSnapshot parameter to StandardManagedDiskAndSnapshotSize
   - where:
       parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
     set:
       parameter-name: StandardManagedDiskAndSnapshotSize
 
-	# Set default value for MaxAllocationPremiumManagedDisksAndSnapshot parameter in New-AzsComputeQuota to 2048
+# New Compute Quota --- MaxAllocationPremiumManagedDisksAndSnapshot parameter
   - where:
       parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
       verb: New
@@ -283,26 +276,24 @@ directive:
       default:
         script: '2048'
 
-	# Rename MaxAllocationPremiumManagedDisksAndSnapshot parameter to PremiumManagedDiskAndSnapshotSize
   - where:
       parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
     set:
       parameter-name: PremiumManagedDiskAndSnapshotSize
 
-	# Rename Disk parameter in New-AzsDiskMigrationJob to Disks
+# New Disk Migration --- Disks Parameter
   - where:
       parameter-name: Disk
       verb: New
     set:
       parameter-name: Disks
 
-	# Set alias for MigrationId parameter to MigrationId
+# New Disk Migration --- MigrationId Parameter
   - where:
       parameter-name: MigrationId
     set:
       alias: MigrationId
-	
-	# Rename MigrationId parameter to Name
+
   - where:
       parameter-name: MigrationId
     set:
