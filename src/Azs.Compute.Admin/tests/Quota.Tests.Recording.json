@@ -1,0 +1,2087 @@
+{
+  "Quota+[NoContext]+TestListQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1159" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1e360a87-70d9-403c-a6aa-223701d13679" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvyHvjsSJ4RArqt+eDZ+GbL4J/WNPBe7I/bLgygHLSivcpIzy5ybcy2f7+Np4LA/Is7NTd04jFly3+QrcPGS1pzR4WmTuK4aHJif9+isuO9nvikdgelh6roIerFhozUL+z0CU7oFSV9RbyXLH006Jz" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14537" ],
+        "x-ms-request-id": [ "1e360a87-70d9-403c-a6aa-223701d13679" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190159Z:1e360a87-70d9-403c-a6aa-223701d13679" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:01:58 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2206" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
+    }
+  },
+  "Quota+[NoContext]+TestGetQuota+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1160" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b5f6d7de-98af-44f0-a96a-6785074e42fe" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARuo0UKSHPj6xenAbt/Ed6dWumMRotzWEj91PUpjgVqF6rVx1A537GgQ3ijO+AU0aq13M5qIKbhe43PuheMIGoqrJqXswlCDbwHlySqj1Mjj86wAacn/CX85MpeuB/8UnOniwkmwgEAYNjDk4JXAU4=" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14535" ],
+        "x-ms-request-id": [ "b5f6d7de-98af-44f0-a96a-6785074e42fe" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190159Z:b5f6d7de-98af-44f0-a96a-6785074e42fe" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:01:58 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2206" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
+    }
+  },
+  "Quota+[NoContext]+TestGetQuota+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default%20Quota?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1161" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "05fcda83-36ea-4a34-b7e7-9c588e167aad" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG2MIGzoAMKAQChCwYJKoZIgvcSAQICooGeBIGbYIGYBgkqhkiG9xIBAgICAG+BiDCBhaADAgEFoQMCAQ+ieTB3oAMCARKicARuvf2zBmU90zTx4M83WsgyNE1NMnG8s8o7OTwVKzpDMMvQXbykJCQRJSbKbCcNSGfYxmbfEztwyODMmG9HWukA7OkW6FFvAu47lz1y7Sk9q362QviJP05Cc5rq9iVFqNz3s9ogGZiVqrrDcFOAuQc=" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14534" ],
+        "x-ms-request-id": [ "05fcda83-36ea-4a34-b7e7-9c588e167aad" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190200Z:05fcda83-36ea-4a34-b7e7-9c588e167aad" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:00 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "429" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1162" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8c527704-9dd3-4277-83dd-1ff6c01d3807" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrfzq0uBOLcKwahP4sYSx7Tvq5ow6y7uiBixlpUafU+6ntrIj0a+TTE/+hTfpyQiJVNFG6MmkiCW7hroTPXVhXeFJgCRaVPUyCMK1DU18K02AegR5EmimjJfZtJrtOD9H1q5zZTpwJ+YyK18GpEr8" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14533" ],
+        "x-ms-request-id": [ "8c527704-9dd3-4277-83dd-1ff6c01d3807" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190200Z:8c527704-9dd3-4277-83dd-1ff6c01d3807" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:00 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2206" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default%20Quota?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1163" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "06fc204e-bd7e-4468-a2a7-0f3327a41e6b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv5UT9iB2A3DR2pEHW8J6vkZ64M3NVQDfCMNfuyeaYsC7YCQm22BSkOdQn4enZqkRBjEKeev7Ytw2riivQ5zAWl8fdnE4WjsogD0lUXIV+8ZA3n4QfdXI3V+LqfGnSjBHYxWF5ymQ9RjPneUAwsfWK" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14532" ],
+        "x-ms-request-id": [ "06fc204e-bd7e-4468-a2a7-0f3327a41e6b" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190200Z:06fc204e-bd7e-4468-a2a7-0f3327a41e6b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:00 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "429" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1164" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "fd1d5823-1ed4-4d39-ade9-71e46d754040" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvEXsEOX9hS3hfQOPWpQyJZ668uSjNDDJvZOhvBbKoGL7kWeEtboMRD8PF8pqmhK/N3RRrAd63PmITLqXUN2iSRA+o06JyFdP6kYDlEpHS2FmI7IvgP0eUfhcgnDktoBu0YcJs5D/LUNfczpAkMboL" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14531" ],
+        "x-ms-request-id": [ "fd1d5823-1ed4-4d39-ade9-71e46d754040" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190201Z:fd1d5823-1ed4-4d39-ade9-71e46d754040" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:01 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "407" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2018-02-09+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1165" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "cea6df43-914c-4922-80bd-ce551c6656bd" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvR621AdFrOXcioOaBKPPd0lKOILrA+TsM/0BRT+opLp76trvHl9XfpNpgAjBKdaOUgf5cbHnV26RVk5rRRpDfkDZaHFdLnelfvtvhly/d2B7BDIZI7CiplbxXEenn2G3K6XIwAH+wULethvubcvmU" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14530" ],
+        "x-ms-request-id": [ "cea6df43-914c-4922-80bd-ce551c6656bd" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190201Z:cea6df43-914c-4922-80bd-ce551c6656bd" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:01 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "452" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1166" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "875ce979-4aea-4eb7-8113-49241bd5f8ec" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYk5ghCSh40tAsZz+a4jHpQOYwIRYjNiQMxR6Hc+PjeEy2VxEf5VponD8uGghsOVd+/Dy4syHmO+W2WCkoK8NG97sXS8EOM/mlryWEI9IrhS0FLFSjbNGUlfSRWDaiL6ku3G2CRaVh7DW/APCpz38" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14529" ],
+        "x-ms-request-id": [ "875ce979-4aea-4eb7-8113-49241bd5f8ec" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190202Z:875ce979-4aea-4eb7-8113-49241bd5f8ec" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:01 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2018-02-09+6": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1167" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8b94bf4d-0bf5-4634-b468-f12d38be743a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvNXX1nIlhI0+JPp4O2xb2VOKeO62p8SuVQvFHZDN1gzgnv41kand17ZV87McsSfuT4/HynOwm3HfBVt4ePsDqUbmwraC2wqh5aU9bo1fQcmF6tTZREZ5CIx4i9aUe0D17g5xMDpISelX3KGW5TJcA" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14528" ],
+        "x-ms-request-id": [ "8b94bf4d-0bf5-4634-b468-f12d38be743a" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190202Z:8b94bf4d-0bf5-4634-b468-f12d38be743a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:02 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "455" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1168" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1e5f3b3c-67f3-4416-81e1-32218d58948c" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvLrz5hiHgd1Mp22RdMOixFGNxiqs49ae15huqvQTT+pftfiCuw5Jf8U2uvplxFJwvJbIaoONU9m4jyVGYOrNyhAaWOEkfMt7LcAocOpkoTjIdnL6Rfx/z/fxCLlZ9D2/UkJ5PpzAteHt6JhVjSkYG" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1169" ],
+        "x-ms-request-id": [ "1e5f3b3c-67f3-4416-81e1-32218d58948c" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190202Z:1e5f3b3c-67f3-4416-81e1-32218d58948c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:02 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0\",\"name\":\"testQuota0\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1169" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "0ce713b6-ab2b-4a47-8afc-6e24bfb84630" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvXAgbnNwCUoX4dIaw25RLVlh1QXGGxti51vA3ZZ1jEZItseGKjpdL6YYPCICXSSMFvmt1pRIXrFGGqohSzhzIe0LmrnHrWFZzMihe+Uw2tezRjS5CMmNibe/3lok6oGHF9wFxstQn3VOYctLOEiwt" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1168" ],
+        "x-ms-request-id": [ "0ce713b6-ab2b-4a47-8afc-6e24bfb84630" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190203Z:0ce713b6-ab2b-4a47-8afc-6e24bfb84630" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:02 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1\",\"name\":\"testQuota1\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":1,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1170" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "56086363-9f25-4fa8-8972-beecb272d71a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+oBXcrzxE5G1+DwltTSHEHhxVYdj00okMhbiTdC/Vz5LCJY5e4fR6KdOuWKzS4EzpsoHskeYRFcj7lSTx/5vBYFo1XAUKFPWDfMBMzFhyeNf51AVBXQmPjnVBXBeL4rNzSItjlwvVW8zNPRxg/GN" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1167" ],
+        "x-ms-request-id": [ "56086363-9f25-4fa8-8972-beecb272d71a" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190203Z:56086363-9f25-4fa8-8972-beecb272d71a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:03 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2\",\"name\":\"testQuota2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+4": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1171" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "4a1b4273-a324-4a05-8d21-aaed7858100c" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/PIzNNPSonnDBdO/fs2FTKCs3AvbQDvUX3r/tYxbp/ds4raWvxpGnlIUc6IvUAiwBKNcbXFrN3mmYiqSBF4JYqSR1nv8OskaHdG+tlXhf7nVRPbt8Ijz+qROx5Vk3h9hQgYRzQOtyzOzQ+074/ad" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1166" ],
+        "x-ms-request-id": [ "4a1b4273-a324-4a05-8d21-aaed7858100c" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190204Z:4a1b4273-a324-4a05-8d21-aaed7858100c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:03 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3\",\"name\":\"testQuota3\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+5": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1172" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "97ef6689-18e3-4cbd-9e62-daa95648f029" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvN6AqfQrWzx5ArGHNKzJWOpSNWoH8inWpMR/mX9/rm/f0m3f64mpEUKkpxWod1uBxqGTnm7s5s5n3wa+8MP0XbOrr6KgCX8OyDD6mPrJap0VFjww/VXXUGVUc90qYK8UkTQ2zdSFeGeJUJYbJ3iim" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1165" ],
+        "x-ms-request-id": [ "97ef6689-18e3-4cbd-9e62-daa95648f029" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190204Z:97ef6689-18e3-4cbd-9e62-daa95648f029" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:03 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4\",\"name\":\"testQuota4\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+6": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1173" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "07aefcac-391a-453c-9a01-895f539bccae" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvu82DD5JCy0vZ7TlhHGBSe5yUrbEsnwOKVy/tSZEPufwSYZu5xfeijyMShNfqPhRmGlEe0vzY4ZUPwvY5Q8fOnb7OiU+9FVqqKeSD6xc3JVMs5kV0EhLn5PnfGYxi8bmYmi4T3dn0V701/ma+tUJP" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1164" ],
+        "x-ms-request-id": [ "07aefcac-391a-453c-9a01-895f539bccae" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190204Z:07aefcac-391a-453c-9a01-895f539bccae" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5\",\"name\":\"testQuota5\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+7": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1174" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "f07ff7f8-12e4-48e1-a737-a905c8cd91ff" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3wranlCkv+W8WX+bcLd/k21I5G2otDo0n8HopflozcJHRNgySmgaEAncfDYVLRZn6Iq6coDNVTQDKGWmKA+tzGu1/4396Sl0HvFk0Tj/bGwKU9phpJAXHT5xy65MxXqth4Z/KSXoW/9JoKjoO7NH" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1163" ],
+        "x-ms-request-id": [ "f07ff7f8-12e4-48e1-a737-a905c8cd91ff" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190205Z:f07ff7f8-12e4-48e1-a737-a905c8cd91ff" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6\",\"name\":\"testQuota6\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+8": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 100,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 100,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 100,\r\n    \"virtualMachineCount\": 100,\r\n    \"vmScaleSetCount\": 100\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1175" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "264" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b4e00b0d-f427-4736-a658-67860853af4f" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvepEuHjLnkfGI/jQMKJtrI4N4y/LGsSf6NkRR4IZmIJjgsuyGVd/a9bxzlmrb08sYsfJcDbhqHXrfjRg4S5WIkeKThWynbELkQB+5uTy7SRhUn3kK7thgw+dt+IHiu/wGtVU83hRIqW9WWH1Tekp5" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1162" ],
+        "x-ms-request-id": [ "b4e00b0d-f427-4736-a658-67860853af4f" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190205Z:b4e00b0d-f427-4736-a658-67860853af4f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "425" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7\",\"name\":\"testQuota7\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":100,\"vmScaleSetCount\":100,\"maxAllocationStandardManagedDisksAndSnapshots\":100,\"maxAllocationPremiumManagedDisksAndSnapshots\":100}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+9": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1000,\r\n    \"coresLimit\": 1000,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1000,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1000,\r\n    \"virtualMachineCount\": 1000,\r\n    \"vmScaleSetCount\": 1000\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1176" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "270" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "39e2c89a-e94e-4768-a6dc-0ddd203fe523" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJm4r9ll6v7B+kk8NS2d3V8PNRangKRBdjEudbUefGh+Ruex730UVHX6IKYjK1Nn94O+jZCMp5S1weGPYYRE2A0f8/mchhTN8dolMjIrn8MnkcD0uxgKY8VtrtCwd8DMX35NgTWvLEd7t1DPulfSc" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1161" ],
+        "x-ms-request-id": [ "39e2c89a-e94e-4768-a6dc-0ddd203fe523" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190206Z:39e2c89a-e94e-4768-a6dc-0ddd203fe523" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:06 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "431" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8\",\"name\":\"testQuota8\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1000,\"coresLimit\":1000,\"availabilitySetCount\":1000,\"vmScaleSetCount\":1000,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+10": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1177" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "28f04a19-88e1-40a0-a770-22b5ede71598" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvkzsn2qg5imdoQ0Aqlxi6iKMhHmkog+OrJMhYLKNi0Dq/GKA1IbuBPGmH6YfnjPpvD452xCTfWiRdFZzZg/YhbdZ2bqUy5rTb9asDrBMYsfrLcOlYYMH71l0UdUDHAtq8wQmhlmrujLlqPkHdrUjl" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14978" ],
+        "x-ms-request-id": [ "28f04a19-88e1-40a0-a770-22b5ede71598" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190206Z:28f04a19-88e1-40a0-a770-22b5ede71598" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:06 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+11": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1178" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "dc200fbc-a3e5-4eab-95c9-0964a6ec4a8e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvUPMGhs4pdqBr058SiQFhGu3fa8M1qsEWTmdS+Klo36vgy00mmCtRh4CebxJD+y7zzanZg3nDrrKp7c84R9X+XOaunVuIdDutiv1Skmf4DedQqXhGtkzcr33SwY9uOGA2btD9jSP1S7ogolxGM/tl" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14977" ],
+        "x-ms-request-id": [ "dc200fbc-a3e5-4eab-95c9-0964a6ec4a8e" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190207Z:dc200fbc-a3e5-4eab-95c9-0964a6ec4a8e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:06 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+12": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1179" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "756984d5-064a-4b50-b37e-4736c47116e3" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9DUJo8SxhKJDwJvB/neg4hoAUdKy8/B51U0MORQXnTbNAbYIGXENsyz2hxNzuunEOe8pXTG1AS/z4wM7T7uIyVm7JsmZWANHnisWohKyzWF6oVwu+PWBCTTBXmTQLrhfOgvPS/q3wrqDpN+YuHd1" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14976" ],
+        "x-ms-request-id": [ "756984d5-064a-4b50-b37e-4736c47116e3" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190207Z:756984d5-064a-4b50-b37e-4736c47116e3" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:07 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+13": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1180" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "75a168e0-73d7-4172-97d1-cf2a70d86969" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvM7uBohdMcqK5WK3gO2RGonsP+M8BJIUp1Ia04CPCl9KSl5ngvKkPcLrWbExj6uQFlTKJFDY55CgGUsaz4OVxfsO3JUSMNfP5N9IfU+R5bIYGFn2RYH0axOfq5HqYYC+Zqz8/0b3GGxpaygRi7Emx" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14975" ],
+        "x-ms-request-id": [ "75a168e0-73d7-4172-97d1-cf2a70d86969" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190207Z:75a168e0-73d7-4172-97d1-cf2a70d86969" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:07 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+14": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1181" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "2e7b5054-a5cc-411f-9aaf-4b67eede4268" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvOYwJIgPjk+cUZ/P/cY91dLPgmveVzajukOm0FWKayfzurbKvMk5rBfZ3s8C7MWCsAWXni1E25ZUTQa2mrnXsadntJwKF9su4YQi8PuSVbJKTj+16Zo2hALsRVYqcAtC244KufLcz3fi26RjOP+8z" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14974" ],
+        "x-ms-request-id": [ "2e7b5054-a5cc-411f-9aaf-4b67eede4268" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190208Z:2e7b5054-a5cc-411f-9aaf-4b67eede4268" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:07 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+15": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1182" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "c9a03453-0cf6-4d3b-9ee1-0734f359b506" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvVMySRNNQtFfy4+3DHvtzOvtqFqNTIqimHe2pmc05tc9j5tsx+jB0jXNdxGEWDjKOFmj4tO5OJ0Hh4HO60sp4Po3O+h7TIYymrYBs+SF85Oc2Qxkb9KSaQCnxLaG5vSHdM5h+iCFmrhvZlE9HuCc7" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14973" ],
+        "x-ms-request-id": [ "c9a03453-0cf6-4d3b-9ee1-0734f359b506" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190208Z:c9a03453-0cf6-4d3b-9ee1-0734f359b506" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:08 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+16": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1183" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "db477ac2-eb7b-4350-9095-67c9a63ae729" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvL1VNGK3GkLH13Zu8PYFmfaM94Cy3ekzpMhq3HZhAnz1y0clW+IlS2fE2Ey6alzHVbA2eoHb6kNHaDQc+CC5EiSRN14UZv81TdEAfWzLh1nPipUaaUUnNFnzfyKWmuVcKpIqcx4QdvK00GU2iQ6VU" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14972" ],
+        "x-ms-request-id": [ "db477ac2-eb7b-4350-9095-67c9a63ae729" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190209Z:db477ac2-eb7b-4350-9095-67c9a63ae729" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:08 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+17": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1184" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "ee3f8cf5-9098-46dc-aa08-5dab9cafdf0f" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvcP2Il3tjIo5LQ/I3GGyc49C7Jee6Ez2us4gfRYPR6s/W0OUnypPQ1JJ9dg+m+iAO4yOERiyjt+isR6zcy10ZNChetBZXBchZEqxYOeeRjEHN6aLg95nIjG1xj8pkMC1g7Np+54tkO7pdKz7DOFpU" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14971" ],
+        "x-ms-request-id": [ "ee3f8cf5-9098-46dc-aa08-5dab9cafdf0f" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190209Z:ee3f8cf5-9098-46dc-aa08-5dab9cafdf0f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:08 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+18": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1185" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "2f4874b5-8066-428e-9bfe-be8f0af5b5a6" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvKN344UMi+z3WZ1HVqSozI5+Glisjg6fePcxSPAYiVo2yUILQHFbFdS8Q/uNBxrYfmSfGBrLFkOkj999/m0++p01ZWrZASmhwnX3LrnSps36460S4DDadwVKLMfgD30qLedS+Y+BUa8zPezrIUug1" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14970" ],
+        "x-ms-request-id": [ "2f4874b5-8066-428e-9bfe-be8f0af5b5a6" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190209Z:2f4874b5-8066-428e-9bfe-be8f0af5b5a6" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:09 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1186" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "682dffcd-bf90-4099-9054-9c282fda639a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv4A3R0kuGAAzoOeutSTUbZC4HGo6UcnMi4od6c4H2T0k8A91QlsKKfaRatKEKtWbaZ16ifZEkZGxTdRSYpmjLup0X7r+fa5Lu29z0UCTpnkhwQuHIOKAdmCJRiyTX2QkL3vqZuOCvfRG8asoUnUv3" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1160" ],
+        "x-ms-request-id": [ "682dffcd-bf90-4099-9054-9c282fda639a" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190210Z:682dffcd-bf90-4099-9054-9c282fda639a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:09 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0\",\"name\":\"testQuota0\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1187" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "0262b3b9-71ed-4710-96fb-1c48b225bd4d" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvglvJxnUDOtivO8Jaa1Y+02TmVmbNXGpBixm8ElgfxTXm0JgJSxSdeIbeGe2XcAGChEEhJRF4W08rhasCKYV+O6T9ILrXrsdg6frHs8dvRB0bXERBd2SZhzq6ppX2v3T4cnyjx6k8WD19FIa6f0G1" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1159" ],
+        "x-ms-request-id": [ "0262b3b9-71ed-4710-96fb-1c48b225bd4d" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190210Z:0262b3b9-71ed-4710-96fb-1c48b225bd4d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:10 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1\",\"name\":\"testQuota1\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":1,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1188" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d2ca58ad-cc21-417c-b22a-fc33573788c3" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvXDdALtU7Ksu+AYFL5viTvh9cJkYly9zAV66m099A4M0Gds664Lq0oQU5KOItqJuzaX+NF9po4jQqRTdYwPRPLBLGcCfVITLorfH7hGZYT7kAJxhMPGqKVpy5nVOrlcbe6cYPnFYGQM2GxcrhL8y3" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1158" ],
+        "x-ms-request-id": [ "d2ca58ad-cc21-417c-b22a-fc33573788c3" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190211Z:d2ca58ad-cc21-417c-b22a-fc33573788c3" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:10 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2\",\"name\":\"testQuota2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+4": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1189" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b7171eb7-3290-4077-8938-82dadddbe03b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSB/fWmC8oD4tDvkhiEjv4ksWX4Tk3XBvdU+51EfovGdNMQ0LTe550y2halDlECPD64/SyGYBYw+mo1oWDrSrpic8VknIjVbrvyNOBfqW3HGtWO1Gng4F7SIQIzAH2VWpM0kyg41Ib9WIMFV9RfNH" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1157" ],
+        "x-ms-request-id": [ "b7171eb7-3290-4077-8938-82dadddbe03b" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190211Z:b7171eb7-3290-4077-8938-82dadddbe03b" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:10 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3\",\"name\":\"testQuota3\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+5": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1190" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8d27cace-399c-4c48-9007-f8fc84d815e6" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/iLp3F6M0bHaehRSZVgKfU2i35NkPtGPFH8Qd5DYCYvuqW8RvtIrKEaKlG3VL5I45R661fz+jvbIkK6A9fEy72CJaMDe1YiIXhKmNQJYHxzVGOClbdHrtQ9ebH6StdX3aQ6EcilNLctjMoSiRv8+" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1156" ],
+        "x-ms-request-id": [ "8d27cace-399c-4c48-9007-f8fc84d815e6" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190212Z:8d27cace-399c-4c48-9007-f8fc84d815e6" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:12 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4\",\"name\":\"testQuota4\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+6": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1191" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "75fc9d63-b966-4d32-850b-99b95c2d2f81" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvnISIxeq3BYqJtKt5KG68K6UQw7vlceiOIvuqZBfNSQPMnuZvtzjKVX7yXt5RpYnJANqLr0YUM6SZlcZ7jbKPJYfRbeI5/iVq12cnl2IZijYK5uKY+/cjsc0QHFkpv1q3THe9HkKO0WOH4a6rBj/f" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1155" ],
+        "x-ms-request-id": [ "75fc9d63-b966-4d32-850b-99b95c2d2f81" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190212Z:75fc9d63-b966-4d32-850b-99b95c2d2f81" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:12 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5\",\"name\":\"testQuota5\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+7": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1192" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b4ccd7a8-6185-48a8-b6de-458acad5fb53" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvs2ZjVg42tIVgnd7UE99i5jB3R3ZQ7TcpTKYkrlbDz22sotl19LTrjpySPKihlZat8muAG8whgWsqQkQsPwIzZfDrHg/J6LlvE+3P/w9uJeX79cCa+T2W7Yz8PW+icTox3w1K5IxliHG4LE/OIJe2" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1154" ],
+        "x-ms-request-id": [ "b4ccd7a8-6185-48a8-b6de-458acad5fb53" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190213Z:b4ccd7a8-6185-48a8-b6de-458acad5fb53" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:12 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "413" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6\",\"name\":\"testQuota6\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+8": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 100,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 100,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 100,\r\n    \"virtualMachineCount\": 100,\r\n    \"vmScaleSetCount\": 100\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1193" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "264" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "e69ad222-2024-478e-bee9-f48fedd4f873" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvE0MZk/NH8hzn8Xay9o2xfX2Sgxtzd+SDB7gR9HGEULeQ0NYnUazDFX3WddUHAflqjd2rLyqpZ5bSXCV2oBoAq8KJ7Pug86HPu+uv4eBQd4rgIj2guUrOp2E0z33mZbxROY/1kxZeHiB7ASWH0oiO" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1153" ],
+        "x-ms-request-id": [ "e69ad222-2024-478e-bee9-f48fedd4f873" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190213Z:e69ad222-2024-478e-bee9-f48fedd4f873" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:13 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "425" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7\",\"name\":\"testQuota7\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":100,\"vmScaleSetCount\":100,\"maxAllocationStandardManagedDisksAndSnapshots\":100,\"maxAllocationPremiumManagedDisksAndSnapshots\":100}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+9": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1000,\r\n    \"coresLimit\": 1000,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1000,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1000,\r\n    \"virtualMachineCount\": 1000,\r\n    \"vmScaleSetCount\": 1000\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1194" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "270" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "aaad8fbe-588e-4c70-9e73-d70940357103" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGfNwDyJPv3O8QbOfFRbZOLO3QPA0zBM2dmRQFoLPUdmIKykVK+U1N4gs5Qa8dBtlpRP56n0FXvfEQsl/JRp8XRkUjmEJCnbEPCd/9BMLbn6EztUco8Cnicpx+1yhMiswjANp4Vmc1OERxLW4jAIk" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1152" ],
+        "x-ms-request-id": [ "aaad8fbe-588e-4c70-9e73-d70940357103" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190214Z:aaad8fbe-588e-4c70-9e73-d70940357103" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:13 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "431" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8\",\"name\":\"testQuota8\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1000,\"coresLimit\":1000,\"availabilitySetCount\":1000,\"vmScaleSetCount\":1000,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+10": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1195" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d2fc1512-565b-4513-be17-0d3f2e1be599" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbGwzBcXmTnUtvEiO/LIQ8f+TeJJMoWn5oSRDgjwEbl/RNB+hzX5g3g2oCy+XvLfVAys2srC7+usAdOrIOfhsqIRt0c48vgjRlVJshps3K6fuug6XwsFt/onCDJTYDbQwqxIyHpBN3isH/uM4Plx9" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14969" ],
+        "x-ms-request-id": [ "d2fc1512-565b-4513-be17-0d3f2e1be599" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190214Z:d2fc1512-565b-4513-be17-0d3f2e1be599" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:14 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+11": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1196" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "4d696dd4-4120-4a7b-b063-1108d2753d25" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtMbu2jTzyzvJwxGVZRls6LT0xGrLgVzspgwUYS/tLB/2bRFJF0dXt+MwAdQAF1/rax9yAkgmadxJycHr2GWMmLuukbTQO7+kI94QOmTQLYw8rPlSfQtzsLH+TRcrlacjMvatwh5Qaos3SxSxlUsy" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14968" ],
+        "x-ms-request-id": [ "4d696dd4-4120-4a7b-b063-1108d2753d25" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190215Z:4d696dd4-4120-4a7b-b063-1108d2753d25" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:14 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+12": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1197" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d2921061-3947-4cd7-bbf7-eaf1df9e4e6e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvb1EOeQDv0bp7YheZJ9rji7NnukPdf5cTRD4cDEiZfwKKIbUYFGKRieyQpCjTvWtnEZ0Z/W8OkIv3OktFeMzBCPlJfzYZIGVWkBOD8HgrAIV+4byIz6g3/2NrgoSeH75/3UjpyNT9CpFPUS5rr1jv" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14967" ],
+        "x-ms-request-id": [ "d2921061-3947-4cd7-bbf7-eaf1df9e4e6e" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190215Z:d2921061-3947-4cd7-bbf7-eaf1df9e4e6e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:15 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+13": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1198" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d19a7b83-befa-4cad-8996-058e8014d9ed" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvP1udS0UMDdRmDvAEhWWsAJTh/CTozqalb8rqXLbEZ/k7dthmDaxoX7mbLd9GxWJkmupfSpb1zmuTvQlljjFNQ7q1lHPGx0hk+/YtVH5wjB4Tigr3nSiJlUygdZQwqBa0nDYBSXcmN0n3FPFMUYyp" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14998" ],
+        "x-ms-request-id": [ "d19a7b83-befa-4cad-8996-058e8014d9ed" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190216Z:d19a7b83-befa-4cad-8996-058e8014d9ed" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:16 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+14": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1199" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "d3d81fe1-ab38-41d1-9f91-94f680cc2167" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvXV3SZ6vLHKOHqw41Ux0Sh7q+cpUbOIuiex1/rbHDpIY2uIQtneN2IvnMpmyNzMvXSXmqwYkNgyk5hZ21PZduzo/IFHTdz6Tj2AY5T9BSNRvSx55qdwueEJ8eQo0LRfUbqltDjQv2MGOQGXi+76Yc" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14997" ],
+        "x-ms-request-id": [ "d3d81fe1-ab38-41d1-9f91-94f680cc2167" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190217Z:d3d81fe1-ab38-41d1-9f91-94f680cc2167" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:16 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+15": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1200" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3bc137f7-0225-412c-9baf-c75b775de5fb" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv89WiW5zW/vNS5GguI9Tz6kWq/QukZt2d1PN1vTmtqcqgNtCfRRBx+Cs25hXLIRXSEvceALLxP8hsY2BsvQ+0vBrEy/cMyCGVuq6V4VJV8ZH32ygEi9tblXqF4CsbI0FYQXO6qtwdk5GfjwTq9rzs" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14996" ],
+        "x-ms-request-id": [ "3bc137f7-0225-412c-9baf-c75b775de5fb" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190217Z:3bc137f7-0225-412c-9baf-c75b775de5fb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:16 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+16": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1201" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1d436058-a0cf-4530-9dea-c8bbe929ce68" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvjO07LqRf/us1+juQA0JQcZ5i+KOP4LR0lzBL4xL72hDxe7/hgmDKUkf8xEPDwhVYjUtEllOCbk9S1NIamiBmLVM4cySO76Ca7WnkTuhizcblZwOKMgc6ap3DawTc7AHLrvDNU2CzX34kH0ER9Aap" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14966" ],
+        "x-ms-request-id": [ "1d436058-a0cf-4530-9dea-c8bbe929ce68" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190218Z:1d436058-a0cf-4530-9dea-c8bbe929ce68" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:17 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+17": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1202" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "f993ff46-c269-4880-95c4-5e489fa7da4e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvOJsyJf4X6sL6wdyUdi3XMVge3S3Tqh6kN/bsYGoeV7l8S656hTx/VtP2wMSh2IYJgkoRpn8JuxcOpTCUO4bAFRwklBChqHvBaqpqvGxrtbsBkENmxGhYUTrlVmv7BWMErK9+2JxqLqjJ2tgiYVXJ" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14965" ],
+        "x-ms-request-id": [ "f993ff46-c269-4880-95c4-5e489fa7da4e" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190218Z:f993ff46-c269-4880-95c4-5e489fa7da4e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:17 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+18": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1203" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "ebdd88a1-336c-445f-b648-a54ac35fbb1e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvRCxGxwe5SXeQ7fs0Wh+ktT0/leLNX20WK8ot6aCJAvTUEapHpSbwljEjg5B9n0CGophyNQQ+FXAG7tM30gvJApo4uJOdPks7z2gYvWnoCkV9uGTHImrpVrqZcKriQ/d+Bmn41FXviDbygd5jZX0G" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14964" ],
+        "x-ms-request-id": [ "ebdd88a1-336c-445f-b648-a54ac35fbb1e" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190219Z:ebdd88a1-336c-445f-b648-a54ac35fbb1e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:18 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestCreateInvalidQuota+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": -1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1204" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "253" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "5cea1207-53de-40a7-abc5-c1e75c74e968" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvkXa9IrUuLCG6Vu5y4rZiGkQaggAda0TgUWOVYVY/ZmMLZo89EDkxX617zBBWnMj7+47wzeDIk+IjAPr7xSvZPkbZRRGZ2XJLbiYd1kcvPGkj5KpeQN4JXmNwiRSwuvY0WsZWU8AtiwAy4g3Hto5I" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1151" ],
+        "x-ms-request-id": [ "5cea1207-53de-40a7-abc5-c1e75c74e968" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190219Z:5cea1207-53de-40a7-abc5-c1e75c74e968" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:18 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "407" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestDeleteNonExistingQuota+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1205" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "6f236d9e-9195-41b3-a6d1-71d2f855e789" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSxPTo2jYKDfckt1wByB6l1rere/ZQf8ZiAyQp9mFsST8A7OhOesDG4iw8fvkdiLDJdv8+Fj66vberfX4NmcbeL3qcXQkUkGdWxOpBundu0arNGWHa+lOnaZKbV9+TjymY/xRwNGycs6dqBPLdeZZ" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14963" ],
+        "x-ms-request-id": [ "6f236d9e-9195-41b3-a6d1-71d2f855e789" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190220Z:6f236d9e-9195-41b3-a6d1-71d2f855e789" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:20 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1206" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a4c6fa48-0856-4859-ae87-1cff20bae9db" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvNaQamHX4M6Se5zbt0dU5IkkO++cuXQAnGMvAs60V5l3vbRc7LoHUMQv4t5XwqV/1a/DzcX9DQ22tk3abZucZNe/w6t/p73BYvE2hFGEh8RMIZAQGUOcGTuSl4OGs3jBIuDmLdHoxvLQjtoFxiniQ" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1150" ],
+        "x-ms-request-id": [ "a4c6fa48-0856-4859-ae87-1cff20bae9db" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190221Z:a4c6fa48-0856-4859-ae87-1cff20bae9db" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:21 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1207" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "20c07c10-3a4e-4d72-944f-39f7bcb0eb1d" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvk259qxkeW7CwkNoETfLfn5MGs7CmOdm3ft4/0niOgNlEzxRyO5M06oOQJ+fXfboKq5Ws71vioo8kPfAOQqSS4cxOQLQU+C5vfDREtsB0AFqVB7Ggb3kPSUsfuGZm3izi5Yd+hCtxUf0QDpVicbxk" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1149" ],
+        "x-ms-request-id": [ "20c07c10-3a4e-4d72-944f-39f7bcb0eb1d" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190221Z:20c07c10-3a4e-4d72-944f-39f7bcb0eb1d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:21 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1208" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "0ef0a5ea-bf00-49a6-9998-80708c51ed2e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwAwnfodTHt/6yNfR7KSj4VODf4SE4TDSKNKD1Bhj1zE0gHPe4bom0DXLI7At6wg1ikSRnmh8tuauPsqkzLWjBR591dQGAxbaKSDKwY+l+sbjcAAdhN9bfv9qW0c8khROi5xSN5GqNixY5p3lLZcY" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1148" ],
+        "x-ms-request-id": [ "0ef0a5ea-bf00-49a6-9998-80708c51ed2e" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190222Z:0ef0a5ea-bf00-49a6-9998-80708c51ed2e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:22 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 2\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1209" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "73327b41-6927-4fb0-bfbd-cb9fc6a09b28" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/nP7sG9mTckA0b6yztoljOia1Fmu3QTECqFR7/fVbZuOmllVPoH1Kj8sYrpoXpBnHEuy4Ybdlw4f0wdmZ/O3iOO4JJB8M5zIKwpkwgU6x2JTdBH6GGu1FmYTqAPYYyfyq855BiQnu7AOm6WbgGn5" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1147" ],
+        "x-ms-request-id": [ "73327b41-6927-4fb0-bfbd-cb9fc6a09b28" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190222Z:73327b41-6927-4fb0-bfbd-cb9fc6a09b28" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:22 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+5": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1210" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3f999460-d705-4025-9f2c-c944f35ee13f" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuyrENywrT8NcSNQRrezWpmuJsBpFJFJjESCAZousplJN3Pr3QGbf4HVK3O+C8Is00YwqH+oveCsM0OBReiEGfvZfLabdkAnf/5UAUaSZ/Wf02YhrSYl6Xo6H1JWKyymPuABvJwY/ZMY/4ttH8tNo" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14962" ],
+        "x-ms-request-id": [ "3f999460-d705-4025-9f2c-c944f35ee13f" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190223Z:3f999460-d705-4025-9f2c-c944f35ee13f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:22 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1211" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a1feca6b-5ac8-49e2-a8f6-84200ff45002" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvkdTWLx4ZbxvEjcDam0sQnr9/RkjfW/yk1Y/812OR1MAnRvKC4097sIoBcB96QK2SUI1oTG8OLvYX9AafCnqs9oxlyZvXxgrJUSB3O1+3ouRtRWhx16mwRmyaErvqfdDP9acDON5qGQpldMzdAy1s" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1146" ],
+        "x-ms-request-id": [ "a1feca6b-5ac8-49e2-a8f6-84200ff45002" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190223Z:a1feca6b-5ac8-49e2-a8f6-84200ff45002" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:23 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1212" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "f17136e9-cd66-4804-8f96-df79b8be0c2a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvt3+hPCAC+VSUIhgRBFSrNgES30g6UVtdmMDC8F+XmCRGAikLh6pstDPhtEcZl75vS0UrMpdFJXyqIor3Fg1PagQLUQTjsVVCyFm/975RNj/Ouycu/8cOGR9+HcazZmPyXuWKtv5yRqTTGyj1KP+v" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1145" ],
+        "x-ms-request-id": [ "f17136e9-cd66-4804-8f96-df79b8be0c2a" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190224Z:f17136e9-cd66-4804-8f96-df79b8be0c2a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:23 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1213" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "e7608bf6-ac36-4c82-8512-8732b451caff" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvpZlultaPnjc2xKIdSKhHHd0MwcqPsxW7f2FC3FofR4RwRj3OGrDvpUKviNBwBxW5CIstfaTOG7cF4k+QDydqoSKP2e/u6FCkmzQdLdOKJq4xywvTwGIEdpPlrkYaeHQVIVvL2TYTcwotocjYt00k" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1144" ],
+        "x-ms-request-id": [ "e7608bf6-ac36-4c82-8512-8732b451caff" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190225Z:e7608bf6-ac36-4c82-8512-8732b451caff" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:25 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 2\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1214" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "252" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "fb10cba8-dc72-4d04-8bf3-f2e0b2fd6243" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv96RQSjlbnfPkwWqGgxo9au2geZU1GAo/Mj3Tb3/565f8QsaDuShi8a5MCUEuigFMi+KKHEixTGEj8tM1r+4uC7d36bpwErr7hmlCzGRDE6KHaTrS50T9LanFA9BizhQzR5F/w9zBspomoRX+9UIn" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1143" ],
+        "x-ms-request-id": [ "fb10cba8-dc72-4d04-8bf3-f2e0b2fd6243" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190225Z:fb10cba8-dc72-4d04-8bf3-f2e0b2fd6243" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:25 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "447" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
+    }
+  },
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$DELETE+https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+5": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1215" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "76367502-48f3-425a-814f-8cdf171a5db8" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIppUgmtyHmSyi5BUv8nlfxQRibl3qQxy7D17TKk2KyIjf3iFpeYPR6pK4bAy4sUkvUYXcVVrjz6FIMt5osbfMeGniHurjiHkTc5Gv4OFbuEGs3D5XLwgzxR5t0tfTfx5Taw4nXumrqUraJ3OSl0h" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14961" ],
+        "x-ms-request-id": [ "76367502-48f3-425a-814f-8cdf171a5db8" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200214T190226Z:76367502-48f3-425a-814f-8cdf171a5db8" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Fri, 14 Feb 2020 19:02:26 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null
+    }
+  }
+}
