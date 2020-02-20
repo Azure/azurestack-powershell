@@ -16,7 +16,7 @@ Once created an IP pool cannot be deleted.
 ### CreateExpanded (Default)
 ```
 New-AzsIPPool -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-AddressPrefix <String>] [-EndIPAddress <String>] [-Location1 <String>]
+ [-AddressPrefix <String>] [-EndIPAddress <String>]
  [-NumberOfAllocatedIPAddress <Int64>] [-NumberOfIPAddress <Int64>] [-NumberOfIPAddressesInTransition <Int64>]
  [-StartIPAddress <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
  [-WhatIf] [<CommonParameters>]
@@ -112,7 +112,7 @@ Dynamic: False
 ```
 
 ### -Location
-Location of the resource.
+The region where the resource is located.
 
 ```yaml
 Type: System.String
@@ -122,22 +122,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -Location1
-The region where the resource is located.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

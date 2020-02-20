@@ -86,7 +86,7 @@ Dynamic: False
 ```
 
 ### -Force
-
+Don't ask for confirmation.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -135,7 +135,7 @@ Dynamic: False
 ```
 
 ### -Name
-
+Name of an infrastructure role instance.
 
 ```yaml
 Type: System.String
@@ -168,7 +168,6 @@ Dynamic: False
 
 ### -PassThru
 Returns true when the command succeeds
-
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -267,7 +266,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: 
+#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.

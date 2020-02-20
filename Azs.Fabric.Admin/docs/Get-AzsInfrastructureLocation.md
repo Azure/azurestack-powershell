@@ -39,7 +39,7 @@ Returns the requested fabric location.
 ```powershell
 PS C:\> Get-AzsInfrastructureLocation
 
-Return a list of all fabric locations.
+A list of all fabric locations.
 ```
 
 Get a list of all fabric locations.
@@ -48,7 +48,7 @@ Get a list of all fabric locations.
 ```powershell
 PS C:\> Get-AzsInfrastructureLocation -Location "local"
 
-Return a location based on the name.
+The location based on the name.
 ```
 
 Get a location based on the name.
