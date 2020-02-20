@@ -139,7 +139,11 @@ param(
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
-    ${ProxyUseDefaultCredentials}
+    ${ProxyUseDefaultCredentials},
+
+    [Parameter(Mandatory = $false)]
+    [switch]
+    $Force
 )
 
 process {
@@ -152,6 +156,15 @@ process {
         }
     }
 
-    Azs.Fabric.Admin.internal\Disable-AzsInfrastructureRoleInstance @PSBoundParameters
+    if ($PSCmdlet.ShouldProcess("$Name" , "Disable infrastructure role instance")) {
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Disable infrastructure role instance?", "Performing operation disable infrastructure role instance for $Name")) {
+
+                if ($PSBoundParameters.ContainsKey(('Force'))){
+                    $null = $PSBoundParameters.Remove('Force')
+                }
+
+                Azs.Fabric.Admin.internal\Disable-AzsInfrastructureRoleInstance @PSBoundParameters
+        }
+    }
 }
 }

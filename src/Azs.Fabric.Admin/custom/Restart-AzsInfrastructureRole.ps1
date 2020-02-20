@@ -14,11 +14,11 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Start maintenance mode for a scale unit node.
+Restarts the requested infrastructure role.
 .Description
-Start maintenance mode for a scale unit node.
+Restarts the requested infrastructure role.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/enable-azsscaleunitnode
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/restart-azsinfrastructurerole
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
@@ -51,33 +51,33 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
   [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   [Volume <String>]: Name of the storage volume.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/enable-azsscaleunitnode
+https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/restart-azsinfrastructurerole
 #>
-function Enable-AzsScaleUnitNode {
+function Restart-AzsInfrastructureRole {
 [OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='Start', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='Restart', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Restart')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Location of the resource.
     ${Location},
 
-    [Parameter(ParameterSetName='Start', Mandatory)]
+    [Parameter(ParameterSetName='Restart', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
-    # Name of the scale unit node.
+    # Infrastructure role name.
     ${Name},
 
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Restart')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Start')]
+    [Parameter(ParameterSetName='Restart')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
@@ -85,7 +85,7 @@ param(
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='StartViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='RestartViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity]
     # Identity Parameter
@@ -172,16 +172,15 @@ process {
             }
         }
 
-        if ($PSCmdlet.ShouldProcess("$Name" , "Enable scale unit node")) {
-            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Enable scale unit node?", "Performing operation enable scale unit role for $Name")) {
+        if ($PSCmdlet.ShouldProcess("$Name" , "Restart infrastructure role")) {
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Restart infrastructure role?", "Performing operation restart for infrastructure role $Name")) {
 
                 if ($PSBoundParameters.ContainsKey(('Force'))){
                     $null = $PSBoundParameters.Remove('Force')
                 }
 
-                Azs.Fabric.Admin.internal\Enable-AzsScaleUnitNode @PSBoundParameters
+                Azs.Fabric.Admin.internal\Restart-AzsInfrastructureRole @PSBoundParameters
             }
         }
     }
 }
-
