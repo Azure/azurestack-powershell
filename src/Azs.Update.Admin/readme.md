@@ -103,6 +103,19 @@ directive:
       parameter-name: RunName
     set:
       parameter-name: Name
+    # Hide the auto-generated Get-AzsUpdateRun and Resume-AzsUpdateRUn and expose it through customized one
+  - where:
+      subject: UpdateRun
+    hide: true
+    # Hide the auto-generated Get-AzsUpdateRunTopLevel. This will effectively remove the commandlet since we dont have a customized one
+  - where:
+      subject: UpdateRunTopLevel
+    remove: true
+    # Hide the auto-generated Install-AzsUpdate and Get-AzsUpdate and exposte it through customized one
+  - where:
+      subject: Update
+    hide: true
+    # Format Output Values
   - where:
       model-name: Update
     set:
