@@ -21,7 +21,7 @@ Describe 'Start-AzsBackup' {
     It "TestCreateBackup" -Skip:$('TestCreateBackup' -in $global:SkippedTests) {
         $global:TestName = 'TestCreateBackup'
 
-        $backup = Start-AzsBackup -Force
+        $backup = Start-AzsBackup
         ValidateBackup -Backup $backup
     }
 }
