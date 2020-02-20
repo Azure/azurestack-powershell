@@ -20,7 +20,7 @@ Get-AzsInfrastructureRole [-Location <String>] [-ResourceGroupName <String>] [-S
 
 ### Get
 ```
-Get-AzsInfrastructureRole -InfraRole <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsInfrastructureRole -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,23 @@ Returns the requested infrastructure role description.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRole
 
-{{ Add output here }}
+A list of all infrastructure roles.
 ```
 
-{{ Add description here }}
+Get a list of all infrastructure roles.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRole -Name "Active Directory Federation Services"
 
-{{ Add output here }}
+An infrastructure role based on the name.
 ```
 
-{{ Add description here }}
+Get an infrastructure role based on the name.
 
 ## PARAMETERS
 
@@ -87,24 +87,7 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -InfraRole
-Infrastructure role name.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
 ### -InputObject
-Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
@@ -130,7 +113,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Infrastructure role name.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -162,7 +161,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -203,7 +202,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.

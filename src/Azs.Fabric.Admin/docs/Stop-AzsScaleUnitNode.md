@@ -14,28 +14,28 @@ Power off a scale unit node.
 
 ### PowerOff (Default)
 ```
-Stop-AzsScaleUnitNode -ScaleUnitNode <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Stop-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### PowerOffViaIdentity
 ```
-Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Shutdown
 ```
-Stop-AzsScaleUnitNode -ScaleUnitNode <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Stop-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### ShutdownViaIdentity
 ```
-Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Stop-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,21 +45,11 @@ Power off a scale unit node.
 
 ### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Stop-AzsInfrastructureRoleInstancef -Name "AzS-ACS01"
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Power off a infrastructure role instance.
 
 ## PARAMETERS
 
@@ -86,6 +76,22 @@ The credentials, account, tenant, and subscription used for communication with A
 Type: System.Management.Automation.PSObject
 Parameter Sets: (All)
 Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Force
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -122,7 +128,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+
+
+```yaml
+Type: System.String
+Parameter Sets: PowerOff, Shutdown
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -147,6 +169,7 @@ Dynamic: False
 ### -PassThru
 Returns true when the command succeeds
 
+
 ```yaml
 Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
@@ -161,7 +184,7 @@ Dynamic: False
 ```
 
 ### -ResourceGroupName
-Name of the resource group.
+Name of the scale unit node.
 
 ```yaml
 Type: System.String
@@ -170,23 +193,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -ScaleUnitNode
-Name of the scale unit node.
-
-```yaml
-Type: System.String
-Parameter Sets: PowerOff, Shutdown
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -260,7 +267,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.

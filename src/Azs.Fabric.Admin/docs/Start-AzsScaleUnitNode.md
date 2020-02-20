@@ -14,15 +14,15 @@ Power on a scale unit node.
 
 ### PowerOn (Default)
 ```
-Start-AzsScaleUnitNode -ScaleUnitNode <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Start-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### PowerOnViaIdentity
 ```
-Start-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,23 +30,14 @@ Power on a scale unit node.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Start-AzsScaleUnitNode -Name "AzS-ACS01"
 
-{{ Add output here }}
+ProvisioningState : Succeeded
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Power on a scale unit node.
 
 ## PARAMETERS
 
@@ -73,6 +64,22 @@ The credentials, account, tenant, and subscription used for communication with A
 Type: System.Management.Automation.PSObject
 Parameter Sets: (All)
 Aliases: AzureRMContext, AzureCredential
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Force
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -109,7 +116,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the scale unit node.
+
+```yaml
+Type: System.String
+Parameter Sets: PowerOn
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -157,23 +180,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -ScaleUnitNode
-Name of the scale unit node.
-
-```yaml
-Type: System.String
-Parameter Sets: PowerOn
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -247,7 +254,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.

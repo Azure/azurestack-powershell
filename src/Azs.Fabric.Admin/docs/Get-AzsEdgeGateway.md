@@ -20,7 +20,7 @@ Get-AzsEdgeGateway [-Location <String>] [-ResourceGroupName <String>] [-Subscrip
 
 ### Get
 ```
-Get-AzsEdgeGateway -EdgeGateway <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsEdgeGateway -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,15 @@ Returns the requested edge gateway.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get-AzsEdgeGateway
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGateway
 
-{{ Add output here }}
+Get a list of all edge gateways.
 ```
 
-{{ Add description here }}
+Returns the list of all edge gateways at a certain location.
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 
@@ -64,22 +56,6 @@ Parameter Sets: (All)
 Aliases: AzureRMContext, AzureCredential
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -EdgeGateway
-Name of the edge gateway.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -104,7 +80,6 @@ Dynamic: False
 ```
 
 ### -InputObject
-Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
@@ -130,14 +105,30 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the edge gateway.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -162,7 +153,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -203,7 +194,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.
