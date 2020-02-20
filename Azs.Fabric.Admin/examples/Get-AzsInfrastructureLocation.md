@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureLocation
 
-{{ Add output here }}
+Return a list of all fabric locations.
 ```
 
-{{ Add description here }}
+Get a list of all fabric locations.
 
-### Example 2: {{ Add title here }}
+### Example 2: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureLocation -Location "local"
 
-{{ Add output here }}
+Return a location based on the name.
 ```
 
-{{ Add description here }}
-
+Get a location based on the name.

@@ -1,62 +1,65 @@
 ---
 external help file:
 Module Name: Azs.Fabric.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsmacaddresspool
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azsinfrastructureroleinstance
 schema: 2.0.0
 ---
 
-# Get-AzsMacAddressPool
+# Disable-AzsInfrastructureRoleInstance
 
 ## SYNOPSIS
-Returns the requested MAC address pool.
+
 
 ## SYNTAX
 
-### List (Default)
+### Shutdown (Default)
 ```
-Get-AzsMacAddressPool [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
- [-Filter <String>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
-```
-
-### Get
-```
-Get-AzsMacAddressPool -Name <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
+Disable-AzsInfrastructureRoleInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### ShutdownViaIdentity
 ```
-Get-AzsMacAddressPool -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru]
- [<CommonParameters>]
+Disable-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-Force]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Returns the requested MAC address pool.
+Shutdown an infrastructure role instance for maintenance.
 
 ## EXAMPLES
 
-### Example 1:
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Get-AzsMacAddressPool
+PS C:\> Disable-AzsInfrastructureRoleInstance -Name "n22r0903-Xrp03"
 
-A list of all MAC address pools at a location.
+Shutdown an infrastructure role instance for maintenance.
 ```
 
-Returns a list of all MAC address pools at a location.
+Shutdown an infrastructure role instance for maintenance.
 
-### Example 2:
-```powershell
-PS C:\> Get-AzsMacAddressPool -Name "8197fd09-8a69-417e-a55c-10c2c61f5ee7"
-
-A specific MAC address pool at a location based on name.
-```
-
-Get a specific MAC address pool at a location based on name.
 
 ## PARAMETERS
 
+### -AsJob
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -DefaultProfile
-The credentials, account, tenant, and subscription used for communication with Azure.
+
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -71,12 +74,12 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -Filter
-OData filter parameter.
+### -Force
+
 
 ```yaml
-Type: System.String
-Parameter Sets: List
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -88,12 +91,11 @@ Dynamic: False
 ```
 
 ### -InputObject
-Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: ShutdownViaIdentity
 Aliases:
 
 Required: True
@@ -105,11 +107,11 @@ Dynamic: False
 ```
 
 ### -Location
-Location of the resource.
+
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False
@@ -121,11 +123,11 @@ Dynamic: False
 ```
 
 ### -Name
-Name of the MAC address pool.
+
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: Shutdown
 Aliases:
 
 Required: True
@@ -136,8 +138,24 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
+### -NoWait
+
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -PassThru
-Returns true when the command succeeds
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,11 +171,11 @@ Dynamic: False
 ```
 
 ### -ResourceGroupName
-Name of the resource group.
+
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False
@@ -169,17 +187,49 @@ Dynamic: False
 ```
 
 ### -SubscriptionId
-Subscription credentials that uniquely identify Microsoft Azure subscription.
-The subscription ID forms part of the URI for every service call.
+
 
 ```yaml
-Type: System.String[]
-Parameter Sets: Get, List
+Type: System.String
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -194,7 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IMacAddressPool
+### System.Boolean
 
 ## ALIASES
 
@@ -203,7 +253,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.

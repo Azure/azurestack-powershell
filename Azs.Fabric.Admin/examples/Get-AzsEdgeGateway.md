@@ -1,18 +1,8 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get-AzsEdgeGateway
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGateway
 
-{{ Add output here }}
+Get a list of all edge gateways.
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
+Returns the list of all edge gateways at a certain location.

@@ -20,7 +20,7 @@ Get-AzsLogicalNetwork [-Location <String>] [-ResourceGroupName <String>] [-Subsc
 
 ### Get
 ```
-Get-AzsLogicalNetwork -LogicalNetwork <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsLogicalNetwork -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,23 @@ Returns the requested logical network.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsLogicalNetwork
 
-{{ Add output here }}
+A list of all logical networks at a location.
 ```
 
-{{ Add description here }}
+Get all logical networks at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsLogicalNetwork -Name "bb6c6f28-bad9-441b-8e62-57d2be255904"
 
-{{ Add output here }}
+A specific logical networks at a location based on a name.
 ```
 
-{{ Add description here }}
+Get a specific logical networks at a location based on a name.
 
 ## PARAMETERS
 
@@ -114,13 +114,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -LogicalNetwork
+### -Name
 Name of the logical network.
 
 ```yaml
@@ -162,7 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -203,7 +203,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.
