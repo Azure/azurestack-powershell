@@ -164,11 +164,5 @@ directive:
       verb: Start
       subject: Backup
 
-    # Hide the auto-generated Start-AzsBackup and expose it through customized one
-  - where:
-      verb: Start
-      subject: Backup
-    hide: true
-
 subject-prefix: ''
 module-version: 0.9.0
