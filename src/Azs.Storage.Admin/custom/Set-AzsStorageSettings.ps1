@@ -22,9 +22,9 @@ To view examples, please use the -Online parameter with Get-Help or navigate to:
 .Outputs
 Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Models.Api201908Preview.ISettings
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin/update-azsstoragesettings
+https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin/set-azsstoragesettings
 #>
-function Update-AzsStorageSettings {
+function Set-AzsStorageSettings {
 [OutputType([Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Models.Api201908Preview.ISettings])]
 [CmdletBinding(DefaultParameterSetName='UpdateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
@@ -112,7 +112,7 @@ process {
                 $null = $PSBoundParameters.Remove('Force')
             }
             
-            Azs.Storage.Admin.internal\Update-AzsStorageSettings @PSBoundParameters
+            Azs.Storage.Admin.internal\Set-AzsStorageSettings @PSBoundParameters
         }
     }
 }
