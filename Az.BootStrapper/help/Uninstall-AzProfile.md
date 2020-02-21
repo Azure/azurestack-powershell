@@ -22,10 +22,10 @@ Uninstall all modules associated with the given profile version.  Note that this
 
 ### Example 1
 ```
-PS C:\> Uninstall-AzProfile '2017-03-09-profile'
+PS C:\> Uninstall-AzProfile '2019-03-01-hybrid'
 ```
 
-Uninstall all modules associated with the '2017-03-09-profile' profile on the machine
+Uninstall all modules associated with the '2019-03-01-hybrid' profile on the machine
 
 ## PARAMETERS
 
@@ -51,7 +51,7 @@ The profile version to uninstall.
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2016-09, 2017-03-09-profile, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0

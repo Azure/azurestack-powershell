@@ -22,12 +22,12 @@ Returns the versions of an Az module that support a given profile.
 
 ### Example 1
 ```
-PS C:\> Get-AzModule -Profile 2017-03-09-profile -Module Az.Storage
+PS C:\> Get-AzModule -Profile 2019-03-01-hybrid -Module Az.Storage
 
 1.0.4.4
 ```
 
-The version of the Az.Storage module that supports profile 2017-03-09-profile is version 1.0.4.3.
+The version of the Az.Storage module that supports profile 2019-03-01-hybrid is version 1.0.4.3.
 
 ## PARAMETERS
 
@@ -53,7 +53,7 @@ The profile version to check for the given module.
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2017-03-09-profile, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0

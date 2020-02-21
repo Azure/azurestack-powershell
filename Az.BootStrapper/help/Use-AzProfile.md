@@ -23,10 +23,10 @@ Load the modules associated with a particular profile in the current PowerShell 
 
 ### Example 1
 ```
-PS C:\> Use-AzProfile -Profile '2017-03-09-profile'
+PS C:\> Use-AzProfile -Profile '2019-03-01-hybrid'
 ```
 
-Load the modules associated with profile version '2017-03-09-profile' in the current session.  This should be executed after opening a new PowerShell session.
+Load the modules associated with profile version '2019-03-01-hybrid' in the current session.  This should be executed after opening a new PowerShell session.
 
 ### Example 2
 ```
@@ -74,7 +74,7 @@ The profile version to load in the current PowerShell session.
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2017-03-09-profile, 2017-03-09-profile, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0
