@@ -19,12 +19,12 @@ Describe 'Remove-AzsStorageQuota' {
         $global:TestName = 'TestDeleteStorageQuota'
 
         $name = "TestDeleteQuota"
-        Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
         $quota = New-AzsStorageQuota -CapacityInGb 50 -NumberOfStorageAccounts 100 -Location $global:Location -Name $name
         $quota      |    Should Not Be $null
         $quota.CapacityInGb | Should Be 50
         $quota.NumberOfStorageAccounts | Should Be 100
-        Get-AzsStorageQuota -Location $global:Location -Name $name | Remove-AzsStorageQuota -Force
-        Get-AzsStorageQuota -Location $global:Location -Name $name | Should Be $null
+        Remove-AzsStorageQuota -Location $global:Location -Name $name
+        $quota | New-AzsStorageQuota -Name $name
+        Get-AzsStorageQuota -Location $global:Location -Name $name | Remove-AzsStorageQuota
     }
 }

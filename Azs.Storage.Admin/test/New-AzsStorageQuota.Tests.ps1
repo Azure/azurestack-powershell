@@ -23,6 +23,6 @@ Describe 'New-AzsStorageQuota' {
         $quota                          | Should Not Be $null
         $quota.CapacityInGb             | Should Be 100000000
         $quota.NumberOfStorageAccounts  | Should Be 1000000000
-        Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
+        Remove-AzsStorageQuota -Location $global:Location -Name $name
     }
 }

@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Storage.Admin
-Module Guid: 319a9e5b-a1f4-4b66-955d-082f6741d418
+Module Guid: 14ee1f9d-3505-45eb-a128-ec91a0ebe410
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -35,9 +35,9 @@ Returns the storage resource provider settings.
 ### [Set-AzsStorageQuota](Set-AzsStorageQuota.md)
 
 
+### [Set-AzsStorageSettings](Set-AzsStorageSettings.md)
+
+
 ### [Start-AzsReclaimStorageCapacity](Start-AzsReclaimStorageCapacity.md)
-
-
-### [Update-AzsStorageSettings](Update-AzsStorageSettings.md)
 
 
