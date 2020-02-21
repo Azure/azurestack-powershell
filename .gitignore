@@ -5,3 +5,6 @@ generated
 internal
 exports
 src/**/tools
+src/**/resources
+.gitignore
+.gitattributes
