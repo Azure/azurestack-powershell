@@ -26,6 +26,46 @@ $global:VHDUri = "https://hamurphystorageaccount.blob.northwest.azs-longhaul-02.
 
 $global:Client = $null
 
+
+function New-ServiceClient {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]
+        $FullClientTypeName,
+
+        [Parameter(Mandatory = $false)]
+        [PSCustomObject]
+        $GlobalParameterHashtable
+    )
+
+    # Azure Powershell way
+    [Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContext]$Context = Get-AzureRmContext
+    if (-not $Context -or -not $Context.Account) {
+        Write-Error -Message 'Run Login-AzureRmAccount to login.' -ErrorId 'AzureRmContextError'
+        return
+    }
+
+    $Factory = [Microsoft.Azure.Commands.Common.Authentication.AzureSession]::Instance.ClientFactory
+    [System.Type[]]$Types = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContext], [string]
+    $CreateArmClientMethod = [Microsoft.Azure.Commands.Common.Authentication.IClientFactory].GetMethod('CreateArmClient', $Types)
+    $ClientType = $FullClientTypeName -as [Type]
+    $ClosedMethod = $CreateArmClientMethod.MakeGenericMethod($ClientType)
+    $Arguments = $Context, [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureEnvironment+Endpoint]::ResourceManager
+    $Client = $closedMethod.Invoke($Factory, $Arguments)
+
+    if ($GlobalParameterHashtable) {
+        $GlobalParameterHashtable.GetEnumerator() | ForEach-Object {
+            if ($_.Value -and (Get-Member -InputObject $Client -Name $_.Key -MemberType Property)) {
+                $Client."$($_.Key)" = $_.Value
+            }
+        }
+    }
+
+    return $Client
+}
+
+
 if (-not $global:RunRaw) {
     $scriptBlock = {
         if ($null -eq $global:Client) {
