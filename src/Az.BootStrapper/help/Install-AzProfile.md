@@ -22,10 +22,10 @@ Install all the latest modules associated with a particular Az Profile on the ma
 
 ### Example 1
 ```
-PS C:\> Install-AzProfile -Profile '2017-03-09-profile'
+PS C:\> Install-AzProfile -Profile '2019-03-01-hybrid'
 ```
 
-Install all the modules associated with profile '2017-03-09-profile'
+Install all the modules associated with profile '2019-03-01-hybrid'
 
 ## PARAMETERS
 
@@ -51,7 +51,7 @@ The profile version to install.  You can get a list of available profile version
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2017-03-09-profile, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0

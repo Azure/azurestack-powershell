@@ -23,22 +23,22 @@ Sets the given profile as a default profile to be used with all API version prof
 
 ### Example 1 - Using Default Version Profile to Automatically Load Module Versions
 ```
-PS C:\> Set-AzDefaultProfile -Profile '2017-03-09-profile'
+PS C:\> Set-AzDefaultProfile -Profile '2019-03-01-hybrid'
 PS C:\> Import-Module Az.Compute
 ```
 
-Sets profile '2017-03-09-profile' as the default profile. 
+Sets profile '2019-03-01-hybrid' as the default profile. 
 When importing Az modules like Az.Compute, you will automatically import a version of the module compatible with the default profile setting, 
 unless you explicitly specify a RequiredVersion.
 
 ### Example 2 - Using Default Version Profile to Set Default Profile for BootStrapper cmdlets
 ```
-PS C:\> Set-AzDefaultProfile -Profile '2017-03-09-profile'
+PS C:\> Set-AzDefaultProfile -Profile '2019-03-01-hybrid'
 PS c:\> Install-AzProfile
 ```
 
-Sets the default profile as '2017-03-09-profile'.  After this, BootStrapper cmdlets will automatically use the default profile if no profile is set.
-In this case, 'Install-AzProfile'  will install profile '2017-03-09-profile', since this profile was set as the default.
+Sets the default profile as '2019-03-01-hybrid'.  After this, BootStrapper cmdlets will automatically use the default profile if no profile is set.
+In this case, 'Install-AzProfile'  will install profile '2019-03-01-hybrid', since this profile was set as the default.
 
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ The profile version to set as default.  You can get a list of available profile 
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2017-03-09-profile, latest, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0

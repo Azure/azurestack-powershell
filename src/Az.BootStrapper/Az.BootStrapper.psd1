@@ -12,7 +12,7 @@
 RootModule = 'Az.Bootstrapper.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.5.0'
+ModuleVersion = '0.1.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -32,8 +32,8 @@ Copyright = '(c) 2017 Microsoft Corporation. All rights reserved.'
 # Description of the functionality provided by this module
 Description = 'Manage Modules for an Azure Version Profile. This allows selecting the Azure cmdlets that are compatible with an AzureStack instance, an Azure sovereign cloud, or across Azure instances.'
 
-# Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '5.0'
+# Minimum version of the PowerShell Core required by this module
+PowerShellVersion = '6.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -41,11 +41,8 @@ PowerShellVersion = '5.0'
 # Minimum version of the Windows PowerShell host required by this module
 # PowerShellHostVersion = ''
 
-# Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-DotNetFrameworkVersion = '4.5'
-
-# Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-CLRVersion = '4.0'
+# Minimum version of Microsoft .NET Core required by this module.
+DotNetCoreVersion = '4.5'
 
 # Processor architecture (None, X86, Amd64) required by this module
 # ProcessorArchitecture = ''
@@ -78,8 +75,7 @@ FunctionsToExport = 'Set-BootstrapRepo', 'Update-AzProfile',
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = 'Update-AzProfile', 'Uninstall-AzProfile', 
                'Install-AzProfile', 'Use-AzProfile', 'Get-AzProfile', 
-               'Get-AzModule', 'Set-AzDefaultProfile', 
-               'Remove-AzDefaultProfile'
+               'Get-AzModule'
 
 # Variables to export from this module
 # VariablesToExport = @()
@@ -114,7 +110,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* 0.5.0: Updated for the azure stack profile 2019-03-01-hybrid
+        ReleaseNotes = '* 0.1.0: Initial release for azure stack profile 2019-03-01-hybrid
         * Bug fix to add UseBasicParsing for Invoke-WebRequest'
 
         # External dependent modules of this module

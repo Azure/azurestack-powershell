@@ -7,7 +7,7 @@ schema: 2.0.0
 # Update-AzProfile
 
 ## SYNOPSIS
-Update modules to the latest versions consitent with the given profile and import updated modules to the current session. This should always be executed in a new PowerShell session.
+Update modules to the latest versions consistent with the given profile and import updated modules to the current session. This should always be executed in a new PowerShell session.
 
 ## SYNTAX
 
@@ -23,10 +23,10 @@ Update modules to the latest versions consitent with the given profile and impor
 
 ### Example 1
 ```
-PS C:\> Update-AzProfile -Profile '2017-03-09-profile'
+PS C:\> Update-AzProfile -Profile '2019-03-01-hybrid'
 ```
 
-Update the modules associated with profile '2017-03-09-profile' to their latest versions and load in the current session.  This should be executed after opening a new PowerShell session.
+Update the modules associated with profile '2019-03-01-hybrid' to their latest versions and load in the current session.  This should be executed after opening a new PowerShell session.
 
 ### Example 2
 ```
@@ -81,7 +81,7 @@ The profile version to load in the current PowerShell session.
 Type: String
 Parameter Sets: (All)
 Aliases: 
-Accepted values: 2017-03-09-profile, Latest, <others>
+Accepted values: 2019-03-01-hybrid
 
 Required: True
 Position: 0
