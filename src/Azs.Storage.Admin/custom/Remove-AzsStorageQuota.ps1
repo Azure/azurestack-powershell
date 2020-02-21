@@ -122,44 +122,22 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Category('Runtime')]
     [System.Management.Automation.SwitchParameter]
     # Use the default credentials for the proxy
-    ${ProxyUseDefaultCredentials},
-
-    [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.StorageAdmin.Category('Runtime')]
-    [System.Management.Automation.SwitchParameter]
-    # Don't ask for confirmation
-    $Force
+    ${ProxyUseDefaultCredentials}
 )
 
 process {
     $quotaName = $Name
-
-    if ('DeleteViaIdentity' -eq $PsCmdlet.ParameterSetName)
-    {
-        $quotaName = $InputObject.Name
-    }
 
     if ($null -ne $quotaName -and $quotaName.Contains('/'))
     {
         $quotaName = $quotaName.Split("/")[-1]
     }
 
-    if ($PSCmdlet.ShouldProcess("$quotaName" , "Delete the storage quota"))
+    if ($PSBoundParameters.ContainsKey('Name'))
     {
-        if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Delete the storage quota?", "Performing operation delete $quotaName."))
-        {
-            if ($PSBoundParameters.ContainsKey('Force'))
-            {
-                $null = $PSBoundParameters.Remove('Force')
-            }
-        
-            if ($PSBoundParameters.ContainsKey('Name'))
-            {
-                $PSBoundParameters['Name'] = $quotaName
-            }
-
-            Azs.Storage.Admin.internal\Remove-AzsStorageQuota @PSBoundParameters
-        }
+        $PSBoundParameters['Name'] = $quotaName
     }
+
+    Azs.Storage.Admin.internal\Remove-AzsStorageQuota @PSBoundParameters
 }
 }
