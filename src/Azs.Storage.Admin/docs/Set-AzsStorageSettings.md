@@ -1,11 +1,11 @@
 ---
 external help file:
 Module Name: Azs.Storage.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin/update-azsstoragesettings
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin/set-azsstoragesettings
 schema: 2.0.0
 ---
 
-# Update-AzsStorageSettings
+# Set-AzsStorageSettings
 
 ## SYNOPSIS
 
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Update-AzsStorageSettings -RetentionPeriodForDeletedStorageAccountsInDays <Int32> [-Location <String>]
+Set-AzsStorageSettings -RetentionPeriodForDeletedStorageAccountsInDays <Int32> [-Location <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Force] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ Update-AzsStorageSettings -RetentionPeriodForDeletedStorageAccountsInDays <Int32
 
 ### Example 1:
 ```powershell
-PS C:\> Update-AzsStorageSettings -RetentionPeriodForDeletedStorageAccountsInDays 1
+PS C:\> Set-AzsStorageSettings -RetentionPeriodForDeletedStorageAccountsInDays 1
 ```
 
 Update the storage settings.
