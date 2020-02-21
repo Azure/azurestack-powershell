@@ -2,19 +2,24 @@
 ```powershell
 PS C:\> Get-AzsVMExtension
 
-Publisher                :
-ComputeRole              : N/A
-Id                       : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Admin/locations/local
-                           /artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0
+ExtensionType            : IaaSDiagnostics
+TypeHandlerVersion       : 1.11.3.12
+ComputeRole              : IaaS
+Id                       : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locati
+                           ons/northwest/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDia
+                           gnostics/versions/1.11.3.12
 IsSystemExtension        : False
-Location                 : local
+Location                 : northwest
 Name                     :
 ProvisioningState        : Succeeded
+Publisher                : Microsoft.Azure.Diagnostics
 SourceBlobUri            :
 SupportMultipleExtension : False
 Type                     : Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions
 VMScaleSetEnabled        : False
 VmosType                 : Windows
+
+...
 ```
 
 Get a list of all VMExtensions by leaving all parameters blank. 
