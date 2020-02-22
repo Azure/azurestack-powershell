@@ -171,10 +171,10 @@ function Invoke-AzsResourceManager {
 
     #-----------------------------------------------------------------------
 
-    $ctx = Get-AzureRmContext
+    $ctx = Get-AzContext
 
     if ($null -eq $ctx.Environment) {
-        throw 'AzureRm Context is not set.'
+        throw 'AzContext is not set.'
     }
 
     $Uri = Resolve-RequestUri -ResourceManagerUrl $ctx.Environment.ResourceManagerUrl -Uri $Uri
@@ -320,6 +320,18 @@ function IsSuccessStatusCode {
 <#
 .SYNOPSIS
     Lists file containers or gets a file container properties.
+.DESCRIPTION
+    Lists file containers or gets a file container properties.
+.PARAMETER FileContainerId
+    Container ID to fetch the properties for.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:\> Get-AzsFileContainer
+    Lists the available file containers in the subscription.
+.EXAMPLE
+    PS C:\> Get-AzsFileContainer -FileContainerId <ContainerID>
+    Get the file container with id <ContainerID>.
 #>
 function Get-AzsFileContainer {
     [CmdletBinding()]
@@ -336,7 +348,7 @@ function Get-AzsFileContainer {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($FileContainerId)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/fileContainers?api-version=$ApiVersion"
@@ -363,6 +375,17 @@ function Get-AzsFileContainer {
 <#
 .SYNOPSIS
     Creates a new file container.
+.DESCRIPTION
+    Creates a new file container from a soucre Uri.
+.PARAMETER FileContainerId
+    Container ID to be given to the new container.
+.PARAMETER SourceUri
+    The remote file location URI for the container.
+.PARAMETER PostCopyAction
+    The file post copy action.
+.EXAMPLE
+    PS C:\> New-AzsFileContainer -FileContainerId $ContainerId -SourceUri $packageUri -PostCopyAction Unzip
+    Creates a new file container from the specified values.
 #>
 function New-AzsFileContainer {
     [CmdletBinding()]
@@ -384,7 +407,7 @@ function New-AzsFileContainer {
 
     Write-Verbose "Create a new file container, fileContainerId = '$FileContainerId', sourceUri = '$SourceUri', postCopyAction = '$PostCopyAction'." -Verbose
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/fileContainers/$($FileContainerId)?api-version=$ApiVersion"
 
     $body = @{
@@ -406,6 +429,13 @@ function New-AzsFileContainer {
 <#
 .SYNOPSIS
     Removes an existing file container.
+.DESCRIPTION
+    Removes an existing file container.
+.PARAMETER FileContainerId
+    Container ID of the container to be removed.
+.EXAMPLE
+    PS C:\> Remove-AzsFileContainer -FileContainerId $ContainerId 
+    Removes an existing file container.
 #>
 function Remove-AzsFileContainer {
     [CmdletBinding()]
@@ -420,7 +450,7 @@ function Remove-AzsFileContainer {
 
     Write-Verbose "Remove the file container, fileContainerId = '$FileContainerId'." -Verbose
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/fileContainers/$($FileContainerId)?api-version=$ApiVersion"
 
     Invoke-AzsResourceManager -Method DELETE -Uri $requestUri -ThrowOnError -Verbose | Out-Null
@@ -431,6 +461,18 @@ function Remove-AzsFileContainer {
 <#
 .SYNOPSIS
     Lists product packages or gets a product package properties.
+.DESCRIPTION
+    Lists product packages or gets a product package properties.
+.PARAMETER PackageId
+    Product package Id to get the properties for.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:\> Get-AzsProductPackage
+    Lists all the product packages in the subscription.
+.EXAMPLE
+    PS C:\>  Get-AzsProductPackage -PackageId $PackageId 
+    Gets the product package properties of the product with Id.
 #>
 function Get-AzsProductPackage {
     [CmdletBinding()]
@@ -447,7 +489,7 @@ function Get-AzsProductPackage {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($PackageId)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages?api-version=$ApiVersion"
@@ -474,6 +516,15 @@ function Get-AzsProductPackage {
 <#
 .SYNOPSIS
     Create a new product package.
+.DESCRIPTION
+    Create a new product package.
+.PARAMETER PackageId
+    ID of the product package to be created.
+.PARAMETER FileContainerId
+    File container resource identifier.
+.EXAMPLE 
+    PS C:\> New-AzsProductPackage -PackageId $PackageId -FileContainerId $ContainerId
+    Creates a product package with the specified values.
 #>
 function New-AzsProductPackage {
     [CmdletBinding()]
@@ -491,7 +542,7 @@ function New-AzsProductPackage {
 
     Write-Verbose "Create a new product package, packageId = '$PackageId', fileContainerId = '$FileContainerId'." -Verbose
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$($PackageId)?api-version=$ApiVersion"
 
     if ($ApiVersion -eq '2019-01-01') {
@@ -521,6 +572,13 @@ function New-AzsProductPackage {
 <#
 .SYNOPSIS
     Removes an existing product package.
+.DESCRIPTION
+    Removes an existing product package.
+.PARAMETER PackageId
+    ID of the product package to be removed.
+.EXAMPLE 
+    PS C:\> Remove-AzsProductPackage -PackageId $PackageId
+    Removes a product package with Id $PackageId.
 #>
 function Remove-AzsProductPackage {
     [CmdletBinding()]
@@ -535,7 +593,7 @@ function Remove-AzsProductPackage {
 
     Write-Verbose "Remove the product package, packageId = '$PackageId'." -Verbose
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$($PackageId)?api-version=$ApiVersion"
 
     Invoke-AzsResourceManager -Method DELETE -Uri $requestUri -ThrowOnError -Verbose | Out-Null
@@ -546,6 +604,18 @@ function Remove-AzsProductPackage {
 <#
 .SYNOPSIS
     Lists product deployments or gets a product deployment properties.
+.DESCRIPTION
+    Lists product deployments or gets a product deployment properties.
+.PARAMETER ProductId
+    Product package Id to get the product deployment properties for.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:\> Get-AzsProductDeployment
+    Lists all the product package deployments in the subscription.
+.EXAMPLE
+    PS C:\> Get-AzsProductDeployment -ProductId $ProductId
+    Gets the product package deployment with the specified product Id.
 #>
 function Get-AzsProductDeployment {
     [CmdletBinding()]
@@ -558,7 +628,7 @@ function Get-AzsProductDeployment {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($ProductId)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments?api-version=2019-01-01"
@@ -585,6 +655,15 @@ function Get-AzsProductDeployment {
 <#
 .SYNOPSIS
     Invokes 'bootstrap product' action.
+.DESCRIPTION
+    Invokes 'bootstrap product' action.
+.PARAMETER ProductId
+    Product package Id to start the bootstrap action for.
+.PARAMETER Version
+    Product version
+.EXAMPLE
+    PS C:\> Invoke-AzsProductBootstrapAction -ProductId $ProductId -Version $ProductVersion
+    Starts the bootstrap action for the specified product.
 #>
 function Invoke-AzsProductBootstrapAction {
     [CmdletBinding()]
@@ -596,7 +675,7 @@ function Invoke-AzsProductBootstrapAction {
         [string] $Version
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$ProductId/bootstrap?api-version=2019-01-01"
 
     $body = @{
@@ -613,6 +692,17 @@ function Invoke-AzsProductBootstrapAction {
 <#
 .SYNOPSIS
     Invokes 'deploy product' action.
+.DESCRIPTION
+    Invokes 'deploy product' action.
+.PARAMETER ProductId
+    Product package Id to start the deploy action for.
+.PARAMETER Version
+    Product Version.
+.PARAMETER Parameters
+    Deployment parameters, value in JToken
+.EXAMPLE
+    PS C:\> Invoke-AzsProductDeployAction -ProductId $ProductId -Version $ProductVersion -Parameters $Parameters
+    Starts the product deploy action for the specified product.
 #>
 function Invoke-AzsProductDeployAction {
     [CmdletBinding()]
@@ -627,7 +717,7 @@ function Invoke-AzsProductDeployAction {
         [psobject] $Parameters
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$ProductId/deploy?api-version=2019-01-01"
 
     $body = @{
@@ -645,6 +735,15 @@ function Invoke-AzsProductDeployAction {
 <#
 .SYNOPSIS
     Invokes 'execute runner' action.
+.DESCRIPTION
+    Invokes 'execute runner' action.
+.PARAMETER ProductId
+    Product package Id to start the execute runner action for.
+.PARAMETER Parameters
+    Deployment parameters, value in JToken
+.EXAMPLE
+    PS C:\> Invoke-AzsProductExecuteRunnerAction -ProductId $ProductId -Parameters $Parameters
+    Starts the product execute runner action for the specified product.
 #>
 function Invoke-AzsProductExecuteRunnerAction {
     [CmdletBinding()]
@@ -656,7 +755,7 @@ function Invoke-AzsProductExecuteRunnerAction {
         [psobject] $Parameters
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$ProductId/executeRunner?api-version=2019-01-01"
 
     $body = $parameters
@@ -673,6 +772,13 @@ function Invoke-AzsProductExecuteRunnerAction {
 <#
 .SYNOPSIS
     Invokes 'remove product' action.
+.DESCRIPTION
+    Invokes 'remove product' action.
+.PARAMETER ProductId
+    Product package Id to start the remove product action for.
+.EXAMPLE
+    PS C:\> Invoke-AzsProductRemoveAction -ProductId $ProductId 
+    Starts the product remove action for the specified product.
 #>
 function Invoke-AzsProductRemoveAction {
     [CmdletBinding()]
@@ -681,7 +787,7 @@ function Invoke-AzsProductRemoveAction {
         [string] $ProductId
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$ProductId/remove?api-version=2019-01-01"
 
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -ThrowOnError -Verbose
@@ -696,6 +802,13 @@ function Invoke-AzsProductRemoveAction {
 <#
 .SYNOPSIS
     Invokes 'rotate secrets' action.
+.DESCRIPTION
+    Invokes 'rotate secrets' action.
+.PARAMETER ProductId
+    Product package Id to start the product rotate secrets action for.
+.EXAMPLE
+    PS C:\> Invoke-AzsProductRotateSecretsAction -ProductId $ProductId 
+    Starts the product rotate secrets action for the specified product.
 #>
 function Invoke-AzsProductRotateSecretsAction {
     [CmdletBinding()]
@@ -704,7 +817,7 @@ function Invoke-AzsProductRotateSecretsAction {
         [string] $ProductId
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$ProductId/rotateSecrets?api-version=2019-01-01"
 
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -ThrowOnError -Verbose
@@ -721,6 +834,21 @@ function Invoke-AzsProductRotateSecretsAction {
 <#
 .SYNOPSIS
     Lists product secrets or gets a product secret properties.
+.DESCRIPTION
+    Lists product secrets or gets a product secret properties.
+.PARAMETER PackageId
+    Product package Id to get the product secret properties for.
+.PARAMETER SecretName
+    Name of the secret to be retrieved.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:/> Get-AzsProductSecret -PackageId $PackageId -AsJson
+    Lists all external secrets from package with Id $PackageId. Outputs in Json format.
+    
+.EXAMPLE
+    PS C:/> Get-AzsProductSecret -PackageId $PackageId -SecretName AdHoc
+    Gets the product secret called 'AdHoc'
 #>
 function Get-AzsProductSecret {
     [CmdletBinding()]
@@ -736,7 +864,7 @@ function Get-AzsProductSecret {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($SecretName)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$($PackageId)/secrets?api-version=2019-01-01"
@@ -763,6 +891,36 @@ function Get-AzsProductSecret {
 <#
 .SYNOPSIS
     Sets product secret value.
+.DESCRIPTION
+    Locks the product subscription.
+.PARAMETER PackageId
+    Product package Id to set the product secret for.
+.PARAMETER SecretName
+    Name of the secret.
+.PARAMETER Value
+    Value of the secret.
+.PARAMETER PfxFileName
+    Location of the pfx file.
+.PARAMETER PfxPassword
+    PFX file password.
+.PARAMETER Password
+    Password Value.
+.PARAMETER Key
+    The symmetric key.
+.PARAMETER Force
+    Do not ask for confirmation.
+    
+.EXAMPLE
+    PS C:/> Set-AzsProductSecret -PackageId $PackageId -SecretName AdHoc -Value $value
+    Sets the product secret value to the given value.
+    
+.EXAMPLE
+    PS C:/> Set-AzsProductSecret -PackageId $PackageId -SecretName TlsCertificate -PfxFileName .\temp\ExternalCertificate\cert.pfx -PfxPassword $pfxPassword -Force
+    Sets the product secret value to the given value.
+    
+.EXAMPLE
+    PS C:/> Set-AzsProductSecret -PackageId $PackageId -SecretName ExternalSymmetricKey -Key $key -Force
+    Sets the product secret value to the given value.
 #>
 function Set-AzsProductSecret {
     [CmdletBinding()]
@@ -832,7 +990,7 @@ function Set-AzsProductSecret {
         $action = 'validate'
     }
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
     $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$PackageId/secrets/$SecretName/$($action)?api-version=2019-01-01"
 
     Invoke-AzsResourceManager -Method POST -Uri $requestUri -Body $body -ThrowOnError -Verbose | Out-Null
@@ -842,6 +1000,20 @@ function Set-AzsProductSecret {
 
 <#
 .SYNOPSIS
+    Gets or lists the action plans.
+.DESCRIPTION
+    Gets or lists the action plans.
+.PARAMETER PlanId
+    Action Plan Id to retrieve the properties for.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:/> Get-AzsActionPlan
+    Lists all the action plan under the subscription.
+.EXAMPLE
+    PS C:/> Get-AzsActionPlan -PlanId $planId -AsJson
+    
+    Gets the action plan properties for plan with Id $planId.
 #>
 function Get-AzsActionPlan {
     [CmdletBinding()]
@@ -854,7 +1026,7 @@ function Get-AzsActionPlan {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($PlanId)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans?api-version=2019-01-01"
@@ -874,6 +1046,18 @@ function Get-AzsActionPlan {
 
 <#
 .SYNOPSIS
+    Gets or lists action plan operations.
+.DESCRIPTION
+    Gets or lists action plan operations.
+.PARAMETER PlanId
+    Action Plan Identifier.
+.PARAMETER OperationId
+    Operation Id to retrieve the properties for.
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:/> Get-AzsActionPlanOperation -PlanId $planId -AsJson
+    Gets the action plan operations for plan with id $planId.
 #>
 function Get-AzsActionPlanOperation {
     [CmdletBinding()]
@@ -889,7 +1073,7 @@ function Get-AzsActionPlanOperation {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ([string]::IsNullOrEmpty($OperationId)) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans/$PlanId/operations?api-version=2019-01-01"
@@ -909,6 +1093,20 @@ function Get-AzsActionPlanOperation {
 
 <#
 .SYNOPSIS
+    Gets or lists the action plan attempt
+.DESCRIPTION
+    Gets or lists the action plan attempts
+.PARAMETER PlanId
+    Plan Id of the action plan
+.PARAMETER OperationId
+    Operation Id of the action plan attempt
+.PARAMETER AttemptNo
+    Action plan attempt number
+.PARAMETER AsJson
+    Outputs the result in Json format.
+.EXAMPLE
+    PS C:/> Get-AzsActionPlanAttempt -PlanId $planId -OperationId $operationId -AsJson
+    Gets or lists the action plan attempt properties for plan with id $planId and operation Id $operationId.
 #>
 function Get-AzsActionPlanAttempt {
     [CmdletBinding()]
@@ -926,7 +1124,7 @@ function Get-AzsActionPlanAttempt {
         [switch] $AsJson
     )
 
-    $subscriptionId = (Get-AzureRmContext).Subscription.Id
+    $subscriptionId = (Get-AzContext).Subscription.Id
 
     if ($AttemptNo -eq 0) {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans/$PlanId/operations/$OperationId/attempts?api-version=2019-01-01"
