@@ -11,7 +11,7 @@
 RootModule = 'Azs.Deployment.Admin'
 
 # Version number of this module.
-ModuleVersion = '$(ModuleVersion)'
+ModuleVersion = '0.9.0'
 
 # ID used to uniquely identify this module
 GUID = 'a50d2cce-63a7-4c7b-980f-c4cead941544'
@@ -47,7 +47,7 @@ Copyright = '(c) 2019 Microsoft Corporation. All rights reserved.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('AzureRm.Profile')
+RequiredModules = @('Az.Accounts')
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
