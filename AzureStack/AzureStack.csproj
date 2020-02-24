@@ -4,16 +4,10 @@
     <LangVersion>7.1</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Module</OutputType>
-    <!-- <AssemblyName>AzureStack</AssemblyName>
-    <RootNamespace>Microsoft.Azure.PowerShell.Cmdlets.AzureStack</RootNamespace>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath> -->
     <OutputPath>./bin</OutputPath>
     <PublishDir>$(OutputPath)</PublishDir>
     <NuspecFile>AzureStack.nuspec</NuspecFile>
     <NoPackageAnalysis>true</NoPackageAnalysis>
-    <!-- Some methods are marked async and don't have an await in them -->
-    <NoWarn>1998</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
