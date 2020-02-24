@@ -137,11 +137,7 @@ Aliases:
 
 Required: True
 Position: Named
-<<<<<<< HEAD:src/Azs.Fabric.Admin/docs/Get-AzsStoragePool.md
-Default value: -join("System.",(Get-AzLocation)[0].Location)
-=======
 Default value: None
->>>>>>> upstream/dev:src/Azs.Compute.Admin/docs/Remove-AzsPlatformImage.md
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
