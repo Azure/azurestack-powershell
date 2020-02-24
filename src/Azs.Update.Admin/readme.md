@@ -160,4 +160,16 @@ directive:
           State: 15
           ProgressStartTimeUtc: 25
           ProgressEndTimeUtcate: 25
+
+
+# Add release notes
+  - from: Azs.Update.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Update.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="1.7.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+
 ```
