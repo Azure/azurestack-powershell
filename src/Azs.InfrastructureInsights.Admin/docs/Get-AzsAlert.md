@@ -31,7 +31,7 @@ Get-AzsAlert -InputObject <IInfrastructureInsightsAdminIdentity> [-DefaultProfil
 ```
 
 ## DESCRIPTION
-Returns the requested an alert.
+Returns the requested alert.
 
 ## EXAMPLES
 
