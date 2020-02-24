@@ -14,6 +14,12 @@
 param([switch]$Isolated, [switch]$Run, [switch]$Test, [switch]$Docs, [switch]$Pack, [switch]$Code, [switch]$Release, [switch]$Debugger, [switch]$NoDocs)
 $ErrorActionPreference = 'Stop'
 
+$toss = Join-Path $PSScriptRoot "toss"
+if (Test-Path $toss)
+{
+    Remove-Item -Path $toss -Recurse -Force | Out-null
+}
+
 if($PSEdition -ne 'Core') {
   Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
@@ -80,12 +86,6 @@ if(-not $Debugger) {
 
   $null = Remove-Item -Recurse -ErrorAction SilentlyContinue -Path (Join-Path $binFolder 'Debug'), (Join-Path $binFolder 'Release')
 }
-
-$dll = Join-Path $PSScriptRoot 'bin\AzureStack.private.dll'
-if(-not (Test-Path $dll)) {
-  Write-Error "Unable to find output assembly in '$binFolder'."
-}
-
 
 
 Write-Host -ForegroundColor Green '-------------Done-------------'
