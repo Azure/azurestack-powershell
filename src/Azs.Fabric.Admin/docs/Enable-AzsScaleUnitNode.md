@@ -12,17 +12,17 @@ Stop maintenance mode for a scale unit node.
 
 ## SYNTAX
 
-### Stop (Default)
+### Start (Default)
 ```
-Enable-AzsScaleUnitNode -ScaleUnitNode <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Enable-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentity
+### StartViaIdentity
 ```
-Enable-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Enable-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,23 +30,14 @@ Stop maintenance mode for a scale unit node.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Enable-AzsScaleUnitNode -Name "HC1n25r2236"
 
-{{ Add output here }}
+Stop maintenance mode on a scale unit node.
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Stop maintenance mode for a scale unit node.
 
 ## PARAMETERS
 
@@ -82,13 +73,29 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
+### -Force
+Don't ask for confirmation.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-Parameter Sets: StopViaIdentity
+Parameter Sets: StartViaIdentity
 Aliases:
 
 Required: True
@@ -104,12 +111,28 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Start
 Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the scale unit node.
+
+```yaml
+Type: System.String
+Parameter Sets: Start
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -152,28 +175,12 @@ Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Start
 Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -ScaleUnitNode
-Name of the scale unit node.
-
-```yaml
-Type: System.String
-Parameter Sets: Stop
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -183,9 +190,10 @@ Dynamic: False
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
 
+
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Start
 Aliases:
 
 Required: False

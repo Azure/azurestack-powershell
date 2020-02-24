@@ -20,7 +20,7 @@ Get-AzsMacAddressPool [-Location <String>] [-ResourceGroupName <String>] [-Subsc
 
 ### Get
 ```
-Get-AzsMacAddressPool -MacAddressPool <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsMacAddressPool -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,23 @@ Returns the requested MAC address pool.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsMacAddressPool
 
-{{ Add output here }}
+A list of all MAC address pools at a location.
 ```
 
-{{ Add description here }}
+Returns a list of all MAC address pools at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsMacAddressPool -Name "8197fd09-8a69-417e-a55c-10c2c61f5ee7"
 
-{{ Add output here }}
+A specific MAC address pool at a location based on name.
 ```
 
-{{ Add description here }}
+Get a specific MAC address pool at a location based on name.
 
 ## PARAMETERS
 
@@ -114,13 +114,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -MacAddressPool
+### -Name
 Name of the MAC address pool.
 
 ```yaml
@@ -162,7 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

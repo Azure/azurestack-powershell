@@ -1,18 +1,18 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get a list of all Edge Gateway pools.
+```powershell
+PS C:\> Get-AzsEdgeGatewayPool
+
+Return a list of all Edge Gateway pools.
+```
+
+Get a list of all Edge Gateway pools.
+
+### Example 2: Get a specific edge gateway pool.
 ```powershell
 PS C:\> {{ Add code here }}
 
-{{ Add output here }}
+Return a specific edge gateway pool.
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Get a specific edge gateway pool.
 

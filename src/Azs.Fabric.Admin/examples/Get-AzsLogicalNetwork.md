@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsLogicalNetwork
 
-{{ Add output here }}
+A list of all logical networks at a location.
 ```
 
-{{ Add description here }}
+Get all logical networks at a location.
 
 ### Example 2: {{ Add title here }}
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsLogicalNetwork -Name "bb6c6f28-bad9-441b-8e62-57d2be255904"
 
-{{ Add output here }}
+A specific logical networks at a location based on a name.
 ```
 
-{{ Add description here }}
-
+Get a specific logical networks at a location based on a name.

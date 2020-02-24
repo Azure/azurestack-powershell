@@ -1,43 +1,44 @@
 ---
 external help file:
 Module Name: Azs.Fabric.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azsscaleunitnode
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/disable-azsinfrastructureroleinstance
 schema: 2.0.0
 ---
 
-# Disable-AzsScaleUnitNode
+# Disable-AzsInfrastructureRoleInstance
 
 ## SYNOPSIS
-Start maintenance mode for a scale unit node.
+
 
 ## SYNTAX
 
-### Stop (Default)
+### Shutdown (Default)
 ```
-Disable-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+Disable-AzsInfrastructureRoleInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
-### StopViaIdentity
+### ShutdownViaIdentity
 ```
-Disable-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Disable-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-Force]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Start maintenance mode for a scale unit node.
+Shutdown an infrastructure role instance for maintenance.
 
 ## EXAMPLES
 
 ### Example 1:
 ```powershell
-PS C:\> Disable-AzsScaleUnitNode -Name "HC1n25r2236"
+PS C:\> Disable-AzsInfrastructureRoleInstance -Name "n22r0903-Xrp03"
 
-Enable maintenance mode for a scale unit node.
+Shutdown an infrastructure role instance for maintenance.
 ```
 
-Start maintenance mode for a scale unit node.
+Shutdown an infrastructure role instance for maintenance.
+
 
 ## PARAMETERS
 
@@ -95,7 +96,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-Parameter Sets: StopViaIdentity
+Parameter Sets: ShutdownViaIdentity
 Aliases:
 
 Required: True
@@ -111,7 +112,7 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False
@@ -123,11 +124,11 @@ Dynamic: False
 ```
 
 ### -Name
-Name of the ScaleUnit
+Name of an infrastructure role instance.
 
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Shutdown
 Aliases:
 
 Required: True
@@ -171,11 +172,11 @@ Dynamic: False
 ```
 
 ### -ResourceGroupName
-Name of the resource group.
+Resource group in which the resource provider has been registered.
 
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False
@@ -190,10 +191,9 @@ Dynamic: False
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
 
-
 ```yaml
 Type: System.String
-Parameter Sets: Stop
+Parameter Sets: Shutdown
 Aliases:
 
 Required: False

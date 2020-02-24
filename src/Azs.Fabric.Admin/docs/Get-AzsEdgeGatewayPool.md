@@ -20,7 +20,7 @@ Get-AzsEdgeGatewayPool [-Location <String>] [-ResourceGroupName <String>] [-Subs
 
 ### Get
 ```
-Get-AzsEdgeGatewayPool -EdgeGatewayPool <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsEdgeGatewayPool -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,21 @@ Returns the requested edge gateway pool object.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGatewayPool
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
+Get a list of all Edge Gateway pools.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGateway -Name "AzS-Gwy01"
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
+Get a specific edge gateway pool.
 
 ## PARAMETERS
 
@@ -64,22 +62,6 @@ Parameter Sets: (All)
 Aliases: AzureRMContext, AzureCredential
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -EdgeGatewayPool
-Name of the edge gateway pool.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -130,7 +112,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the edge gateway pool.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -162,7 +160,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

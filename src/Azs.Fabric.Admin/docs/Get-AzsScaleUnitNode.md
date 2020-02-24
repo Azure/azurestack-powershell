@@ -20,7 +20,7 @@ Get-AzsScaleUnitNode [-Location <String>] [-ResourceGroupName <String>] [-Subscr
 
 ### Get
 ```
-Get-AzsScaleUnitNode -ScaleUnitNode <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsScaleUnitNode -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,28 +35,27 @@ Return the requested scale unit node.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnitNode
 
-{{ Add output here }}
+A list of all scale unit nodes at a location.
 ```
 
-{{ Add description here }}
+Get all scale unit nodes at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnitNode -Name "HC1n25r2231"
 
-{{ Add output here }}
+A specific scale unit node at a location given a name.
 ```
 
-{{ Add description here }}
+Get a specific scale unit node at a location given a name.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -114,7 +113,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the scale unit node.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -146,23 +161,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -ScaleUnitNode
-Name of the scale unit node.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

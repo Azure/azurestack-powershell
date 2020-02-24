@@ -89,7 +89,7 @@ directive:
       default:
         script: -join("System.",(Get-AzLocation)[0].Location)
 
-  # [EdgeGateway]: Following changes are for EdgeGateway
+  # ------------------- [EdgeGateway] -------------------
   # [EdgeGateway] Propertity Rename: change NumberOfConnection to NumberOfConnections
   - where:
       model-name: EdgeGateway
@@ -110,7 +110,7 @@ directive:
       subject: EdgeGateway
     hide: true
 
-  # [LogicalNetwork]: Following changes are for LogicalNetwork
+  # ------------------- [LogicalNetwork] -------------------
   # [LogicalNetwork] Rename property name in LogicalNetwork
   - where:
       model-name: LogicalNetwork
@@ -131,7 +131,7 @@ directive:
       subject: LogicalNetwork
     hide: true
 
-  # [LogicalSubnet]
+  # ------------------- [LogicalSubnet] -------------------
   # [LogicalSubnet] Parameter rename
   - where:
       subject: LogicalSubnet
@@ -145,7 +145,7 @@ directive:
       subject: LogicalSubnet
     hide: true
 
-  # [MacAddressPool]
+  # ------------------- [MacAddressPool] -------------------
   # [MacAddressPool] Parameter rename
   - where:
       subject: MacAddressPool
@@ -173,7 +173,7 @@ directive:
       subject: MacAddressPool
     hide: true
 
-  # [SlbMuxInstance]
+  # ------------------- [SlbMuxInstance] -------------------
   # [SlbMuxInstance] Parameter rename
   - where:
       subject: SlbMuxInstance
@@ -194,7 +194,7 @@ directive:
       subject: SlbMuxInstance
     hide: true
 
-  # [EdgeGatewayPool]: Following changes are for EdgeGatewayPool
+  # ------------------- [EdgeGatewayPool] -------------------
   # [EdgeGateway] Rename cmdlet parameter name in EdgeGatewayPool
   - where:
       subject: EdgeGatewayPool
@@ -215,7 +215,7 @@ directive:
       subject: EdgeGatewayPool
     hide: true
 
-  # [InfrastructureRole]: Following changes are for InfrastructureRole
+  # ------------------- [InfrastructureRole] -------------------
   # Rename subject AzsInfraRole to AzsInfrastructureRole
   - where:
       subject: InfraRole
@@ -247,7 +247,7 @@ directive:
       subject: InfrastructureRole
     hide: true
 
-  # [IPPool]: Following changes are for IpPool
+  # ------------------- [IPPool] -------------------
   # [IPPool]: Rename property name
   - where:
       model-name: IPPool
@@ -280,7 +280,7 @@ directive:
       subject: IPPool
     hide: true
 
-  # [ScaleUnit]: Following changes are for ScaleUnit
+  # ------------------- [ScaleUnit] -------------------
   # [ScaleUnit]: Rename property name
   - where:
       model-name: ScaleUnit
@@ -307,7 +307,7 @@ directive:
       subject: ScaleUnit
     hide: true
 
-  # [ScaleUnitNode]: Following changes are for ScaleUnitNode
+  # ------------------- [ScaleUnitNode] -------------------
   # [ScaleUnitNode] Cmdlet parameter rename
   - where:
       subject: ScaleUnitNode
@@ -395,14 +395,14 @@ directive:
       verb: Disable
       subject: ScaleUnitNode
 
-  # [FabricLocation] Following are for Fabric location.
+  # ------------------- [FabricLocation] -------------------
   # Rename Get-AzsFabricLocation to Get-AzsInfrastructureLocation
   - where:
       subject: FabricLocation
     set:
       subject: InfrastructureLocation
 
-  # [InfrastructureRoleInstance]
+  # ------------------- [InfrastructureRoleInstance] -------------------
   # [InfrastructureRoleInstance] Rename Subject
   - where:
       subject: InfraRoleInstance
@@ -455,13 +455,7 @@ directive:
       subject: InfrastructureRoleInstance
     hide: true
 
-  # Rename Get-AzsFileShare to Get-AzsInfrastructureShare
-  - where:
-      subject: FileShare
-    set:
-      subject: InfrastructureShare
-
-  # Separate InfraRoleInstance stop operations
+  # [InfrastructureRoleInstance] Separate InfraRoleInstance stop operations
   - where:
       verb: Stop
       subject: InfrastructureRoleInstance
@@ -469,7 +463,28 @@ directive:
     set:
       verb: Disable
 
-  # Rename model property names for StorageSubSystem to match spec
+  # ------------------- [AzsInfrastructureShare] -------------------
+  # Rename Get-AzsFileShare to Get-AzsInfrastructureShare
+  - where:
+      subject: FileShare
+    set:
+      subject: InfrastructureShare
+
+  # Hide the auto-generated Get-AzsInfrastructureShare and expose it through customized one
+  - where:
+      verb: Get
+      subject: InfrastructureShare
+    hide: true
+
+  # Rename cmdlet parameter name in InfrastructureShare
+  - where:
+      subject: InfrastructureShare
+      parameter-name: FileShare
+    set:
+      parameter-name: Name
+
+  # ------------------- [StorageSubSystem] -------------------
+  # [StorageSubSystem] Rename model property names for StorageSubSystem to match spec
   - where:
       model-name: StorageSubSystem
       property-name: TotalCapacityGb
@@ -482,14 +497,42 @@ directive:
     set:
       property-name: RemainingCapacityGB
   
-  # Rename model property names for Drive to match spec
+ # [StorageSubSystem] Hide the auto-generated Get-AzsStorageSubSystem and expose it through customized one
+  - where:
+      verb: Get
+      subject: StorageSubSystem
+    hide: true
+
+  # Rename cmdlet parameter name in StorageSubSystem
+  - where:
+      subject: StorageSubSystem
+      parameter-name: StorageSubSystem
+    set:
+      parameter-name: Name
+
+  # ------------------- [Drive] -------------------
+  # [Drive] Rename model property names for Drive to match spec
   - where:
       model-name: Drive
       property-name: CapacityGb
     set:
       property-name: CapacityGB
 
-  # Rename model property names for Volume to match spec
+  # [Drive] Rename cmdlet parameter name in Drive
+  - where:
+      subject: Drive
+      parameter-name: Drive
+    set:
+      parameter-name: Name
+
+  # [Drive] Hide the auto-generated Get-AzsDrive and expose it through customized one
+  - where:
+      verb: Get
+      subject: Drive
+    hide: true
+
+  # ------------------- [Volume] -------------------
+  # [Volume] Rename model property names for Volume to match spec
   - where:
       model-name: Volume
       property-name: TotalCapacityGb
@@ -508,28 +551,7 @@ directive:
     set:
       property-name: VolumeLabel
 
-  # Rename cmdlet parameter name in InfrastructureShare
-  - where:
-      subject: InfrastructureShare
-      parameter-name: FileShare
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in StorageSubSystem
-  - where:
-      subject: StorageSubSystem
-      parameter-name: StorageSubSystem
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in Drive
-  - where:
-      subject: Drive
-      parameter-name: Drive
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in Volume
+  # [Volume] Rename cmdlet parameter name in Volume
   - where:
       subject: Volume
       parameter-name: Volume
@@ -574,6 +596,7 @@ directive:
       subject: Volume
     hide: true
 
+  # ------------------- [Misc] -------------------
   # Hide the auto-generated Get-AzsFabricOperation and expose it through customized one
   - where:
       verb: Get
