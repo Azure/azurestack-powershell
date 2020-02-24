@@ -1,0 +1,83 @@
+{
+  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 100000000,\r\n    \"numberOfStorageAccounts\": 1000000000\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "95" ],
+        "x-ms-client-request-id": [ "553aec00-8b9d-45c3-986d-594009b5856d" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\New-AzsStorageQuota" ],
+        "FullCommandName": [ "New-AzsStorageQuota_CreateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "103" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "892b586d-28fa-4c14-9df5-0eb6c07783a3" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "892b586d-28fa-4c14-9df5-0eb6c07783a3" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T085522Z:892b586d-28fa-4c14-9df5-0eb6c07783a3" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 08:55:22 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvVodPgDUX0tIDzTWR25Cy+FdeWJpI0yvRbl4hNyuv8P6ixPDLkYoKvM8MZAE7rkQIfMwib/De5K+7BlPiJ/irTNNRLVXuuGcSJUze3vS7SUEEa4GV3imAhru1aK42BBRiZ0X4RaWHYpcNyBQ8pVZO" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "361" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota\",\r\n  \"name\": \"redmond/TestCreateQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 1000000000,\r\n    \"capacityInGb\": 100000000\r\n  }\r\n}"
+    }
+  },
+  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$DELETE+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+2": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "96" ],
+        "x-ms-client-request-id": [ "d144ba1c-47aa-4547-bd4f-ac295f76205d" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Remove-AzsStorageQuota" ],
+        "FullCommandName": [ "Remove-AzsStorageQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "cbe1eb6a-6302-47dc-86a9-0228a2931c8f" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14999" ],
+        "x-ms-request-id": [ "cbe1eb6a-6302-47dc-86a9-0228a2931c8f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T085522Z:cbe1eb6a-6302-47dc-86a9-0228a2931c8f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 08:55:22 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvEdDWyiR4k/hwcxerYbFZWgGHDpiZzKrY5RZGJZoqDjE6+rg9jA0399Q4GYDG1KaxcT/LqO7Hz2BFV9aJuyY8wuc054q6Xt07n4xyDlnd4DBf+gigtA0/It35vWvvl1zCENC62cmBqLVNSvO1NIrJ" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  }
+}

@@ -33,14 +33,14 @@ function Set-AzsBackupConfiguration {
 param(
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Name of the backup location.
     ${Location},
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='"system.$((Get-AzLocation)[0].Name)"')]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='"system.$((Get-AzLocation)[0].Location)"')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},

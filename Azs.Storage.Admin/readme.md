@@ -49,32 +49,221 @@ In this directory, run AutoRest:
 require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/storage/readme.azsautogen.md
-
-subject-prefix: 'Storage'
-module-version: 0.0.1
+```
 
 ### File Renames 
+``` yaml
 module-name: Azs.Storage.Admin 
 csproj: Azs.Storage.Admin.csproj 
 psd1: Azs.Storage.Admin.psd1 
 psm1: Azs.Storage.Admin.psm1
+```
 
+### Parameter default values
+``` yaml
 directive:
+    # Remove cmdlets for AsyncOperation.
+  - where:
+      subject: AsyncOperation
+    remove: true
+    # Remove cmdlets for StorageService.
+  - where:
+      subject: StorageService
+    remove: true
+    # Remove cmdlets for StorageServiceSub.
+  - where:
+      subject: StorageServiceSub
+    remove: true
+    # Remove cmdlets for StorageServiceRg.
+  - where:
+      subject: StorageServiceRg
+    remove: true
+
+    # Rename Get-AzsAcquisition to Get-AzsStorageAcquisition
+  - where:
+      verb: Get
+      subject: Acquisition
+    set:
+      verb: Get
+      subject: StorageAcquisition
+    # Rename Invoke-AzsStorageReclaimStorageAccountStorageCapacity to Start-AzsReclaimStorageCapacity
+  - where:
+      verb: Invoke
+      subject: ReclaimStorageAccountStorageCapacity
+    set:
+      verb: Start
+      subject: ReclaimStorageCapacity
+    # Rename Get-AzsStorageSetting to Get-AzsStorageSettings
+  - where:
+      verb: Get
+      subject: StorageSetting
+    set:
+      verb: Get
+      subject: StorageSettings
+    # Rename Set-AzsStorageSetting to Update-AzsStorageSettings
+  - where:
+      verb: Set
+      subject: StorageSetting
+    set:
+      verb: Update
+      subject: StorageSettings
+
+    # Rename cmdlet parameter name and set default value in StorageAccount 
+  - where:
+      subject: StorageAccount
+      parameter-name: AccountId
+    set:
+      parameter-name: Name
+      alias: AccountId
+  - where:
+      subject: StorageAccount
+      parameter-name: Summary
+    set:
+      default:
+        script: '$false'
+
+    # Rename cmdlet parameter name in StorageSettings
+  - where:
+      subject: StorageSettings
+      parameter-name: RetentionPeriodForDeletedStorageAccountsInDay
+    set:
+      parameter-name: RetentionPeriodForDeletedStorageAccountsInDays
+
+    # Rename cmdlet parameter name and set default value in StorageQuota
   - where:
       subject: StorageQuota
       parameter-name: QuotaName
     set:
       parameter-name: Name
+      alias: QuotaName
   - where:
       verb: New
+      subject: StorageQuota
       parameter-name: CapacityInGb
     set:
       default:
         script: '500'
   - where:
-      verb: New
+      subject: StorageQuota
       parameter-name: NumberOfStorageAccount
+    set:
+      parameter-name: NumberOfStorageAccounts
+  - where:
+      verb: New
+      subject: StorageQuota
+      parameter-name: NumberOfStorageAccounts
     set:
       default:
         script: '20'
+  
+    # Remove GetViaIdentity parameter set in Get-StorageSettings
+  - where:
+      verb: Get
+      subject: StorageSettings
+      variant: GetViaIdentity
+    remove: true
+
+    # Remove UndeleteViaIdentity parameter set in Restore-StorageAccount
+  - where:
+      verb: Restore
+      subject: StorageAccount
+      variant: UndeleteViaIdentity
+    remove: true
+
+    # Remove ReclaimViaIdentity parameter set in Start-AzsReclaimStorageCapacity
+  - where:
+      verb: Start
+      subject: ReclaimStorageCapacity
+      variant: ReclaimViaIdentity
+    remove: true
+
+    # Remove Update parameter set in Update-AzsStorageSettings
+  - where:
+      verb: Update
+      subject: StorageSettings
+      variant: Update
+    remove: true
+
+    # Remove UpdateViaIdentity parameter set in Update-AzsStorageSettings
+  - where:
+      verb: Update
+      subject: StorageSettings
+      variant: ^UpdateViaIdentity(.*)
+    remove: true
+
+    # Rename model property names
+  - where:
+      model-name: Settings
+      property-name: RetentionPeriodForDeletedStorageAccountsInDay
+    set:
+      property-name: RetentionPeriodForDeletedStorageAccountsInDays
+  - where:
+      model-name: StorageQuota
+      property-name: NumberOfStorageAccount
+    set:
+      property-name: NumberOfStorageAccounts
+  - where:
+      model-name: StorageAccount
+      property-name: PrimaryEndpoint
+    set:
+      property-name: PrimaryEndpoints
+
+    # Default to Format-List for the Settings, StorageQuota and Acquisition model as there are many important fields
+  - where:
+      model-name: Settings
+    set:
+      suppress-format: true
+  - where:
+      model-name: StorageQuota
+    set:
+      suppress-format: true
+  - where:
+      model-name: Acquisition
+    set:
+      suppress-format: true
+
+    # Hide the auto-generated Get-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: Get
+      subject: StorageQuota
+    hide: true
+
+    # Hide the auto-generated New-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: New
+      subject: StorageQuota
+    hide: true
+
+    # Hide the auto-generated Remove-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: Remove
+      subject: StorageQuota
+    hide: true
+
+    # Hide the auto-generated Set-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: Set
+      subject: StorageQuota
+    hide: true
+
+    # Hide the auto-generated Remove-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: Restore
+      subject: StorageAccount
+    hide: true
+
+    # Hide the auto-generated Remove-AzsStorageQuota and expose it through customized one
+  - where:
+      verb: Start
+      subject: ReclaimStorageCapacity
+    hide: true
+
+    # Hide the auto-generated Update-AzsStorageSettings and expose it through customized one
+  - where:
+      verb: Update
+      subject: StorageSettings
+    hide: true
+
+subject-prefix: ''
+module-version: 0.9.0
 ```

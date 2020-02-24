@@ -51,7 +51,7 @@ require:
   - $(repo)/specification/azsadmin/resource-manager/update/readme.azsautogen.md
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 
 ### File Renames 
 module-name: Azs.Update.Admin 
@@ -97,10 +97,67 @@ directive:
     set:
       parameter-name: Name
       default:
-        script: (Get-AzLocation)[0].Name
+        script: (Get-AzLocation)[0].Location
   - where:
       subject: (.*)Run$
       parameter-name: RunName
     set:
       parameter-name: Name
+    # Hide the auto-generated Get-AzsUpdateRun and Resume-AzsUpdateRUn and expose it through customized one
+  - where:
+      subject: UpdateRun
+    hide: true
+    # Hide the auto-generated Get-AzsUpdateRunTopLevel. This will effectively remove the commandlet since we dont have a customized one
+  - where:
+      subject: UpdateRunTopLevel
+    remove: true
+    # Hide the auto-generated Install-AzsUpdate and Get-AzsUpdate and exposte it through customized one
+  - where:
+      subject: Update
+    hide: true
+    # Format Output Values
+  - where:
+      model-name: Update
+    set:
+      format-table:
+        properties:
+          - Location
+          - DisplayName
+          - Name
+          - State
+          - Publisher
+        width:
+          Location: 15
+          DisplayName: 30
+          Name: 40
+          State: 20
+          Publisher: 15
+  - where:
+      model-name: UpdateLocation
+    set:
+      format-table:
+        properties:
+          - Name
+          - CurrentVersion
+          - CurrentOemVersion
+          - State
+        width:
+          Name: 20
+          CurrentVersion: 20
+          CurrentOemVersion: 20
+          State: 20
+  - where:
+      model-name: UpdateRun
+    set:
+      format-table:
+        properties:
+          - Name
+          - State
+          - ProgressStartTimeUtc
+          - ProgressEndTimeUtc
+        width:
+          Name: 40
+          State: 15
+          ProgressStartTimeUtc: 25
+          ProgressEndTimeUtcate: 25
 ```

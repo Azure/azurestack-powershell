@@ -1,0 +1,42 @@
+{
+  "Get-AzsNetworkAdminOverview+[NoContext]+TestGetAdminOverview+$GET+https://adminmanagement.northwest.azs-longhaul-04.selfhost.corp.microsoft.com/subscriptions/39c82aed-b2b7-4a66-abdb-611de00bf11e/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-04.selfhost.corp.microsoft.com/subscriptions/39c82aed-b2b7-4a66-abdb-611de00bf11e/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "4" ],
+        "x-ms-client-request-id": [ "4210b97e-0e05-4974-a834-446b16a49785" ],
+        "CommandName": [ "Get-AzsNetworkAdminOverview" ],
+        "FullCommandName": [ "Get-AzsNetworkAdminOverview_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8bebaff7-698b-4770-8c2f-7dbea1c6fd64" ],
+        "x-ms-request-id": [ "b1b9a4b5-ec70-4779-8a7d-aea65992d311" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14823" ],
+        "x-ms-routing-request-id": [ "NORTHWEST:20200207T231517Z:8bebaff7-698b-4770-8c2f-7dbea1c6fd64" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 07 Feb 2020 23:15:16 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvnCEdwfwP058QSgML7vGXI90e7vIODZiJTvdxwFLmS0rzue7Wl69CqgbGrkfpyvGXp2NYTSnTWP/TxGMkiudYFiQXCQPdSZMFScJg6jFBq9Stm0P9VgQdYaxbokz6fi542aqDwoK+2j+Uonxip6rN" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "1183" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"\",\r\n  \"type\": \"Microsoft.Network.Admin/adminOverview\",\r\n  \"location\": \"\",\r\n  \"id\": \"/subscriptions/39c82aed-b2b7-4a66-abdb-611de00bf11e/providers/Microsoft.Network.Admin/adminOverview/\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualNetworkHealth\": {\r\n      \"totalResourceCount\": 22,\r\n      \"healthyResourceCount\": 0,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 22\r\n    },\r\n    \"loadBalancerMuxHealth\": {\r\n      \"totalResourceCount\": 2,\r\n      \"healthyResourceCount\": 2,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 0\r\n    },\r\n    \"virtualGatewayHealth\": {\r\n      \"totalResourceCount\": 3,\r\n      \"healthyResourceCount\": 2,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 1\r\n    },\r\n    \"publicIpAddressUsage\": {\r\n      \"totalResourceCount\": 1023,\r\n      \"inUseResourceCount\": 59\r\n    },\r\n    \"backendIpUsage\": {\r\n      \"totalResourceCount\": 282,\r\n      \"inUseResourceCount\": 23\r\n    },\r\n    \"macAddressUsage\": {\r\n      \"totalResourceCount\": 4063232,\r\n      \"inUseResourceCount\": 50\r\n    }\r\n  }\r\n}"
+    }
+  }
+}
