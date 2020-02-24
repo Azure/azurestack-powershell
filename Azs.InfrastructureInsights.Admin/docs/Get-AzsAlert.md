@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzsAlert
 
 ## SYNOPSIS
-Returns the requested an alert.
+Returns the requested alert.
 
 ## SYNTAX
 
