@@ -66,8 +66,6 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/ScaleUnitNode.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/SlbMuxInstance.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageOperationResults.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StoragePool.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/FileShare.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2018-10-01/StorageSubSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Drive.json
@@ -560,7 +558,39 @@ directive:
     set:
       parameter-name: Name
 
-  # [Volume] Hide the auto-generated Get-AzsVolume and expose it through customized one
+  # Default to Format-List for the StorageSubSystem, FileShare and Volume model as there are many important fields
+  - where:
+      model-name: StorageSubSystem
+    set:
+      suppress-format: true
+  - where:
+      model-name: FileShare
+    set:
+      suppress-format: true
+  - where:
+      model-name: Volume
+    set:
+      suppress-format: true
+
+  # Hide the auto-generated Get-AzsInfrastructureShare and expose it through customized one
+  - where:
+      verb: Get
+      subject: InfrastructureShare
+    hide: true
+
+  # Hide the auto-generated Get-AzsStorageSubSystem and expose it through customized one
+  - where:
+      verb: Get
+      subject: StorageSubSystem
+    hide: true
+
+  # Hide the auto-generated Get-AzsDrive and expose it through customized one
+  - where:
+      verb: Get
+      subject: Drive
+    hide: true
+
+  # Hide the auto-generated Get-AzsVolume and expose it through customized one
   - where:
       verb: Get
       subject: Volume
@@ -590,5 +620,5 @@ directive:
     hide: true
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 ```
