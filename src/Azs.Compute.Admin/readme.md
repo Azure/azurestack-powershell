@@ -105,6 +105,55 @@ directive:
       model-name: PlatformImage
     set:
       suppress-format: true
+  
+    # Rename property OsDiskOstype in PlatformImage model to OsType
+  - where:
+      property-name: OsDiskOstype
+      model-name: PlatformImage
+    set:
+      property-name: OsType
+
+    # Rename property OsDiskUri in PlatformImage model to OsUri
+  - where:
+      property-name: OsDiskUri
+      model-name: PlatformImage
+    set:
+      property-name: OsUri
+
+    # Rename property DetailBillingPartNumber in PlatformImage model to BillingPartNumber
+  - where:
+      property-name: DetailBillingPartNumber
+      model-name: PlatformImage
+    set:
+      property-name: BillingPartNumber
+
+    # Rename property DataDisk in PlatformImage model to DataDisks
+  - where:
+      property-name: DataDisk
+      model-name: PlatformImage
+    set:
+      property-name: DataDisks
+
+    # Rename property Sku in Disk model to DiskSku
+  - where:
+      property-name: Sku
+      model-name: Disk
+    set:
+      property-name: DiskSku
+
+    # Rename property MaxAllocationPremiumManagedDisksAndSnapshot in Disk model to PremiumManagedDiskAndSnapshotSize
+  - where:
+      property-name: MaxAllocationPremiumManagedDisksAndSnapshot
+      model-name: Quota
+    set:
+      property-name: PremiumManagedDiskAndSnapshotSize
+
+    # Rename property MaxAllocationStandardManagedDisksAndSnapshot in Disk model to StandardManagedDiskAndSnapshotSize
+  - where:
+      property-name: MaxAllocationStandardManagedDisksAndSnapshot
+      model-name: Quota
+    set:
+      property-name: StandardManagedDiskAndSnapshotSize
 
     # Default to Format-List for the Disk commandlets as there are many important fields
   - where:
@@ -159,11 +208,109 @@ directive:
       parameter-name: VmScaleSetEnabled
     set:
       parameter-name: VMScaleSetEnabled
+  
+  - where:
+      parameter-name: SupportMultipleExtension
+    set:
+      parameter-name: SupportMultipleExtensions
 
   - where:
-      parameter-set: SupportMultipleExtension
+      parameter-name: Id
+      verb: Get
+      subject: Disk
     set:
-      parameter-set: SupportMultipleExtensions
-  
+      parameter-name: Name
+
+# New Compute Quota --- CoresLimit parameter
+  - where:
+      parameter-name: CoresLimit
+      verb: New
+    set:
+      default:
+        script: '100'
+
+  - where:
+      parameter-name: CoresLimit
+    set:
+      alias: CoresLimit
+
+  - where:
+      parameter-name: CoresLimit
+    set:
+      parameter-name: CoresCount
+
+# New Compute Quota --- AvailabilitySetCount parameter
+  - where:
+      parameter-name: AvailabilitySetCount
+      verb: New
+    set:
+      default:
+        script: '10'
+
+# New Compute Quota --- VirtualMachineCount parameter
+  - where:
+      parameter-name: VirtualMachineCount
+      verb: New
+    set:
+      default:
+        script: '100'
+
+# New Compute Quota --- MaxAllocationStandardManagedDisksAndSnapshot parameter
+  - where:
+      parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
+      verb: New
+    set:
+      default:
+        script: '2048'
+
+  - where:
+      parameter-name: MaxAllocationStandardManagedDisksAndSnapshot
+    set:
+      parameter-name: StandardManagedDiskAndSnapshotSize
+
+# New Compute Quota --- MaxAllocationPremiumManagedDisksAndSnapshot parameter
+  - where:
+      parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
+      verb: New
+    set:
+      default:
+        script: '2048'
+
+  - where:
+      parameter-name: MaxAllocationPremiumManagedDisksAndSnapshot
+    set:
+      parameter-name: PremiumManagedDiskAndSnapshotSize
+
+# New Disk Migration --- Disks Parameter
+  - where:
+      parameter-name: Disk
+      verb: New
+    set:
+      parameter-name: Disks
+
+# New Disk Migration --- MigrationId Parameter
+  - where:
+      parameter-name: MigrationId
+    set:
+      alias: MigrationId
+
+  - where:
+      parameter-name: MigrationId
+    set:
+      parameter-name: Name
+
+  # Remove CancelViaIdentity parameter set in Stop-AzsDiskMigrationJob
+  - where:
+      verb: Stop
+      subject: DiskMigrationJob
+      variant: CancelViaIdentity
+    remove: true
+
+  # Hide the auto-generated New-AzsDiskMigrationJob and expose it through customized one
+  - where:
+      verb: New
+      subject: DiskMigrationJob
+    hide: true
+
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0

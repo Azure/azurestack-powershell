@@ -51,7 +51,7 @@ require:
   - $(repo)/specification/azsadmin/resource-manager/subscriptions/readme.azsautogen.md
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0
 sanitize-names: false
 
 ### File Renames

@@ -56,7 +56,7 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/Quotas.json
 
 subject-prefix: 'Keyvault'
-module-version: 0.0.1
+module-version: 0.9.0
 
 ### File Renames
 module-name: Azs.KeyVault.Admin

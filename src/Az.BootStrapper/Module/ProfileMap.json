@@ -1,0 +1,37 @@
+{
+    "2019-03-01-hybrid": {
+        "Az": [
+            "0.10.0"
+        ],
+        "Az.Accounts": [
+            "1.7.0"
+        ],
+        "Az.Compute": [
+            "0.10.0"
+        ],
+        "Az.Dns": [
+            "0.10.0"
+        ],
+        "Az.Monitor": [
+            "1.5.0"
+        ],
+        "Az.KeyVault": [
+            "0.10.0"
+        ],
+        "Az.Network": [
+            "0.10.0"
+        ],
+        "Az.Resources": [
+            "0.10.0"
+        ],
+        "Az.Storage": [
+            "0.10.0"
+        ],
+        "Az.Billing": [
+            "0.10.0"
+        ],
+        "Az.Websites": [
+            "0.10.0"
+        ]
+    }
+}
