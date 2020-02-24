@@ -11,10 +11,9 @@
     <description>Microsoft Azure PowerShell: Az.BootStrapper cmdlets</description>
     <releaseNotes></releaseNotes>
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
-    <tags>Az.BootStrapper AzureStack</tags>
+    <tags>Az.BootStrapper PSModule AzureStack</tags>
   </metadata>
   <files>
     <file src="Module\**\*" />
-   <!-- <file src="AzureStack.psm1" /> -->
   </files>
 </package>
