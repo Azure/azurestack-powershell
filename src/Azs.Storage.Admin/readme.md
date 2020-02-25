@@ -100,12 +100,12 @@ directive:
     set:
       verb: Get
       subject: StorageSettings
-    # Rename Set-AzsStorageSetting to Update-AzsStorageSettings
+    # Rename Set-AzsStorageSetting to Set-AzsStorageSettings
   - where:
       verb: Set
       subject: StorageSetting
     set:
-      verb: Update
+      verb: Set
       subject: StorageSettings
 
     # Rename cmdlet parameter name and set default value in StorageAccount 
@@ -177,16 +177,16 @@ directive:
       variant: ReclaimViaIdentity
     remove: true
 
-    # Remove Update parameter set in Update-AzsStorageSettings
+    # Remove Update parameter set in Set-AzsStorageSettings
   - where:
-      verb: Update
+      verb: Set
       subject: StorageSettings
       variant: Update
     remove: true
 
-    # Remove UpdateViaIdentity parameter set in Update-AzsStorageSettings
+    # Remove UpdateViaIdentity parameter set in Set-AzsStorageSettings
   - where:
-      verb: Update
+      verb: Set
       subject: StorageSettings
       variant: ^UpdateViaIdentity(.*)
     remove: true
@@ -258,9 +258,9 @@ directive:
       subject: ReclaimStorageCapacity
     hide: true
 
-    # Hide the auto-generated Update-AzsStorageSettings and expose it through customized one
+    # Hide the auto-generated Set-AzsStorageSettings and expose it through customized one
   - where:
-      verb: Update
+      verb: Set
       subject: StorageSettings
     hide: true
 
