@@ -131,6 +131,11 @@ directive:
       verb: New|Set
       subject: Subscription
     hide: true
+    ## output format
+  - where:
+      model-name: Offer
+    set:
+      suppress-format: true
 
 # Add release notes
   - from: Azs.Subscriptions.nuspec
