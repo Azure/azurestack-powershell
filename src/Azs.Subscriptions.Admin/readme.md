@@ -305,7 +305,18 @@ directive:
       verb: New
       subject: UserSubscription
     hide: true
-
+## output format
+  - where:
+      model-name: Manifest
+    set:
+      format-table:
+        properties: 
+          - Name
+          - Metadata
+  - where:
+      model-name: Plan|Offer
+    set:
+      suppress-format: true
 
 # Add release notes
   - from: Azs.Subscriptions.Admin.nuspec
