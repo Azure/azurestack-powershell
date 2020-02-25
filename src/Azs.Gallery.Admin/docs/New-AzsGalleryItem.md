@@ -41,7 +41,6 @@ TestUbuntu.Test.1.0.0 TestUbuntu TestUbuntu           Test     Test.TestUbuntu.1
 
 Uploads TestUbuntu.Test.1.0.0 to the gallery.
 
-
 ## PARAMETERS
 
 ### -DefaultProfile
