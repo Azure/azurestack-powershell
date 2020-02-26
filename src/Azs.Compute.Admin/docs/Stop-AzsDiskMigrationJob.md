@@ -12,16 +12,9 @@ Cancel a disk migration job.
 
 ## SYNTAX
 
-### Cancel (Default)
 ```
 Stop-AzsDiskMigrationJob -Name <String> [-Location <String>] [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CancelViaIdentity
-```
-Stop-AzsDiskMigrationJob -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,23 +22,25 @@ Cancel a disk migration job.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Stop-AzsDiskMigrationJob -Name TestJob
 
-{{ Add output here }}
+CreationTime : 2/26/2020 11:06:40 AM
+EndTime      : 2/26/2020 11:07:24 AM
+Id           : /subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrati
+               onjobs/TestJob
+Location     : redmond
+MigrationId  : TestJob
+Name         : redmond/TestJob
+StartTime    : 2/26/2020 11:06:40 AM
+Status       : Canceled
+Subtask      : {47774498-6bc7-4ce2-98ca-738739ded2fc, b09ac623-f71d-480c-98bc-88fa3f603f2c}
+TargetShare  : \\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\SU1_ObjStore_4
+Type         : Microsoft.Compute.Admin/locations/diskmigrationjobs
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Cancel a managed disk migration job.
 
 ## PARAMETERS
 
@@ -65,29 +60,12 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: CancelViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-Dynamic: False
-```
-
 ### -Location
 Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Cancel
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -103,7 +81,7 @@ The migration job guid name.
 
 ```yaml
 Type: System.String
-Parameter Sets: Cancel
+Parameter Sets: (All)
 Aliases: MigrationId
 
 Required: True
@@ -120,7 +98,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Cancel
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -169,8 +147,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180730Preview.IDiskMigrationJob
@@ -178,22 +154,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## ALIASES
 
 ## NOTES
-
-### COMPLEX PARAMETER PROPERTIES
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-#### INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
-  - `[DiskId <String>]`: The disk guid as identity.
-  - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Location of the resource.
-  - `[MigrationId <String>]`: The migration job guid name.
-  - `[Offer <String>]`: Name of the offer.
-  - `[Publisher <String>]`: Name of the publisher.
-  - `[QuotaName <String>]`: Name of the quota.
-  - `[Sku <String>]`: Name of the SKU.
-  - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
-  - `[Type <String>]`: Type of extension.
-  - `[Version <String>]`: The version of the resource.
 
 ## RELATED LINKS
 
