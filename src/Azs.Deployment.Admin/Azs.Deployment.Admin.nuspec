@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Azs.Deployment.Admin</id>
+    <version>0.9.0</version>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://aka.ms/azps-license</licenseUrl>
+    <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
+    <description>Microsoft Azure PowerShell: Azs.Deployment.Admin cmdlets</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Azs.Deployment.Admin PSModule AzureStack</tags>
+  </metadata>
+  <files>
+    <file src="Module\**\*" />
+  </files>
+</package>
