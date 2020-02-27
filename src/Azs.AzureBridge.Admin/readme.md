@@ -48,8 +48,10 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/azurebridge/readme.azsautogen.md
   - $(repo)/specification/azsadmin/resource-manager/azurebridge/readme.md
+
+subject-prefix: AzureBridge
+module-version: 0.9.0
 
 ### File Renames
 module-name: Azs.AzureBridge.Admin
@@ -60,15 +62,15 @@ psm1: Azs.AzureBridge.Admin.psm1
 directive:  
   - where:
         model-name: ActivationResource
-    set:	  
+    set:
         suppress-format: true
   - where:
         model-name: ProductResource
-    set:	  
+    set:
         suppress-format: true
   - where:
         model-name: DownloadedProductResource
-    set:	  
+    set:
         suppress-format: true
   
   # Add alias for ProductName to Name
@@ -76,8 +78,8 @@ directive:
         parameter-name: ProductName
     set:
         alias: Name
-        
-  # Rename Properties 
+
+# Rename Properties
   - where:
       model-name: ProductResource
       property-name: ProductPropertyVersion
@@ -117,8 +119,15 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.AzureBridge.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="1.7.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.0.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
 
-subject-prefix: AzureBridge
-module-version: 0.9.0
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 ```
