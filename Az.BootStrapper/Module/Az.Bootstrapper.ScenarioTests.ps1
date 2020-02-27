@@ -44,7 +44,7 @@ InModuleScope Az.Bootstrapper {
 
             # Assert 
             It "Should return 2019-03-01-hybrid Profile" {
-                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
                 $result[0].Contains('2019-03-01-hybrid') | Should Be $true
             }
 
@@ -68,7 +68,7 @@ InModuleScope Az.Bootstrapper {
 
             # Assert
             It "Should return 2016-04-consistent" {
-                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 $result[0].Contains('2016-04-consistent') | Should Be $true
             }
 
@@ -86,13 +86,13 @@ InModuleScope Az.Bootstrapper {
                 $session = New-PSSession
 
                 # Ensure 2016-09-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 $profilesInstalled[0].Contains('2016-04-consistent') | Should Be $true
 
                 # Act
                 # Install profile 'Latest'
                 Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
-                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
 
                 # Assert
                 It "Should return 2016-09-consistent & Latest" {
@@ -115,7 +115,7 @@ InModuleScope Az.Bootstrapper {
                 $session = New-PSSession
 
                 # Ensure profile Latest is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
 
                 # Act
@@ -156,7 +156,7 @@ InModuleScope Az.Bootstrapper {
                 $session = New-PSSession
 
                 # Check if '2016-04-consistent' is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
 
                 # Remove latest profile map from cache for testing if it updates from online.
@@ -167,12 +167,12 @@ InModuleScope Az.Bootstrapper {
                 }
                 
                 # Act
-                Invoke-Command -Session $session -ScriptBlock { Get-AzProfile -Update }
+                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
                 Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
         
                 # Assert
                 It "Should return 2016-04-consistent & Latest" {
-                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
                     ($result -like "*latest*") -ne $null | Should Be $true 
                     ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
                 }
@@ -218,7 +218,7 @@ InModuleScope Az.Bootstrapper {
                 Install-AzProfile -Profile '2016-04-consistent' -Force
 
                 # Ensure profile 2016-04-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
 
                 # Act
@@ -228,7 +228,7 @@ InModuleScope Az.Bootstrapper {
                 # Assert
                 # Returns 2016-04-consistent & Latest
                 It "Should Return 2016-04-consistent & Latest" {
-                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
                     ($result -like "*latest*") -ne $null | Should Be $true 
                     ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
                 }
@@ -267,7 +267,7 @@ InModuleScope Az.Bootstrapper {
                 Install-AzProfile -Profile '2016-04-consistent' -Force
 
                 # Ensure profile 2016-04-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
 
                 # Remove latest profile map from cache for testing if it updates from online.
@@ -287,12 +287,12 @@ InModuleScope Az.Bootstrapper {
                 foreach ($Module in ($testProfileMap.'Latest' | Get-Member -MemberType NoteProperty).Name)
                 {
                     $oldVersion = $testProfileMap.'Latest'.$Module
-                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber
+                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber -AllowPrerelease
                 }
 
                 # Act
                 # Invoke Update-AzProfile 'latest' with -RemovePreviousVersions
-                Invoke-Command -Session $session -ScriptBlock { Get-AzProfile -update }
+                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -update }
                 Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile 'Latest' -Force -RemovePreviousVersions }
 
                 # Assert
@@ -342,7 +342,7 @@ InModuleScope Az.Bootstrapper {
                 $session = New-PSSession
 
                 # Check if 'Latest' is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
 
                 # Get the version of the Latest profile
@@ -354,7 +354,7 @@ InModuleScope Az.Bootstrapper {
             
                 # Assert
                 It "Profile Latest is uninstalled" {
-                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
                     if($result -ne $null)
                     {
                         $result.Contains('Latest') | Should Be $false
@@ -409,7 +409,7 @@ InModuleScope Az.Bootstrapper {
 
                 # Assert 
                 It "Should return Profiles Latest & 2016-04-consistent" {
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile } 
+                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
                 ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
                 ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
             }
@@ -434,7 +434,7 @@ InModuleScope Az.Bootstrapper {
                     Get-Module -Name $RollupModule
                 }
 
-                $result = Invoke-Command -Session $session1 -ScriptBlock { Get-AzProfile }
+                $result = Invoke-Command -Session $session1 -ScriptBlock { Get-AzApiProfile }
                 $module1 = Invoke-Command -Session $session1 -ScriptBlock $getModule -ArgumentList $RollupModule
                 $module2 = Invoke-Command -Session $session2 -ScriptBlock $getModule -ArgumentList $RollupModule
 
@@ -457,7 +457,7 @@ InModuleScope Az.Bootstrapper {
                 Remove-InstalledProfile
 
                 It "Should return null" {
-                    Get-AzProfile | Should Be $null
+                    Get-AzApiProfile | Should Be $null
                 }
 
                 It "Modules should return null" {
@@ -507,7 +507,7 @@ InModuleScope Az.Bootstrapper {
 
             # Ensure profile 2016-09 is installed
             Install-AzProfile -Profile '2016-04-consistent' -Force
-            $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+            $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
             ($installedProfile -like "*2016-04-consistent*") -ne $null | Should Be $true
             
             # Act
@@ -536,7 +536,7 @@ InModuleScope Az.Bootstrapper {
             $session = New-PSSession
 
             # Ensure profile latest is not installed
-            $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzProfile }
+            $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
             ($installedProfile -like "*latest*") | Should Be $null
 
             # Act
@@ -572,7 +572,7 @@ InModuleScope Az.Bootstrapper {
 
                 # Act & Assert
                 It "Should not download/install the latest profile" {
-                    { Get-AzProfile -Update } | Should Throw
+                    { Get-AzApiProfile -Update } | Should Throw
                     { Install-AzProfile -Profile 'Latest' -Force } | Should Throw
                 }
 
@@ -594,7 +594,7 @@ InModuleScope Az.Bootstrapper {
 
                 # Act
                 # Update ProfileMap
-                Invoke-Command -Session $session -ScriptBlock { Get-AzProfile -Update }
+                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
 
                 # Install profile 'Latest'
                 Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force } 
@@ -781,12 +781,12 @@ InModuleScope Az.Bootstrapper {
                 foreach ($Module in ($testProfileMap.'Latest' | Get-Member -MemberType NoteProperty).Name)
                 {
                     $oldVersion = $testProfileMap.'Latest'.$Module
-                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber
+                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber -AllowPrerelease
                 }
 
                 # Act
                 # Update profile Latest with -RemovePreviousVersions
-                Invoke-Command -Session $session -ScriptBlock { Get-AzProfile -Update }
+                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
                 Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile 'Latest' -Module 'Az.Storage', 'Az.Storage' -Force -r }
 
                 # Assert

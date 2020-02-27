@@ -85,7 +85,7 @@
 <command:relatedLinks></command:relatedLinks>
 </command:command>
 <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
-<command:details><command:name>Get-AzProfile</command:name>
+<command:details><command:name>Get-AzApiProfile</command:name>
 <command:verb>Get</command:verb>
 <command:noun>AzProfile</command:noun>
 <maml:description><maml:para>List the supported Az profiles.
@@ -95,7 +95,7 @@
 <maml:description><maml:para>Lists the supported Az profiles.  If no parameters are given, returns the profile version supported by modules on the current machine.  If -ListAvailable is specified, lists all profiles that could be installed on the machine.
 </maml:para>
 </maml:description>
-<command:syntax><command:syntaxItem><maml:name>Get-AzProfile</maml:name>
+<command:syntax><command:syntaxItem><maml:name>Get-AzApiProfile</maml:name>
 <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none"><maml:name>ListAvailable</maml:name>
 <maml:Description><maml:para>If specified, list all available profiles, not just the profiles currently installed.
 </maml:para>
@@ -152,7 +152,7 @@
 </maml:alert>
 </maml:alertSet>
 <command:examples><command:example><maml:title>Example 2</maml:title>
-<dev:code>PS C:\&gt; Get-AzProfile -ListAvailable
+<dev:code>PS C:\&gt; Get-AzApiProfile -ListAvailable
 
 2015-06
 2015-09</dev:code>
@@ -176,7 +176,7 @@
 </maml:description>
 <command:syntax><command:syntaxItem><maml:name>Install-AzProfile</maml:name>
 <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none"><maml:name>Profile</maml:name>
-<maml:Description><maml:para>The profile version to install.  You can get a list of available profile versions using Get-AzProfile -ListAvailable
+<maml:Description><maml:para>The profile version to install.  You can get a list of available profile versions using Get-AzApiProfile -ListAvailable
 </maml:para>
 </maml:Description>
 <command:parameterValueGroup><command:parameterValue required="false" variableLength="false">2017-03-09-profile</command:parameterValue>
@@ -235,7 +235,7 @@
 <dev:defaultValue>False</dev:defaultValue>
 </command:parameter>
 <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none"><maml:name>Profile</maml:name>
-<maml:Description><maml:para>The profile version to install.  You can get a list of available profile versions using Get-AzProfile -ListAvailable
+<maml:Description><maml:para>The profile version to install.  You can get a list of available profile versions using Get-AzApiProfile -ListAvailable
 </maml:para>
 </maml:Description>
 <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
@@ -404,7 +404,7 @@
 </maml:description>
 <command:syntax><command:syntaxItem><maml:name>Set-AzDefaultProfile</maml:name>
 <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none"><maml:name>Profile</maml:name>
-<maml:Description><maml:para>The profile version to set as default.  You can get a list of available profile versions using Get-AzProfile -ListAvailable
+<maml:Description><maml:para>The profile version to set as default.  You can get a list of available profile versions using Get-AzApiProfile -ListAvailable
 </maml:para>
 </maml:Description>
 <command:parameterValueGroup><command:parameterValue required="false" variableLength="false">2017-03-09-profile</command:parameterValue>
@@ -464,7 +464,7 @@
 <dev:defaultValue>False</dev:defaultValue>
 </command:parameter>
 <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="none"><maml:name>Profile</maml:name>
-<maml:Description><maml:para>The profile version to set as default.  You can get a list of available profile versions using Get-AzProfile -ListAvailable
+<maml:Description><maml:para>The profile version to set as default.  You can get a list of available profile versions using Get-AzApiProfile -ListAvailable
 </maml:para>
 </maml:Description>
 <command:parameterValue required="true" variableLength="false">String</command:parameterValue>

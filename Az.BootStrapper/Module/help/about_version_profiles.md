@@ -31,11 +31,11 @@ load needed modules when you want to target a specific version profile.
 
 ## Finding appropriate version profiles
 
-Use the Get-AzProfile cmdlet to discover available profile versions, 
+Use the Get-AzApiProfile cmdlet to discover available profile versions, 
 and profile versions supported by an Azure instance.
 
 ```
-Get-AzProfile -ListAvailable 
+Get-AzApiProfile -ListAvailable 
 ```
 
 lists all available version profiles.
@@ -49,7 +49,7 @@ Installs and loads cmdlets for one of the listed profiles.
 ## Targeting all Azure Instances
 
 ```
-Get-AzProfile
+Get-AzApiProfile
 ``` 
 
 Lists the profiles that are currently installed on the machine.
