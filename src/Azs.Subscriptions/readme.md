@@ -74,10 +74,10 @@ subject-prefix: ''
 module-version: 0.9.0
 sanitize-names: false
 
-### File Renames 
-module-name: Azs.Subscriptions 
-csproj: Azs.Subscriptions.csproj 
-psd1: Azs.Subscriptions.psd1 
+### File Renames
+module-name: Azs.Subscriptions
+csproj: Azs.Subscriptions.csproj
+psd1: Azs.Subscriptions.psd1
 psm1: Azs.Subscriptions.psm1
 ```
 
@@ -145,6 +145,16 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Subscriptions.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="1.7.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.0.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 
 ```
