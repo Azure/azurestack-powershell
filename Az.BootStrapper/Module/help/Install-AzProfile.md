@@ -45,7 +45,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profile
-The profile version to install.  You can get a list of available profile versions using *Get-AzProfile -ListAvailable*
+The profile version to install.  You can get a list of available profile versions using *Get-AzApiProfile -ListAvailable*
 
 ```yaml
 Type: String

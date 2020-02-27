@@ -4,7 +4,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-AzProfile
+# Get-AzApiProfile
 
 ## SYNOPSIS
 List the supported Az profiles.
@@ -12,7 +12,7 @@ List the supported Az profiles.
 ## SYNTAX
 
 ```
-Get-AzProfile [-ListAvailable] [-Update] [<CommonParameters>]
+Get-AzApiProfile [-ListAvailable] [-Update] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,7 +22,7 @@ Lists the supported Az profiles.  If no parameters are given, returns the profil
 
 ### Example 2
 ```
-PS C:\> Get-AzProfile -ListAvailable
+PS C:\> Get-AzApiProfile -ListAvailable
 
 2015-06
 2015-09
