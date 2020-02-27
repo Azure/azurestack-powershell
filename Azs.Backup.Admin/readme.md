@@ -50,10 +50,12 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/backup/readme.azsautogen.md
   - $(repo)/specification/azsadmin/resource-manager/backup/readme.md
-```
+
+
+subject-prefix: ''
+module-version: 0.9.0
 
 ### File Renames 
-``` yaml
 module-name: Azs.Backup.Admin 
 csproj: Azs.Backup.Admin.csproj 
 psd1: Azs.Backup.Admin.psd1 
@@ -173,7 +175,14 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Backup.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="1.7.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.0.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
 
-subject-prefix: ''
-module-version: 0.9.0
+# PSD1 Changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 Changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
