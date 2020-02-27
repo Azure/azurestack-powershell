@@ -71,13 +71,13 @@ FormatsToProcess = 'Az.Bootstrapper.Format.ps1xml'
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Set-BootstrapRepo', 'Update-AzProfile', 
                'Uninstall-AzProfile', 'Install-AzProfile', 
-               'Use-AzProfile', 'Get-AzProfile', 'Get-AzModule', 
+               'Use-AzProfile', 'Get-AzApiProfile', 'Get-AzModule', 
                'Set-AzDefaultProfile', 'Remove-AzDefaultProfile', 
                'Get-ModuleVersion'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = 'Update-AzProfile', 'Uninstall-AzProfile', 
-               'Install-AzProfile', 'Use-AzProfile', 'Get-AzProfile', 
+               'Install-AzProfile', 'Use-AzProfile', 'Get-AzApiProfile', 
                'Get-AzModule', 'Set-AzDefaultProfile',
                'Remove-AzDefaultProfile'
 

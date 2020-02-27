@@ -990,13 +990,13 @@ Describe "Get-AzModule" {
     }
 }
 
-Describe "Get-AzProfile" {
+Describe "Get-AzApiProfile" {
     InModuleScope Az.Bootstrapper {
         Mock Get-AzProfileMap -Verifiable { ($global:testProfileMap | ConvertFrom-Json) }
 
         Context "With ListAvailable Switch" {
             It "Should return available profiles" {
-                $Result = (Get-AzProfile -ListAvailable)
+                $Result = (Get-AzApiProfile -ListAvailable)
                 $Result.Count | Should be 2
                 $Result.ProfileName | Should Not Be $null
                 $Result.Module1 | Should Not Be $null
@@ -1006,7 +1006,7 @@ Describe "Get-AzProfile" {
 
         Context "With ListAvailable and update Switches" {
             It "Should return available profiles" {
-                $Result = (Get-AzProfile -ListAvailable -Update)
+                $Result = (Get-AzApiProfile -ListAvailable -Update)
                 $Result.Count | Should be 2
                 $Result.ProfileName | Should Not Be $null
                 $Result.Module1 | Should Not Be $null
@@ -1018,7 +1018,7 @@ Describe "Get-AzProfile" {
             $IncompleteProfiles = @('Profile2')
             Mock Get-ProfilesInstalled -Verifiable -ParameterFilter {[REF]$IncompleteProfiles} { @{'Profile1'= @{'Module1' = @('1.0') ;'Module2'= @('1.0')}} } 
             It "Returns installed Profile" {
-                $Result = (Get-AzProfile)
+                $Result = (Get-AzApiProfile)
                 $Result.ProfileName | Should Not Be $null
                 $Result.Module1 | Should Not Be $null
                 Assert-VerifiableMock
@@ -1028,7 +1028,7 @@ Describe "Get-AzProfile" {
         Context "No profiles installed" {
             Mock Get-ProfilesInstalled -Verifiable {}
             It "Returns null" {
-                (Get-AzProfile) | Should Be $null
+                (Get-AzApiProfile) | Should Be $null
                 Assert-VerifiableMock
             }
         }

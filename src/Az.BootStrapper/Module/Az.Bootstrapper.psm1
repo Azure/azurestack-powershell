@@ -292,7 +292,7 @@ function Uninstall-ModuleHelper
         try 
         {
           Write-Verbose "Uninstalling module $module version $version"
-          Uninstall-Module -Name $module -RequiredVersion $version -Force -ErrorAction Stop
+          Uninstall-Module -Name $module -RequiredVersion $version -Force -ErrorAction Stop -AllowPrerelease
         }
         catch
         {
@@ -535,19 +535,19 @@ function Invoke-InstallModule
   {
     if (-not $scope)
     {
-      Install-Module $Module -RequiredVersion $version -AllowClobber -Repository $script:BootStrapRepo
+      Install-Module $Module -RequiredVersion $version -AllowClobber -Repository $script:BootStrapRepo -AllowPrerelease
     }
     else {
-      Install-Module $Module -RequiredVersion $version -Scope $scope -AllowClobber -Repository $script:BootStrapRepo
+      Install-Module $Module -RequiredVersion $version -Scope $scope -AllowClobber -Repository $script:BootStrapRepo -AllowPrerelease
     }
   }
   else {
      if (-not $scope)
     {
-      Install-Module $Module -RequiredVersion $version -Force -Repository $script:BootStrapRepo
+      Install-Module $Module -RequiredVersion $version -Force -Repository $script:BootStrapRepo -AllowPrerelease
     }
     else {
-      Install-Module $Module -RequiredVersion $version -Scope $scope -Force -Repository $script:BootStrapRepo
+      Install-Module $Module -RequiredVersion $version -Scope $scope -Force -Repository $script:BootStrapRepo -AllowPrerelease
     }
   }
 }
@@ -913,7 +913,7 @@ function Get-AzModule
 <#
 .ExternalHelp help\Az.Bootstrapper-help.xml 
 #>
-function Get-AzProfile
+function Get-AzApiProfile
 {
   [CmdletBinding(DefaultParameterSetName="ListAvailableParameterSet")]
   param()
