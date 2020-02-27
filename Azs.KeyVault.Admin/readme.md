@@ -65,6 +65,7 @@ csproj: Azs.KeyVault.Admin.csproj
 psd1: Azs.KeyVault.Admin.psd1
 psm1: Azs.KeyVault.Admin.psm1
 
+directive:
 # Add release notes
   - from: Azs.Keyvault.Admin.nuspec
     where: $
@@ -74,7 +75,6 @@ psm1: Azs.KeyVault.Admin.psm1
   - from: Azs.Keyvault.Admin.nuspec
     where: $
     transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.0.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
-
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp
