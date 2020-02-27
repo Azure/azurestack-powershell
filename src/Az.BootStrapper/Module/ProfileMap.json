@@ -4,19 +4,31 @@
             "0.10.0"
         ],
         "Az.Accounts": [
-            "1.7.0"
+            "2.0.1-preview"
+        ],
+        "Az.Billing": [
+            "0.10.0"
         ],
         "Az.Compute": [
             "0.10.0"
         ],
+        "Az.DataBoxEdge": [
+            "1.1.0"
+        ],
         "Az.Dns": [
+            "0.10.0"
+        ],
+        "Az.EventHub": [
+            "1.4.3"
+        ],
+        "Az.IotHub": [
+            "2.0.1"
+        ],
+        "Az.KeyVault": [
             "0.10.0"
         ],
         "Az.Monitor": [
             "1.5.0"
-        ],
-        "Az.KeyVault": [
-            "0.10.0"
         ],
         "Az.Network": [
             "0.10.0"
@@ -25,9 +37,6 @@
             "0.10.0"
         ],
         "Az.Storage": [
-            "0.10.0"
-        ],
-        "Az.Billing": [
             "0.10.0"
         ],
         "Az.Websites": [

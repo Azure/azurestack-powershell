@@ -14,8 +14,8 @@ Locale: en-US
 ### [Get-AzModule](Get-AzModule.md)
 {{Manually Enter Get-AzModule Description Here}}
 
-### [Get-AzProfile](Get-AzProfile.md)
-{{Manually Enter Get-AzProfile Description Here}}
+### [Get-AzApiProfile](Get-AzApiProfile.md)
+{{Manually Enter Get-AzApiProfile Description Here}}
 
 ### [Get-ModuleVersion](Get-ModuleVersion.md)
 {{Manually Enter Get-ModuleVersion Description Here}}
