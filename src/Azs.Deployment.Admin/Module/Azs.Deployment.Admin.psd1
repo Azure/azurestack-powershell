@@ -8,7 +8,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'Azs.Deployment.Admin'
+RootModule = 'Azs.Deployment.Admin.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.9.0'
@@ -23,13 +23,13 @@ Author = 'Microsoft Corporation'
 CompanyName = 'Microsoft Corporation'
 
 # Copyright statement for this module
-Copyright = '(c) 2019 Microsoft Corporation. All rights reserved.'
+Copyright = 'Microsoft Corporation. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Microsoft AzureStack Hub PowerShell: Deployment Admin cmdlets'
 
 # Minimum version of the Windows PowerShell engine required by this module
-# PowerShellVersion = ''
+PowerShellVersion = '5.1'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -38,7 +38,10 @@ Copyright = '(c) 2019 Microsoft Corporation. All rights reserved.'
 # PowerShellHostVersion = ''
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-# DotNetFrameworkVersion = ''
+DotNetFrameworkVersion = '4.7.2'
+
+# Compatible Powershell Editions
+CompatiblePSEditions = 'Core', 'Desktop'
 
 # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
 # CLRVersion = ''
@@ -47,7 +50,7 @@ Copyright = '(c) 2019 Microsoft Corporation. All rights reserved.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('Az.Accounts')
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.0.1'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()

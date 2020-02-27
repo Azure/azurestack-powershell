@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '1.9.0'
+    ModuleVersion          = '2.0.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -33,7 +33,7 @@
     Description            = 'Azure Stack Adminisitration Module'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    PowerShellVersion      = '5.0'
+    PowerShellVersion      = '5.1'
 
     # Name of the Windows PowerShell host required by this module
     # PowerShellHostName = ''
@@ -42,21 +42,25 @@
     # PowerShellHostVersion = ''
 
     # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    DotNetFrameworkVersion = '4.0'
+    DotNetFrameworkVersion = '4.7.2'
+
+    # Compatible Powershell Editions
+    CompatiblePSEditions = 'Core', 'Desktop'
 
     # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    CLRVersion             = '4.0'
+    # CLRVersion             = '4.0'
 
     # Processor architecture (None, X86, Amd64) required by this module
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '1.7.0'; },
+    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.1'; },
         @{ModuleName = 'Az.Resources'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '0.9.0'; },
+        @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.InfrastructureInsights.Admin'; RequiredVersion = '0.9.0'; },
@@ -115,13 +119,13 @@
             LicenseUri   = 'https://aka.ms/azps-license'
 
             # A URL to the main website for this project.
-            ProjectUri   = 'https://github.com/Azure/azure-powershell'
+            ProjectUri   = 'https://github.com/Azure/azurestack-powershell'
 
             # A URL to an icon representing this module.
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = ' - Version 1.9.0'
+            ReleaseNotes = 'Version 2.0.0'
 
             # External dependent modules of this module
             # ExternalModuleDependencies = ''
