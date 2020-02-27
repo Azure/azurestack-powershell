@@ -18,7 +18,7 @@ ModuleVersion = '0.1.0'
 # CompatiblePSEditions = @()
 
 # ID used to uniquely identify this module
-GUID = '30d8a5cf-3ee5-49ce-b9b0-a4d000d65161'
+GUID = 'b161fe2d-75ea-4228-b85b-cb92064ff426'
 
 # Author of this module
 Author = 'Microsoft Corporation'
@@ -27,13 +27,13 @@ Author = 'Microsoft Corporation'
 CompanyName = 'Microsoft Corporation'
 
 # Copyright statement for this module
-Copyright = '(c) 2017 Microsoft Corporation. All rights reserved.'
+Copyright = 'Microsoft Corporation. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Manage Modules for an Azure Version Profile. This allows selecting the Azure cmdlets that are compatible with an AzureStack instance, an Azure sovereign cloud, or across Azure instances.'
+Description = 'Manage Modules for an Azure API Profile. This allows selecting the Azure cmdlets that are compatible with an AzureStack Hub instance, an Azure sovereign cloud, or across Azure instances.'
 
 # Minimum version of the Windows PowerShell engine required by this module
-PowerShellVersion = '5.0'
+PowerShellVersion = '5.1'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
@@ -42,10 +42,13 @@ PowerShellVersion = '5.0'
 # PowerShellHostVersion = ''
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-DotNetFrameworkVersion = '4.5'
+DotNetFrameworkVersion = '4.7.2'
+
+# Compatible Powershell Editions
+CompatiblePSEditions = 'Core', 'Desktop'
 
 # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-CLRVersion = '4.0'
+# CLRVersion = '4.0'
 
 # Processor architecture (None, X86, Amd64) required by this module
 # ProcessorArchitecture = ''
@@ -114,8 +117,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* 0.1.0: Initial release for azure stack profile 2019-03-01-hybrid
-        * Bug fix to add UseBasicParsing for Invoke-WebRequest'
+        ReleaseNotes = '* 0.1.0: Initial release Az.BootStrapper, Module to assist in installing the required Az modules for AzureStack Hub'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
