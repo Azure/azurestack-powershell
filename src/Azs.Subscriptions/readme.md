@@ -86,9 +86,6 @@ psm1: Azs.Subscriptions.psm1
 clear-output-folder: true
 output-folder: .
 
-require:
-  - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/readme.md
-
 input-file:
     - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/Microsoft.Subscriptions/preview/2015-11-01/Subscriptions.json
     - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/Microsoft.Subscriptions/preview/2015-11-01/Offer.json

@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.KeyVault.Admin
-This directory contains the PowerShell module for the KeyVaultAdmin service.
+This directory contains the PowerShell module for the KeyVault Admin service.
 
 ---
 ## Status
@@ -48,8 +48,6 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/keyvault/readme.azsautogen.md
-  - $(repo)/specification/azsadmin/resource-manager/keyvault/readme.md
 
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/KeyVault.json
