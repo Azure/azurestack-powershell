@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.KeyVault.Admin
-This directory contains the PowerShell module for the KeyVault service.
+This directory contains the PowerShell module for the KeyVault Admin service.
 
 ---
 ## Status
