@@ -49,16 +49,14 @@ In this directory, run AutoRest:
 require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/backup/readme.azsautogen.md
-  - $(repo)/specification/azsadmin/resource-manager/backup/readme.md
-
 
 subject-prefix: ''
 module-version: 0.9.0
 
-### File Renames 
-module-name: Azs.Backup.Admin 
-csproj: Azs.Backup.Admin.csproj 
-psd1: Azs.Backup.Admin.psd1 
+### File Renames
+module-name: Azs.Backup.Admin
+csproj: Azs.Backup.Admin.csproj
+psd1: Azs.Backup.Admin.psd1
 psm1: Azs.Backup.Admin.psm1
 ```
 
@@ -165,7 +163,6 @@ directive:
     set:
       verb: Start
       subject: Backup
-
 
 # Add release notes
   - from: Azs.Backup.Admin.nuspec
