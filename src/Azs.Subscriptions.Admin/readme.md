@@ -326,7 +326,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Subscriptions.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.0.1" />\n      <dependency id="Az.Resources" version="0.10.0" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp
