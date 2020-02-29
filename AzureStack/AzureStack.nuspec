@@ -7,11 +7,29 @@
     <owners>Microsoft Corporation</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://aka.ms/azps-license</licenseUrl>
-    <projectUrl>https://github.com/Azure/azure-powershell</projectUrl>
-    <description>Microsoft Azure PowerShell: $(service-name) cmdlets</description>
+    <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
+    <description>Microsoft AzureStack PowerShell: Administrator cmdlets</description>
     <releaseNotes></releaseNotes>
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
-    <tags>Azure ResourceManager ARM PSModule $(service-name)</tags>
+    <tags>AzureStack ResourceManager ARM PSModule Administrator</tags>
+    <dependencies>
+      <dependency id="Az.Accounts" version="[2.0.1-preview]" />
+      <dependency id="Az.Resources" version="[0.10.0]" />
+      <dependency id="Azs.Backup.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Azurebridge.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Commerce.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Compute.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Fabric.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Deployment.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Gallery.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Infrastructureinsights.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Keyvault.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Network.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Storage.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Subscriptions" version="[0.9.0]" />
+      <dependency id="Azs.Subscriptions.Admin" version="[0.9.0]" />
+      <dependency id="Azs.Update.Admin" version="[0.9.0]" />
+    </dependencies>
   </metadata>
   <files>
     <file src="AzureStack.psd1" />
