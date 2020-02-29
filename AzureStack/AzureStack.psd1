@@ -54,8 +54,8 @@
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.1'; },
-        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.9.0'; },
+    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.0.1'; },
+        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; },
         @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.9.0'; },
