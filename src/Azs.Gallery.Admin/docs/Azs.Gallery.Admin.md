@@ -8,14 +8,14 @@ Locale: en-US
 
 # Azs.Gallery.Admin Module
 ## Description
-Microsoft Azure PowerShell: Gallery cmdlets
+Microsoft AzureStack PowerShell: Gallery cmdlets
 
 ## Azs.Gallery.Admin Cmdlets
+### [Add-AzsGalleryItem](Add-AzsGalleryItem.md)
+Uploads a provider gallery item to the storage.
+
 ### [Get-AzsGalleryItem](Get-AzsGalleryItem.md)
 Get a specific gallery item.
-
-### [New-AzsGalleryItem](New-AzsGalleryItem.md)
-Uploads a provider gallery item to the storage.
 
 ### [Remove-AzsGalleryItem](Remove-AzsGalleryItem.md)
 Delete a specific gallery item.

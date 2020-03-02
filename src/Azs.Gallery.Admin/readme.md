@@ -92,10 +92,10 @@ directive:
           - Summary
   - where:
       verb: New
-      subject: AzsGalleryItem
+      subject: GalleryItem
     set:
       verb: Add
-      subject: AzsGalleryItem
+      subject: GalleryItem
 
 # Add release notes
   - from: Azs.Gallery.Admin.nuspec

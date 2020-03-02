@@ -1,11 +1,11 @@
 ---
 external help file:
 Module Name: Azs.Gallery.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.gallery.admin/new-azsgalleryitem
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.gallery.admin/add-azsgalleryitem
 schema: 2.0.0
 ---
 
-# New-AzsGalleryItem
+# Add-AzsGalleryItem
 
 ## SYNOPSIS
 Uploads a provider gallery item to the storage.
@@ -14,13 +14,13 @@ Uploads a provider gallery item to the storage.
 
 ### CreateExpanded (Default)
 ```
-New-AzsGalleryItem [-SubscriptionId <String>] [-GalleryItemUri <String>] [-DefaultProfile <PSObject>]
+Add-AzsGalleryItem [-SubscriptionId <String>] [-GalleryItemUri <String>] [-DefaultProfile <PSObject>]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-AzsGalleryItem -GalleryItemUriPayload <IGalleryItemUriPayload> [-SubscriptionId <String>]
+Add-AzsGalleryItem -GalleryItemUriPayload <IGalleryItemUriPayload> [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -29,9 +29,9 @@ Uploads a provider gallery item to the storage.
 
 ## EXAMPLES
 
-### Example 1: New-AzsGalleryItem
+### Example 1: Add-AzsGalleryItem
 ```powershell
-PS C:\> New-AzsGalleryItem -GalleryItemUri https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg
+PS C:\> Add-AzsGalleryItem -GalleryItemUri https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg
 
 Name                  Publisher  PublisherDisplayName ItemName ItemDisplayName       Version Summary
 ----                  ---------  -------------------- -------- ---------------       ------- -------
@@ -164,4 +164,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[GalleryItemUri <String>]`: URI for your gallery package that has already been uploaded online.
 
 ## RELATED LINKS
-
