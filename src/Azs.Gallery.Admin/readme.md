@@ -78,7 +78,6 @@ directive:
       verb: New
       variant: ^CreateViaIdentity(.*)
     remove: true
-
   - where:
       model-name: GalleryItem
     set:
@@ -91,13 +90,12 @@ directive:
           - ItemDisplayName
           - Version
           - Summary
-
   - where:
       verb: New
       subject: AzsGalleryItem
     set:
       verb: Add
-
+      subject: AzsGalleryItem
 
 # Add release notes
   - from: Azs.Gallery.Admin.nuspec
