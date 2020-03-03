@@ -1334,6 +1334,18 @@ Describe "Set-BootstrapRepo" {
             # Cleanup
             $script:BootStrapRepo = $currentBootstrapRepo
         }
+
+        Context "Alias name is given" {
+            # Arrange
+            $currentBootstrapRepo = $script:BootStrapRepo
+            It "Should set given repo alias parameter value as BootstrapRepo" {
+                Set-BootstrapRepo -Name "MockName"
+                $script:BootStrapRepo | Should Be "MockName"
+            }
+
+            # Cleanup
+            $script:BootStrapRepo = $currentBootstrapRepo
+        }
     }
 }
 
