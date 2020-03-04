@@ -314,6 +314,19 @@ directive:
       subject: DiskMigrationJob
     hide: true
 
+  ## variant removal from Set-AzsComputeQuota cmdlet -- parameter set UpdateExpanded
+  - where:
+      verb: Set
+      subject: Quota
+      variant: UpdateExpanded
+    remove: true
+  
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: Set
+      subject: Quota
+    hide: true
+
 # Add release notes
   - from: Azs.Compute.Admin.nuspec
     where: $
