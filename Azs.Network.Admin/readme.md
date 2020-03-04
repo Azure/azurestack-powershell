@@ -161,6 +161,18 @@ directive:
       default:
         script: '50'
 
+  ## variant removal from all Set cmdlets -- parameter set UpdateExpanded
+  - where:
+      verb: Set
+      variant: UpdateExpanded
+    remove: true
+  
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: Set
+      subject: Quota
+    hide: true
+
 # Add release notes
   - from: Azs.Network.Admin.nuspec
     where: $
