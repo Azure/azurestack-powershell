@@ -52,6 +52,7 @@ require:
 
 subject-prefix: AzureBridge
 module-version: 0.9.0
+identity-correction-for-post: true
 
 ### File Renames
 module-name: Azs.AzureBridge.Admin
