@@ -182,6 +182,8 @@ process {
         $null = $PSBoundParameters.Remove('InputObject')
         $Name = $Backup.Name
         $PSBoundParameters.Add('Name', $Backup.Name)
+        # Update $Location so that it can be shown properly in confirmation prompt
+        $Location = $Backup.Location
     }
 
     # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
