@@ -1,23 +1,25 @@
 Import-Module -Name Az.Bootstrapper
 $RollupModule = 'Az'
+
+# Enable PS Remoting for creating new sessions; This setting is required to create new powershell sessions in Core.
+Enable-PSRemoting
+$psConfig = Get-PSSessionConfiguration
+$psConfigName = $psConfig[0].Name
+
 InModuleScope Az.Bootstrapper {
     $ProfileMap = (Get-AzProfileMap)
-    $ProfileCachePath = Get-ProfileCachePath
 
     # Helper function to uninstall all profiles
     function Remove-InstalledProfile {
         $installedProfiles = Get-ProfilesInstalled -ProfileMap $ProfileMap
-        if ($null -ne $installedProfiles.Keys)
-        {
-            foreach ($profile in $installedProfiles.Keys)
-            {
+        if ($null -ne $installedProfiles.Keys) {
+            foreach ($profile in $installedProfiles.Keys) {
                 Write-Host "Removing profile $profile"
                 Uninstall-AzProfile -Profile $profile -Force -ErrorAction SilentlyContinue
             }
             
             $profiles = (Get-ProfilesInstalled -ProfileMap $ProfileMap)
-            if ($profiles.Count -ne 0)
-            {
+            if ($profiles.Count -ne 0) {
                 Throw "Uninstallation was not successful: Profile(s) $(@($profiles.Keys) -join ',') were not uninstalled correctly."
             }
         }
@@ -26,50 +28,51 @@ InModuleScope Az.Bootstrapper {
     Describe "A machine with no profile installed can install profile" {
 
         # Using Install-AzProfile
-        Context "New Profile Install - Latest" {
+        Context "New Profile Install - 2019-03-01-hybrid" {
             # Arrange
             # Uninstall previously installed profiles
-            Remove-InstalledProfile       
+            Remove-InstalledProfile
 
             # Launch the test in a new powershell session
             # Create a new PS session
-            $session = New-PSSession
+            $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
               
-            Invoke-Command -Session $session -ScriptBlock { Register-PSRepository -Name "test" -SourceLocation "C:\Users\weshi1\Desktop\2019-03-01-hybrid" -InstallationPolicy Trusted }
-            Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo test }
+            # Keep this for testing private drops
+            # Invoke-Command -Session $session -ScriptBlock { Register-PSRepository -Name "azsrepo" -SourceLocation "D:\psrepo" -InstallationPolicy Trusted }
+            # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
 
             # Act
-            # Install latest version
+            # Install 2019-03-01-hybrid version
             Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile '2019-03-01-hybrid' -Force } 
 
-            # Assert 
+            # Assert; This test will fail if run on PS 5.1; works only on core due to GMO 'Az' returns empty on 5.1 bug.
             It "Should return 2019-03-01-hybrid Profile" {
                 $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-                $result[0].Contains('2019-03-01-hybrid') | Should Be $true
+                $result[0].ProfileName.Contains('2019-03-01-hybrid') | Should Be $true
             }
 
             # Clean up
-            Invoke-Command -Session $session -ScriptBlock { Unregister-PSRepository -Name "test" }
             Remove-PSSession -Session $session
         } 
 
         # Using Use-AzProfile
-        Context "New Profile Install - 2016-04-consistent" {
+        Context "New Profile Install - 2019-03-01-hybrid using Use-AzProfile" {
             # Arrange
             # Uninstall previously installed profiles
             Remove-InstalledProfile
 
             # Create a new PS session
-            $session = New-PSSession
+            $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
             # Act
-            # Install profile '2016-04-consistent'
-            Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2016-04-consistent' -Force }
+            # Install profile '2019-03-01-hybrid'
+            # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+            Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2019-03-01-hybrid' -Force }
 
             # Assert
-            It "Should return 2016-04-consistent" {
+            It "Should return 2019-03-01-hybrid" {
                 $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                $result[0].Contains('2016-04-consistent') | Should Be $true
+                $result[0].ProfileName.Contains('2019-03-01-hybrid') | Should Be $true
             }
 
             # Clean up
@@ -77,56 +80,30 @@ InModuleScope Az.Bootstrapper {
         }
     }
 
-    Describe "Add: A Machine with a Profile installed can install latest profile" {
-        InModuleScope Az.Bootstrapper {
-
-            Context "Profile 2016-04-consistent already installed" {
-                # Arrange
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Ensure 2016-09-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                $profilesInstalled[0].Contains('2016-04-consistent') | Should Be $true
-
-                # Act
-                # Install profile 'Latest'
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
-                $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-
-                # Assert
-                It "Should return 2016-09-consistent & Latest" {
-                    ($result -like "*latest*") -ne $null | Should Be $true 
-                    ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
-                }
-
-                # Clean up
-                Remove-PSSession -Session $session
-            }
-        }
-    }
 
     Describe "Attempting to use already installed profile will import the modules to the current session" {
         InModuleScope Az.Bootstrapper {
-            Context "Profile Latest is installed" {
+            Context "Profile 2019-03-01-hybrid is installed" {
                 # Should import Latest profile to current session
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
-                # Ensure profile Latest is installed
+
+                # Ensure profile 2019-03-01-hybrid is installed
                 $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
+                ($profilesInstalled -like "*hybrid*") -ne $null | Should Be $true
 
                 # Act
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2019-03-01-hybrid' -Force }
 
-                # Get the version of the Latest profile
+                # Get the version of the 2019-03-01-hybrid profile
                 $ProfileMap = Get-AzProfileMap
-                $latestVersion = $ProfileMap.'Latest'.$RollupModule
+                $latestVersion = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
 
                 # Assert
-                It "Should return Az module Latest version" {
+                It "Should return Az module 2019-03-01-hybrid version" {
                     # Get-module script block
                     $getModule = {
                         Param($RollupModule)
@@ -140,224 +117,36 @@ InModuleScope Az.Bootstrapper {
                 }
 
                 # Cleanup
-                Invoke-Command -Session $session -ScriptBlock { Uninstall-AzProfile -Profile 'Latest' -Force -ea SilentlyContinue }
                 Remove-PSSession -Session $session
-            }
-        }
-    }
-
-    Describe "User can update their machine to a latest profile" {
-        InModuleScope Az.Bootstrapper {
-            # Using Use-AzProfile
-            Context "Profile 2016-09-consistent is installed: Use-AzProfile" {
-                # Should refresh profile map from Azure end point and update modules.
-                # Arrange
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Check if '2016-04-consistent' is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
-
-                # Remove latest profile map from cache for testing if it updates from online.
-                $latestMap = Get-LatestProfileMapPath
-                if (($latestMap -ne $null) -and (Test-Path $latestMap.FullName))
-                {
-                    Remove-Item -Path $latestMap.FullName -Force
-                }
-                
-                # Act
-                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
-        
-                # Assert
-                It "Should return 2016-04-consistent & Latest" {
-                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-                    ($result -like "*latest*") -ne $null | Should Be $true 
-                    ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
-                }
-
-                It "Latest version of modules are imported" {
-                    # Get the version of the Latest profile
-                    $ProfileMap = Get-AzProfileMap
-                    $latestVersion = $ProfileMap.'Latest'.$RollupModule
-                
-                    # Get-module script block
-                    $getModule = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule 
-                    }
-
-                    $modules = Invoke-Command -Session $session -ScriptBlock $getModule -ArgumentList $RollupModule
-                
-                    # Are latest modules imported?
-                    $modules.Name | Should Be $RollupModule
-                    $modules.version | Should Be $latestVersion
-                }
-            
-                It "Last Write Time should be less than 5 minutes" {
-                    # Get LastWriteTime for ProfileMap
-                    $lastWriteTime = (Get-Item -Path (Get-LatestProfileMapPath).FullName).LastWriteTime
-                    (((Get-Date) - $lastWriteTime).TotalMinutes -lt 5) | Should Be $true
-                }
-
-                # Cleanup
-                Remove-PSSession -Session $session
-            }
-        
-            # Using Update-AzProfile; Previous Versions do not exist
-            Context "Profile 2016-04-consistent is installed: Update-AzProfile" {
-                # Arrange
-                # Remove existing profiles
-                Remove-InstalledProfile
-
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Install profile 2016-04-consistent
-                Install-AzProfile -Profile '2016-04-consistent' -Force
-
-                # Ensure profile 2016-04-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
-
-                # Act
-                # Update to profile 'Latest'
-                Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile 'Latest' -Force -RemovePreviousVersions }
-
-                # Assert
-                # Returns 2016-04-consistent & Latest
-                It "Should Return 2016-04-consistent & Latest" {
-                    $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-                    ($result -like "*latest*") -ne $null | Should Be $true 
-                    ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
-                }
-
-                It "Latest version of modules are imported" {
-                    # Get the version of the Latest profile
-                    $ProfileMap = Get-AzProfileMap
-                    $latestVersion = $ProfileMap.'Latest'.$RollupModule
-                
-                    # Get-module script block
-                    $getModule = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule 
-                    }
-
-                    $modules = Invoke-Command -Session $session -ScriptBlock $getModule -ArgumentList $RollupModule
-                
-                    # Are latest modules imported?
-                    $modules.Name | Should Be $RollupModule
-                    $modules.version | Should Be $latestVersion
-                }
-
-                Remove-PSSession -Session $session
-            }
-            
-            # Using Update-AzProfile; Previous Versions exist
-            Context "Profile 2016-04-consistent is installed: Update-AzProfile with PreviousVerisons" {
-                # Arrange
-                # Remove existing profiles
-                Remove-InstalledProfile
-    
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Install profile 2016-04-consistent
-                Install-AzProfile -Profile '2016-04-consistent' -Force
-
-                # Ensure profile 2016-04-consistent is installed
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
-
-                # Remove latest profile map from cache for testing if it updates from online.
-                $latestMap = Get-LatestProfileMapPath
-                if (($latestMap -ne $null) -and (Test-Path $latestMap.FullName))
-                {
-                    Remove-Item -Path $latestMap.FullName -Force
-                }
-
-                # Add a version of old profilemap with older versions of 'latest' profile to cache
-                $testProfileMap = "{`"Latest`": { `"Az`": [`"3.3.0`"], `"Az.Storage`": [`"2.4.0`"] }}" 
-                $testProfileMap | Out-File -FilePath "$ProfileCachePath\TestMap.json" -Force
-
-                # Install the modules from that profilemap
-                $testProfileMap = ($testProfileMap | ConvertFrom-Json)
-                
-                foreach ($Module in ($testProfileMap.'Latest' | Get-Member -MemberType NoteProperty).Name)
-                {
-                    $oldVersion = $testProfileMap.'Latest'.$Module
-                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber -AllowPrerelease
-                }
-
-                # Act
-                # Invoke Update-AzProfile 'latest' with -RemovePreviousVersions
-                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -update }
-                Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile 'Latest' -Force -RemovePreviousVersions }
-
-                # Assert
-                # Check if new versions of 'latest' are installed
-                $latestVersion = $ProfileMap.'Latest'.$RollupModule
-
-                It "Should return latest module versions" {
-                    # Get-module script block
-                    $getModule = {
-                        Param($RollupModule)
-                        Get-AzModule -Profile 'Latest' -Module $RollupModule 
-                    }
-                
-                    $version = Invoke-Command -Session $session -ScriptBlock $getModule -ArgumentList $RollupModule
-                    $version | Should Be $latestVersion
-                }
-
-                # Check if old versions of 'latest' are uninstalled
-                It "Should return null for old versions" {
-                    # Get-module script block
-                    $getModule = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule -ListAvailable
-                    }
-
-                    $modules = Invoke-Command -Session $session -ScriptBlock $getModule -ArgumentList $RollupModule
-                    foreach ($module in $modules)
-                    {
-                        $module.Version -eq $oldVersion | Should Be $false
-                    }
-                }
-
-                # Check if the old profilemap was removed
-                It "Should return false for old profile map in cache" {
-                    (Test-Path "$ProfileCachePath\TestMap.json") | Should Be $false
-                }
             }
         }
     }
 
     Describe "User can uninstall a profile" {
         InModuleScope Az.Bootstrapper {
-            Context "Latest profile is installed" {
-                # Should uninstall latest profile
+            Context "2019-03-01-hybrid profile is installed" {
+                # Should uninstall 2019-03-01-hybrid profile
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
-                # Check if 'Latest' is installed
+                # Check if '2019-03-01-hybrid' is installed
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
                 $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
+                ($profilesInstalled -like "*hybrid*") -ne $null | Should Be $true
 
                 # Get the version of the Latest profile
                 $ProfileMap = Get-AzProfileMap
-                $latestVersion = $ProfileMap.'Latest'.$RollupModule
+                $latestVersion = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
 
                 # Act
-                Invoke-Command -Session $session -ScriptBlock { Uninstall-AzProfile -Profile 'Latest' -Force }
+                Invoke-Command -Session $session -ScriptBlock { Uninstall-AzProfile -Profile '2019-03-01-hybrid' -Force }
             
                 # Assert
-                It "Profile Latest is uninstalled" {
+                It "Profile 2019-03-01-hybrid is uninstalled" {
                     $result = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-                    if($result -ne $null)
-                    {
-                        $result.Contains('Latest') | Should Be $false
+                    if ($result -ne $null) {
+                        $result.Contains('2019-03-01-hybrid') | Should Be $false
                     }
                     else {
                         $true
@@ -371,9 +160,7 @@ InModuleScope Az.Bootstrapper {
                     }
                     $results = Invoke-Command -Session $session -ScriptBlock $getModule -ArgumentList $RollupModule
                     
-                    # Result won't be null because profile 2016-04-consistent is installed.
-                    foreach ($result in $results)
-                    {
+                    foreach ($result in $results) {
                         $result.Version -eq $latestVersion | Should Be $false
                     }
                         
@@ -381,106 +168,6 @@ InModuleScope Az.Bootstrapper {
 
                 # Cleanup
                 Remove-PSSession -Session $session
-            }
-        }
-    }
-
-    Describe "Install Two named profiles and selecting each" {
-        InModuleScope Az.Bootstrapper {
-            # Get the version of the respective profile
-            $ProfileMap = Get-AzProfileMap
-            $Version1 = $ProfileMap.'Latest'.$RollupModule
-            $Version2 = $ProfileMap.'2016-04-consistent'.$RollupModule
-
-            Context "Install Two Profiles" {
-                # Arrange
-                # Remove all profiles
-                Remove-InstalledProfile
-
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Act
-                # Install Profile: 2016-08 
-                Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile 'Latest' -Force } 
-
-                # Install Profile: 2016-04
-                Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile '2016-04-consistent' -Force } 
-
-                # Assert 
-                It "Should return Profiles Latest & 2016-04-consistent" {
-                $profilesInstalled = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile } 
-                ($profilesInstalled -like "*2016-04-consistent*") -ne $null | Should Be $true
-                ($profilesInstalled -like "*latest*") -ne $null | Should Be $true
-            }
-
-                # Clean up
-                Remove-PSSession -Session $session        
-            }
-
-            Context "Select diff profiles" {
-                # Arrange
-                # Create two new PS sessions
-                $session1 = New-PSSession
-                $session2 = New-PSSession
-
-                # Act
-                # Use-AzProfile will import the respective versions of modules in the session
-                Invoke-Command -Session $session1 -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force }
-                Invoke-Command -Session $session2 -ScriptBlock { Use-AzProfile -Profile '2016-04-consistent' -Force } 
-    
-                $getModule = {
-                    Param($RollupModule)
-                    Get-Module -Name $RollupModule
-                }
-
-                $result = Invoke-Command -Session $session1 -ScriptBlock { Get-AzApiProfile }
-                $module1 = Invoke-Command -Session $session1 -ScriptBlock $getModule -ArgumentList $RollupModule
-                $module2 = Invoke-Command -Session $session2 -ScriptBlock $getModule -ArgumentList $RollupModule
-
-                # Assert
-                It "Should return Latest & 2016-04-consistent" {
-                    ($result -like "*latest*") -ne $null | Should Be $true 
-                    ($result -like "*2016-04-consistent*") -ne $null | Should Be $true
-                }
-
-                It "Respective versions of modules are imported" {
-                    # Are respective modules imported?
-                    $module1.Name | Should Be $RollupModule
-                    $module1.version | Should Be $Version1
-
-                    $module2.Name | Should Be $RollupModule
-                    $module2.version | Should Be $Version2
-                }
-
-                # "Uninstall All Profiles" 
-                Remove-InstalledProfile
-
-                It "Should return null" {
-                    Get-AzApiProfile | Should Be $null
-                }
-
-                It "Modules should return null" {
-                    $getModuleList = {
-                        Param($RollupModule)
-                        Get-Module -ListAvailable -Name $RollupModule
-                    }
-
-                    $result1 = Invoke-Command -Session $session1 -ScriptBlock $getModuleList  -ArgumentList $RollupModule
-                    foreach ($result in $result1)
-                    {
-                        $result.Version -eq $Version1 | Should Be $false
-                    }
-                    $result2 = Invoke-Command -Session $session2 -ScriptBlock $getModuleList  -ArgumentList $RollupModule
-                    foreach ($result in $result2)
-                    {
-                        $result.Version -eq $Version2 | Should Be $false
-                    }
-                }
-
-                # Cleanup
-                Remove-PSSession -Session $session1
-                Remove-PSSession -Session $session2
             }
         }
     }
@@ -503,48 +190,29 @@ InModuleScope Az.Bootstrapper {
         Context "Install already installed profile" {
             # Arrange
             # Create a new PS session
-            $session = New-PSSession
+            $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
+            # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
 
-            # Ensure profile 2016-09 is installed
-            Install-AzProfile -Profile '2016-04-consistent' -Force
+            # Ensure profile 2019-03-01-hybrid is installed
+            Set-BootStrapRepo -Repo azsrepo
+            Install-AzProfile -Profile '2019-03-01-hybrid' -Force
             $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-            ($installedProfile -like "*2016-04-consistent*") -ne $null | Should Be $true
+            ($installedProfile -like "*hybrid*") -ne $null | Should Be $true
             
             # Act
-            # Install profile '2016-04-consistent'
-            $result = Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile '2016-04-consistent' -Force } 
+            # Install profile '2019-03-01-hybrid'
+            $result = Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile '2019-03-01-hybrid' -Force } 
 
             # Get modules imported into the session
             $getModuleList = {
-                    Param($RollupModule)
-                    Get-Module -Name $RollupModule
-                }
+                Param($RollupModule)
+                Get-Module -Name $RollupModule
+            }
             $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList $RollupModule
 
             It "Doesn't install/import the profile" {
                 $result | Should Be $null
                 $modules | Should Be $null
-            }
-
-            # Cleanup
-            Remove-PSSession -Session $session
-        }
-
-        Context "Uninstall not installed profile" {
-            # Arrange
-            # Create a new PS session
-            $session = New-PSSession
-
-            # Ensure profile latest is not installed
-            $installedProfile = Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile }
-            ($installedProfile -like "*latest*") | Should Be $null
-
-            # Act
-            # Uninstall profile 'latest'
-            $result = Invoke-Command -Session $session -ScriptBlock { Uninstall-AzProfile -Profile 'latest' -Force} 
-
-            It "Doesn't uninstall/throw" {
-                $result | Should Be $null
             }
 
             # Cleanup
@@ -559,99 +227,30 @@ InModuleScope Az.Bootstrapper {
         }
     }
 
-    Describe "Failure Recovery: Attempt to install profile recovers from error" {
-        InModuleScope Az.Bootstrapper {
-            Context "Azure ProfileMap endpoint threw exception" {
-                # Arrange
-                # Mock Get-ProfileMap returns error
-                Mock Get-AzProfileMapFromEndpoint -Verifiable { throw [System.Net.WebException] }
-            
-                # Mock Install-Modules returns error
-                Mock Install-Module -Verifiable { throw }
-                Mock Get-AzModule -Verifiable {}
-
-                # Act & Assert
-                It "Should not download/install the latest profile" {
-                    { Get-AzApiProfile -Update } | Should Throw
-                    { Install-AzProfile -Profile 'Latest' -Force } | Should Throw
-                }
-
-                It "Last Write time should not be less than 3 mins" {
-                    # Get LastWriteTime for ProfileMap
-                    $lastWriteTime = (Get-Item -Path (Get-LatestProfileMapPath).FullName).LastWriteTime
-                    (((Get-Date) - $lastWriteTime).TotalMinutes -gt 3) | Should Be $true
-                    Assert-VerifiableMock
-                }
-            }
-
-            Context "Retry install after ProfileMap update" {
-                # Arrange
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Remove ProfileMap.json to test if it is updated from online
-                Remove-Item -Path (Get-LatestProfileMapPath).FullName -Force
-
-                # Act
-                # Update ProfileMap
-                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
-
-                # Install profile 'Latest'
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile 'Latest' -Force } 
-
-                # Assert
-                It "Installs & Imports Latest profile to the session" {
-                    $getModuleList = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule
-                    }
-                    $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList $RollupModule
-
-                    # Get the version of the Latest profile
-                    $ProfileMap = Get-AzProfileMap
-                    $latestVersion = $ProfileMap.'Latest'.$RollupModule
-                
-                    # Are latest modules imported?
-                    $modules.Name | Should Be $RollupModule
-                    $modules.version | Should Be $latestVersion
-                }
-
-                It "Last Write time should be less than 5 mins" {
-                    # Get LastWriteTime for ProfileMap
-                    $lastWriteTime = (Get-Item -Path (Get-LatestProfileMapPath).FullName).LastWriteTime
-                    (((Get-Date) - $lastWriteTime).TotalMinutes -lt 5) | Should Be $true
-                }
-
-                # Cleanup
-                Remove-PSSession -Session $session
-            }
-        }
-    }
-
     Describe "Install profiles using Scope" {
         InModuleScope Az.Bootstrapper {
-
             Context "Using Install-AzProfile: Scope 'CurrentUser'" {
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
                 # Remove installed profiles
                 Remove-InstalledProfile 
 
                 # Act
-                # Install profile Latest scope as current user
-                Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile 'Latest' -scope 'CurrentUser' -Force }
+                # Install profile 2019-03-01-hybrid scope as current user
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+                Invoke-Command -Session $session -ScriptBlock { Install-AzProfile -Profile '2019-03-01-hybrid' -scope 'CurrentUser' -Force }
 
                 # Assert
-                It "Installs & Imports Latest profile to the session" {
+                It "Installs & Imports 2019-03-01-hybrid profile to the session" {
                     # Get the version of the Latest profile
                     $ProfileMap = Get-AzProfileMap
-                    $latestVersion = $ProfileMap.'Latest'.$RollupModule
+                    $latestVersion = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
                     
                     $getModuleList = {
                         Param($RollupModule, $latestVersion)
-                        Get-Module -Name $RollupModule -ListAvailable | Where-Object {$_.Version -like $latestVersion}
+                        Get-Module -Name $RollupModule -ListAvailable | Where-Object { $_.Version -like $latestVersion }
                     }
                     $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList @($RollupModule, $latestVersion)
 
@@ -664,26 +263,27 @@ InModuleScope Az.Bootstrapper {
             Context "Using Use-AzProfile: Scope 'AllUsers'" {
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
                 # Remove installed profiles
                 Remove-InstalledProfile 
 
                 # Act
-                # Install profile 2016-04-consistent scope as all users
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2016-04-consistent' -scope 'AllUsers' -Force }
+                # Install profile 2019-03-01-hybrid scope as all users
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2019-03-01-hybrid' -scope 'AllUsers' -Force }
 
                 # Assert
-                It "Installs & Imports 2016-04-consistent profile to the session" {
+                It "Installs & Imports 2019-03-01-hybrid profile to the session" {
                     $getModuleList = {
                         Param($RollupModule)
                         Get-Module -Name $RollupModule
                     }
                     $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList $RollupModule
 
-                    # Get the version of the 2016-04-consistent profile
+                    # Get the version of the 2019-03-01-hybrid profile
                     $ProfileMap = Get-AzProfileMap
-                    $version = $ProfileMap.'2016-04-consistent'.$RollupModule
+                    $version = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
                 
                     # Are appropriate modules imported?
                     $modules.Name | Should Be $RollupModule
@@ -694,26 +294,27 @@ InModuleScope Az.Bootstrapper {
             Context "Using Update-AzProfile: Scope 'CurrentUser' " {
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
                 # Remove installed profiles
                 Remove-InstalledProfile 
 
                 # Act
-                # Install profile 2016-04-consistent scope as current user
-                Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile '2016-04-consistent' -scope 'CurrentUser' -Force -r }
+                # Install profile 2019-03-01-hybrid scope as current user
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+                Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile '2019-03-01-hybrid' -scope 'CurrentUser' -Force -r }
 
                 # Assert
-                It "Installs & Imports 2016-04-consistent profile to the session" {
+                It "Installs & Imports 2019-03-01-hybrid profile to the session" {
                     $getModuleList = {
                         Param($RollupModule)
                         Get-Module -Name $RollupModule
                     }
                     $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList $RollupModule
 
-                    # Get the version of the 2016-04-consistent profile
+                    # Get the version of the 2019-03-01-hybrid profile
                     $ProfileMap = Get-AzProfileMap
-                    $version = $ProfileMap.'2016-04-consistent'.$RollupModule
+                    $version = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
                 
                     # Are correct modules imported?
                     $modules.Name | Should Be $RollupModule
@@ -725,106 +326,35 @@ InModuleScope Az.Bootstrapper {
 
     Describe "Load/Import AzProfile modules" {
         InModuleScope Az.Bootstrapper {
-        Context "Using Use-AzProfile: Modules are not installed" {
+            Context "Using Use-AzProfile: Modules are not installed" {
                 # Arrange
                 # Create a new PS session
-                $session = New-PSSession
+                $session = New-PSSession -ComputerName localhost -ConfigurationName $psConfigName
 
                 # Remove installed profiles
                 Remove-InstalledProfile 
 
                 # Act
                 # Use module from Latest profile scope as current user
-                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2016-04-consistent' -Module 'Az.Storage' -Force -scope 'CurrentUser'}
+                # Invoke-Command -Session $session -ScriptBlock { Set-BootStrapRepo -Repo azsrepo }
+                Invoke-Command -Session $session -ScriptBlock { Use-AzProfile -Profile '2019-03-01-hybrid' -Module 'Az.Storage' -Force -scope 'CurrentUser' }
 
                 # Assert
                 $RollupModule = 'Az.Storage'
-                It "Installs & Imports 2016-04-consistent profile's module to the session" {
+                It "Installs & Imports 2019-03-01-hybrid profile's module to the session" {
                     $getModuleList = {
                         Param($RollupModule)
                         Get-Module -Name $RollupModule
                     }
                     $modules = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList $RollupModule
 
-                    # Get the version of the 2016-04-consistent profile
+                    # Get the version of the 2019-03-01-hybrid profile
                     $ProfileMap = Get-AzProfileMap
-                    $version = $ProfileMap.'2016-04-consistent'.$RollupModule
+                    $version = $ProfileMap.'2019-03-01-hybrid'.$RollupModule
                 
-                    # Are 2016-04-consistent modules imported?
+                    # Are 2019-03-01-hybrid modules imported?
                     $modules.Name | Should Be $RollupModule
                     $modules.version | Should Be $version
-                }
-            }
-
-            Context "Using Update-AzProfile: Previous version of modules are installed" {
-                # Arrange
-                # Create a new PS session
-                $session = New-PSSession
-
-                # Remove installed profiles
-                Remove-InstalledProfile 
-
-                # Remove latest profile map from cache for testing if it updates from online.
-                $latestMap = Get-LatestProfileMapPath
-                if (($latestMap -ne $null) -and (Test-Path $latestMap.FullName))
-                {
-                    Remove-Item -Path $latestMap.FullName -Force
-                }
-
-                # Add a version of old profilemap with older versions of 'latest' profile to cache
-                $testProfileMap = "{`"Latest`": {`"Az.Storage`": [`"2.4.0`"], `"Az.Storage`": [`"2.4.0`"] }}" 
-                $testProfileMap | Out-File -FilePath "$ProfileCachePath\TestMap.json" -Force
-
-                # Install the modules from that profilemap
-                $testProfileMap = ($testProfileMap | ConvertFrom-Json)
-                
-                foreach ($Module in ($testProfileMap.'Latest' | Get-Member -MemberType NoteProperty).Name)
-                {
-                    $oldVersion = $testProfileMap.'Latest'.$Module
-                    Install-Module $Module -RequiredVersion $oldVersion[0] -ErrorAction Stop -AllowClobber -AllowPrerelease
-                }
-
-                # Act
-                # Update profile Latest with -RemovePreviousVersions
-                Invoke-Command -Session $session -ScriptBlock { Get-AzApiProfile -Update }
-                Invoke-Command -Session $session -ScriptBlock { Update-AzProfile -Profile 'Latest' -Module 'Az.Storage', 'Az.Storage' -Force -r }
-
-                # Assert
-                It "Installs & Imports latest profile's module ('Az.Storage') to the session" {
-                    $getModuleList = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule
-                    }
-                    $module1 = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList 'Az.Storage'
-
-                    # Get the version of the latest profile
-                    $ProfileMap = Get-AzProfileMap
-                    $version1 = $ProfileMap.'Latest'.'Az.Storage'
-                    
-                    # Are latest modules imported?
-                    $module1.Name | Should Be 'Az.Storage'
-                    $module1.version | Should Be $version1
-                }
-
-                It "Installs & Imports latest profile's module ('Az.Storage') to the session" {
-                    $getModuleList = {
-                        Param($RollupModule)
-                        Get-Module -Name $RollupModule
-                    }
-                    $module2 = Invoke-Command -Session $session -ScriptBlock $getModuleList  -ArgumentList 'Az.Storage'
-
-                    # Get the version of the latest profile
-                    $ProfileMap = Get-AzProfileMap
-                    $version2 = $ProfileMap.'Latest'.'Az.Storage'
-                
-                    # Are latest modules imported?
-                    $module2.Name | Should Be 'Az.Storage'
-                    $module2.version | Should Be $version2
-                }
-
-                # Check if the old profilemap was removed
-                It "Should return false for old profile map in cache" {
-                    (Test-Path "$ProfileCachePath\TestMap.json") | Should Be $false
                 }
             }
         }
