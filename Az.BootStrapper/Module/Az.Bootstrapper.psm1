@@ -1,5 +1,5 @@
 $RollUpModule = "Az"
-$PSProfileMapEndpoint = "profilemap.json"
+$PSProfileMapEndpoint = "https://azureprofile.azureedge.net/powershellcore/azprofilemap.json"
 $script:BootStrapRepo = "PSGallery"
 
 # Is it Powershell Core edition?
@@ -192,13 +192,13 @@ function Get-AzProfileMap
   # If cache doesn't exist, Check embedded source
   $defaults = [System.IO.Path]::GetDirectoryName($PSCommandPath)
   $scriptBlock = {
-    Get-Content -Raw -Path (Join-Path -Path $defaults -ChildPath "ProfileMap.json") -ErrorAction stop | ConvertFrom-Json 
+    Get-Content -Raw -Path (Join-Path -Path $defaults -ChildPath "AzProfileMap.json") -ErrorAction stop | ConvertFrom-Json 
   }
   $ProfileMap = Invoke-CommandWithRetry -ScriptBlock $scriptBlock 
   if($null -eq $ProfileMap)
   {
     # Cache & Embedded source empty; Return error and stop
-    throw [System.IO.FileNotFoundException] "Profile meta data does not exist. Use 'Get-AzProfile -Update' to download from online source."
+    throw [System.IO.FileNotFoundException] "Profile meta data does not exist. Use 'Get-AzApiProfile -Update' to download from online source."
   }
 
   return $ProfileMap
@@ -219,6 +219,10 @@ function Get-ProfilesInstalled
       $versionList = $ProfileMap.$key.$module
       foreach ($version in $versionList)
       {
+        if ($version.EndsWith("preview")) {
+          $version = $version.TrimEnd("-preview")
+        }
+        
         if ($null -ne ($ModulesList | Where-Object { $_.Version -eq $version}))
         {
           if ($result.ContainsKey($key))
@@ -261,7 +265,7 @@ function Get-ProfilesInstalled
 # Get profiles installed associated with the module version
 function Test-ProfilesInstalled
 {
-  param([System.Version]$version, [String]$Module, [String]$Profile, [PSObject]$PMap, [hashtable]$AllProfilesInstalled)
+  param($version, [String]$Module, [String]$Profile, [PSObject]$PMap, [hashtable]$AllProfilesInstalled)
 
   # Profiles associated with the particular module version - installed?
   $profilesAssociated = @()
@@ -277,7 +281,7 @@ function Uninstall-ModuleHelper
 {
   [CmdletBinding(SupportsShouldProcess = $true)] 
   [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidShouldContinueWithoutForce", "")]
-  param([String]$Profile, $Module, [System.Version]$version, [Switch]$RemovePreviousVersions)
+  param([String]$Profile, $Module, $version, [Switch]$RemovePreviousVersions)
 
   $Remove = $PSBoundParameters.RemovePreviousVersions
   Do
@@ -292,6 +296,10 @@ function Uninstall-ModuleHelper
         try 
         {
           Write-Verbose "Uninstalling module $module version $version"
+          if ($version.EndsWith("preview")) {
+            $version = $version.TrimEnd("-preview")
+          }
+    
           Uninstall-Module -Name $module -RequiredVersion $version -Force -ErrorAction Stop -AllowPrerelease
         }
         catch
@@ -358,7 +366,7 @@ function Uninstall-ProfileHelper
 function Invoke-UninstallModule
 {
   [CmdletBinding()]
-  param([PSObject]$PMap, [String]$Profile, $Module, [System.Version]$version, [hashtable]$AllProfilesInstalled, [Switch]$RemovePreviousVersions)
+  param([PSObject]$PMap, [String]$Profile, $Module, $version, [hashtable]$AllProfilesInstalled, [Switch]$RemovePreviousVersions)
 
   # Check if the profiles associated with the module version are installed.
   Write-Verbose "Checking module dependency to any other profile installed"
@@ -401,6 +409,9 @@ function Remove-PreviousVersion
     foreach ($version in $versionList)
     {
       # Is that module version installed? If not skip; 
+      if ($version.EndsWith("preview")) {
+        $version = $version.TrimEnd("-preview")
+      }
       if ($null -eq (Get-Module -Name $Module -ListAvailable | Where-Object { $_.Version -eq $version} ))
       {
         continue
@@ -419,6 +430,10 @@ function Remove-PreviousVersion
     # Uninstall removes module from session; import latest version again
     $versions = $LatestMap.$Profile.$module
     $version = Get-LatestModuleVersion -versions $versions
+    if ($version.EndsWith("preview")) {
+      $version = $version.TrimEnd("-preview")
+    }
+
     Import-Module $Module -RequiredVersion $version -Global
   }
 }
@@ -431,7 +446,7 @@ function Get-AllProfilesInstalled
   if ($null -eq $script:LatestProfileMapPath)
   {
     $ModulePath = [System.IO.Path]::GetDirectoryName($PSCommandPath)
-    $script:LatestProfileMapPath = Get-Item -Path (Join-Path -Path $ModulePath -ChildPath "ProfileMap.json")
+    $script:LatestProfileMapPath = Get-Item -Path (Join-Path -Path $ModulePath -ChildPath "AzProfileMap.json")
   }
 
   $scriptBlock = {
@@ -492,12 +507,12 @@ function Find-PotentialConflict
   $availableModules = Get-Module $Module -ListAvailable
   $IsPotentialConflict = $false
 
-  Write-Information "Modules installed: $availableModules"
-
   if ($null -eq $availableModules)
   {
     return $false
   }
+
+  Write-Information "Modules installed: $availableModules"
 
   # If Admin, check CurrentUser Module folder path and vice versa
   if ($script:IsAdmin)
@@ -984,7 +999,7 @@ function Use-AzProfile
   PROCESS 
   {
     $Force = $PSBoundParameters.Force
-    $ProfileMap = (Get-AzProfileMap)
+    $ProfileMap = (Get-AzProfileMap -update)
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = $PSBoundParameters.Module
@@ -1033,12 +1048,16 @@ function Use-AzProfile
       $importedModules = Get-Module "Az*"
       foreach ($importedModule in $importedModules) 
       {
-        $importedVersions = $ProfileMap.$Profile.$($importedModule.Name)
-        if ($null -ne $importedVersions)
+        $latestVersions = $ProfileMap.$Profile.$($importedModule.Name)
+        if ($null -ne $latestVersions)
         {
           # We need the latest version in that profile to be imported. If old version was imported, block user and ask to import in a new session
-          $importedVersion = Get-LatestModuleVersion -versions $importedVersions
-          if ([system.version]$importedVersion -ne $importedModule.Version)
+          $latestVersion = Get-LatestModuleVersion -versions $latestVersions
+          if ($latestVersion.EndsWith("preview")) {
+            $latestVersion = $latestVersion.TrimEnd("-preview")
+          }
+      
+          if ($latestVersion -ne $importedModule.Version)
           {
             Write-Error "A different profile version of module $importedModule is imported in this session. Start a new PowerShell session and retry the operation." -Category  InvalidOperation 
             return
@@ -1049,6 +1068,9 @@ function Use-AzProfile
       if ($PSCmdlet.ShouldProcess($module, "Importing module for profile $profile in the current scope"))
       {
         Write-Verbose "Importing module $module"
+        if ($version.EndsWith("preview")) {
+          $version = $version.TrimEnd("-preview")
+        }
         Import-Module -Name $Module -RequiredVersion $version -Global
       }
     }
@@ -1072,7 +1094,7 @@ function Install-AzProfile
   }
 
   PROCESS {
-    $ProfileMap = (Get-AzProfileMap)
+    $ProfileMap = (Get-AzProfileMap -update)
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = ($ProfileMap.$Profile | Get-Member -MemberType NoteProperty).Name
