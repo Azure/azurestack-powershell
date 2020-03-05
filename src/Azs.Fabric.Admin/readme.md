@@ -72,7 +72,7 @@ input-file:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
 
 ### File Renames
 module-name: Azs.Fabric.Admin
@@ -641,5 +641,5 @@ directive:
     transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
 ```
