@@ -51,7 +51,7 @@ require:
   - $(repo)/specification/azsadmin/resource-manager/azurebridge/readme.md
 
 subject-prefix: AzureBridge
-module-version: 0.9.0
+module-version: 0.9.0-preview
 identity-correction-for-post: true
 
 ### File Renames

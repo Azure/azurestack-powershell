@@ -71,7 +71,7 @@ prefix: Azs
 namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
 
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
 sanitize-names: false
 
 ### File Renames
