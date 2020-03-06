@@ -1187,10 +1187,14 @@ function Update-AzProfile
 
 function Set-BootstrapRepo
 {
-	[CmdletBinding()]
+  [CmdletBinding()]
   [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
-	param([string]$Repo)
-	$script:BootStrapRepo = $Repo
+  param
+  (
+    [Alias("Name")]
+    [string]$Repo
+  )
+  $script:BootStrapRepo = $Repo
 }
 
 <#
