@@ -328,7 +328,7 @@ Describe "Test-ProfilesInstalled" {
         Context "Profile associated with Module version is installed" {
             $AllProfilesInstalled = @{'Module11.0'= @('Profile1', 'Profile2'); 'Module22.0'= @('Profile2')}
             It "Should return ProfilesAssociated" {
-                $Result = (Test-ProfilesInstalled -version 1.0 -Module 'Module1' -Profile 'Profile1' -PMap ($global:testProfileMap | ConvertFrom-Json) -AllProfilesInstalled $AllProfilesInstalled)
+                $Result = (Test-ProfilesInstalled -version '1.0' -Module 'Module1' -Profile 'Profile1' -PMap ($global:testProfileMap | ConvertFrom-Json) -AllProfilesInstalled $AllProfilesInstalled)
                 $Result[0] | Should Be 'Profile1'
             }
         }
