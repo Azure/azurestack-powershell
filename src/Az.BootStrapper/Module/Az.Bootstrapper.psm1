@@ -1053,6 +1053,8 @@ function Use-AzProfile
         {
           # We need the latest version in that profile to be imported. If old version was imported, block user and ask to import in a new session
           $latestVersion = Get-LatestModuleVersion -versions $latestVersions
+          
+          # Allow import of preview module; preview module does not end with the term 'preview' in module metadata.
           if ($latestVersion.EndsWith("preview")) {
             $latestVersion = $latestVersion.TrimEnd("-preview")
           }
