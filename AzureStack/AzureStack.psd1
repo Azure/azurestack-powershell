@@ -128,7 +128,7 @@
             ReleaseNotes = 'Version 2.0.0'
 
             # Preview version
-            Prerelease = preview
+            Prerelease = 'preview'
 
         } # End of PSData hashtable
 
