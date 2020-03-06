@@ -87,7 +87,7 @@ AliasesToExport = @()
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{      
-    Prerelease = preview
+    Prerelease = 'preview'
     Tags = 'AzureStack', 'ResourceManager', 'ARM', 'PSModule', 'DeploymentResourceProvider'
     LicenseUri = 'https://aka.ms/azps-license'
     ProjectUri = 'https://github.com/Azure/azurestack-powershell'

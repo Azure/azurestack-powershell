@@ -54,4 +54,11 @@ directive:
       verb: New
       variant: ^CreateViaIdentity(.*)
     remove: true
+    
+
+# PSD1 Changes for preview module
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \{previewVersion\}\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \'\{previewVersion\}\'\"\);' );
+
 ```
