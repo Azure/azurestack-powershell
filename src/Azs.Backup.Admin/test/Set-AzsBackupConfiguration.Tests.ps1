@@ -53,7 +53,7 @@ Describe 'Set-AzsBackupConfiguration' {
             [System.IO.File]::WriteAllBytes($global:encryptionCertPath, [System.Convert]::FromBase64String($global:encryptionCertBase64))
             $location = Get-AzsBackupConfiguration
             $location.UserName = $global:username
-            $location.Password = $global:password
+            $location.Password = $global:passwordStr
             $location.Path = $global:path
             $location.EncryptionCertBase64 = $global:encryptionCertBase64
             $location.IsBackupSchedulerEnabled = $global:isBackupSchedulerEnabled
