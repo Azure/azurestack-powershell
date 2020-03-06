@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Storage.Admin
-Module Guid: 14ee1f9d-3505-45eb-a128-ec91a0ebe410
+Module Guid: 9dbccb05-3016-4031-87bf-dd66baef639b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.storage.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -8,7 +8,7 @@ Locale: en-US
 
 # Azs.Storage.Admin Module
 ## Description
-Microsoft Azure PowerShell: StorageAdmin cmdlets
+Microsoft AzureStack PowerShell: StorageAdmin cmdlets
 
 ## Azs.Storage.Admin Cmdlets
 ### [Get-AzsStorageAccount](Get-AzsStorageAccount.md)
