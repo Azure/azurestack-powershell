@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.InfrastructureInsights.Admin
-This directory contains the PowerShell module for the InfrastructureInsights service.
+This directory contains the PowerShell module for the InfrastructureInsights Admin service.
 
 ---
 ## Status
