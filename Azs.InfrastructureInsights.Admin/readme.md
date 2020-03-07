@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.InfrastructureInsights.Admin
-This directory contains the PowerShell module for the InfrastructureInsights Admin service.
+This directory contains the PowerShell module for the InfrastructureInsights service.
 
 ---
 ## Status
@@ -83,6 +83,10 @@ directive:
       subject: ResourceHealth
     set:
       subject: RegistrationHealth
+  - where:
+      verb: Close
+      subject: Alert
+    hide: true
   - where:
       model-name: Alert
     set:
