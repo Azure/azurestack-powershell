@@ -103,6 +103,8 @@ AliasesToExport = @()
 PrivateData = @{
 
     PSData = @{
+        # Specifies the module is preview
+        Prerelease = 'preview'
 
         # Tags applied to this module. These help with module discovery in online galleries.
         Tags = 'Azure','Az','AzureStack','PSModule','Profile','ResourceManager'
