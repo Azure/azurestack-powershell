@@ -84,6 +84,10 @@ directive:
     set:
       subject: RegistrationHealth
   - where:
+      verb: Close
+      subject: Alert
+    hide: true
+  - where:
       model-name: Alert
     set:
       format-table:
