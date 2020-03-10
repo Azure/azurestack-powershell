@@ -169,7 +169,7 @@ directive:
   
   ## hide autorest generated cmdlet to use the custom one
   - where:
-      verb: Set
+      verb: New|Set
       subject: Quota
     hide: true
 
