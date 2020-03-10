@@ -22,13 +22,13 @@
             "1.4.3"
         ],
         "Az.IotHub": [
-            "2.0.1"
+            "0.10.0-preview"
         ],
         "Az.KeyVault": [
             "0.10.0-preview"
         ],
         "Az.Monitor": [
-            "1.5.0"
+            "1.6.0"
         ],
         "Az.Network": [
             "0.10.0-preview"
