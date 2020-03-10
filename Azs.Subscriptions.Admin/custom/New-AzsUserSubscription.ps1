@@ -70,13 +70,13 @@ param(
     # Fully qualified identifier.
     ${Id},
 
-    [Parameter(ParameterSetName='CreateExpanded')]
+    [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Category('Body')]
     [System.String]
     # Identifier of the offer under the scope of a delegated provider.
     ${OfferId},
 
-    [Parameter(ParameterSetName='CreateExpanded')]
+    [Parameter(ParameterSetName='CreateExpanded', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Category('Body')]
     [System.String]
     # Subscription owner.

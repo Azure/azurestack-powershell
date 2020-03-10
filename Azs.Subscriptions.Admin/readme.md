@@ -240,6 +240,12 @@ directive:
       parameter-name: Subscription
     set:
       parameter-name: UserSubscriptionId
+  - where:
+      verb: Remove|Add
+      subject: PlanToOffer
+      parameter-name: Name
+    set:
+      parameter-name: OfferName
 ## default values
   - where:
       verb: New
