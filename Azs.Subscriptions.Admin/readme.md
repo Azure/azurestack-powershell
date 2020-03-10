@@ -282,6 +282,13 @@ directive:
     set:
       default:
         script: Write-Output "Default"
+  - where:
+      verb: New
+      subject: AcquiredPlan
+      parameter-name: PlanAcquisitionId
+    set:
+      default:
+        script: "$([Guid]::NewGuid().ToString())"
 ## hide autorest generated cmdlet to use the custom one
   - where:
       verb: New
