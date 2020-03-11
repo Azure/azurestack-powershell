@@ -110,7 +110,7 @@ directive:
       subject: UnlinkOffer
     set:
       verb: Remove
-      subject: PlanToOffer
+      subject: PlanFromOffer
   - where:
       verb: Test
       subject: SubscriptionIdentityHealth
@@ -148,6 +148,10 @@ directive:
   - where:
       verb: Update
       subject: SubscriptionEncryption
+    remove: True
+  - where:
+      verb: New|Set|Remove
+      subject: DirectoryTenant
     remove: True
 ## rename parameters
   - where:
