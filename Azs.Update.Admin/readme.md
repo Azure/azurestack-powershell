@@ -52,7 +52,6 @@ require:
 
 subject-prefix: ''
 module-version: 0.9.0-preview
-identity-correction-for-post: true
 
 ### File Renames 
 module-name: Azs.Update.Admin 
