@@ -22,8 +22,8 @@
       <dependency id="Azs.Fabric.Admin" version="[0.9.0-preview]" />
       <dependency id="Azs.Deployment.Admin" version="[0.9.0-preview]" />
       <dependency id="Azs.Gallery.Admin" version="[0.9.0-preview]" />
-      <dependency id="Azs.Infrastructureinsights.Admin" version="[0.9.0-preview]" />
-      <dependency id="Azs.Keyvault.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.InfrastructureInsights.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.KeyVault.Admin" version="[0.9.0-preview]" />
       <dependency id="Azs.Network.Admin" version="[0.9.0-preview]" />
       <dependency id="Azs.Storage.Admin" version="[0.9.0-preview]" />
       <dependency id="Azs.Subscriptions" version="[0.9.0-preview]" />
