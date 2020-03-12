@@ -125,7 +125,7 @@ directive:
     remove: true
   ## hide autorest generated cmdlet to use the custom one
   - where:
-      verb: New|Set
+      verb: New|Set|Remove
       subject: Subscription
     hide: true
     ## output format

@@ -153,6 +153,14 @@ directive:
       verb: New|Set|Remove
       subject: DirectoryTenant
     remove: True
+  - where:
+      verb: Get
+      subject: OfferMetricDefinition
+    remove: True
+  - where:
+      verb: Get
+      subject: PlanMetricDefinition
+    remove: True  
 ## rename parameters
   - where:
       subject: DelegatedProviderManagedOffer
@@ -315,11 +323,7 @@ directive:
       subject: Plan
     hide: true
   - where:
-      verb: Set
-      subject: UserSubscription
-    hide: true
-  - where:
-      verb: New
+      verb: New|Set|Remove
       subject: UserSubscription
     hide: true
 ## output format
