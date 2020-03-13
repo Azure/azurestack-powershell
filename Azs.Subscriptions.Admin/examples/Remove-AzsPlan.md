@@ -1,8 +1,7 @@
 ### Example 1
 ```powershell
-PS C:\> Remove-AzsPlan -Name plan1 -ResourceGroupName "rg1"
+PS C:\> Remove-AzsPlan -Name "testplan" -ResourceGroupName "testrg"
 
-{{ Add output here }}
 ```
 
-Removes the specified plan
+Delete the specified plan

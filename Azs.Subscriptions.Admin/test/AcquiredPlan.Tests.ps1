@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsAcquiredPlan.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'AcquiredPlan.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -68,7 +68,7 @@ Describe 'AcquiredPlan' {
         $global:TestName = 'TestGetAcquiredPlan'
         $plans = Get-AzsSubscriptionPlan -TargetSubscriptionId $global:subscriptionId
         foreach ($plan in $plans) {
-            $plan2 = Get-AzsSubscriptionPlan -TargetSubscriptionId $global:subscriptionId -AcquisitionId $plan.AcquisitionId
+            $plan2 = Get-AzsSubscriptionPlan -TargetSubscriptionId $global:subscriptionId -PlanAcquisitionId $plan.AcquisitionId
             AssertPlanAcquisitionsSame $plan $plan2
         }
     }
@@ -76,10 +76,10 @@ Describe 'AcquiredPlan' {
     it "TestCreateThenDeleteAcquiredPlan" -Skip:$('TestCreateThenDeleteAcquiredPlan' -in $global:SkippedTests) {
         $global:TestName = "TestCreateThenDeleteAcquiredPlan"
         $plans = Get-AzsPlan
-        $new = New-AzsSubscriptionPlan -AcquisitionId $global:acquisitionId -PlanId $plans[0].Id -TargetSubscriptionId $global:TargetSubscriptionId
+        $new = New-AzsSubscriptionPlan -PlanAcquisitionId $global:PlanAcquisitionId -PlanId $plans[0].Id -TargetSubscriptionId $global:TargetSubscriptionId
         ValidatePlanAcquisition $new
-        Remove-AzsSubscriptionPlan -PlanAcquisitionId $global:acquisitionId -TargetSubscriptionId $global:TargetSubscriptionId
-        { Get-AzsSubscriptionPlan -AcquisitionId $global:acquisitionId -TargetSubscriptionId $global:TargetSubscriptionId -ErrorAction Stop } | Should Throw
+        Remove-AzsSubscriptionPlan -PlanAcquisitionId $global:PlanAcquisitionId -TargetSubscriptionId $global:TargetSubscriptionId
+        { Get-AzsSubscriptionPlan -PlanAcquisitionId $global:PlanAcquisitionId -TargetSubscriptionId $global:TargetSubscriptionId -ErrorAction Stop } | Should Throw
     }
 
     It 'GetViaIdentity' {
