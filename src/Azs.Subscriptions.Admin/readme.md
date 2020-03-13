@@ -253,8 +253,14 @@ directive:
     set:
       parameter-name: UserSubscriptionId
   - where:
-      verb: Remove|Add
+      verb: Add
       subject: PlanToOffer
+      parameter-name: Name
+    set:
+      parameter-name: OfferName
+  - where:
+      verb: Remove
+      subject: PlanFromOffer
       parameter-name: Name
     set:
       parameter-name: OfferName

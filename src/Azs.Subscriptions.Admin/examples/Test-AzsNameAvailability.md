@@ -1,8 +1,10 @@
 ### Example 1
 ```powershell
-PS C:\> Test-AzsNameAvailability -ResourceType "Microsoft.Subscriptions.Admin/offers" -Name offername1
+PS C:\> Test-AzsNameAvailability -ResourceType "Microsoft.Subscriptions.Admin/offers" -Name "testoffer" | fl *
 
-{{ Add output here }}
+Message       : A resource of type 'Microsoft.Subscriptions.Admin/offers' with name 'testoffer' already exists. Please select a different name.
+NameAvailable : False
+Reason        : AlreadyExists
 ```
 
-Returns the avaialbility of the specified subscriptions resource type and name
+Returns the availability of the specified subscription resource type and name

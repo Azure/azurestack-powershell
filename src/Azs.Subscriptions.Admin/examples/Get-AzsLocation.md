@@ -2,7 +2,9 @@
 ```powershell
 PS C:\> Get-AzsLocation
 
-{{ Add output here }}
+DisplayName Latitude Longitude Name   
+----------- -------- --------- ----   
+redmond                        redmond
 ```
 
 Get a list of all AzureStack locations.

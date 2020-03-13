@@ -11,7 +11,7 @@ Move user subscriptions to a delegated provider offer.
 
 ### Example 2
 ```powershell
-PS C:\> $resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | where {$_.DelegatedProviderSubscriptionId -eq "798568b7-c6f1-4bf7-bb8f-2c8bebc7c777"} | Select -ExpandProperty Id
+PS C:\> $resourceIds = Get-AzsUserSubscription | where {$_.DelegatedProviderSubscriptionId -eq "798568b7-c6f1-4bf7-bb8f-2c8bebc7c777"} | Select -ExpandProperty Id
 Move-AzsSubscription -ResourceId $resourceIds
 
 {{ Add output here }}

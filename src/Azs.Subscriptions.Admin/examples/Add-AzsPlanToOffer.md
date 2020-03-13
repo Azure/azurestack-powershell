@@ -1,20 +1,18 @@
 ### Example 1
 ```powershell
-PS C:\> Add-AzsPlanToOffer -OfferName ascantenantoffer65 -ResourceGroupName ascansubscrrg65 -PlanLinkType Base -MaxAcquisitionCount 22 -PlanName ascantenantplan65
+PS C:\> Add-AzsPlanToOffer -PlanName "addonplan" -PlanLinkType Addon -OfferName "testoffer" -ResourceGroupName "testrg" -MaxAcquisitionCount 18
 
-AddonPlans                 : {}
-BasePlanIds                : {/subscriptions/e5c36693-ebfd-4860-b227-7763ebebbc27/resourceGroups/ascansubscrrg65/provid
-                             ers/Microsoft.Subscriptions.Admin/plans/ascantenantplan65}
-Description                :
-DisplayName                : ascantenantoffer65
-ExternalReferenceId        :
-Id                         : /subscriptions/e5c36693-ebfd-4860-b227-7763ebebbc27/resourceGroups/ascansubscrrg65/provide
-                             rs/Microsoft.Subscriptions.Admin/offers/ascantenantoffer65
-Location                   : local
+AddonPlans                 : {/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/addonplan}
+BasePlanIds                : {/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/testplan}
+Description                : 
+DisplayName                : testoffer
+ExternalReferenceId        : 
+Id                         : /subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/offers/testoffer
+Location                   : redmond
 MaxSubscriptionsPerAccount : 0
-Name                       : ascantenantoffer65
-PropertiesName             : ascantenantoffer65
-State                      : Public
+Name                       : testoffer
+PropertiesName             : testoffer
+State                      : Private
 SubscriptionCount          : 0
 Tags                       : Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.ResourceTags
 Type                       : Microsoft.Subscriptions.Admin/offers
