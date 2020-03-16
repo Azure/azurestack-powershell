@@ -1,8 +1,21 @@
 ### Example 1
 ```powershell
-PS C:\> Add-AzsPlanToOffer -PlanLinkType Addon -Offer offer1 -PlanName plan1 -ResourceGroupName rg1 -MaxAcquisitionCount 2
+PS C:\> Add-AzsPlanToOffer -PlanName "addonplan" -PlanLinkType Addon -OfferName "testoffer" -ResourceGroupName "testrg" -MaxAcquisitionCount 18
 
-{{ Add output here }}
+AddonPlans                 : {/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/addonplan}
+BasePlanIds                : {/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/testplan}
+Description                : 
+DisplayName                : testoffer
+ExternalReferenceId        : 
+Id                         : /subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/offers/testoffer
+Location                   : redmond
+MaxSubscriptionsPerAccount : 0
+Name                       : testoffer
+PropertiesName             : testoffer
+State                      : Private
+SubscriptionCount          : 0
+Tags                       : Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.ResourceTags
+Type                       : Microsoft.Subscriptions.Admin/offers
 ```
 
 Links a plan to an offer.
