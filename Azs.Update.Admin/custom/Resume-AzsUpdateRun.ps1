@@ -138,32 +138,44 @@ param(
 
 process 
 {
-    # Generated SDK does not support {location}/{updateName} for nested resource updateName, so extract the {updateName} part here
-    if ($PSBoundParameters.ContainsKey(('UpdateName')))
+    $UpdateName = $null
+    $Name = $null
+
+    # If it is applied via identity
+    $parameterSet = $PSCmdlet.ParameterSetName
+    if(('RerunViaIdentity') -contains $parameterSet)
     {
-        $UpdateName = $PSBoundParameters['UpdateName']
-        if ($null -ne $UpdateName -and $UpdateName.Contains('/'))
+        $Name = $InputObject.Id.Split("/")[-1]
+        $UpdateName = $InputObject.Id.Split("/")[-3]
+    } 
+    else 
+    {
+        # Generated SDK does not support {location}/{updateName} for nested resource updateName, so extract the {updateName} part here
+        if ($PSBoundParameters.ContainsKey(('UpdateName')))
         {
-            $PSBoundParameters['UpdateName'] = $UpdateName.Split("/")[-1]
             $UpdateName = $PSBoundParameters['UpdateName']
+            if ($null -ne $UpdateName -and $UpdateName.Contains('/'))
+            {
+                $PSBoundParameters['UpdateName'] = $UpdateName.Split("/")[-1]
+                $UpdateName = $PSBoundParameters['UpdateName']
+            }
         }
-    }
 
-    # Generated SDK does not support {location}/{updateName}/{name} for nested resource name, so extract the {name} part here
-    if ($PSBoundParameters.ContainsKey(('Name')))
-    {
-        $Name = $PSBoundParameters['Name']
-        if ($null -ne $Name -and $Name.Contains('/'))
+        # Generated SDK does not support {location}/{updateName}/{name} for nested resource name, so extract the {name} part here
+        if ($PSBoundParameters.ContainsKey(('Name')))
         {
-            $PSBoundParameters['Name'] = $Name.Split("/")[-1]
             $Name = $PSBoundParameters['Name']
+            if ($null -ne $Name -and $Name.Contains('/'))
+            {
+                $PSBoundParameters['Name'] = $Name.Split("/")[-1]
+                $Name = $PSBoundParameters['Name']
+            }
         }
     }
 
-    if ($Force.IsPresent -or $PsCmdlet.ShouldContinue("Have You Ran Test-Azurestack?", "Resuming Update: $UpdateName Run: $Name")) {
+    if ($Force.IsPresent -or $PsCmdlet.ShouldContinue("Are you sure you want to install update $UpdateName ?", "Resuming Update: $UpdateName Run: $Name")) {
         $PSBoundParameters.Remove('Force') | Out-Null
         Azs.Update.Admin.internal\Resume-AzsUpdateRun @PSBoundParameters
     }
 }
-
 }
