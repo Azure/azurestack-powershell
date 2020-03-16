@@ -110,7 +110,7 @@ directive:
       subject: UnlinkOffer
     set:
       verb: Remove
-      subject: PlanToOffer
+      subject: PlanFromOffer
   - where:
       verb: Test
       subject: SubscriptionIdentityHealth
@@ -149,6 +149,18 @@ directive:
       verb: Update
       subject: SubscriptionEncryption
     remove: True
+  - where:
+      verb: New|Set|Remove
+      subject: DirectoryTenant
+    remove: True
+  - where:
+      verb: Get
+      subject: OfferMetricDefinition
+    remove: True
+  - where:
+      verb: Get
+      subject: PlanMetricDefinition
+    remove: True  
 ## rename parameters
   - where:
       subject: DelegatedProviderManagedOffer
@@ -241,8 +253,14 @@ directive:
     set:
       parameter-name: UserSubscriptionId
   - where:
-      verb: Remove|Add
+      verb: Add
       subject: PlanToOffer
+      parameter-name: Name
+    set:
+      parameter-name: OfferName
+  - where:
+      verb: Remove
+      subject: PlanFromOffer
       parameter-name: Name
     set:
       parameter-name: OfferName
@@ -282,6 +300,13 @@ directive:
     set:
       default:
         script: Write-Output "Default"
+  - where:
+      verb: New
+      subject: AcquiredPlan
+      parameter-name: PlanAcquisitionId
+    set:
+      default:
+        script: "$([Guid]::NewGuid().ToString())"
 ## hide autorest generated cmdlet to use the custom one
   - where:
       verb: New
@@ -304,11 +329,7 @@ directive:
       subject: Plan
     hide: true
   - where:
-      verb: Set
-      subject: UserSubscription
-    hide: true
-  - where:
-      verb: New
+      verb: New|Set|Remove
       subject: UserSubscription
     hide: true
 ## output format

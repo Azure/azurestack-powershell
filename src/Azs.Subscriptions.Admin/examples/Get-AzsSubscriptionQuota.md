@@ -1,7 +1,9 @@
 ### Example 1
 PS C:\> Get-AzsSubscriptionsQuota
 
-{{ Add output here }}
+Location Name                           Type                                          
+-------- ----                           ----                                          
+redmond  redmond/delegatedProviderQuota Microsoft.Subscriptions.Admin/locations/quotas
 ```
 
-Get the list of subscription resource provider quotas at a location.
+Get the list of subscription resource provider quotas.

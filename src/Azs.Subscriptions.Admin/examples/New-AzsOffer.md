@@ -1,8 +1,21 @@
 ### Example 1
 ```powershell
-PS C:\> New-AzsOffer -Name offer1 -ResourceGroupName rg1 -State Public -DisplayName "offer1" -BasePlanIds "/subscriptions/0a823c45-d9e7-4812-a138-74e22213693a/resourceGroups/rg1/providers/Microsoft.Subscriptions.Admin/plans/plan1"
+PS C:\> New-AzsOffer -Name "testoffer" -ResourceGroupName "testrg" -BasePlanIds "/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/testplan"
 
-{{ Add output here }}
+AddonPlans                 : {}
+BasePlanIds                : {/subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/plans/testplan}
+Description                : 
+DisplayName                : testoffer
+ExternalReferenceId        : 
+Id                         : /subscriptions/d77ed1d7-cb62-4658-a777-386a8ae523dd/resourceGroups/testrg/providers/Microsoft.Subscriptions.Admin/offers/testoffer
+Location                   : redmond
+MaxSubscriptionsPerAccount : 0
+Name                       : testoffer
+PropertiesName             : testoffer
+State                      : Private
+SubscriptionCount          : 0
+Tags                       : Microsoft.Azure.PowerShell.Cmdlets.SubscriptionsAdmin.Models.Api20151101.ResourceTags
+Type                       : Microsoft.Subscriptions.Admin/offers
 ```
 
 Creates a new offer.

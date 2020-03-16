@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsDelegatedProviderManagedOffer.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'DelegatedProviderManagedOffer.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
