@@ -253,7 +253,7 @@ Dynamic: False
 ```
 
 ### -ScaleUnit
-The source scale unit which the resource belongs to.
+The scale unit which the resource belongs to.
 
 ```yaml
 Type: System.String
@@ -269,7 +269,7 @@ Dynamic: False
 ```
 
 ### -SharePath
-The source share which the resource belongs to.
+The share which the resource belongs to.
 
 ```yaml
 Type: System.String
@@ -350,7 +350,7 @@ Dynamic: False
 ```
 
 ### -VolumeLabel
-The source volume label which the resource belongs to.
+The volume label of the volume which the resource belongs to.
 
 ```yaml
 Type: System.String
