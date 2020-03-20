@@ -1,17 +1,20 @@
-### Example 1: Default Set
+### Example 1: Set value for MaxNicsPerSubscription using Quota parameter
 ```powershell
-PS C:\> Set-AzsNetworkQuota -Name MyQuota
+PS C:\> $quota = Get-AzsNetworkQuota -Name MyQuota
 
-Id                                                 : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/location
-                                                     s/northwest/quotas/MyQuota
+PS C:\> $quota.MaxNicsPerSubscription = 30
+
+PS C:\> Set-AzsNetworkQuota -Quota $quota
+
+Id                                                 : /subscriptions/39c82aed-b2b7-4a66-abdb-611de00bf11e/providers/Microsoft.Network.Admin/locations/northwest/quotas/MyQuota
 Location                                           : northwest
-MaxLoadBalancersPerSubscription                    : 0
-MaxNicsPerSubscription                             : 0
-MaxPublicIpsPerSubscription                        : 0
-MaxSecurityGroupsPerSubscription                   : 0
-MaxVirtualNetworkGatewayConnectionsPerSubscription : 0
-MaxVirtualNetworkGatewaysPerSubscription           : 0
-MaxVnetsPerSubscription                            : 0
+MaxLoadBalancersPerSubscription                    : 50
+MaxNicsPerSubscription                             : 30
+MaxPublicIpsPerSubscription                        : 50
+MaxSecurityGroupsPerSubscription                   : 50
+MaxVirtualNetworkGatewayConnectionsPerSubscription : 2
+MaxVirtualNetworkGatewaysPerSubscription           : 1
+MaxVnetsPerSubscription                            : 50
 MigrationPhase                                     : None
 Name                                               : northwest/MyQuota
 ProvisioningState                                  : Succeeded
@@ -19,22 +22,25 @@ Tag                                                : Microsoft.Azure.PowerShell.
 Type                                               : Microsoft.Network.Admin/quotas
 ```
 
-Returns MyQuota with default values of 0.
+Returns MyQuota with the MaxNicsPerSubscription changed to 30.
 
-### Example 2: Set default value for MaxLoadBalancersPerSubscription
+### Example 2: Set value for MaxNicsPerSubscription using a pipeline
 ```powershell
-PS C:\> Set-AzsNetworkQuota -Name MyQuota -MaxLoadBalancersPerSubscription 20
+PS C:\> $quota = Get-AzsNetworkQuota -Name MyQuota
 
-Id                                                 : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/location
-                                                     s/northwest/quotas/MyQuota
+PS C:\> $quota.MaxNicsPerSubscription = 50
+
+PS C:\> $quota | Set-AzsNetworkQuota
+
+Id                                                 : /subscriptions/39c82aed-b2b7-4a66-abdb-611de00bf11e/providers/Microsoft.Network.Admin/locations/northwest/quotas/MyQuota
 Location                                           : northwest
-MaxLoadBalancersPerSubscription                    : 20
-MaxNicsPerSubscription                             : 0
-MaxPublicIpsPerSubscription                        : 0
-MaxSecurityGroupsPerSubscription                   : 0
-MaxVirtualNetworkGatewayConnectionsPerSubscription : 0
-MaxVirtualNetworkGatewaysPerSubscription           : 0
-MaxVnetsPerSubscription                            : 0
+MaxLoadBalancersPerSubscription                    : 50
+MaxNicsPerSubscription                             : 50
+MaxPublicIpsPerSubscription                        : 50
+MaxSecurityGroupsPerSubscription                   : 50
+MaxVirtualNetworkGatewayConnectionsPerSubscription : 2
+MaxVirtualNetworkGatewaysPerSubscription           : 1
+MaxVnetsPerSubscription                            : 50
 MigrationPhase                                     : None
 Name                                               : northwest/MyQuota
 ProvisioningState                                  : Succeeded
@@ -42,4 +48,4 @@ Tag                                                : Microsoft.Azure.PowerShell.
 Type                                               : Microsoft.Network.Admin/quotas
 ```
 
-Returns MyQuota with the values specified in the parameters.
+Pipelines the quota variable to change the MaxNicsPerSubscription to 50.
