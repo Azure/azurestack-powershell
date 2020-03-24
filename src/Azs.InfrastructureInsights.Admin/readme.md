@@ -59,6 +59,7 @@ input-file:
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: InfrastructureInsights
 
 ### File Renames
 module-name: Azs.InfrastructureInsights.Admin

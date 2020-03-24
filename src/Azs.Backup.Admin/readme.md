@@ -52,6 +52,7 @@ require:
 
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: BackupAdmin
 
 ### File Renames
 module-name: Azs.Backup.Admin

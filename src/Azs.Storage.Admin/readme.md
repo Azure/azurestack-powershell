@@ -53,6 +53,7 @@ require:
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: StorageAdmin
 
 ### File Renames
 module-name: Azs.Storage.Admin

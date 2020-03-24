@@ -21,7 +21,6 @@ metadata:
 > Names
 ``` yaml
 prefix: Azs
-module-name: $(prefix).$(service-name)
 namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
 identity-correction-for-post: true
 ```

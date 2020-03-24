@@ -56,7 +56,7 @@ input-file:
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
-
+service-name: CommerceAdmin
 ### File Renames 
 module-name: Azs.Commerce.Admin 
 csproj: Azs.Commerce.Admin.csproj 

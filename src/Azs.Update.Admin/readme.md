@@ -52,6 +52,7 @@ require:
 
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: UpdateAdmin
 
 ### File Renames 
 module-name: Azs.Update.Admin 

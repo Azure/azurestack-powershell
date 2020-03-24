@@ -73,6 +73,7 @@ namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
 subject-prefix: ''
 module-version: 0.9.0-preview
 sanitize-names: false
+service-name: Subscription
 
 ### File Renames
 module-name: Azs.Subscriptions
