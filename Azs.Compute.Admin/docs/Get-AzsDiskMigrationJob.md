@@ -41,7 +41,7 @@ PS C:\> Get-AzsDiskMigrationJob
 
 Returns a list of managed disk migration jobs at the location local.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
 PS C:\> Get-AzsDiskMigrationJob -Name TestNewDiskMigrationJob
 
