@@ -27,7 +27,7 @@ UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGr
 
 Specify a disk by its `Name` to retrieve it.
 
-### Example 2: Get a Specified number of Disks
+### Example 3: Get a Specified number of Disks
 ```powershell
 PS C:\>  Get-AzsDisk -Count 3
 
@@ -80,3 +80,52 @@ UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGr
                   e/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489
 ```
 Use the `Count` parameter to retrieve a specific number of disks. 
+
+### Example 4: Get all disks in specific location
+```powershell
+PS C:\> Get-AzsDisk -Status All -ScaleUnit s-cluster -VolumeLabel Objstore_4
+
+ActualSizeGb    : 2
+DiskId          : e4732f76-0753-40ec-80f5-8effdd0b437d
+DiskSku         : Premium_LRS
+DiskType        : Disk
+Id              : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/providers/Microsoft.Compute.Admin/locations/redmond/disks/e4732f76-0753-40ec-80f5-8effdd0b437d
+Location        : redmond
+ManagedBy       : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/rbactest/providers/Microsoft.Compute/virtualMachines/test1
+Name            : redmond/e4732f76-0753-40ec-80f5-8effdd0b437d
+ProvisionSizeGb : 30
+SharePath       : \\SU1FileServer.s11r0401.masd.stbtest.microsoft.com\SU1_ObjStore_4
+Status          : Reserved
+Type            : Microsoft.Compute.Admin/locations/disks
+UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/RBACTEST/providers/Microsoft.Compute/Disks/test1_OsDisk_1_e4732f76075340ec80f58effdd0b437d
+
+ActualSizeGb    : 1
+DiskId          : 0485cbc9-1efa-43bd-86c2-0e201d79c528
+DiskSku         : Premium_LRS
+DiskType        : Disk
+Id              : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/providers/Microsoft.Compute.Admin/locations/redmond/disks/0485cbc9-1efa-43bd-86c2-0e201d79c528
+Location        : redmond
+ManagedBy       : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/rbactest/providers/Microsoft.Compute/virtualMachines/test1
+Name            : redmond/0485cbc9-1efa-43bd-86c2-0e201d79c528
+ProvisionSizeGb : 64
+SharePath       : \\SU1FileServer.s11r0401.masd.stbtest.microsoft.com\SU1_ObjStore_4
+Status          : Reserved
+Type            : Microsoft.Compute.Admin/locations/disks
+UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/TESTRG1/providers/Microsoft.Compute/Disks/gpsdisk
+
+ActualSizeGb    : 1
+DiskId          : 137893db-e7ce-4907-a488-b35c5e928614
+DiskSku         : Premium_LRS
+DiskType        : Disk
+Id              : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/providers/Microsoft.Compute.Admin/locations/redmond/disks/137893db-e7ce-4907-a488-b35c5e928614
+Location        : redmond
+ManagedBy       : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/rbactest/providers/Microsoft.Compute/virtualMachines/test1
+Name            : redmond/137893db-e7ce-4907-a488-b35c5e928614
+ProvisionSizeGb : 55
+SharePath       : \\SU1FileServer.s11r0401.masd.stbtest.microsoft.com\SU1_ObjStore_4
+Status          : Reserved
+Type            : Microsoft.Compute.Admin/locations/disks
+UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/RBACTEST/providers/Microsoft.Compute/Disks/testdd
+```
+
+Use the `ScaleUnit` or `VolumeLabel` parameter to list all disks in specific location
