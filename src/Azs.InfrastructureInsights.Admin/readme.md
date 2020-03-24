@@ -56,6 +56,9 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ResourceHealth.json
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ServiceHealth.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: InfrastructureInsights Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview

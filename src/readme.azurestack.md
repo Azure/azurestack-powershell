@@ -9,9 +9,8 @@ repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
-  description: 'Microsoft AzureStack PowerShell: $(service-name) cmdlets'
   copyright: Microsoft Corporation. All rights reserved.
-  tags: AzureStack ResourceManager ARM PSModule $(service-name)
+  tags: AzureStack ResourceManager ARM PSModule
   companyName: Microsoft Corporation
   requireLicenseAcceptance: true
   licenseUri: https://aka.ms/azps-license

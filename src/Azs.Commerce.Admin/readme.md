@@ -52,6 +52,8 @@ require:
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/commerce/Microsoft.Commerce.Admin/preview/2015-06-01-preview/Commerce.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Commerce Admin cmdlets'
 
 ### PSD1 metadata changes
 subject-prefix: ''

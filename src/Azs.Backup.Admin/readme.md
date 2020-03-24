@@ -50,6 +50,9 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/backup/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Backup Admin cmdlets'
+
 subject-prefix: ''
 module-version: 0.9.0-preview
 service-name: BackupAdmin
