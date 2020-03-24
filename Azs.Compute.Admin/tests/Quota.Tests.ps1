@@ -229,15 +229,11 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
             @(2, 1, 1, 2, 1, 1),
             @(2, 1, 2, 2, 1, 1)
         ) | ForEach-Object {
-            $quota = Set-AzsComputeQuota `
-                -Location $global:Location `
-                -Name "testQuotaCreateUpdateDelete" `
-                -AvailabilitySetCount $_[0] `
-                -CoresCount $_[1] `
-                -VmScaleSetCount $_[2] `
-                -VirtualMachineCount $_[3] `
-                -StandardManagedDiskAndSnapshotSize $_[4] `
-                -PremiumManagedDiskAndSnapshotSize $_[5]
+            $quotaObject = @{ Location = $global:Location; Name = "testQuotaCreateUpdateDelete"; AvailabilitySetCount = $_[0]; `
+                CoresLimit = $_[1]; VmScaleSetCount = $_[2]; VirtualMachineCount = $_[3]; StandardManagedDiskAndSnapshotSize = $_[4]; `
+                PremiumManagedDiskAndSnapshotSize = $_[5]; }
+
+            $quota = Set-AzsComputeQuota -NewQuota $quotaObject
 
             $quota | Should not be $null
             $quota.AvailabilitySetCount | Should be $_[0]
@@ -259,15 +255,12 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
             @(2, 1, 1, 2, 1, 1),
             @(2, 1, 2, 2, 1, 1)
         ) | ForEach-Object {
-            $quota = Set-AzsComputeQuota `
-                -Location $global:Location `
-                -Name "testQuotaCreateUpdateDelete" `
-                -AvailabilitySetCount $_[0] `
-                -CoresLimit $_[1] `
-                -VmScaleSetCount $_[2] `
-                -VirtualMachineCount $_[3] `
-                -StandardManagedDiskAndSnapshotSize $_[4] `
-                -PremiumManagedDiskAndSnapshotSize $_[5]
+
+            $quotaObject = @{ Location = $global:Location; Name = "testQuotaCreateUpdateDelete"; AvailabilitySetCount = $_[0]; `
+                CoresLimit = $_[1]; VmScaleSetCount = $_[2]; VirtualMachineCount = $_[3]; StandardManagedDiskAndSnapshotSize = $_[4]; `
+                PremiumManagedDiskAndSnapshotSize = $_[5]; }
+
+            $quota = Set-AzsComputeQuota -NewQuota $quotaObject
 
             $quota | Should not be $null
             $quota.AvailabilitySetCount | Should be $_[0]
