@@ -70,6 +70,9 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Drive.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Volume.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Fabric Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview

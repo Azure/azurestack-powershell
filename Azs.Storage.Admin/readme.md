@@ -50,6 +50,9 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/storage/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Storage Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview

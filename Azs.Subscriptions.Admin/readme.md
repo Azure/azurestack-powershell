@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/subscriptions/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Subscriptions Admin cmdlets'
+
 subject-prefix: ''
 module-version: 0.9.0-preview
 sanitize-names: false
+service-name: SubscriptionsAdmin
 
 ### File Renames
 module-name: Azs.Subscriptions.Admin

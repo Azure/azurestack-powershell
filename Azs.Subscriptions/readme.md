@@ -56,9 +56,9 @@ repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
-  description: 'Microsoft Azure PowerShell: $(service-name) cmdlets'
+  description: 'Microsoft Azure PowerShell: User subscription cmdlets'
   copyright: Microsoft Corporation. All rights reserved.
-  tags: Azure ResourceManager ARM PSModule $(service-name)
+  tags: Azure ResourceManager ARM PSModule
   companyName: Microsoft Corporation
   requireLicenseAcceptance: true
   licenseUri: https://aka.ms/azps-license
