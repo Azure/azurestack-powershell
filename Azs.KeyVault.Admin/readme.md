@@ -56,6 +56,7 @@ input-file:
 ### PSD1 metadata changes
 subject-prefix: 'Keyvault'
 module-version: 0.9.0-preview
+service-name: KeyvaultAdmin
 
 ### File Renames
 module-name: Azs.KeyVault.Admin
