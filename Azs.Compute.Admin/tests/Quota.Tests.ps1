@@ -221,7 +221,7 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
 
     It "TestQuotaCreateUpdateDelete" -Skip:$('TestQuotaCreateUpdateDelete' -in $global:SkippedTests) {
         $global:TestName = 'TestQuotaCreateUpdateDelete'
-
+        New-AzsComputeQuota -Name "testQuotaCreateUpdateDelete"
 
         @(
             @(1, 1, 1, 1, 1, 1),
@@ -229,9 +229,13 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
             @(2, 1, 1, 2, 1, 1),
             @(2, 1, 2, 2, 1, 1)
         ) | ForEach-Object {
-            $quotaObject = @{ Location = $global:Location; Name = "testQuotaCreateUpdateDelete"; AvailabilitySetCount = $_[0]; `
-                CoresLimit = $_[1]; VmScaleSetCount = $_[2]; VirtualMachineCount = $_[3]; StandardManagedDiskAndSnapshotSize = $_[4]; `
-                PremiumManagedDiskAndSnapshotSize = $_[5]; }
+            $quotaObject = Get-AzsComputeQuota -Name "testQuotaCreateUpdateDelete"
+            $quotaObject.AvailabilitySetCount = $_[0]
+            $quotaObject.CoresLimit = $_[1]
+            $quotaObject.VmScaleSetCount = $_[2]
+            $quotaObject.VirtualMachineCount = $_[3]
+            $quotaObject.StandardManagedDiskAndSnapshotSize = $_[4]
+            $quotaObject.PremiumManagedDiskAndSnapshotSize = $_[5]
 
             $quota = Set-AzsComputeQuota -NewQuota $quotaObject
 
@@ -248,6 +252,7 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
 
     It "TestQuotaCreateUpdateDeleteWithAlias" -Skip:$('TestQuotaCreateUpdateDeleteWithAlias' -in $global:SkippedTests) {
         $global:TestName = 'TestQuotaCreateUpdateDelete'
+        New-AzsComputeQuota -Name "testQuotaCreateUpdateDelete"
 
         @(
             @(1, 1, 1, 1, 1, 1),
@@ -256,9 +261,13 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
             @(2, 1, 2, 2, 1, 1)
         ) | ForEach-Object {
 
-            $quotaObject = @{ Location = $global:Location; Name = "testQuotaCreateUpdateDelete"; AvailabilitySetCount = $_[0]; `
-                CoresLimit = $_[1]; VmScaleSetCount = $_[2]; VirtualMachineCount = $_[3]; StandardManagedDiskAndSnapshotSize = $_[4]; `
-                PremiumManagedDiskAndSnapshotSize = $_[5]; }
+            $quotaObject = Get-AzsComputeQuota -Name "testQuotaCreateUpdateDelete"
+            $quotaObject.AvailabilitySetCount = $_[0]
+            $quotaObject.CoresLimit = $_[1]
+            $quotaObject.VmScaleSetCount = $_[2]
+            $quotaObject.VirtualMachineCount = $_[3]
+            $quotaObject.StandardManagedDiskAndSnapshotSize = $_[4]
+            $quotaObject.PremiumManagedDiskAndSnapshotSize = $_[5]
 
             $quota = Set-AzsComputeQuota -NewQuota $quotaObject
 
