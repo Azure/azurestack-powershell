@@ -50,13 +50,17 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/update/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Update Admin cmdlets'
+
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: UpdateAdmin
 
-### File Renames 
-module-name: Azs.Update.Admin 
-csproj: Azs.Update.Admin.csproj 
-psd1: Azs.Update.Admin.psd1 
+### File Renames
+module-name: Azs.Update.Admin
+csproj: Azs.Update.Admin.csproj
+psd1: Azs.Update.Admin.psd1
 psm1: Azs.Update.Admin.psm1
 sanitize-names: true
 ```

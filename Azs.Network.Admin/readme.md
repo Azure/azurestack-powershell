@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/network/readme.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Network Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: NetworkAdmin
 
 ### File Renames
 module-name: Azs.Network.Admin

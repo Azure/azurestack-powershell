@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/azurebridge/readme.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: AzureBridge Admin cmdlets'
+
 subject-prefix: AzureBridge
 module-version: 0.9.0-preview
 identity-correction-for-post: true
+service-name: BridgeAdmin
 
 ### File Renames
 module-name: Azs.AzureBridge.Admin
