@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.InfrastructureInsights.Admin
-This directory contains the PowerShell module for the InfrastructureInsights Admin service.
+This directory contains the PowerShell module for the InfrastructureInsightsAdmin service.
 
 ---
 ## Status
@@ -62,7 +62,7 @@ metadata:
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
-service-name: InfrastructureInsights
+service-name: InfrastructureInsightsAdmin
 
 ### File Renames
 module-name: Azs.InfrastructureInsights.Admin
