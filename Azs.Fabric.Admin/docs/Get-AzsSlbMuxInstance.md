@@ -20,7 +20,7 @@ Get-AzsSlbMuxInstance [-Location <String>] [-ResourceGroupName <String>] [-Subsc
 
 ### Get
 ```
-Get-AzsSlbMuxInstance -SlbMuxInstance <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsSlbMuxInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,28 +35,29 @@ Returns the requested software load balancer multiplexer instance.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsSlbMuxInstance
 
-{{ Add output here }}
+A list of all software load balancer multiplexer instance at a location.
 ```
 
-{{ Add description here }}
+Get all software load balancer multiplexer instance at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsSlbMuxInstance -Name "AzS-SLB01"
 
-{{ Add output here }}
+A specific software load balancer multiplexer instance at a location given a name.
 ```
 
-{{ Add description here }}
+Get a specific software load balancer multiplexer instance at a location given a name.
 
 ## PARAMETERS
 
 ### -DefaultProfile
 The credentials, account, tenant, and subscription used for communication with Azure.
+
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -114,7 +115,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of a SLB MUX instance.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -146,23 +163,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -SlbMuxInstance
-Name of a SLB MUX instance.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

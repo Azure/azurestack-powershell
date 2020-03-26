@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.KeyVault.Admin
-This directory contains the PowerShell module for the KeyVaultAdmin service.
+This directory contains the PowerShell module for the KeyVault Admin service.
 
 ---
 ## Status
@@ -48,18 +48,43 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/keyvault/readme.azsautogen.md
-  - $(repo)/specification/azsadmin/resource-manager/keyvault/readme.md
 
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/KeyVault.json
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/Quotas.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Keyvault Admin cmdlets'
+
+### PSD1 metadata changes
 subject-prefix: 'Keyvault'
-module-version: 0.0.1
+module-version: 0.9.0-preview
+service-name: KeyvaultAdmin
 
 ### File Renames
 module-name: Azs.KeyVault.Admin
 csproj: Azs.KeyVault.Admin.csproj
 psd1: Azs.KeyVault.Admin.psd1
 psm1: Azs.KeyVault.Admin.psm1
+
+directive:
+# Add release notes
+  - from: Azs.Keyvault.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Keyvault.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Keyvault.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Keyvault.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
+```

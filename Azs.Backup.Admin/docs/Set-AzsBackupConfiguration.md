@@ -33,7 +33,7 @@ Update a backup location.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Set backup configuration
 ```powershell
 PS C:\> Set-AzsBackupConfiguration -Path "\\***.***.***.***\Share" -Username "asdomain1\azurestackadmin" -Password $password  -EncryptionCertPath $encryptionCertPath
 
@@ -166,7 +166,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -230,7 +230,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Name)"
+Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

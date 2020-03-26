@@ -115,18 +115,15 @@ Describe 'QuotasTests' {
         $created | Should Not be $null
 
         AssertQuotasAreSame -expected $quota -found $created
-
-        # Post update
-        $updatedQuota = Set-AzsNetworkQuota `
-            -Name $global:CreateAndUpdateQuotaName `
-            -Location $global:location `
-            -MaxNicsPerSubscription $global:MaxNicsPerSubscription
+        
+        $created.MaxNicsPerSubscription = $global:MaxNicsPerSubscription
+        $created | Set-AzsNetworkQuota
 
         $getUpdatedQuota = Get-AzsNetworkQuota `
             -Name $global:CreateAndUpdateQuotaName `
             -Location $global:location
 
-        AssertQuotasAreSame -expected $updatedQuota -found $getUpdatedQuota
+        AssertQuotasAreSame -expected $created -found $getUpdatedQuota
 
         # Delete Quota
         Remove-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName -Location $global:location

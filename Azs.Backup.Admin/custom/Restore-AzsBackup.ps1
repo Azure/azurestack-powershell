@@ -43,7 +43,7 @@ param(
     [Parameter(ParameterSetName='Restore')]
     [Parameter(ParameterSetName='RestoreExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Name')]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Name of the backup location.
     ${Location},
@@ -51,7 +51,7 @@ param(
     [Parameter(ParameterSetName='Restore')]
     [Parameter(ParameterSetName='RestoreExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='"system.$((Get-AzLocation)[0].Name)"')]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='"system.$((Get-AzLocation)[0].Location)"')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
@@ -182,6 +182,8 @@ process {
         $null = $PSBoundParameters.Remove('InputObject')
         $Name = $Backup.Name
         $PSBoundParameters.Add('Name', $Backup.Name)
+        # Update $Location so that it can be shown properly in confirmation prompt
+        $Location = $Backup.Location
     }
 
     # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here

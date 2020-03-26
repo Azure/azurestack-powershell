@@ -48,14 +48,20 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/compute/readme.azsautogen.md
   - $(repo)/specification/azsadmin/resource-manager/compute/readme.md
-```
-``` yaml
-### File Renames 
-module-name: Azs.Compute.Admin 
-csproj: Azs.Compute.Admin.csproj 
-psd1: Azs.Compute.Admin.psd1 
+
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Compute Admin cmdlets'
+
+### PSD1 metadata changes
+subject-prefix: ''
+module-version: 0.9.0-preview
+service-name: ComputeAdmin
+
+### File Renames
+module-name: Azs.Compute.Admin
+csproj: Azs.Compute.Admin.csproj
+psd1: Azs.Compute.Admin.psd1
 psm1: Azs.Compute.Admin.psm1
 ```
 ### Parameter default values
@@ -81,7 +87,7 @@ directive:
     set:
       verb: Add
 
-    # Rename New-AzsDiskMigrationJob to Start-AzsDiskMigrationJob and create alias with same name 
+    # Rename New-AzsDiskMigrationJob to Start-AzsDiskMigrationJob and create alias with same name
   - where:
       verb: New
       subject: DiskMigrationJob
@@ -299,5 +305,48 @@ directive:
     set:
       parameter-name: Name
 
-subject-prefix: ''
-module-version: 0.0.1
+  # Remove CancelViaIdentity parameter set in Stop-AzsDiskMigrationJob
+  - where:
+      verb: Stop
+      subject: DiskMigrationJob
+      variant: CancelViaIdentity
+    remove: true
+
+  # Hide the auto-generated New-AzsDiskMigrationJob and expose it through customized one
+  - where:
+      verb: New
+      subject: DiskMigrationJob
+    hide: true
+
+  ## variant removal from Set-AzsComputeQuota cmdlet -- parameter set UpdateExpanded
+  - where:
+      verb: Set
+      subject: Quota
+      variant: UpdateExpanded
+    remove: true
+  
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: New|Set
+      subject: Quota
+    hide: true
+
+# Add release notes
+  - from: Azs.Compute.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Compute.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 Changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Compute.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Compute.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 Changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );

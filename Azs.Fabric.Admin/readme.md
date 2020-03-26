@@ -48,7 +48,6 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/fabric/readme.md
 
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/EdgeGateway.json
@@ -66,19 +65,23 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/ScaleUnitNode.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/SlbMuxInstance.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageOperationResults.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StoragePool.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/FileShare.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2018-10-01/StorageSubSystem.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Drive.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Volume.json
-```
 
-### File Renames 
-``` yaml
-module-name: Azs.Fabric.Admin 
-csproj: Azs.Fabric.Admin.csproj 
-psd1: Azs.Fabric.Admin.psd1 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Fabric Admin cmdlets'
+
+### PSD1 metadata changes
+subject-prefix: ''
+module-version: 0.9.0-preview
+service-name: FabricAdmin
+
+### File Renames
+module-name: Azs.Fabric.Admin
+csproj: Azs.Fabric.Admin.csproj
+psd1: Azs.Fabric.Admin.psd1
 psm1: Azs.Fabric.Admin.psm1
 ```
 
@@ -91,7 +94,7 @@ directive:
       default:
         script: -join("System.",(Get-AzLocation)[0].Location)
 
-  # [EdgeGateway]: Following changes are for EdgeGateway
+  # ------------------- [EdgeGateway] -------------------
   # [EdgeGateway] Propertity Rename: change NumberOfConnection to NumberOfConnections
   - where:
       model-name: EdgeGateway
@@ -112,7 +115,7 @@ directive:
       subject: EdgeGateway
     hide: true
 
-  # [LogicalNetwork]: Following changes are for LogicalNetwork
+  # ------------------- [LogicalNetwork] -------------------
   # [LogicalNetwork] Rename property name in LogicalNetwork
   - where:
       model-name: LogicalNetwork
@@ -133,7 +136,70 @@ directive:
       subject: LogicalNetwork
     hide: true
 
-  # [EdgeGatewayPool]: Following changes are for EdgeGatewayPool
+  # ------------------- [LogicalSubnet] -------------------
+  # [LogicalSubnet] Parameter rename
+  - where:
+      subject: LogicalSubnet
+      parameter-name: LogicalSubnet
+    set:
+      parameter-name: Name
+
+  # [LogicalSubnet] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: LogicalSubnet
+    hide: true
+
+  # ------------------- [MacAddressPool] -------------------
+  # [MacAddressPool] Parameter rename
+  - where:
+      subject: MacAddressPool
+      parameter-name: MacAddressPool
+    set:
+      parameter-name: Name
+
+  # [MacAddressPool] Rename property name in LogicalNetwork
+  - where:
+      model-name: MacAddressPool
+      property-name: NumberOfAllocatedMacAddress
+    set:
+      property-name: NumberOfAllocatedMacAddresses
+
+  # [MacAddressPool] Rename property name in LogicalNetwork
+  - where:
+      model-name: MacAddressPool
+      property-name: NumberOfAvailableMacAddress
+    set:
+      property-name: NumberOfAvailableMacAddresses
+
+  # [MacAddressPool] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: MacAddressPool
+    hide: true
+
+  # ------------------- [SlbMuxInstance] -------------------
+  # [SlbMuxInstance] Parameter rename
+  - where:
+      subject: SlbMuxInstance
+      parameter-name: SlbMuxInstance
+    set:
+      parameter-name: Name
+  
+  # [SlbMuxInstance] Property Rename
+  - where:
+      model-name: SlbMuxInstance
+      property-name: BgpPeer
+    set:
+      property-name: BgpPeers
+
+  # [SlbMuxInstance] hide autorest generated cmdlet
+  - where:
+      verb: Get
+      subject: SlbMuxInstance
+    hide: true
+
+  # ------------------- [EdgeGatewayPool] -------------------
   # [EdgeGateway] Rename cmdlet parameter name in EdgeGatewayPool
   - where:
       subject: EdgeGatewayPool
@@ -154,7 +220,7 @@ directive:
       subject: EdgeGatewayPool
     hide: true
 
-  # [InfrastructureRole]: Following changes are for InfrastructureRole
+  # ------------------- [InfrastructureRole] -------------------
   # Rename subject AzsInfraRole to AzsInfrastructureRole
   - where:
       subject: InfraRole
@@ -181,7 +247,12 @@ directive:
       subject: InfrastructureRole
     hide: true
 
-  # [IPPool]: Following changes are for IpPool
+  - where:
+      verb: Restart
+      subject: InfrastructureRole
+    hide: true
+
+  # ------------------- [IPPool] -------------------
   # [IPPool]: Rename property name
   - where:
       model-name: IPPool
@@ -214,7 +285,20 @@ directive:
       subject: IPPool
     hide: true
 
-  # [ScaleUnit]: Following changes are for ScaleUnit
+  # ------------------- [ScaleUnit] -------------------
+  # [ScaleUnit]: Rename property name
+  - where:
+      model-name: ScaleUnit
+      property-name: TotalCapacityCore
+    set:
+      property-name: TotalCapacityOfCores
+
+  - where:
+      model-name: ScaleUnit
+      property-name: TotalCapacityMemoryGb
+    set:
+      property-name: TotalCapacityOfMemoryInGB
+
   # [ScaleUnit] Cmdlet parameter rename
   - where:
       subject: ScaleUnit
@@ -228,10 +312,16 @@ directive:
       subject: ScaleUnit
     hide: true
 
-  # [ScaleUnitNode]: Following changes are for ScaleUnitNode
+  # ------------------- [ScaleUnitNode] -------------------
   # [ScaleUnitNode] Cmdlet parameter rename
   - where:
       subject: ScaleUnitNode
+      parameter-name: ScaleUnitNode
+    set:
+      parameter-name: Name
+
+  - where:
+      subject: ScaleUnitNodeMaintenanceMode
       parameter-name: ScaleUnitNode
     set:
       parameter-name: Name
@@ -242,12 +332,49 @@ directive:
       subject: ScaleUnitNode
     hide: true
 
+  - where:
+      verb: Repair
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Start
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Stop
+      subject: ScaleUnitNode
+    hide: true
+
+  - where:
+      verb: Start
+      subject: ScaleUnitNodeMaintenanceMode
+    hide: true
+
+  - where:
+      verb: Stop
+      subject: ScaleUnitNodeMaintenanceMode
+    hide: true
+
   # [ScaleUnitNode]: Rename property name
   - where:
       model-name: ScaleUnitNode
       property-name: Status
     set:
       property-name: ScaleUnitNodeStatus
+
+  - where:
+      model-name: ScaleUnitNode
+      property-name: CapacityCore
+    set:
+      property-name: CapacityOfCores
+
+  - where:
+      model-name: ScaleUnitNode
+      property-name: CapacityMemoryGb
+    set:
+      property-name: CapacityOfMemoryInGB
 
   # [ScaleUnitNode] Rename Invoke-ScaleUnitOut to Add-AzsScaleUnitNode
   - where:
@@ -257,41 +384,83 @@ directive:
       verb: Add
       subject: ScaleUnitNode
 
-  # Rename Start-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
   - where:
       verb: Start
-      subject: ScaleUnitNodeMaintenanceMode
-    set:
-      verb: Disable
-      subject: ScaleUnitNode
-
-  # Rename Stop-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
-  - where:
-      verb: Stop
       subject: ScaleUnitNodeMaintenanceMode
     set:
       verb: Enable
       subject: ScaleUnitNode
 
+  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  - where:
+      verb: Stop
+      subject: ScaleUnitNodeMaintenanceMode
+    set:
+      verb: Disable
+      subject: ScaleUnitNode
+
+  # ------------------- [FabricLocation] -------------------
   # Rename Get-AzsFabricLocation to Get-AzsInfrastructureLocation
   - where:
       subject: FabricLocation
     set:
       subject: InfrastructureLocation
 
-  # Rename Get-AzsInfraRole to Get-AzsInfrastructureRoleInstance
+  # ------------------- [InfrastructureRoleInstance] -------------------
+  # [InfrastructureRoleInstance] Rename Subject
   - where:
       subject: InfraRoleInstance
     set:
       subject: InfrastructureRoleInstance
 
-  # Rename Get-AzsFileShare to Get-AzsInfrastructureShare
+  # [InfrastructureRoleInstance] Propertity rename
   - where:
-      subject: FileShare
+      model-name: InfraRoleInstance
+      property-name: SizeCore
     set:
-      subject: InfrastructureShare
+      property-name: NumberOfCores
 
-  # Separate InfraRoleInstance stop operations
+  - where:
+      model-name: InfraRoleInstance
+      property-name: SizeMemoryGb
+    set:
+      property-name: SizeMemoryInGB
+
+  # [InfrastructureRoleInstance] Parameter Raname
+  - where:
+      subject: InfrastructureRoleInstance
+      parameter-name: InfraRoleInstance
+    set:
+      parameter-name: Name
+
+  # [InfrastructureRoleInstance] Supress default module
+  - where:
+      verb: Get
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Start
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Restart
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Stop
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  - where:
+      verb: Disable
+      subject: InfrastructureRoleInstance
+    hide: true
+
+  # [InfrastructureRoleInstance] Separate InfraRoleInstance stop operations
   - where:
       verb: Stop
       subject: InfrastructureRoleInstance
@@ -299,7 +468,28 @@ directive:
     set:
       verb: Disable
 
-  # Rename model property names for StorageSubSystem to match spec
+  # ------------------- [AzsInfrastructureShare] -------------------
+  # Rename Get-AzsFileShare to Get-AzsInfrastructureShare
+  - where:
+      subject: FileShare
+    set:
+      subject: InfrastructureShare
+
+  # Hide the auto-generated Get-AzsInfrastructureShare and expose it through customized one
+  - where:
+      verb: Get
+      subject: InfrastructureShare
+    hide: true
+
+  # Rename cmdlet parameter name in InfrastructureShare
+  - where:
+      subject: InfrastructureShare
+      parameter-name: FileShare
+    set:
+      parameter-name: Name
+
+  # ------------------- [StorageSubSystem] -------------------
+  # [StorageSubSystem] Rename model property names for StorageSubSystem to match spec
   - where:
       model-name: StorageSubSystem
       property-name: TotalCapacityGb
@@ -312,14 +502,42 @@ directive:
     set:
       property-name: RemainingCapacityGB
   
-  # Rename model property names for Drive to match spec
+ # [StorageSubSystem] Hide the auto-generated Get-AzsStorageSubSystem and expose it through customized one
+  - where:
+      verb: Get
+      subject: StorageSubSystem
+    hide: true
+
+  # Rename cmdlet parameter name in StorageSubSystem
+  - where:
+      subject: StorageSubSystem
+      parameter-name: StorageSubSystem
+    set:
+      parameter-name: Name
+
+  # ------------------- [Drive] -------------------
+  # [Drive] Rename model property names for Drive to match spec
   - where:
       model-name: Drive
       property-name: CapacityGb
     set:
       property-name: CapacityGB
 
-  # Rename model property names for Volume to match spec
+  # [Drive] Rename cmdlet parameter name in Drive
+  - where:
+      subject: Drive
+      parameter-name: Drive
+    set:
+      parameter-name: Name
+
+  # [Drive] Hide the auto-generated Get-AzsDrive and expose it through customized one
+  - where:
+      verb: Get
+      subject: Drive
+    hide: true
+
+  # ------------------- [Volume] -------------------
+  # [Volume] Rename model property names for Volume to match spec
   - where:
       model-name: Volume
       property-name: TotalCapacityGb
@@ -338,33 +556,26 @@ directive:
     set:
       property-name: VolumeLabel
 
-  # Rename cmdlet parameter name in InfrastructureShare
-  - where:
-      subject: InfrastructureShare
-      parameter-name: FileShare
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in StorageSubSystem
-  - where:
-      subject: StorageSubSystem
-      parameter-name: StorageSubSystem
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in Drive
-  - where:
-      subject: Drive
-      parameter-name: Drive
-    set:
-      parameter-name: Name
-
-  # Rename cmdlet parameter name in Volume
+  # [Volume] Rename cmdlet parameter name in Volume
   - where:
       subject: Volume
       parameter-name: Volume
     set:
       parameter-name: Name
+
+  # Default to Format-List for the StorageSubSystem, FileShare and Volume model as there are many important fields
+  - where:
+      model-name: StorageSubSystem
+    set:
+      suppress-format: true
+  - where:
+      model-name: FileShare
+    set:
+      suppress-format: true
+  - where:
+      model-name: Volume
+    set:
+      suppress-format: true
 
   # Hide the auto-generated Get-AzsInfrastructureShare and expose it through customized one
   - where:
@@ -390,6 +601,7 @@ directive:
       subject: Volume
     hide: true
 
+  # ------------------- [Misc] -------------------
   # Hide the auto-generated Get-AzsFabricOperation and expose it through customized one
   - where:
       verb: Get
@@ -412,6 +624,26 @@ directive:
       subject: ScaleUnitFromJson
     hide: true
 
+# Add release notes
+  - from: Azs.Fabric.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Fabric.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 Changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Fabric.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Fabric.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 Changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
+
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0-preview
 ```

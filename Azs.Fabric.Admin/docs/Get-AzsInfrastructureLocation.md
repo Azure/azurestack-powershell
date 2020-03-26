@@ -35,23 +35,23 @@ Returns the requested fabric location.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureLocation
 
-{{ Add output here }}
+Return a list of all fabric locations.
 ```
 
-{{ Add description here }}
+Get a list of all fabric locations.
 
-### Example 2: {{ Add title here }}
+### Example 2: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureLocation -Location "local"
 
-{{ Add output here }}
+Return a location based on the name.
 ```
 
-{{ Add description here }}
+Get a location based on the name.
 
 ## PARAMETERS
 
@@ -146,7 +146,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -206,7 +206,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScaleUnit <String>]`: Name of the scale units.
   - `[ScaleUnitNode <String>]`: Name of the scale unit node.
   - `[SlbMuxInstance <String>]`: Name of a SLB MUX instance.
-  - `[StoragePool <String>]`: Storage pool name.
   - `[StorageSubSystem <String>]`: Name of the storage system.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Volume <String>]`: Name of the storage volume.

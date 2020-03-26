@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsSlbMuxInstance
 
-{{ Add output here }}
+A list of all software load balancer multiplexer instance at a location.
 ```
 
-{{ Add description here }}
+Get all software load balancer multiplexer instance at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsSlbMuxInstance -Name "AzS-SLB01"
 
-{{ Add output here }}
+A specific software load balancer multiplexer instance at a location given a name.
 ```
 
-{{ Add description here }}
-
+Get a specific software load balancer multiplexer instance at a location given a name.

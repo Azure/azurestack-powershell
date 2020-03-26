@@ -20,7 +20,7 @@ Get-AzsScaleUnit [-Location <String>] [-ResourceGroupName <String>] [-Subscripti
 
 ### Get
 ```
-Get-AzsScaleUnit -ScaleUnit <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsScaleUnit -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,23 +35,23 @@ Returns the requested scale unit.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnit
 
-{{ Add output here }}
+A list of information about scale units.
 ```
 
-{{ Add description here }}
+Return a list of information about scale units.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnit -Name "S-Cluster"
 
-{{ Add output here }}
+The information about a specific scale unit.
 ```
 
-{{ Add description here }}
+Return information about a specific scale unit.
 
 ## PARAMETERS
 
@@ -114,7 +114,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of the scale units.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -146,23 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -ScaleUnit
-Name of the scale units.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -171,6 +171,7 @@ Dynamic: False
 ### -SubscriptionId
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
+
 
 ```yaml
 Type: System.String[]
