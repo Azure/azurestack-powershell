@@ -16,9 +16,8 @@ function ValidateAzsSubscriberUsage {
     {
         $record.UsageStartTime                  | Should Not Be $null
         $record.UsageEndTime                    | Should Not Be $null
-        ## TODO: Current quantity is not picked up
         ## Pester v3 does not support BeGreaterOrEqual
-        #$record.Quantity -ge 0                  | Should Be $true
+        $record.Quantity -ge 0                  | Should Be $true
         $record.MeterId                         | Should Not Be $null
         $record.SubscriptionId                  | Should Not Be $null
         

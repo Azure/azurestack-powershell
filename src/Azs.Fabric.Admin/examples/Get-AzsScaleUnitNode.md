@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnitNode
 
-{{ Add output here }}
+A list of all scale unit nodes at a location.
 ```
 
-{{ Add description here }}
+Get all scale unit nodes at a location.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnitNode -Name "HC1n25r2231"
 
-{{ Add output here }}
+A specific scale unit node at a location given a name.
 ```
 
-{{ Add description here }}
-
+Get a specific scale unit node at a location given a name.

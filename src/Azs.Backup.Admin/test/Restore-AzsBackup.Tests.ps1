@@ -21,7 +21,7 @@ Describe 'Restore-AzsBackup' {
     It "TestRestoreBackupExpanded" -Skip:$('TestRestoreBackupExpanded' -in $global:SkippedTests) {
         $global:TestName = 'TestRestoreBackupExpanded'
 
-        $backup = Start-AzsBackup -Force
+        $backup = Start-AzsBackup
         $backup | Should Not Be $Null
 
         try
@@ -41,7 +41,7 @@ Describe 'Restore-AzsBackup' {
     It "TestRestoreBackupViaIdentityExpanded" -Skip:$('TestRestoreBackupViaIdentityExpanded' -in $global:SkippedTests) {
         $global:TestName = 'TestRestoreBackupViaIdentityExpanded'
 
-        $backup = Start-AzsBackup -Force
+        $backup = Start-AzsBackup
         $backup | Should Not Be $Null
 
         try

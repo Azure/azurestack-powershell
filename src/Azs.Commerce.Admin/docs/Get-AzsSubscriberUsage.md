@@ -23,23 +23,23 @@ Gets a collection of SubscriberUsageAggregates, which are UsageAggregates from u
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get usage data aggregated by day
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Get-AzsSubscriberUsage -ReportedStartTime "2019-12-30T00:00:00Z" -ReportedEndTime "2019-12-31T00:00:00Z" -AggregationGranularity Daily
 ```
 
-{{ Add description here }}
+Get the usage data for the entire day of 30th Dec 2019 (in UTC) for all tenants under provider aggregated by the day.
+ReportedStartTime and ReportedEndTime must be rounded to days.
+If called as the service administrator, this effectively shows all usage data for every tenant.
 
-### Example 2: {{ Add title here }}
+### Example 2: Get usage data aggregated by the hour
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Get-AzsSubscriberUsage -ReportedStartTime "2019-12-30T00:00:00Z" -ReportedEndTime "2019-12-30T02:00:00Z" -AggregationGranularity Hourly
 ```
 
-{{ Add description here }}
+Get the usage data between  12am - 2am on 30th Dec 2019 (in UTC) aggregated by the hour.
+ReportedStartTime and ReportedEndTime must be rounded to hours.
+Likewise, if called as the service administrator, this effectively shows all usage data for every tenant.
 
 ## PARAMETERS
 
@@ -140,7 +140,7 @@ Dynamic: False
 ```
 
 ### -SubscriptionId
-Subscription credentials which uniquely identify Microsoft Azure subscription.The subscription ID forms part of the URI for every service call.
+Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String[]

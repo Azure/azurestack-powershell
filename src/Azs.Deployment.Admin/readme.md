@@ -48,37 +48,9 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/deployment/readme.md
 
 input-file:
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/Deployment.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ActionPlan.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ActionPlanOperation.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/FileContainer.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ProductDeployment.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ProductPackage.json
-  - $(repo)/specification/azsadmin/resource-manager/deployment/Microsoft.Deployment.Admin/preview/2019-01-01/ProductSecret.json
+  - $(this-folder)/dummy.json
 
-### File Renames 
-module-name: Azs.Deployment.Admin 
-csproj: Azs.Deployment.Admin.csproj 
-psd1: Azs.Deployment.Admin.psd1 
-psm1: Azs.Deployment.Admin.psm1
-
-subject-prefix: ''
-module-version: 0.0.1
-
-### Parameter default values
-directive:
-  - where:
-      parameter-name: ResourceGroupName
-    set:
-      default:
-        script: -join("System.",(Get-AzLocation)[0].Name)
-
-  - no-inline:
-    - ActionPlanResourceEntity
-    - ActionPlanAdminProperties
-    - ExtendedErrorInfo
-
+output-folder: $(this-folder)/toss/
 ```

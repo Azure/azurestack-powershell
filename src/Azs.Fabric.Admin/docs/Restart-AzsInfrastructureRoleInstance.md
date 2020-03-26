@@ -14,15 +14,15 @@ Reboot an infrastructure role instance.
 
 ### Reboot (Default)
 ```
-Restart-AzsInfrastructureRoleInstance -InfraRoleInstance <String> [-Location <String>]
- [-ResourceGroupName <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Restart-AzsInfrastructureRoleInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### RebootViaIdentity
 ```
-Restart-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>]
- [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Restart-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-Force]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,28 +30,18 @@ Reboot an infrastructure role instance.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Restart-AzsInfrastructureRoleInstance -Name "AzS-ACS01"
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Reboot an infrastructure role instance.
 
 ## PARAMETERS
 
 ### -AsJob
-Run the command as a job
+Run asynchronous as a job and return the job object.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -69,6 +59,7 @@ Dynamic: False
 ### -DefaultProfile
 The credentials, account, tenant, and subscription used for communication with Azure.
 
+
 ```yaml
 Type: System.Management.Automation.PSObject
 Parameter Sets: (All)
@@ -82,15 +73,15 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -InfraRoleInstance
-Name of an infrastructure role instance.
+### -Force
+Don't ask for confirmation.
 
 ```yaml
-Type: System.String
-Parameter Sets: Reboot
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -125,7 +116,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of an infrastructure role instance.
+
+```yaml
+Type: System.String
+Parameter Sets: Reboot
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -173,12 +180,11 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
-
 ### -SubscriptionId
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.

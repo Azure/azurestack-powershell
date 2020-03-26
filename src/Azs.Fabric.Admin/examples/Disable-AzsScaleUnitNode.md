@@ -1,18 +1,8 @@
 ### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Disable-AzsScaleUnitNode -Name "HC1n25r2236"
 
-{{ Add output here }}
+Enable maintenance mode for a scale unit node.
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
-
+Start maintenance mode for a scale unit node.

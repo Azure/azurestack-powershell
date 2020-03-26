@@ -1,0 +1,32 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "AzureStack",
+      "description": "Placeholder for non-generation",
+      "version": "9999-12-31-preview"
+    },
+    "host": "management.azure.com",
+    "schemes": [
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "securityDefinitions": {
+      "azure_auth": {
+        "type": "oauth2",
+        "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+        "flow": "implicit",
+        "description": "Azure Active Directory OAuth2 Flow",
+        "scopes": {
+          "user_impersonation": "impersonate your user account"
+        }
+      }
+    },
+    "paths": {},
+    "parameters": {},
+    "definitions": {}
+}

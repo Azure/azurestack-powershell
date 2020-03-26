@@ -46,7 +46,7 @@ Restore a backup.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Restore Backup
 ```powershell
 PS C:\> Restore-AzsBackup -Name $backupResourceName -DecryptionCertPath $decryptionCertPath -DecryptionCertPassword $decryptionCertPassword
 
@@ -163,7 +163,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -227,7 +227,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Name)"
+Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

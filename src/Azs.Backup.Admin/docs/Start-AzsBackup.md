@@ -15,13 +15,13 @@ Back up a specific location.
 ### Create (Default)
 ```
 Start-AzsBackup [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-Force] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-Start-AzsBackup -InputObject <IBackupAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-Force] [-NoWait]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzsBackup -InputObject <IBackupAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,7 +29,7 @@ Back up a specific location.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Start azurestack backup
 ```powershell
 PS C:\>Start-AzsBackup
 
@@ -71,22 +71,6 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -Force
-Don't ask for confirmation
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -114,7 +98,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -146,7 +130,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Name)"
+Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
