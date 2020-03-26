@@ -55,9 +55,14 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/gallery/Microsoft.Gallery.Admin/preview/2015-04-01/Gallery.json
   - $(repo)/specification/azsadmin/resource-manager/gallery/Microsoft.Gallery.Admin/preview/2015-04-01/GalleryItem.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Gallery Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: GalleryAdmin
+
 ```
 
 ### File Renames

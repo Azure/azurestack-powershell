@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/compute/readme.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Compute Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
 module-version: 0.9.0-preview
+service-name: ComputeAdmin
 
 ### File Renames
 module-name: Azs.Compute.Admin
