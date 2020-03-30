@@ -45,23 +45,14 @@ Scales out a scale unit.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Add-AzsScaleUnitNode
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Add-AzsScaleUnitNode -NodeList $Nodes -ScaleUnit $ScaleUnitName
 
-{{ Add output here }}
+Adds a list of nodes to the scale unit.
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Add a new scale unit node to your scale unit cluster.
 
 ## PARAMETERS
 
@@ -140,7 +131,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -205,7 +196,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -333,7 +324,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScaleUnit <String>]`: Name of the scale units.
   - `[ScaleUnitNode <String>]`: Name of the scale unit node.
   - `[SlbMuxInstance <String>]`: Name of a SLB MUX instance.
-  - `[StoragePool <String>]`: Storage pool name.
   - `[StorageSubSystem <String>]`: Name of the storage system.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Volume <String>]`: Name of the storage volume.

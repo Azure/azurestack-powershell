@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/subscriptions/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Subscriptions Admin cmdlets'
+
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0-preview
 sanitize-names: false
+service-name: SubscriptionsAdmin
 
 ### File Renames
 module-name: Azs.Subscriptions.Admin
@@ -110,7 +114,7 @@ directive:
       subject: UnlinkOffer
     set:
       verb: Remove
-      subject: PlanToOffer
+      subject: PlanFromOffer
   - where:
       verb: Test
       subject: SubscriptionIdentityHealth
@@ -149,6 +153,18 @@ directive:
       verb: Update
       subject: SubscriptionEncryption
     remove: True
+  - where:
+      verb: New|Set|Remove
+      subject: DirectoryTenant
+    remove: True
+  - where:
+      verb: Get
+      subject: OfferMetricDefinition
+    remove: True
+  - where:
+      verb: Get
+      subject: PlanMetricDefinition
+    remove: True  
 ## rename parameters
   - where:
       subject: DelegatedProviderManagedOffer
@@ -240,6 +256,18 @@ directive:
       parameter-name: Subscription
     set:
       parameter-name: UserSubscriptionId
+  - where:
+      verb: Add
+      subject: PlanToOffer
+      parameter-name: Name
+    set:
+      parameter-name: OfferName
+  - where:
+      verb: Remove
+      subject: PlanFromOffer
+      parameter-name: Name
+    set:
+      parameter-name: OfferName
 ## default values
   - where:
       verb: New
@@ -276,6 +304,13 @@ directive:
     set:
       default:
         script: Write-Output "Default"
+  - where:
+      verb: New
+      subject: AcquiredPlan
+      parameter-name: PlanAcquisitionId
+    set:
+      default:
+        script: "$([Guid]::NewGuid().ToString())"
 ## hide autorest generated cmdlet to use the custom one
   - where:
       verb: New
@@ -298,11 +333,40 @@ directive:
       subject: Plan
     hide: true
   - where:
-      verb: Set
+      verb: New|Set|Remove
       subject: UserSubscription
     hide: true
+## output format
   - where:
-      verb: New
-      subject: UserSubscription
-    hide: true
+      model-name: Manifest
+    set:
+      format-table:
+        properties: 
+          - Name
+          - Metadata
+  - where:
+      model-name: Plan|Offer
+    set:
+      suppress-format: true
+
+# Add release notes
+  - from: Azs.Subscriptions.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Subscriptions.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
+
 ```

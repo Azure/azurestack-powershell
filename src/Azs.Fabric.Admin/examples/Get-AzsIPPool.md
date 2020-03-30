@@ -1,18 +1,20 @@
-### Example 1: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
+## EXAMPLES
 
-{{ Add output here }}
+### Example 1: 
+```powershell
+PS C:\> Get-AzsIpPool
+
+An list of all infrastructure ip pools.
 ```
 
-{{ Add description here }}
+Get an list of all infrastructure ip pools.
 
-### Example 2: {{ Add title here }}
+### Example 2: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsIpPool -Name "08786a0f-ad8c-43aa-a154-06083abfc1ac"
 
-{{ Add output here }}
+An infrastructure ip pool based on name.
 ```
 
-{{ Add description here }}
+Get an infrastructure ip pool based on name.
 

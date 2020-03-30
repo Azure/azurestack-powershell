@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnit
 
-{{ Add output here }}
+A list of information about scale units.
 ```
 
-{{ Add description here }}
+Return a list of information about scale units.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsScaleUnit -Name "S-Cluster"
 
-{{ Add output here }}
+The information about a specific scale unit.
 ```
 
-{{ Add description here }}
-
+Return information about a specific scale unit.

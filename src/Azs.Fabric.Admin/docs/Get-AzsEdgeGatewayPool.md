@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-AzsEdgeGatewayPool
 
 ## SYNOPSIS
-Returns the requested edge gateway pool object.
+
 
 ## SYNTAX
 
@@ -20,7 +20,7 @@ Get-AzsEdgeGatewayPool [-Location <String>] [-ResourceGroupName <String>] [-Subs
 
 ### Get
 ```
-Get-AzsEdgeGatewayPool -EdgeGatewayPool <String> [-Location <String>] [-ResourceGroupName <String>]
+Get-AzsEdgeGatewayPool -Name <String> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -31,32 +31,32 @@ Get-AzsEdgeGatewayPool -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSO
 ```
 
 ## DESCRIPTION
-Returns the requested edge gateway pool object.
+
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get a list of all Edge Gateway pools.
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGatewayPool
 
-{{ Add output here }}
+Return a list of all Edge Gateway pools.
 ```
 
-{{ Add description here }}
+Get a list of all Edge Gateway pools.
 
-### Example 2: {{ Add title here }}
+### Example 2: Get a specific edge gateway pool.
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsEdgeGatewayPool
 
-{{ Add output here }}
+Return a specific edge gateway pool.
 ```
 
-{{ Add description here }}
+Get a specific edge gateway pool.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-The credentials, account, tenant, and subscription used for communication with Azure.
+
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -71,24 +71,8 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -EdgeGatewayPool
-Name of the edge gateway pool.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
 ### -Filter
-OData filter parameter.
+
 
 ```yaml
 Type: System.String
@@ -104,7 +88,6 @@ Dynamic: False
 ```
 
 ### -InputObject
-Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
@@ -121,7 +104,7 @@ Dynamic: False
 ```
 
 ### -Location
-Location of the resource.
+
 
 ```yaml
 Type: System.String
@@ -130,14 +113,30 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -153,7 +152,7 @@ Dynamic: False
 ```
 
 ### -ResourceGroupName
-Name of the resource group.
+
 
 ```yaml
 Type: System.String
@@ -162,15 +161,14 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
 ### -SubscriptionId
-Subscription credentials that uniquely identify Microsoft Azure subscription.
-The subscription ID forms part of the URI for every service call.
+
 
 ```yaml
 Type: System.String[]
@@ -203,7 +201,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
+#### INPUTOBJECT <IFabricAdminIdentity>: 
   - `[Drive <String>]`: Name of the storage drive.
   - `[EdgeGateway <String>]`: Name of the edge gateway.
   - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.
@@ -222,7 +220,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScaleUnit <String>]`: Name of the scale units.
   - `[ScaleUnitNode <String>]`: Name of the scale unit node.
   - `[SlbMuxInstance <String>]`: Name of a SLB MUX instance.
-  - `[StoragePool <String>]`: Storage pool name.
   - `[StorageSubSystem <String>]`: Name of the storage system.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Volume <String>]`: Name of the storage volume.

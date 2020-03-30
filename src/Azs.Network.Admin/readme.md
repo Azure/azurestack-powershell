@@ -49,10 +49,16 @@ In this directory, run AutoRest:
 require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/network/readme.md
-```
-  
+
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Network Admin cmdlets'
+
+### PSD1 metadata changes
+subject-prefix: ''
+module-version: 0.9.0-preview
+service-name: NetworkAdmin
+
 ### File Renames
-``` yaml
 module-name: Azs.Network.Admin
 csproj: Azs.Network.Admin.csproj # C# project file
 psd1: Azs.Network.Admin.psd1 # module manifest file
@@ -159,5 +165,34 @@ directive:
       default:
         script: '50'
 
-subject-prefix: ''
-module-version: 0.0.1
+  ## variant removal from all Set cmdlets -- parameter set UpdateExpanded
+  - where:
+      verb: Set
+      variant: UpdateExpanded
+    remove: true
+  
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: New|Set
+      subject: Quota
+    hide: true
+
+# Add release notes
+  - from: Azs.Network.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Network.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Network.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Network.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );

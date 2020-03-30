@@ -1,0 +1,121 @@
+{
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$POST+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "143" ],
+        "x-ms-client-request-id": [ "adda04d9-44e3-4395-a945-4820179efdc8" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity" ],
+        "FullCommandName": [ "Start-AzsReclaimStorageCapacity_Reclaim" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "5" ],
+        "x-ms-request-id": [ "1d8d88ba-00b3-4794-afab-0982e5c4a2de" ],
+        "x-ms-correlation-request-id": [ "27747a53-84ef-4c6f-aaed-c7ca35404ca5" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1194" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092621Z:27747a53-84ef-4c6f-aaed-c7ca35404ca5" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:26:21 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv0VaFJvE41/AQPMnvn9nGTAVsoRt4Q1EX/bUZ6j6/aVzzJDBcArZOojZdtN5YJzR4NApqOkam7FI6ofZVh0taIMjQVnp89qI4Xd00pQsKtCPQgqJmDLHJ+ayo7qaiYSs4K2RaCc0L/S7BK0/j3XV4" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "143", "144" ],
+        "x-ms-client-request-id": [ "adda04d9-44e3-4395-a945-4820179efdc8", "adda04d9-44e3-4395-a945-4820179efdc8" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity", "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity" ],
+        "FullCommandName": [ "Start-AzsReclaimStorageCapacity_Reclaim", "Start-AzsReclaimStorageCapacity_Reclaim" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "3c979f17-929c-4640-bfe3-be921605bd77" ],
+        "x-ms-correlation-request-id": [ "fa530ef5-d48e-4cd5-b6d1-c7ee38d9c5af" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14891" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092626Z:fa530ef5-d48e-4cd5-b6d1-c7ee38d9c5af" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:26:26 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrd4rMhFOSGGLbvrDXuzyxY7wNtUy9TkkHczuk2fdzw4KkkzaBLX4xYq36P6qFf6bdOPzHlxMg79YJ4nwRcRu5FevHAym9x+ozJrup5HETMfj0exl5Bcp5pb1b3MOB3FrqjQs8BQZq/lTjkwOWAND" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "143", "144", "145" ],
+        "x-ms-client-request-id": [ "adda04d9-44e3-4395-a945-4820179efdc8", "adda04d9-44e3-4395-a945-4820179efdc8", "adda04d9-44e3-4395-a945-4820179efdc8" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity", "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity", "Azs.Storage.Admin.internal\\Start-AzsReclaimStorageCapacity" ],
+        "FullCommandName": [ "Start-AzsReclaimStorageCapacity_Reclaim", "Start-AzsReclaimStorageCapacity_Reclaim", "Start-AzsReclaimStorageCapacity_Reclaim" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "08da15e9-6806-46ed-8c21-cc75e3511544" ],
+        "x-ms-correlation-request-id": [ "8ac28f36-9669-4c70-b2dd-97d4ddb7d3b2" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14890" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092626Z:8ac28f36-9669-4c70-b2dd-97d4ddb7d3b2" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:26:26 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvWzCDTxJBVbsYbMOTOaMsEvZ4u6jjGUGyXJcLDuF4UdiWEJUWCn71B5gQHQFJOS+vU/QcqW0QddFhncUnBlUsKrcDV1SEHyLkpFCeMAZESzoMid0M2SciRbWKZ8PiRD8aEl5FMRFeIJStvKuT9oL6" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  }
+}

@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRoleInstance
 
-{{ Add output here }}
+A list of all infrastructure role instances.
 ```
 
-{{ Add description here }}
+Return a list of all infrastructure role instances.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRoleInstance -Name "AzS-ACS01"
 
-{{ Add output here }}
+A single infrastructure role instance based on name.
 ```
 
-{{ Add description here }}
-
+Return a single infrastructure role instance based on name.

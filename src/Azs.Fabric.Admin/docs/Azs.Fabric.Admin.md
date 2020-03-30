@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Fabric.Admin
-Module Guid: 5e9d60f7-aed5-4f12-912e-d4603cb48ef5
+Module Guid: 28bcb385-26d7-4905-99f7-d278099b2518
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,6 +13,9 @@ Microsoft Azure PowerShell: FabricAdmin cmdlets
 ## Azs.Fabric.Admin Cmdlets
 ### [Add-AzsScaleUnitNode](Add-AzsScaleUnitNode.md)
 Scales out a scale unit.
+
+### [Disable-AzsInfrastructureRoleInstance](Disable-AzsInfrastructureRoleInstance.md)
+Shutdown a infrastructure role instances for maintenance.
 
 ### [Disable-AzsScaleUnitNode](Disable-AzsScaleUnitNode.md)
 Start maintenance mode for a scale unit node.
@@ -62,13 +65,7 @@ Return the requested scale unit node.
 ### [Get-AzsSlbMuxInstance](Get-AzsSlbMuxInstance.md)
 Returns the requested software load balancer multiplexer instance.
 
-### [Get-AzsStoragePool](Get-AzsStoragePool.md)
-Return the requested a storage pool.
-
 ### [Get-AzsStorageSubSystem](Get-AzsStorageSubSystem.md)
-Return the requested storage subsystem.
-
-### [Get-AzsStorageSystem](Get-AzsStorageSystem.md)
 Return the requested storage subsystem.
 
 ### [Get-AzsVolume](Get-AzsVolume.md)
