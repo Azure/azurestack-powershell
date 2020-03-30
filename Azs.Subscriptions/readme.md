@@ -56,9 +56,9 @@ repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
-  description: 'Microsoft Azure PowerShell: $(service-name) cmdlets'
+  description: 'Microsoft Azure PowerShell: User subscription cmdlets'
   copyright: Microsoft Corporation. All rights reserved.
-  tags: Azure ResourceManager ARM PSModule $(service-name)
+  tags: Azure ResourceManager ARM PSModule
   companyName: Microsoft Corporation
   requireLicenseAcceptance: true
   licenseUri: https://aka.ms/azps-license
@@ -71,13 +71,14 @@ prefix: Azs
 namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 0.9.0-preview
 sanitize-names: false
+service-name: Subscription
 
-### File Renames 
-module-name: Azs.Subscriptions 
-csproj: Azs.Subscriptions.csproj 
-psd1: Azs.Subscriptions.psd1 
+### File Renames
+module-name: Azs.Subscriptions
+csproj: Azs.Subscriptions.csproj
+psd1: Azs.Subscriptions.psd1
 psm1: Azs.Subscriptions.psm1
 ```
 
@@ -85,9 +86,6 @@ psm1: Azs.Subscriptions.psm1
 ``` yaml
 clear-output-folder: true
 output-folder: .
-
-require:
-  - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/readme.md
 
 input-file:
     - $(repo)/specification/azsadmin/resource-manager/user-subscriptions/Microsoft.Subscriptions/preview/2015-11-01/Subscriptions.json
@@ -128,7 +126,38 @@ directive:
     remove: true
   ## hide autorest generated cmdlet to use the custom one
   - where:
-      verb: New|Set
+      verb: New|Set|Remove
       subject: Subscription
     hide: true
+    ## output format
+  - where:
+      model-name: Offer
+    set:
+      suppress-format: true
+
+# Add release notes
+  - from: Azs.Subscriptions.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.Subscriptions.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
+
+# PSD1 Changes for preview module
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \{previewVersion\}\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \'\{previewVersion\}\'\"\);' );
+
 ```

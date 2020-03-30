@@ -35,7 +35,7 @@ Returns a specific backup location based on name.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get-AzsBackupConfiguration
 ```powershell
 PS C:\> Get-AzsBackupConfiguration
 
@@ -88,7 +88,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -104,7 +104,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Name)"
+Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

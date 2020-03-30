@@ -5,7 +5,8 @@ $global:Location = "redmond"
 $global:Provider = "Microsoft.Backup.Admin"
 $global:ResourceGroupName = "System.redmond"
 $global:username = "AzureStackAdmin"
-[SecureString]$global:password = ConvertTo-SecureString -String "password" -AsPlainText -Force
+$global:passwordStr = "password"
+[SecureString]$global:password = ConvertTo-SecureString -String $global:passwordStr -AsPlainText -Force
 $global:path = "\\su1fileserver\SU1_Infrastructure_1\BackupStore"
 $global:encryptionCertBase64 = "ZW5jcnlwdGlvbkNlcnQ="
 $global:encryptionCertPath = "$env:temp\encryptionCert.cer"

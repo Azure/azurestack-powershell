@@ -1,18 +1,17 @@
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRole
 
-{{ Add output here }}
+A list of all infrastructure roles.
 ```
 
-{{ Add description here }}
+Get a list of all infrastructure roles.
 
-### Example 2: {{ Add title here }}
+### Example 2:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsInfrastructureRole -Name "Active Directory Federation Services"
 
-{{ Add output here }}
+An infrastructure role based on the name.
 ```
 
-{{ Add description here }}
-
+Get an infrastructure role based on the name.

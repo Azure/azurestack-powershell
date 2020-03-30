@@ -1,0 +1,126 @@
+{
+  "Set-AzsStorageQuota+[NoContext]+TestUpdateStorageQuota+$GET+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota?api-version=2019-08-08-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default%20Quota?api-version=2019-08-08-preview",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "139" ],
+        "x-ms-client-request-id": [ "16e41410-7e2e-4124-9670-2fc118ae8774" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Get-AzsStorageQuota" ],
+        "FullCommandName": [ "Get-AzsStorageQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "0d7141ee-18ba-4120-b340-7b0e77cac6fb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14894" ],
+        "x-ms-request-id": [ "0d7141ee-18ba-4120-b340-7b0e77cac6fb" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092517Z:0d7141ee-18ba-4120-b340-7b0e77cac6fb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:25:17 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvD3DjCieQREE5M80Btt7r80naad2lCJZNW0AeMOPvfKw7HhrNONJ8VBlTddEOjiQ2N93iitD68N2Rhst2qn/9BHxfz0gGldOtFAGqu9cAMykuh+p9QDU/9KnJFdt138OW6Wap4uHYV8L7mu9gukvh" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "343" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota\",\r\n  \"name\": \"redmond/Default Quota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 10,\r\n    \"capacityInGb\": 123\r\n  }\r\n}"
+    }
+  },
+  "Set-AzsStorageQuota+[NoContext]+TestUpdateStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota?api-version=2019-08-08-preview+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default%20Quota?api-version=2019-08-08-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 123,\r\n    \"numberOfStorageAccounts\": 10\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "141" ],
+        "x-ms-client-request-id": [ "7b33a419-6555-40ba-b3e0-88c4e37acdbe" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Set-AzsStorageQuota" ],
+        "FullCommandName": [ "Set-AzsStorageQuota_UpdateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "89" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "73a39a3c-56c2-4ab0-91a5-943c186eaa34" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1196" ],
+        "x-ms-request-id": [ "73a39a3c-56c2-4ab0-91a5-943c186eaa34" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092518Z:73a39a3c-56c2-4ab0-91a5-943c186eaa34" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:25:17 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwFv+acBVvrpn3ESL5gBPn1IuxdNq8EtEJGiYKbrQ3anDwsxDKTCU418uj85VD/GfgVq5td8beJL8VbeujnVCDnSuY7G+Qz5L0+SBRdBUgDRXD6tnKtPzlKes9LwRC9yxlcuZvD7kM2LXMg6/xjyp" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "343" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota\",\r\n  \"name\": \"redmond/Default Quota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 10,\r\n    \"capacityInGb\": 123\r\n  }\r\n}"
+    }
+  },
+  "Set-AzsStorageQuota+[NoContext]+TestUpdateStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota?api-version=2019-08-08-preview+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default%20Quota?api-version=2019-08-08-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 123,\r\n    \"numberOfStorageAccounts\": 10\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "142" ],
+        "x-ms-client-request-id": [ "886d8e83-f3ee-44e4-81ed-61f6373c7186" ],
+        "CommandName": [ "Azs.Storage.Admin.internal\\Set-AzsStorageQuota" ],
+        "FullCommandName": [ "Set-AzsStorageQuota_Update" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "89" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a1464013-1554-46c8-978c-709b9661ab23" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1195" ],
+        "x-ms-request-id": [ "a1464013-1554-46c8-978c-709b9661ab23" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200214T092519Z:a1464013-1554-46c8-978c-709b9661ab23" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 14 Feb 2020 09:25:19 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvMoLCtAAFwkAgZtUbaURk7qa6i9yJ8/3W/Z3XpUc2cfPZ3QCOC7EdNzEVvIrWvIqy7j/Um8tESI6amK2TeDkhsBMHxT1o+CAzB3v2wUgwWaTa+g6C0iApW3e/eQ7tHjayuFQLQm7Gl2aR++pKRJ3e" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "343" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota\",\r\n  \"name\": \"redmond/Default Quota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 10,\r\n    \"capacityInGb\": 123\r\n  }\r\n}"
+    }
+  }
+}

@@ -9,20 +9,19 @@ repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
-  description: 'Microsoft Azure PowerShell: $(service-name) cmdlets'
   copyright: Microsoft Corporation. All rights reserved.
-  tags: Azure ResourceManager ARM PSModule $(service-name)
+  tags: AzureStack ResourceManager ARM PSModule
   companyName: Microsoft Corporation
   requireLicenseAcceptance: true
   licenseUri: https://aka.ms/azps-license
-  projectUri: https://github.com/Azure/azure-powershell
+  projectUri: https://github.com/Azure/azurestack-powershell
 ```
 
 > Names
 ``` yaml
 prefix: Azs
-module-name: $(prefix).$(service-name)
 namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
+identity-correction-for-post: true
 ```
 
 > Folders
@@ -54,4 +53,11 @@ directive:
       verb: New
       variant: ^CreateViaIdentity(.*)
     remove: true
+    
+
+# PSD1 Changes for preview module
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \{previewVersion\}\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \'\{previewVersion\}\'\"\);' );
+
 ```

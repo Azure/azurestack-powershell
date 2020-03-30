@@ -20,7 +20,7 @@ Get-AzsIPPool [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionI
 
 ### Get
 ```
-Get-AzsIPPool -IPPool <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
+Get-AzsIPPool -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [-PassThru] [<CommonParameters>]
 ```
 
@@ -35,28 +35,28 @@ Return the requested IP pool.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsIpPool
 
-{{ Add output here }}
+Return an all infrastructure ip pools.
 ```
 
-{{ Add description here }}
+Get an all infrastructure ip pools.
 
-### Example 2: {{ Add title here }}
+### Example 2: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Get-AzsIpPool -Name "08786a0f-ad8c-43aa-a154-06083abfc1ac"
 
-{{ Add output here }}
+Get an infrastructure ip pool based on name.
 ```
 
-{{ Add description here }}
+Get an infrastructure ip pool based on name.
 
 ## PARAMETERS
 
 ### -DefaultProfile
-The credentials, account, tenant, and subscription used for communication with Azure.
+
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -104,22 +104,6 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -IPPool
-IP pool name.
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
 ### -Location
 Location of the resource.
 
@@ -130,7 +114,23 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+IP pool name.
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -162,7 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

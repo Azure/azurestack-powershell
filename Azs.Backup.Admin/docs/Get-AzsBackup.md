@@ -34,7 +34,7 @@ Returns a backup from a location based on name.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: List Backups
 ```powershell
 PS C:\> Get-AzsBackup
 
@@ -42,7 +42,7 @@ PS C:\> Get-AzsBackup
 
 Get information sbout all Azure Stack backups.
 
-### Example 2: {{ Add title here }}
+### Example 2: Get specific backup
 ```powershell
 PS C:\> Get-AzsBackup -Name 'backupName'
 
@@ -95,7 +95,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -127,7 +127,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Name)"
+Default value: "system.$((Get-AzLocation)[0].Location)"
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False

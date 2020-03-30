@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.InfrastructureInsights.Admin
-This directory contains the PowerShell module for the InfrastructureInsightsAdmin service.
+This directory contains the PowerShell module for the InfrastructureInsights Admin service.
 
 ---
 ## Status
@@ -48,7 +48,6 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/readme.md
 
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/InfrastructureInsights.json
@@ -57,13 +56,18 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ResourceHealth.json
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ServiceHealth.json
 
-subject-prefix: ''
-module-version: 0.0.1
+metadata:
+  description: 'Microsoft AzureStack PowerShell: InfrastructureInsights Admin cmdlets'
 
-### File Renames 
-module-name: Azs.InfrastructureInsights.Admin 
-csproj: Azs.InfrastructureInsights.Admin.csproj 
-psd1: Azs.InfrastructureInsights.Admin.psd1 
+### PSD1 metadata changes
+subject-prefix: ''
+module-version: 0.9.0-preview
+service-name: InfrastructureInsights
+
+### File Renames
+module-name: Azs.InfrastructureInsights.Admin
+csproj: Azs.InfrastructureInsights.Admin.csproj
+psd1: Azs.InfrastructureInsights.Admin.psd1
 psm1: Azs.InfrastructureInsights.Admin.psm1
 
 ### Parameter default values
@@ -83,6 +87,10 @@ directive:
       subject: ResourceHealth
     set:
       subject: RegistrationHealth
+  - where:
+      verb: Close
+      subject: Alert
+    hide: true
   - where:
       model-name: Alert
     set:
@@ -172,4 +180,25 @@ directive:
         width:
           Name: 30
           UsageMetric: 50
+
+# Add release notes
+  - from: Azs.InfrastructureInsights.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+
+# Add Az.Accounts/Az.Resources as dependencies
+  - from: Azs.InfrastructureInsights.Admin.nuspec
+    where: $
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+
+# PSD1 changes for RequiredModules
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.InfrastructureInsights.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.InfrastructureInsights.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+
+# PSD1 changes for ReleaseNotes
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
+
 ```

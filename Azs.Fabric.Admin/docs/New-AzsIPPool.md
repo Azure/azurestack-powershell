@@ -15,8 +15,8 @@ Once created an IP pool cannot be deleted.
 
 ### CreateExpanded (Default)
 ```
-New-AzsIPPool -IPPool <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-AddressPrefix <String>] [-EndIPAddress <String>] [-Location1 <String>]
+New-AzsIPPool -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
+ [-AddressPrefix <String>] [-EndIPAddress <String>]
  [-NumberOfAllocatedIPAddress <Int64>] [-NumberOfIPAddress <Int64>] [-NumberOfIPAddressesInTransition <Int64>]
  [-StartIPAddress <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
  [-WhatIf] [<CommonParameters>]
@@ -24,23 +24,9 @@ New-AzsIPPool -IPPool <String> [-Location <String>] [-ResourceGroupName <String>
 
 ### Create
 ```
-New-AzsIPPool -IPPool <String> -Pool <IIPPool> [-Location <String>] [-ResourceGroupName <String>]
+New-AzsIPPool -Name <String> -Pool <IIPPool> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-AzsIPPool -InputObject <IFabricAdminIdentity> -Pool <IIPPool> [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-AzsIPPool -InputObject <IFabricAdminIdentity> [-Location <String>] [-AddressPrefix <String>]
- [-EndIPAddress <String>] [-NumberOfAllocatedIPAddress <Int64>] [-NumberOfIPAddress <Int64>]
- [-NumberOfIPAddressesInTransition <Int64>] [-StartIPAddress <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,23 +35,15 @@ Once created an IP pool cannot be deleted.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> New-AzsIpPool -Name IpPool4 -StartIpAddress ***.***.***.*** -EndIpAddress ***.***.***.*** -AddressPrefix ***.***.***.***/24
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
+Create a new IP pool.
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
 
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 
@@ -74,7 +52,7 @@ The address prefix.
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -122,43 +100,10 @@ The ending IP address.
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-Dynamic: False
-```
-
-### -IPPool
-IP pool name.
-
-```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -167,30 +112,30 @@ Dynamic: False
 ```
 
 ### -Location
-Location of the resource.
+The region where the resource is located.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -Location1
-The region where the resource is located.
+### -Name
+IP pool name.
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,7 +164,7 @@ The number of currently allocated IP addresses.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -235,7 +180,7 @@ The total number of IP addresses.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -251,7 +196,7 @@ The current number of IP addresses in transition.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -268,7 +213,7 @@ To construct, see NOTES section for POOL properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -284,12 +229,12 @@ Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -300,7 +245,7 @@ The starting IP address.
 
 ```yaml
 Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -317,7 +262,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -333,7 +278,7 @@ List of key-value pairs.
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -384,8 +329,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool
 
-### Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IIPPool
@@ -397,38 +340,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
-  - `[Drive <String>]`: Name of the storage drive.
-  - `[EdgeGateway <String>]`: Name of the edge gateway.
-  - `[EdgeGatewayPool <String>]`: Name of the edge gateway pool.
-  - `[FabricLocation <String>]`: Fabric location.
-  - `[FileShare <String>]`: Fabric file share name.
-  - `[IPPool <String>]`: IP pool name.
-  - `[Id <String>]`: Resource identity path
-  - `[InfraRole <String>]`: Infrastructure role name.
-  - `[InfraRoleInstance <String>]`: Name of an infrastructure role instance.
-  - `[Location <String>]`: Location of the resource.
-  - `[LogicalNetwork <String>]`: Name of the logical network.
-  - `[LogicalSubnet <String>]`: Name of the logical subnet.
-  - `[MacAddressPool <String>]`: Name of the MAC address pool.
-  - `[Operation <String>]`: Operation identifier.
-  - `[ResourceGroupName <String>]`: Name of the resource group.
-  - `[ScaleUnit <String>]`: Name of the scale units.
-  - `[ScaleUnitNode <String>]`: Name of the scale unit node.
-  - `[SlbMuxInstance <String>]`: Name of a SLB MUX instance.
-  - `[StoragePool <String>]`: Storage pool name.
-  - `[StorageSubSystem <String>]`: Name of the storage system.
-  - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
-  - `[Volume <String>]`: Name of the storage volume.
-
 #### POOL <IIPPool>: This resource defines the range of IP addresses from which addresses are allocated for nodes within a subnet.
   - `[Location <String>]`: The region where the resource is located.
   - `[Tag <IResourceTags>]`: List of key-value pairs.
     - `[(Any) <String>]`: This indicates any property can be added to this object.
   - `[AddressPrefix <String>]`: The address prefix.
   - `[EndIPAddress <String>]`: The ending IP address.
-  - `[NumberOfAllocatedIPAddress <Int64?>]`: The number of currently allocated IP addresses.
-  - `[NumberOfIPAddress <Int64?>]`: The total number of IP addresses.
+  - `[NumberOfAllocatedIPAddresses <Int64?>]`: The number of currently allocated IP addresses.
+  - `[NumberOfIPAddresses <Int64?>]`: The total number of IP addresses.
   - `[NumberOfIPAddressesInTransition <Int64?>]`: The current number of IP addresses in transition.
   - `[StartIPAddress <String>]`: The starting IP address.
 

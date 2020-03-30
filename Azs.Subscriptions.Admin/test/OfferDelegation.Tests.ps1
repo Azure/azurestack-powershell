@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsOfferDelegation.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'OfferDelegation.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -79,7 +79,10 @@ Describe 'OfferDelegation' {
         foreach ($offer in $offers) {
             $resourceGroupName = GetResourceGroupName -ID $offer.Id
             $offerdel = Get-AzsOfferDelegation -ResourceGroupName $resourceGroupName -OfferName $offer.Name
-            ValidateOfferDelegation $offerdel
+            if ($null -ne $offerdel) {
+                Write-Output "$($offerdel | ConvertTo-Json -Depth 1)"
+                ValidateOfferDelegation $offerdel
+            }
         }
     }
 

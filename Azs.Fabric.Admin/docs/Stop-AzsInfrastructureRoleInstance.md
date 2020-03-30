@@ -14,28 +14,15 @@ Power off an infrastructure role instance.
 
 ### PowerOff (Default)
 ```
-Stop-AzsInfrastructureRoleInstance -InfraRoleInstance <String> [-Location <String>]
- [-ResourceGroupName <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Stop-AzsInfrastructureRoleInstance -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-Force] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### PowerOffViaIdentity
 ```
-Stop-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Shutdown
-```
-Stop-AzsInfrastructureRoleInstance -InfraRoleInstance <String> [-Location <String>]
- [-ResourceGroupName <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ShutdownViaIdentity
-```
-Stop-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob]
- [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Stop-AzsInfrastructureRoleInstance -InputObject <IFabricAdminIdentity> [-Force] [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,23 +30,13 @@ Power off an infrastructure role instance.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: 
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Stop-AzsInfrastructureRoleInstancef -Name "AzS-ACS01"
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
+Power off a infrastructure role instance.
 
 ## PARAMETERS
 
@@ -95,15 +72,15 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -InfraRoleInstance
-Name of an infrastructure role instance.
+### -Force
+Don't ask for confirmation.
 
 ```yaml
-Type: System.String
-Parameter Sets: PowerOff, Shutdown
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -117,7 +94,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
-Parameter Sets: PowerOffViaIdentity, ShutdownViaIdentity
+Parameter Sets: PowerOffViaIdentity
 Aliases:
 
 Required: True
@@ -133,12 +110,28 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: PowerOff, Shutdown
+Parameter Sets: PowerOff
 Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+Dynamic: False
+```
+
+### -Name
+Name of an infrastructure role instance.
+
+```yaml
+Type: System.String
+Parameter Sets: PowerOff
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -181,12 +174,12 @@ Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: PowerOff, Shutdown
+Parameter Sets: PowerOff
 Aliases:
 
 Required: False
 Position: Named
-Default value: -join("System.",(Get-AzLocation)[0].Name)
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 Dynamic: False
@@ -196,9 +189,10 @@ Dynamic: False
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
 
+
 ```yaml
 Type: System.String
-Parameter Sets: PowerOff, Shutdown
+Parameter Sets: PowerOff
 Aliases:
 
 Required: False
