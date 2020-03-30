@@ -21,7 +21,7 @@ $global:SkippedTests = @(
 $global:Location = "northwest"
 $global:ResourceGroupName = "System.local"
 $global:Provider = "Microsoft.Compute.Admin"
-$global:VHDUri = "https://hamurphystorageaccount.blob.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/hamurphy-blob-for-fixed-vhd/hamurphy-fixed.vhd?sv=2017-04-17&ss=bqt&srt=sco&sp=rwdlacup&se=2020-02-15T02:34:09Z&st=2020-02-14T18:34:09Z&spr=https&sig=e3pFp1m9iU%2F8xptI73cfqO5kVII8cXKFf2gnBxkK3BM%3D"
+$global:VHDUri = "https://hamurphystorageaccount.blob.northwest.azs-longhaul-02.selfhost.corp.microsoft.com/hamurphy-blob-for-fixed-vhd/hamurphy-fixed.vhd?sv=2017-04-17&ss=bqt&srt=sco&sp=rwdlacup&se=2020-02-15T02:34:09Z&st=2020-02-14T18:34:09Z&spr=https"
 
 
 $global:Client = $null
