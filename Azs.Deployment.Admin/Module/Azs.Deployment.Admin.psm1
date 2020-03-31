@@ -892,7 +892,7 @@ function Get-AzsProductSecret {
 .SYNOPSIS
     Sets product secret value.
 .DESCRIPTION
-    Locks the product subscription.
+    Sets product secret value.
 .PARAMETER PackageId
     Product package Id to set the product secret for.
 .PARAMETER SecretName
@@ -1150,9 +1150,6 @@ $ErrorActionPreference = 'Stop'
 [System.Net.Http.HttpClient] $HttpClient = [System.Net.Http.HttpClient]::new()
 
 $functions = @(
-    'Get-AzsResourceManagerAccessToken'
-    'Invoke-AzsResourceManager'
-    'Wait-AzsAsyncOperation'
     'Get-AzsFileContainer'
     'New-AzsFileContainer'
     'Remove-AzsFileContainer'
