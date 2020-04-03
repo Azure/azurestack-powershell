@@ -132,10 +132,8 @@ function Close-AzsAlert {
         # Gets or sets the ID of the alert.
         ${AlertId},
     
-        [Parameter(ParameterSetName='Close',Mandatory)]
         [Parameter(ParameterSetName='CloseExpanded',Mandatory)]
-        [Parameter(ParameterSetName='CloseViaIdentity',Mandatory)]
-        [Parameter(ParameterSetName='CloseViaIdentityExpanded',Mandatory)]
+        [Parameter(ParameterSetName='CloseViaIdentityExpanded')]
         [Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Category('Body')]
         [Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Runtime.Info(PossibleTypes=([Microsoft.Azure.PowerShell.Cmdlets.InfrastructureInsightsAdmin.Models.Api20160501.IAlertModelAlertProperties]))]
         [System.Collections.Hashtable]
