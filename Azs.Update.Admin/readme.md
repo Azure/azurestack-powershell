@@ -50,13 +50,17 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/update/readme.azsautogen.md
 
-subject-prefix: ''
-module-version: 0.9.0
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Update Admin cmdlets'
 
-### File Renames 
-module-name: Azs.Update.Admin 
-csproj: Azs.Update.Admin.csproj 
-psd1: Azs.Update.Admin.psd1 
+subject-prefix: ''
+module-version: 0.9.0-preview
+service-name: UpdateAdmin
+
+### File Renames
+module-name: Azs.Update.Admin
+csproj: Azs.Update.Admin.csproj
+psd1: Azs.Update.Admin.psd1
 psm1: Azs.Update.Admin.psm1
 sanitize-names: true
 ```
@@ -161,7 +165,6 @@ directive:
           ProgressStartTimeUtc: 25
           ProgressEndTimeUtcate: 25
 
-
 # Add release notes
   - from: Azs.Update.Admin.nuspec
     where: $
@@ -170,6 +173,6 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Update.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 ```

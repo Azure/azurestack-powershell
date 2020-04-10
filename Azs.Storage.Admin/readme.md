@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/storage/readme.azsautogen.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Storage Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
+service-name: StorageAdmin
 
 ### File Renames
 module-name: Azs.Storage.Admin
@@ -274,7 +278,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Storage.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp

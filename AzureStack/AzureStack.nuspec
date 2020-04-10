@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>AzureStack</id>
-    <version>2.0.0</version>
+    <version>2.0.0-preview</version>
     <authors>Microsoft Corporation</authors>
     <owners>Microsoft Corporation</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -14,25 +14,25 @@
     <tags>AzureStack ResourceManager ARM PSModule Administrator</tags>
     <dependencies>
       <dependency id="Az.Accounts" version="[2.0.1-preview]" />
-      <dependency id="Az.Resources" version="[0.10.0]" />
-      <dependency id="Azs.Backup.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Azurebridge.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Commerce.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Compute.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Fabric.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Deployment.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Gallery.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Infrastructureinsights.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Keyvault.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Network.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Storage.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Subscriptions" version="[0.9.0]" />
-      <dependency id="Azs.Subscriptions.Admin" version="[0.9.0]" />
-      <dependency id="Azs.Update.Admin" version="[0.9.0]" />
+      <dependency id="Az.Resources" version="[0.10.0-preview]" />
+      <dependency id="Azs.Backup.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.AzureBridge.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Commerce.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Compute.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Fabric.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Deployment.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Gallery.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.InfrastructureInsights.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.KeyVault.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Network.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Storage.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Subscriptions" version="[0.9.0-preview]" />
+      <dependency id="Azs.Subscriptions.Admin" version="[0.9.0-preview]" />
+      <dependency id="Azs.Update.Admin" version="[0.9.0-preview]" />
     </dependencies>
   </metadata>
   <files>
     <file src="AzureStack.psd1" />
-   <!-- <file src="AzureStack.psm1" /> -->
+    <file src="AzureStack.psm1" />
   </files>
 </package>

@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/azurebridge/readme.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: AzureBridge Admin cmdlets'
+
 subject-prefix: AzureBridge
-module-version: 0.9.0
+module-version: 0.9.0-preview
 identity-correction-for-post: true
+service-name: BridgeAdmin
 
 ### File Renames
 module-name: Azs.AzureBridge.Admin
@@ -120,7 +124,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.AzureBridge.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp

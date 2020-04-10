@@ -1,6 +1,6 @@
 <!-- region Generated -->
 # Azs.InfrastructureInsights.Admin
-This directory contains the PowerShell module for the InfrastructureInsights Admin service.
+This directory contains the PowerShell module for the InfrastructureInsightsAdmin service.
 
 ---
 ## Status
@@ -56,9 +56,13 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ResourceHealth.json
   - $(repo)/specification/azsadmin/resource-manager/infrastructureinsights/Microsoft.InfrastructureInsights.Admin/preview/2016-05-01/ServiceHealth.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: InfrastructureInsights Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
+service-name: InfrastructureInsightsAdmin
 
 ### File Renames
 module-name: Azs.InfrastructureInsights.Admin
@@ -83,6 +87,10 @@ directive:
       subject: ResourceHealth
     set:
       subject: RegistrationHealth
+  - where:
+      verb: Close
+      subject: Alert
+    hide: true
   - where:
       model-name: Alert
     set:
@@ -181,7 +189,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.InfrastructureInsights.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp

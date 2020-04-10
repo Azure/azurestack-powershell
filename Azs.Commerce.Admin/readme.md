@@ -52,11 +52,13 @@ require:
 input-file:
   - $(repo)/specification/azsadmin/resource-manager/commerce/Microsoft.Commerce.Admin/preview/2015-06-01-preview/Commerce.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Commerce Admin cmdlets'
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
-
+module-version: 0.9.0-preview
+service-name: CommerceAdmin
 ### File Renames 
 module-name: Azs.Commerce.Admin 
 csproj: Azs.Commerce.Admin.csproj 
@@ -87,7 +89,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Commerce.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 Changes for RequiredModules
   - from: source-file-csharp

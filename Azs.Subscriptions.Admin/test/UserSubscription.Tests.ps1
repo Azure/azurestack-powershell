@@ -1,4 +1,4 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsUserSubscription.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'UserSubscription.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -62,16 +62,18 @@ Describe 'UserSubscription' {
         Test-AzsNameAvailability -Name $global:TestAvailability -ResourceType $global:ResourceType
     }
 
-    it "TestMoveSubscription" -Skip:$('TestMoveSubscription' -in $global:SkippedTests) {
-        $global:TestName = 'MoveSubscription'
-        $resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | Select -ExpandProperty Id
-        Move-AzsUserSubscription -DestinationDelegatedProviderOffer $Null -ResourceId $resourceIds
+    it "TestMoveUserSubscription" -Skip:$('TestMoveSubscription' -in $global:SkippedTests) {
+        $global:TestName = 'MoveUserSubscription'
+        $offer = Get-AzsAdminManagedOffer | Select-Object -First 1
+        $subscription = New-AzsUserSubscription -DisplayName $global:SubscriptionName -OfferId $offer.Id -Owner $global:Owner
+        $resourceIds = Get-AzsUserSubscription | where Displayname -eq $global:SubscriptionName  | Select -ExpandProperty Id
+        Move-AzsUserSubscription -ResourceId $resourceIds
     }
 
     it "TestTestMoveSubscription" -Skip:$('TestTestMoveSubscription' -in $global:SkippedTests) {
-        $global:TestName = 'MoveSubscription'
-        $resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | Select-Object -ExpandProperty Id
-        Test-AzsMoveUserSubscription -DestinationDelegatedProviderOffer $Null -ResourceId $resourceIds
+        $global:TestName = 'TestMoveUserSubscription'
+        $resourceIds = Get-AzsUserSubscription | where Displayname -eq $global:SubscriptionName | Select-Object -ExpandProperty Id
+        Test-AzsMoveUserSubscription -ResourceId $resourceIds
     }
 
     It 'Get' {

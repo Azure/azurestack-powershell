@@ -65,13 +65,7 @@ Return the requested scale unit node.
 ### [Get-AzsSlbMuxInstance](Get-AzsSlbMuxInstance.md)
 Returns the requested software load balancer multiplexer instance.
 
-### [Get-AzsStoragePool](Get-AzsStoragePool.md)
-Return the requested a storage pool.
-
 ### [Get-AzsStorageSubSystem](Get-AzsStorageSubSystem.md)
-Return the requested storage subsystem.
-
-### [Get-AzsStorageSystem](Get-AzsStorageSystem.md)
 Return the requested storage subsystem.
 
 ### [Get-AzsVolume](Get-AzsVolume.md)

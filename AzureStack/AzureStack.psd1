@@ -9,7 +9,7 @@
 @{
 
     # Root Module
-    # RootModule = ''
+    RootModule = 'AzureStack.psm1'
 
     # Version number of this module.
     ModuleVersion          = '2.0.0'
@@ -127,8 +127,8 @@
             # ReleaseNotes of this module
             ReleaseNotes = 'Version 2.0.0'
 
-            # External dependent modules of this module
-            # ExternalModuleDependencies = ''
+            # Preview version
+            Prerelease = 'preview'
 
         } # End of PSData hashtable
 
