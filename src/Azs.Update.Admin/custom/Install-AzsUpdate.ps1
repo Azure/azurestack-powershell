@@ -144,23 +144,33 @@ function Install-AzsUpdate {
     
     process 
     {
-            # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
-            if ($PSBoundParameters.ContainsKey(('Name')))
+        # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
+        $Name = $null
+        # If it is applied via identity
+        $parameterSet = $PSCmdlet.ParameterSetName
+        if(('ApplyViaIdentity') -contains $parameterSet)
+        {
+            $Name = $InputObject.Id.Split("/")[-1]
+        }
+        elseif ($PSBoundParameters.ContainsKey(('Name')))
+        {
+            $Name = $PSBoundParameters['Name']
+            if ($null -ne $Name -and $Name.Contains('/'))
             {
+                $PSBoundParameters['Name'] = $Name.Split("/")[-1]
                 $Name = $PSBoundParameters['Name']
-                if ($null -ne $Name -and $Name.Contains('/'))
-                {
-                    $PSBoundParameters['Name'] = $Name.Split("/")[-1]
-                    $Name = $PSBoundParameters['Name']
-                }
             }
-    
-            if ($Force.IsPresent -or $PsCmdlet.ShouldContinue("Have You Ran Test-Azurestack?", "Installing Update $Name")) {
-                $PSBoundParameters.Remove('Force') | Out-Null
-                Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters
-            }
-    
+        }
+
+        if ($Force.IsPresent -or 
+        $PsCmdlet.ShouldContinue(
+            "Run Test-AzureStack -Group UpdateReadiness to validate the status of your Azure Stack and resolve any operational issues found, including all warnings and failures. Are you sure you want to install update $Name ?",
+            "Installing Update $Name"))
+        {
+            $PSBoundParameters.Remove('Force') | Out-Null
+            Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters
+        }
     }
-    
-    }
+
+}
     

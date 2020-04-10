@@ -53,9 +53,13 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/KeyVault.json
   - $(repo)/specification/azsadmin/resource-manager/keyvault/Microsoft.KeyVault.Admin/preview/2017-02-01-preview/Quotas.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Keyvault Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: 'Keyvault'
-module-version: 0.9.0
+module-version: 0.9.0-preview
+service-name: KeyvaultAdmin
 
 ### File Renames
 module-name: Azs.KeyVault.Admin
@@ -72,7 +76,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Keyvault.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp

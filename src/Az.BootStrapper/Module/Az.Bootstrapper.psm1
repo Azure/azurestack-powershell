@@ -192,7 +192,7 @@ function Get-AzProfileMap
   # If cache doesn't exist, Check embedded source
   $defaults = [System.IO.Path]::GetDirectoryName($PSCommandPath)
   $scriptBlock = {
-    Get-Content -Raw -Path (Join-Path -Path $defaults -ChildPath "AzProfileMap.json") -ErrorAction stop | ConvertFrom-Json 
+    Get-Content -Raw -Path (Join-Path -Path $defaults -ChildPath "azprofilemap.json") -ErrorAction stop | ConvertFrom-Json 
   }
   $ProfileMap = Invoke-CommandWithRetry -ScriptBlock $scriptBlock 
   if($null -eq $ProfileMap)
@@ -446,7 +446,7 @@ function Get-AllProfilesInstalled
   if ($null -eq $script:LatestProfileMapPath)
   {
     $ModulePath = [System.IO.Path]::GetDirectoryName($PSCommandPath)
-    $script:LatestProfileMapPath = Get-Item -Path (Join-Path -Path $ModulePath -ChildPath "AzProfileMap.json")
+    $script:LatestProfileMapPath = Get-Item -Path (Join-Path -Path $ModulePath -ChildPath "azprofilemap.json")
   }
 
   $scriptBlock = {
@@ -1211,10 +1211,14 @@ function Update-AzProfile
 
 function Set-BootstrapRepo
 {
-	[CmdletBinding()]
+  [CmdletBinding()]
   [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
-	param([string]$Repo)
-	$script:BootStrapRepo = $Repo
+  param
+  (
+    [Alias("Name")]
+    [string]$Repo
+  )
+  $script:BootStrapRepo = $Repo
 }
 
 <#

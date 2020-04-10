@@ -50,9 +50,13 @@ require:
   - $(this-folder)/../readme.azurestack.md
   - $(repo)/specification/azsadmin/resource-manager/network/readme.md
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Network Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
+service-name: NetworkAdmin
 
 ### File Renames
 module-name: Azs.Network.Admin
@@ -161,6 +165,18 @@ directive:
       default:
         script: '50'
 
+  ## variant removal from all Set cmdlets -- parameter set UpdateExpanded
+  - where:
+      verb: Set
+      variant: UpdateExpanded
+    remove: true
+  
+  ## hide autorest generated cmdlet to use the custom one
+  - where:
+      verb: New|Set
+      subject: Quota
+    hide: true
+
 # Add release notes
   - from: Azs.Network.Admin.nuspec
     where: $
@@ -169,7 +185,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Network.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp

@@ -70,9 +70,13 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Drive.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2019-05-01/Volume.json
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Fabric Admin cmdlets'
+
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
+service-name: FabricAdmin
 
 ### File Renames
 module-name: Azs.Fabric.Admin
@@ -628,7 +632,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Fabric.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 Changes for RequiredModules
   - from: source-file-csharp
@@ -641,5 +645,5 @@ directive:
     transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 
 subject-prefix: ''
-module-version: 0.9.0
+module-version: 0.9.0-preview
 ```

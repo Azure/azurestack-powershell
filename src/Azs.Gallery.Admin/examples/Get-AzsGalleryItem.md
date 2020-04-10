@@ -5,6 +5,8 @@ PS C:\> Get-AzsGalleryItem -Name TestUbuntu.Test.1.0.0
 Name                  Publisher  PublisherDisplayName ItemName ItemDisplayName       Version Summary
 ----                  ---------  -------------------- -------- ---------------       ------- -------
 TestUbuntu.Test.1.0.0 TestUbuntu TestUbuntu           Test     Test.TestUbuntu.1.0.0 1.0.0   Create a simple VM
+```
+Gets the gallery item by name.
 
 ### Example 2: List Gallery Items
 ```powershell

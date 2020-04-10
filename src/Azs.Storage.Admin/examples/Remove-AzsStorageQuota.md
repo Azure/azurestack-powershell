@@ -1,6 +1,6 @@
 ### Example 1:
 ```powershell
-PS C:\> Remove-AzsStorageQuota -Name 'TestQuota' -Force
+PS C:\> Remove-AzsStorageQuota -Name 'TestQuota'
 ```
 
 Remove a storage quota by name.
