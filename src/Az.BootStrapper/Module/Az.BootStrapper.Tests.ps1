@@ -336,7 +336,7 @@ Describe "Test-ProfilesInstalled" {
         Context "Profile associated with Module version is not installed" {
                 $AllProfilesInstalled = @{'Module11.0'= @('Profile1', 'Profile2')}
                 It "Should return empty array" {
-                $Result = (Test-ProfilesInstalled -version 1.0 -Module 'Module2' -Profile 'Profile2' -PMap ($global:testProfileMap | ConvertFrom-Json) -AllProfilesInstalled $AllProfilesInstalled)
+                $Result = (Test-ProfilesInstalled -version '1.0' -Module 'Module2' -Profile 'Profile2' -PMap ($global:testProfileMap | ConvertFrom-Json) -AllProfilesInstalled $AllProfilesInstalled)
                 $Result.Count | Should Be 0
 
             }
