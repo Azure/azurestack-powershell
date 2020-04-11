@@ -125,7 +125,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.0'
+            ReleaseNotes = 'Version 2.0.0, Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
 
             # Preview version
             Prerelease = 'preview'

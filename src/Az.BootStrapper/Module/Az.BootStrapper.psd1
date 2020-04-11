@@ -110,10 +110,10 @@ PrivateData = @{
         Tags = 'Azure','Az','AzureStack','PSModule','Profile','ResourceManager'
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://aka.ms/azps-license'
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/Azure/azurestack-powershell'
 
         # A URL to an icon representing this module.
         # IconUri = ''
