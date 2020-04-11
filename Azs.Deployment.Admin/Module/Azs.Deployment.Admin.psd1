@@ -86,12 +86,14 @@ AliasesToExport = @()
 # FileList = @()
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-PrivateData = @{      
-    Prerelease = 'preview'
-    Tags = 'AzureStack', 'ResourceManager', 'ARM', 'PSModule', 'DeploymentResourceProvider'
-    LicenseUri = 'https://aka.ms/azps-license'
-    ProjectUri = 'https://github.com/Azure/azurestack-powershell'
-    ReleaseNotes = 'AzureStack Hub Admin module - see https://aka.ms/azpshmigration for breaking changes'
+PrivateData = @{
+    PSData = @{
+        Prerelease = 'preview'
+        Tags = 'AzureStack', 'ResourceManager', 'ARM', 'PSModule', 'DeploymentResourceProvider'
+        LicenseUri = 'https://aka.ms/azps-license'
+        ProjectUri = 'https://github.com/Azure/azurestack-powershell'
+        ReleaseNotes = 'AzureStack Hub Admin module - see https://aka.ms/azpshmigration for breaking changes'
+    }
 }
 
 # HelpInfo URI of this module
