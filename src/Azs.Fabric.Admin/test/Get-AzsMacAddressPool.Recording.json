@@ -1,0 +1,242 @@
+{
+  "Get-AzsMacAddressPool+[NoContext]+TestListMacAddressPools+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "4bddaf3f-f65d-433b-b795-688e5cd14f82" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsMacAddressPool" ],
+        "FullCommandName": [ "Get-AzsMacAddressPool_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "432b366f-7cfe-4d6c-8f16-500dd35ec3cc" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14965" ],
+        "x-ms-request-id": [ "432b366f-7cfe-4d6c-8f16-500dd35ec3cc" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223118Z:432b366f-7cfe-4d6c-8f16-500dd35ec3cc" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:18 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv41hl8PRb3XpjWVTqdgizvt6oPKiY+fA5TuD9bG27slfOXA7d3a70fHuzNoAN7T7STxps02hT5qTOpYLMJLUdmc52CQgelOVVedCg0AQ+zC8GJMSLbwxHAxTcBQ+wRkrfBdxoLMc6MBti/ic+UARX" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "522" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"name\":\"redmond/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/macAddressPools\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"startMacAddress\":\"00-1D-D8-09-00-00\",\"endMacAddress\":\"00-1D-D8-09-FF-FF\",\"numberOfAllocatedMacAddresses\":8,\"numberOfAvailableMacAddresses\":65528}}]}"
+    }
+  },
+  "Get-AzsMacAddressPool+[NoContext]+TestGetMacAddressPool+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "7a3e3e9f-40c1-4c78-885b-e43fef35c721" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsMacAddressPool" ],
+        "FullCommandName": [ "Get-AzsMacAddressPool_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "aa41758c-75fe-4a62-8f39-6dc108613a20" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14964" ],
+        "x-ms-request-id": [ "aa41758c-75fe-4a62-8f39-6dc108613a20" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223118Z:aa41758c-75fe-4a62-8f39-6dc108613a20" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:18 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJnGelg52udbXI2MOyxcnxhQqKN4PS4Z+h6OojMouLQm/fMjvUD4mlW7YjHpy04pfyWAOUeMIESK4h0zeTELHKWYOHWFpjC3qiC8WNs+F3a9zxPN0hqRjS3QsGB4asQf7SGsimpU5wCNbfD4gagGh" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "522" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"name\":\"redmond/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/macAddressPools\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"startMacAddress\":\"00-1D-D8-09-00-00\",\"endMacAddress\":\"00-1D-D8-09-FF-FF\",\"numberOfAllocatedMacAddresses\":8,\"numberOfAvailableMacAddresses\":65528}}]}"
+    }
+  },
+  "Get-AzsMacAddressPool+[NoContext]+TestGetMacAddressPool+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7?api-version=2016-05-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "a882a7fc-cb7b-4c09-8c40-1690a713c5ae" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsMacAddressPool" ],
+        "FullCommandName": [ "Get-AzsMacAddressPool_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "5feb0cee-07ae-433f-b79c-cf4cd4d179e8" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14963" ],
+        "x-ms-request-id": [ "5feb0cee-07ae-433f-b79c-cf4cd4d179e8" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223118Z:5feb0cee-07ae-433f-b79c-cf4cd4d179e8" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:18 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvm6YDF/NXb88wBYs46vhsTLH8ZedSPIkVd/1ZaMlyK7IwxSfZ23/Nvl1sSysxRWxQJlwa946svRH+MaGLkIE5Z3wvF4qvlV8RhPGo41g+rPP+iPEc5ixoymL8dejmpCz/l+nmNA7Mywxj5g5em5rT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "510" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"name\":\"redmond/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/macAddressPools\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"startMacAddress\":\"00-1D-D8-09-00-00\",\"endMacAddress\":\"00-1D-D8-09-FF-FF\",\"numberOfAllocatedMacAddresses\":8,\"numberOfAvailableMacAddresses\":65528}}"
+    }
+  },
+  "Get-AzsMacAddressPool+[NoContext]+TestGetAllMacAddressPools+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "4" ],
+        "x-ms-client-request-id": [ "07e2f960-3322-4502-a6ec-11e288eae933" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsMacAddressPool" ],
+        "FullCommandName": [ "Get-AzsMacAddressPool_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "acb2e4cd-86bc-4100-ad1c-4491be4739da" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14962" ],
+        "x-ms-request-id": [ "acb2e4cd-86bc-4100-ad1c-4491be4739da" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223118Z:acb2e4cd-86bc-4100-ad1c-4491be4739da" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:18 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvNMFUMmreUlQmeLvdT3oZXz3DGks57N+QYsJLQbmFMGlGgQEGcdAONe6xpMc43O0T6HuvZYSa6ZnqEk70xG0ZxgvjazoDnrjcnCtXslDVjqQpUyv8sWKPuUoXYwu7pX8DrN0BLsxx7/rFnRz5N2vv" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "522" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"name\":\"redmond/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/macAddressPools\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"startMacAddress\":\"00-1D-D8-09-00-00\",\"endMacAddress\":\"00-1D-D8-09-FF-FF\",\"numberOfAllocatedMacAddresses\":8,\"numberOfAvailableMacAddresses\":65528}}]}"
+    }
+  },
+  "Get-AzsMacAddressPool+[NoContext]+TestGetAllMacAddressPools+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7?api-version=2016-05-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "5" ],
+        "x-ms-client-request-id": [ "e7743a16-73bd-4f1f-9282-d3a0a109a7b3" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsMacAddressPool" ],
+        "FullCommandName": [ "Get-AzsMacAddressPool_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "87972302-4b08-45cb-95d6-161c0ace061d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14961" ],
+        "x-ms-request-id": [ "87972302-4b08-45cb-95d6-161c0ace061d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223119Z:87972302-4b08-45cb-95d6-161c0ace061d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:18 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+2xc1bMm6XBj7BSr06iGIZfvvZ6ctCEsCTTExyAkqIO67fRKO+kU5SJcc1ImD4nDaQiugUNoKNtIe6B0V5nSHlORuaIyxSR/Gr3rbuGNcJRCuFWOiJQEW8RWBubpfVBi52R52WdA7/h+rcchdce/" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "510" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/macAddressPools/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"name\":\"redmond/8197fd09-8a69-417e-a55c-10c2c61f5ee7\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/macAddressPools\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"startMacAddress\":\"00-1D-D8-09-00-00\",\"endMacAddress\":\"00-1D-D8-09-FF-FF\",\"numberOfAllocatedMacAddresses\":8,\"numberOfAvailableMacAddresses\":65528}}"
+    }
+  },
+  "[NoDescription]+[NoContext]+[NoScenario]+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "6" ],
+        "x-ms-client-request-id": [ "4764a104-9744-47c0-a963-bc73e79ccb27" ],
+        "CommandName": [ "Get-AzsSlbMuxInstance" ],
+        "FullCommandName": [ "Get-AzsSlbMuxInstance_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "9923c543-6353-41d3-828a-2f01ac17e61c" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14956" ],
+        "x-ms-request-id": [ "9923c543-6353-41d3-828a-2f01ac17e61c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200213T223154Z:9923c543-6353-41d3-828a-2f01ac17e61c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 13 Feb 2020 22:31:54 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvMM/6vwm7KwGiGEeeRrJSFG53S3Ip0iGK+qAeWUMag+Y5VtleKELqaD0KyZdDH7tmZ61oXQ8UDWkch4N3l1D8iRvGdnzvKTpVEKlNrklcnrDuoqycW9FGdUBPUOFGquiKJLJ4xCkjcoJ4GsiFQPh1" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "907" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB01\",\"name\":\"redmond/n22r0903-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB01\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}},{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/slbMuxInstances/n22r0903-SLB02\",\"name\":\"redmond/n22r0903-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/slbMuxInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"configurationState\":\"Success\",\"virtualServer\":\"n22r0903-SLB02\",\"bgpPeers\":[\"BGPGateway-64629-64735\",\"BGPGateway-64629-64735\"]}}]}"
+    }
+  }
+}

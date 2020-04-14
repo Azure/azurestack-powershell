@@ -1,0 +1,362 @@
+{
+  "Get-AzsBackup+[NoContext]+TestListBackups+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "42" ],
+        "x-ms-client-request-id": [ "bead2ddc-724f-44d8-986a-98bd91d7d31a" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8df95a8f-6e07-4cca-a8ac-b2378be1b0e7" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14970" ],
+        "x-ms-request-id": [ "8df95a8f-6e07-4cca-a8ac-b2378be1b0e7" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125007Z:8df95a8f-6e07-4cca-a8ac-b2378be1b0e7" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:07 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvU16FIS3b3KDrSevEjc2qMbT4ogLwl5lsqN+KO8A15nzmYisMiLd9xTENV8PSEaldS3Q8niVwNZ5a+KnGy+of8tcWFTJVivZwnfolRZfKOwY1p+/DYhhgh7AVjeLB91NdKRJq0mIJRQfqnzELYrju" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2621" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384\",\"name\":\"redmond/08b92613-837a-43cd-86b5-1212ef954384\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"08b92613-837a-43cd-86b5-1212ef954384\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:22:18.7883083Z\",\"timeTakenToCreate\":\"PT6M35.345912S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"name\":\"redmond/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:32:38.8094127Z\",\"timeTakenToCreate\":\"PT5M16.0605282S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"name\":\"redmond/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"69ebefe9-7b1b-414a-99ad-49edf061d845\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:42:50.0310854Z\",\"timeTakenToCreate\":\"PT5M15.1452343S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}],\"nextLink\":null}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackup+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "43" ],
+        "x-ms-client-request-id": [ "de4836fd-3f12-4b2b-a70b-773d930e7d48" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "f3810135-4d30-4f76-9af1-0f2f08d4bf9a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14967" ],
+        "x-ms-request-id": [ "f3810135-4d30-4f76-9af1-0f2f08d4bf9a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125010Z:f3810135-4d30-4f76-9af1-0f2f08d4bf9a" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:10 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvjlklZY1+3HUZvxgttIvhAeCJnm1fB2lcl2+i4ZvKn18e/fD8cGiDpPTCDJQXdgDgBhNwvAfNbPs/ymDbhJM6ISnx8L4LTast9sZds+b7asPGavaVRIrFCvnfrgkS3CxrlPATYJpXpK/qfWU5g6Wx" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2621" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384\",\"name\":\"redmond/08b92613-837a-43cd-86b5-1212ef954384\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"08b92613-837a-43cd-86b5-1212ef954384\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:22:18.7883083Z\",\"timeTakenToCreate\":\"PT6M35.345912S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"name\":\"redmond/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:32:38.8094127Z\",\"timeTakenToCreate\":\"PT5M16.0605282S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"name\":\"redmond/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"69ebefe9-7b1b-414a-99ad-49edf061d845\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:42:50.0310854Z\",\"timeTakenToCreate\":\"PT5M15.1452343S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}],\"nextLink\":null}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackup+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384?api-version=2018-09-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "44" ],
+        "x-ms-client-request-id": [ "5380f10c-521e-40bf-adcc-879caf8f99c1" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "8f1642b7-0519-403a-93d7-eadc7955c594" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14964" ],
+        "x-ms-request-id": [ "8f1642b7-0519-403a-93d7-eadc7955c594" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125014Z:8f1642b7-0519-403a-93d7-eadc7955c594" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:13 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvURsIYjHVcOBUyVXOD8Xx15xPizrsa2SWR4MfrLFhr8+RovuMDoTLad51KB7g4ldJ6tZjNxA1JWOjp8dTTyTylARdcU7NjkdrigTcfnNw5eWoAlurLzF0rsQAQGEGlsCbfS3GI/GPL6v+deRDT7EF" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "863" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384\",\"name\":\"redmond/08b92613-837a-43cd-86b5-1212ef954384\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"08b92613-837a-43cd-86b5-1212ef954384\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:22:18.7883083Z\",\"timeTakenToCreate\":\"PT6M35.345912S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackup+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd?api-version=2018-09-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "45" ],
+        "x-ms-client-request-id": [ "6d4e5907-95d0-4812-9feb-922915954f75" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "2a6c42f3-193c-4d88-9026-23eee1b595ea" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14961" ],
+        "x-ms-request-id": [ "2a6c42f3-193c-4d88-9026-23eee1b595ea" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125018Z:2a6c42f3-193c-4d88-9026-23eee1b595ea" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:17 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIQWhrjw+TKQpiZDkG4AQNSM09zqR6bBdnLnTo7Y09S1ZqcU5DkaYKIhk1pPirWQgVzDs80DtGPlawQarkE45vNeOEEl8iv6SgM8NwcCszPqIFpXi8BuZv9nBAYSmrBag6gaNQm/9Ylh3qI2IUkHa" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "864" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"name\":\"redmond/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:32:38.8094127Z\",\"timeTakenToCreate\":\"PT5M16.0605282S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackup+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845?api-version=2018-09-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "46" ],
+        "x-ms-client-request-id": [ "d0392d57-9885-4e91-806e-ea827e153be4" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "2c44cac3-fa4f-4b10-9df5-7c9f68266677" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14958" ],
+        "x-ms-request-id": [ "2c44cac3-fa4f-4b10-9df5-7c9f68266677" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125023Z:2c44cac3-fa4f-4b10-9df5-7c9f68266677" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:23 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIDRphzpxYCAkKsUmdHa93A5AB0Vxry2lNBmQAHrfeXJ9kUL/CvUTzaLHcR6zmgvXkQQ0dEOc3+pXP/DkzSFuRUrLhQeF2iAW7mXVzCq70xtW86t3V9N0rKkb8UwvjcQor1PkSevo/UaIKZX1huOS" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "864" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"name\":\"redmond/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"69ebefe9-7b1b-414a-99ad-49edf061d845\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:42:50.0310854Z\",\"timeTakenToCreate\":\"PT5M15.1452343S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackupViaIdentity+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "47" ],
+        "x-ms-client-request-id": [ "e74988c5-544e-4939-96d5-97863cc8a9dd" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "731d827b-70ff-418b-a0ea-349e1c026646" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14955" ],
+        "x-ms-request-id": [ "731d827b-70ff-418b-a0ea-349e1c026646" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125027Z:731d827b-70ff-418b-a0ea-349e1c026646" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:26 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtH/ecfIUohzjSX0NFZvTzJmrW7f17mVCE11oOkcXqdiqnlvsyV9s+S3eZAHn/VGr2DW2f/pyCE/qTV1okTACZpAdyPKDxrMjLEY4oJt/mUSOn8R4LaV39aUkgBy0QElE3939CYUpSNzCRq1gJ7rl" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "2621" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384\",\"name\":\"redmond/08b92613-837a-43cd-86b5-1212ef954384\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"08b92613-837a-43cd-86b5-1212ef954384\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:22:18.7883083Z\",\"timeTakenToCreate\":\"PT6M35.345912S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"name\":\"redmond/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:32:38.8094127Z\",\"timeTakenToCreate\":\"PT5M16.0605282S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}},{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"name\":\"redmond/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"69ebefe9-7b1b-414a-99ad-49edf061d845\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:42:50.0310854Z\",\"timeTakenToCreate\":\"PT5M15.1452343S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}],\"nextLink\":null}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackupViaIdentity+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384?api-version=2018-09-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "48" ],
+        "x-ms-client-request-id": [ "3488eec0-c03c-4dcf-9c52-09b05df1786b" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1356d1b2-3cb0-4eb3-a431-e6ba159c36cc" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14954" ],
+        "x-ms-request-id": [ "1356d1b2-3cb0-4eb3-a431-e6ba159c36cc" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125027Z:1356d1b2-3cb0-4eb3-a431-e6ba159c36cc" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:27 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHIpbsfv4sgSIz/P0DIQbrDmjnCS0RVVVRUEVx7QY8kk6Dc/VfFm+tNBcpxybdQoS/9j5tMiX5MmdaDNmjDFyqfF8vMaqKkxOYj9XhjPLzjCDT3Yrm4CZaD3i20JYVy0DenMbb74ctDXymf+njEnG" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "863" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/08b92613-837a-43cd-86b5-1212ef954384\",\"name\":\"redmond/08b92613-837a-43cd-86b5-1212ef954384\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"08b92613-837a-43cd-86b5-1212ef954384\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:22:18.7883083Z\",\"timeTakenToCreate\":\"PT6M35.345912S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackupViaIdentity+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd?api-version=2018-09-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "49" ],
+        "x-ms-client-request-id": [ "e2e91d79-3dbd-4c47-bd06-41da189a0d5f" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3f7ce0bc-5753-4b34-8ea5-3d731d6ac3f0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14953" ],
+        "x-ms-request-id": [ "3f7ce0bc-5753-4b34-8ea5-3d731d6ac3f0" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125028Z:3f7ce0bc-5753-4b34-8ea5-3d731d6ac3f0" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:27 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgFpqb1ndrl/L/qOB8ldPmX2JWOCzwyfsWw6RginGdVpMfChrzEP98K0GIUc8g6FGksdLRNxu21M9Oobjr/A30CkCVd4or7iND3SM+k/qSPUExJrc0ENXxPXoKuOg1HfWXl2OvisoqnzLtVHahH8F" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "864" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"name\":\"redmond/0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"0f377aa9-22b7-4623-833e-7386bc37d4fd\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:32:38.8094127Z\",\"timeTakenToCreate\":\"PT5M16.0605282S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  },
+  "Get-AzsBackup+[NoContext]+TestGetBackupViaIdentity+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845?api-version=2018-09-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "50" ],
+        "x-ms-client-request-id": [ "de3daaec-6df4-4e13-80c7-a431cfee66cb" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Get-AzsBackup" ],
+        "FullCommandName": [ "Get-AzsBackup_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "966d5fbc-653b-4de5-bf64-25e9396dd6fd" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14952" ],
+        "x-ms-request-id": [ "966d5fbc-653b-4de5-bf64-25e9396dd6fd" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200304T125028Z:966d5fbc-653b-4de5-bf64-25e9396dd6fd" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 04 Mar 2020 12:50:28 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSzcX48OwpUEUys98E9nvBMKG8UhMHs8s6qSI9x0BJUISli1CMItmXVZ7wXd/5QAZ0FEfOz0cElmDZP4j+xFnYTDsgpAEGxPdlX85KgowryoiCQAzb2cw1gjW/ADDOKe1F9reqE4DiAaBaJqFbTX9" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "864" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/backups/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"name\":\"redmond/69ebefe9-7b1b-414a-99ad-49edf061d845\",\"type\":\"Microsoft.Backup.Admin/backupLocations/backups\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"backupInfo\":{\"backupDataVersion\":\"1.0.1\",\"backupId\":\"69ebefe9-7b1b-414a-99ad-49edf061d845\",\"roleStatus\":[{\"roleName\":\"NRP\",\"status\":\"Succeeded\"}],\"status\":\"Succeeded\",\"createdDateTime\":\"2020-03-04T12:42:50.0310854Z\",\"timeTakenToCreate\":\"PT5M15.1452343S\",\"stampVersion\":\"1.2002.0.35\",\"oemVersion\":\"2.1.1907.1\",\"deploymentID\":\"015353df-d49a-460a-ac74-69bb3b1b4d1e\",\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"completelyUploaded\":true,\"isAutomaticBackup\":false,\"isCloudRecoveryReady\":false}}}"
+    }
+  }
+}
