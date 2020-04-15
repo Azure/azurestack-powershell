@@ -25,7 +25,7 @@ This contains the migration guides and general information docs
 
 ### Build
 
-1. Go to module directory src/Azs.Network.Admin
+1. Go to module directory, e.g. src/Azs.Network.Admin
 2. Run: 
     * autorest-beta
     * pwsh
@@ -51,6 +51,7 @@ input-file:
 require:
   - $(repo)/specification/azsadmin/resource-manager/network/readme.md
 ```
+$(repo) and other common settings are defined in the [file](https://github.com/Azure/azurestack-powershell/blob/master/src/readme.azurestack.md)
 * Directives:
 Built-in Directives support renaming cmdlets/parameters/properties of models, adding alias, setting default value, etc. These are declared in readme.md and would take effect for the generated module. Refer to https://github.com/Azure/autorest/blob/master/docs/powershell/directives.md for the supported directives.
 Example: https://github.com/Azure/azure-powershell/blob/stackadmin/src/StackAdmin/Azs.Network.Admin/readme.md
