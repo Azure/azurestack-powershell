@@ -1,7 +1,7 @@
 
 This document serves as both a breaking change notification and migration guide for consumers of the AzureStack powershell version 2.0.0-preview. The module AzureStack 2.0.0-preview is compatible with both powershell core and windows powershell. The modules an also be installed on MacOs and Linux in addition to Windows.
 
-The previous version 1.8.1 is combatible only with windows powershell and does not support Mac/Linux platforms. The version 1.8.1 also requires AzureRM modules instead of Az.
+The previous version 1.8.1 is compatible only with windows powershell and does not support Mac/Linux platforms. The version 1.8.1 also requires AzureRM modules instead of Az.
 
 The modules are generated with the autorest tool (https://github.com/Azure/autorest.powershell).
 
@@ -18,10 +18,10 @@ The modules are generated with the autorest tool (https://github.com/Azure/autor
 ## Common Changes
 
 ### Az.Accounts dependency
-All AzureStack Admin modules have dependency on the Az.Accounts module version 2.0.1-preview. This version of Az.Accounts module is built with MSAL dll(https://github.com/AzureAD/microsoft-authentication-library-for-dotnet). This supports ADFS scnearios and device code authentication
+All AzureStack Admin modules have dependency on the Az.Accounts module version 2.0.1-preview. This version of Az.Accounts module is built with MSAL dll(https://github.com/AzureAD/microsoft-authentication-library-for-dotnet). This supports ADFS scenarios and device code authentication
 
 ### Output Model Changes
-Output models of all the cmdlets have changed. Since the powershell modules are generated with the new autorest powershell extension, the outpu models have all changed considerably. If the existing scripts are accessing the output model, they likely need a change. Since the output model changes are huge and it impact each and every cmdlet, this guide does not list each of the changes
+Output models of all the cmdlets have changed. Since the powershell modules are generated with the new autorest powershell extension, the output models have all changed considerably. If the existing scripts are accessing the output model, they likely need a change. Since the output model changes are huge and it impact each and every cmdlet, this guide does not list each of the changes
 
 ### Removal of -AsJob feature
 The current version of the cmdlets do not support -AsJob paramter. It will get added in a future release as auotorest powershell generator evolves.
@@ -53,11 +53,11 @@ The -Force paramter has been removed from the following cmdlets. The cmdlets wou
 
 ## Azs.Fabric.Admin
 ### **Get-AzsInfrastructureRoleInstance **
-- Return property changed: The object Size (.Cores/.MemoryInGB) is flatten to NumberOfCores and SizeMemoryInGB
+- Return property changed: The object Size (.Cores/.MemoryInGB) is flattened to NumberOfCores and SizeMemoryInGB
 ### **Get-AzsScaleUnit**
-- Return property changed: The object TotalCapacity (.Cores/.MemoryInGB) is flatten to TotalCapacityOfCores and TotalCapacityOfMemoryInGB
+- Return property changed: The object TotalCapacity (.Cores/.MemoryInGB) is flattened to TotalCapacityOfCores and TotalCapacityOfMemoryInGB
 ### **Get-AzsScaleUnitNode**
-- Return property changed: The object Capacity (.Cores/.MemoryInGB) is flatten to CapacityOfCores  and CapacityOfMemoryInGB
+- Return property changed: The object Capacity (.Cores/.MemoryInGB) is flattened to CapacityOfCores  and CapacityOfMemoryInGB
 
 ## Azs.Storage.Admin
 ### **Update-AzsStorageSettings**
@@ -79,11 +79,20 @@ The -Force paramter has been removed from the following cmdlets. The cmdlets wou
 ### **Move-AzsSubscription**
 - The cmdlet Move-AzsSubscription has been renamed to Move-AzsUserSubscription
 
-### **ArmLocation parmeter deprecated**
+### **ArmLocation parameter deprecated**
 - Parameter ArmLocation deprecated. Please use Location parameter instead. The affected cmdlets are New-AzsOffer, New-AzsPlan, Set-AzsOffer, Set-AzsPlan
 
 ### **Set-AzsUserSubscription**
-- The parameter set that takes each individial parameter has been deprecated. To update the subscription, the user object should be retrieved with the Get command, modify the needed properties in the object and then pipe it to the Set command. The parameter Location has been deprecated
+- To update the subscription, the user object should be retrieved with the Get command, modify the needed properties in the object and then pipe it to the Set command. Please look at the example [here](https://github.com/Azure/azurestack-powershell/blob/master/src/Azs.Subscriptions.Admin/examples/Set-AzsUserSubscription.md). The update can also be done by explicitly passing all the individual properties as parameter. The parameter Location has been deprecated
+
+### **Set-AzsOffer**
+- To update the Offer, the Offer object should be retrieved with the Get command, modify the needed properties in the object and then pipe it to the Set command. Please look at the example [here](https://github.com/Azure/azurestack-powershell/blob/master/src/Azs.Subscriptions.Admin/examples/Set-AzsOffer.md)
+).The update can also be done by explicitly passing all the individual properties as parameter. 
+
+
+### **Set-AzsPlan**
+- To update the plan, the plan object should be retrieved with the Get command, modify the needed properties in the object and then pipe it to the Set command. Please look at the example [here](https://github.com/Azure/azurestack-powershell/blob/master/src/Azs.Subscriptions.Admin/examples/Set-AzsPlan.md)
+).The update can also be done by explicitly passing all the individual properties as parameter. 
 
 ## Azs.Subscriptions
 ### **New-AzsSubscription**
