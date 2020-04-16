@@ -48,7 +48,7 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/backup/readme.azsautogen.md
+  - $(repo)/specification/azsadmin/resource-manager/backup/readme.md
 
 metadata:
   description: 'Microsoft AzureStack PowerShell: Backup Admin cmdlets'
