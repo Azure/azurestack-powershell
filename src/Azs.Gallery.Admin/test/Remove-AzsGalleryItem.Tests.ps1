@@ -1,3 +1,9 @@
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Remove-AzsGalleryItem.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -14,9 +20,12 @@ Describe 'Remove-AzsGalleryItem' {
         $uri = "https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg"
         Remove-AzsGalleryItem -Name $name 
 
-        $GalleryItem = new-AzsGalleryItem -GalleryItemUri $uri 
+        $GalleryItem = Add-AzsGalleryItem -GalleryItemUri $uri 
         $GalleryItem | Should Not Be $null
-
-        $GalleryItem | Remove-AzsGalleryItem 
+        $params = @{}
+        if ($PSDefaultParameterValues.ContainsKey('SubscriptionId')){
+            $params.Add('SubscriptionId', $SubscriptionId)
+        }
+        Remove-AzsGalleryItem -InputObject $GalleryItem @params
     }
 }

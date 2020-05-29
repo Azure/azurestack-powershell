@@ -1,4 +1,22 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'VMExtension.Tests.Recording.json'
+$envFile = 'env.json'
+Write-Host "Loading env.json"
+if ($TestMode -eq 'live') {
+    $envFile = 'localEnv.json'
+}
+
+if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
+    $envFilePath = Join-Path $PSScriptRoot $envFile
+} else {
+    $envFilePath = Join-Path $PSScriptRoot '..\$envFile'
+}
+$env = @{}
+if (Test-Path -Path $envFilePath) {
+    $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
+    $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant; "*:Location"=$env.Location}
+    Write-Host "Default values: $($PSDefaultParameterValues.Values)"
+}
+
+$TestRecordingFile = Join-Path $PSScriptRoot 'Add-AzsVMExtension.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -11,7 +29,6 @@ $global:RunRaw = $RunRaw
 $global:TestName = ""
 
 Describe 'Get-AzsVMExtension' {
-    . $PSScriptRoot\Common.ps1
 
     BeforeEach {
 
@@ -48,7 +65,7 @@ Describe 'Get-AzsVMExtension' {
     It "TestListVMExtensions" -Skip:$('TestListVMExtensions' -in $global:SkippedTests) {
         $global:TestName = 'TestListVMExtensions'
 
-        $VMExtensions = Get-AzsVMExtension -Location $global:Location
+        $VMExtensions = Get-AzsVMExtension
         $VMExtensions | Should Not Be $null
         foreach ($VMExtension in $VMExtensions) {
             ValidateVMExtension -VMExtension $VMExtension
@@ -59,7 +76,7 @@ Describe 'Get-AzsVMExtension' {
     It "TestGetVMExtension" -Skip:$('TestGetVMExtension' -in $global:SkippedTests) {
         $global:TestName = 'TestGetVMExtension'
 
-        $VMExtensions = Get-AzsVMExtension -Location $global:Location
+        $VMExtensions = Get-AzsVMExtension
         $VMExtensions | Should Not Be $null
         foreach ($VMExtension in $VMExtensions) {
             ValidateVMExtension -VMExtension $VMExtension
@@ -70,11 +87,10 @@ Describe 'Get-AzsVMExtension' {
     It "TestGetAllVMExtensions" -Skip:$('TestGetAllVMExtensions' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllVMExtensions'
 
-        $VMExtensions = Get-AzsVMExtension -Location $global:Location
+        $VMExtensions = Get-AzsVMExtension
         $VMExtensions | Should Not Be $null
         foreach ($VMExtension in $VMExtensions) {
             $vmExt = Get-AzsVMExtension `
-                -Location $vmextension.Location `
                 -Publisher $vmExtension.Publisher `
                 -Type $vmExtension.ExtensionType `
                 -Version $vmExtension.TypeHandlerVersion `
@@ -88,7 +104,6 @@ Describe 'Get-AzsVMExtension' {
     It "TestCreateVMExtension" -Skip:$('TestCreateVMExtension' -in $global:SkippedTests) {
         $global:TestName = 'TestCreateVMExtension'
         $result = Add-AzsVMExtension `
-            -Location $global:Location `
             -Publisher "Microsoft" `
             -Type "MicroExtension" `
             -Version "0.1.0" `
@@ -102,7 +117,7 @@ Describe 'Get-AzsVMExtension' {
 
     It "TestDeleteVMExtension" -Skip:$('TestDeleteVMExtension' -in $global:SkippedTests) {
         $global:TestName = 'TestDeleteVMExtension'
-        Remove-AzsVMExtension -Location $global:Location -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0"
+        Remove-AzsVMExtension -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0"
     }
 }
 

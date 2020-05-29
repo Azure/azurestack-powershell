@@ -1,9 +1,22 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+$envFile = 'env.json'
+if ($TestMode -eq 'live') {
+    $envFile = 'localEnv.json'
 }
-. ($loadEnvPath)
+
+if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
+    $envFilePath = Join-Path $PSScriptRoot $envFile
+} else {
+    $envFilePath = Join-Path $PSScriptRoot '..\$envFile'
+}
+$env = @{}
+if (Test-Path -Path $envFilePath) {
+    $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
+    $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant; "*:Location"=$env.Location}
+    Write-Host "Default values: $($PSDefaultParameterValues.Values)"
+}
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsDiskMigrationJob.Recording.json'
+
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -52,7 +65,7 @@ Describe 'Get-AzsDiskMigrationJob' {
         $job1 | Should Not Be $null
         $job1.Id | Should Be $jobs[0].Id
         ValidateDiskMigration -DiskMigration $job1
-        $job2 = $jobs[0] | Get-AzsDiskMigrationJob
+        $job2 = Get-AzsDiskMigrationJob -InputObject $jobs[0]
         $job2 | Should Not Be $null
         $job2.Id | Should Be $jobs[0].Id
         ValidateDiskMigration -DiskMigration $job2
