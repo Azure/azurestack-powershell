@@ -1,8 +1,8 @@
 {
-  "Get-AzsKeyvaultQuota+[NoContext]+List+$GET+https://adminmanagement.local.azurestack.external/subscriptions/e0472ab8-6c95-464d-bd13-590c91be5bbf/providers/Microsoft.KeyVault.Admin/locations/local/quotas?api-version=2017-02-01-preview+1": {
+  "Get-AzsKeyvaultQuota+[NoContext]+List+$GET+https://management.azure.com/subscriptions/e0472ab8-6c95-464d-bd13-590c91be5bbf/providers/Microsoft.KeyVault.Admin/locations/local/quotas?api-version=2017-02-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.local.azurestack.external/subscriptions/e0472ab8-6c95-464d-bd13-590c91be5bbf/providers/Microsoft.KeyVault.Admin/locations/local/quotas?api-version=2017-02-01-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/e0472ab8-6c95-464d-bd13-590c91be5bbf/providers/Microsoft.KeyVault.Admin/locations/local/quotas?api-version=2017-02-01-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "4" ],

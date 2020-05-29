@@ -1,4 +1,21 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Disk.Tests.Recording.json'
+$envFile = 'env.json'
+if ($TestMode -eq 'live') {
+    $envFile = 'localEnv.json'
+}
+
+if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
+    $envFilePath = Join-Path $PSScriptRoot $envFile
+} else {
+    $envFilePath = Join-Path $PSScriptRoot '..\$envFile'
+}
+$env = @{}
+if (Test-Path -Path $envFilePath) {
+    $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
+    $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant; "*:Location"=$env.Location}
+    Write-Host "Default values: $($PSDefaultParameterValues.Values)"
+}
+
+$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsDisk.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -11,13 +28,8 @@ $global:RunRaw = $RunRaw
 
 #. $PSScriptRoot\CommonModules.ps1
 
-$global:Location = "northwest"
-$global:TestName = ""
-
 Describe 'Get-AzsDisk' {
     BeforeEach {
-
-        . $PSScriptRoot\Common.ps1
 
         function ValidateDisk {
             param(
@@ -92,7 +104,7 @@ Describe 'Get-AzsDisk' {
     It "TestListDisks" {
         $global:TestName = 'TestListDisks'
 
-        $disks = Get-AzsDisk -Location $global:Location
+        $disks = Get-AzsDisk 
 
         $disks | Should Not Be $null
         foreach ($disk in $disks) {
@@ -102,18 +114,18 @@ Describe 'Get-AzsDisk' {
         {
             $firstDisk = $disks[0]
             $tenantSubscriptionId = $($firstDisk.UserResourceId.Split("/", [System.StringSplitOptions]::RemoveEmptyEntries))[1]
-            $disksForSubscription = Get-AzsDisk -Location $global:Location -UserSubscriptionId $tenantSubscriptionId
+            $disksForSubscription = Get-AzsDisk -UserSubscriptionId $tenantSubscriptionId
             ValidateDisksTheSame -DisksRight $($disks | ?{$_.UserResourceId.Contains($tenantSubscriptionId)}) -DisksLeft $disksForSubscription
 
-            $disksForStatus = Get-AzsDisk -Location $global:Location -Status $firstDisk.Status
+            $disksForStatus = Get-AzsDisk -Status $firstDisk.Status
             ValidateDisksTheSame -DisksRight $($disks | ?{$_.Status.Equals($firstDisk.Status)}) -DisksLeft $disksForStatus
 
-            $disksForShare = Get-AzsDisk -Location $global:Location -SharePath $firstDisk.SharePath
+            $disksForShare = Get-AzsDisk -SharePath $firstDisk.SharePath
             ValidateDisksTheSame -DisksRight $($disks | ?{$_.SharePath.Equals($firstDisk.SharePath)}) -DisksLeft $disksForShare
 
             if ($disks.Count -ge 2)
             {
-                $disksWithCountAndStart = Get-AzsDisk -Location $global:Location -Start 1 -Count 1
+                $disksWithCountAndStart = Get-AzsDisk -Start 1 -Count 1
                 ValidateDisksTheSame -DisksRight @($disks[1]) -DisksLeft @($disksWithCountAndStart)
             }
         }
@@ -122,7 +134,7 @@ Describe 'Get-AzsDisk' {
     It "TestGetDisk" {
         $global:TestName = 'TestGetDisk'
 
-        $disks = Get-AzsDisk -Location $global:Location
+        $disks = Get-AzsDisk 
 
         $disks | Should Not Be $null
         foreach ($disk in $disks) {
@@ -131,7 +143,7 @@ Describe 'Get-AzsDisk' {
         if($disks.Count -gt 0)
         {
             $firstDisk = $disks[0]
-            $diskFromServer = Get-AzsDisk -Location $global:Location -Name $firstDisk.DiskId
+            $diskFromServer = Get-AzsDisk -Name $firstDisk.DiskId
             ValidateDiskTheSame -DiskRight $firstDisk -DiskLeft $diskFromServer
         }
     }
@@ -139,7 +151,7 @@ Describe 'Get-AzsDisk' {
     It "TestGetDiskInvalid" {
         $global:TestName = 'TestGetDiskInvalid'
 
-        {Get-AzsDisk -Location $global:Location -Name "454E5E28-8D5E-41F9-929E-BFF6A7E1A253" -ErrorAction Stop} | Should Throw
+        {Get-AzsDisk -Name "454E5E28-8D5E-41F9-929E-BFF6A7E1A253" -ErrorAction Stop} | Should Throw
     }
 }
 

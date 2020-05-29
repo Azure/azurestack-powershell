@@ -1,8 +1,8 @@
 {
-  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$DELETE+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+1": {
+  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$DELETE+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+1": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "9" ],
@@ -40,10 +40,10 @@
       "Content": null
     }
   },
-  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$POST+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01+2": {
+  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$POST+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01+2": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01",
       "Content": "{\r\n  \"galleryItemUri\": \"https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg\"\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "10" ],
@@ -84,10 +84,10 @@
       "Content": "{\"id\":\"/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0\",\"name\":\"TestUbuntu.Test.1.0.0\",\"type\":\"Microsoft.Gallery.Admin/galleryItems\",\"properties\":{\"identity\":\"TestUbuntu.Test.1.0.0\",\"publisher\":\"TestUbuntu\",\"publisherDisplayName\":\"TestUbuntu\",\"itemName\":\"Test\",\"itemDisplayName\":\"Test.TestUbuntu.1.0.0\",\"version\":\"1.0.0\",\"summary\":\"Create a simple VM\",\"longSummary\":\"Create a simple VM and use it\",\"description\":\"\u003cp\u003eThis is just a sample of the type of description you could create for your gallery item!\u003c/p\u003e\u003cp\u003eThis is a second paragraph.\u003c/p\u003e\",\"uiDefinitionUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"createdTime\":\"2020-02-12T07:05:57.6265404Z\",\"changedTime\":\"2020-02-12T07:05:57.6271511Z\",\"itemType\":\"GalleryItem\",\"categoryIds\":[\"Custom\",\"Disconnected\",\"My Marketplace Items\"],\"screenshotUris\":[],\"links\":[{\"id\":\"0\",\"displayName\":\"Documentation\",\"uri\":\"http://go.microsoft.com/fwlink/?LinkId=532898\"}],\"filters\":[],\"iconFileUris\":{\"small\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"medium\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"large\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"wide\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\"},\"artifacts\":[{\"name\":\"LinuxTemplate\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\",\"type\":\"template\"}],\"metadata\":{},\"properties\":{},\"images\":[{\"context\":\"ibiza\",\"items\":[{\"id\":\"small\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"type\":\"icon\"},{\"id\":\"medium\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"type\":\"icon\"},{\"id\":\"large\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"type\":\"icon\"},{\"id\":\"wide\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\",\"type\":\"icon\"}]}],\"products\":[],\"searchScore\":0.0,\"definitionTemplates\":{\"uiDefinitionFileUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"defaultDeploymentTemplateId\":\"LinuxTemplate\",\"deploymentTemplateFileUris\":{\"LinuxTemplate\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\"},\"deploymentFragmentFileUris\":{}},\"additionalProperties\":{},\"keywords\":[]}}"
     }
   },
-  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$DELETE+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+3": {
+  "Add-AzsGalleryItem+[NoContext]+TestCreateGalleryItem+$DELETE+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+3": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "11" ],
