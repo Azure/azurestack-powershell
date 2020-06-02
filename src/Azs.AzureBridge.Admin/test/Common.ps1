@@ -5,7 +5,6 @@ $global:SkippedTests = @(
 )
 
 $global:Provider = "Microsoft.AzureBridge.Admin"
-
 $global:ActivationName = "default"
 $global:ResourceGroupName = "azurestack-activation"
 $global:ProductName1 = "microsoft.windowsserver2016datacenter-arm-2016.127.20171216"

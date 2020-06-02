@@ -1,9 +1,7 @@
 $global:SkippedTests = @(
 )
 
-$global:Location = "redmond"
 $global:Provider = "Microsoft.Backup.Admin"
-$global:ResourceGroupName = "System.redmond"
 $global:username = "AzureStackAdmin"
 $global:passwordStr = "password"
 [SecureString]$global:password = ConvertTo-SecureString -String $global:passwordStr -AsPlainText -Force

@@ -1,3 +1,9 @@
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsAzureBridgeProduct.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -48,7 +54,8 @@ Describe 'Get-AzsAzureBridgeProduct' {
 
     It "TestGetAzsAzureBridgeProductByName" -Skip:$("TestGetAzsAzureBridgeProductByName" -in $global:SkippedTests) {
         $global:TestName = "TestGetAzsAzureBridgeProductByName"
-        $Product = Get-AzsAzureBridgeProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName -Name $global:ProductName1
+        $productName = (Get-AzsAzureBridgeProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName)[0].Name.Split("/")[1]
+        $Product = Get-AzsAzureBridgeProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName -Name $productName
         ValidateProductInfo $Product
     }
 }
