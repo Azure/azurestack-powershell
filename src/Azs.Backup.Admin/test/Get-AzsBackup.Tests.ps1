@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsBackup.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -46,7 +43,7 @@ Describe 'Get-AzsBackup' {
         $backups = Get-AzsBackup
         $backups  | Should Not Be $null
         foreach ($backup in $backups) {
-            $result = $backup | Get-AzsBackup
+            $result = Get-AzsBackup -InputObject $backup
             ValidateBackup -Backup $result
             AssertBackupsAreEqual -expected $backup -found $result
         }
