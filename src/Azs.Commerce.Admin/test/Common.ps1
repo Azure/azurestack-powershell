@@ -1,8 +1,8 @@
 $global:SkippedTests = @(
 )
 
-$global:ReportedStartTime = "2019-12-10T11:00:00.0000000-08:00"
-$global:ReportedEndTime = "2019-12-10T12:00:00.0000000-08:00"
+$global:ReportedStartTime = "2019-12-10T19:00:00.0000000+00:00"
+$global:ReportedEndTime = "2019-12-10T20:00:00.0000000+00:00"
 $global:AggregationGranularity = "Hourly"
 
 function ValidateAzsSubscriberUsage {
