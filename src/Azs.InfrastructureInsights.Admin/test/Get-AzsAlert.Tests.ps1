@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsAlert.Recording.json'
 $currentPath = $PSScriptRoot
 
@@ -20,7 +17,7 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
 
         $global:TestName = 'TestListAlerts'
 
-        $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $global:Location
+        $Alerts = Get-AzsAlert
 
         foreach ($Alert in $Alerts) {
             ValidateAlert -Alert $Alert
@@ -31,11 +28,11 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
 
         $global:TestName = 'TestGetAlert'
 
-        $Regions = Get-AzsRegionHealth -ResourceGroupName $global:ResourceGroupName -Location $global:Location
+        $Regions = Get-AzsRegionHealth
 
         foreach ($Region in $Regions) {
 
-            $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $Region.Name
+            $Alerts = Get-AzsAlert -Location $Region.Name
 
             foreach ($Alert in $Alerts) {
 
@@ -50,11 +47,11 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
 
         $global:TestName = 'TestGetAllAlerts'
 
-        $Regions = Get-AzsRegionHealth -ResourceGroupName $global:ResourceGroupName -Location $global:Location
+        $Regions = Get-AzsRegionHealth
 
         foreach ($Region in $Regions) {
 
-            $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $Region.Name
+            $Alerts = Get-AzsAlert -Location $Region.Name
 
             foreach ($Alert in $Alerts) {
                 $retrieved = Get-AzsAlert -Location $Region.Name -Name $Alert.AlertId
@@ -68,16 +65,15 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
 
         $global:TestName = 'TestGetAllAlerts'
              
-        $Regions = Get-AzsRegionHealth -ResourceGroupName $global:ResourceGroupName -Location $global:Location
+        $Regions = Get-AzsRegionHealth
 
         foreach ($Region in $Regions) {
 
-            $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $Region.Name
+            $Alerts = Get-AzsAlert -Location $Region.Name
 
             foreach ($Alert in $Alerts) {
-                $retrieved = $Alert | Get-AzsAlert
+                $retrieved = Get-AzsAlert -InputObject $Alert
                 AssertAlertsAreSame -Expected $Alert -Found $retrieved
-
             }
         }
     }

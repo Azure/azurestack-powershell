@@ -1,12 +1,12 @@
 {
-  "AzsServiceHealths+[NoContext]+TestListServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "AzsServiceHealths+[NoContext]+TestListServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1262" ],
-        "x-ms-client-request-id": [ "39e4e3e2-d9a3-4814-ad41-a6a837e0ed9e" ],
+        "x-ms-unique-id": [ "775" ],
+        "x-ms-client-request-id": [ "f8382c7a-8169-4b02-809d-edaf466b7995" ],
         "CommandName": [ "Get-AzsRegionHealth" ],
         "FullCommandName": [ "Get-AzsRegionHealth_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -19,34 +19,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "a530692b-40b9-4a84-bd70-da91d0563380" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14897" ],
-        "x-ms-request-id": [ "a530692b-40b9-4a84-bd70-da91d0563380" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212615Z:a530692b-40b9-4a84-bd70-da91d0563380" ],
+        "x-ms-correlation-request-id": [ "6a0cdc7f-22bf-497e-88a3-96460d8350d8" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvUw6tDGl5EfGLQRTg+6uIPuvisVZulp10FFOLnoMo2taHxk56YlDNbOAlzHKkITaLiLBqR4K/XIbyTYRIDyhvuKD1pwJF8nymr4csogxnjH2J6EVPRegkWsK+/Oi9rcCUw/Yp/qf20C/KVxODMST+" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13485" ],
+        "x-ms-request-id": [ "6a0cdc7f-22bf-497e-88a3-96460d8350d8" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010418Z:6a0cdc7f-22bf-497e-88a3-96460d8350d8" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:15 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJFbl8bKU9S3kehnr+rvUUEzqgIFyHDZ7GMO8hfb8D+yhCSU8vIIb1byJfO08DdNwq/OkrKrpdkTbBGDuokfXtoSO+/8L3BdW7HVUAxeIEP0w+VZP84d5GgidhxLkAAXDfogLUqOX5WEWsr+tTC0V" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:18 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "818" ],
+        "Content-Length": [ "825" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0791015625},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9169921875}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":1235.6357421875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":809.1064453125}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":11.876260235905647},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":53.6607881039381}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":53.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":970.0}]}],\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0}}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestListServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
+  "AzsServiceHealths+[NoContext]+TestListServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1263" ],
-        "x-ms-client-request-id": [ "d86f7c1f-80c9-4f1c-b398-4bd500e8813d" ],
+        "x-ms-unique-id": [ "776" ],
+        "x-ms-client-request-id": [ "16beb9e9-151f-4dbe-9d6b-788031a567c6" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -59,34 +59,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "0df5d8fb-c497-4f2c-8623-72cb201c6a00" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14896" ],
-        "x-ms-request-id": [ "0df5d8fb-c497-4f2c-8623-72cb201c6a00" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212616Z:0df5d8fb-c497-4f2c-8623-72cb201c6a00" ],
+        "x-ms-correlation-request-id": [ "3be47704-b5c0-47d3-8642-84f56b01e181" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGsfQpDbTigPoaH9ePI9CzSUH7KiJJZo9KpbfXkgWnLWdh8PMq/Z+5dIeEWqdVM5wEFLgfa96gBk20zNo68frtwb5jl7LE9mTP369lfFQmQgBmdeaDV8Dxt4VCBEVTcPdxmH9DqooxUQ8UBkULUez" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13483" ],
+        "x-ms-request-id": [ "3be47704-b5c0-47d3-8642-84f56b01e181" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010420Z:3be47704-b5c0-47d3-8642-84f56b01e181" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:16 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvaoO5h5pUOFR0u0FRDPyW0pNv6tisEQBCUd767XaV02EKZmI37G4T2vR4LOH8KzWwHZvebcnrsn7Y9wKJBqgWsXtXP3kVX8nxuhO4QTMDYPaeJbRumpsSCTd8Q8jlKsF9tMn/veDAzQS7lkq5ugon" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:19 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "9403" ],
+        "Content-Length": [ "9459" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937\",\"name\":\"redmond/487717c5-2215-4081-9343-0f39f3bbb937\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"487717c5-2215-4081-9343-0f39f3bbb937\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"name\":\"redmond/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"name\":\"redmond/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"name\":\"redmond/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c2eea457-3c39-4485-8d2e-f686bada2b51\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"name\":\"redmond/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c9c94e03-b734-4449-8cdb-85a7d3128529\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":1},\"healthState\":\"Warning\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"name\":\"redmond/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"d1581147-baf6-4e96-acf1-632889ac0c8c\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"name\":\"redmond/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":0},\"healthState\":\"Critical\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"name\":\"redmond/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"displayName\":\"Bar Service\",\"namespace\":\"BarService.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/infraRoles/Bar Service\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"name\":\"redmond/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"name\":\"redmond/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"name\":\"redmond/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545\",\"name\":\"redmond/a0439443-b6d0-450f-8df0-c445cd308545\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"a0439443-b6d0-450f-8df0-c445cd308545\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"name\":\"redmond/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"name\":\"redmond/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3\",\"name\":\"redmond/e9951457-d1a8-4374-9355-44c089543bf3\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e9951457-d1a8-4374-9355-44c089543bf3\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub\",\"name\":\"redmond/eventhub\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"eventhub\",\"displayName\":\"Event Hubs\",\"namespace\":\"Microsoft.EventHub.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/infraRoles/Event Hubs\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1264" ],
-        "x-ms-client-request-id": [ "0589f9ce-7de7-4fd6-81df-100774e2bb91" ],
+        "x-ms-unique-id": [ "777" ],
+        "x-ms-client-request-id": [ "6e8f894e-6eeb-42df-b9b4-0e2ddf4f13a1" ],
         "CommandName": [ "Get-AzsRegionHealth" ],
         "FullCommandName": [ "Get-AzsRegionHealth_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -99,34 +99,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "9f88465b-7a10-420a-b7ac-3fd8da1cb989" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14895" ],
-        "x-ms-request-id": [ "9f88465b-7a10-420a-b7ac-3fd8da1cb989" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212617Z:9f88465b-7a10-420a-b7ac-3fd8da1cb989" ],
+        "x-ms-correlation-request-id": [ "72ff8781-137c-4278-a156-816a89cc6277" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvQU39ZXe3BCzUNOH/zIvrtg27k39z8V7uV5/pR3I4oGHGYnVWxzI0P1R3GKMY7bVlmZtIrj5J/YOwC/dhYa7HUdkr5Oi4zorrhHkzU1awokQiRd87CmF2CHHkukqkTNhtOPj9SytXxcZ/05apr6bj" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13480" ],
+        "x-ms-request-id": [ "72ff8781-137c-4278-a156-816a89cc6277" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010423Z:72ff8781-137c-4278-a156-816a89cc6277" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:16 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/MQcBiATRb5nUkRagEqZs+P1SlVE/d2gnYzKquAMGEydf+CAOXWtepJdUs6a0X2JJukZ+uhcO65Vme7TDhKndtkdZlNaElv7NDlippZFIYZkdppqDvbBnz+fvhNW6ClAWswj+Nt1ed5YOig8Uxsk" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:23 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "818" ],
+        "Content-Length": [ "825" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0791015625},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9169921875}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":1235.6357421875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":809.1064453125}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":11.876260235905647},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":53.6607881039381}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":53.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":970.0}]}],\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0}}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
+  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1265" ],
-        "x-ms-client-request-id": [ "e45695b3-8783-493d-a605-4b4e2727603b" ],
+        "x-ms-unique-id": [ "778" ],
+        "x-ms-client-request-id": [ "153987fa-3d6e-4233-b3cb-5c6fed2fbfe2" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -139,34 +139,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "55a55994-0f6e-4825-9d5a-390564edb0ff" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14894" ],
-        "x-ms-request-id": [ "55a55994-0f6e-4825-9d5a-390564edb0ff" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212618Z:55a55994-0f6e-4825-9d5a-390564edb0ff" ],
+        "x-ms-correlation-request-id": [ "cf6010df-5837-4f44-a07d-836efe2ec6a7" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRveQeu5b0H0ejdx0jomx2uvBUCStiSFjz6V+2ep5lVvXAEJ96yyHF8w9KGLjnzEW6IQM+Mdgm4X1s1CwCZUM9GTHwqz71vNxWZaOp1NmOz0kx0QAxJZRw2AcdvvAAcw9705YmzVl6E9lpHX4NXKxab" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13478" ],
+        "x-ms-request-id": [ "cf6010df-5837-4f44-a07d-836efe2ec6a7" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010424Z:cf6010df-5837-4f44-a07d-836efe2ec6a7" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:18 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJYt5Hk+vs525ite8o1EFZHvhMd1h+ZaZGIUI/SRHKeiFGO/Y2fZ6nfZRuoDlMUMxFg+WZqu2a+TODybuxnSoeozBMU8s6ekNNg6YtdJgBlFMk8xtQxbEtFCxVlo/MOJY008qarATEfLzGemuvhoU" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:24 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "9403" ],
+        "Content-Length": [ "9459" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937\",\"name\":\"redmond/487717c5-2215-4081-9343-0f39f3bbb937\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"487717c5-2215-4081-9343-0f39f3bbb937\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"name\":\"redmond/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"name\":\"redmond/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"name\":\"redmond/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c2eea457-3c39-4485-8d2e-f686bada2b51\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"name\":\"redmond/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c9c94e03-b734-4449-8cdb-85a7d3128529\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":1},\"healthState\":\"Warning\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"name\":\"redmond/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"d1581147-baf6-4e96-acf1-632889ac0c8c\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"name\":\"redmond/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":0},\"healthState\":\"Critical\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"name\":\"redmond/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"displayName\":\"Bar Service\",\"namespace\":\"BarService.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/infraRoles/Bar Service\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"name\":\"redmond/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"name\":\"redmond/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"name\":\"redmond/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545\",\"name\":\"redmond/a0439443-b6d0-450f-8df0-c445cd308545\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"a0439443-b6d0-450f-8df0-c445cd308545\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"name\":\"redmond/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"name\":\"redmond/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3\",\"name\":\"redmond/e9951457-d1a8-4374-9355-44c089543bf3\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e9951457-d1a8-4374-9355-44c089543bf3\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub\",\"name\":\"redmond/eventhub\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"eventhub\",\"displayName\":\"Event Hubs\",\"namespace\":\"Microsoft.EventHub.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/infraRoles/Event Hubs\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937?api-version=2016-05-01+3": {
+  "AzsServiceHealths+[NoContext]+TestGetServiceHealth+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1266" ],
-        "x-ms-client-request-id": [ "c8f3fef5-c489-4c65-999d-8961aeb6a5a8" ],
+        "x-ms-unique-id": [ "779" ],
+        "x-ms-client-request-id": [ "be30fc5a-2d22-43dc-9107-50eecc8621c5" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -179,34 +179,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "df28be76-8319-418f-b160-1adca8240cbe" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14893" ],
-        "x-ms-request-id": [ "df28be76-8319-418f-b160-1adca8240cbe" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212620Z:df28be76-8319-418f-b160-1adca8240cbe" ],
+        "x-ms-correlation-request-id": [ "e181afe2-5363-433c-8105-3f40b9a8ec1a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvarjMixc5k3I94Kaccf5aCJ8lkcLEZPwMfKhquNj8upd85wFUZfqBkFRre4Mt8XpEr/3RbGgMBCcm/rpB62MW8D4ItUC6ELIiNme7uZquncEUjZ9fdk2+j0d89aBQeflziR6ljya5pprLYK2a7k3B" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13476" ],
+        "x-ms-request-id": [ "e181afe2-5363-433c-8105-3f40b9a8ec1a" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010426Z:e181afe2-5363-433c-8105-3f40b9a8ec1a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:19 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv05zJTsKk6zNynD+fYD5cZ0ZYOc0rrerjEJYZMnjaAPK2SpDJrCf5oGv+b2ohvP4RSLdAOnIZFchpfpXU719D97RNx++ATks+YIkOaRIE3Ii3QztoWO4Pv5xMmaeQO2u4Un5oKKUSePVKv8oSmjlx" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:26 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "903" ],
+        "Content-Length": [ "942" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937\",\"name\":\"redmond/487717c5-2215-4081-9343-0f39f3bbb937\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"487717c5-2215-4081-9343-0f39f3bbb937\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"name\":\"redmond/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1279" ],
-        "x-ms-client-request-id": [ "812714da-fe7f-4aee-9a82-2bd97a44f729" ],
+        "x-ms-unique-id": [ "792" ],
+        "x-ms-client-request-id": [ "acd28656-69dc-4757-a8b9-4ea6f8b27e1f" ],
         "CommandName": [ "Get-AzsRegionHealth" ],
         "FullCommandName": [ "Get-AzsRegionHealth_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -219,34 +219,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "a881cef3-2957-4782-962e-378e7947c8b4" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14880" ],
-        "x-ms-request-id": [ "a881cef3-2957-4782-962e-378e7947c8b4" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212626Z:a881cef3-2957-4782-962e-378e7947c8b4" ],
+        "x-ms-correlation-request-id": [ "3a18c7b7-2f94-4c56-af53-4de35284f24b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRviYd14AsrB+KzVG5UlWxlsxH36uOIGggsuMI/0UXFKq9NXOUlTvHpL0tIEdIjYzTOGYvJoO2XeEWTdDbqRkqx75Zv74O7DkxWJCTcLPno6jEysBHucRqBfSJlhZjYRq6e8J8s0Ooun42+QI/ujU6x" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13446" ],
+        "x-ms-request-id": [ "3a18c7b7-2f94-4c56-af53-4de35284f24b" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010449Z:3a18c7b7-2f94-4c56-af53-4de35284f24b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:25 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvqMxSpszh6XbdHiJX7kR8Uh+uvmgZQ92ApjypNR/8vQ2SzzUVzYA3pP13WSqpTeoDIT9QkVnhOeuC1u2K6o1PhoEqEIawzmf3mvkkUMFibc8DI1zB61QxSHprKj8NshOe7+Syc7+OcfN89kY6spUV" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:48 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "818" ],
+        "Content-Length": [ "825" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0791015625},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9169921875}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":1235.6357421875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":809.1064453125}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":11.876260235905647},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":53.6607881039381}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":53.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":970.0}]}],\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0}}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1280" ],
-        "x-ms-client-request-id": [ "34ec9052-28f5-44ff-badc-40fbf71d166c" ],
+        "x-ms-unique-id": [ "793" ],
+        "x-ms-client-request-id": [ "9cc641a2-1d3a-4e4e-b986-0622c247a09f" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -259,34 +259,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1efbc69c-348f-4201-b31f-4e9723f01dd2" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14879" ],
-        "x-ms-request-id": [ "1efbc69c-348f-4201-b31f-4e9723f01dd2" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212627Z:1efbc69c-348f-4201-b31f-4e9723f01dd2" ],
+        "x-ms-correlation-request-id": [ "49545648-e051-4731-83fd-2392c1800fb1" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7LcDe+UbKG1yVtNQ5ZO7xaKCOS6vYT7MfjNn3UftCkd25RGczIpg0FFNgioDhanrSCT1R3p0GlrMUfc2x/tEx4pPVyRgiQjYj9Srp0J6x0orfolo9RBoyIaxe2vI1C6cJAqm6cIN42euInxAzwZN" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13444" ],
+        "x-ms-request-id": [ "49545648-e051-4731-83fd-2392c1800fb1" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010452Z:49545648-e051-4731-83fd-2392c1800fb1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:27 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvMiDIU4B0a4V7qg0UsHo4LKU2v0TY7Nu651uGiNMuVGBYRwfzodJw1XEejrJ+akc5gVw+FssRZkXGEtEf4cY2LWehi8jNKVmCmteRFJHTRs0mQAvaxsIn0sxM7aLMo2gleEVACukUN/R7mN5RAzVf" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:52 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "9403" ],
+        "Content-Length": [ "9459" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937\",\"name\":\"redmond/487717c5-2215-4081-9343-0f39f3bbb937\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"487717c5-2215-4081-9343-0f39f3bbb937\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"name\":\"redmond/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"name\":\"redmond/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"name\":\"redmond/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c2eea457-3c39-4485-8d2e-f686bada2b51\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"name\":\"redmond/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c9c94e03-b734-4449-8cdb-85a7d3128529\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":1},\"healthState\":\"Warning\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"name\":\"redmond/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"d1581147-baf6-4e96-acf1-632889ac0c8c\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"name\":\"redmond/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":0},\"healthState\":\"Critical\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"name\":\"redmond/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"displayName\":\"Bar Service\",\"namespace\":\"BarService.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/infraRoles/Bar Service\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"name\":\"redmond/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"name\":\"redmond/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"name\":\"redmond/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545\",\"name\":\"redmond/a0439443-b6d0-450f-8df0-c445cd308545\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"a0439443-b6d0-450f-8df0-c445cd308545\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"name\":\"redmond/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"name\":\"redmond/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3\",\"name\":\"redmond/e9951457-d1a8-4374-9355-44c089543bf3\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e9951457-d1a8-4374-9355-44c089543bf3\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}},{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub\",\"name\":\"redmond/eventhub\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"eventhub\",\"displayName\":\"Event Hubs\",\"namespace\":\"Microsoft.EventHub.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/infraRoles/Event Hubs\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}]}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937?api-version=2016-05-01+3": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1281" ],
-        "x-ms-client-request-id": [ "8dd36000-1228-4058-b5cd-e195bb6df9ed" ],
+        "x-ms-unique-id": [ "794" ],
+        "x-ms-client-request-id": [ "4b857279-4a47-4f03-84b2-4d2d76bfff71" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -299,34 +299,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "2c2a40dc-9b6e-4768-92a5-68ecbdd26a12" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14878" ],
-        "x-ms-request-id": [ "2c2a40dc-9b6e-4768-92a5-68ecbdd26a12" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212627Z:2c2a40dc-9b6e-4768-92a5-68ecbdd26a12" ],
+        "x-ms-correlation-request-id": [ "e12a6637-eea7-4054-8346-e80ae3449e0b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7g3nXZqb0Q5109RgIOdNH2joBEhouCBnMF3lZlWkwlHPIBc999VKC9/TMYTUlH7/u77aqiBLkph8jPUTON9TDvF3Rr0UPzw/MGQPI+9cVMBEb438eBbfF3Kuk0j37zszipY8agJbl4AYIISjJrhF" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13443" ],
+        "x-ms-request-id": [ "e12a6637-eea7-4054-8346-e80ae3449e0b" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010452Z:e12a6637-eea7-4054-8346-e80ae3449e0b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:27 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvKBAbM23iz608Evk1FHXcT3T/93OuMvaHqmJWJwq1lfKP9m28cUGLe1pw4S3FamvJ/HSyZtLX0jSaYnkQktvTfEtyT+lwFzE/y8flkPaRCRKfadmkYq1932/YfLRp/HSTeabeyyDsEmwYY81g8RdM" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:52 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "903" ],
+        "Content-Length": [ "942" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/487717c5-2215-4081-9343-0f39f3bbb937\",\"name\":\"redmond/487717c5-2215-4081-9343-0f39f3bbb937\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"487717c5-2215-4081-9343-0f39f3bbb937\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"name\":\"redmond/3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"3741b695-e9e3-4e44-bcc1-ea6d7af0411c\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820?api-version=2016-05-01+4": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b?api-version=2016-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1282" ],
-        "x-ms-client-request-id": [ "a734cb6f-f177-4b56-81c7-e2c8378502e4" ],
+        "x-ms-unique-id": [ "795" ],
+        "x-ms-client-request-id": [ "28389e3c-ff1b-44ea-990c-19be33958224" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -339,234 +339,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "3d22f6cb-fa84-417d-a8f0-e3da3178260d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14877" ],
-        "x-ms-request-id": [ "3d22f6cb-fa84-417d-a8f0-e3da3178260d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212627Z:3d22f6cb-fa84-417d-a8f0-e3da3178260d" ],
+        "x-ms-correlation-request-id": [ "8573b2ca-1263-4db7-adcc-e11f3b777e27" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGsAIqdpZtKVC98AdofqCd21tC2m/YLjUuE2y6eXknGubvq0ZdZLumAkxDdSpj9FDf2cdbsNq/tsvnDJsWJmwrGMeULKlBCqTZdxw3eCcSJWUyKOlREPf9y1GIk1znlSGUBXp87/qqkT5w3/6VeCR" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13442" ],
+        "x-ms-request-id": [ "8573b2ca-1263-4db7-adcc-e11f3b777e27" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010453Z:8573b2ca-1263-4db7-adcc-e11f3b777e27" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:27 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvsfY6Evmmpm3pFx1GwpDnTFF7JKUffuGEBXEmBFGJvLX7Up1q1dPd8K9WoGyqNDnweg7uGqAOKxmA2j96K7Mr3aaK2EjWodbimzdt7nIqNesM63pSRVMdTDv4uaUhxc4v2fEC+3l333sDA+TSX5Fq" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "945" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"name\":\"redmond/61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"61b21956-2b7e-4cf7-a67f-b2ee880ad820\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
-    }
-  },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9?api-version=2016-05-01+5": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9?api-version=2016-05-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "1283" ],
-        "x-ms-client-request-id": [ "7a2abdd6-9ba9-4326-8da5-f60210b1c3e2" ],
-        "CommandName": [ "Get-AzsRPHealth" ],
-        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "6e18f681-4570-4722-b746-4e927eec32fa" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14876" ],
-        "x-ms-request-id": [ "6e18f681-4570-4722-b746-4e927eec32fa" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212628Z:6e18f681-4570-4722-b746-4e927eec32fa" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:28 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvX0ufEdIClGxrigNSw8ycBDwLMplE9hRCSrwCjCEZhJL83WgLnFVEY9fetcd+Uysj7MaPtTy4zyQTHz86d9opOZAs+/4VJIUPqgKU8B+f1nbZZxuELYRalDcO237p3Xs6qkE0zKuw/EnUfR2nCV9h" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "903" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"name\":\"redmond/b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"b3decfaa-ab26-4f69-b334-8d65d0c757a9\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
-    }
-  },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e?api-version=2016-05-01+6": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e?api-version=2016-05-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "1284" ],
-        "x-ms-client-request-id": [ "2c041423-cc08-43e2-87fd-d69f3fc1922a" ],
-        "CommandName": [ "Get-AzsRPHealth" ],
-        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e6b1336e-b9b1-4fb6-beb5-6e667f099215" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14875" ],
-        "x-ms-request-id": [ "e6b1336e-b9b1-4fb6-beb5-6e667f099215" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212628Z:e6b1336e-b9b1-4fb6-beb5-6e667f099215" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:28 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvVm59P9Mgg2ZIJKLZFK7ZCQNbC5HnjVodFRGGxmY+oiCHvh7US5WxDvipaVcy+vdqgMFdsO3WoZe1/7XLhq4HppnRK3S/MXjXp9WoGgKXirW+80KBERVW7/5/pWO5+wpPOJe0EK0EdudIPhBdPKMR" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "1011" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}}"
-    }
-  },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51?api-version=2016-05-01+7": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51?api-version=2016-05-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "1285" ],
-        "x-ms-client-request-id": [ "acb3472d-96f9-41a8-9f39-7ecbb004e1b6" ],
-        "CommandName": [ "Get-AzsRPHealth" ],
-        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "88aa5eba-8b32-4ddb-b31b-ac254f3b6bf6" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14874" ],
-        "x-ms-request-id": [ "88aa5eba-8b32-4ddb-b31b-ac254f3b6bf6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212629Z:88aa5eba-8b32-4ddb-b31b-ac254f3b6bf6" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:29 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvkRarJ7bInuW8XrQj1DMI6qv+kmWXrans6YC5r9k4G4mLgyKp98KZ23Tz06wfK21lGpJpxR/5pd0kop1edUz2j26RBnL57z2XSGB6Dh1mFvwoYQuVx4A1/yumf1AlKi7RKMPt5h/fKuBo0Mp2VWJC" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "947" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"name\":\"redmond/c2eea457-3c39-4485-8d2e-f686bada2b51\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c2eea457-3c39-4485-8d2e-f686bada2b51\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}}"
-    }
-  },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529?api-version=2016-05-01+8": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529?api-version=2016-05-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "1286" ],
-        "x-ms-client-request-id": [ "a60a2feb-5e31-4171-adfc-505986a5081d" ],
-        "CommandName": [ "Get-AzsRPHealth" ],
-        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e1981fe3-958f-4cac-bf2e-99c4f573dfd6" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14873" ],
-        "x-ms-request-id": [ "e1981fe3-958f-4cac-bf2e-99c4f573dfd6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212629Z:e1981fe3-958f-4cac-bf2e-99c4f573dfd6" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:29 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv5887pbmjiwSpkF50PFhl/WLXISngkMu27dYDYNg78NulDcPUO4JT+43I0CLYQLgbAs+0emygFxKFiBz7iHQSHxrufegYMDhQACncls8Vageacuj0ss/Qpg58rSj90JT6DeOTajGjF0XRvIK7Yks6" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "928" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"name\":\"redmond/c9c94e03-b734-4449-8cdb-85a7d3128529\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"c9c94e03-b734-4449-8cdb-85a7d3128529\",\"displayName\":\"Infrastructure backup\",\"namespace\":\"Microsoft.Backup.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/infraRoles/Infrastructure backup\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":1},\"healthState\":\"Warning\"}}"
-    }
-  },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c?api-version=2016-05-01+9": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c?api-version=2016-05-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "1287" ],
-        "x-ms-client-request-id": [ "6b55f3f2-e53f-4556-9801-1c2527364506" ],
-        "CommandName": [ "Get-AzsRPHealth" ],
-        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "88e5f7d4-edd7-4609-ae74-b96561a954a5" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14872" ],
-        "x-ms-request-id": [ "88e5f7d4-edd7-4609-ae74-b96561a954a5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212629Z:88e5f7d4-edd7-4609-ae74-b96561a954a5" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:29 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvG/5MXQ/6ARA564KrHWB04mVgqujFTbA7N26LmM4ZYA+HAE2c2nujd+F8XLBakCsCqLSaHepBl7EederVdgls9IsexcR44NIRHd2pz61PpBQVMK8lzkVrsKgry5OpPPGLfcDSi8RVOwpm6qDUaWFe" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:52 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "965" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"name\":\"redmond/d1581147-baf6-4e96-acf1-632889ac0c8c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"d1581147-baf6-4e96-acf1-632889ac0c8c\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"name\":\"redmond/495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"495eae0b-97e3-47c2-a905-1c2c42103c9b\",\"displayName\":\"Updates\",\"namespace\":\"Microsoft.Update.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Update.Admin/updateLocations/redmond/infraRoles/Updates\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d?api-version=2016-05-01+10": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f?api-version=2016-05-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1288" ],
-        "x-ms-client-request-id": [ "062d7cd7-02ad-4853-89e5-2569132d98c5" ],
+        "x-ms-unique-id": [ "796" ],
+        "x-ms-client-request-id": [ "c710a0a1-a72a-4c44-9e22-6e011e8c07e3" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -579,34 +379,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "7b52be77-b5d4-4a1d-afc1-b70c5bcaade2" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14871" ],
-        "x-ms-request-id": [ "7b52be77-b5d4-4a1d-afc1-b70c5bcaade2" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212630Z:7b52be77-b5d4-4a1d-afc1-b70c5bcaade2" ],
+        "x-ms-correlation-request-id": [ "d721ff12-b8ba-46fb-8612-f2ab31661701" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtLRQN3sn3p2pf0/XQTvflhQsv7MYfo+0RTmlkeYk+cSTyAToYDLHwF8OnE6iBbo+nWHmfFV8YAUirj53jJEYSHfYISUEcs4HhVgrV4oWXj05vnE9PLVn8Ee0UEq0ACR7b/dKNbJcoIqhkjmVLczy" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13441" ],
+        "x-ms-request-id": [ "d721ff12-b8ba-46fb-8612-f2ab31661701" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010453Z:d721ff12-b8ba-46fb-8612-f2ab31661701" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:30 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSXnO3YSgVgqMKU9U9/VXmDms196w7uMIbqSAaVtAIF9PU+FLFRRegfPj0QzHhUQKhWCApZLTxO2GITs7uUOiVtCOap21kUYxpxciD7WaQK2P5IvaYzzUnWargG5XZC2B3It25DUP31rmtt25/vgf" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:52 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "903" ],
+        "Content-Length": [ "917" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"name\":\"redmond/e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e1be8f33-f344-4e2d-a3bf-54d21f1de11d\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"name\":\"redmond/60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"60d9eb15-b938-44ca-9dcd-9fa35258e68f\",\"displayName\":\"Compute\",\"namespace\":\"Microsoft.Compute.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Compute.Admin/infraRoles/Compute\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c?api-version=2016-05-01+11": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545?api-version=2016-05-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1289" ],
-        "x-ms-client-request-id": [ "7e4a3301-8852-45ea-ad8b-c533095f1d15" ],
+        "x-ms-unique-id": [ "797" ],
+        "x-ms-client-request-id": [ "ecf47ba1-f5d6-4be6-b05c-f73caf11fd33" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -619,34 +419,34 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "38269f0d-cbb7-430a-a39f-262d8c1987ee" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14870" ],
-        "x-ms-request-id": [ "38269f0d-cbb7-430a-a39f-262d8c1987ee" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212630Z:38269f0d-cbb7-430a-a39f-262d8c1987ee" ],
+        "x-ms-correlation-request-id": [ "458703f6-7da5-4144-85ea-7fb793f9535b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9aPNkqix7psi9CA/H76wy/wIasJDxt6oLukSGlCxXsL71kCp2m3aKS9xw0/JguD1tp+P1uc5V0ta9Jq6QN/9Dpfrel3V6Iej98c29xoIwlZxxOZnwse9QqYdua3wSUTft2ccsIUrFlbJ6u0U6gWn" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13440" ],
+        "x-ms-request-id": [ "458703f6-7da5-4144-85ea-7fb793f9535b" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010453Z:458703f6-7da5-4144-85ea-7fb793f9535b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:30 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3N6JkVno3ermgD6Z40+x9onWYI3YxOKbRKbpXbKRCmQocrCKnQXAqoGVvkf3oD0sTeCOGXWjnObBjxI/mNeyKyzQ7JhNUwHwgecg37pzQpTVe9gkDui5A1g3p9ntuhSh3qkkPh/mzPgQ4fNh0Xa1" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:53 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "951" ],
+        "Content-Length": [ "963" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":0},\"healthState\":\"Critical\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/a0439443-b6d0-450f-8df0-c445cd308545\",\"name\":\"redmond/a0439443-b6d0-450f-8df0-c445cd308545\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"a0439443-b6d0-450f-8df0-c445cd308545\",\"displayName\":\"Key Vault\",\"namespace\":\"Microsoft.KeyVault.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.KeyVault.Admin/locations/redmond/infraRoles/Key Vault\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
     }
   },
-  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5?api-version=2016-05-01+12": {
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e?api-version=2016-05-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "1290" ],
-        "x-ms-client-request-id": [ "5a5083c5-144b-4c12-bb99-95de1453d4f1" ],
+        "x-ms-unique-id": [ "798" ],
+        "x-ms-client-request-id": [ "cdd0e992-5bdb-4e30-b73c-7c6171dab354" ],
         "CommandName": [ "Get-AzsRPHealth" ],
         "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -659,24 +459,224 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "0a969699-614b-4081-8f0c-1a1c6c441f11" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14869" ],
-        "x-ms-request-id": [ "0a969699-614b-4081-8f0c-1a1c6c441f11" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T212631Z:0a969699-614b-4081-8f0c-1a1c6c441f11" ],
+        "x-ms-correlation-request-id": [ "c8f0de07-a144-4833-997a-2341ccbda8a8" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvNkxCxHInrUxxjNUalN8gbtE5Cx700aa8cuGva96ZoFZW2sxvInvKGkJD9Gk0NmCGAmrq4b4v3ZoYRQR8TGPufVRqdO6cowZfxo0pp0KeEtT/b8ytnSMdauea0iwaHPBcH0tTREBM22bKIfydekJF" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13439" ],
+        "x-ms-request-id": [ "c8f0de07-a144-4833-997a-2341ccbda8a8" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010453Z:c8f0de07-a144-4833-997a-2341ccbda8a8" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 21:26:31 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvDjVPluJmENF8ivQmipDY+9kGBMCRj80NCASDfaV459BqYCjUAFJy8ssxzWefUUF/K57s4rf4K7hE+qPqw++H85Kc4eBolBDPhjh3yw6vPRDR9vwYbwOmkJa37fl0aANzyPYIKPvb608IV7PjavIK" ]
+        "Date": [ "Thu, 18 Jun 2020 01:04:53 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "926" ],
+        "Content-Length": [ "1029" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"name\":\"redmond/TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"TestAddOnRP-c675b570-e9c5-477d-9483-59aecbc3a3f5\",\"displayName\":\"Bar Service\",\"namespace\":\"BarService.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/system.redmond/providers/BarService.Admin/infraRoles/Bar Service\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"name\":\"redmond/bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"bb58377f-3d7d-4d7f-b3b3-d433d422bf9e\",\"displayName\":\"Region Management\",\"namespace\":\"Microsoft.InfrastructureInsights.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/infraRoles/Region Management\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Unknown\"}}"
+    }
+  },
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1?api-version=2016-05-01+8": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "799" ],
+        "x-ms-client-request-id": [ "b8730353-8c77-4685-a23d-ea3937788b87" ],
+        "CommandName": [ "Get-AzsRPHealth" ],
+        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "7b36d3b4-78ed-417b-8f6e-4961c692ab33" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgD+I6o6Jk4+YLEqAAtRL983VTUZExkVbMZ37ZHegt+bOpJTS+UK+ps57CZHDIBh5YscKryl3YsTBDeI2LYX7fVq8Yx+p6XbFAX6fAveJZ8xicS14CK7hKOAOgqUl9/bzGbOMmsH7Y7UE4HEZgo7w" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13438" ],
+        "x-ms-request-id": [ "7b36d3b4-78ed-417b-8f6e-4961c692ab33" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010454Z:7b36d3b4-78ed-417b-8f6e-4961c692ab33" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 18 Jun 2020 01:04:53 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "917" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"name\":\"redmond/e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e05d3b9f-f7ce-4939-bc85-d836deb210f1\",\"displayName\":\"Storage\",\"namespace\":\"Microsoft.Storage.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Storage.Admin/infraRoles/Storage\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+    }
+  },
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c?api-version=2016-05-01+9": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "800" ],
+        "x-ms-client-request-id": [ "7922d66b-e3a8-4258-8285-e5334a3c943c" ],
+        "CommandName": [ "Get-AzsRPHealth" ],
+        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "06c2eebe-bcc7-4e4b-ac6e-d8c91d6b9013" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/Cg4D9FvWlfPIYUKXjaJPIMcpKC2EmfxHmdQtGvUd62jwTqCNUeBdaRyCIa/4JcruzHYuROL0v6Mdk3Is+0uX8TN82OIryRWyQ1lJqKqYAHbD4qoeB6MvRrgOkJhnj/DPk6w6ZTCT01565AnS6Fu" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13437" ],
+        "x-ms-request-id": [ "06c2eebe-bcc7-4e4b-ac6e-d8c91d6b9013" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010454Z:06c2eebe-bcc7-4e4b-ac6e-d8c91d6b9013" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 18 Jun 2020 01:04:53 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "967" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"name\":\"redmond/e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e56bc7b8-c8b5-4e25-b00c-4f951effb22c\",\"displayName\":\"Capacity\",\"namespace\":\"Microsoft.Fabric.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Capacity\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+    }
+  },
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5?api-version=2016-05-01+10": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "801" ],
+        "x-ms-client-request-id": [ "ee92e1e2-cb62-4525-bf28-6a111d7446f3" ],
+        "CommandName": [ "Get-AzsRPHealth" ],
+        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "9fa9012d-7359-43ff-a32f-0dba50ef1a47" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHia2/Fm3q+udaERqpNXUWJD4MAfTIV4L8LcFJ9lz+M+BpZUu0gLENcOQ+3BFedcrosjcprdZZ9A+P0IHH5IIStcm6/EC1p9A2gD+orjRNtU8kJZFhstQDFvxVYwMOhfcp3X1TWpV2VInZIRPkx35" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13436" ],
+        "x-ms-request-id": [ "9fa9012d-7359-43ff-a32f-0dba50ef1a47" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010454Z:9fa9012d-7359-43ff-a32f-0dba50ef1a47" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 18 Jun 2020 01:04:54 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "979" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"name\":\"redmond/e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e6930dbc-ca86-4a0c-b353-b5cbdf4375a5\",\"displayName\":\"SupportBridgeResourceProvider\",\"namespace\":\"Microsoft.SupportBridge.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.SupportBridge.Admin/infraRoles/SupportBridgeResourceProvider\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+    }
+  },
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3?api-version=2016-05-01+11": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "802" ],
+        "x-ms-client-request-id": [ "df7849ec-480b-40d4-a6bf-05b8065f8bd8" ],
+        "CommandName": [ "Get-AzsRPHealth" ],
+        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "49139343-19e2-4d8e-8d42-e83691b23530" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvOrsU+uGCIYTHeIh9Be1hUXsAsUsqgU7xFwd1JnVrxTNMfLm1TjDcNn417FraguMs6656APdC3Gg//K0tPl0JR1WYIglXbdOKcDCtSl4aKdNvaFvgBiZZ9AM5lia7aONEAQ8XXxzX/71spIE+ftVr" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13435" ],
+        "x-ms-request-id": [ "49139343-19e2-4d8e-8d42-e83691b23530" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010455Z:49139343-19e2-4d8e-8d42-e83691b23530" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 18 Jun 2020 01:04:54 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "917" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/e9951457-d1a8-4374-9355-44c089543bf3\",\"name\":\"redmond/e9951457-d1a8-4374-9355-44c089543bf3\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"e9951457-d1a8-4374-9355-44c089543bf3\",\"displayName\":\"Network\",\"namespace\":\"Microsoft.Network.Admin\",\"routePrefix\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.Network.Admin/infraRoles/Network\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
+    }
+  },
+  "AzsServiceHealths+[NoContext]+TestGetAllServiceHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub?api-version=2016-05-01+12": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "803" ],
+        "x-ms-client-request-id": [ "9e23be4f-7b59-4f35-9af7-f275554d2d38" ],
+        "CommandName": [ "Get-AzsRPHealth" ],
+        "FullCommandName": [ "Get-AzsRPHealth_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "c3a5f143-d1d2-429a-8ae3-1f5873f139d2" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvmHw06OPRJZrw1lkP12afdVBEdIqFPLQ/vcajBCgv3q3p4P50QsZAfyhTDM/sX24DzbyJRYbAHsA7MEkVzmI3DA6eVfu6vqdqk/QOy5ODW4hzpOBcIczCkTISKVpKFf8y3Rg+a75wnJJXfXTDBN+N" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13434" ],
+        "x-ms-request-id": [ "c3a5f143-d1d2-429a-8ae3-1f5873f139d2" ],
+        "x-ms-routing-request-id": [ "redmond:20200618T010455Z:c3a5f143-d1d2-429a-8ae3-1f5873f139d2" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 18 Jun 2020 01:04:54 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "842" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/serviceHealths/eventhub\",\"name\":\"redmond/eventhub\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths/serviceHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"registrationId\":\"eventhub\",\"displayName\":\"Event Hubs\",\"namespace\":\"Microsoft.EventHub.Admin\",\"routePrefix\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/\",\"serviceLocation\":\"redmond\",\"infraURI\":\"/subscriptions/9d334843-0c6e-4bfc-b82c-cf229da3a87b/resourceGroups/System.redmond/providers/Microsoft.EventHub.Admin/infraRoles/Event Hubs\",\"alertSummary\":{\"criticalAlertCount\":0,\"warningAlertCount\":0},\"healthState\":\"Healthy\"}}"
     }
   }
 }
