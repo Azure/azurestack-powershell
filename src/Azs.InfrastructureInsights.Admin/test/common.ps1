@@ -1,4 +1,6 @@
-﻿function ValidateMetrics{
+﻿$global:SkippedTests = @()
+
+function ValidateMetrics{
     param(
         $Metrics
     )
