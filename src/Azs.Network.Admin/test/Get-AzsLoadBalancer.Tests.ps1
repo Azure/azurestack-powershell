@@ -1,3 +1,5 @@
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsLoadBalancer.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -7,11 +9,9 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Get-AzsLoadBalancer' {
-    
     . $PSScriptRoot\Common.ps1
-
+    
     BeforeEach {
-
     }
 
     AfterEach {

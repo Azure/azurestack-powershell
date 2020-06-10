@@ -177,8 +177,17 @@ function New-AzsNetworkQuota {
     )
     
         process {
+            $params = @{}
+
+            if ($PSBoundParameters.ContainsKey('Location')){
+                $params.Add('Location', $Location)
+            }
+            if ($PSBoundParameters.ContainsKey('SubscriptionId')){
+                $params.Add('SubscriptionId', $SubscriptionId)
+            }
+            
             # Autorest generated code doesn't throw error in case resource already exists
-            $resource = Get-AzsNetworkQuota -Name $Name -ErrorAction SilentlyContinue
+            $resource = Get-AzsNetworkQuota -Name $Name -ErrorAction SilentlyContinue @params
             if ($null -ne $resource) { throw "$($MyInvocation.MyCommand): A network quota with name $Name at location $($resource.Location) already exists" }
             Azs.Network.Admin.internal\New-AzsNetworkQuota @PSBoundParameters
         }

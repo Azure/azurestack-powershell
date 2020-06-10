@@ -1,4 +1,6 @@
-$TestRecordingFile = Join-Path $PSScriptRoot 'Quota.Recording.json'
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
+$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsNetworkQuota.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -6,7 +8,7 @@ while(-not $mockingPath) {
 }
 . ($mockingPath | Select-Object -First 1).FullName
 
-Describe 'QuotasTests' {
+Describe 'Get-AzsNetworkQuota' {
     
     . $PSScriptRoot\Common.ps1
 
@@ -34,8 +36,7 @@ Describe 'QuotasTests' {
                 -MaxLoadBalancersPerSubscription $global:TestQuotaMaxLoadBalancersPerSubscription `
                 -MaxNicsPerSubscription $global:TestQuotaMaxNicsPerSubscription `
                 -MaxSecurityGroupsPerSubscription $global:TestQuotaMaxSecurityGroupsPerSubscription `
-                -Name $Name `
-                -Location $global:Location `
+                -Name $Name
         }
 
         function AssertQuotasAreSame {
@@ -70,8 +71,8 @@ Describe 'QuotasTests' {
     It "TestPutAndDeleteQuota" -Skip:$('TestPutAndDeleteQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestPutAndDeleteQuota'
 
-        $created = New-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName -Location $global:location
-        $quota = Get-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName -Location $global:location
+        $created = New-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName
+        $quota = Get-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName
 
         $quota   | Should Not be $null
         $created | Should Not be $null
@@ -82,14 +83,14 @@ Describe 'QuotasTests' {
         AssertQuotasAreSame -expected $quota -found $created
 
         # Delete Quota
-        Remove-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName -Location $global:location
+        Remove-AzsNetworkQuota -Name $global:PutAndDeleteQuotaName
     }
 
     It "TestPutAndDeleteQuotaWithParams" -Skip:$('TestPutAndDeleteQuotaWithParams' -in $global:SkippedTests) {
         $global:TestName = 'TestPutAndDeleteQuotaWithParams'
 
         $created = CreateTestQuota -Name $global:PutAndDeleteQuotaWithParamsName
-        $quota = Get-AzsNetworkQuota -Name $global:PutAndDeleteQuotaWithParamsName -Location $global:location
+        $quota = Get-AzsNetworkQuota -Name $global:PutAndDeleteQuotaWithParamsName
 
         $quota   | Should Not be $null
         $created | Should Not be $null
@@ -100,16 +101,16 @@ Describe 'QuotasTests' {
         AssertQuotasAreSame -expected $quota -found $created
 
         # Delete Quota
-        Remove-AzsNetworkQuota -Name $global:PutAndDeleteQuotaWithParamsName -Location $global:location
+        Remove-AzsNetworkQuota -Name $global:PutAndDeleteQuotaWithParamsName
     }
 
     # Record again
     It "TestPutAndUpdateQuota" -Skip:$('TestPutAndUpdateQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestPutAndUpdateQuota'
 
-        $quota = New-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName -Location $global:location
+        $quota = New-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName
 
-        $created = Get-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName -Location $global:location
+        $created = Get-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName
 
         $quota   | Should Not be $null
         $created | Should Not be $null
@@ -119,13 +120,11 @@ Describe 'QuotasTests' {
         $created.MaxNicsPerSubscription = $global:MaxNicsPerSubscription
         $created | Set-AzsNetworkQuota
 
-        $getUpdatedQuota = Get-AzsNetworkQuota `
-            -Name $global:CreateAndUpdateQuotaName `
-            -Location $global:location
+        $getUpdatedQuota = Get-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName
 
         AssertQuotasAreSame -expected $created -found $getUpdatedQuota
 
         # Delete Quota
-        Remove-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName -Location $global:location
+        Remove-AzsNetworkQuota -Name $global:CreateAndUpdateQuotaName
     }
 }
