@@ -1,8 +1,8 @@
 {
-  "Get-AzsLoadBalancer+[NoContext]+TestGetAllLoadBalancers+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminLoadBalancers?api-version=2015-06-15+1": {
+  "Get-AzsLoadBalancer+[NoContext]+TestGetAllLoadBalancers+$GET+https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminLoadBalancers?api-version=2015-06-15+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminLoadBalancers?api-version=2015-06-15",
+      "RequestUri": "https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminLoadBalancers?api-version=2015-06-15",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "12" ],
@@ -23,7 +23,7 @@
         "x-ms-correlation-request-id": [ "aabe33bb-f0cc-4960-b51d-c52a6de29fa5" ],
         "x-ms-request-id": [ "8c381d1d-dcb5-4c45-b64d-34f969aa97c8" ],
         "x-ms-ratelimit-remaining-subscription-reads": [ "14534" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200208T010343Z:aabe33bb-f0cc-4960-b51d-c52a6de29fa5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200208T010343Z:aabe33bb-f0cc-4960-b51d-c52a6de29fa5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],

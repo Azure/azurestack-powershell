@@ -1,3 +1,5 @@
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsNetworkAdminOverview.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
