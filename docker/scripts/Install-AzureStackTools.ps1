@@ -14,6 +14,9 @@ Expand-Archive master.zip `
   -DestinationPath . `
   -Force
 
+# Install Syndication tools
+Install-Module -Name Azs.Syndication.Admin -AllowPrerelease
+
 # Change to the tools directory.
 Set-Location AzureStack-Tools-az
 
