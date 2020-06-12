@@ -12,7 +12,7 @@
     RootModule = 'AzureStack.psm1'
 
     # Version number of this module.
-    ModuleVersion          = '2.0.0'
+    ModuleVersion          = '2.0.1'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -54,17 +54,18 @@
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
+    ### IMPORTANT - Note that the module names are case sensitive ###
     RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.1'; },
         @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; },
-        @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.9.0'; },
+        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '0.9.1'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.InfrastructureInsights.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.KeyVault.Admin'; RequiredVersion = '0.9.0'; },
+        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '0.9.1'; },
+        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '0.9.1'; },
         @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '0.9.0'; },
@@ -125,7 +126,9 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.0, Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
+            ReleaseNotes = 'Version 2.0.1,
+            * Bug Fix for module failing to load in linux environments, module names and folders are case sensitive
+            * Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
 
             # Preview version
             Prerelease = 'preview'

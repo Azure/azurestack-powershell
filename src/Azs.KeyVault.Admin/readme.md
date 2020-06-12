@@ -1,10 +1,10 @@
 <!-- region Generated -->
-# Azs.KeyVault.Admin
+# Azs.Keyvault.Admin
 This directory contains the PowerShell module for the KeyVault Admin service.
 
 ---
 ## Status
-[![Azs.KeyVault.Admin](https://img.shields.io/powershellgallery/v/Azs.KeyVault.Admin.svg?style=flat-square&label=Azs.KeyVault.Admin "Azs.KeyVault.Admin")](https://www.powershellgallery.com/packages/Azs.KeyVault.Admin/)
+[![Azs.Keyvault.Admin](https://img.shields.io/powershellgallery/v/Azs.Keyvault.Admin.svg?style=flat-square&label=Azs.Keyvault.Admin "Azs.Keyvault.Admin")](https://www.powershellgallery.com/packages/Azs.Keyvault.Admin/)
 
 ## Info
 - Modifiable: yes
@@ -23,7 +23,7 @@ This module was primarily generated via [AutoRest](https://github.com/Azure/auto
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
 ## Development
-For information on how to develop for `Azs.KeyVault.Admin`, see [how-to.md](how-to.md).
+For information on how to develop for `Azs.Keyvault.Admin`, see [how-to.md](how-to.md).
 <!-- endregion -->
 
 ## Generation Requirements
@@ -58,14 +58,15 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: 'Keyvault'
-module-version: 0.9.0-preview
+module-version: 0.9.1-preview
 service-name: KeyvaultAdmin
 
 ### File Renames
-module-name: Azs.KeyVault.Admin
-csproj: Azs.KeyVault.Admin.csproj
-psd1: Azs.KeyVault.Admin.psd1
-psm1: Azs.KeyVault.Admin.psm1
+### IMPORTANT - Note that the following settings are case sensitive ###
+module-name: Azs.Keyvault.Admin
+csproj: Azs.Keyvault.Admin.csproj
+psd1: Azs.Keyvault.Admin.psd1
+psm1: Azs.Keyvault.Admin.psm1
 
 directive:
 # Add release notes

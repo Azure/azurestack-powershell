@@ -59,6 +59,7 @@ module-version: 0.9.0-preview
 service-name: NetworkAdmin
 
 ### File Renames
+### IMPORTANT - Note that the following settings are case sensitive ###
 module-name: Azs.Network.Admin
 csproj: Azs.Network.Admin.csproj # C# project file
 psd1: Azs.Network.Admin.psd1 # module manifest file

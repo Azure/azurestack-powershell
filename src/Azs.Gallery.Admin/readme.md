@@ -66,7 +66,7 @@ service-name: GalleryAdmin
 ```
 
 ### File Renames
-
+### IMPORTANT - Note that the following settings are case sensitive ###
 ```yaml
 module-name: Azs.Gallery.Admin
 csproj: Azs.Gallery.Admin.csproj

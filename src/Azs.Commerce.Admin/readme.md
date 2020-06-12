@@ -59,7 +59,8 @@ metadata:
 subject-prefix: ''
 module-version: 0.9.0-preview
 service-name: CommerceAdmin
-### File Renames 
+### File Renames
+### IMPORTANT - Note that the following settings are case sensitive ###
 module-name: Azs.Commerce.Admin 
 csproj: Azs.Commerce.Admin.csproj 
 psd1: Azs.Commerce.Admin.psd1 
