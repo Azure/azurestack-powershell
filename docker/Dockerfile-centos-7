@@ -33,12 +33,9 @@ LABEL maintainer="Azure PowerShell Team <azdevxps@microsoft.com>" \
 
 # install azure-powershell and azure stack admin modules from PSGallery
 
-COPY scripts/Install-AzureStackTools.ps1 .
+COPY scripts/* /
 
-RUN pwsh -Command Set-PSRepository -Name ${REPOSITORY} -InstallationPolicy Trusted && \
-    pwsh Install-Module -Name Az.BootStrapper -Force -AllowPrerelease && \
-    pwsh Install-AzProfile -Profile ${AZURESTACK_PROFILE} -Force -Confirm:$false && \
-    pwsh Install-Module -Name AzureStack -RequiredVersion ${AZURESTACK_VERSION} -AllowPrerelease 
+RUN pwsh Install-AzureStackPowerShell.ps1 -REPOSITORY ${REPOSITORY} -AZURESTACK_PROFILE ${AZURESTACK_PROFILE} -AZURESTACK_VERSION ${AZURESTACK_VERSION}
 
 RUN pwsh Install-AzureStackTools.ps1
 
