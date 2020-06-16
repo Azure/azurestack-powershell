@@ -1,0 +1,2710 @@
+{
+    "value": [
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Authorization",
+            "namespace": "Microsoft.Authorization",
+            "resourceTypes": [
+                {
+                    "resourceType": "locks",
+                    "locations": [],
+                    "apiVersions": [
+                        "2017-04-01",
+                        "2016-09-01",
+                        "2015-06-01",
+                        "2015-05-01-preview",
+                        "2015-01-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-04-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-07-01",
+                        "2015-01-01",
+                        "2014-10-01-preview",
+                        "2014-06-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-07-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "permissions",
+                    "locations": [],
+                    "apiVersions": [
+                        "2015-07-01",
+                        "2015-06-01",
+                        "2015-05-01-preview",
+                        "2014-10-01-preview",
+                        "2014-07-01-preview",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-07-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "policyAssignments",
+                    "locations": [],
+                    "apiVersions": [
+                        "2017-06-01-preview",
+                        "2016-12-01",
+                        "2016-04-01",
+                        "2015-10-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-12-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "policyDefinitions",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-12-01",
+                        "2016-04-01",
+                        "2015-10-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-12-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "providerOperations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-07-01-preview",
+                        "2015-07-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-07-01-preview"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "roleAssignments",
+                    "locations": [],
+                    "apiVersions": [
+                        "2015-07-01",
+                        "2015-06-01",
+                        "2015-05-01-preview",
+                        "2014-10-01-preview",
+                        "2014-07-01-preview",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-07-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "roleDefinitions",
+                    "locations": [],
+                    "apiVersions": [
+                        "2015-07-01",
+                        "2015-06-01",
+                        "2015-05-01-preview",
+                        "2014-10-01-preview",
+                        "2014-07-01-preview",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-07-01"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Backup.Providers",
+            "namespace": "Microsoft.Backup.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "backupProviderRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Commerce",
+            "namespace": "Microsoft.Commerce",
+            "resourceTypes": [
+                {
+                    "resourceType": "estimateResourceSpend",
+                    "locations": [],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "subscriberUsageAggregates",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "usageAggregates",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Commerce.Providers",
+            "namespace": "Microsoft.Commerce.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "usageConnections",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-06-01-preview"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Compute",
+            "namespace": "Microsoft.Compute",
+            "authorization": {
+                "applicationId": "63810660-f638-4df3-8b31-518d60c50949",
+                "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+            },
+            "resourceTypes": [
+                {
+                    "resourceType": "availabilitySets",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "disks",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-03-30"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "images",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/diskoperations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-03-30"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/publishers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/usages",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/vmSizes",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "snapshots",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-03-30"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualMachines",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualMachines/extensions",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "virtualMachineScaleSets",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualMachineScaleSets/extensions",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualMachineScaleSets/networkInterfaces",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "virtualMachineScaleSets/virtualMachines",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "virtualMachineScaleSets/virtualMachines/networkInterfaces",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-12-01",
+                        "2017-03-30",
+                        "2016-03-30",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-03-30"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-03-30"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Deployment.Providers",
+            "namespace": "Microsoft.Deployment.Providers",
+            "authorization": {
+                "applicationId": "fb380fe0-6a5d-4edd-8357-9b21ae1c35fb",
+                "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+            },
+            "resourceTypes": [
+                {
+                    "resourceType": "environmentVariables",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "fileContainers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "identityApplications",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "locations/operationresults",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "secretRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-07-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Fabric.Providers",
+            "namespace": "Microsoft.Fabric.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "locations/operationResults",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "serviceFabricClusterRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "serviceFabricClusterRegistrations/applications",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Gallery",
+            "namespace": "Microsoft.Gallery",
+            "resourceTypes": [
+                {
+                    "resourceType": "createitems",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "createmenus",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "curation",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "curationdata",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "curationextract",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "galleryItems",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "portal",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "search",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "suggest",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Gallery.Providers",
+            "namespace": "Microsoft.Gallery.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "galleryItems",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.InfrastructureInsights.Providers",
+            "namespace": "Microsoft.InfrastructureInsights.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "securityauditsaskeys",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "serviceHealthRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "serviceHealthRegistrations/diagnosticsRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "serviceHealthRegistrations/metricAccountRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "serviceHealthRegistrations/resourceHealthRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-05-01"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Insights",
+            "namespace": "Microsoft.Insights",
+            "authorization": {
+                "applicationId": "fba01e81-a929-4d30-950f-5400d49a6541",
+                "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+            },
+            "resourceTypes": [
+                {
+                    "resourceType": "diagnosticSettings",
+                    "locations": [],
+                    "apiVersions": [
+                        "2017-05-01-preview",
+                        "2016-09-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-05-01-preview"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "diagnosticSettingsCategories",
+                    "locations": [],
+                    "apiVersions": [
+                        "2017-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-05-01-preview"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "eventCategories",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-03-01-preview",
+                        "2015-04-01",
+                        "2014-04-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-04-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "eventtypes",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-03-01-preview",
+                        "2015-04-01",
+                        "2014-04-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-04-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-04-01"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Insights.Providers",
+            "namespace": "Microsoft.Insights.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "eventconnections",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-04-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.KeyVault",
+            "namespace": "Microsoft.KeyVault",
+            "resourceTypes": [
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-10-01",
+                        "2015-06-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "vaults",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-10-01",
+                        "2015-06-01"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "vaults/accessPolicies",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-10-01",
+                        "2015-06-01"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "vaults/secrets",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2016-10-01",
+                        "2015-06-01"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Network",
+            "namespace": "Microsoft.Network",
+            "resourceTypes": [
+                {
+                    "resourceType": "connections",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "loadBalancers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "localNetworkGateways",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-04-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-04-preview",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/operationResults",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-04-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-04-preview",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-04-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-04-preview",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/usages",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-04-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-04-preview",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "networkInterfaces",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "networkSecurityGroups",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "publicIpAddresses",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "routeTables",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualNetworkGateways",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "virtualNetworks",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-09-01",
+                        "2017-08-01",
+                        "2017-06-01",
+                        "2017-04-01",
+                        "2017-03-01",
+                        "2016-12-01",
+                        "2016-11-01",
+                        "2016-10-01",
+                        "2016-09-01",
+                        "2016-08-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-03-30",
+                        "2015-06-15",
+                        "2015-05-01-preview",
+                        "2014-12-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2015-06-15"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2017-10-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "dnsZones",
+                    "locations": [
+                        "global"
+                    ],
+                    "apiVersions": [
+                        "2016-04-01",
+                        "2015-05-04-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-04-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-04-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.PortalExtensionHost.Providers",
+            "namespace": "Microsoft.PortalExtensionHost.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "extensions",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-09-01-preview"
+                    ],
+                    "apiProfiles": [],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-09-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "locations/UserSettings",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-09-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "locations/UserSettings/UserObjectIds",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-09-01-preview"
+                    ],
+                    "apiProfiles": []
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-09-01-preview"
+                    ],
+                    "apiProfiles": []
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Storage",
+            "namespace": "Microsoft.Storage",
+            "resourceTypes": [
+                {
+                    "resourceType": "checkNameAvailability",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/quotas",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "storageaccounts",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ],
+                    "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+                },
+                {
+                    "resourceType": "storageAccounts/blobServices",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "storageAccounts/queueServices",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "storageAccounts/tableServices",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "usages",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2017-10-01",
+                        "2017-06-01",
+                        "2016-12-01",
+                        "2016-05-01",
+                        "2016-01-01",
+                        "2015-06-15",
+                        "2015-05-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2017-03-09-profile",
+                            "apiVersion": "2016-01-01"
+                        },
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2016-01-01"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Subscriptions.Providers",
+            "namespace": "Microsoft.Subscriptions.Providers",
+            "resourceTypes": [
+                {
+                    "resourceType": "manifests",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-05-01",
+                        "2018-04-01",
+                        "2015-11-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-04-01"
+                        }
+                    ],
+                    "capabilities": "None"
+                },
+                {
+                    "resourceType": "applicationRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-05-01",
+                        "2018-04-01",
+                        "2015-11-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-04-01"
+                        }
+                    ],
+                    "capabilities": "None"
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-05-01",
+                        "2018-04-01",
+                        "2015-11-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-04-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations/operationsStatus",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-05-01",
+                        "2018-04-01",
+                        "2015-11-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-04-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-05-01",
+                        "2018-04-01",
+                        "2015-11-01"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-04-01"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        },
+        {
+            "id": "/subscriptions/929a66e4-f97c-4ffa-865c-7fc23b9cac8a/providers/Microsoft.Resources",
+            "namespace": "Microsoft.Resources",
+            "resourceTypes": [
+                {
+                    "resourceType": "applicationRegistrations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "checkresourcename",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "delegatedProviders",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "delegatedProviders/offers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "delegatedProviders/offers/estimatePrice",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "deployments",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "deployments/operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "extensionsMetadata",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "links",
+                    "locations": [],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "offers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2015-01-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "operations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "providers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "resourceGroups",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "resources",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/locations",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/operationresults",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/providers",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/resourceGroups",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/resourceGroups/resources",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/resources",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/tagNames",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "subscriptions/tagNames/tagValues",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                },
+                {
+                    "resourceType": "tenants",
+                    "locations": [
+                        "local"
+                    ],
+                    "apiVersions": [
+                        "2018-09-01",
+                        "2018-08-01",
+                        "2018-07-01",
+                        "2018-06-01",
+                        "2018-05-01",
+                        "2018-02-01",
+                        "2018-01-01",
+                        "2017-12-01",
+                        "2017-08-01",
+                        "2016-09-01",
+                        "2016-07-01",
+                        "2016-06-01",
+                        "2016-02-01",
+                        "2015-11-01",
+                        "2015-01-01",
+                        "2014-04-01-preview"
+                    ],
+                    "apiProfiles": [
+                        {
+                            "profileVersion": "2018-03-01-hybrid",
+                            "apiVersion": "2018-02-01"
+                        }
+                    ]
+                }
+            ],
+            "registrationState": "Registered"
+        }
+    ]
+}
