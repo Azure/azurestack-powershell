@@ -76,6 +76,7 @@ sanitize-names: false
 service-name: Subscription
 
 ### File Renames
+### IMPORTANT - Note that the following settings are case sensitive ###
 module-name: Azs.Subscriptions
 csproj: Azs.Subscriptions.csproj
 psd1: Azs.Subscriptions.psd1

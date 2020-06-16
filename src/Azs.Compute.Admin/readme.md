@@ -59,6 +59,7 @@ module-version: 0.9.0-preview
 service-name: ComputeAdmin
 
 ### File Renames
+### IMPORTANT - Note that the following settings are case sensitive ###
 module-name: Azs.Compute.Admin
 csproj: Azs.Compute.Admin.csproj
 psd1: Azs.Compute.Admin.psd1

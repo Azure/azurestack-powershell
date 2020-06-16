@@ -1,10 +1,10 @@
 <!-- region Generated -->
-# Azs.AzureBridge.Admin
+# Azs.Azurebridge.Admin
 This directory contains the PowerShell module for the BridgeAdmin service.
 
 ---
 ## Status
-[![Azs.AzureBridge.Admin](https://img.shields.io/powershellgallery/v/Azs.AzureBridge.Admin.svg?style=flat-square&label=Azs.AzureBridge.Admin "Azs.AzureBridge.Admin")](https://www.powershellgallery.com/packages/Azs.AzureBridge.Admin/)
+[![Azs.Azurebridge.Admin](https://img.shields.io/powershellgallery/v/Azs.Azurebridge.Admin.svg?style=flat-square&label=Azs.Azurebridge.Admin "Azs.Azurebridge.Admin")](https://www.powershellgallery.com/packages/Azs.Azurebridge.Admin/)
 
 ## Info
 - Modifiable: yes
@@ -23,7 +23,7 @@ This module was primarily generated via [AutoRest](https://github.com/Azure/auto
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
 ## Development
-For information on how to develop for `Azs.AzureBridge.Admin`, see [how-to.md](how-to.md).
+For information on how to develop for `Azs.Azurebridge.Admin`, see [how-to.md](how-to.md).
 <!-- endregion -->
 
 ## Generation Requirements
@@ -54,15 +54,15 @@ metadata:
   description: 'Microsoft AzureStack PowerShell: AzureBridge Admin cmdlets'
 
 subject-prefix: AzureBridge
-module-version: 0.9.0-preview
+module-version: 0.9.1-preview
 identity-correction-for-post: true
 service-name: BridgeAdmin
 
 ### File Renames
-module-name: Azs.AzureBridge.Admin
-csproj: Azs.AzureBridge.Admin.csproj
-psd1: Azs.AzureBridge.Admin.psd1
-psm1: Azs.AzureBridge.Admin.psm1
+module-name: Azs.Azurebridge.Admin
+csproj: Azs.Azurebridge.Admin.csproj
+psd1: Azs.Azurebridge.Admin.psd1
+psm1: Azs.Azurebridge.Admin.psm1
 
 directive:  
   - where:
@@ -117,19 +117,19 @@ directive:
     remove: true.
 
 # Add release notes
-  - from: Azs.AzureBridge.Admin.nuspec
+  - from: Azs.Azurebridge.Admin.nuspec
     where: $
     transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
 
 # Add Az.Accounts/Az.Resources as dependencies
-  - from: Azs.AzureBridge.Admin.nuspec
+  - from: Azs.Azurebridge.Admin.nuspec
     where: $
     transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp
     where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Azurebridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Azurebridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp
