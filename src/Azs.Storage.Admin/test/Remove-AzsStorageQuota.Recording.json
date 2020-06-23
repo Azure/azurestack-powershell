@@ -1,8 +1,8 @@
 {
-  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+1": {
+  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$PUT+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
       "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 50,\r\n    \"numberOfStorageAccounts\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "166" ],
@@ -38,13 +38,13 @@
         "Content-Type": [ "application/json" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
     }
   },
-  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$DELETE+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+2": {
+  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$DELETE+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+2": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "167" ],
@@ -80,10 +80,10 @@
       "Content": null
     }
   },
-  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+3": {
+  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$PUT+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
       "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 50,\r\n    \"numberOfStorageAccounts\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "168" ],
@@ -119,13 +119,13 @@
         "Content-Type": [ "application/json" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
     }
   },
-  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$GET+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+4": {
+  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$GET+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "169" ],
@@ -159,13 +159,13 @@
         "Content-Type": [ "application/json" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota\",\r\n  \"name\": \"redmond/TestDeleteQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 100,\r\n    \"capacityInGb\": 50\r\n  }\r\n}"
     }
   },
-  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$DELETE+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+5": {
+  "Remove-AzsStorageQuota+[NoContext]+TestDeleteStorageQuota+$DELETE+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview+5": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "170" ],

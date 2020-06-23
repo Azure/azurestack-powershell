@@ -1,8 +1,8 @@
 {
-  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$POST+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview+1": {
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$POST+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview+1": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/reclaimStorageCapacity?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "143" ],
@@ -29,7 +29,7 @@
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
         "Date": [ "Fri, 14 Feb 2020 09:26:21 GMT" ],
-        "Location": [ "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview" ],
+        "Location": [ "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
         "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv0VaFJvE41/AQPMnvn9nGTAVsoRt4Q1EX/bUZ6j6/aVzzJDBcArZOojZdtN5YJzR4NApqOkam7FI6ofZVh0taIMjQVnp89qI4Xd00pQsKtCPQgqJmDLHJ+ayo7qaiYSs4K2RaCc0L/S7BK0/j3XV4" ]
       },
@@ -40,10 +40,10 @@
       "Content": null
     }
   },
-  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+2": {
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "143", "144" ],
@@ -79,10 +79,10 @@
       "Content": null
     }
   },
-  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+3": {
+  "Start-AzsReclaimStorageCapacity+[NoContext]+TestStartGarbageCollection+$GET+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1803.masd.stbtest.microsoft.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/asyncoperations/0383df77-5dd9-4be8-b23e-a8167dd774cc?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "143", "144", "145" ],

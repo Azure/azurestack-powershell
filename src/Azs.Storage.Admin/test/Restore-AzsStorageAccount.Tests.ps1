@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Restore-AzsStorageAccount.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -18,7 +15,7 @@ Describe 'Restore-AzsStorageAccount' {
     It "TestRestoreStorageAccount" -Skip:$('TestRestoreStorageAccount' -in $global:SkippedTests) {
         $global:TestName = 'TestRestoreStorageAccount'
 
-        $storageAccounts = Get-AzsStorageAccount -Location $global:Location
-        { Restore-AzsStorageAccount -Location $global:Location -Name $storageAccounts[0].Name -Force } | Should Not Throw
+        $storageAccounts = Get-AzsStorageAccount 
+        { Restore-AzsStorageAccount  -Name $storageAccounts[0].Name -Force } | Should Not Throw
     }
 }
