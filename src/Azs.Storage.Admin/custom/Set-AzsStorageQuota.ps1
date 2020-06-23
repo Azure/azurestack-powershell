@@ -156,7 +156,16 @@ process {
     }
     else
     {
-        $quota = Azs.Storage.Admin.internal\Get-AzsStorageQuota -Name $quotaName -Location $Location -SubscriptionId $SubscriptionId
+        $params = @{}
+
+        if ($PSBoundParameters.ContainsKey('Location')){
+            $params.Add('Location', $Location)
+        }
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')){
+            $params.Add('SubscriptionId', $SubscriptionId)
+        }
+        
+        $quota = Azs.Storage.Admin.internal\Get-AzsStorageQuota -Name $quotaName @params
         
         if (-not $PSBoundParameters.ContainsKey('CapacityInGb'))
         {

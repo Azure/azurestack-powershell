@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Start-AzsReclaimStorageCapacity.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -18,6 +15,6 @@ Describe 'Start-AzsReclaimStorageCapacity' {
     It "TestStartGarbageCollection" -Skip:$('TestStartGarbageCollection' -in $global:SkippedTests) {
         $global:TestName = 'TestStartGarbageCollection'
 
-        { Start-AzsReclaimStorageCapacity -Location $global:Location -Force } | Should Not Throw
+        { Start-AzsReclaimStorageCapacity  -Force } | Should Not Throw
     }
 }

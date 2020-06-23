@@ -1,8 +1,8 @@
 {
-  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$GET+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+1": {
+  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$GET+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "179" ],
@@ -39,10 +39,10 @@
       "Content": "{\r\n  \"properties\": {\r\n    \"retentionPeriodForDeletedStorageAccountsInDays\": 1\r\n  }\r\n}"
     }
   },
-  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$PUT+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+2": {
+  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$PUT+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+2": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
       "Content": "{\r\n  \"properties\": {\r\n    \"retentionPeriodForDeletedStorageAccountsInDays\": 2\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "180" ],
@@ -81,10 +81,10 @@
       "Content": "{\r\n  \"properties\": {\r\n    \"retentionPeriodForDeletedStorageAccountsInDays\": 2\r\n  }\r\n}"
     }
   },
-  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$PUT+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+3": {
+  "Set-AzsStorageSettings+[NoContext]+TestUpdateStorageSettings+$PUT+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/settings?api-version=2019-08-08-preview",
       "Content": "{\r\n  \"properties\": {\r\n    \"retentionPeriodForDeletedStorageAccountsInDays\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "181" ],
