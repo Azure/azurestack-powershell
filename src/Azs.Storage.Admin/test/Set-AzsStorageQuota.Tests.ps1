@@ -64,8 +64,8 @@ Describe 'Set-AzsStorageQuota' {
         
         $quota | Should Not Be $null
 
-        $CapInGB = $quota.CapacityInGb + 1
-        $NumStorageAccounts = $quota.NumberOfStorageAccounts + 1
+        $CapInGB = 123
+        $NumStorageAccounts = 10
 
         $updated = Set-AzsStorageQuota `
             -CapacityInGb $CapInGB `
