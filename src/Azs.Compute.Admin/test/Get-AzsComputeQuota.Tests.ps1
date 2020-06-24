@@ -1,21 +1,4 @@
-$envFile = 'env.json'
-Write-Host "Loading env.json"
-if ($TestMode -eq 'live') {
-    $envFile = 'localEnv.json'
-}
-
-if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
-    $envFilePath = Join-Path $PSScriptRoot $envFile
-}
-else {
-    $envFilePath = Join-Path $PSScriptRoot '..\$envFile'
-}
-$env = @{ }
-if (Test-Path -Path $envFilePath) {
-    $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
-    $PSDefaultParameterValues = @{"*:SubscriptionId" = $env.SubscriptionId; "*:Tenant" = $env.Tenant; "*:Location" = $env.Location }
-    Write-Host "Default values: $($PSDefaultParameterValues.Values)"
-}
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
 
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsComputeQuota.Recording.json'
 $currentPath = $PSScriptRoot
@@ -24,7 +7,7 @@ while (-not $mockingPath) {
     $currentPath = Split-Path -Path $currentPath -Parent
 }
 . ($mockingPath | Select-Object -First 1).FullName
-#. "D:\Github2\azurestack-powershell\src\Azs.Compute.Admin\generated\runtime\HttpPipelineMocking.ps1"
+
 Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
 
     BeforeEach {
