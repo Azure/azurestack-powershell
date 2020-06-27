@@ -1,0 +1,116 @@
+{
+  "Subscriptions+[NoContext]+TestListSubscriptions+$GET+https://management.azure.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "155" ],
+        "x-ms-client-request-id": [ "72c4044c-a5fb-40f7-bb9e-29f9d8bd5987" ],
+        "CommandName": [ "Get-AzsSubscription" ],
+        "FullCommandName": [ "Get-AzsSubscription_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14999" ],
+        "x-ms-request-id": [ "9302b19c-acad-4ba7-9519-5e9f69e42917" ],
+        "x-ms-correlation-request-id": [ "9302b19c-acad-4ba7-9519-5e9f69e42917" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010357Z:9302b19c-acad-4ba7-9519-5e9f69e42917" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:57 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "406" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"offerId\":\"/delegatedProviders/default/offers/TestOffer-ed35f7f7-8601-4869-acdb-ee1792d708cd\",\"id\":\"/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c\",\"subscriptionId\":\"d135b752-4d8f-443c-a442-40fde0e9268c\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"displayName\":\"Test User-tenantadmin1@msazurestack.onmicrosoft.com\",\"state\":\"Enabled\",\"subscriptionPolicies\":{\"locationPlacementId\":\"AzureStack\"}}"
+    }
+  },
+  "Subscriptions+[NoContext]+TestGetSubscription+$GET+https://management.azure.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "156" ],
+        "x-ms-client-request-id": [ "afd05047-aadf-4222-81d6-3ba50cbcb1cf" ],
+        "CommandName": [ "Get-AzsSubscription" ],
+        "FullCommandName": [ "Get-AzsSubscription_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14998" ],
+        "x-ms-request-id": [ "2d689cde-e916-4b25-add3-dc78c594fca6" ],
+        "x-ms-correlation-request-id": [ "2d689cde-e916-4b25-add3-dc78c594fca6" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010357Z:2d689cde-e916-4b25-add3-dc78c594fca6" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:57 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "406" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"offerId\":\"/delegatedProviders/default/offers/TestOffer-ed35f7f7-8601-4869-acdb-ee1792d708cd\",\"id\":\"/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c\",\"subscriptionId\":\"d135b752-4d8f-443c-a442-40fde0e9268c\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"displayName\":\"Test User-tenantadmin1@msazurestack.onmicrosoft.com\",\"state\":\"Enabled\",\"subscriptionPolicies\":{\"locationPlacementId\":\"AzureStack\"}}"
+    }
+  },
+  "Subscriptions+[NoContext]+TestGetSubscription+$GET+https://management.azure.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "157" ],
+        "x-ms-client-request-id": [ "ed262445-6bcc-4401-bb77-57b1aaff7ecb" ],
+        "CommandName": [ "Get-AzsSubscription" ],
+        "FullCommandName": [ "Get-AzsSubscription_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14997" ],
+        "x-ms-request-id": [ "62dd6642-1970-453b-b915-0fae4ecc726c" ],
+        "x-ms-correlation-request-id": [ "62dd6642-1970-453b-b915-0fae4ecc726c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010357Z:62dd6642-1970-453b-b915-0fae4ecc726c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:57 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "406" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"offerId\":\"/delegatedProviders/default/offers/TestOffer-ed35f7f7-8601-4869-acdb-ee1792d708cd\",\"id\":\"/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c\",\"subscriptionId\":\"d135b752-4d8f-443c-a442-40fde0e9268c\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"displayName\":\"Test User-tenantadmin1@msazurestack.onmicrosoft.com\",\"state\":\"Enabled\",\"subscriptionPolicies\":{\"locationPlacementId\":\"AzureStack\"}}"
+    }
+  }
+}
