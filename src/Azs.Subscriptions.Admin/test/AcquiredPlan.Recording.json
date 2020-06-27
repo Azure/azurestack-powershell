@@ -1,0 +1,262 @@
+{
+  "AcquiredPlan+[NoContext]+[NoScenario]+$GET+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "5fb8b11a-8ca3-4e94-bd10-57c23b326015" ],
+        "CommandName": [ "Get-AzsUserSubscription" ],
+        "FullCommandName": [ "Get-AzsUserSubscription_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14724" ],
+        "x-ms-request-id": [ "9248f14c-c229-4798-af71-9659c060c847" ],
+        "x-ms-correlation-request-id": [ "9248f14c-c229-4798-af71-9659c060c847" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004934Z:9248f14c-c229-4798-af71-9659c060c847" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:34 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "9690" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/fba5bdb2-c2ca-48c1-a9af-6562a70603d8\",\"subscriptionId\":\"fba5bdb2-c2ca-48c1-a9af-6562a70603d8\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"DRPTestfba5bdb2-test-test-test-test-test-test-test-test-test-test-test-test-test\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"8272fdc6-5ec8-4aed-b10c-c09e3221910c\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/d135b752-4d8f-443c-a442-40fde0e9268c\",\"subscriptionId\":\"d135b752-4d8f-443c-a442-40fde0e9268c\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test User-tenantadmin1@msazurestack.onmicrosoft.com\",\"externalReferenceId\":\"\",\"owner\":\"tenantadmin1@msazurestack.onmicrosoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-b87b32e3-a7f7-41ba-b34f-8f8f7b5e303c/providers/Microsoft.Subscriptions.Admin/offers/TestOffer-ed35f7f7-8601-4869-acdb-ee1792d708cd\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/786a3bc0-f357-4e4c-8b41-cb2d18ce6fe8\",\"subscriptionId\":\"786a3bc0-f357-4e4c-8b41-cb2d18ce6fe8\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"tenantadmin1@msazurestack.onmicrosoft.com\",\"externalReferenceId\":\"\",\"owner\":\"tenantadmin1@msazurestack.onmicrosoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TenantResourceGroup/providers/Microsoft.Subscriptions.Admin/offers/TenantOffer\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/594d83ce-8057-41c1-8873-a402dc4a2783\",\"subscriptionId\":\"594d83ce-8057-41c1-8873-a402dc4a2783\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"user1@msazurestack.onmicrosoft.com\",\"externalReferenceId\":\"\",\"owner\":\"user1@msazurestack.onmicrosoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TenantResourceGroup/providers/Microsoft.Subscriptions.Admin/offers/TenantOffer\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5d1f5a67-2614-4841-8e0a-774297b4310c\",\"subscriptionId\":\"5d1f5a67-2614-4841-8e0a-774297b4310c\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"EventRPBVTTenantSubscription\",\"externalReferenceId\":\"\",\"owner\":\"tenantadmin1@msazurestack.onmicrosoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/EventRPBVTTenantSubscriptionPublicTest/providers/Microsoft.Subscriptions.Admin/offers/EventRPBVTTenantSubscriptionOffer\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/c66cb1bf-9a3d-492c-8acb-3e7deda6365e\",\"subscriptionId\":\"c66cb1bf-9a3d-492c-8acb-3e7deda6365e\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/b541d707-8ef0-4898-a96b-6507dae61be6\",\"subscriptionId\":\"b541d707-8ef0-4898-a96b-6507dae61be6\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/96f7c272-e25c-4cd0-9d9c-93420a4c2e28\",\"subscriptionId\":\"96f7c272-e25c-4cd0-9d9c-93420a4c2e28\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/0699669b-b96a-452c-a757-507cb2b7de4e\",\"subscriptionId\":\"0699669b-b96a-452c-a757-507cb2b7de4e\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-4154d8bfbfcb\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-4154d8bfbfcb\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-4154d8bfbfch\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-4154d8bfbfch\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-4154d8bfbf18\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-4154d8bfbf18\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-0211g8bfbf94\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-0211g8bfbf94\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-0211g8bfbf92\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-0211g8bfbf92\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/eb377774-8d90-4f4b-bc76-0211g8bfbf90\",\"subscriptionId\":\"eb377774-8d90-4f4b-bc76-0211g8bfbf90\",\"delegatedProviderSubscriptionId\":\"5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6\",\"displayName\":\"Test Subscription\",\"owner\":\"user@microsoft.com\",\"tenantId\":\"0a9c9a9e-2774-489f-8560-bae5824f8b46\",\"routingResourceManagerType\":\"Default\",\"offerId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/offers/DRPTestOffer2393\",\"state\":\"Enabled\"}]}"
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestListAcquiredPlans+$GET+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "0bbfedc9-8338-4595-b467-d795d96a6515" ],
+        "CommandName": [ "Get-AzsSubscriptionPlan" ],
+        "FullCommandName": [ "Get-AzsAcquiredPlan_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14722" ],
+        "x-ms-request-id": [ "b48b89a5-5219-4e8a-a87b-ca457e63a6fd" ],
+        "x-ms-correlation-request-id": [ "b48b89a5-5219-4e8a-a87b-ca457e63a6fd" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004936Z:b48b89a5-5219-4e8a-a87b-ca457e63a6fd" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:35 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "12" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[]}"
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestGetAcquiredPlan+$GET+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "e8a62a18-b936-424b-a036-27e8b4da70ae" ],
+        "CommandName": [ "Get-AzsSubscriptionPlan" ],
+        "FullCommandName": [ "Get-AzsAcquiredPlan_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14721" ],
+        "x-ms-request-id": [ "6b67b2db-db9c-44d4-a300-8b1a4da0b79f" ],
+        "x-ms-correlation-request-id": [ "6b67b2db-db9c-44d4-a300-8b1a4da0b79f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004936Z:6b67b2db-db9c-44d4-a300-8b1a4da0b79f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:36 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "12" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[]}"
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestCreateThenDeleteAcquiredPlan+$GET+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/plans?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/plans?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "4" ],
+        "x-ms-client-request-id": [ "db90a937-62f4-4673-9f4f-5bfc43824492" ],
+        "CommandName": [ "Get-AzsPlan" ],
+        "FullCommandName": [ "Get-AzsPlan_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14720" ],
+        "x-ms-request-id": [ "9e297dd8-fa00-4e12-a15a-9731964cae64" ],
+        "x-ms-correlation-request-id": [ "9e297dd8-fa00-4e12-a15a-9731964cae64" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004937Z:9e297dd8-fa00-4e12-a15a-9731964cae64" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:36 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "20777" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/plans/DRPTestPlan2393\",\"name\":\"DRPTestPlan2393\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"DRPTestPlan2393\",\"displayName\":\"DRPTestPlan2393-test-test-test-test-test-test\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":11,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Default Quota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-5539fb08-8ec2-4d20-a588-c9fb9de27627\",\"name\":\"TestPlan-5539fb08-8ec2-4d20-a588-c9fb9de27627\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-5539fb08-8ec2-4d20-a588-c9fb9de27627\",\"displayName\":\"TestPlan-5539fb08-8ec2-4d20-a588-c9fb9de27627\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-cfc6a467-deb6-4914-8959-a268088f372f\",\"name\":\"TestPlan-cfc6a467-deb6-4914-8959-a268088f372f\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-cfc6a467-deb6-4914-8959-a268088f372f\",\"displayName\":\"TestPlan-cfc6a467-deb6-4914-8959-a268088f372f\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-88210f00-afc8-4a12-87bd-3539115cbee0\",\"name\":\"TestPlan-88210f00-afc8-4a12-87bd-3539115cbee0\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-88210f00-afc8-4a12-87bd-3539115cbee0\",\"displayName\":\"TestPlan-88210f00-afc8-4a12-87bd-3539115cbee0\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-5bab4381-fd79-409a-b095-6a4ab04e8886\",\"name\":\"TestPlan-5bab4381-fd79-409a-b095-6a4ab04e8886\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-5bab4381-fd79-409a-b095-6a4ab04e8886\",\"displayName\":\"TestPlan-5bab4381-fd79-409a-b095-6a4ab04e8886\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-01909e3d-f704-4f58-861f-0472fcfd6e10/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-d3e82a88-2dae-450b-8ebd-37d0571081f4\",\"name\":\"TestPlan-d3e82a88-2dae-450b-8ebd-37d0571081f4\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-d3e82a88-2dae-450b-8ebd-37d0571081f4\",\"displayName\":\"TestPlan-d3e82a88-2dae-450b-8ebd-37d0571081f4\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-8a612ddc-1864-47bc-8777-ad3fb534f3fd\",\"name\":\"TestPlan-8a612ddc-1864-47bc-8777-ad3fb534f3fd\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-8a612ddc-1864-47bc-8777-ad3fb534f3fd\",\"displayName\":\"TestPlan-8a612ddc-1864-47bc-8777-ad3fb534f3fd\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-78831853-1c00-45ac-a663-1f9e2e9fea65\",\"name\":\"TestPlan-78831853-1c00-45ac-a663-1f9e2e9fea65\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-78831853-1c00-45ac-a663-1f9e2e9fea65\",\"displayName\":\"TestPlan-78831853-1c00-45ac-a663-1f9e2e9fea65\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-1e3bec6d-7085-46fc-bd18-e6eeb278b1d2\",\"name\":\"TestPlan-1e3bec6d-7085-46fc-bd18-e6eeb278b1d2\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-1e3bec6d-7085-46fc-bd18-e6eeb278b1d2\",\"displayName\":\"TestPlan-1e3bec6d-7085-46fc-bd18-e6eeb278b1d2\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Basic\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-dcda135f-c07a-4824-b87e-d830059ac056\",\"name\":\"TestPlan-dcda135f-c07a-4824-b87e-d830059ac056\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-dcda135f-c07a-4824-b87e-d830059ac056\",\"displayName\":\"TestPlan-dcda135f-c07a-4824-b87e-d830059ac056\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-ee4dcc37-d06b-4819-a53e-e00458534c32\",\"name\":\"TestPlan-ee4dcc37-d06b-4819-a53e-e00458534c32\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-ee4dcc37-d06b-4819-a53e-e00458534c32\",\"displayName\":\"TestPlan-ee4dcc37-d06b-4819-a53e-e00458534c32\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-f6e2d3ea-c68d-43d6-bfcf-ca11fac82d49\",\"name\":\"TestPlan-f6e2d3ea-c68d-43d6-bfcf-ca11fac82d49\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-f6e2d3ea-c68d-43d6-bfcf-ca11fac82d49\",\"displayName\":\"TestPlan-f6e2d3ea-c68d-43d6-bfcf-ca11fac82d49\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-2daf933c-5a2d-4813-ab72-b89641c5881d\",\"name\":\"TestPlan-2daf933c-5a2d-4813-ab72-b89641c5881d\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-2daf933c-5a2d-4813-ab72-b89641c5881d\",\"displayName\":\"TestPlan-2daf933c-5a2d-4813-ab72-b89641c5881d\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-23bd1f1a-dd79-45dd-9bc4-21eea164ce93\",\"name\":\"TestPlan-23bd1f1a-dd79-45dd-9bc4-21eea164ce93\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-23bd1f1a-dd79-45dd-9bc4-21eea164ce93\",\"displayName\":\"TestPlan-23bd1f1a-dd79-45dd-9bc4-21eea164ce93\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-6ecc67fd-bb51-4717-806d-b351d74459b2/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-7b6cf8a4-851e-4dc7-982f-0569818d3a33\",\"name\":\"TestPlan-7b6cf8a4-851e-4dc7-982f-0569818d3a33\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-7b6cf8a4-851e-4dc7-982f-0569818d3a33\",\"displayName\":\"TestPlan-7b6cf8a4-851e-4dc7-982f-0569818d3a33\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KatalBvtRG/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-68d6a004-e9f0-4833-b2a0-b55aa87e739a\",\"name\":\"TestPlan-68d6a004-e9f0-4833-b2a0-b55aa87e739a\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-68d6a004-e9f0-4833-b2a0-b55aa87e739a\",\"displayName\":\"TestPlan-68d6a004-e9f0-4833-b2a0-b55aa87e739a\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-c3ec8f78-0c0b-4469-8752-94a3c543e815/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-cdc0bf7a-4793-400a-9f3a-a8dddbab1a9a\",\"name\":\"TestPlan-cdc0bf7a-4793-400a-9f3a-a8dddbab1a9a\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-cdc0bf7a-4793-400a-9f3a-a8dddbab1a9a\",\"displayName\":\"TestPlan-cdc0bf7a-4793-400a-9f3a-a8dddbab1a9a\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-c3ec8f78-0c0b-4469-8752-94a3c543e815/providers/Microsoft.Subscriptions.Admin/plans/TestDelegatablePlan-1be4ca68-9599-42c3-8502-0262798b91fb\",\"name\":\"TestDelegatablePlan-1be4ca68-9599-42c3-8502-0262798b91fb\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestDelegatablePlan-1be4ca68-9599-42c3-8502-0262798b91fb\",\"displayName\":\"TestDelegatablePlan-1be4ca68-9599-42c3-8502-0262798b91fb\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/cnur3316subscrrg594/providers/Microsoft.Subscriptions.Admin/plans/cnur3316tenantplan594\",\"name\":\"cnur3316tenantplan594\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"cnur3316tenantplan594\",\"displayName\":\"cnur3316tenantplan594\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/ascanstorquota479\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/ascannetquota944\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/ascancompquota629\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/cnur3316resellersubscrrg594/providers/Microsoft.Subscriptions.Admin/plans/cnur3316subsvcplan594\",\"name\":\"cnur3316subsvcplan594\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"cnur3316subsvcplan594\",\"displayName\":\"cnur3316subsvcplan594\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-f11d8963-f8b8-448f-b4a1-ec17647e29df/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-922bf1bd-ed33-4d30-9fc8-03ae80ac3c2f\",\"name\":\"TestPlan-922bf1bd-ed33-4d30-9fc8-03ae80ac3c2f\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-922bf1bd-ed33-4d30-9fc8-03ae80ac3c2f\",\"displayName\":\"TestPlan-922bf1bd-ed33-4d30-9fc8-03ae80ac3c2f\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-f11d8963-f8b8-448f-b4a1-ec17647e29df/providers/Microsoft.Subscriptions.Admin/plans/TestDelegatablePlan-dc3b8863-4f3d-4ebc-9b89-75d622ee27eb\",\"name\":\"TestDelegatablePlan-dc3b8863-4f3d-4ebc-9b89-75d622ee27eb\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestDelegatablePlan-dc3b8863-4f3d-4ebc-9b89-75d622ee27eb\",\"displayName\":\"TestDelegatablePlan-dc3b8863-4f3d-4ebc-9b89-75d622ee27eb\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-b87b32e3-a7f7-41ba-b34f-8f8f7b5e303c/providers/Microsoft.Subscriptions.Admin/plans/TestPlan-313e0c70-359c-45fc-bdd1-c05a7db1ce9d\",\"name\":\"TestPlan-313e0c70-359c-45fc-bdd1-c05a7db1ce9d\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestPlan-313e0c70-359c-45fc-bdd1-c05a7db1ce9d\",\"displayName\":\"TestPlan-313e0c70-359c-45fc-bdd1-c05a7db1ce9d\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":1,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TestRG-b87b32e3-a7f7-41ba-b34f-8f8f7b5e303c/providers/Microsoft.Subscriptions.Admin/plans/TestDelegatablePlan-2f9718db-9a3a-4675-86a3-c2dccef20bf5\",\"name\":\"TestDelegatablePlan-2f9718db-9a3a-4675-86a3-c2dccef20bf5\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TestDelegatablePlan-2f9718db-9a3a-4675-86a3-c2dccef20bf5\",\"displayName\":\"TestDelegatablePlan-2f9718db-9a3a-4675-86a3-c2dccef20bf5\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Basic\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/TenantResourceGroup/providers/Microsoft.Subscriptions.Admin/plans/TenantPlan\",\"name\":\"TenantPlan\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"TenantPlan\",\"displayName\":\"TenantPlan\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":2,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/AzMonQuota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.AzureStackResourceMonitor.Admin/locations/redmond/quotas/Unlimited\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/EventRPBVTTenantSubscriptionPublicTest/providers/Microsoft.Subscriptions.Admin/plans/EventRPBVTTenantSubscriptionPlan\",\"name\":\"EventRPBVTTenantSubscriptionPlan\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"EventRPBVTTenantSubscriptionPlan\",\"displayName\":\"EventRPBVTTenantSubscriptionPlan\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":1,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/EventRPBVTTenantSubscriptionQuota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Default Quota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/UxTstDB584B61RG-6f5da050-1178-40b1-9bb0-38708a09bf81/providers/Microsoft.Subscriptions.Admin/plans/UxTstDB584B61Plan-6f5da050-1178-40b1-9bb0-38708a09bf81\",\"name\":\"UxTstDB584B61Plan-6f5da050-1178-40b1-9bb0-38708a09bf81\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"UxTstDB584B61Plan-6f5da050-1178-40b1-9bb0-38708a09bf81\",\"displayName\":\"UxTstDB584B61Plan-6f5da050-1178-40b1-9bb0-38708a09bf81\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/locations/redmond/quotas/delegatedProviderQuota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Storage.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Network.Admin/locations/redmond/quotas/Default Quota\",\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Compute.Admin/locations/redmond/quotas/Default Quota\"]}},{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/KVUXBVTRG_ac1dc306-41ff-4a5d-843c-2f14f062cebb/providers/Microsoft.Subscriptions.Admin/plans/KVUXBVTPlan_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"name\":\"KVUXBVTPlan_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"type\":\"Microsoft.Subscriptions.Admin/plans\",\"location\":\"redmond\",\"properties\":{\"name\":\"KVUXBVTPlan_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"displayName\":\"Key Vault BVT Plan\",\"description\":\"\",\"externalReferenceId\":\"\",\"subscriptionCount\":0,\"quotaIds\":[\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.KeyVault.Admin/locations/redmond/quotas/Unlimited\"]}}]}"
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestCreateThenDeleteAcquiredPlan+$PUT+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01",
+      "Content": "{\r\n  \"acquisitionId\": \"718c7f7c-4868-479a-98ce-5caaa8f158c8\",\r\n  \"planId\": \"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/resourceGroups/DRPTestResourceGroup2393/providers/Microsoft.Subscriptions.Admin/plans/DRPTestPlan2393\"\r\n}",
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "233" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1187" ],
+        "x-ms-request-id": [ "a7cbb325-89d9-4cae-b7ea-974e933032af" ],
+        "x-ms-correlation-request-id": [ "a7cbb325-89d9-4cae-b7ea-974e933032af" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004937Z:a7cbb325-89d9-4cae-b7ea-974e933032af" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:36 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "463" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8\",\"acquisitionId\":\"718c7f7c-4868-479a-98ce-5caaa8f158c8\",\"planId\":\"/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/plans/DRPTestPlan2393\",\"provisioningState\":\"Succeeded\",\"acquisitionTime\":\"2020-06-27T00:49:37.4833333Z\"}"
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestCreateThenDeleteAcquiredPlan+$DELETE+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01+3": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "6" ],
+        "x-ms-client-request-id": [ "2888198d-80c9-4634-ac6a-b3218909b040" ],
+        "CommandName": [ "Remove-AzsSubscriptionPlan" ],
+        "FullCommandName": [ "Remove-AzsAcquiredPlan_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14995" ],
+        "x-ms-request-id": [ "15c0a248-d131-4507-a09d-24d9af92be32" ],
+        "x-ms-correlation-request-id": [ "15c0a248-d131-4507-a09d-24d9af92be32" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004938Z:15c0a248-d131-4507-a09d-24d9af92be32" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:38 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "AcquiredPlan+[NoContext]+TestCreateThenDeleteAcquiredPlan+$GET+https://management.azure.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/providers/Microsoft.Subscriptions.Admin/subscriptions/5816b1a6-ee2e-4590-8dff-a6a1e0de9ef6/acquiredPlans/718c7f7c-4868-479a-98ce-5caaa8f158c8?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "7" ],
+        "x-ms-client-request-id": [ "07a52c1d-1461-48fe-9073-3dd1b05e1098" ],
+        "CommandName": [ "Get-AzsSubscriptionPlan" ],
+        "FullCommandName": [ "Get-AzsAcquiredPlan_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 404,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14719" ],
+        "x-ms-request-id": [ "483b0df7-dc0f-4ead-b5f4-7cc61b2c6d7e" ],
+        "x-ms-correlation-request-id": [ "483b0df7-dc0f-4ead-b5f4-7cc61b2c6d7e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T004938Z:483b0df7-dc0f-4ead-b5f4-7cc61b2c6d7e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 00:49:38 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "152" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"error\":{\"code\":\"PlanAcquisitionNotFound\",\"message\":\"The plan acquisition with identifier \u0027718c7f7c-4868-479a-98ce-5caaa8f158c8\u0027 could not be found.\"}}"
+    }
+  }
+}
