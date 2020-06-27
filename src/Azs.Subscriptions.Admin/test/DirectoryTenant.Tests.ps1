@@ -1,3 +1,9 @@
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'DirectoryTenant.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -76,15 +82,4 @@ Describe 'DirectoryTenant' {
         }
     }
 
-    it "TestGetDirectoryTenant" -Skip:$('TestGetDirectoryTenant' -in $global:SkippedTests) {
-        <# $global:TestName = 'TestGetDirectoryTenant'
-
-        $tenant = Get-AzsDirectoryTenant -ResourceGroupName $global:ResourceGroupName
-        $tenant2 = Get-AzsDirectoryTenant -ResourceGroupName $global:ResourceGroupName -Name $tenant.Name
-        AssertDirectoryTenantsSame $tenant $tenant2 #>
-    }
-
-    It 'GetViaIdentity' {
-        #{ throw [System.NotImplementedException] } | Should -Not -Throw
-    }
 }

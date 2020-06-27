@@ -1,3 +1,9 @@
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'DelegatedProviderManagedOffer.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -44,11 +50,4 @@ Describe 'DelegatedProviderManagedOffer' {
         }
     }
 
-    It 'Get' {
-        #{ throw [System.NotImplementedException] } | Should -Not -Throw
-    }
-
-    It 'GetViaIdentity' {
-        #{ throw [System.NotImplementedException] } | Should -Not -Throw
-    }
 }
