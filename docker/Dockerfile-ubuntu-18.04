@@ -8,9 +8,9 @@ ARG AZURE=/root/.Azure
 ARG VCS_REF="none"
 ARG BUILD_DATE=
 ARG VERSION=
-ARG IMAGE_NAME=mcr.microsoft.com/azure-powershell:${VERSION}-ubuntu-18.04
+ARG IMAGE_NAME=mcr.microsoft.com/azure-stack-powershell:${VERSION}-ubuntu-18.04
 ARG AZURESTACK_PROFILE=2019-03-01-hybrid
-ARG AZURESTACK_VERSION=2.0.0-preview
+ARG AZURESTACK_VERSION=2.0.1-preview
 
 ENV AZUREPS_HOST_ENVIRONMENT="dockerImage/${VERSION}-ubuntu-18.04"
 
