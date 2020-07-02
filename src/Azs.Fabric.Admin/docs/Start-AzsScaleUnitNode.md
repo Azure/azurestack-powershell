@@ -38,7 +38,7 @@ Power on a scale unit node.
 
 ### Example 2:
 ```powershell
-PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236" -AsJob
+PS C:\> Start-AzsScaleUnitNode -Name "HC1n25r2236" -AsJob
 ```
 
 Power on a scale unit node. As a job.
