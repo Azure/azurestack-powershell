@@ -43,13 +43,19 @@ Power off a scale unit node.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:
 ```powershell
-PS C:\> Stop-AzsInfrastructureRoleInstancef -Name "AzS-ACS01"
-
+PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236"
 ```
 
-Power off a infrastructure role instance.
+Power down a scale unit node.
+
+### Example 2:
+```powershell
+PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236" -AsJob
+```
+
+Power down a scale unit node. As a job.
 
 ## PARAMETERS
 
