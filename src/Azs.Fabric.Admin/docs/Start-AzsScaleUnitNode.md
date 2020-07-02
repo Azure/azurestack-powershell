@@ -34,6 +34,7 @@ Power on a scale unit node.
 ```powershell
 PS C:\> Start-AzsScaleUnitNode -Name "HC1n25r2236"
 ```
+
 Power on a scale unit node.
 
 ### Example 2:
