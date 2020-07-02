@@ -32,12 +32,16 @@ Power on a scale unit node.
 
 ### Example 1:
 ```powershell
-PS C:\> Start-AzsScaleUnitNode -Name "AzS-ACS01"
+PS C:\> Start-AzsScaleUnitNode -Name "HC1n25r2236"
+```
+Power on a scale unit node.
 
-ProvisioningState : Succeeded
+### Example 2:
+```powershell
+PS C:\> Stop-AzsScaleUnitNode -Name "HC1n25r2236" -AsJob
 ```
 
-Power on a scale unit node.
+Power on a scale unit node. As a job.
 
 ## PARAMETERS
 
