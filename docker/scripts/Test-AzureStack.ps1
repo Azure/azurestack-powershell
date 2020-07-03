@@ -1,17 +1,7 @@
-# Execute a set of basic tests using the Admin and User Az modules aganist provided AzureStack Environment 
+# Sample script to execute a set of basic tests using the Admin and User Az modules aganist provided AzureStack Environment 
+# First setup Azure PowerShell context by running Initialize-AzurePowerShellEnvironment.ps1
 [CmdletBinding()]
 param (
-    [string]
-    $ARMEndpoint = $ENV:ARMEndpoint,
-
-    [string]
-    $ClientId = $ENV:ClientId,
-
-    [string]
-    $ClientSecret = $ENV:ClientSecret,
-
-    [string]
-    $TenantId = $ENV:TenantId
 )
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
@@ -25,20 +15,32 @@ function Setup
 {
   Log -param "START: $($MyInvocation.MyCommand)"
 
-  Import-Module Az.Accounts
-  Add-AzEnvironment -Name AzureStack -ARMEndpoint $ARMEndpoint
-  $creds = New-Object pscredential($ClientId, (ConvertTo-SecureString -String $ClientSecret -AsPlainText -Force))
-  Login-AzAccount -Environment AzureStack -Credential $creds -Tenant $TenantId -ServicePrincipal
+  $context = Get-AzContext
+
+  if(-not $context)
+  {
+    $msg = "First setup AzureStack context by running Initialize-AzurePowerShellEnvironment.ps1" 
+    Log -param $msg
+    Write-Error -Message $msg
+  }
   
   Log -param "Subscription List:"
   Get-AzSubscription
 
   Log -param "END: $($MyInvocation.MyCommand)"
-
 }
+
+function Get-ArmEndpoint
+{
+    $context = Get-AzContext
+    $ARMEndpoint = $context.Environment.ResourceManagerUrl
+    return $ARMEndpoint
+}
+
 function Test-AdminModules()
 {
     Log -param "START: $($MyInvocation.MyCommand)"
+    $ARMEndpoint = Get-ArmEndpoint
     if($ARMEndpoint -ilike "https://adminmanagement.*")
     {
       Import-Module AzureStack
@@ -64,16 +66,10 @@ function Test-UserModules()
 
 function Main()
 {
-  if($ARMEndpoint -and $ClientId -and $ClientSecret)
-  {
+    $ErrorActionPreference = 'Stop'
     Setup
     Test-AdminModules
     Test-UserModules
-  }
-  else 
-  {
-    Log -param "Required env parameters: ARMEndpoint, ClientId, ClientSecret not provided."  
-  }
 }
 
 Main
