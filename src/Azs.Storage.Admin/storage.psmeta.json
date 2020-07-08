@@ -1,0 +1,1107 @@
+{
+  "info": {
+    "x-ps-code-generation-settings": {
+      "codeGenerator": "AzureCSharp",
+      "nameSpacePrefix": "Microsoft.Management.AzureStack.",
+      "noAssembly": false,
+      "powerShellCorePath": "",
+      "includeCoreFxAssembly": false,
+      "testBuild": false,
+      "confirmBootstrap": false,
+      "path": ".",
+      "symbolPath": ".",
+      "serviceType": "azure_stack",
+      "customAuthCommand": "",
+      "hostOverrideCommand": "",
+      "noAuthChallenge": ""
+    },
+    "x-ps-module-info": {
+      "name": "StorageAdminClient",
+      "moduleVersion": "0.0.1",
+      "guid": "c5c9a51b-d7a7-4d25-96eb-8c52ae3c8039",
+      "description": "Storage Admin Client",
+      "author": "",
+      "companyName": "",
+      "CopyRight": "",
+      "licenseUri": "",
+      "projectUri": "",
+      "helpInfoUri": "",
+      "iconUri": "",
+      "releaseNotes": "",
+      "defaultCommandPrefix": "",
+      "tags": [
+
+      ]
+    }
+  },
+  "paths": {
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/storageaccounts/{accountId}/undelete": {
+      "post": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Restore-AzsStorageAccount",
+            "description": "Restore a deleted storage account.",
+            "defaultParameterSet": "StorageAccounts_Undelete",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+	},
+	"/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/storageaccounts/{accountId}": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageAccount",
+            "description": "Returns the requested storage account.",
+            "defaultParameterSet": "StorageAccounts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Storage.Admin/locations/{location}/quotas/{quotaName}": {
+      "delete": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Remove-AzsStorageQuota",
+            "description": "Delete an existing quota",
+            "defaultParameterSet": "StorageQuotas_Delete",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      },
+      "put": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "New-AzsStorageQuota",
+            "description": "Create or update an existing storage quota.",
+            "defaultParameterSet": "StorageQuotas_CreateOrUpdate",
+            "generateCommand": true
+          },
+          {
+            "name": "Set-AzsStorageQuota",
+            "description": "Create or update an existing storage quota.",
+            "defaultParameterSet": "StorageQuotas_CreateOrUpdate",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      },
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageQuota",
+            "description": "Returns the specified storage quota.",
+            "defaultParameterSet": "StorageQuotas_Get",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/acquisitions": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageAcquisition",
+            "description": "Returns a list of blob acquistions.",
+            "defaultParameterSet": "Acquisitions_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Storage.Admin/locations/{location}/quotas": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageQuota",
+            "description": "Returns a list of storage quotas at the given location.",
+            "defaultParameterSet": "StorageQuotas_Get",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/settings": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageSettings",
+            "description": "Returns the storage resource provider settings.",
+            "defaultParameterSet": "StorageSettings_Get",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      },
+      "post": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Update-AzsStorageSettings",
+            "description": "Update storge resource provider settings.",
+            "defaultParameterSet": "StorageSettings_Update",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/storageaccounts": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageAccount",
+            "description": "Returns a list of storage accounts.",
+            "defaultParameterSet": "StorageAccounts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/providers/Microsoft.Storage.Admin/operations": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-AzsStorageOperation",
+            "description": "Get the list of support rest operations.",
+            "defaultParameterSet": "Operations_List",
+            "generateCommand": false
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Storage.Admin/storageaccounts/ondemandgc": {
+      "post": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Start-AzsReclaimStorageCapacity",
+            "description": "Start garbage collection on deleted storage objects.",
+            "defaultParameterSet": "StorageAccounts_OnDemandGC",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+
+        }
+      }
+    }
+  },
+  "definitions": {
+    "WacAccountPermissions": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-WacAccountPermissionsObject",
+          "description": "Current operation being performed on Storage Account",
+          "defaultParameterSet": "WacAccountPermissions",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "AcquisitionStatus": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-AcquisitionStatusObject",
+          "description": "The status of page blob acquisition.",
+          "defaultParameterSet": "AcquisitionStatus",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "Acquisition": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-AcquisitionObject",
+          "description": "The acquisition of page blob.",
+          "defaultParameterSet": "Acquisition",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageAccount": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountObject",
+          "description": "Properties of the storage account.",
+          "defaultParameterSet": "StorageAccount",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageAccountProperties": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountPropertiesObject",
+          "description": "Properties of a storage account.",
+          "defaultParameterSet": "StorageAccountProperties",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "creationTime": {
+          "x-ps-parameter-info": {
+            "name": "CreationTime",
+            "description": "The creation date and time of storage account in UTC."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "tenantResourceGroupName": {
+          "x-ps-parameter-info": {
+            "name": "TenantResourceGroupName",
+            "description": "The name of resource group under which the storage account locates."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "primaryEndpoints": {
+          "x-ps-parameter-info": {
+            "name": "PrimaryEndpoints",
+            "description": "The URLs that are used to perform a retrieval of a public blob, queue, or table object."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "deletedTime": {
+          "x-ps-parameter-info": {
+            "name": "DeletedTime",
+            "description": "The date-time when the storage account was deleted."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        },
+        "recycledTime": {
+          "x-ps-parameter-info": {
+            "name": "RecycledTime",
+            "description": "The time when the storage account is physically deleted."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 4,
+            "width": 10
+          }
+        },
+        "recoveredTime": {
+          "x-ps-parameter-info": {
+            "name": "RecoveredTime",
+            "description": "The time when the storage account is undeleted."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "currentOperation": {
+          "x-ps-parameter-info": {
+            "name": "CurrentOperation",
+            "description": "Current operation being performed on Storage Account"
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "accountId": {
+          "x-ps-parameter-info": {
+            "name": "AccountId",
+            "description": "Internal storage account ID, which is not visible to tenant."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "permissions": {
+          "x-ps-parameter-info": {
+            "name": "Permissions",
+            "description": "The permissions on the storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "tenantSubscriptionId": {
+          "x-ps-parameter-info": {
+            "name": "TenantSubscriptionId",
+            "description": "Subscription ID of the subscription under which the storage account locates."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "acquisitionOperationCount": {
+          "x-ps-parameter-info": {
+            "name": "AcquisitionOperationCount",
+            "description": "The count of acquisitions in the storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "statusOfPrimary": {
+          "x-ps-parameter-info": {
+            "name": "StatusOfPrimary",
+            "description": "The status of primary location of storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "resourceAdminApiVersion": {
+          "x-ps-parameter-info": {
+            "name": "ResourceAdminApiVersion",
+            "description": "Storage admin REST API version."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "customDomain": {
+          "x-ps-parameter-info": {
+            "name": "CustomDomain",
+            "description": "The custom domain the user assigned to this storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "primaryLocation": {
+          "x-ps-parameter-info": {
+            "name": "PrimaryLocation",
+            "description": "The primary location for the storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "tenantViewId": {
+          "x-ps-parameter-info": {
+            "name": "TenantViewId",
+            "description": "Resource URI of storage account from tenant view."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "wacInternalState": {
+          "x-ps-parameter-info": {
+            "name": "WacInternalState",
+            "description": "The internal state of storage account in WAC."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "accountStatus": {
+          "x-ps-parameter-info": {
+            "name": "AccountStatus",
+            "description": "The status of storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "alternateName": {
+          "x-ps-parameter-info": {
+            "name": "AlternateName",
+            "description": "Alternative storage account name being used during undelete operation."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "provisioningState": {
+          "x-ps-parameter-info": {
+            "name": "ProvisioningState",
+            "description": "The provisioning state of storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "tenantStorageAccountName": {
+          "x-ps-parameter-info": {
+            "name": "TenantStorageAccountName",
+            "description": "Storage account name from tenant view."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "accountType": {
+          "x-ps-parameter-info": {
+            "name": "AccountType",
+            "description": "Storage account type."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "AcquisitionProperties": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-AcquisitionPropertiesObject",
+          "description": "The Properties of page blob acquisition.",
+          "defaultParameterSet": "AcquisitionProperties",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "blob": {
+          "x-ps-parameter-info": {
+            "name": "Blob",
+            "description": "The name of the page blob."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "container": {
+          "x-ps-parameter-info": {
+            "name": "Container",
+            "description": "The container associated with the the page blob."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "susbcriptionid": {
+          "x-ps-parameter-info": {
+            "name": "Susbcriptionid",
+            "description": "ID of the subscription associated with the the page blob."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "maximumblobsize": {
+          "x-ps-parameter-info": {
+            "name": "Maximumblobsize",
+            "description": "The maximum size of the page blob."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        },
+        "acquisitionid": {
+          "x-ps-parameter-info": {
+            "name": "Acquisitionid",
+            "description": "The ID of page blob acquisition."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 4,
+            "width": 10
+          }
+        },
+        "storageaccount": {
+          "x-ps-parameter-info": {
+            "name": "Storageaccount",
+            "description": "The storage account that holds the page blob."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "filePath": {
+          "x-ps-parameter-info": {
+            "name": "FilePath",
+            "description": "The file path of the page blob file on storage cluster."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "status": {
+          "x-ps-parameter-info": {
+            "name": "Status",
+            "description": "The status of the page blob acquisition."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "AcquisitionList": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-AcquisitionListObject",
+          "description": "The list of page blob acquisitions.",
+          "defaultParameterSet": "AcquisitionList",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageAccountStatus": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountStatusObject",
+          "description": "The state of storage account in WAC.",
+          "defaultParameterSet": "StorageAccountStatus",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageAccountState": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountStateObject",
+          "description": "Storage account state.",
+          "defaultParameterSet": "StorageAccountState",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "Container": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ContainerObject",
+          "description": "Container properties.",
+          "defaultParameterSet": "Container",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "accountname": {
+          "x-ps-parameter-info": {
+            "name": "Accountname",
+            "description": "The name of storage account where the container locates."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "containerState": {
+          "x-ps-parameter-info": {
+            "name": "ContainerState",
+            "description": "The current state of the container."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "containername": {
+          "x-ps-parameter-info": {
+            "name": "Containername",
+            "description": "Container name."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "sharename": {
+          "x-ps-parameter-info": {
+            "name": "Sharename",
+            "description": "The name of the share where the container locates."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        },
+        "usedBytesInPrimaryVolume": {
+          "x-ps-parameter-info": {
+            "name": "UsedBytesInPrimaryVolume",
+            "description": "The used space (in Bytes) of the container in the primary volume."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 4,
+            "width": 10
+          }
+        },
+        "containerid": {
+          "x-ps-parameter-info": {
+            "name": "Containerid",
+            "description": "The container ID."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "accountid": {
+          "x-ps-parameter-info": {
+            "name": "Accountid",
+            "description": "The ID of storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "WacAccountStates": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-WacAccountStatesObject",
+          "description": "Current operation being performed on Storage Account",
+          "defaultParameterSet": "WacAccountStates",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageSettings": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageSettingsObject",
+          "description": "Storage farm settings.",
+          "defaultParameterSet": "FarmSettings",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "retentionPeriodForDeletedStorageAccountsInDays": {
+          "x-ps-parameter-info": {
+            "name": "RetentionPeriodForDeletedStorageAccountsInDays",
+            "description": "The retention period (in days) for deleted storage account."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "StorageQuota": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageQuotaObject",
+          "description": "Storage quota.",
+          "defaultParameterSet": "StorageQuota",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageQuotaList": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageQuotaListObject",
+          "description": "Pageable list of storage quotas.",
+          "defaultParameterSet": "StorageQuotaList",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of storage quotas."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "StorageQuotaProperties": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageQuotaPropertiesObject",
+          "description": "Storage quota properties.",
+          "defaultParameterSet": "StorageQuotaProperties",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "numberOfStorageAccounts": {
+          "x-ps-parameter-info": {
+            "name": "NumberOfStorageAccounts",
+            "description": "Total number of storage accounts."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "capacityInGb": {
+          "x-ps-parameter-info": {
+            "name": "CapacityInGb",
+            "description": "Maxium capacity (GB)."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "Display": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-DisplayObject",
+          "description": "Contains the localized display information for this particular operation / action.",
+          "defaultParameterSet": "Display",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "provider": {
+          "x-ps-parameter-info": {
+            "name": "Provider",
+            "description": "The localized friendly form of the resource provider name ??? it is expected to also include the publisher/company responsible. It should use Title Casing and begin with \"Microsoft\" for 1st party services. e.g. \"Microsoft Monitoring Insights\" or \"Microsoft Compute.\""
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "description": {
+          "x-ps-parameter-info": {
+            "name": "Description",
+            "description": "The localized friendly description for the operation, as it should be shown to the user. It should be thorough, yet concise ??? it will be used in tool tips and detailed views."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "resource": {
+          "x-ps-parameter-info": {
+            "name": "Resource",
+            "description": "The localized friendly form of the resource type related to this action/operation ??? it should match the public documentation for the resource provider."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "operation": {
+          "x-ps-parameter-info": {
+            "name": "Operation",
+            "description": "The localized friendly name for the operation, as it should be shown to the user."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        }
+      }
+    },
+    "OperationList": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-OperationListObject",
+          "description": "Pageable list of supported operations.",
+          "defaultParameterSet": "OperationList",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of operations"
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page of operations."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "StorageAccountList": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountListObject",
+          "description": "Pageable list of storage accounts.",
+          "defaultParameterSet": "StorageAccountList",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of storage accounts."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "StorageCreationProperties": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageCreationPropertiesObject",
+          "description": "Properties of the storage quota being created or updated.",
+          "defaultParameterSet": "StorageCreationProperties",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+
+      }
+    },
+    "StorageAccountType": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-StorageAccountTypeObject",
+          "description": "Storage account type.",
+          "defaultParameterSet": "StorageAccountType",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+
+      }
+    }
+  },
+  "parameters": {
+    "AccountIdParameter": {
+      "x-ps-parameter-info": {
+        "name": "AccountId",
+        "description": "Internal storage account ID, which is not visible to tenant.",
+        "flatten": false
+      }
+    },
+    "SummaryParameter": {
+      "x-ps-parameter-info": {
+        "name": "Summary",
+        "description": "Switch for whether summary or detailed information is returned.",
+        "flatten": false
+      }
+    },
+    "SubscriptionIdParameter": {
+      "x-ps-parameter-info": {
+        "name": "SubscriptionId",
+        "description": "Subscription Id.",
+        "flatten": false
+      }
+    },
+    "StorgeQuotaParameters": {
+      "x-ps-parameter-info": {
+        "name": "Parameters",
+        "description": "The properties of quota being created or updated.",
+        "flatten": true
+      }
+    },
+    "FilterParameter": {
+      "x-ps-parameter-info": {
+        "name": "Filter",
+        "description": "Filter string",
+        "flatten": false
+      }
+    },
+    "ResourceGroupNameParameter": {
+      "x-ps-parameter-info": {
+        "name": "ResourceGroupName",
+        "description": "Resource group name.",
+        "flatten": false
+      }
+    },
+    "QuotaNameParameter": {
+      "x-ps-parameter-info": {
+        "name": "QuotaName",
+        "description": "The name of the storage quota.",
+        "flatten": false
+      }
+    },
+    "ApiVersionParameter": {
+      "x-ps-parameter-info": {
+        "name": "Apiversion",
+        "description": "REST Api Version.",
+        "flatten": false
+      }
+    },
+    "LocationParameter": {
+      "x-ps-parameter-info": {
+        "name": "Location",
+        "description": "Resource location.",
+        "flatten": false
+      }
+    }
+  }
+}

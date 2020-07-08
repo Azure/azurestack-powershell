@@ -9,10 +9,10 @@
 @{
 
     # Root Module
-    RootModule = 'AzureStack.psm1'
+    # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '2.0.1'
+    ModuleVersion          = '1.8.1'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -33,7 +33,7 @@
     Description            = 'Azure Stack Adminisitration Module'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    PowerShellVersion      = '5.1'
+    PowerShellVersion      = '5.0'
 
     # Name of the Windows PowerShell host required by this module
     # PowerShellHostName = ''
@@ -42,35 +42,31 @@
     # PowerShellHostVersion = ''
 
     # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    DotNetFrameworkVersion = '4.7.2'
-
-    # Compatible Powershell Editions
-    CompatiblePSEditions = 'Core', 'Desktop'
+    DotNetFrameworkVersion = '4.0'
 
     # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-    # CLRVersion             = '4.0'
+    CLRVersion             = '4.0'
 
     # Processor architecture (None, X86, Amd64) required by this module
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    ### IMPORTANT - Note that the module names are case sensitive ###
-    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.1'; },
-        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; },
-        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '0.9.1'; },
-        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '0.9.1'; },
-        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '0.9.1'; },
-        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '0.9.0'; })
+    RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.8.3'; },
+        @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.4.3'; },
+        @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.3.2'; },
+        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '0.2.3'; },
+        @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '0.1.0'; },
+        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.5.0'; },
+        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.InfrastructureInsights.Admin'; RequiredVersion = '0.3.2'; },
+        @{ModuleName = 'Azs.KeyVault.Admin'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '0.3.0'; },
+        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '0.2.2'; },
+        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '0.3.3'; },
+        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '0.2.3'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
@@ -120,18 +116,22 @@
             LicenseUri   = 'https://aka.ms/azps-license'
 
             # A URL to the main website for this project.
-            ProjectUri   = 'https://github.com/Azure/azurestack-powershell'
+            ProjectUri   = 'https://github.com/Azure/azure-powershell'
 
             # A URL to an icon representing this module.
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.1,
-            * Bug Fix for module failing to load in linux environments, module names and folders are case sensitive
-            * Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
+            ReleaseNotes = ' - Version 1.8.1
+            * Only Azs.Storage.Admin is updated in this version to support admin api-version 2019-08-08-preview. 
+                 - Removes the following commands: Get-AzsBlob*, Get-AzsQueue*, Get-AzsTable*, Get-AzsStorageShare* and *StorageContainerMigration. 
+                 - Adds new commands like *AzsStorageSettings to do operation on storage settings, e.g. retention days. 
+                 - *FARM* concept is removed. The usage of powershell commands are almost the same except you do not need to specify *FarmName*. 
+                 - For detailed description for the breaking changes, please refer to https://aka.ms/azs.storage.admin.0.3.0.
+            '
 
-            # Preview version
-            Prerelease = 'preview'
+            # External dependent modules of this module
+            # ExternalModuleDependencies = ''
 
         } # End of PSData hashtable
 
