@@ -2,7 +2,7 @@
 
 
 ## Overview
-These Dockerfiles enable executing Azure-PowerShell cmdlets in a container for the supported OS.  
+These Dockerfiles enable executing AzureStack PowerShell cmdlets in a container for the supported OS.  
 The container images also include support for AzureStack release 2002+ by including AzureStack Admin Modules and AzureStack Tools.
 
 ## Configuration
@@ -20,55 +20,92 @@ The release containers derive from the [Powershell image][powershell image], and
 
 [powershell image]: https://hub.docker.com/_/microsoft-powershell
 
-Azure PowerShell [release notes](https://docs.microsoft.com/en-us/powershell/azure/release-notes-azureps)
+AzureStack PowerShell [release notes](https://aka.ms/azspsdocker)
 
 ## Examples 
 
-### Download/Update the azure-powershell image
+### Download/Update the AzureStack Powershell image
+
+You may replace the tag part after the colon with the tag you want.
 
 ```sh
-docker pull mcr.microsoft.com/azurestack-powershell
+docker pull mcr.microsoft.com/azurestack/powershell
 ```
 
-### Run azure-powershell container 
+### Run AzureStack Powershell container 
 
-- To run azure-powershell using a container in an interactive mode:
+- To run AzureStack Powershell in a container in an interactive mode:
 
 ```sh
-$ docker run -it mcr.microsoft.com/azurestack-powershell pwsh 
+$ docker run -it mcr.microsoft.com/azurestack/powershell:0.1.0-ubuntu-18.04 pwsh 
 ```
 
-- To run azure-powershell from using a container in an interactive mode using host authentication: 
-
-    1- Make sure that `$HOME/.Azure` is present on the host (default location) 
-    2- You may need to grant access this location for the docker process.
+- To run AzureStack Powershell in a container:
 
 ```sh
-$ docker run -it -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azure-powershell pwsh 
+$ docker start -ia mcr.microsoft.com/azurestack/powershell:0.1.0-ubuntu-18.04 pwsh 
+```
+
+- To run AzureStack Powershell from using a container in an interactive mode using host authentication: 
+
+    1. Make sure that `$HOME/.Azure` is present on the host (default location).
+    2. You may need to grant access this location for the docker process.
+
+```sh
+$ docker run -it -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azurestack/powershell pwsh 
 ```
 
 Verify the host authentication:
 
 ```sh
-docker run -it --rm -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azure-powershell pwsh -c Get-AzContext
-```
-
-### Building image
-
-Clone the azure-powershell repo, and in your local copy run the following commands:
-
-```sh
-$ dotnet msbuild /t:Build /p:Configuration=Release
-$ dotnet msbuild /t:publish /p:Configuration=Release /p:NuGetKey=1234
-$ dotnet msbuild /t:BuildImage /p:DockerImageName=mcr.microsoft.com/azurestack-powershell
-$ docker images
+docker run -it --rm -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.json -v ~/.Azure/TokenCache.dat:/root/.Azure/TokenCache.dat mcr.microsoft.com/azurestack/powershell pwsh -c Get-AzContext
 ```
 
 ### Remove image
 
 ```sh
-docker rmi mcr.microsoft.com/azure-powershell
+docker rmi mcr.microsoft.com/azurestack/powershell
 ```
+
+### Testing
+
+1. Run Login-Environment.ps1 to create an environment and connect your AzureStack account to it.  
+
+Login using credentials (insert actual values for letters):  
+```sh
+./Login-Environment.ps1 
+[-Name <String>]  
+-ResourceManagerEndpoint <System.Uri>  
+-DirectoryTenantId <String>  
+-Credential <PSCredential>  
+[-SubscriptionId <String>]
+```
+Login using certificates:  
+```sh
+./Login-Environment.ps1  
+[-Name <String>]  
+-ResourceManagerEndpoint <System.Uri>  
+-DirectoryTenantId <String>  
+-ApplicationId <String>  
+-CertificateThumbprint <String>  
+[-SubscriptionId <String>]
+```
+
+2. Run New-AzureStackTestResources.ps1 to create required resources for running the tests.  
+
+If the $Location parameter is not passed, it will look use $ENV:Location.  
+```sh
+./New-AzureStackTestResources.ps1  
+[-Location <String>]  
+```
+3. Run Test-AzureStack.ps1 to run the tests.  
+
+If the $ClientObjectId parameter is not passed, it will use $ENV:ClientObjectId.  
+```sh
+./Test-AzureStack.ps1  
+[-ClientObjectId <String>]  
+```
+ 
 
 ## Developing and Contributing
 
@@ -84,14 +121,14 @@ If you do not see your problem captured, please file a [new issue][] and follow 
 
 ## Legal and Licensing
 
-Azure-PowerShell is licensed under the [Apache license][].
+AzureStack PowerShell is licensed under the [Apache license][].
 
-[Apache license]: https://github.com/Azure/azure-powershell/blob/master/LICENSE.txt
+[Apache license]: https://github.com/Azure/azurestack-powershell/blob/master/LICENSE
 
 
 PowerShell is licensed under the [MIT license][].
 
-[MIT license]: https://github.com/PowerShell/PowerShell/blob/master/LICENSE.txt
+[MIT license]: https://github.com/Azure/azurestack-powershell/blob/master/LICENSE
 
 ## [Code of Conduct][conduct-md]
 
