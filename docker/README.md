@@ -71,7 +71,7 @@ docker rmi mcr.microsoft.com/azurestack/powershell
 
 1. Run Login-Environment.ps1 to create an environment and connect your AzureStack account to it.  
 
-Login using credentials (insert actual values for letters):  
+Login using credentials:  
 ```sh
 ./Login-Environment.ps1 
 [-Name <String>]  
@@ -105,7 +105,6 @@ If the $ClientObjectId parameter is not passed, it will use $ENV:ClientObjectId.
 ./Test-AzureStack.ps1  
 [-ClientObjectId <String>]  
 ```
- 
 
 ## Developing and Contributing
 
