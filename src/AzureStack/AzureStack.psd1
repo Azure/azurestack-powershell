@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '1.8.1'
+    ModuleVersion          = '1.8.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -63,7 +63,7 @@
         @{ModuleName = 'Azs.InfrastructureInsights.Admin'; RequiredVersion = '0.3.2'; },
         @{ModuleName = 'Azs.KeyVault.Admin'; RequiredVersion = '0.2.2'; },
         @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '0.2.2'; },
-        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '0.3.0'; },
+        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '0.3.1'; },
         @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '0.2.2'; },
         @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '0.3.3'; },
         @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '0.2.3'; })

@@ -11,21 +11,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ----------------------------------------------------------------------------------
-
-$global:ModuleName = "Azs.Storage.Admin"
-
-if ($global:UseInstalled) {
-    Import-Module $global:ModuleName -Force
-} else {
-    Import-Module ..\Module\$global:ModuleName -Force
-}
-
-if (-not $global:RunRaw) {
-    if (Test-Path bin\Debug) {
-        Import-Module ".\bin\Debug\$global:ModuleName.Tests.dll" -Force
-    } elseif (Test-Path bin\Release) {
-        Import-Module ".\bin\Release\$global:ModuleName.Tests.dll" -Force
-    } else {
-        throw "Cannot load test dll: $global:ModuleName.Tests.dll"
-    }
-}
+Write-Host -ForegroundColor Green 'Packing module...'
+dotnet pack $PSScriptRoot --no-build /nologo
+Write-Host -ForegroundColor Green '-------------Done-------------'
