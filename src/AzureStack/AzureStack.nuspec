@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>AzureStack</id>
+    <version>1.8.2/version>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://aka.ms/azps-license</licenseUrl>
+    <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
+    <description>Microsoft AzureStack PowerShell: Administrator cmdlets</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Microsoft Corporation. All rights reserved.</copyright>
+    <tags>AzureStack ResourceManager ARM PSModule Administrator</tags>
+    <dependencies>
+      <dependency id="AzureRM.Profile" version="[5.8.3]" />
+      <dependency id="AzureRM.Resources" version="[6.4.3]" />
+      <dependency id="Azs.Azurebridge.Admin" version="[0.2.2]" />
+      <dependency id="Azs.Backup.Admin" version="[0.3.2]" />
+      <dependency id="Azs.Commerce.Admin" version="[0.2.2]" />
+      <dependency id="Azs.Compute.Admin" version="[0.2.3]" />
+      <dependency id="Azs.Deployment.Admin" version="[0.1.0]" />
+      <dependency id="Azs.Fabric.Admin" version="[0.5.0]" />
+      <dependency id="Azs.Gallery.Admin" version="[0.2.2]" />
+      <dependency id="Azs.Infrastructureinsights.Admin" version="[0.3.2]" />
+      <dependency id="Azs.Keyvault.Admin" version="[0.2.2]" />
+      <dependency id="Azs.Network.Admin" version="[0.2.2]" />
+      <dependency id="Azs.Storage.Admin" version="[0.3.1]" />
+      <dependency id="Azs.Subscriptions" version="[0.2.2]" />
+      <dependency id="Azs.Subscriptions.Admin" version="[0.3.3]" />
+      <dependency id="Azs.Update.Admin" version="[0.2.3]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="AzureStack.psd1" />
+    <file src="AzureStack.psm1" />
+  </files>
+</package>
