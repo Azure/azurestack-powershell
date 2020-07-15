@@ -75,7 +75,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0-preview
+module-version: 0.9.1-preview
 service-name: FabricAdmin
 
 ### File Renames
@@ -628,7 +628,7 @@ directive:
 # Add release notes
   - from: Azs.Fabric.Admin.nuspec
     where: $
-    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>Bug fix for switched cmdlets: Enable-AzsScaleUnitNode and Disable-AzsScaleUnitNode</releaseNotes>');
 
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Fabric.Admin.nuspec
@@ -645,6 +645,4 @@ directive:
     where: $
     transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 
-subject-prefix: ''
-module-version: 0.9.0-preview
 ```
