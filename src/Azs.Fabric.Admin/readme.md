@@ -385,20 +385,20 @@ directive:
       verb: Add
       subject: ScaleUnitNode
 
-  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
+  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
   - where:
       verb: Start
       subject: ScaleUnitNodeMaintenanceMode
     set:
-      verb: Enable
+      verb: Disable
       subject: ScaleUnitNode
 
-  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
   - where:
       verb: Stop
       subject: ScaleUnitNodeMaintenanceMode
     set:
-      verb: Disable
+      verb: Enable
       subject: ScaleUnitNode
 
   # ------------------- [FabricLocation] -------------------
