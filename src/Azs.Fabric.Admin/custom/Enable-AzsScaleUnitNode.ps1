@@ -14,9 +14,9 @@
 # ----------------------------------------------------------------------------------
 <#
 .Synopsis
-Start maintenance mode for a scale unit node.
+Stop maintenance mode for a scale unit node.
 .Description
-Start maintenance mode for a scale unit node.
+Stop maintenance mode for a scale unit node.
 .Example
 To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/enable-azsscaleunitnode
 .Inputs
