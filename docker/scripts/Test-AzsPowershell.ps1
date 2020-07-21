@@ -1,11 +1,12 @@
-# Sample script to execute a set of basic tests using the Admin and User Az modules aganist provided AzureStack Environment 
+# Sample script to execute a set of basic tests using the Admin and User Az modules aganist provided AzureStack Environment.
+# The test will fail the Az/Azs modules that require admin privileges if the $ClientObjectId is invalid. 
 # These scripts are provided for your convenience:
 # Login-Environment.ps1: connects to an AzureStack environment.
 # New-AzureStackTestResources.ps1: creates testing resources.
 
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory=$true, HelpMessage = "The object ID associated with the secret or certificate AzureStack login information.")]
+    [Parameter(HelpMessage = "The object ID associated with the secret or certificate AzureStack login information. Admin tests will fail if invalid.")]
     [string]
     $ClientObjectId = $ENV:ClientObjectId
 )

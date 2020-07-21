@@ -98,11 +98,11 @@ If the $Location parameter is not passed, it will look use $ENV:Location.
 ./New-AzureStackTestResources.ps1  
 [-Location <String>]  
 ```
-3. Run Test-AzureStack.ps1 to run the tests.  
+3. Run Test-AzsPowershell.ps1 to run the tests.  
 
-If the $ClientObjectId parameter is not passed, it will use $ENV:ClientObjectId.  
+If the $ClientObjectId parameter is not passed, it will use $ENV:ClientObjectId that can be set as a Docker command. If $ENV:ClientObjectId is invalid, then the Az/Azs tests requiring admin privileges will fail, but the tests with user permission should still pass.
 ```sh
-./Test-AzureStack.ps1  
+./Test-AzsPowershell.ps1  
 [-ClientObjectId <String>]  
 ```
 
