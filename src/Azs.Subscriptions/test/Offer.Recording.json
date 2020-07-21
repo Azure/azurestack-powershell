@@ -1,0 +1,154 @@
+{
+  "Offers+[NoContext]+TestListRootOffers+$GET+https://management.azure.com/offers?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/offers?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "151" ],
+        "x-ms-client-request-id": [ "52c5a278-f8a1-4146-bbab-d542ee1aaca9" ],
+        "CommandName": [ "Get-AzsOffer" ],
+        "FullCommandName": [ "Get-AzsOffer_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-tenant-reads": [ "14999" ],
+        "x-ms-request-id": [ "d74d2673-149d-4cbb-803e-073e4be58027" ],
+        "x-ms-correlation-request-id": [ "d74d2673-149d-4cbb-803e-073e4be58027" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010356Z:d74d2673-149d-4cbb-803e-073e4be58027" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "4260" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"name\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"displayName\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"name\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"displayName\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"name\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"displayName\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"name\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"displayName\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"name\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"displayName\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"name\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"displayName\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"name\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"displayName\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"name\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"displayName\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"name\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"displayName\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"name\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"displayName\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"name\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"displayName\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"name\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"displayName\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"name\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"displayName\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"name\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"displayName\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"name\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"displayName\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantoffer594\",\"name\":\"cnur3316tenantoffer594\",\"displayName\":\"cnur3316tenantoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantsubsvcoffer594\",\"name\":\"cnur3316tenantsubsvcoffer594\",\"displayName\":\"cnur3316tenantsubsvcoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TenantOffer\",\"name\":\"TenantOffer\",\"displayName\":\"TenantOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/EventRPBVTTenantSubscriptionOffer\",\"name\":\"EventRPBVTTenantSubscriptionOffer\",\"displayName\":\"EventRPBVTTenantSubscriptionOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"name\":\"KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"displayName\":\"Key Vault BVT Offer\",\"description\":\"\"}]}"
+    }
+  },
+  "Offers+[NoContext]+TestListDelegatedProviderOffers+$GET+https://management.azure.com/delegatedProviders/default/offers?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/delegatedProviders/default/offers?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "152" ],
+        "x-ms-client-request-id": [ "e17a2b1b-e913-4830-ace3-a706802f0c1d" ],
+        "CommandName": [ "Get-AzsDelegatedProviderOffer" ],
+        "FullCommandName": [ "Get-AzsDelegatedProviderOffer_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-tenant-reads": [ "14998" ],
+        "x-ms-request-id": [ "2157afc0-2521-4e60-af0f-0fafa2968563" ],
+        "x-ms-correlation-request-id": [ "2157afc0-2521-4e60-af0f-0fafa2968563" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010356Z:2157afc0-2521-4e60-af0f-0fafa2968563" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "4260" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"name\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"displayName\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"name\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"displayName\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"name\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"displayName\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"name\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"displayName\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"name\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"displayName\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"name\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"displayName\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"name\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"displayName\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"name\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"displayName\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"name\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"displayName\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"name\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"displayName\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"name\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"displayName\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"name\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"displayName\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"name\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"displayName\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"name\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"displayName\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"name\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"displayName\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantoffer594\",\"name\":\"cnur3316tenantoffer594\",\"displayName\":\"cnur3316tenantoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantsubsvcoffer594\",\"name\":\"cnur3316tenantsubsvcoffer594\",\"displayName\":\"cnur3316tenantsubsvcoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TenantOffer\",\"name\":\"TenantOffer\",\"displayName\":\"TenantOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/EventRPBVTTenantSubscriptionOffer\",\"name\":\"EventRPBVTTenantSubscriptionOffer\",\"displayName\":\"EventRPBVTTenantSubscriptionOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"name\":\"KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"displayName\":\"Key Vault BVT Offer\",\"description\":\"\"}]}"
+    }
+  },
+  "Offers+[NoContext]+TestGetDelegatedProviderOffers+$GET+https://management.azure.com/delegatedProviders/default/offers?api-version=2015-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/delegatedProviders/default/offers?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "153" ],
+        "x-ms-client-request-id": [ "4ea97413-9458-4307-bd07-7e51b9a26fd5" ],
+        "CommandName": [ "Get-AzsDelegatedProviderOffer" ],
+        "FullCommandName": [ "Get-AzsDelegatedProviderOffer_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-tenant-reads": [ "14997" ],
+        "x-ms-request-id": [ "a55d3a69-9bdc-438f-988a-53f736bc1879" ],
+        "x-ms-correlation-request-id": [ "a55d3a69-9bdc-438f-988a-53f736bc1879" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010356Z:a55d3a69-9bdc-438f-988a-53f736bc1879" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "4260" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"name\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"displayName\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"name\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"displayName\":\"TestOffer-2c84b465-47ff-494c-a772-eee4d26f2497\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"name\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"displayName\":\"TestOffer-e5bd05b9-87b1-4146-9802-50e52e48068c\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"name\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"displayName\":\"TestOffer-33a93677-386c-4bb8-be1b-701763035de3\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"name\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"displayName\":\"TestOffer-3bcf6ffe-d925-4923-99f0-dd54c466f3a8\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"name\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"displayName\":\"TestOffer-c8c768d4-4118-4a8c-b4b2-b986daf1dc80\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"name\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"displayName\":\"TestOffer-72de1baf-05c2-4dcd-b4b7-6f8f332cb245\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"name\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"displayName\":\"TestOffer-ac248606-5bcf-42ce-9935-b867c51406f7\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"name\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"displayName\":\"TestOffer-07d311b0-3b23-412e-985a-d4293a987cfc\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"name\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"displayName\":\"TestOffer-520e0c09-e209-4d2d-9d66-c03c160e2a4d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"name\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"displayName\":\"TestOffer-013d0136-b177-4de0-8483-19153f95b14d\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"name\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"displayName\":\"TestOffer-e36bdea3-6ea9-47e5-bd5c-5ca87a1d3aa4\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"name\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"displayName\":\"TestOffer-f02f85fe-b35b-482f-82d1-8e68af9b8689\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"name\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"displayName\":\"TestOffer-a3f44772-600c-445b-aab5-f73e3246dd50\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"name\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"displayName\":\"TestOffer-e2a666d8-1334-4901-8219-b43d856c4399\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantoffer594\",\"name\":\"cnur3316tenantoffer594\",\"displayName\":\"cnur3316tenantoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/cnur3316tenantsubsvcoffer594\",\"name\":\"cnur3316tenantsubsvcoffer594\",\"displayName\":\"cnur3316tenantsubsvcoffer594\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/TenantOffer\",\"name\":\"TenantOffer\",\"displayName\":\"TenantOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/EventRPBVTTenantSubscriptionOffer\",\"name\":\"EventRPBVTTenantSubscriptionOffer\",\"displayName\":\"EventRPBVTTenantSubscriptionOffer\",\"description\":\"\"},{\"id\":\"/delegatedProviders/default/offers/KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"name\":\"KVUXBVTOffer_ac1dc306-41ff-4a5d-843c-2f14f062cebb\",\"displayName\":\"Key Vault BVT Offer\",\"description\":\"\"}]}"
+    }
+  },
+  "Offers+[NoContext]+TestGetDelegatedProviderOffers+$GET+https://management.azure.com/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85?api-version=2015-11-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.redmond.ext-v.masd.stbtest.microsoft.com/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85?api-version=2015-11-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "154" ],
+        "x-ms-client-request-id": [ "64f51f3a-be72-49a4-848a-766d213abfdd" ],
+        "CommandName": [ "Get-AzsDelegatedProviderOffer" ],
+        "FullCommandName": [ "Get-AzsDelegatedProviderOffer_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-ratelimit-remaining-tenant-reads": [ "14996" ],
+        "x-ms-request-id": [ "050e1f16-b2a3-49bc-830b-8a7759b24845" ],
+        "x-ms-correlation-request-id": [ "050e1f16-b2a3-49bc-830b-8a7759b24845" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200627T010356Z:050e1f16-b2a3-49bc-830b-8a7759b24845" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Sat, 27 Jun 2020 01:03:56 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "226" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/delegatedProviders/default/offers/TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"name\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"displayName\":\"TestOffer-8c774f04-e38a-416c-b2d4-2f7721d6bb85\",\"description\":\"\"}"
+    }
+  }
+}
