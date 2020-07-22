@@ -26,10 +26,10 @@ AzureStack PowerShell [release notes](https://aka.ms/azspsdocker)
 
 ### Download/Update the AzureStack Powershell image
 
-You may replace the tag part after the colon with the tag you want.
+You may replace the tag part after the colon with the tag of the image OS you want, e.g., 0.1.0-ubuntu-18.04.
 
 ```sh
-docker pull mcr.microsoft.com/azurestack/powershell
+docker pull mcr.microsoft.com/azurestack/powershell:<tag>
 ```
 
 ### Run AzureStack Powershell container 
