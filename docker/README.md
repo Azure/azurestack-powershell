@@ -20,7 +20,7 @@ The release containers derive from the [Powershell image][powershell image], and
 
 [powershell image]: https://hub.docker.com/_/microsoft-powershell
 
-AzureStack PowerShell [release notes](https://aka.ms/azspsdocker)
+AzureStack PowerShell [release notes](https://aka.ms/azspsdockerreadme)
 
 ## Examples 
 
