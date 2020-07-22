@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Set-AzsStorageQuota.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -63,7 +60,7 @@ Describe 'Set-AzsStorageQuota' {
 
         $name = "Default Quota"
 
-        $quota = Get-AzsStorageQuota -Name 'Default Quota' -Location $global:Location
+        $quota = Get-AzsStorageQuota -Name 'Default Quota' 
         
         $quota | Should Not Be $null
 
@@ -73,13 +70,15 @@ Describe 'Set-AzsStorageQuota' {
         $updated = Set-AzsStorageQuota `
             -CapacityInGb $CapInGB `
             -NumberOfStorageAccounts $NumStorageAccounts `
-            -Location $global:Location `
             -Name $name
 
         ValidateStorageQuota -storageQuota $updated
         $updated.CapacityInGb               | Should Be $CapInGB
         $updated.NumberOfStorageAccounts    | Should Be $NumStorageAccounts
 
-        $quota | Set-AzsStorageQuota
+        Set-AzsStorageQuota `
+            -CapacityInGb $quota.CapacityInGb `
+            -NumberOfStorageAccounts $quota.NumberOfStorageAccounts `
+            -Name $name
     }
 }

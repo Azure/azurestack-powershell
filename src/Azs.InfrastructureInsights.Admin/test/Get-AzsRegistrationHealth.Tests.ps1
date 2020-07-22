@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsRegistrationHealth.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -19,11 +16,11 @@ Describe "ResourceHealths" -Tags @('ResourceHealth', 'InfrastructureInsightsAdmi
     it "TestListResourceHealths" -Skip:$('TestListResourceHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestListResourceHealths'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
-                $ResourceHealths = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
+                $ResourceHealths = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
                 foreach ($ResourceHealth in $ResourceHealths) {
                     ValidateResourceHealth -ResourceHealth $ResourceHealth
                 }
@@ -35,16 +32,16 @@ Describe "ResourceHealths" -Tags @('ResourceHealth', 'InfrastructureInsightsAdmi
     it "TestGetResourceHealth" -Skip:$('TestGetResourceHealth' -in $global:SkippedTests) {
         $global:TestName = 'TestGetResourceHealth'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
 
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
 
-                $infraRoleHealths = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
+                $infraRoleHealths = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
                 foreach ($infraRoleHealth in $infraRoleHealths) {
 
-                    $retrieved = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId -Name $infraRoleHealth.Name
+                    $retrieved = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId -Name $infraRoleHealth.Name
                     AssertResourceHealthsAreSame -Expected $infraRoleHealth -Found $retrieved
                     break
                 }
@@ -57,16 +54,16 @@ Describe "ResourceHealths" -Tags @('ResourceHealth', 'InfrastructureInsightsAdmi
     it "TestGetAllResourceHealths" -Skip:$('TestGetAllResourceHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllResourceHealths'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
 
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
 
-                $infraRoleHealths = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
+                $infraRoleHealths = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
                 foreach ($infraRoleHealth in $infraRoleHealths) {
 
-                    $retrieved = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId -ResourceRegistrationId $infraRoleHealth.RegistrationId
+                    $retrieved = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId -ResourceRegistrationId $infraRoleHealth.RegistrationId
                     AssertResourceHealthsAreSame -Expected $infraRoleHealth -Found $retrieved
                 }
             }
@@ -76,18 +73,18 @@ Describe "ResourceHealths" -Tags @('ResourceHealth', 'InfrastructureInsightsAdmi
     it "TestGetAllResourceHealths" -Skip:$('TestGetAllResourceHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllResourceHealths'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
 
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
 
-                $infraRoleHealths = Get-AzsRegistrationHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
+                $infraRoleHealths = Get-AzsRegistrationHealth -Location $RegionHealth.Name -ServiceRegistrationId $serviceHealth.RegistrationId
                 foreach ($infraRoleHealth in $infraRoleHealths) {
 
                     $infraRoleHealth | Should not be $null
 
-                    $retrieved = $infraRoleHealth | Get-AzsRegistrationHealth
+                    $retrieved = Get-AzsRegistrationHealth -InputObject $infraRoleHealth
                     AssertResourceHealthsAreSame -Expected $infraRoleHealth -Found $retrieved
                 }
             }

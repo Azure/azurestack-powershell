@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Remove-AzsStorageQuota.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -19,12 +16,13 @@ Describe 'Remove-AzsStorageQuota' {
         $global:TestName = 'TestDeleteStorageQuota'
 
         $name = "TestDeleteQuota"
-        $quota = New-AzsStorageQuota -CapacityInGb 50 -NumberOfStorageAccounts 100 -Location $global:Location -Name $name
+        $quota = New-AzsStorageQuota -CapacityInGb 50 -NumberOfStorageAccounts 100  -Name $name
         $quota      |    Should Not Be $null
         $quota.CapacityInGb | Should Be 50
         $quota.NumberOfStorageAccounts | Should Be 100
-        Remove-AzsStorageQuota -Location $global:Location -Name $name
+        Remove-AzsStorageQuota  -Name $name
         $quota | New-AzsStorageQuota -Name $name
-        Get-AzsStorageQuota -Location $global:Location -Name $name | Remove-AzsStorageQuota
+        $retrievedQuota = Get-AzsStorageQuota -Name $name
+        Remove-AzsStorageQuota -InputObject $retrievedQuota
     }
 }

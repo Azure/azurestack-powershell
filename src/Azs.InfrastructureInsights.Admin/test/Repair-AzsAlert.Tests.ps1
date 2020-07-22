@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Repair-AzsAlert.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -23,7 +20,7 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
         # Test repair for a non-existing alert
         Write-Verbose "Repairing alert with an invalid name"
 
-        Repair-AzsAlert -Name "wrongid" -Location $global:location -ErrorVariable invalidAlertErr -ErrorAction SilentlyContinue
+        Repair-AzsAlert -Name "wrongid" -ErrorVariable invalidAlertErr -ErrorAction SilentlyContinue
 
         if(($invalidAlertErr.Count -ne 0) -and ($invalidAlertErr[0].ErrorDetails.Message.contains("Failed to remediate alert")))
         {
@@ -33,7 +30,7 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
             throw  $invalidAlertErr
         }
 
-        $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $global:location
+        $Alerts = Get-AzsAlert
 
         $Alerts | Should Not Be $null
 
@@ -47,7 +44,7 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
             
             if ($Alert.State -eq "Active" -and $Alert.hasValidRemediationAction -eq $true)
             {
-                 Repair-AzsAlert -Name $Alert.AlertId -ResourceGroupName $global:ResourceGroupName -Location $global:location
+                 Repair-AzsAlert -Name $Alert.AlertId
             }
         }
         return

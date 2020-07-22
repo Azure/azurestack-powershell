@@ -15,5 +15,4 @@
 
 $global:SkippedTests = @()
 
-$global:Location = "redmond"
 $global:Provider = "Microsoft.Storage.Admin"

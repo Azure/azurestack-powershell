@@ -1,8 +1,8 @@
 {
-  "Get-AzsStorageAcquisition+[NoContext]+TestListAllAcquisitions+$GET+https://adminmanagement.redmond.ext-s46r0402.masd.stbtest.microsoft.com/subscriptions/f69ec68f-d291-4b01-9bde-c74d67923588/providers/Microsoft.Storage.Admin/locations/redmond/acquisitions?api-version=2019-08-08-preview+1": {
+  "Get-AzsStorageAcquisition+[NoContext]+TestListAllAcquisitions+$GET+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/acquisitions?api-version=2019-08-08-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s46r0402.masd.stbtest.microsoft.com/subscriptions/f69ec68f-d291-4b01-9bde-c74d67923588/providers/Microsoft.Storage.Admin/locations/redmond/acquisitions?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/acquisitions?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "2" ],
@@ -36,7 +36,7 @@
         "Content-Type": [ "application/json" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"susbcriptionid\": \"f69ec68f-d291-4b01-9bde-c74d67923588\",\r\n      \"storageaccount\": \"azsamstor\",\r\n      \"container\": \"vhds\",\r\n      \"blob\": \"azsam.vhd\",\r\n      \"acquisitionid\": \"de4b7c2a-1e72-49a6-ad17-46a229c847d5\",\r\n      \"filePath\": \"C:\\\\ClusterStorage\\\\ObjStore_1\\\\Shares\\\\SU1_ObjStore_1\\\\BlobService\\\\Partition_00001_{F29E54E9-0A19-4FF1-B194-8E5B0D0FB1E0}\\\\azsamstor\\\\vhds_179\\\\8458feb4-eff4-4208-ad91-e47c2423c7d2.vhd\",\r\n      \"filePathUnc\": \"\\\\\\\\SU1FileServer.s46r0402.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\\\\BlobService\\\\Partition_00001_{F29E54E9-0A19-4FF1-B194-8E5B0D0FB1E0}\\\\azsamstor\\\\vhds_179\\\\8458feb4-eff4-4208-ad91-e47c2423c7d2.vhd\",\r\n      \"maximumblobsize\": 268435456512\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"susbcriptionid\": \"624575d6-5820-4528-8d07-53b5748f2fcc\",\r\n      \"storageaccount\": \"azsamstor\",\r\n      \"container\": \"vhds\",\r\n      \"blob\": \"azsam.vhd\",\r\n      \"acquisitionid\": \"de4b7c2a-1e72-49a6-ad17-46a229c847d5\",\r\n      \"filePath\": \"C:\\\\ClusterStorage\\\\ObjStore_1\\\\Shares\\\\SU1_ObjStore_1\\\\BlobService\\\\Partition_00001_{F29E54E9-0A19-4FF1-B194-8E5B0D0FB1E0}\\\\azsamstor\\\\vhds_179\\\\8458feb4-eff4-4208-ad91-e47c2423c7d2.vhd\",\r\n      \"filePathUnc\": \"\\\\\\\\SU1FileServer.s46r0402.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\\\\BlobService\\\\Partition_00001_{F29E54E9-0A19-4FF1-B194-8E5B0D0FB1E0}\\\\azsamstor\\\\vhds_179\\\\8458feb4-eff4-4208-ad91-e47c2423c7d2.vhd\",\r\n      \"maximumblobsize\": 268435456512\r\n    }\r\n  ]\r\n}"
     }
   }
 }

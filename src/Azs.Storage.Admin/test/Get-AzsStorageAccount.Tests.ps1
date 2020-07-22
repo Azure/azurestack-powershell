@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsStorageAccount.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -73,7 +70,7 @@ Describe 'Get-AzsStorageAccount' {
     It "TestListAllStorageAccounts" -Skip:$('TestListAllStorageAccounts' -in $global:SkippedTests) {
         $global:TestName = 'TestListAllStorageAccounts'
 
-        $storageAccounts = Get-AzsStorageAccount -Location $global:Location -Summary:$false
+        $storageAccounts = Get-AzsStorageAccount  -Summary:$false
         foreach ($storageAccount in $storageAccounts) {
             ValidateStorageAccount -storageAccount $storageAccount
         }
@@ -82,9 +79,9 @@ Describe 'Get-AzsStorageAccount' {
     It "TestGetStorageAccount" -Skip:$('TestGetStorageAccount' -in $global:SkippedTests) {
         $global:TestName = 'TestGetStorageAccount'
 
-        $storageAccounts = Get-AzsStorageAccount -Location $global:Location -Summary:$false
+        $storageAccounts = Get-AzsStorageAccount  -Summary:$false
         foreach ($storageAccount in $storageAccounts) {
-            $result = $storageAccount | Get-AzsStorageAccount
+            $result = Get-AzsStorageAccount -InputObject $storageAccount
             ValidateStorageAccount -storageAccount $result
             AssertAreEqual -expected $storageAccount -found $result
             return
@@ -94,9 +91,9 @@ Describe 'Get-AzsStorageAccount' {
     It "TestGetAllStorageAccounts" -Skip:$('TestGetAllStorageAccounts' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllStorageAccounts'
 
-        $storageAccounts = Get-AzsStorageAccount -Location $global:Location -Summary:$false
+        $storageAccounts = Get-AzsStorageAccount  -Summary:$false
         foreach ($storageAccount in $storageAccounts) {
-            $result = Get-AzsStorageAccount -Location $global:Location -Name $storageAccount.Name
+            $result = Get-AzsStorageAccount  -Name $storageAccount.Name
             ValidateStorageAccount -storageAccount $result
             AssertAreEqual -expected $storageAccount -found $result
         }

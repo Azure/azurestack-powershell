@@ -18,9 +18,6 @@ $global:SkippedTests = $(
     'TestGetAllPublicIpAddressesOData'
 )
 
-# Global variables
-$global:Location = (Get-AzLocation)[0].Location
-
 # Quota variables
 $global:TestQuotaMaxPublicIpsPerSubscription = 32
 $global:TestQuotaMaxVnetsPerSubscription = 32

@@ -1,3 +1,9 @@
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'UserSubscription.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -65,7 +71,7 @@ Describe 'UserSubscription' {
     it "TestMoveUserSubscription" -Skip:$('TestMoveSubscription' -in $global:SkippedTests) {
         $global:TestName = 'MoveUserSubscription'
         $offer = Get-AzsAdminManagedOffer | Select-Object -First 1
-        $subscription = New-AzsUserSubscription -DisplayName $global:SubscriptionName -OfferId $offer.Id -Owner $global:Owner
+        $subscription = New-AzsUserSubscription -TargetSubscriptionId $global:NewUserSubscriptionId -DisplayName $global:SubscriptionName -OfferId $offer.Id -Owner $global:Owner
         $resourceIds = Get-AzsUserSubscription | where Displayname -eq $global:SubscriptionName  | Select -ExpandProperty Id
         Move-AzsUserSubscription -ResourceId $resourceIds
     }
@@ -76,11 +82,4 @@ Describe 'UserSubscription' {
         Test-AzsMoveUserSubscription -ResourceId $resourceIds
     }
 
-    It 'Get' {
-        #{ throw [System.NotImplementedException] } | Should -Not -Throw
-    }
-
-    It 'GetViaIdentity' {
-        #{ throw [System.NotImplementedException] } | Should -Not -Throw
-    }
 }

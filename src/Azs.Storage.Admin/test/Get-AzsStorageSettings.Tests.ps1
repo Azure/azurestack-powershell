@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsStorageSettings.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -52,7 +49,7 @@ Describe 'Get-AzsStorageSettings' {
     It "TestGetStorageSettings" -Skip:$('TestGetStorageSettings' -in $global:SkippedTests) {
         $global:TestName = 'TestGetStorageSettings'
 
-        $result = Get-AzsStorageSettings -Location $global:Location 
+        $result = Get-AzsStorageSettings  
         $result  | Should Not Be $null
         ValidateSetting -Setting $result
     }

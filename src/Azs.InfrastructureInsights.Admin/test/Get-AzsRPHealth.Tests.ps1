@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsRPHealth.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -19,9 +16,9 @@ Describe "AzsServiceHealths" -Tags @('AzsServiceHealth', 'InfrastructureInsights
         $global:TestName = 'TestListServiceHealths'
 
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
                 ValidateAzsServiceHealth -ServiceHealth $serviceHealth
             }
@@ -31,11 +28,11 @@ Describe "AzsServiceHealths" -Tags @('AzsServiceHealth', 'InfrastructureInsights
     it "TestGetServiceHealth" -Skip:$('TestGetServiceHealth' -in $global:SkippedTests) {
         $global:TestName = 'TestGetServiceHealth'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
-                $retrieved = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceHealth  $serviceHealth.RegistrationId
+                $retrieved = Get-AzsRPHealth -Location $RegionHealth.Name -ServiceHealth  $serviceHealth.RegistrationId
                 AssertAzsServiceHealthsAreSame -Expected $serviceHealth -Found $retrieved
                 break
             }
@@ -46,11 +43,11 @@ Describe "AzsServiceHealths" -Tags @('AzsServiceHealth', 'InfrastructureInsights
     it "TestGetAllServiceHealths" -Skip:$('TestGetAllServiceHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllServiceHealths'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
-                $retrieved = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name -ServiceHealth  $serviceHealth.RegistrationId
+                $retrieved = Get-AzsRPHealth -Location $RegionHealth.Name -ServiceHealth  $serviceHealth.RegistrationId
                 AssertAzsServiceHealthsAreSame -Expected $serviceHealth -Found $retrieved
             }
         }
@@ -61,11 +58,11 @@ Describe "AzsServiceHealths" -Tags @('AzsServiceHealth', 'InfrastructureInsights
     it "TestGetAllServiceHealths" -Skip:$('TestGetAllServiceHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllServiceHealths'
 
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach ($RegionHealth in $RegionHealths) {
-            $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $ServiceHealths = Get-AzsRPHealth -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
-                $retrieved = $serviceHealth | Get-AzsRPHealth
+                $retrieved = Get-AzsRPHealth -InputObject $serviceHealth
                 AssertAzsServiceHealthsAreSame -Expected $serviceHealth -Found $retrieved
             }
         }

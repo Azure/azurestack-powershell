@@ -1,8 +1,8 @@
 {
-  "Get-AzsPublicIPAddress+[NoContext]+TestGetAllPublicIpAddresses+$GET+https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminPublicIpAddresses?api-version=2015-06-15+1": {
+  "Get-AzsPublicIPAddress+[NoContext]+TestGetAllPublicIpAddresses+$GET+https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminPublicIpAddresses?api-version=2015-06-15+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.northwest.azs-longhaul-01.selfhost.corp.microsoft.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminPublicIpAddresses?api-version=2015-06-15",
+      "RequestUri": "https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminPublicIpAddresses?api-version=2015-06-15",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "16", "17" ],
@@ -23,7 +23,7 @@
         "x-ms-correlation-request-id": [ "5ce41d57-6f6b-42fc-a80d-b17357f8cb64" ],
         "x-ms-request-id": [ "ca122140-8670-4278-a33b-b26163259fbe" ],
         "x-ms-ratelimit-remaining-subscription-reads": [ "14818" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200210T183945Z:5ce41d57-6f6b-42fc-a80d-b17357f8cb64" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200210T183945Z:5ce41d57-6f6b-42fc-a80d-b17357f8cb64" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],

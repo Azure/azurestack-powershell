@@ -1,8 +1,5 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsStorageQuota.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
@@ -61,7 +58,7 @@ Describe 'Get-AzsStorageQuota' {
     It "TestListAllStorageQuotas" -Skip:$('TestListAllStorageQuotas' -in $global:SkippedTests) {
         $global:TestName = 'TestListAllStorageQuotas'
 
-        $quotas = Get-AzsStorageQuota -Location $global:Location
+        $quotas = Get-AzsStorageQuota 
         foreach ($quota in $quotas.Value) {
             ValidateStorageQuota -storageQuota $quota
         }
@@ -70,18 +67,22 @@ Describe 'Get-AzsStorageQuota' {
     It "TestGetStorageQuota" -Skip:$('TestGetStorageQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestGetStorageQuota'
 
-        $quotas = Get-AzsStorageQuota -Location $global:Location
-        $quota = $quotas[0] | Get-AzsStorageQuota
-        ValidateStorageQuota -storageQuota $quota
-        AssertAreEqual -expected $quotas[0] -found $quota
+        $quota = Get-AzsStorageQuota 
+        if ($quota.GetType().BaseType.Name -eq "Array")
+        {
+            $quota = $quota[0]
+        }
+        $retrievedQuota = Get-AzsStorageQuota -InputObject $quota 
+        ValidateStorageQuota -storageQuota $retrievedQuota
+        AssertAreEqual -expected $quota -found $retrievedQuota
     }
 
     It "TestGetAllStorageQuotas" -Skip:$('TestGetAllStorageQuotas' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllStorageQuotas'
 
-        $quotas = Get-AzsStorageQuota -Location $global:Location
+        $quotas = Get-AzsStorageQuota 
         foreach ($quota in $quotas) {
-            $result = Get-AzsStorageQuota -Location $global:Location -Name $quota.Name
+            $result = Get-AzsStorageQuota  -Name $quota.Name
             ValidateStorageQuota -storageQuota $quota
             AssertAreEqual -expected $quota -found $result
         }

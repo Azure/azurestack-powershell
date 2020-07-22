@@ -135,8 +135,16 @@ process {
         {
             $PSBoundParameters['Name'] = $Name.Split("/")[-1]
         }
+
+        $params = @{}
+        if ($PSBoundParameters.ContainsKey('Location')){
+            $params.Add('Location', $Location)
+        }
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')){
+            $params.Add('SubscriptionId', $SubscriptionId)
+        }
         # Autorest generated code doesn't throw error in case resource already exists
-        $resource = Get-AzsStorageQuota -Name $PSBoundParameters['Name'] -ErrorAction SilentlyContinue
+        $resource = Get-AzsStorageQuota -Name $PSBoundParameters['Name'] -ErrorAction SilentlyContinue @params
         if ($null -ne $resource) { throw "$($MyInvocation.MyCommand): A storage quota with name $($PSBoundParameters['Name']) at location $($resource.Location) already exists" }
     }
     

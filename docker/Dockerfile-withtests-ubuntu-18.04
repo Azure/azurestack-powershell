@@ -1,0 +1,45 @@
+FROM mcr.microsoft.com/powershell:ubuntu-18.04
+
+ARG REPOSITORY=PSGallery
+ARG MODULE=Az
+ARG CONFIG=config
+ARG AZURERM_CONTEXT_SETTINGS=AzureRmContextSettings.json
+ARG AZURE=/root/.Azure
+ARG VCS_REF="none"
+ARG BUILD_DATE=
+ARG VERSION=0.10.0
+ARG IMAGE_NAME=mcr.microsoft.com/azure-powershell:${VERSION}-ubuntu-18.04
+ARG AZURESTACK_PROFILE=2019-03-01-hybrid
+ARG AZURESTACK_VERSION=2.0.1-preview
+
+ENV AZUREPS_HOST_ENVIRONMENT="dockerImage/${VERSION}-ubuntu-18.04"
+
+LABEL maintainer="AzureStack PowerShell Team <azsdevexp@microsoft.com>" \
+      readme.md="http://aka.ms/azspsdockerreadme" \
+      description="This Dockerfile will install the latest supported version of Azure PowerShell that works with AzureStack Hub." \
+      org.label-schema.build-date=${BUILD_DATE} \
+      org.label-schema.usage="http://aka.ms/azspsdocker" \
+      org.label-schema.url="http://aka.ms/azspsdockerreadme" \
+      org.label-schema.vcs-url="https://github.com/Azure/azure-powershell" \
+      org.label-schema.name="azure powershell" \
+      org.label-schema.vendor="AzureStack PowerShell" \
+      org.label-schema.version=${VERSION} \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.vcs-ref=${VCS_REF} \
+      org.label-schema.docker.cmd="docker run --rm ${IMAGE_NAME} pwsh -c '\$PSVERSIONTABLE'" \
+      org.label-schema.docker.cmd.devel="docker run -it --rm -e 'DebugPreference=Continue' ${IMAGE_NAME} pwsh" \
+      org.label-schema.docker.cmd.test="currently not available" \
+      org.label-schema.docker.cmd.help="docker run --rm ${IMAGE_NAME} pwsh -c Get-Help"
+
+# install azure-powershell and azure stack admin modules from PSGallery
+
+COPY scripts/* /
+
+RUN pwsh Install-AzureStackPowerShell.ps1 -REPOSITORY ${REPOSITORY} -AZURESTACK_PROFILE ${AZURESTACK_PROFILE} -AZURESTACK_VERSION ${AZURESTACK_VERSION}
+
+RUN pwsh Install-AzureStackTools.ps1
+
+# create AzureRmContextSettings.json before it was generated
+COPY ${CONFIG}/${AZURERM_CONTEXT_SETTINGS} ${AZURE}/${AZURERM_CONTEXT_SETTINGS}
+
+CMD pwsh Test-AzureStack.ps1

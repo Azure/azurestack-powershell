@@ -1,10 +1,8 @@
-$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
-if (-Not (Test-Path -Path $loadEnvPath)) {
-    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
-}
-. ($loadEnvPath)
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsRegionHealth.Recording.json'
 $currentPath = $PSScriptRoot
+
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
     $currentPath = Split-Path -Path $currentPath -Parent
@@ -12,13 +10,11 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe "RegionHealths" -Tags @('RegionHealth', 'InfrastructureInsightsAdmin') {
-
     . $PSScriptRoot\Common.ps1
 
     it "TestListRegionHealths" -Skip:$('TestListRegionHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestListRegionHealths'
-
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         $RegionHealths | Should Not Be $null
         foreach($RegionHealth in $RegionHealths) {
             ValidateRegionHealth -Region $RegionHealth
@@ -28,10 +24,9 @@ Describe "RegionHealths" -Tags @('RegionHealth', 'InfrastructureInsightsAdmin') 
 
     it "TestGetRegionHealth" -Skip:$('TestGetRegionHealth' -in $global:SkippedTests) {
         $global:TestName = 'TestGetRegionHealth'
-
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location  -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach($RegionHealth in $RegionHealths) {
-            $retrieved = Get-AzsRegionHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $retrieved = Get-AzsRegionHealth -Location $RegionHealth.Name
             AssertRegionHealthsAreSame -Expected $RegionHealth -Found $retrieved
             return
         }
@@ -39,22 +34,18 @@ Describe "RegionHealths" -Tags @('RegionHealth', 'InfrastructureInsightsAdmin') 
 
     it "TestGetAllRegionHealths" -Skip:$('TestGetAllRegionHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllRegionHealths'
-
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach($RegionHealth in $RegionHealths) {
-            $retrieved = Get-AzsRegionHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
+            $retrieved = Get-AzsRegionHealth -Location $RegionHealth.Name
             AssertRegionHealthsAreSame -Expected $RegionHealth -Found $retrieved
         }
     }
 
     it "TestGetAllRegionHealths" -Skip:$('TestGetAllRegionHealths' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllRegionHealths'
-
-
-        $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
+        $RegionHealths = Get-AzsRegionHealth
         foreach($RegionHealth in $RegionHealths) {
-
-            $retrieved = $RegionHealth | Get-AzsRegionHealth
+            $retrieved = Get-AzsRegionHealth -InputObject $RegionHealth
             AssertRegionHealthsAreSame -Expected $RegionHealth -Found $retrieved
         }
     }

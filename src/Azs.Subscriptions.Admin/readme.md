@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the SubscriptionsAdmin service
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Module Requirements
-- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.6.0 or greater
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.7.4 or greater
 
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
@@ -312,6 +312,13 @@ directive:
     set:
       default:
         script: "$([Guid]::NewGuid().ToString())"
+  - where:
+      verb: Get
+      subject: DirectoryTenant
+      parameter-name: ResourceGroupName
+    set:
+      default:
+        script: '"system.$((Get-AzLocation)[0].Location)"'
 ## hide autorest generated cmdlet to use the custom one
   - where:
       verb: New

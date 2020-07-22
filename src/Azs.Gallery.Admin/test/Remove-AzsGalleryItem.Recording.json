@@ -1,125 +1,181 @@
 {
-  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$DELETE+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+1": {
+  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$DELETE+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+1": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "12" ],
-        "x-ms-client-request-id": [ "d5c3bd3f-e4ae-4871-9ac5-21b9ee2d0071" ],
-        "CommandName": [ "Remove-AzsGalleryItem" ],
-        "FullCommandName": [ "Remove-AzsGalleryItem_Delete" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
+        "x-ms-unique-id": ["12"],
+        "x-ms-client-request-id": ["d5c3bd3f-e4ae-4871-9ac5-21b9ee2d0071"],
+        "CommandName": ["Remove-AzsGalleryItem"],
+        "FullCommandName": ["Remove-AzsGalleryItem_Delete"],
+        "ParameterSetName": ["__AllParameterSets"],
+        "User-Agent": ["AzurePowerShell/Az4.0.0-preview"],
+        "Authorization": ["[Filtered]"]
       },
-      "ContentHeaders": {
-      }
+      "ContentHeaders": {}
     },
     "Response": {
       "StatusCode": 204,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "X-XSS-Protection": [ "1; mode=block" ],
-        "x-ms-version": [ "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)" ],
-        "Server": [ "Microsoft-IIS/10.0" ],
-        "X-Powered-By": [ "ASP.NET" ],
-        "x-ms-ratelimit-remaining-subscription-deletes": [ "14996" ],
-        "x-ms-request-id": [ "d0f99b1f-9ad9-43a7-9f00-09c7196d07a9" ],
-        "x-ms-correlation-request-id": [ "d0f99b1f-9ad9-43a7-9f00-09c7196d07a9" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200212T071513Z:d0f99b1f-9ad9-43a7-9f00-09c7196d07a9" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "Date": [ "Wed, 12 Feb 2020 07:15:13 GMT" ]
+        "Cache-Control": ["no-cache"],
+        "Pragma": ["no-cache"],
+        "X-Content-Type-Options": ["nosniff"],
+        "X-XSS-Protection": ["1; mode=block"],
+        "x-ms-version": [
+          "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)"
+        ],
+        "Server": ["Microsoft-IIS/10.0"],
+        "X-Powered-By": ["ASP.NET"],
+        "x-ms-ratelimit-remaining-subscription-deletes": ["14996"],
+        "x-ms-request-id": ["d0f99b1f-9ad9-43a7-9f00-09c7196d07a9"],
+        "x-ms-correlation-request-id": ["d0f99b1f-9ad9-43a7-9f00-09c7196d07a9"],
+        "x-ms-routing-request-id": [
+          "REDMOND:20200212T071513Z:d0f99b1f-9ad9-43a7-9f00-09c7196d07a9"
+        ],
+        "Strict-Transport-Security": ["max-age=31536000; includeSubDomains"],
+        "Date": ["Wed, 12 Feb 2020 07:15:13 GMT"]
       },
       "ContentHeaders": {
-        "Expires": [ "-1" ]
+        "Expires": ["-1"]
       },
       "Content": null
     }
   },
-  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$POST+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01+2": {
+  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$POST+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01+2": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01",
       "Content": "{\r\n  \"galleryItemUri\": \"https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg\"\r\n}",
       "Headers": {
-        "x-ms-unique-id": [ "13" ],
-        "x-ms-client-request-id": [ "b9793594-1b0b-4907-b74e-dcd756709aff" ],
-        "CommandName": [ "new-AzsGalleryItem" ],
-        "FullCommandName": [ "New-AzsGalleryItem_CreateExpanded" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
+        "x-ms-unique-id": ["13"],
+        "x-ms-client-request-id": ["b9793594-1b0b-4907-b74e-dcd756709aff"],
+        "CommandName": ["new-AzsGalleryItem"],
+        "FullCommandName": ["New-AzsGalleryItem_CreateExpanded"],
+        "ParameterSetName": ["__AllParameterSets"],
+        "User-Agent": ["AzurePowerShell/Az4.0.0-preview"],
+        "Authorization": ["[Filtered]"]
       },
       "ContentHeaders": {
-        "Content-Type": [ "application/json" ],
-        "Content-Length": [ "130" ]
+        "Content-Type": ["application/json"],
+        "Content-Length": ["130"]
       }
     },
     "Response": {
       "StatusCode": 201,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "X-XSS-Protection": [ "1; mode=block" ],
-        "x-ms-version": [ "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)" ],
-        "Server": [ "Microsoft-IIS/10.0" ],
-        "X-Powered-By": [ "ASP.NET" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1193" ],
-        "x-ms-request-id": [ "04364fa5-a3e1-472c-a2bb-28479cac38e6" ],
-        "x-ms-correlation-request-id": [ "04364fa5-a3e1-472c-a2bb-28479cac38e6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200212T071513Z:04364fa5-a3e1-472c-a2bb-28479cac38e6" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "Date": [ "Wed, 12 Feb 2020 07:15:13 GMT" ]
+        "Cache-Control": ["no-cache"],
+        "Pragma": ["no-cache"],
+        "X-Content-Type-Options": ["nosniff"],
+        "X-XSS-Protection": ["1; mode=block"],
+        "x-ms-version": [
+          "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)"
+        ],
+        "Server": ["Microsoft-IIS/10.0"],
+        "X-Powered-By": ["ASP.NET"],
+        "x-ms-ratelimit-remaining-subscription-writes": ["1193"],
+        "x-ms-request-id": ["04364fa5-a3e1-472c-a2bb-28479cac38e6"],
+        "x-ms-correlation-request-id": ["04364fa5-a3e1-472c-a2bb-28479cac38e6"],
+        "x-ms-routing-request-id": [
+          "REDMOND:20200212T071513Z:04364fa5-a3e1-472c-a2bb-28479cac38e6"
+        ],
+        "Strict-Transport-Security": ["max-age=31536000; includeSubDomains"],
+        "Date": ["Wed, 12 Feb 2020 07:15:13 GMT"]
       },
       "ContentHeaders": {
-        "Content-Length": [ "3308" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
+        "Content-Length": ["3308"],
+        "Content-Type": ["application/json; charset=utf-8"],
+        "Expires": ["-1"]
       },
       "Content": "{\"id\":\"/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0\",\"name\":\"TestUbuntu.Test.1.0.0\",\"type\":\"Microsoft.Gallery.Admin/galleryItems\",\"properties\":{\"identity\":\"TestUbuntu.Test.1.0.0\",\"publisher\":\"TestUbuntu\",\"publisherDisplayName\":\"TestUbuntu\",\"itemName\":\"Test\",\"itemDisplayName\":\"Test.TestUbuntu.1.0.0\",\"version\":\"1.0.0\",\"summary\":\"Create a simple VM\",\"longSummary\":\"Create a simple VM and use it\",\"description\":\"\u003cp\u003eThis is just a sample of the type of description you could create for your gallery item!\u003c/p\u003e\u003cp\u003eThis is a second paragraph.\u003c/p\u003e\",\"uiDefinitionUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"createdTime\":\"2020-02-12T07:15:13.6294417Z\",\"changedTime\":\"2020-02-12T07:15:13.6300972Z\",\"itemType\":\"GalleryItem\",\"categoryIds\":[\"Custom\",\"Disconnected\",\"My Marketplace Items\"],\"screenshotUris\":[],\"links\":[{\"id\":\"0\",\"displayName\":\"Documentation\",\"uri\":\"http://go.microsoft.com/fwlink/?LinkId=532898\"}],\"filters\":[],\"iconFileUris\":{\"small\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"medium\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"large\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"wide\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\"},\"artifacts\":[{\"name\":\"LinuxTemplate\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\",\"type\":\"template\"}],\"metadata\":{},\"properties\":{},\"images\":[{\"context\":\"ibiza\",\"items\":[{\"id\":\"small\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"type\":\"icon\"},{\"id\":\"medium\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"type\":\"icon\"},{\"id\":\"large\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"type\":\"icon\"},{\"id\":\"wide\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\",\"type\":\"icon\"}]}],\"products\":[],\"searchScore\":0.0,\"definitionTemplates\":{\"uiDefinitionFileUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"defaultDeploymentTemplateId\":\"LinuxTemplate\",\"deploymentTemplateFileUris\":{\"LinuxTemplate\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\"},\"deploymentFragmentFileUris\":{}},\"additionalProperties\":{},\"keywords\":[]}}"
     }
   },
-  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$DELETE+https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+3": {
-    "Request": {
-      "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n35r1010.masd.stbtest.microsoft.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "14" ],
-        "x-ms-client-request-id": [ "434283e0-49bc-4421-913c-4fdbde1d3e36" ],
-        "CommandName": [ "Remove-AzsGalleryItem" ],
-        "FullCommandName": [ "Remove-AzsGalleryItem_DeleteViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
+  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$GET+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+3": {
+    "Method": "GET",
+    "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems?api-version=2015-04-01",
+    "Content": "{\r\n  \"galleryItemUri\": \"https://testsa.blob.redmond.ext-n35r1010.masd.stbtest.microsoft.com/testsc/TestUbuntu.Test.1.0.0.azpkg\"\r\n}",
+    "Headers": {
+      "x-ms-unique-id": ["13"],
+      "x-ms-client-request-id": ["b9793594-1b0b-4907-b74e-dcd756709aff"],
+      "CommandName": ["Get-AzsGalleryItem"],
+      "FullCommandName": ["Get-AzsGalleryItem_CreateExpanded"],
+      "ParameterSetName": ["__AllParameterSets"],
+      "User-Agent": ["AzurePowerShell/Az4.0.0-preview"],
+      "Authorization": ["[Filtered]"]
+    },
+    "ContentHeaders": {
+      "Content-Type": ["application/json"],
+      "Content-Length": ["130"]
     },
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "X-XSS-Protection": [ "1; mode=block" ],
-        "x-ms-version": [ "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)" ],
-        "Server": [ "Microsoft-IIS/10.0" ],
-        "X-Powered-By": [ "ASP.NET" ],
-        "x-ms-ratelimit-remaining-subscription-deletes": [ "14995" ],
-        "x-ms-request-id": [ "d055ce31-4e0e-4969-8cb0-e44128b932b2" ],
-        "x-ms-correlation-request-id": [ "d055ce31-4e0e-4969-8cb0-e44128b932b2" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200212T071513Z:d055ce31-4e0e-4969-8cb0-e44128b932b2" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "Date": [ "Wed, 12 Feb 2020 07:15:13 GMT" ]
+        "Cache-Control": ["no-cache"],
+        "Pragma": ["no-cache"],
+        "X-Content-Type-Options": ["nosniff"],
+        "X-XSS-Protection": ["1; mode=block"],
+        "x-ms-version": [
+          "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)"
+        ],
+        "Server": ["Microsoft-IIS/10.0"],
+        "X-Powered-By": ["ASP.NET"],
+        "x-ms-ratelimit-remaining-subscription-writes": ["1193"],
+        "x-ms-request-id": ["04364fa5-a3e1-472c-a2bb-28479cac38e6"],
+        "x-ms-correlation-request-id": ["04364fa5-a3e1-472c-a2bb-28479cac38e6"],
+        "x-ms-routing-request-id": [
+          "REDMOND:20200212T071513Z:04364fa5-a3e1-472c-a2bb-28479cac38e6"
+        ],
+        "Strict-Transport-Security": ["max-age=31536000; includeSubDomains"],
+        "Date": ["Wed, 12 Feb 2020 07:15:13 GMT"]
       },
       "ContentHeaders": {
-        "Expires": [ "-1" ],
-        "Content-Length": [ "0" ]
+        "Content-Length": ["3308"],
+        "Content-Type": ["application/json; charset=utf-8"],
+        "Expires": ["-1"]
+      },
+      "Content": "{\"id\":\"/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0\",\"name\":\"TestUbuntu.Test.1.0.0\",\"type\":\"Microsoft.Gallery.Admin/galleryItems\",\"properties\":{\"identity\":\"TestUbuntu.Test.1.0.0\",\"publisher\":\"TestUbuntu\",\"publisherDisplayName\":\"TestUbuntu\",\"itemName\":\"Test\",\"itemDisplayName\":\"Test.TestUbuntu.1.0.0\",\"version\":\"1.0.0\",\"summary\":\"Create a simple VM\",\"longSummary\":\"Create a simple VM and use it\",\"description\":\"\u003cp\u003eThis is just a sample of the type of description you could create for your gallery item!\u003c/p\u003e\u003cp\u003eThis is a second paragraph.\u003c/p\u003e\",\"uiDefinitionUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"createdTime\":\"2020-02-12T07:15:13.6294417Z\",\"changedTime\":\"2020-02-12T07:15:13.6300972Z\",\"itemType\":\"GalleryItem\",\"categoryIds\":[\"Custom\",\"Disconnected\",\"My Marketplace Items\"],\"screenshotUris\":[],\"links\":[{\"id\":\"0\",\"displayName\":\"Documentation\",\"uri\":\"http://go.microsoft.com/fwlink/?LinkId=532898\"}],\"filters\":[],\"iconFileUris\":{\"small\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"medium\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"large\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"wide\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\"},\"artifacts\":[{\"name\":\"LinuxTemplate\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\",\"type\":\"template\"}],\"metadata\":{},\"properties\":{},\"images\":[{\"context\":\"ibiza\",\"items\":[{\"id\":\"small\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Small.png\",\"type\":\"icon\"},{\"id\":\"medium\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Medium.png\",\"type\":\"icon\"},{\"id\":\"large\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Large.png\",\"type\":\"icon\"},{\"id\":\"wide\",\"uri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/icons/Wide.png\",\"type\":\"icon\"}]}],\"products\":[],\"searchScore\":0.0,\"definitionTemplates\":{\"uiDefinitionFileUri\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/UIDefinition.json\",\"defaultDeploymentTemplateId\":\"LinuxTemplate\",\"deploymentTemplateFileUris\":{\"LinuxTemplate\":\"https://galleryartifacts.adminhosting.redmond.ext-n35r1010.masd.stbtest.microsoft.com//artifact/20161101/TestUbuntu.Test.1.0.0/DeploymentTemplates/LinuxTemplate.json\"},\"deploymentFragmentFileUris\":{}},\"additionalProperties\":{},\"keywords\":[]}}"
+    }
+  },
+  "Remove-AzsGalleryItem+[NoContext]+TestCreateAndDeleteGalleryItemPiped+$DELETE+https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01+3": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://management.azure.com/subscriptions/b64bc025-4ace-4ffa-844e-4473ded5c230/providers/Microsoft.Gallery.Admin/galleryItems/TestUbuntu.Test.1.0.0?api-version=2015-04-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": ["14"],
+        "x-ms-client-request-id": ["434283e0-49bc-4421-913c-4fdbde1d3e36"],
+        "CommandName": ["Remove-AzsGalleryItem"],
+        "FullCommandName": ["Remove-AzsGalleryItem_DeleteViaIdentity"],
+        "ParameterSetName": ["__AllParameterSets"],
+        "User-Agent": ["AzurePowerShell/Az4.0.0-preview"],
+        "Authorization": ["[Filtered]"]
+      },
+      "ContentHeaders": {}
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": ["no-cache"],
+        "Pragma": ["no-cache"],
+        "X-Content-Type-Options": ["nosniff"],
+        "X-XSS-Protection": ["1; mode=block"],
+        "x-ms-version": [
+          "10.1.1909.5 (AzureUX-Gallery:AzsRelease/1909.a575b74b.191025-1613)"
+        ],
+        "Server": ["Microsoft-IIS/10.0"],
+        "X-Powered-By": ["ASP.NET"],
+        "x-ms-ratelimit-remaining-subscription-deletes": ["14995"],
+        "x-ms-request-id": ["d055ce31-4e0e-4969-8cb0-e44128b932b2"],
+        "x-ms-correlation-request-id": ["d055ce31-4e0e-4969-8cb0-e44128b932b2"],
+        "x-ms-routing-request-id": [
+          "REDMOND:20200212T071513Z:d055ce31-4e0e-4969-8cb0-e44128b932b2"
+        ],
+        "Strict-Transport-Security": ["max-age=31536000; includeSubDomains"],
+        "Date": ["Wed, 12 Feb 2020 07:15:13 GMT"]
+      },
+      "ContentHeaders": {
+        "Expires": ["-1"],
+        "Content-Length": ["0"]
       },
       "Content": null
     }

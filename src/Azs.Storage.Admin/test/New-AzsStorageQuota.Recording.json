@@ -1,8 +1,8 @@
 {
-  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$PUT+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+1": {
+  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$PUT+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
       "Content": "{\r\n  \"properties\": {\r\n    \"capacityInGb\": 100000000,\r\n    \"numberOfStorageAccounts\": 1000000000\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "171" ],
@@ -38,13 +38,13 @@
         "Content-Type": [ "application/json" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota\",\r\n  \"name\": \"redmond/TestCreateQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 1000000000,\r\n    \"capacityInGb\": 100000000\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota\",\r\n  \"name\": \"redmond/TestCreateQuota\",\r\n  \"type\": \"Microsoft.Storage.Admin/locations/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"numberOfStorageAccounts\": 1000000000,\r\n    \"capacityInGb\": 100000000\r\n  }\r\n}"
     }
   },
-  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$DELETE+https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+2": {
+  "New-AzsStorageQuota+[NoContext]+TestCreateStorageQuota+$DELETE+https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview+2": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-s31r1801.masd.stbtest.microsoft.com/subscriptions/627fecef-520e-4c18-94e0-8f0665ba86a7/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
+      "RequestUri": "https://management.azure.com/subscriptions/624575d6-5820-4528-8d07-53b5748f2fcc/providers/Microsoft.Storage.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-08-08-preview",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "172" ],

@@ -1,3 +1,6 @@
+# Load Default parameter values
+. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsKeyvaultQuota.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
