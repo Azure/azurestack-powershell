@@ -1,4 +1,5 @@
 ### Example 1
+```powershell
 PS C:\> Get-AzsSubscriptionsQuota
 
 Location Name                           Type                                          

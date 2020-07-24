@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-AzsDiskMigrationJob
 
 ## SYNOPSIS
-
+Starts a managed disk migration job to migrate managed disks to the specified destination share.
 
 ## SYNTAX
 

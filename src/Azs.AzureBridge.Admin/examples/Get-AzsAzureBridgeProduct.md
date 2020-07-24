@@ -1,14 +1,14 @@
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
-```
+```powershell
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG'
 ```
 
 Get a list of Products available for download from Azure Marketplace.
 
 ### -------------------------- EXAMPLE 2 --------------------------
-```
+```powershell
 Get-AzsAzureBridgeProduct -ActivationName 'myActivation' -ResourceGroupName 'activationRG' -Name 'microsoft.docker-arm.1.1.0'
 ```
 
