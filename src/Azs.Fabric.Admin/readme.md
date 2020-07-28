@@ -385,6 +385,11 @@ directive:
       verb: Add
       subject: ScaleUnitNode
 
+  - where:
+      verb: Add
+      subject: ScaleUnitNode
+    hide: true
+
   # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
   - where:
       verb: Start

@@ -1,6 +1,6 @@
 ### Example 1: Add-AzsScaleUnitNode
 ```powershell
-PS C:\> Add-AzsScaleUnitNode -NodeList $Nodes -ScaleUnit $ScaleUnitName
+PS C:\> Add-AzsScaleUnitNode -BmciPv4Address $BmciPv4Address -ComputerName $ComputerName -ScaleUnit $ScaleUnitName
 
 Adds a list of nodes to the scale unit.
 ```
