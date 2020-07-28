@@ -15,7 +15,7 @@ Scales out a scale unit.
 ### ScaleExpanded (Default)
 ```
 Add-AzsScaleUnitNode -ScaleUnit <String> [-Location <String>] [-ResourceGroupName <String>]
- [-SubscriptionId <String>] [-AwaitStorageConvergence] [-NodeList <IScaleOutScaleUnitParameters[]>]
+ [-SubscriptionId <String>] [-AwaitStorageConvergence] [-BmciPv4Address <String>] [-ComputerName <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Add-AzsScaleUnitNode -InputObject <IFabricAdminIdentity>
 ### ScaleViaIdentityExpanded
 ```
 Add-AzsScaleUnitNode -InputObject <IFabricAdminIdentity> [-AwaitStorageConvergence]
- [-NodeList <IScaleOutScaleUnitParameters[]>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-BmciPv4Address <String>] [-ComputerName <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Scales out a scale unit.
 
 ### Example 1: Add-AzsScaleUnitNode
 ```powershell
-PS C:\> Add-AzsScaleUnitNode -NodeList $Nodes -ScaleUnit $ScaleUnitName
+PS C:\> Add-AzsScaleUnitNode -BmciPv4Address $BmciPv4Address -ComputerName $ComputerName -ScaleUnit $ScaleUnitName
 
 Adds a list of nodes to the scale unit.
 ```
@@ -137,9 +137,11 @@ Accept wildcard characters: False
 Dynamic: False
 ```
 
-### -NodeList
-List of nodes in the scale unit.
-To construct, see NOTES section for NODELIST properties and create a hash table.
+### -BmciPv4Address 
+BMC address of the physical machine.
+
+### -ComputerName 
+Computer name of the physical machine.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IScaleOutScaleUnitParameters[]
