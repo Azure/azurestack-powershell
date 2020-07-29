@@ -12,7 +12,7 @@
     RootModule = 'AzureStack.psm1'
 
     # Version number of this module.
-    ModuleVersion          = '2.0.1'
+    ModuleVersion          = '2.0.2'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -62,7 +62,7 @@
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '0.9.0'; },
-        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.9.0'; },
+        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '0.9.1'; },
         @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '0.9.0'; },
         @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '0.9.1'; },
         @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '0.9.1'; },
