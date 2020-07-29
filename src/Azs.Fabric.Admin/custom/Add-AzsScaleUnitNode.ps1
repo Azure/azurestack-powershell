@@ -91,15 +91,15 @@ param(
     # Flag indicates if the operation should wait for storage to converge before returning.
     ${AwaitStorageConvergence},
 
-	[Parameter(ParameterSetName='BmciPv4Address', Mandatory)]
     [Parameter(ParameterSetName='ScaleExpanded', Mandatory)]
+    [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
     # BMC address of the physical machine.
     ${BmciPv4Address},
 
-	[Parameter(ParameterSetName='ComputerName ', Mandatory)]
     [Parameter(ParameterSetName='ScaleExpanded', Mandatory)]
+    [ValidateNotNull()]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Path')]
     [System.String]
     # Computer name of the physical machine.
