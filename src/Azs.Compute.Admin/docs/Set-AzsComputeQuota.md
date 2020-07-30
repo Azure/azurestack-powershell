@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-AzsComputeQuota
 
 ## SYNOPSIS
-
+Creates or Updates a Compute Quota with the provided quota parameters.
 
 ## SYNTAX
 

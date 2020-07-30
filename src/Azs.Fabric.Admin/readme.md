@@ -75,7 +75,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.9.0-preview
+module-version: 0.9.1-preview
 service-name: FabricAdmin
 
 ### File Renames
@@ -385,20 +385,25 @@ directive:
       verb: Add
       subject: ScaleUnitNode
 
-  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
+  - where:
+      verb: Add
+      subject: ScaleUnitNode
+    hide: true
+
+  # [ScaleUnitNode]Rename Start-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
   - where:
       verb: Start
       subject: ScaleUnitNodeMaintenanceMode
     set:
-      verb: Enable
+      verb: Disable
       subject: ScaleUnitNode
 
-  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Disable-AzsScaleUnitNode
+  # [ScaleUnitNode]Rename Stop-AzsScaleUnitNodeMaintenanceMode to Enable-AzsScaleUnitNode
   - where:
       verb: Stop
       subject: ScaleUnitNodeMaintenanceMode
     set:
-      verb: Disable
+      verb: Enable
       subject: ScaleUnitNode
 
   # ------------------- [FabricLocation] -------------------
@@ -628,7 +633,7 @@ directive:
 # Add release notes
   - from: Azs.Fabric.Admin.nuspec
     where: $
-    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes> 1.Bug fix for switched cmdlets: Enable-AzsScaleUnitNode and Disable-AzsScaleUnitNode; 2. Replace parameter 'NodeList' with 'BmciPAddress' and 'ComputerName' in Add-AzsScaleUnitNode </releaseNotes>');
 
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Fabric.Admin.nuspec
@@ -645,6 +650,4 @@ directive:
     where: $
     transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes\'\"\);' );
 
-subject-prefix: ''
-module-version: 0.9.0-preview
 ```

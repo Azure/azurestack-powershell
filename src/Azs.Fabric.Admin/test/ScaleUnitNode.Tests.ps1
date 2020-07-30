@@ -3,7 +3,7 @@ if (-Not (Test-Path -Path $loadEnvPath)) {
     $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
 }
 . ($loadEnvPath)
-$TestRecordingFile = Join-Path $PSScriptRoot 'Repair-AzsScaleUnitNode.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'ScaleUnitNodeTest.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -11,7 +11,7 @@ while(-not $mockingPath) {
 }
 . ($mockingPath | Select-Object -First 1).FullName
 
-Describe 'Repair-AzsScaleUnitNode' {
+Describe 'ScaleUnitNodeTest' {
     . $PSScriptRoot\Common.ps1
 
     BeforeEach {
@@ -187,9 +187,8 @@ Describe 'Repair-AzsScaleUnitNode' {
     It "TestAddScaleUnitNode" -Skip:$('TestAddScaleUnitNode' -in $global:SkippedTests) {
         $global:TestName = "TestAddScaleUnitNode"
 
-        $NewNode = New-AzsScaleUnitNodeObject -ComputerName "ASRR1N22R19U29" -BMCIPv4Address "100.83.64.17"
         {
-        Add-AzsScaleUnitNode -NodeList $NewNode -ScaleUnit "s-cluster" -Location 'east'
+           Add-AzsScaleUnitNode -BmciPv4Address "100.71.11.155" -ComputerName "ASRR1N31R12U25" -ScaleUnit "s-cluster"
         } | Should not throw
 
     }
