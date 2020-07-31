@@ -126,8 +126,10 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.1,
-            * Bug Fix for module failing to load in linux environments, module names and folders are case sensitive
+            ReleaseNotes = 'Version 2.0.2-preview,
+            * Bug Fix in Fabric Admin module
+                - Disable-AzsScaleUnitNode and Enable-AzsScaleUnitNode had operations reversed
+                - Replace parameter NodeList with BmciPAddress and ComputerName in cmd Add-AzsScaleUnitNode
             * Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
 
             # Preview version
