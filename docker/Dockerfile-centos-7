@@ -11,6 +11,7 @@ ARG VERSION=0.10.0
 ARG IMAGE_NAME=mcr.microsoft.com/azure-stack-powershell:${VERSION}-centos-7
 ARG AZURESTACK_PROFILE=2019-03-01-hybrid
 ARG AZURESTACK_VERSION=2.0.1-preview
+ARG READINESS_CHECKER_VERSION=1.2005.1269-preview
 
 ENV AZUREPS_HOST_ENVIRONMENT="dockerImage/${VERSION}-centos-7"
 
@@ -38,6 +39,8 @@ COPY scripts/* /
 RUN pwsh Install-AzureStackPowerShell.ps1 -REPOSITORY ${REPOSITORY} -AZURESTACK_PROFILE ${AZURESTACK_PROFILE} -AZURESTACK_VERSION ${AZURESTACK_VERSION}
 
 RUN pwsh Install-AzureStackTools.ps1
+
+RUN pwsh Install-Module -Name Microsoft.AzureStack.ReadinessChecker -RequiredVersion ${READINESS_CHECKER_VERSION} -AllowPrerelease
 
 # create AzureRmContextSettings.json before it was generated
 COPY ${CONFIG}/${AZURERM_CONTEXT_SETTINGS} ${AZURE}/${AZURERM_CONTEXT_SETTINGS}
