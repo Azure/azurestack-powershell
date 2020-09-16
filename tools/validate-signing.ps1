@@ -44,10 +44,13 @@ Write-Verbose -Message "Current path to check for unsigned files: ${pathToValida
 
 ################################# END EXTRACT NUPKG #################################
 
+$exclude = @("Unprotect-SecureString.ps1")
+
 if (Test-Path -Path $pathToValidate -PathType Container)
 {
     $fileInfos = Get-ChildItem -Path $pathToValidate -File -Recurse `
-        | Where-Object { $_.Extension -iin @('.dll','.exe','.msi','.cab','.ps1','.psm1','.psd1','.pssc','.ps1xml') } `
+        | Where-Object { $_.Name -notin $exclude }
+        | Where-Object { $_.Extension -in @('.dll','.exe','.msi','.cab','.ps1','.psm1','.psd1','.pssc','.ps1xml') } `
         | Where-Object { $_.FullName -notlike $(Join-Path -Path "*${moduleName}" -ChildPath "test*") }
 }
 elseif (Test-Path -Path $pathToValidate -PathType Leaf)
