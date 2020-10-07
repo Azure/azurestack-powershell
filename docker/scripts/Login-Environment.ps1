@@ -39,7 +39,7 @@ param
     [string] $SubscriptionId
 )
 
-if (($azureEnvironment = Get-AzEnvironment | Where Name -EQ $Name))
+if (($azureEnvironment = Get-AzEnvironment | Where-Object Name -EQ $Name))
 {
     Write-Verbose -Message "Azure Environment '$Name' already initialized" -Verbose
 }

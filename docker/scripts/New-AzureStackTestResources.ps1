@@ -39,7 +39,18 @@ function New-Quotas
 
 function Set-Offer
 {
-    $getResourceGroup = Get-AzResourceGroup -Name $resourceGroup
+    try
+    {
+        $getResourceGroup = Get-AzResourceGroup -Name $resourceGroup
+    }
+    catch [System.Exception]
+    {
+        if($error[0].ToString() -match "Provided resource group does not exist.")
+        {
+            Write-Host "The resource group ${resourceGroup} does not exist, the script will create it..."
+        }
+    }
+
     if ($null -eq $getResourceGroup)
     {
         New-AzResourceGroup -Name $resourceGroup -Location $Location

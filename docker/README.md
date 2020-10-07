@@ -71,10 +71,17 @@ docker rmi mcr.microsoft.com/azurestack/powershell
 
 1. Run Login-Environment.ps1 to create an environment and connect your AzureStack account to it.  
 
+Note: The default value for parameters are set in the environment variables of the containers using a docker command when first running the container such as in the following docker command:
+```
+docker run 
+-e "Location=<LOCATION>" 
+-e "ClientObjectId=<CLIENT_OBJECT_ID>" 
+-it <IMAGE_URL>:<IMAGE_TAG>
+```
 Login using credentials:  
 ```sh
 ./Login-Environment.ps1 
-[-Name <String>]  
+[-Name <String>]  # Defaults to 'AzureStack'
 -ResourceManagerEndpoint <System.Uri>  
 -DirectoryTenantId <String>  
 -Credential <PSCredential>  
@@ -83,7 +90,7 @@ Login using credentials:
 Login using certificates:  
 ```sh
 ./Login-Environment.ps1  
-[-Name <String>]  
+[-Name <String>]  # Defaults to 'AzureStack'
 -ResourceManagerEndpoint <System.Uri>  
 -DirectoryTenantId <String>  
 -ApplicationId <String>  
@@ -93,17 +100,17 @@ Login using certificates:
 
 2. Run New-AzureStackTestResources.ps1 to create required resources for running the tests.  
 
-If the $Location parameter is not passed, it will look use $ENV:Location.  
 ```sh
 ./New-AzureStackTestResources.ps1  
-[-Location <String>]  
+[-Location <String>]  # Defaults to $ENV:Location
 ```
 3. Run Test-AzsPowershell.ps1 to run the tests.  
 
-If the $ClientObjectId parameter is not passed, it will use $ENV:ClientObjectId that can be set as a Docker command. If $ENV:ClientObjectId is invalid, then the Az/Azs tests requiring admin privileges will fail, but the tests with user permission should still pass.
+
 ```sh
 ./Test-AzsPowershell.ps1  
-[-ClientObjectId <String>]  
+[-ClientObjectId <String>]  # Defaults to $ENV:ClientObjectId
+[-resourceLocation <String>]  # Defaults to $ENV:Location
 ```
 
 ## Developing and Contributing
