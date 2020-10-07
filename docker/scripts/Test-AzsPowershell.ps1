@@ -8,11 +8,13 @@
 param (
     [Parameter(HelpMessage = "The object ID associated with the secret or certificate AzureStack login information. Admin tests will fail if invalid.")]
     [string]
-    $ClientObjectId = $ENV:ClientObjectId
+    $ClientObjectId = $ENV:ClientObjectId,
+    [Parameter(HelpMessage = "The location of the resources for Azure Stack.")]
+    [string]
+    $resourceLocation = $ENV:Location
 )
 
 $resourceGroup = "azurestack-container-rg"
-$resourceLocation = "northwest"
 $globalLogFile = "log-" + (Get-Date).ticks + ".txt"
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
