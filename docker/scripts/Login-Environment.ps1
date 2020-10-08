@@ -9,7 +9,7 @@ param
 (
     [Parameter(Mandatory=$false)]
     [ValidateNotNullOrEmpty()]
-    [string] $Name = 'AzureStack',
+    [string] $EnvironmentName = 'AzureStack',
 
     [Parameter(Mandatory=$true)]
     [ValidateNotNull()]
@@ -18,7 +18,7 @@ param
 
     [Parameter(Mandatory=$true)]
     [ValidateNotNullOrEmpty()]
-    [string] $DirectoryTenantId,
+    [string] $TenantId,
 
     [Parameter(Mandatory=$true, ParameterSetName='UserCredential')]
     [ValidateNotNull()]
@@ -39,20 +39,20 @@ param
     [string] $SubscriptionId
 )
 
-if (($azureEnvironment = Get-AzEnvironment | Where-Object Name -EQ $Name))
+if (($azureEnvironment = Get-AzEnvironment | Where-Object Name -EQ $EnvironmentName))
 {
-    Write-Verbose -Message "Azure Environment '$Name' already initialized" -Verbose
+    Write-Verbose -Message "Azure Environment '$EnvironmentName' already initialized" -Verbose
 }
 else
 {
-    $azureEnvironment = Add-AzEnvironment -Name $Name -ARMEndpoint $ResourceManagerEndpoint -ErrorAction Stop
-    $azureEnvironment = Get-AzEnvironment $Name -ErrorAction Stop
+    $azureEnvironment = Add-AzEnvironment -Name $EnvironmentName -ARMEndpoint $ResourceManagerEndpoint -ErrorAction Stop
+    $azureEnvironment = Get-AzEnvironment $EnvironmentName -ErrorAction Stop
     write-Verbose -Message "Added Azure Environment: $($azureEnvironment | out-string)" -Verbose
 }
 
 $azureAccountParams = @{
-    Environment = $Name
-    TenantId    = $DirectoryTenantId
+    Environment = $EnvironmentName
+    TenantId    = $TenantId
     ServicePrincipal = $true
 }
 
@@ -74,7 +74,7 @@ Login-AzAccount @azureAccountParams -Verbose -ErrorAction Stop | Out-Null
 
 if ($SubscriptionId)
 {
-    $subscription = Select-AzSubscription -SubscriptionId $SubscriptionId -TenantId $DirectoryTenantId -Verbose -ErrorAction Stop
+    $subscription = Select-AzSubscription -SubscriptionId $SubscriptionId -TenantId $TenantId -Verbose -ErrorAction Stop
     Write-Verbose "Using account: $($subscription | out-string)" -Verbose
 }
 else

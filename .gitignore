@@ -8,3 +8,4 @@ src/**/tools
 src/**/resources
 .gitignore
 .gitattributes
+.vscode/
