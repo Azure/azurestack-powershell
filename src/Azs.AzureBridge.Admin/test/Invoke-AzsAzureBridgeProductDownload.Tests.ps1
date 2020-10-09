@@ -46,12 +46,59 @@ Describe 'Invoke-AzsAzureBridgeProductDownload' {
 
     It "TestDownloadAzsAzureBridgeProduct" -Skip:$("TestDownloadAzsAzureBridgeProduct" -in $global:SkippedTests) {
         $global:TestName = "TestDownloadAzsAzureBridgeProduct"
-        Invoke-AzsAzureBridgeProductDownload -ActivationName $global:ActivationName -Name $global:ProductName1 -ResourceGroupName $global:ResourceGroupName -ErrorAction Stop
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        $latestAvailableExtension = Get-AzsAzureBridgeProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        if ($downloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties)
+        {
+            Remove-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $downloadedExtension.Name.Split("/")[1]
+        }
+
+        Invoke-AzsAzureBridgeProductDownload -ActivationName default -ResourceGroupName azurestack-activation -ProductName $latestAvailableExtension.Name.Split("/")[1]
+
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName default -ResourceGroupName azurestack-activation `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        ValidateProductInfo $downloadedExtension
+        Remove-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $downloadedExtension.Name.Split("/")[1]
     }
 
+    # TODO: piping is bugged when run with Invoke-Pester, but works otherwise in a Powershell Core terminal.
     It "TestDownloadAzsAzureBridgeProductPipeline" -Skip:$("TestDownloadAzsAzureBridgeProductPipeline" -in $global:SkippedTests) {
         $global:TestName = "TestDownloadAzsAzureBridgeProductPipeline"
-        $DownloadedProduct = (Get-AzsAzureBridgeProduct -ActivationName $global:ActivationName -Name $global:ProductName2 -ResourceGroupName $global:ResourceGroupName)  | Invoke-AzsAzureBridgeProductDownload
-        ValidateProductInfo $DownloadedProduct
+        
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName default -ResourceGroupName azurestack-activation `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        $latestAvailableExtension = Get-AzsAzureBridgeProduct -ResourceGroupName azurestack-activation -ActivationName default `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        if ($downloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties)
+        {
+            $downloadedExtension | Remove-AzsAzureBridgeDownloadedProduct
+        }
+
+        $latestAvailableExtension | Invoke-AzsAzureBridgeProductDownload -ActivationName "default" -ResourceGroupName "azurestack-activation"
+
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName default -ResourceGroupName azurestack-activation `
+        | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+        | Sort-Object -Property ProductProperties -Descending `
+        | Select-Object -First 1
+
+        ValidateProductInfo $downloadedExtension
+        $downloadedExtension | Remove-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation"
     }
 }
