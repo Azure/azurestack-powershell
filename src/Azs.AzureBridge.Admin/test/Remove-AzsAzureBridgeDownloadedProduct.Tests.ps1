@@ -46,13 +46,110 @@ Describe 'Remove-AzsAzureBridgeDownloadedProduct' {
 
     It "TestRemoveAzsAzureBridgeDownloadedProduct" -Skip:$("TestRemoveAzsAzureBridgeDownloadedProduct" -in $global:SkippedTests) {
         $global:TestName = "TestRemoveAzsAzureBridgeDownloadedProduct"
-        Remove-AzsAzureBridgeDownloadedProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName -Name $global:ProductName1
-        Get-AzsAzureBridgeDownloadedProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName -Name $global:ProductName1 | Should Be $null
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        $latestAvailableExtension = Get-AzsAzureBridgeProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        if ($downloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version = latest version: Uninstall latest version and then re-install.
+            Remove-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $downloadedExtension.Name.Split("/")[1]
+            $oldDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $oldDownloadedExtension.ProductProperties -eq $downloadedExtension.ProductProperties
+            $validate | Should Be $false
+
+            Invoke-AzsAzureBridgeProductDownload -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $latestAvailableExtension.Name.Split("/")[1]
+        }
+        elseif ($downloadedExtension.ProductProperties -le $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version < latest version: Install latest version then uninstall.
+            Invoke-AzsAzureBridgeProductDownload -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $latestAvailableExtension.Name.Split("/")[1]
+            $newDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $newDownloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties
+            $validate | Should Be $true
+            
+            Remove-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $newDownloadedExtension.Name.Split("/")[1]
+            $oldDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $oldDownloadedExtension.ProductProperties -le $latestAvailableExtension.ProductProperties
+            $validate | Should Be $true
+        }
+        elseif ($downloadedExtension.ProductProperties -ge $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version > latest version: error since original state cannot be resumed after any installs or uninstalls.
+            throw "The latest available extension version for $($latestAvailableExtension.Name) of $($latestAvailableExtension.ProductProperties) is behind the currently downloaded version $($downloadedExtension.ProductProperties). This test will not run since the removed product cannot be re-installed."
+        }
     }
 
+    # TODO: piping is bugged when run with Invoke-Pester, but works otherwise in a Powershell Core terminal.
     It "TestRemoveAzsAzureBridgeDownloadedProductPipeline" -Skip:$("TestRemoveAzsAzureBridgeDownloadedProductPipeline" -in $global:SkippedTests) {
         $global:TestName = "TestRemoveAzsAzureBridgeDownloadedProductPipeline"
-        (Get-AzsAzureBridgeDownloadedProduct -ActivationName $global:ActivationName -Name $global:ProductName2 -ResourceGroupName $global:ResourceGroupName ) | Remove-AzsAzureBridgeDownloadedProduct
-        Get-AzsAzureBridgeDownloadedProduct -ActivationName $global:ActivationName -ResourceGroupName $global:ResourceGroupName -Name $global:ProductName2 | Should Be $null
+        $downloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        $latestAvailableExtension = Get-AzsAzureBridgeProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+            | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+            | Sort-Object -Property ProductProperties -Descending `
+            | Select-Object -First 1
+
+        if ($downloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version = latest version: Uninstall latest version and then re-install.
+            $downloadedExtension | Remove-AzsAzureBridgeDownloadedProduct
+            $oldDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $oldDownloadedExtension.ProductProperties -eq $downloadedExtension.ProductProperties
+            $validate | Should Be $false
+
+            Invoke-AzsAzureBridgeProductDownload -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $latestAvailableExtension.Name.Split("/")[1]
+        }
+        elseif ($downloadedExtension.ProductProperties -le $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version < latest version: Install latest version then uninstall.
+            Invoke-AzsAzureBridgeProductDownload -ActivationName "default" -ResourceGroupName "azurestack-activation" -ProductName $latestAvailableExtension.Name.Split("/")[1]
+            $newDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $newDownloadedExtension.ProductProperties -eq $latestAvailableExtension.ProductProperties
+            $validate | Should Be $true
+            
+            $newDownloadedExtension | Remove-AzsAzureBridgeDownloadedProduct
+            $oldDownloadedExtension = Get-AzsAzureBridgeDownloadedProduct -ActivationName "default" -ResourceGroupName "azurestack-activation" `
+                | Where-Object {$_.DisplayName -eq "VM Access For Linux Extension"} `
+                | Sort-Object -Property ProductProperties -Descending `
+                | Select-Object -First 1
+
+            $validate = $oldDownloadedExtension.ProductProperties -le $latestAvailableExtension.ProductProperties
+            $validate | Should Be $true
+        }
+        elseif ($downloadedExtension.ProductProperties -ge $latestAvailableExtension.ProductProperties)
+        {
+            # Downloaded version > latest version: error since original state cannot be resumed after any installs or uninstalls.
+            throw "The latest available extension version for $($latestAvailableExtension.Name) of $($latestAvailableExtension.ProductProperties) is behind the currently downloaded version $($downloadedExtension.ProductProperties). This test will not run since the removed product cannot be re-installed."
+        }
     }
 }
