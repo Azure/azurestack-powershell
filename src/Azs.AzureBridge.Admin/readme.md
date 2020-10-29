@@ -54,7 +54,7 @@ metadata:
   description: 'Microsoft AzureStack PowerShell: AzureBridge Admin cmdlets'
 
 subject-prefix: AzureBridge
-module-version: 0.9.1-preview
+module-version: 1.0.0
 identity-correction-for-post: true
 service-name: BridgeAdmin
 
