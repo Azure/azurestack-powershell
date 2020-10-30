@@ -318,7 +318,7 @@ directive:
       subject: ScaleUnitGpuPartitionSize
     set:
       subject: ScaleUnit
-	  
+
   # [ScaleUnit] Cmdlet parameter rename
   - where:
       subject: ScaleUnit
