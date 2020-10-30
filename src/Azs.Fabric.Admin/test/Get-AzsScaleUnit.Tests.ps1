@@ -36,6 +36,12 @@ Describe 'Get-AzsScaleUnit' {
             $ScaleUnit.State                   | Should Not Be $null
             $ScaleUnit.TotalCapacityCore       | Should Not Be $null
             $ScaleUnit.TotalCapacityMemoryGb   | Should Not Be $null
+            $ScaleUnit.IsGpuAvailable          | Should Not Be $null
+            if($ScaleUnit.IsGpuAvailable)
+            {
+                $ScaleUnit.GpuType             | Should Not Be $null
+                $ScaleUnit.GpuPartitionSize    | Should Not Be $null
+            }
         }
 
         function AssertScaleUnitsAreSame {
@@ -75,6 +81,13 @@ Describe 'Get-AzsScaleUnit' {
                 $Found.State          | Should Be $Expected.State
                 $Found.TotalCapacityCores     | Should be $Expected.TotalCapacityCores
                 $Found.TotalCapacityMemoryGb  | Should be $Expected.TotalCapacityMemoryGb
+
+                $ScaleUnit.IsGpuAvailable      | Should be $Expected.IsGpuAvailable
+                if($ScaleUnit.IsGpuAvailable)
+                {
+                    $ScaleUnit.GpuType             | Should be $Expected.GpuType
+                    $ScaleUnit.GpuPartitionSize    | Should be $Expected.GpuPartitionSize
+                }
             }
         }
     }
