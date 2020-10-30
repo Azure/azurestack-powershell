@@ -23,7 +23,7 @@ Set GPU partition size.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Set GPU partition size.
 ```powershell
 PS C:\> Set-AzsScaleUnit -Name "AZS01" -NumberOfGPUPartition 8
 
