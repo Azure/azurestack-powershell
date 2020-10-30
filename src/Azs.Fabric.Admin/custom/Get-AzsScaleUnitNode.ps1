@@ -8,7 +8,7 @@ To view examples, please use the -Online parameter with Get-Help or navigate to:
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IScaleUnitNode
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20201001.IScaleUnitNode
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -40,7 +40,7 @@ INPUTOBJECT <IFabricAdminIdentity>: Identity Parameter
 https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/get-azsscaleunitnode
 #>
 function Get-AzsScaleUnitNode {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IScaleUnitNode])]
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20201001.IScaleUnitNode])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
     [Parameter(ParameterSetName='Get')]
