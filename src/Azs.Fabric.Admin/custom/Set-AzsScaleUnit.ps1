@@ -144,7 +144,28 @@ process {
                     $null = $PSBoundParameters.Remove('Force')
                 }
 
-                Azs.Fabric.Admin.internal\Set-AzsScaleUnit @PSBoundParameters
+                
+                $scaleUnit = Get-AzsScaleUnit -Name $Name
+                if(-not $scaleUnit)
+                {
+                    throw "Couldn't find scale unit '$Name'"
+                }
+
+                if($scaleUnit.GpuType -eq "GPUP")
+                {
+                    if($scaleUnit.GpuPartitionSize -ne $NumberOfGPUPartition)
+                    {
+                        Azs.Fabric.Admin.internal\Set-AzsScaleUnit @PSBoundParameters
+                    }
+                    else
+                    {
+                        Write-Host "Number of GPU partitions on '$Name' is already set to $NumberOfGPUPartition."
+                    }
+                }
+                else
+                {
+                    throw "This operation does not support for GPU type: " + $scaleUnit.GpuType
+                }
             }
         }
     }
