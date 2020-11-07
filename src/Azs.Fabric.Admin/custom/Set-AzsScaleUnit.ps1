@@ -151,21 +151,20 @@ process {
                     throw "Couldn't find scale unit '$Name'"
                 }
 
-                if($scaleUnit.GpuType -eq "GPUP")
+                if($scaleUnit.GpuType -ne "GPUP")
                 {
-                    if($scaleUnit.GpuPartitionSize -ne $NumberOfGPUPartition)
-                    {
-                        Azs.Fabric.Admin.internal\Set-AzsScaleUnit @PSBoundParameters
-                    }
-                    else
-                    {
-                        Write-Host "Number of GPU partitions on '$Name' is already set to $NumberOfGPUPartition."
-                    }
+                    throw "This operation is not supported for GPU type: " + $scaleUnit.GpuType
                 }
-                else
+
+
+                if($scaleUnit.GpuPartitionSize -eq $NumberOfGPUPartition)
                 {
-                    throw "This operation does not support for GPU type: " + $scaleUnit.GpuType
+                    Write-Host "Number of GPU partitions on '$Name' is already set to $NumberOfGPUPartition."
+                    return
                 }
+
+                Azs.Fabric.Admin.internal\Set-AzsScaleUnit @PSBoundParameters
+
             }
         }
     }
