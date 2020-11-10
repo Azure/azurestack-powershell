@@ -42,5 +42,49 @@
         "Az.Websites": [
             "0.10.0-preview"
         ]
+    },
+    "2020-09-01-hybrid": {
+        "Az": [
+            "1.10.0"
+        ],
+        "Az.Accounts": [
+            "2.1.2"
+        ],
+        "Az.Billing": [
+            "0.10.0"
+        ],
+        "Az.Compute": [
+            "2.7.0"
+        ],
+        "Az.DataBoxEdge": [
+            "1.1.0"
+        ],
+        "Az.Dns": [
+            "0.10.0"
+        ],
+        "Az.EventHub": [
+            "1.4.3"
+        ],
+        "Az.IotHub": [
+            "0.10.0"
+        ],
+        "Az.KeyVault": [
+            "0.10.0"
+        ],
+        "Az.Monitor": [
+            "1.6.0"
+        ],
+        "Az.Network": [
+            "1.2.0"
+        ],
+        "Az.Resources": [
+            "0.11.0"
+        ],
+        "Az.Storage": [
+            "2.6.0"
+        ],
+        "Az.Websites": [
+            "0.10.0"
+        ]
     }
 }

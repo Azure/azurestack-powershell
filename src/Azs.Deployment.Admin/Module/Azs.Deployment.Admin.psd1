@@ -11,7 +11,7 @@
 RootModule = 'Azs.Deployment.Admin.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.9.0'
+ModuleVersion = '1.0.0'
 
 # ID used to uniquely identify this module
 GUID = 'a50d2cce-63a7-4c7b-980f-c4cead941544'
@@ -50,7 +50,7 @@ CompatiblePSEditions = 'Core', 'Desktop'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.0.1'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '0.10.0'; })
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.1.2'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '0.11.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
