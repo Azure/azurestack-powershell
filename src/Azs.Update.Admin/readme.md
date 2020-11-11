@@ -174,6 +174,5 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Update.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
-
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.1.2]" />\n      <dependency id="Az.Resources" version="[1.10.0]" />');
 ```
