@@ -144,12 +144,12 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Subscriptions.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.0.1-preview]" />\n      <dependency id="Az.Resources" version="[0.10.0-preview]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.1.2]" />\n      <dependency id="Az.Resources" version="[1.10.0]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp
     where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.0.1\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.10.0\'; \}\}\)\"\);');
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Subscriptions.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.1.2\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'1.10.0\'; \}\}\)\"\);');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp
@@ -160,5 +160,4 @@ directive:
   - from: source-file-csharp
     where: $
     transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \{previewVersion\}\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}Prerelease = \'\{previewVersion\}\'\"\);' );
-
 ```
