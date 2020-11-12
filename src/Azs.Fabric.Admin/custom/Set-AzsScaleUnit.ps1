@@ -52,7 +52,7 @@ param(
 
     [Parameter(ParameterSetName='SetExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
-    [ValidateSet('2','4','8')]
+    [ValidateSet('1','2','4','8')]
     [System.Int32]
     # Number of GPU partitions
     ${NumberOfGPUPartition},
