@@ -9,15 +9,21 @@ trigger:
 pool:
   name: Hosted VS2017
 
+
+
 steps:
-- task: PowerShell@2
+
+- task: AzurePowerShell@5
   inputs:
-    targetType: 'inline'
-    script: |
-      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-      $webClient = new-object system.net.webclient
-      $webClient.DownloadFile("https://modulestorage.blob.bellevue.azurestack.corp.microsoft.com/azaccountscontainer/Az.Accounts.2.1.2.nupkg", "$(Build.SourcesDirectory)\Az.Accounts.2.1.2.nupkg")
+    azureSubscription: 'AzureStack-Bellevue'
+    ScriptType: 'InlineScript'
+    Inline: |
+      New-Item -Path "$(Build.SourcesDirectory)" -Name "az-new" -ItemType "directory"
+      $acc = Get-AzStorageAccount
+      Get-AzStorageBlobContent -Container "azaccountscontainer" -Blob "Az.Accounts.2.1.2.nupkg" -Destination "$(Build.SourcesDirectory)\az-new" -Context $acc.Context
+    azurePowerShellVersion: 'LatestVersion'
     pwsh: true
+    workingDirectory: '$(Build.SourcesDirectory)'
 
 - task: PowerShell@2
   inputs:
