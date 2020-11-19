@@ -10,10 +10,12 @@ pool:
   name: Hosted VS2017
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'https://modulestorage.blob.bellevue.azurestack.corp.microsoft.com/azaccountscontainer/Az.Accounts.2.1.2.nupkg'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: 'ls'
+    pwsh: true
