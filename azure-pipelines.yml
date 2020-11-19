@@ -10,13 +10,13 @@ pool:
   name: Hosted VS2017
 
 steps:
-
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: '$webClient.DownloadFile("https://modulestorage.blob.bellevue.azurestack.corp.microsoft.com/azaccountscontainer/Az.Accounts.2.1.2.nupkg", "$(Build.SourcesDirectory)\Az.Accounts.2.1.2.nupkg")'
+    script: |
+      $webClient = new-object system.net.webclient
+      $webClient.DownloadFile("https://modulestorage.blob.bellevue.azurestack.corp.microsoft.com/azaccountscontainer/Az.Accounts.2.1.2.nupkg", "$(Build.SourcesDirectory)\Az.Accounts.2.1.2.nupkg")
     pwsh: true
-    workingDirectory: '$(Build.SourcesDirectory)'
 
 - task: PowerShell@2
   inputs:
