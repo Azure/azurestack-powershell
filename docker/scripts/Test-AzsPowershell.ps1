@@ -120,8 +120,11 @@ $TestAzKeyVault =
     $key.id
     
     Log -Message "Setting secret... (Set-AzKeyVaultSecret)"
+    <#[SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="fake guid to be used as password, not a secret")]#>
     $userPwd = ConvertTo-SecureString "18500b43-4829-4123-ad73-cd4110c64288" -AsPlainText -Force
+    <#[SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="fake password, not a secret")]#>
     $secret = "password"
+    <#[SuppressMessage("Microsoft.Security", "CS002:SecretInNextLine", Justification="No secret in next line ")]#>
     Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $secret -SecretValue $userPwd -ErrorAction Stop
     $kvsecret = Get-AzKeyVaultSecret -VaultName $KeyVaultName
     $kvsecret.Id
