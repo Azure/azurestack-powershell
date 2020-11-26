@@ -58,7 +58,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: 'Keyvault'
-module-version: 0.9.1-preview
+module-version: 1.0.0
 service-name: KeyvaultAdmin
 
 ### File Renames
