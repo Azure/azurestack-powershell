@@ -23,7 +23,7 @@ param
 (
     [Parameter(Mandatory=$false)]
     [ValidateNotNullOrEmpty()]
-    [string] $EnvironmentName = 'redmond-Adfs',
+    [string] $EnvironmentName = 'az-accounts-test',
 
     [Parameter(Mandatory=$true)]
     [ValidateNotNull()]
