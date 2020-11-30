@@ -12,7 +12,7 @@
 RootModule = 'AzureRM.Bootstrapper.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.5.0'
+ModuleVersion = '0.6.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -114,8 +114,8 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* 0.5.0: Updated for the azure stack profile 2019-03-01-hybrid
-        * Bug fix to add UseBasicParsing for Invoke-WebRequest'
+        ReleaseNotes = '* 0.6.0: Bug fix for ProfileCache not being updated after installing Az.BootStrapper and then reverting back to use AzureRM.BootStrapper
+        * We always read the map from the azure blob now'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''

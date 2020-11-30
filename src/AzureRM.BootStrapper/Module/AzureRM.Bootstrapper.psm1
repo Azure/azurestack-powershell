@@ -984,7 +984,7 @@ function Use-AzureRmProfile
   PROCESS 
   {
     $Force = $PSBoundParameters.Force
-    $ProfileMap = (Get-AzProfile)
+    $ProfileMap = (Get-AzProfile -Update)
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = $PSBoundParameters.Module
@@ -1072,7 +1072,7 @@ function Install-AzureRmProfile
   }
 
   PROCESS {
-    $ProfileMap = (Get-AzProfile)
+    $ProfileMap = (Get-AzProfile -Update)
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = ($ProfileMap.$Profile | Get-Member -MemberType NoteProperty).Name
@@ -1128,7 +1128,7 @@ function Uninstall-AzureRmProfile
   }
 
   PROCESS {
-    $ProfileMap = (Get-AzProfile)
+    $ProfileMap = (Get-AzProfile -Update)
     $Profile = $PSBoundParameters.Profile
     $Force = $PSBoundParameters.Force
 
