@@ -32,8 +32,8 @@ Describe 'Get-AzsScaleUnitNode' {
 
             # Scale Unit Node
             $ScaleUnitNode.CanPowerOff          | Should Not Be $null
-            $ScaleUnitNode.CapacityCore         | Should Not Be $null
-            $ScaleUnitNode.CapacityMemoryGb     | Should Not Be $null
+            $ScaleUnitNode.CapacityOfCores         | Should Not Be $null
+            $ScaleUnitNode.CapacityOfMemoryInGB    | Should Not Be $null
             $ScaleUnitNode.PowerState           | Should Not Be $null
             $ScaleUnitNode.ScaleUnitName        | Should Not Be $null
             $ScaleUnitNode.ScaleUnitNodeStatus  | Should Not Be $null
@@ -75,8 +75,8 @@ Describe 'Get-AzsScaleUnitNode' {
 
                 # Scale Unit Node
                 $Found.CanPowerOff          | Should Be $Expected.CanPowerOff
-                $Found.CapacityCore         | Should Be $Expected.CapacityCore
-                $Found.CapacityMemoryGb     | Should Be $Expected.CapacityMemoryGb
+                $Found.CapacityOfCores      | Should Be $Expected.CapacityOfCores
+                $Found.CapacityOfMemoryInGB | Should Be $Expected.CapacityOfMemoryInGB
 
                 $Found.PowerState           | Should Be $Expected.PowerState
                 $Found.ScaleUnitName        | Should Be $Expected.ScaleUnitName
@@ -142,7 +142,6 @@ Describe 'Get-AzsScaleUnitNode' {
     }
 
     # Tenant VM
-
     It "TestGetScaleUnitNodeOnTenantVM" -Skip:$('TestGetScaleUnitNodeOnTenantVM' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllScaleUnitNodes'
 
