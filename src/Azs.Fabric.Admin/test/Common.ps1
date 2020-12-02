@@ -1,4 +1,5 @@
 $global:SkippedTests = @(
+    "TestInfraRoleInstancePowerOnAll"
 )
 
 if ($global:TestMode -eq "Live") {
