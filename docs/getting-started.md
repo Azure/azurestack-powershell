@@ -19,15 +19,24 @@ This contains the migration guides and general information docs
 ### Prerequisites
 1. Install NodeJs: https://nodejs.org/ (recommended v10, https://nodejs.org/download/release/v10.15.3/)
     a. Please do make sure that you have the recommended version. The latest seems to have issues in generation
-2. install new autorest beta packge: npm install -g @autorest/autorest
-3. Install PS core: npm install -g pwsh
-4. Install .net core: npm install -g dotnet-sdk-2.2
+2. install new autorest beta packge: 
+```
+npm install -g autorest 
+```
+3. Install PS core: 
+```
+npm install -g pwsh
+```
+4. Install .net core: 
+```
+npm install -g dotnet-sdk-2.2
+```
 
 ### Build
 
 1. Go to module directory, e.g. src/Azs.Network.Admin
 2. Run: 
-    * autorest-beta
+    * autorest
     * pwsh
     * .\build-module.ps1
 3. All generated cmdlets will be inside 'exports' folder

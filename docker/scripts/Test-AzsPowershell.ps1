@@ -120,9 +120,12 @@ $TestAzKeyVault =
     $key.id
     
     Log -Message "Setting secret... (Set-AzKeyVaultSecret)"
-    $userPwd = ConvertTo-SecureString "18500b43-4829-4123-ad73-cd4110c64288" -AsPlainText -Force
-    $secret = "password"
-    Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $secret -SecretValue $userPwd -ErrorAction Stop
+
+    $secretValue = [guid]::NewGuid()
+    $secretSecureString = ConvertTo-SecureString $secretValue -AsPlainText -Force
+    $secretName = "DummySecret"
+    Set-AzKeyVaultSecret -VaultName $KeyVaultName -Name $secretName -SecretValue $secretSecureString -ErrorAction Stop
+
     $kvsecret = Get-AzKeyVaultSecret -VaultName $KeyVaultName
     $kvsecret.Id
     
@@ -154,7 +157,7 @@ $TestAzKeyVault =
     Log -Message "Removing key vault access policy... (Remove-AzKeyVaultAccessPolicy)"
     Remove-AzKeyVaultAccessPolicy -VaultName $KeyVaultName -ObjectId $ClientObjectId -ErrorAction Stop
 
-    Log -Message "Removing key vault ${KeyVaultName}... (Remove-AzKeyVaultAccessPolicy)"
+    Log -Message "Removing key vault ${KeyVaultName}... (Remove-AzKeyVault)"
     Remove-AzKeyVault -ResourceGroupName $resourceGroup -VaultName $KeyVaultName -Confirm:$false -Force
 }
 
