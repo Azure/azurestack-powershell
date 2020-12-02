@@ -34,9 +34,9 @@ Describe 'Get-AzsScaleUnit' {
             $ScaleUnit.LogicalFaultDomain      | Should Not Be $null
             $ScaleUnit.ScaleUnitType           | Should Not Be $null
             $ScaleUnit.State                   | Should Not Be $null
-            $ScaleUnit.TotalCapacityCore       | Should Not Be $null
-            $ScaleUnit.TotalCapacityMemoryGb   | Should Not Be $null
-            $ScaleUnit.IsGpuAvailable          | Should Not Be $null
+            $ScaleUnit.TotalCapacityOfCores        | Should Not Be $null
+            $ScaleUnit.TotalCapacityOfMemoryInGB   | Should Not Be $null
+            $ScaleUnit.IsGpuAvailable              | Should Not Be $null
             if($ScaleUnit.IsGpuAvailable)
             {
                 $ScaleUnit.GpuType             | Should Not Be $null
@@ -79,8 +79,8 @@ Describe 'Get-AzsScaleUnit' {
 
                 $Found.ScaleUnitType  | Should Be $Expected.ScaleUnitType
                 $Found.State          | Should Be $Expected.State
-                $Found.TotalCapacityCores     | Should be $Expected.TotalCapacityCores
-                $Found.TotalCapacityMemoryGb  | Should be $Expected.TotalCapacityMemoryGb
+                $Found.TotalCapacityOfCores       | Should be $Expected.TotalCapacityOfCores
+                $Found.TotalCapacityOfMemoryInGB  | Should be $Expected.TotalCapacityOfMemoryInGB
 
                 $ScaleUnit.IsGpuAvailable      | Should be $Expected.IsGpuAvailable
                 if($ScaleUnit.IsGpuAvailable)
