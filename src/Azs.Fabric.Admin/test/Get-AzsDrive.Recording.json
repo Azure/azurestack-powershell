@@ -2,7 +2,7 @@
   "Get-AzsDrive+[NoContext]+TestListDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "362" ],
@@ -42,7 +42,7 @@
   "Get-AzsDrive+[NoContext]+TestListDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "363" ],
@@ -82,7 +82,7 @@
   "Get-AzsDrive+[NoContext]+TestListDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "364" ],
@@ -122,7 +122,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "365" ],
@@ -162,7 +162,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "366" ],
@@ -202,7 +202,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "367" ],
@@ -242,7 +242,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f}?api-version=2019-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "368" ],
@@ -282,7 +282,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "369" ],
@@ -322,7 +322,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "370" ],
@@ -362,7 +362,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "371" ],
@@ -402,7 +402,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f}?api-version=2019-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "372" ],
@@ -442,7 +442,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{0eb4134e-ebdf-fa06-67e8-8747ec97351f}?api-version=2019-05-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0eb4134e-ebdf-fa06-67e8-8747ec97351f%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B0eb4134e-ebdf-fa06-67e8-8747ec97351f%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "373" ],
@@ -482,7 +482,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{10a183e6-50d7-5d8c-7e2d-76a98a75e855}?api-version=2019-05-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B10a183e6-50d7-5d8c-7e2d-76a98a75e855%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B10a183e6-50d7-5d8c-7e2d-76a98a75e855%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "374" ],
@@ -522,7 +522,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{1326e81a-fe39-4790-ea96-4149ab3ee5f7}?api-version=2019-05-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B1326e81a-fe39-4790-ea96-4149ab3ee5f7%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B1326e81a-fe39-4790-ea96-4149ab3ee5f7%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "375" ],
@@ -562,7 +562,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{16a33b5c-c1d5-9c8e-6626-e495c73eb579}?api-version=2019-05-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B16a33b5c-c1d5-9c8e-6626-e495c73eb579%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B16a33b5c-c1d5-9c8e-6626-e495c73eb579%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "376" ],
@@ -602,7 +602,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{213d31db-bfcd-2e9b-81fe-0492b24d230d}?api-version=2019-05-01+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B213d31db-bfcd-2e9b-81fe-0492b24d230d%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B213d31db-bfcd-2e9b-81fe-0492b24d230d%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "377" ],
@@ -642,7 +642,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{2265833e-548d-0703-9ec2-7666e7710172}?api-version=2019-05-01+10": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2265833e-548d-0703-9ec2-7666e7710172%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2265833e-548d-0703-9ec2-7666e7710172%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "378" ],
@@ -682,7 +682,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{226efb24-fbd9-b0b0-9f31-25eeee70a392}?api-version=2019-05-01+11": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B226efb24-fbd9-b0b0-9f31-25eeee70a392%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B226efb24-fbd9-b0b0-9f31-25eeee70a392%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "379" ],
@@ -722,7 +722,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{251da5b9-2ed3-bdfe-4dca-4eedf1934d84}?api-version=2019-05-01+12": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B251da5b9-2ed3-bdfe-4dca-4eedf1934d84%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B251da5b9-2ed3-bdfe-4dca-4eedf1934d84%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "380" ],
@@ -762,7 +762,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{26c48dba-0893-2e71-6b5d-d47d34d0ebb5}?api-version=2019-05-01+13": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B26c48dba-0893-2e71-6b5d-d47d34d0ebb5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B26c48dba-0893-2e71-6b5d-d47d34d0ebb5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "381" ],
@@ -802,7 +802,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{27749196-9ba3-2e55-d93c-f96684e37714}?api-version=2019-05-01+14": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B27749196-9ba3-2e55-d93c-f96684e37714%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B27749196-9ba3-2e55-d93c-f96684e37714%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "382" ],
@@ -842,7 +842,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{2acc8637-9db4-9690-00c0-e0399bf6d072}?api-version=2019-05-01+15": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2acc8637-9db4-9690-00c0-e0399bf6d072%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2acc8637-9db4-9690-00c0-e0399bf6d072%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "383" ],
@@ -882,7 +882,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{2cb9c6c9-9a3e-fb9a-1692-b229a3ed1fca}?api-version=2019-05-01+16": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2cb9c6c9-9a3e-fb9a-1692-b229a3ed1fca%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2cb9c6c9-9a3e-fb9a-1692-b229a3ed1fca%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "384" ],
@@ -922,7 +922,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{2d5716f2-12a0-fe8b-4261-275f0b8a7d53}?api-version=2019-05-01+17": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2d5716f2-12a0-fe8b-4261-275f0b8a7d53%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B2d5716f2-12a0-fe8b-4261-275f0b8a7d53%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "385" ],
@@ -962,7 +962,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{31c75819-3305-bfd8-e6a2-0ecce8887f2d}?api-version=2019-05-01+18": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B31c75819-3305-bfd8-e6a2-0ecce8887f2d%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B31c75819-3305-bfd8-e6a2-0ecce8887f2d%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "386" ],
@@ -1002,7 +1002,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{36d6d1e1-c540-c3fd-9678-23a0d29dee8e}?api-version=2019-05-01+19": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B36d6d1e1-c540-c3fd-9678-23a0d29dee8e%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B36d6d1e1-c540-c3fd-9678-23a0d29dee8e%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "387" ],
@@ -1042,7 +1042,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{3aca8e39-b8a2-45be-7378-6200af4e8a8f}?api-version=2019-05-01+20": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B3aca8e39-b8a2-45be-7378-6200af4e8a8f%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B3aca8e39-b8a2-45be-7378-6200af4e8a8f%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "388" ],
@@ -1082,7 +1082,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{3bfe1e9c-7d1f-8ae6-d173-7bdd54bda9e7}?api-version=2019-05-01+21": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B3bfe1e9c-7d1f-8ae6-d173-7bdd54bda9e7%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B3bfe1e9c-7d1f-8ae6-d173-7bdd54bda9e7%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "389" ],
@@ -1122,7 +1122,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{41613712-15ea-e559-5eb0-0a018654895b}?api-version=2019-05-01+22": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B41613712-15ea-e559-5eb0-0a018654895b%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B41613712-15ea-e559-5eb0-0a018654895b%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "390" ],
@@ -1162,7 +1162,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{4501403a-1d42-57ca-0592-0f20c3aec4d8}?api-version=2019-05-01+23": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4501403a-1d42-57ca-0592-0f20c3aec4d8%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4501403a-1d42-57ca-0592-0f20c3aec4d8%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "391" ],
@@ -1202,7 +1202,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{4803114f-c562-451e-29d7-1360015a90af}?api-version=2019-05-01+24": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4803114f-c562-451e-29d7-1360015a90af%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4803114f-c562-451e-29d7-1360015a90af%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "392" ],
@@ -1242,7 +1242,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{482f925e-16cf-b3d9-0d3e-f8204f0b33bb}?api-version=2019-05-01+25": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B482f925e-16cf-b3d9-0d3e-f8204f0b33bb%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B482f925e-16cf-b3d9-0d3e-f8204f0b33bb%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "393" ],
@@ -1282,7 +1282,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{4c1fc756-5aad-ea11-b4ed-aa0aa5c739a7}?api-version=2019-05-01+26": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4c1fc756-5aad-ea11-b4ed-aa0aa5c739a7%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4c1fc756-5aad-ea11-b4ed-aa0aa5c739a7%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "394" ],
@@ -1322,7 +1322,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{4ef264ce-bf72-61b6-8244-4ee9f8211e81}?api-version=2019-05-01+27": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4ef264ce-bf72-61b6-8244-4ee9f8211e81%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4ef264ce-bf72-61b6-8244-4ee9f8211e81%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "395" ],
@@ -1362,7 +1362,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{4fa75c34-aa10-9846-87f2-964fd7f1a8a9}?api-version=2019-05-01+28": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4fa75c34-aa10-9846-87f2-964fd7f1a8a9%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B4fa75c34-aa10-9846-87f2-964fd7f1a8a9%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "396" ],
@@ -1402,7 +1402,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{532ab8a0-9329-82c7-b381-4ec53b38ed24}?api-version=2019-05-01+29": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B532ab8a0-9329-82c7-b381-4ec53b38ed24%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B532ab8a0-9329-82c7-b381-4ec53b38ed24%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "397" ],
@@ -1442,7 +1442,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{5560c77c-6f27-736d-b418-48afe3fbb9d5}?api-version=2019-05-01+30": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5560c77c-6f27-736d-b418-48afe3fbb9d5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5560c77c-6f27-736d-b418-48afe3fbb9d5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "398" ],
@@ -1482,7 +1482,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{57149047-14b9-5789-18d7-ccc36e0d4d6e}?api-version=2019-05-01+31": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B57149047-14b9-5789-18d7-ccc36e0d4d6e%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B57149047-14b9-5789-18d7-ccc36e0d4d6e%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "399" ],
@@ -1522,7 +1522,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{5aae3ab9-1dda-e6cd-94fc-9d259810001a}?api-version=2019-05-01+32": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5aae3ab9-1dda-e6cd-94fc-9d259810001a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5aae3ab9-1dda-e6cd-94fc-9d259810001a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "400" ],
@@ -1562,7 +1562,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{5b608696-7f88-10b6-29cd-fd2c674c49e6}?api-version=2019-05-01+33": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5b608696-7f88-10b6-29cd-fd2c674c49e6%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5b608696-7f88-10b6-29cd-fd2c674c49e6%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "401" ],
@@ -1602,7 +1602,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{5f861ea1-cd90-03ca-751f-59f682a45560}?api-version=2019-05-01+34": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5f861ea1-cd90-03ca-751f-59f682a45560%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B5f861ea1-cd90-03ca-751f-59f682a45560%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "402" ],
@@ -1642,7 +1642,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{68da0587-23d6-d384-d2dd-1487295cfbda}?api-version=2019-05-01+35": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B68da0587-23d6-d384-d2dd-1487295cfbda%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B68da0587-23d6-d384-d2dd-1487295cfbda%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "403" ],
@@ -1682,7 +1682,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{6e4dfe66-5746-aa5d-29bb-3ed546c0f971}?api-version=2019-05-01+36": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B6e4dfe66-5746-aa5d-29bb-3ed546c0f971%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B6e4dfe66-5746-aa5d-29bb-3ed546c0f971%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "404" ],
@@ -1722,7 +1722,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{70c3daf5-a8d5-0ef1-796c-010e5bd12f7a}?api-version=2019-05-01+37": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B70c3daf5-a8d5-0ef1-796c-010e5bd12f7a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B70c3daf5-a8d5-0ef1-796c-010e5bd12f7a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "405" ],
@@ -1762,7 +1762,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{716503c5-952b-278e-3bde-d65d4626091a}?api-version=2019-05-01+38": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B716503c5-952b-278e-3bde-d65d4626091a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B716503c5-952b-278e-3bde-d65d4626091a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "406" ],
@@ -1802,7 +1802,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{7345ead6-5088-9b15-c7d5-39f487619bd4}?api-version=2019-05-01+39": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7345ead6-5088-9b15-c7d5-39f487619bd4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7345ead6-5088-9b15-c7d5-39f487619bd4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "407" ],
@@ -1842,7 +1842,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{73694719-bec4-fd26-cc2a-431a7ca803b2}?api-version=2019-05-01+40": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B73694719-bec4-fd26-cc2a-431a7ca803b2%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B73694719-bec4-fd26-cc2a-431a7ca803b2%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "408" ],
@@ -1882,7 +1882,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{75fcb52a-f48c-1b4f-ee9f-22386d2735ae}?api-version=2019-05-01+41": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B75fcb52a-f48c-1b4f-ee9f-22386d2735ae%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B75fcb52a-f48c-1b4f-ee9f-22386d2735ae%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "409" ],
@@ -1922,7 +1922,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{76d4653f-11db-64cb-87ad-0727a35d0c45}?api-version=2019-05-01+42": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B76d4653f-11db-64cb-87ad-0727a35d0c45%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B76d4653f-11db-64cb-87ad-0727a35d0c45%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "410" ],
@@ -1962,7 +1962,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{7cad2b46-40b5-96a2-6ee7-a17a04ce8cb3}?api-version=2019-05-01+43": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7cad2b46-40b5-96a2-6ee7-a17a04ce8cb3%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7cad2b46-40b5-96a2-6ee7-a17a04ce8cb3%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "411" ],
@@ -2002,7 +2002,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{7d1d32c9-4d60-1b49-6543-e0dee7108933}?api-version=2019-05-01+44": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7d1d32c9-4d60-1b49-6543-e0dee7108933%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7d1d32c9-4d60-1b49-6543-e0dee7108933%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "412" ],
@@ -2042,7 +2042,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{7d89cd9a-9800-a0a4-2e90-dabd73c9fdcd}?api-version=2019-05-01+45": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7d89cd9a-9800-a0a4-2e90-dabd73c9fdcd%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7d89cd9a-9800-a0a4-2e90-dabd73c9fdcd%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "413" ],
@@ -2082,7 +2082,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{7da90445-7e8d-d194-d1bc-8e0ee788f3dd}?api-version=2019-05-01+46": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7da90445-7e8d-d194-d1bc-8e0ee788f3dd%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B7da90445-7e8d-d194-d1bc-8e0ee788f3dd%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "414" ],
@@ -2122,7 +2122,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{8158d500-c30f-8c9f-fb54-12946af68135}?api-version=2019-05-01+47": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8158d500-c30f-8c9f-fb54-12946af68135%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8158d500-c30f-8c9f-fb54-12946af68135%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "415" ],
@@ -2162,7 +2162,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{8395a261-fc7a-9ded-1516-016e629c70ef}?api-version=2019-05-01+48": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8395a261-fc7a-9ded-1516-016e629c70ef%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8395a261-fc7a-9ded-1516-016e629c70ef%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "416" ],
@@ -2202,7 +2202,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{878a94f2-b22b-c7f2-254c-0971f608c135}?api-version=2019-05-01+49": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B878a94f2-b22b-c7f2-254c-0971f608c135%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B878a94f2-b22b-c7f2-254c-0971f608c135%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "417" ],
@@ -2242,7 +2242,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{8a81731f-effe-2233-19d9-a5b9e6c965ce}?api-version=2019-05-01+50": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8a81731f-effe-2233-19d9-a5b9e6c965ce%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B8a81731f-effe-2233-19d9-a5b9e6c965ce%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "418" ],
@@ -2282,7 +2282,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{900210d3-a49a-859e-5cbd-6e4325bf954a}?api-version=2019-05-01+51": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B900210d3-a49a-859e-5cbd-6e4325bf954a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B900210d3-a49a-859e-5cbd-6e4325bf954a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "419" ],
@@ -2322,7 +2322,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{906f3126-d8df-27bc-300e-9795e34682b5}?api-version=2019-05-01+52": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B906f3126-d8df-27bc-300e-9795e34682b5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B906f3126-d8df-27bc-300e-9795e34682b5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "420" ],
@@ -2362,7 +2362,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{95eecd39-3bbd-4f85-f22c-de8802cef301}?api-version=2019-05-01+53": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B95eecd39-3bbd-4f85-f22c-de8802cef301%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B95eecd39-3bbd-4f85-f22c-de8802cef301%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "421" ],
@@ -2402,7 +2402,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{96b35e7c-90a2-0cd4-e2d8-6fbafcd1b629}?api-version=2019-05-01+54": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B96b35e7c-90a2-0cd4-e2d8-6fbafcd1b629%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B96b35e7c-90a2-0cd4-e2d8-6fbafcd1b629%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "422" ],
@@ -2442,7 +2442,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{9c33c307-81ac-5c30-f01c-82f916aab39e}?api-version=2019-05-01+55": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9c33c307-81ac-5c30-f01c-82f916aab39e%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9c33c307-81ac-5c30-f01c-82f916aab39e%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "423" ],
@@ -2482,7 +2482,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{9c3535c2-7d98-4cc2-9f16-a537332b6ec4}?api-version=2019-05-01+56": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9c3535c2-7d98-4cc2-9f16-a537332b6ec4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9c3535c2-7d98-4cc2-9f16-a537332b6ec4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "424" ],
@@ -2522,7 +2522,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{9d60e033-d1f1-84ea-7e95-0b5d75f50df5}?api-version=2019-05-01+57": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9d60e033-d1f1-84ea-7e95-0b5d75f50df5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9d60e033-d1f1-84ea-7e95-0b5d75f50df5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "425" ],
@@ -2562,7 +2562,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{9de7827c-a92c-d9dc-87d6-3619106bbd95}?api-version=2019-05-01+58": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9de7827c-a92c-d9dc-87d6-3619106bbd95%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7B9de7827c-a92c-d9dc-87d6-3619106bbd95%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "426" ],
@@ -2602,7 +2602,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{a266145d-9e56-28b1-891b-505104373adf}?api-version=2019-05-01+59": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Ba266145d-9e56-28b1-891b-505104373adf%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Ba266145d-9e56-28b1-891b-505104373adf%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "427" ],
@@ -2642,7 +2642,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{aac78ae8-4182-c27c-2d73-e88d34ebdf31}?api-version=2019-05-01+60": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Baac78ae8-4182-c27c-2d73-e88d34ebdf31%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Baac78ae8-4182-c27c-2d73-e88d34ebdf31%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "428" ],
@@ -2682,7 +2682,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{ac5b3afb-2efe-424a-74a1-45cb9b19d364}?api-version=2019-05-01+61": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bac5b3afb-2efe-424a-74a1-45cb9b19d364%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bac5b3afb-2efe-424a-74a1-45cb9b19d364%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "429" ],
@@ -2722,7 +2722,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{acf4dbd9-6888-5666-94ce-5adb9af329ec}?api-version=2019-05-01+62": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bacf4dbd9-6888-5666-94ce-5adb9af329ec%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bacf4dbd9-6888-5666-94ce-5adb9af329ec%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "430" ],
@@ -2762,7 +2762,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b0056c56-8097-5893-6f29-44e96162e16d}?api-version=2019-05-01+63": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb0056c56-8097-5893-6f29-44e96162e16d%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb0056c56-8097-5893-6f29-44e96162e16d%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "431" ],
@@ -2802,7 +2802,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b044a7e4-db9f-6df7-1c11-11f7ad9a2fc4}?api-version=2019-05-01+64": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb044a7e4-db9f-6df7-1c11-11f7ad9a2fc4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb044a7e4-db9f-6df7-1c11-11f7ad9a2fc4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "432" ],
@@ -2842,7 +2842,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b2df3901-b69b-e105-f71a-fb616613026a}?api-version=2019-05-01+65": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb2df3901-b69b-e105-f71a-fb616613026a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb2df3901-b69b-e105-f71a-fb616613026a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "433" ],
@@ -2882,7 +2882,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b4344404-474e-4efe-1551-cc6cd7c59a3e}?api-version=2019-05-01+66": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb4344404-474e-4efe-1551-cc6cd7c59a3e%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb4344404-474e-4efe-1551-cc6cd7c59a3e%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "434" ],
@@ -2922,7 +2922,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b4b6cc0d-7814-7915-895d-b7d61d7ffd54}?api-version=2019-05-01+67": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb4b6cc0d-7814-7915-895d-b7d61d7ffd54%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb4b6cc0d-7814-7915-895d-b7d61d7ffd54%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "435" ],
@@ -2962,7 +2962,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b5c491db-5bcb-1154-959c-7c0fac7a15a3}?api-version=2019-05-01+68": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb5c491db-5bcb-1154-959c-7c0fac7a15a3%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb5c491db-5bcb-1154-959c-7c0fac7a15a3%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "436" ],
@@ -3002,7 +3002,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b82070fd-b5d7-c57e-86b8-64167b97d2fd}?api-version=2019-05-01+69": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb82070fd-b5d7-c57e-86b8-64167b97d2fd%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb82070fd-b5d7-c57e-86b8-64167b97d2fd%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "437" ],
@@ -3042,7 +3042,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{b832edbd-dd5a-5e67-37ee-ec09f544db15}?api-version=2019-05-01+70": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb832edbd-dd5a-5e67-37ee-ec09f544db15%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bb832edbd-dd5a-5e67-37ee-ec09f544db15%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "438" ],
@@ -3082,7 +3082,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{be181717-10cb-ea3b-6c9c-199c74cbce51}?api-version=2019-05-01+71": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bbe181717-10cb-ea3b-6c9c-199c74cbce51%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bbe181717-10cb-ea3b-6c9c-199c74cbce51%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "439" ],
@@ -3122,7 +3122,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{c0539e62-7ce2-4cff-3434-acebcece00b8}?api-version=2019-05-01+72": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc0539e62-7ce2-4cff-3434-acebcece00b8%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc0539e62-7ce2-4cff-3434-acebcece00b8%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "440" ],
@@ -3162,7 +3162,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{c1d08fad-0cbb-f2b3-6987-01cf856e2d84}?api-version=2019-05-01+73": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc1d08fad-0cbb-f2b3-6987-01cf856e2d84%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc1d08fad-0cbb-f2b3-6987-01cf856e2d84%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "441" ],
@@ -3202,7 +3202,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{c1e1a6cf-028a-e7a4-d919-f96b07e037ad}?api-version=2019-05-01+74": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc1e1a6cf-028a-e7a4-d919-f96b07e037ad%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc1e1a6cf-028a-e7a4-d919-f96b07e037ad%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "442" ],
@@ -3242,7 +3242,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{c5581736-ddc9-ffcd-3d4f-2d526be3c2b8}?api-version=2019-05-01+75": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc5581736-ddc9-ffcd-3d4f-2d526be3c2b8%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc5581736-ddc9-ffcd-3d4f-2d526be3c2b8%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "443" ],
@@ -3282,7 +3282,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{c6f96cd6-af4d-921f-4ddd-2e84037abd69}?api-version=2019-05-01+76": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc6f96cd6-af4d-921f-4ddd-2e84037abd69%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bc6f96cd6-af4d-921f-4ddd-2e84037abd69%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "444" ],
@@ -3322,7 +3322,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{caa19b05-be6c-36f9-8a2c-b694598c9ee5}?api-version=2019-05-01+77": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bcaa19b05-be6c-36f9-8a2c-b694598c9ee5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bcaa19b05-be6c-36f9-8a2c-b694598c9ee5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "445" ],
@@ -3362,7 +3362,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{cab3bcf3-cd4d-e920-8392-699ca97737b4}?api-version=2019-05-01+78": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bcab3bcf3-cd4d-e920-8392-699ca97737b4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bcab3bcf3-cd4d-e920-8392-699ca97737b4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "446" ],
@@ -3402,7 +3402,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{d0d906c4-1be7-e662-beb0-295c60a20674}?api-version=2019-05-01+79": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd0d906c4-1be7-e662-beb0-295c60a20674%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd0d906c4-1be7-e662-beb0-295c60a20674%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "447" ],
@@ -3442,7 +3442,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{d13080d2-73d4-5fb7-0adf-ee2c6537f21b}?api-version=2019-05-01+80": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd13080d2-73d4-5fb7-0adf-ee2c6537f21b%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd13080d2-73d4-5fb7-0adf-ee2c6537f21b%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "448" ],
@@ -3482,7 +3482,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{d1aaac73-54e8-da6f-d7c1-34b3755378a5}?api-version=2019-05-01+81": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd1aaac73-54e8-da6f-d7c1-34b3755378a5%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd1aaac73-54e8-da6f-d7c1-34b3755378a5%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "449" ],
@@ -3522,7 +3522,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{d34546a0-56e1-0229-10e0-9a4a8a9f3790}?api-version=2019-05-01+82": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd34546a0-56e1-0229-10e0-9a4a8a9f3790%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd34546a0-56e1-0229-10e0-9a4a8a9f3790%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "450" ],
@@ -3562,7 +3562,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{d74d3801-729e-6adb-85ea-ccab6d5a31ef}?api-version=2019-05-01+83": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd74d3801-729e-6adb-85ea-ccab6d5a31ef%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bd74d3801-729e-6adb-85ea-ccab6d5a31ef%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "451" ],
@@ -3602,7 +3602,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{db4d8bfd-51d3-146d-ae2b-07dbf4e116e4}?api-version=2019-05-01+84": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdb4d8bfd-51d3-146d-ae2b-07dbf4e116e4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdb4d8bfd-51d3-146d-ae2b-07dbf4e116e4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "452" ],
@@ -3642,7 +3642,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{dc97c488-fad4-85fe-7086-74381e00c970}?api-version=2019-05-01+85": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdc97c488-fad4-85fe-7086-74381e00c970%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdc97c488-fad4-85fe-7086-74381e00c970%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "453" ],
@@ -3682,7 +3682,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{dd476db2-af96-2b1d-5d51-085b99740e53}?api-version=2019-05-01+86": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdd476db2-af96-2b1d-5d51-085b99740e53%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdd476db2-af96-2b1d-5d51-085b99740e53%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "454" ],
@@ -3722,7 +3722,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{ddaa70fe-7b0e-9ea7-51c1-722209cb6f2b}?api-version=2019-05-01+87": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bddaa70fe-7b0e-9ea7-51c1-722209cb6f2b%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bddaa70fe-7b0e-9ea7-51c1-722209cb6f2b%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "455" ],
@@ -3762,7 +3762,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{df3cc78e-826e-cff6-2d7b-c2a7a7906a5a}?api-version=2019-05-01+88": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdf3cc78e-826e-cff6-2d7b-c2a7a7906a5a%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdf3cc78e-826e-cff6-2d7b-c2a7a7906a5a%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "456" ],
@@ -3802,7 +3802,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{dfcfd9ae-4113-b0f5-976b-75e11f0aba8d}?api-version=2019-05-01+89": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdfcfd9ae-4113-b0f5-976b-75e11f0aba8d%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bdfcfd9ae-4113-b0f5-976b-75e11f0aba8d%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "457" ],
@@ -3842,7 +3842,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{e1723043-2c5e-a79c-4829-50b0c35a3776}?api-version=2019-05-01+90": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be1723043-2c5e-a79c-4829-50b0c35a3776%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be1723043-2c5e-a79c-4829-50b0c35a3776%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "458" ],
@@ -3882,7 +3882,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{e5fabf8d-7d7f-6ee8-2eba-9e563ce26e7c}?api-version=2019-05-01+91": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be5fabf8d-7d7f-6ee8-2eba-9e563ce26e7c%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be5fabf8d-7d7f-6ee8-2eba-9e563ce26e7c%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "459" ],
@@ -3922,7 +3922,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{e9a4aa48-0f62-ce1e-318c-2b326c32b418}?api-version=2019-05-01+92": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be9a4aa48-0f62-ce1e-318c-2b326c32b418%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Be9a4aa48-0f62-ce1e-318c-2b326c32b418%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "460" ],
@@ -3962,7 +3962,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{f13a8a92-d3d7-f7fe-610f-2f6cb5532cf0}?api-version=2019-05-01+93": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf13a8a92-d3d7-f7fe-610f-2f6cb5532cf0%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf13a8a92-d3d7-f7fe-610f-2f6cb5532cf0%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "461" ],
@@ -4002,7 +4002,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{f5665dc7-7ffe-e28e-2dfd-ad34f3ca09e4}?api-version=2019-05-01+94": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf5665dc7-7ffe-e28e-2dfd-ad34f3ca09e4%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf5665dc7-7ffe-e28e-2dfd-ad34f3ca09e4%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "462" ],
@@ -4042,7 +4042,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{f569478a-9fe9-0e2e-51d1-2e6e2069b968}?api-version=2019-05-01+95": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf569478a-9fe9-0e2e-51d1-2e6e2069b968%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf569478a-9fe9-0e2e-51d1-2e6e2069b968%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "463" ],
@@ -4082,7 +4082,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{f5f498cc-0ee0-6783-7d56-0f0b4bf93422}?api-version=2019-05-01+96": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf5f498cc-0ee0-6783-7d56-0f0b4bf93422%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf5f498cc-0ee0-6783-7d56-0f0b4bf93422%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "464" ],
@@ -4122,7 +4122,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{f6d97e3f-1ccb-c0c7-e695-27438d3e0442}?api-version=2019-05-01+97": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf6d97e3f-1ccb-c0c7-e695-27438d3e0442%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bf6d97e3f-1ccb-c0c7-e695-27438d3e0442%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "465" ],
@@ -4162,7 +4162,7 @@
   "Get-AzsDrive+[NoContext]+TestGetAllDrives+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{fd1e52b3-d3ea-0bb0-1eac-4ea2eec38ea7}?api-version=2019-05-01+98": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bfd1e52b3-d3ea-0bb0-1eac-4ea2eec38ea7%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D%3APD%3A%7Bfd1e52b3-d3ea-0bb0-1eac-4ea2eec38ea7%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "466" ],
@@ -4202,7 +4202,7 @@
   "Get-AzsDrive+[NoContext]+TestGetInvaildDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "467" ],
@@ -4242,7 +4242,7 @@
   "Get-AzsDrive+[NoContext]+TestGetInvaildDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "468" ],
@@ -4282,7 +4282,7 @@
   "Get-AzsDrive+[NoContext]+TestGetInvaildDrive+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/invailddrivename?api-version=2019-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/invailddrivename?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/invailddrivename?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "469" ],
@@ -4321,7 +4321,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDriveByInputObject+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "470" ],
@@ -4361,7 +4361,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDriveByInputObject+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems?api-version=2018-10-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "471" ],
@@ -4401,7 +4401,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDriveByInputObject+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01\u0026$top=1+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01\u0026$top=1",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives?api-version=2019-05-01\u0026$top=1",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "472" ],
@@ -4441,7 +4441,7 @@
   "Get-AzsDrive+[NoContext]+TestGetDriveByInputObject+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/{031b8ae8-40c4-435c-b315-0df6c6357860}:PD:{0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f}?api-version=2019-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D:PD:%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/storageSubSystems/s-cluster.s45r1202.masd.stbtest.microsoft.com/drives/%7B031b8ae8-40c4-435c-b315-0df6c6357860%7D:PD:%7B0a8791f9-cb9d-9cad-21a9-fb6f1e755f1f%7D?api-version=2019-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "473" ],

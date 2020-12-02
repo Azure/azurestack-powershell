@@ -2,7 +2,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestListLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "35" ],
@@ -42,7 +42,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestListLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "36" ],
@@ -81,7 +81,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetLogicalSubnet+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "37" ],
@@ -121,7 +121,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetLogicalSubnet+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "38" ],
@@ -160,7 +160,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "39" ],
@@ -200,7 +200,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "40" ],
@@ -239,7 +239,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "41" ],
@@ -278,7 +278,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "42" ],
@@ -317,7 +317,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "43" ],
@@ -356,7 +356,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "44" ],
@@ -395,7 +395,7 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "45" ],

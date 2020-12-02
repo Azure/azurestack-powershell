@@ -2,7 +2,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestListInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "491" ],
@@ -42,7 +42,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetInfraRole+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "492" ],
@@ -82,7 +82,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetInfraRole+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "493" ],
@@ -122,7 +122,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "494" ],
@@ -162,7 +162,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryCertificateServices?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "495" ],
@@ -202,7 +202,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryDomainServices?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryDomainServices?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryDomainServices?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "496" ],
@@ -242,7 +242,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryFederationServices?api-version=2016-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryFederationServices?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ActiveDirectoryFederationServices?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "497" ],
@@ -282,7 +282,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Actors?api-version=2016-05-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Actors?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/Actors?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "498" ],
@@ -322,7 +322,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ApplicationGateway?api-version=2016-05-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ApplicationGateway?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ApplicationGateway?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "499" ],
@@ -362,7 +362,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AuthorizationServiceAdmin?api-version=2016-05-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AuthorizationServiceAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AuthorizationServiceAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "500" ],
@@ -402,7 +402,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureBridge?api-version=2016-05-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureBridge?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureBridge?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "501" ],
@@ -442,7 +442,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureConsistentStorageRing?api-version=2016-05-01+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureConsistentStorageRing?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureConsistentStorageRing?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "502" ],
@@ -482,7 +482,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureMonitor?api-version=2016-05-01+10": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureMonitor?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureMonitor?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "503" ],
@@ -522,7 +522,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureResourceManagerAdmin?api-version=2016-05-01+11": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureResourceManagerAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/AzureResourceManagerAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "504" ],
@@ -562,7 +562,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupController?api-version=2016-05-01+12": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "505" ],
@@ -602,7 +602,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupRestoreResourceProvider?api-version=2016-05-01+13": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupRestoreResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/BackupRestoreResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "506" ],
@@ -642,7 +642,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeController?api-version=2016-05-01+14": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "507" ],
@@ -682,7 +682,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeResourceProvider?api-version=2016-05-01+15": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ComputeResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "508" ],
@@ -722,7 +722,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DeploymentResourceProvider?api-version=2016-05-01+16": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DeploymentResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DeploymentResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "509" ],
@@ -762,7 +762,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DiskResourceProvider?api-version=2016-05-01+17": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DiskResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/DiskResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "510" ],
@@ -802,7 +802,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/EnterpriseCloudEngine?api-version=2016-05-01+18": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/EnterpriseCloudEngine?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/EnterpriseCloudEngine?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "511" ],
@@ -842,7 +842,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricControllerRing?api-version=2016-05-01+19": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricControllerRing?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricControllerRing?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "512" ],
@@ -882,7 +882,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricResourceProvider?api-version=2016-05-01+20": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FabricResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "513" ],
@@ -922,7 +922,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FCIR?api-version=2016-05-01+21": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FCIR?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/FCIR?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "514" ],
@@ -962,7 +962,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/GalleryServiceAdmin?api-version=2016-05-01+22": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/GalleryServiceAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/GalleryServiceAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "515" ],
@@ -1002,7 +1002,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthCoreApplication?api-version=2016-05-01+23": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthCoreApplication?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthCoreApplication?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "516" ],
@@ -1042,7 +1042,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthMonitoring?api-version=2016-05-01+24": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthMonitoring?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthMonitoring?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "517" ],
@@ -1082,7 +1082,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthResourceProvider?api-version=2016-05-01+25": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/HealthResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "518" ],
@@ -1122,7 +1122,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/InsightsServiceAdmin?api-version=2016-05-01+26": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/InsightsServiceAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/InsightsServiceAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "519" ],
@@ -1162,7 +1162,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultControlPlane?api-version=2016-05-01+27": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultControlPlane?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultControlPlane?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "520" ],
@@ -1202,7 +1202,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultDataPlane?api-version=2016-05-01+28": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultDataPlane?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultDataPlane?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "521" ],
@@ -1242,7 +1242,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalControlPlane?api-version=2016-05-01+29": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalControlPlane?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalControlPlane?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "522" ],
@@ -1282,7 +1282,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalDataPlane?api-version=2016-05-01+30": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalDataPlane?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultInternalDataPlane?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "523" ],
@@ -1322,7 +1322,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultNamingService?api-version=2016-05-01+31": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultNamingService?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultNamingService?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "524" ],
@@ -1362,7 +1362,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultResourceProvider?api-version=2016-05-01+32": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/KeyVaultResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "525" ],
@@ -1402,7 +1402,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MDM?api-version=2016-05-01+33": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MDM?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MDM?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "526" ],
@@ -1442,7 +1442,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MicrosoftSQLServer?api-version=2016-05-01+34": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MicrosoftSQLServer?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/MicrosoftSQLServer?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "527" ],
@@ -1482,7 +1482,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NetworkResourceProvider?api-version=2016-05-01+35": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NetworkResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NetworkResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "528" ],
@@ -1522,7 +1522,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NonPrivilegedApplicationGateway?api-version=2016-05-01+36": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NonPrivilegedApplicationGateway?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/NonPrivilegedApplicationGateway?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "529" ],
@@ -1562,7 +1562,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PhysicalMachineController?api-version=2016-05-01+37": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PhysicalMachineController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PhysicalMachineController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "530" ],
@@ -1602,7 +1602,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PortalAdmin?api-version=2016-05-01+38": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PortalAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PortalAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "531" ],
@@ -1642,7 +1642,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PXE?api-version=2016-05-01+39": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PXE?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/PXE?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "532" ],
@@ -1682,7 +1682,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/RASGateway?api-version=2016-05-01+40": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/RASGateway?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/RASGateway?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "533" ],
@@ -1722,7 +1722,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SecretService?api-version=2016-05-01+41": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SecretService?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SecretService?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "534" ],
@@ -1762,7 +1762,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SeedRing?api-version=2016-05-01+42": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SeedRing?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SeedRing?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "535" ],
@@ -1802,7 +1802,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesController?api-version=2016-05-01+43": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "536" ],
@@ -1842,7 +1842,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesFabricProvider?api-version=2016-05-01+44": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesFabricProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/ServicesFabricProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "537" ],
@@ -1882,7 +1882,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SLBMultiplexer?api-version=2016-05-01+45": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SLBMultiplexer?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SLBMultiplexer?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "538" ],
@@ -1922,7 +1922,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SqlServerApplication?api-version=2016-05-01+46": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SqlServerApplication?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SqlServerApplication?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "539" ],
@@ -1962,7 +1962,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageController?api-version=2016-05-01+47": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "540" ],
@@ -2002,7 +2002,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageResourceProvider?api-version=2016-05-01+48": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/StorageResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "541" ],
@@ -2042,7 +2042,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SubscriptionsServices?api-version=2016-05-01+49": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SubscriptionsServices?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SubscriptionsServices?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "542" ],
@@ -2082,7 +2082,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeController?api-version=2016-05-01+50": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeController?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeController?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "543" ],
@@ -2122,7 +2122,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeResourceProvider?api-version=2016-05-01+51": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportBridgeResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "544" ],
@@ -2162,7 +2162,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportRing?api-version=2016-05-01+52": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportRing?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/SupportRing?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "545" ],
@@ -2202,7 +2202,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UpdateResourceProvider?api-version=2016-05-01+53": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UpdateResourceProvider?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UpdateResourceProvider?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "546" ],
@@ -2242,7 +2242,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridge?api-version=2016-05-01+54": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridge?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridge?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "547" ],
@@ -2282,7 +2282,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridgeHost?api-version=2016-05-01+55": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridgeHost?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageBridgeHost?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "548" ],
@@ -2322,7 +2322,7 @@
   "Get-AzsInfrastructureRole+[NoContext]+TestGetAllInfraRoles+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageServiceAdmin?api-version=2016-05-01+56": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageServiceAdmin?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoles/UsageServiceAdmin?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "549" ],
