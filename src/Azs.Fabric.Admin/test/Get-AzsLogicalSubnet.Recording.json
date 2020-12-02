@@ -2,11 +2,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestListLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "35" ],
-        "x-ms-client-request-id": [ "e2d20cdb-133d-482c-82f5-aa880d6a9da1" ],
+        "x-ms-unique-id": [ "1175" ],
+        "x-ms-client-request-id": [ "05dcd46f-3c0a-4a54-b1d4-89395e2abfeb" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalNetwork" ],
         "FullCommandName": [ "Get-AzsLogicalNetwork_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -20,33 +20,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1fdc6926-e9bc-4446-8368-3703cd036b4e" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14765" ],
-        "x-ms-request-id": [ "1fdc6926-e9bc-4446-8368-3703cd036b4e" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081019Z:1fdc6926-e9bc-4446-8368-3703cd036b4e" ],
+        "x-ms-correlation-request-id": [ "2ce0c602-c1ef-49c2-a1b4-d4f153a0caa1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14971" ],
+        "x-ms-request-id": [ "2ce0c602-c1ef-49c2-a1b4-d4f153a0caa1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225659Z:2ce0c602-c1ef-49c2-a1b4-d4f153a0caa1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:18 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:56:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvdbKBLzLkZNCjB8/EoqZrwiPcDOQ1rR58WbTl9B/ZOa3bEaRapFdFjjYLNeKBQfjdL7I3l3UeXvhKnW0NZzFEj6kW0OcUJSjAt1ShML30v3Nscud25K0zml74nJgrINMDbu7iAAft0gf/NuSc3CAV" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbDFCrpc25sk6wD9t2D2ZmMSjw7idkgZAECtXHurnS1eEtmQ2Mk/b5tIezaBIojvrz+Xu+z7wVGVgRYE3FMKjXmRAeLxG5ofT2TmogfsHBsMbc7f1aqgSiSlNHq9+xdlGjLdBdEJdrOaGrPZVFla1" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2728" ],
+        "Content-Length": [ "2763" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\"]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\",\"Subnet-abc\",\"Subnet-okaytodelete\"]}}]}"
     }
   },
   "Get-AzsLogicalSubnet+[NoContext]+TestListLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "36" ],
-        "x-ms-client-request-id": [ "05d7a1e5-89ca-4f1c-824f-ef1438ef726e" ],
+        "x-ms-unique-id": [ "1176" ],
+        "x-ms-client-request-id": [ "5f290a19-d128-4196-9318-6d76702be319" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -60,16 +60,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14764" ],
-        "x-ms-request-id": [ "aef08a05-b79e-4023-a678-e1149061e0f9" ],
-        "x-ms-correlation-request-id": [ "aef08a05-b79e-4023-a678-e1149061e0f9" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:aef08a05-b79e-4023-a678-e1149061e0f9" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14970" ],
+        "x-ms-request-id": [ "f661ca3e-4fd4-4e14-b1ed-19371efe0239" ],
+        "x-ms-correlation-request-id": [ "f661ca3e-4fd4-4e14-b1ed-19371efe0239" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225659Z:f661ca3e-4fd4-4e14-b1ed-19371efe0239" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:56:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+n3xIUray8oKpWUvA5RzfiaLbdA20FfsmGNe9efE+Bt5ziDT2skJKUhecNuth+Y1czscuBGZavpq6Ac7vsE93mhg0+498xcHHXYCSiMOG3mVLOEuf4q0Om21lQeZHk+mlXAGF1+s49YUwQ5IJBXN" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGazzGtKy7d6F/vFzn/2oSTYEoTCuIr8LRRy72BA7wgLe0euwiEKmdnZvldYH/dx1PA2MGDT7alVvGF87ob0vIdJv3Cxp75hYh31K+AnjFK02W32SuWgtaLIYZ2sTEtAFEKqhra0PEX0H4mfn/20U" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -81,11 +81,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetLogicalSubnet+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "37" ],
-        "x-ms-client-request-id": [ "e07d86ba-c5dd-4f9c-a621-4faaf8494027" ],
+        "x-ms-unique-id": [ "1177" ],
+        "x-ms-client-request-id": [ "0c790de3-061f-4e4c-8bf0-f1d1463cba77" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalNetwork" ],
         "FullCommandName": [ "Get-AzsLogicalNetwork_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -99,33 +99,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1fa0255c-81bd-4c8c-a8fd-23ce4c73b78d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14763" ],
-        "x-ms-request-id": [ "1fa0255c-81bd-4c8c-a8fd-23ce4c73b78d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:1fa0255c-81bd-4c8c-a8fd-23ce4c73b78d" ],
+        "x-ms-correlation-request-id": [ "5e92a677-5870-47ac-bcb1-38450a3ebd3e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14969" ],
+        "x-ms-request-id": [ "5e92a677-5870-47ac-bcb1-38450a3ebd3e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225659Z:5e92a677-5870-47ac-bcb1-38450a3ebd3e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:56:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvy3ErfGLH/zayXH36KdRZhtrTvb1QdX8JeVN5bB/Xgv1sx3MIilFqHOd53Tc7lbdv9KvMF5qR0IJoRTYHPdwWprBTLLdnSMqzrMAldGO1vB31xRYVSFE4qH169J49nmhx3+a8ZIsgxUoxSxKRzD8o" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvY/9Ji7dxt5oSQn+JNe+pBbwbFe4xYRYl0MZURewkTuS3AFEcFBr1L4VzD+9haDvKRf6GU2mC9nHte4xuFhwb5BDrANm+3rn29441FajZ+G3M+be9p1E4J0nVd+Db7W3zvMoRqOIf5YaXPvGp0qaY" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2728" ],
+        "Content-Length": [ "2763" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\"]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\",\"Subnet-abc\",\"Subnet-okaytodelete\"]}}]}"
     }
   },
   "Get-AzsLogicalSubnet+[NoContext]+TestGetLogicalSubnet+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "38" ],
-        "x-ms-client-request-id": [ "4ab2cb0a-685c-45b3-a6fa-2e2a7ae6c48d" ],
+        "x-ms-unique-id": [ "1178" ],
+        "x-ms-client-request-id": [ "2e4d3fbd-d5eb-426a-a084-8c06c425fab2" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -139,16 +139,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14762" ],
-        "x-ms-request-id": [ "61708d3f-15fd-4e65-bb67-66b92f73e2ef" ],
-        "x-ms-correlation-request-id": [ "61708d3f-15fd-4e65-bb67-66b92f73e2ef" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:61708d3f-15fd-4e65-bb67-66b92f73e2ef" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14968" ],
+        "x-ms-request-id": [ "3b22f6e8-fde7-4c30-bd7e-33a500a2c74f" ],
+        "x-ms-correlation-request-id": [ "3b22f6e8-fde7-4c30-bd7e-33a500a2c74f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:3b22f6e8-fde7-4c30-bd7e-33a500a2c74f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:56:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgjl7l+yzLJqA3HwJ0jIcijEMXQ3UYkjMmpARqnssQOHMxqwXZTk/gZh+kLfQKri/vAFyIb78I0GLmi9Ri47EoKsA4uwmJpvQJyHzmqtdTe6d3z596H2DtFw1S2FTJrZBej+qQnpJ1Allrt0YrK2J" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv34Q6o7yTr6vFpol5ERhsvQg+5VZSxxOewzTJ8hNFlobn83PPcYCuz9Sq248xLMq+/4KQh3TSK/GCaun895XJ/SizDfjR9S2ke84QHMsXoJaWARjZ+0v8nQbfA4bo7LSFxUUS0nEg78eTijlioBca" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -160,11 +160,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "39" ],
-        "x-ms-client-request-id": [ "f38ff1b9-604b-4c52-8fef-41f73b81fb11" ],
+        "x-ms-unique-id": [ "1179" ],
+        "x-ms-client-request-id": [ "16872c96-1769-4305-ae93-d07eece1429b" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalNetwork" ],
         "FullCommandName": [ "Get-AzsLogicalNetwork_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -178,33 +178,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "8021ba08-b00c-4217-900e-a17782833bde" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14761" ],
-        "x-ms-request-id": [ "8021ba08-b00c-4217-900e-a17782833bde" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:8021ba08-b00c-4217-900e-a17782833bde" ],
+        "x-ms-correlation-request-id": [ "04874c47-640e-46fb-93b1-a4b9ee95e2f4" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14967" ],
+        "x-ms-request-id": [ "04874c47-640e-46fb-93b1-a4b9ee95e2f4" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:04874c47-640e-46fb-93b1-a4b9ee95e2f4" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:56:59 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvb6vOPIA9gqF5WytAqoYi2anCguRc6HgJan3Zc+plAk/2wKJX8V/vZ4EQZsnLvAx9C3/9Dmy4P05JzIrQGNLd1i7M+cRWs7MqC1Hb+Gvzi8RDk3TIg/dHSLYWJyRNPtTYkKiGtcX448gkH0xrdMm/" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvWScG6Oarl+qClPPV3Zl5G5FIV7nWZK8Nb/m3fZ3KhwkXpn5XOiBw25pTuze7cDw9zLl7xxwOl6twdmPHFjH7wqM8/NwiHaZdQDubB9ZKtOtRs5+tI663u2ojFAc3lGQguL24AqGjrXiADf+98KVE" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2728" ],
+        "Content-Length": [ "2763" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\"]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/00000000-2222-1111-9999-000000000001\",\"name\":\"redmond/00000000-2222-1111-9999-000000000001\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"511be332-c9f8-4cf6-aa05-343c1029b2e0\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/47931036-2874-4d45-b1f1-b69666088968\",\"name\":\"redmond/47931036-2874-4d45-b1f1-b69666088968\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"811d2be2-93f1-4127-87b5-a56ff2e548e8\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"name\":\"redmond/B60B71AA-36BF-40AC-A9CE-A6915D1EAE1A\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"9f61b06e-dde8-4605-8e73-56622a7ddf6f\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"name\":\"redmond/bb6c6f28-bad9-441b-8e62-57d2be255904\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":true,\"subnets\":[\"ff14c666-fa6d-44dd-b815-e765eb7e29d1\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"name\":\"redmond/F207C184-367C-4BC7-8C74-03AA39D68C24\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"3ebaac45-0d67-49d5-b494-e6bbdece993e\"]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/f8f67956-3906-4303-94c5-09cf91e7e311\",\"name\":\"redmond/f8f67956-3906-4303-94c5-09cf91e7e311\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/logicalNetworks\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"networkVirtualizationEnabled\":false,\"subnets\":[\"fd50b983-5014-4254-b1dd-59aa07930716\",\"Subnet-abc\",\"Subnet-okaytodelete\"]}}]}"
     }
   },
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F00000000-2222-1111-9999-000000000001/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "40" ],
-        "x-ms-client-request-id": [ "36cd3403-6ada-4ef5-8579-be6ee0010957" ],
+        "x-ms-unique-id": [ "1180" ],
+        "x-ms-client-request-id": [ "4656473b-b702-4fc3-866a-8504d670677a" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -218,16 +218,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14760" ],
-        "x-ms-request-id": [ "5eb33426-2fe3-4393-942a-49858025792e" ],
-        "x-ms-correlation-request-id": [ "5eb33426-2fe3-4393-942a-49858025792e" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:5eb33426-2fe3-4393-942a-49858025792e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14966" ],
+        "x-ms-request-id": [ "1b933c7a-b5b0-4860-a2ca-97c58426d90b" ],
+        "x-ms-correlation-request-id": [ "1b933c7a-b5b0-4860-a2ca-97c58426d90b" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:1b933c7a-b5b0-4860-a2ca-97c58426d90b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3NPiASG+iGYLnfphlKkB1S5Hwj/yOinu5yR3UmuMMMeOtHtqth1k1z1f9m5F68kYVGdNAVBGIsrkLxZwRMqNf0Mpp++jL8x3/5d4yL/CoON6BbfAKf/3wZKSD4Vz3lJtdX8eZMoOdwF+SLcYIr50" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3rL9GxN0up833rSbRtP+hkJYF+8bknCrvl9w6v0l4D5U/AZ2SlQfllNdvcdoJcdLceLQbkcdt/JWUcjZa3EqaA51K/ClCVAtqsqEcPSe4uNoC0Lk5vpks3qx8tyquRrp4hP1lJe/QJicagfXmFYQ" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -239,11 +239,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2F47931036-2874-4d45-b1f1-b69666088968/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "41" ],
-        "x-ms-client-request-id": [ "85add098-edbd-40f2-8573-65ebfe1b8151" ],
+        "x-ms-unique-id": [ "1181" ],
+        "x-ms-client-request-id": [ "882ba4ed-3352-4fe1-b68a-130056f6b634" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -257,16 +257,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14759" ],
-        "x-ms-request-id": [ "95f60634-0dd3-4d0c-8daa-18bc7bf9b872" ],
-        "x-ms-correlation-request-id": [ "95f60634-0dd3-4d0c-8daa-18bc7bf9b872" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081023Z:95f60634-0dd3-4d0c-8daa-18bc7bf9b872" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14965" ],
+        "x-ms-request-id": [ "452efa6d-1a79-4083-bdc2-8622b6b8ec12" ],
+        "x-ms-correlation-request-id": [ "452efa6d-1a79-4083-bdc2-8622b6b8ec12" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:452efa6d-1a79-4083-bdc2-8622b6b8ec12" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvMEYfrRqPpaOS7osJdjXYAhHGbXByhnWaUFpvz6R8NA58qrDLgtiGXu6UoZxfaHSyZTDLnY4/Lk/mXebvKxc5cS2aQx9JvHX4RRqtu0eh9KnA3lsobOZWMDt9oTq/P/6PVbiv4Bmmc9KrHcj2lddD" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7qw2r0Axs+JCq9LUWHQeahvrYqOQtQ3zvMi/eBuB24KCn/1xyOw9CsoOWeBWIC1NmQOfn53UlIf4UIzpi6rpW4aAUsrNcQ/k9ojEivHYffNBc6GO5jmwCmQ+MUfCgrCHa00Dw/K8QRB7dg7h1O4u" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -278,11 +278,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FB60B71AA-36BF-40AC-A9CE-A6915D1EAE1A/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "42" ],
-        "x-ms-client-request-id": [ "c85bc156-18f1-4b01-ba46-a8f4e4fa4e16" ],
+        "x-ms-unique-id": [ "1182" ],
+        "x-ms-client-request-id": [ "eb415945-d424-4e89-a691-66316e77ef49" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -296,16 +296,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14758" ],
-        "x-ms-request-id": [ "047fd27e-e45e-4744-8c6d-12051079bdb5" ],
-        "x-ms-correlation-request-id": [ "047fd27e-e45e-4744-8c6d-12051079bdb5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081024Z:047fd27e-e45e-4744-8c6d-12051079bdb5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14964" ],
+        "x-ms-request-id": [ "77ad3997-eb4c-4b92-bd2d-29ba513dd86e" ],
+        "x-ms-correlation-request-id": [ "77ad3997-eb4c-4b92-bd2d-29ba513dd86e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:77ad3997-eb4c-4b92-bd2d-29ba513dd86e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgLyA0wc4Rvgs7SuOJMEg/A2QFLrrkP55xswb1Q8tdnauLksuzWi5eRGwgqo38lLx0D8yvJpCRch6CltzDq+KtmRJEs7IlpwplsfrEm5qZAE2n/w5V1zt3MRCWmQUKyinU3s/xuqumZTRI7T3cCiH" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvT4Mkhey1gxgYsmT5AMaeSMVcV4NntYnKiumPvlhpnXMdZLn7P6cHcaJ9cYq/YZdE9lJsdYhOpuhPpNeBl9E6YgsTV0KtCuixobgti8cWQcGALrZiioySWSbJOh5PuudhoyglSci1drjPG0EUtyuk" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -317,11 +317,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Fbb6c6f28-bad9-441b-8e62-57d2be255904/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "43" ],
-        "x-ms-client-request-id": [ "9dd04126-9a3b-4f3d-97c8-7ed9821af600" ],
+        "x-ms-unique-id": [ "1183" ],
+        "x-ms-client-request-id": [ "516d6dc0-911d-4580-873d-75bf186310ef" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -335,16 +335,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14757" ],
-        "x-ms-request-id": [ "351bf585-914c-4c5c-aa13-92c5d1254a75" ],
-        "x-ms-correlation-request-id": [ "351bf585-914c-4c5c-aa13-92c5d1254a75" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081024Z:351bf585-914c-4c5c-aa13-92c5d1254a75" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14963" ],
+        "x-ms-request-id": [ "cb4813b7-498d-4882-8f29-fa457ea64821" ],
+        "x-ms-correlation-request-id": [ "cb4813b7-498d-4882-8f29-fa457ea64821" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:cb4813b7-498d-4882-8f29-fa457ea64821" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYj9HJCQM993Vv54oJ6rzSRM7WysGR7xAvYgVBXYLlwjmWLPa+IzHNEyRPZnUcuS8jFA4YNukJQZl9UwytVdb0SZzfZOIf39dFvzNxIWNhM1vhkz2IAt+tbvAEgHGH/N4plvzvic6Ff8xQ/Mb3zQj" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwfTGeaEnytoAoIqcZ5hsDTyXpsxfs/NWGI/5KuGCV9bUnh3Bym24EAjnWG+6Pw1pWlWMJyn0jvL1IbNl0DNbqkKleETXt0NY2e6Q3fRnUmnyhrBezdes/5RoxM4qWhAx+hDWEDeWI/HGjw+/lkhk" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -356,11 +356,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2FF207C184-367C-4BC7-8C74-03AA39D68C24/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "44" ],
-        "x-ms-client-request-id": [ "7b0d7d92-e978-4ff1-9813-8d8579a44ff5" ],
+        "x-ms-unique-id": [ "1184" ],
+        "x-ms-client-request-id": [ "de778ecc-7b62-4aae-85fa-a178715deea0" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -374,16 +374,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14756" ],
-        "x-ms-request-id": [ "a3391a1e-1dd5-4e5c-9112-f32e4a14b102" ],
-        "x-ms-correlation-request-id": [ "a3391a1e-1dd5-4e5c-9112-f32e4a14b102" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081024Z:a3391a1e-1dd5-4e5c-9112-f32e4a14b102" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14962" ],
+        "x-ms-request-id": [ "f081fa2a-6db7-4e28-81ba-a2b3dd97754e" ],
+        "x-ms-correlation-request-id": [ "f081fa2a-6db7-4e28-81ba-a2b3dd97754e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225700Z:f081fa2a-6db7-4e28-81ba-a2b3dd97754e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8V/hatlBBI4af0OGUd7IUmqjnPHb2kbop9hv+9nv9kt/hblECusGXTW1L2ssZlzWgpHNcW7DJS3KeQJRZ5nDiIVICLoWsXOsYljkIO6s6focWLC7qU2sjlw37aCrG6Oz+fpTKFQ6yS/ArXr/xth7" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvP6YWyR0txnRDiQzU6MM0atan6VM8ZQfujm+ElwI7gq1KiaXPTb6GfeFyrWxOTS4VahgLaE4FWScIDeeqWPUorg6ouznmorZx7ifXlpeFq69ZleJELNeNjFjmp3st5PSRsSlUIrF6MBlDebnwCsvo" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -395,11 +395,11 @@
   "Get-AzsLogicalSubnet+[NoContext]+TestGetAllLogicalSubnets+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/logicalNetworks/redmond%2Ff8f67956-3906-4303-94c5-09cf91e7e311/logicalSubnets?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "45" ],
-        "x-ms-client-request-id": [ "820d7d0d-fe25-41ec-88f9-a9a6ec164f9c" ],
+        "x-ms-unique-id": [ "1185" ],
+        "x-ms-client-request-id": [ "197610d8-a4ea-47e3-8be5-b65246198b81" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsLogicalSubnet" ],
         "FullCommandName": [ "Get-AzsLogicalSubnet_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -413,16 +413,16 @@
       "StatusCode": 404,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14755" ],
-        "x-ms-request-id": [ "6928a6f6-d722-4b7d-92da-27458c647115" ],
-        "x-ms-correlation-request-id": [ "6928a6f6-d722-4b7d-92da-27458c647115" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201202T081024Z:6928a6f6-d722-4b7d-92da-27458c647115" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14961" ],
+        "x-ms-request-id": [ "29163f1d-9a3a-454e-a5c4-9f9d03df3f13" ],
+        "x-ms-correlation-request-id": [ "29163f1d-9a3a-454e-a5c4-9f9d03df3f13" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T225701Z:29163f1d-9a3a-454e-a5c4-9f9d03df3f13" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 02 Dec 2020 08:10:24 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:57:00 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvm7Nx2D6IK5g1ndGiq1q230xQT3ju7sMzKGeGQFLey1OzZWmsRRp1h2mIrbBVlxYUXi5ei2Wh4aPHg/KlqwyFgsW/vdiXNF+TM541SiYYC9sySEp/I7ZiXygkjL3q92SlwwofQv3GCj+s9cLzRaFJ" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGNt/jwz11zapRVYpXf5upox1vUf0WECMNqcFr7nGPxQtSKTnr8PCElPqjkjOiEqhvf6My9xdu7WWh/3QNh8YTw1v/VPmvqXMbdu/xsJDA9hhWn+U8EHaCm3Ri8T4P0jCos2ySxN5FyvDao/B0nNP" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],

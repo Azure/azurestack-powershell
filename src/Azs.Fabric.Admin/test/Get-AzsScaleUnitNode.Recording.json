@@ -1,12 +1,12 @@
 {
-  "Get-AzsScaleUnitNode+[NoContext]+TestListScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestListScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "34" ],
-        "x-ms-client-request-id": [ "8d2e9dde-d42b-4b82-bb4a-a2e45d5054e0" ],
+        "x-ms-unique-id": [ "1158" ],
+        "x-ms-client-request-id": [ "3a561ce0-9241-4dd6-8a39-7131318395d1" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -20,33 +20,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "04641aef-73ac-44ea-a452-9a85b3aebdd9" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14879" ],
-        "x-ms-request-id": [ "04641aef-73ac-44ea-a452-9a85b3aebdd9" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153722Z:04641aef-73ac-44ea-a452-9a85b3aebdd9" ],
+        "x-ms-correlation-request-id": [ "89b38da2-7fe9-42f4-8e05-43c8f485bddf" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14982" ],
+        "x-ms-request-id": [ "89b38da2-7fe9-42f4-8e05-43c8f485bddf" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224431Z:89b38da2-7fe9-42f4-8e05-43c8f485bddf" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:22 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:31 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvctLwLrtimqKmZW7bQ/vxCisSfdJrNKx1W2L2AY0gDKhyc3Ji4DKr/arGT1l0Qku4UbAxHdj4PRa+w/m2u/Ps2GEFxJO8XU8qGGlCIz03RDogt2LP1yYv7Af6Ks3/pMSLafqr165Xg1gYlRsbubIm" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvMfe8AvgX8Id9NcZoTGj63hwTAbX4YIcxKjnAX6oKtNFzdLNRmKH4ihgTRU22CUFtAwpWhfDGCXUi418VieP/wrhBwy8YolXq2xem0nvJJ/HmKNTt1x0L3yoIvUWzJStviNuG+0NMG2xnuGU6hH1a" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "4546" ],
+        "Content-Length": [ "3981" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetScaleUnitNode+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetScaleUnitNode+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "35" ],
-        "x-ms-client-request-id": [ "20bdd505-4ac0-46e5-88f8-9a0dadc65f8b" ],
+        "x-ms-unique-id": [ "1159" ],
+        "x-ms-client-request-id": [ "af107734-b784-4e66-b311-c67e37143d63" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -60,33 +60,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "668ee4e6-f5fe-4657-bff3-78665710eb8d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14878" ],
-        "x-ms-request-id": [ "668ee4e6-f5fe-4657-bff3-78665710eb8d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153723Z:668ee4e6-f5fe-4657-bff3-78665710eb8d" ],
+        "x-ms-correlation-request-id": [ "f56f5e51-8607-492d-aee9-b94fe2ecd757" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14981" ],
+        "x-ms-request-id": [ "f56f5e51-8607-492d-aee9-b94fe2ecd757" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224434Z:f56f5e51-8607-492d-aee9-b94fe2ecd757" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:33 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRviiztCKXPeQ6oL9bp/YDsulVdKvaLKIMrKcMgHnhORt1J2L3lRuHhSnMaXvQBqrOA4r4z1OIHCAJa5n0LPeW40Ym/ZPagfG9q6A8Z3nvk9pSv4Rwt6nC2IX1VqlDFOESp0FgxWa9fO7qa7rHMz1gz" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvvKguLR9uoiAikzbJeo5uEKuvyAfv3hfhlNWb46bSc/wzf/qGMlsV3yT/0msMqc+C8GW20DmQa1rNP+8p9FTcwap3H8ndWr3eYfIt7Ko8eowW2gFLlZ8WDY8E7hPYMLvB7kxp6uhtiDE0MmOPTtjO" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "4546" ],
+        "Content-Length": [ "3981" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetScaleUnitNode+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01+2": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetScaleUnitNode+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "36" ],
-        "x-ms-client-request-id": [ "69440cca-bcb1-4949-accd-710cf361b44a" ],
+        "x-ms-unique-id": [ "1160" ],
+        "x-ms-client-request-id": [ "8e0e178c-2ba4-4583-891f-9cc477440ad9" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -100,33 +100,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "70d083b3-ad14-40a6-a25f-cd235490da16" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14877" ],
-        "x-ms-request-id": [ "70d083b3-ad14-40a6-a25f-cd235490da16" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153723Z:70d083b3-ad14-40a6-a25f-cd235490da16" ],
+        "x-ms-correlation-request-id": [ "e8c1591b-8b49-4d70-b2d4-b25d121e6d02" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14980" ],
+        "x-ms-request-id": [ "e8c1591b-8b49-4d70-b2d4-b25d121e6d02" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224434Z:e8c1591b-8b49-4d70-b2d4-b25d121e6d02" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:33 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9YVcQLoG6UilWFufH2Y5yXS7I6ps8kQbJsez6H5d//dVu0gGsaaNqrHe2PFdERjocx87QKsrtX30GJJDD3FQR59V0KmPt2kCPi78gDc4smH9gMAHK9btYE+Z8GadUgx1aPNZ/6HV3E7dlj3IG5GM" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtT+lfMlN02/uRwIc930hAgBhbfIVVF5PvdNY0t6kSbk174bXmp9J1u7jJ2Jh9RF/UFmRdrNkJFsEIeN3aD+egfjlO4Fl/MCxaZx0owroJYxga6RlhJ2zAVXRyHTzLdgEe0ALcZDr1O5tZ+JWChnF" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1189" ],
+        "Content-Length": [ "1023" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}}"
+      "Content": "{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "37" ],
-        "x-ms-client-request-id": [ "b1dac605-6aa4-494a-9674-a19c4658d1b5" ],
+        "x-ms-unique-id": [ "1161" ],
+        "x-ms-client-request-id": [ "463f2af7-d0aa-48c8-ae41-2045d5b74de8" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -140,33 +140,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "eda947cd-b54c-4ecf-9c5e-02224ba26908" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14876" ],
-        "x-ms-request-id": [ "eda947cd-b54c-4ecf-9c5e-02224ba26908" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153723Z:eda947cd-b54c-4ecf-9c5e-02224ba26908" ],
+        "x-ms-correlation-request-id": [ "d4dfee16-f901-4f62-afe7-1860c8fd94c5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14979" ],
+        "x-ms-request-id": [ "d4dfee16-f901-4f62-afe7-1860c8fd94c5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224434Z:d4dfee16-f901-4f62-afe7-1860c8fd94c5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:34 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrPXjZJd3mGUYTfip72ho7XcTU1XOKa7M1UbWnWLwru4zo/cvm8vMh44FA5UVHRPPwCuVFJIWnW8jKjlhZBgz3zzIDzbAEHc2e6TmFshrT1toLByGYkvvuvKKsHVZ5bOWDIcDOHbwJYkfQezzGif0" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvvF3swFk3bNw5acYLerMYu0LEbX5qjpnH2jZHCsHv41q5I/EGOFQRAIVN5/VNMSAgf7EvAQmLzmwvtPWfBYoK/NCv0IwyDl6M5eIlNfjC4Tp52mOa5kEksmbhEhVLHyYozksZNrPtfP9xv1Iqp/AQ" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "4546" ],
+        "Content-Length": [ "3981" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01+2": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "38" ],
-        "x-ms-client-request-id": [ "15ca2e29-3ad0-4e3f-b147-35fd4ce574c5" ],
+        "x-ms-unique-id": [ "1162" ],
+        "x-ms-client-request-id": [ "5c29da90-4e70-4ade-b38e-0be8eb44121e" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -180,33 +180,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "49bb92ca-5866-4d75-9bfa-07e3344bb786" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14875" ],
-        "x-ms-request-id": [ "49bb92ca-5866-4d75-9bfa-07e3344bb786" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153723Z:49bb92ca-5866-4d75-9bfa-07e3344bb786" ],
+        "x-ms-correlation-request-id": [ "cd4cba9b-c2bf-4474-a980-2e494c874ebd" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14978" ],
+        "x-ms-request-id": [ "cd4cba9b-c2bf-4474-a980-2e494c874ebd" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224434Z:cd4cba9b-c2bf-4474-a980-2e494c874ebd" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:34 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSvM33Ir4buUtV1kIgNrhJNMNdk2eyr2eMBfVEuUr5Juvqy3qbL3NirS9KkFP5uCiayrqKP+0ISqYKRGYkRFyJrXtnK9BXoCrPek4nhQXZATjIn3k/gd4zDSjmTuSBpMhGwyhIyZKpv6Ayr+d7Hq3" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvpW78bvJyDu2fgQIgnsVbRToWX7s1G+GSZCbv+VXTMke/7qGkuEQFlconQFqCnM10lzbgReVIlSD73gWV4VEptIg/COtWQgl8CfQGeUF23dKRs3AiechIxvNwO2p78dz0c8i9MRnsEUZggkkk8DeJ" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1189" ],
+        "Content-Length": [ "1023" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}}"
+      "Content": "{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11?api-version=2020-10-01+3": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11?api-version=2020-10-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "39" ],
-        "x-ms-client-request-id": [ "ddaae509-b215-4373-b2ee-6dc62ad2ccf7" ],
+        "x-ms-unique-id": [ "1163" ],
+        "x-ms-client-request-id": [ "6476c241-1973-4120-96f3-477289f32200" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -220,33 +220,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f3d49c3c-d753-42cc-ab9e-e20f482f36bf" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14874" ],
-        "x-ms-request-id": [ "f3d49c3c-d753-42cc-ab9e-e20f482f36bf" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153723Z:f3d49c3c-d753-42cc-ab9e-e20f482f36bf" ],
+        "x-ms-correlation-request-id": [ "d5ab65dd-7a7e-442b-b4b0-9bf0cdaf1a44" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14977" ],
+        "x-ms-request-id": [ "d5ab65dd-7a7e-442b-b4b0-9bf0cdaf1a44" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224435Z:d5ab65dd-7a7e-442b-b4b0-9bf0cdaf1a44" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:34 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvoHyBLEfScrfHP1ruOLbNuew1qnV07HHVaSEhJSftGHKpTgpyXAZ+LQppe+r600rque0YNgf9RL6Vm8bWnIHmJVhayxmjk+kdlmxuDLlEVwhct4u0JvKqVm7dZfznjTs7TpKo7JQbzbvZmEQniS52" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv6FMy8m0kmsRyehkPw/fsm46qMxjPjfibgeNnVUaY0n5zm8/xJjOlwgKyxXWo467yv23PCT1MxQHhtklRV9ukIJtdpQM3n3S0wVbSL8sImiC19gEaW+NDk8xB/1cMtXLy8xULoIWGFAYivcqShDOY" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1114" ],
+        "Content-Length": [ "1023" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}"
+      "Content": "{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13?api-version=2020-10-01+4": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13?api-version=2020-10-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "40" ],
-        "x-ms-client-request-id": [ "d9a2c55b-b6f8-4f2f-b6cd-e6c9e964db60" ],
+        "x-ms-unique-id": [ "1164" ],
+        "x-ms-client-request-id": [ "e3689003-11eb-4e8b-bb0f-8d4b28d7df3b" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -260,33 +260,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "45113e3a-1901-4e24-a747-8b12650cd4a8" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14873" ],
-        "x-ms-request-id": [ "45113e3a-1901-4e24-a747-8b12650cd4a8" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153724Z:45113e3a-1901-4e24-a747-8b12650cd4a8" ],
+        "x-ms-correlation-request-id": [ "aada02a9-8118-410b-abb1-0d5d888fea83" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14976" ],
+        "x-ms-request-id": [ "aada02a9-8118-410b-abb1-0d5d888fea83" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224435Z:aada02a9-8118-410b-abb1-0d5d888fea83" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:35 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvghzHPjr7RwaOgpzsfD1p/zMzNXXMhPFcLPsUV3hzuLaQkaIACTjkDtNs1dwpCVqkeCG902OPihIdr7YPkQbyLqghgqkMxdTTRg8tNgtpaNuao/ewCWmTBH4ZeRuzJe3x8fwNx4nlMh9Y8b488H87" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgiU7JWO74tar0JObSimpFSjv+1yuGRvOtfURObSuSUUCbWRbSlvCvglYYsPhMNeXyCHgg8nLwMkFrxAbjg431dJ0Lug0guj5IKILffKzZta7ArvE76e40TS/G28fQqFhzICxvECgkk3/FRql12ig" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1114" ],
+        "Content-Length": [ "960" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}"
+      "Content": "{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15?api-version=2020-10-01+5": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestGetAllScaleUnitNodes+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15?api-version=2020-10-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "41" ],
-        "x-ms-client-request-id": [ "e5ecb1c1-98fc-48fc-b003-d682be55d7c9" ],
+        "x-ms-unique-id": [ "1165" ],
+        "x-ms-client-request-id": [ "9b0d9395-0a66-462a-a00d-dbfc1aeef4d9" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -300,33 +300,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "71671686-7786-46d7-8574-024ca57630b8" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14872" ],
-        "x-ms-request-id": [ "71671686-7786-46d7-8574-024ca57630b8" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153724Z:71671686-7786-46d7-8574-024ca57630b8" ],
+        "x-ms-correlation-request-id": [ "ddb520d4-a802-45f9-9b39-1f60170f9a50" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14975" ],
+        "x-ms-request-id": [ "ddb520d4-a802-45f9-9b39-1f60170f9a50" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224436Z:ddb520d4-a802-45f9-9b39-1f60170f9a50" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:35 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvO5aXqLR+JIwMSEBFGDOWQRwhNHYA7uC9s2dB5xX8FW2pIwhudmBOslts4+LppGWhLkSESb4/YdhOjG5gfd6uItio60fZ0bq4fja8xD0URjD59Ycep3RN7H5WOxEiINjgLq8pPHKErHrq4gpHVVr/" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvhXZ/iBaG2Y/uk+u8ign7hAayBl9ArjE3VnV1v4O218xLglcAKAtIlkex2kDjoc7D31kjjmG63Q59+D6Q4NKngjjafFSBmCnjP4DYBIa70qq5CNwYquVGDs2tAO6iVWpnQLpLiq/F91bLkvFGQ9la" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1114" ],
+        "Content-Length": [ "960" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}"
+      "Content": "{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "42" ],
-        "x-ms-client-request-id": [ "3625fa79-ac11-430c-8c00-40bee2fc0a31" ],
+        "x-ms-unique-id": [ "1166" ],
+        "x-ms-client-request-id": [ "2d89aefd-de78-43f0-aa88-dd582a84dc0b" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsScaleUnitNode" ],
         "FullCommandName": [ "Get-AzsScaleUnitNode_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -340,33 +340,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f035c122-bd20-48a8-8b82-8ef977b0a8d5" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14871" ],
-        "x-ms-request-id": [ "f035c122-bd20-48a8-8b82-8ef977b0a8d5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153724Z:f035c122-bd20-48a8-8b82-8ef977b0a8d5" ],
+        "x-ms-correlation-request-id": [ "64e12d7c-6b32-42f1-a0e4-5e9d23bbdff5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14974" ],
+        "x-ms-request-id": [ "64e12d7c-6b32-42f1-a0e4-5e9d23bbdff5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224436Z:64e12d7c-6b32-42f1-a0e4-5e9d23bbdff5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:24 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:36 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvLq2eXCfYFFU9Zb4tcMN5am5GidIucIHg78cmGhTn9DsmcuewXpQyKnAEwpy+ypWSHvTRk4Y0F+cGkFpUQzakMVs1FyS4qbO3F5l3WtiSn0Kclj6UdwIURbQZDdRmpqurjmrgRX+zFTT7v+qusp+P" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvDyYCJHjBPPYW/BDq62B+kLX9lTgONAaNfVvB3+jFhRZ45z4hr7fGvrHXLJNM/NyvRsUHfRmJKBDVGnBxpsEGtUkpXUvY6ydliZIJ9epGCD0a/9e5uvhV67an4ugrit5Fnu5WU0OK4vr/czAnBc6r" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "4546" ],
+        "Content-Length": [ "3981" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"StopMaintenanceMode\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":511.90625,\"cores\":56},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 216, device 0, function 0, UINumber 8\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla P40\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"name\":\"redmond/ASRR1S45R12U09\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.71\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DXLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"name\":\"redmond/ASRR1S45R12U11\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.72\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FP9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}],\"lastOperationName\":\"PowerOn\",\"lastOperationState\":\"Succeeded\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"name\":\"redmond/ASRR1S45R12U13\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.73\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14FN9N2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"name\":\"redmond/ASRR1S45R12U15\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/scaleUnitNodes\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnitNodeStatus\":\"Running\",\"powerState\":\"Running\",\"bmcAddress\":\"100.83.107.74\",\"scaleUnitName\":\"redmond/s-cluster\",\"scaleUnitUri\":\"/fabricLocations/redmond/scaleUnits/s-cluster\",\"canPowerOff\":true,\"vendor\":\"DELL\",\"model\":\"PowerEdge R740xd\",\"serialNumber\":\"14DWLN2\",\"capacity\":{\"memoryGB\":766.460938,\"cores\":64},\"gpus\":[{\"slotLocation\":\"PCI bus 59, device 0, function 0, UINumber 1\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"},{\"slotLocation\":\"PCI bus 175, device 0, function 0, UINumber 4\",\"oem\":\"N/A\",\"name\":\"Nvidia Tesla T4\",\"type\":\"DDA\",\"partitionSize\":0,\"hostDriverVersion\":\"N/A\"}]}}]}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$POST+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StartMaintenanceMode?api-version=2020-10-01+2": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$POST+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StartMaintenanceMode?api-version=2020-10-01+2": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StartMaintenanceMode?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StartMaintenanceMode?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "43" ],
-        "x-ms-client-request-id": [ "692a4405-78a7-49bf-987a-920cd0ec16c5" ],
+        "x-ms-unique-id": [ "1167" ],
+        "x-ms-client-request-id": [ "578243a0-06a7-49fb-9720-b1f61ca3f25c" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Disable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Disable-AzsScaleUnitNode_Start" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -381,17 +381,17 @@
       "Headers": {
         "Pragma": [ "no-cache" ],
         "Retry-After": [ "60" ],
-        "x-ms-correlation-request-id": [ "22b94db2-72c7-4b94-9405-278c88972307" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1191" ],
-        "x-ms-request-id": [ "22b94db2-72c7-4b94-9405-278c88972307" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153724Z:22b94db2-72c7-4b94-9405-278c88972307" ],
+        "x-ms-correlation-request-id": [ "532c0a07-76a6-4bc7-85a0-24e27750aacd" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "532c0a07-76a6-4bc7-85a0-24e27750aacd" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224437Z:532c0a07-76a6-4bc7-85a0-24e27750aacd" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:37:24 GMT" ],
-        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/692a4405-78a7-49bf-987a-920cd0ec16c5?api-version=2020-10-01" ],
+        "Date": [ "Wed, 02 Dec 2020 22:44:36 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8KKqhMUrFqFCwamxx339MOGmFnACF6REbm+fOGMkNUeVT2MhgZtrDHHgaNB6sJT8bk/NvXqG2scMeyaHOT40zPJCG7iVzPON135jPMw9yfphvBIurK9ISoXeZt7UvY05kJYNDlvV4ASoXdypSuvM" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvw/wvbeAV1vrjsG7bZCQ80zYeP0J3osY0xfaFHMh7ZoNaGe4L61nj8VF2XpMtVesXHh6q3MHOBf4vn8VMa5y4IwNqB5wC4V1F7yZIrWfaVgxS1iq6YYyvv2WtCw/8U5wzHfUGg1mxGX1WkfQdUuFa" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -400,15 +400,99 @@
       "Content": null
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/692a4405-78a7-49bf-987a-920cd0ec16c5?api-version=2020-10-01+3": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/692a4405-78a7-49bf-987a-920cd0ec16c5?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "44" ],
-        "x-ms-client-request-id": [ "692a4405-78a7-49bf-987a-920cd0ec16c5" ],
+        "x-ms-unique-id": [ "1168" ],
+        "x-ms-client-request-id": [ "578243a0-06a7-49fb-9720-b1f61ca3f25c" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Disable-AzsScaleUnitNode" ],
+        "FullCommandName": [ "Disable-AzsScaleUnitNode_Start" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "60" ],
+        "x-ms-correlation-request-id": [ "2d35b4e0-02d6-47fe-99ff-fff864869ccb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14973" ],
+        "x-ms-request-id": [ "2d35b4e0-02d6-47fe-99ff-fff864869ccb" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224537Z:2d35b4e0-02d6-47fe-99ff-fff864869ccb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 02 Dec 2020 22:45:37 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvwr8namShx451d7BijoZV5QIzK067USYzocNBCmOI8GpISqLUH2f7oEEZ836YHP/fLovXmuukIcWk7aq51O9RUS2QWjiNJlg/4mIy2n/PkSqhvAiii3P2qMYgWjPSgF8AOur/3iydsZlDJUl8mOF9" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "46" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Running\"}}"
+    }
+  },
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "1169" ],
+        "x-ms-client-request-id": [ "578243a0-06a7-49fb-9720-b1f61ca3f25c" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Disable-AzsScaleUnitNode" ],
+        "FullCommandName": [ "Disable-AzsScaleUnitNode_Start" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "60" ],
+        "x-ms-correlation-request-id": [ "3ab2133a-4d17-488d-8b33-cce84be44ae9" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14972" ],
+        "x-ms-request-id": [ "3ab2133a-4d17-488d-8b33-cce84be44ae9" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224637Z:3ab2133a-4d17-488d-8b33-cce84be44ae9" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Wed, 02 Dec 2020 22:46:37 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvqQwQYhZ8lPPtyP2APsnGuzs/pUCzM26GEjqXKVeLaZVLV+X2rBg3UpFfTPqDMhNkZsPnAXc9OpxBHVRfpYzE4KlQ6wkyO2MYcsyy2EGH6S8pUYuvv2sxnCwZ5Y9H/dI/YZ8DKWZ47JfLU+IlOa7x" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "46" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Running\"}}"
+    }
+  },
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "1170" ],
+        "x-ms-client-request-id": [ "578243a0-06a7-49fb-9720-b1f61ca3f25c" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Disable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Disable-AzsScaleUnitNode_Start" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -421,16 +505,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1caeb3a3-2410-4f51-8ffa-d1e281e34d27" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14901" ],
-        "x-ms-request-id": [ "1caeb3a3-2410-4f51-8ffa-d1e281e34d27" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153824Z:1caeb3a3-2410-4f51-8ffa-d1e281e34d27" ],
+        "x-ms-correlation-request-id": [ "28b4d3ea-db9e-46c5-842a-394d4e998989" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14985" ],
+        "x-ms-request-id": [ "28b4d3ea-db9e-46c5-842a-394d4e998989" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224737Z:28b4d3ea-db9e-46c5-842a-394d4e998989" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:38:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:47:36 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvaWxZWgy+hcmeUz1Vv9Davz9UV7swxLOivvrFIAjZFxmBk0H+Rs/mX8eqtsGE+in7PHXAMbKuVxOqeTGkA+/td5MHkC1yaYbqUMEtjuyesTmk1lk4wc4HsW3/ZWnw9T3tqjR/Pw9vDB8/O/EpIXge" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZQzY64EkQC0IJQmPDcitwhFAcQR+ICk5VbuFCIa3mGrlbmNZM7SSudOKbXq8e2QlDDUmvDBFhFeXUHsBq68DivO/9UbRErQ+fUgt2G3Gcw8r/MBeBwEsbUIsWyHphyH9pIKt/NFLJXPX3j+0lVSk" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "48" ],
@@ -440,15 +524,15 @@
       "Content": "{\"properties\":{\"provisioningState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/692a4405-78a7-49bf-987a-920cd0ec16c5?api-version=2020-10-01+4": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/692a4405-78a7-49bf-987a-920cd0ec16c5?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/578243a0-06a7-49fb-9720-b1f61ca3f25c?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "45" ],
-        "x-ms-client-request-id": [ "692a4405-78a7-49bf-987a-920cd0ec16c5" ],
+        "x-ms-unique-id": [ "1171" ],
+        "x-ms-client-request-id": [ "578243a0-06a7-49fb-9720-b1f61ca3f25c" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Disable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Disable-AzsScaleUnitNode_Start" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -461,16 +545,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "5ef82cb6-e125-4b13-897d-5af8505f9082" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14900" ],
-        "x-ms-request-id": [ "5ef82cb6-e125-4b13-897d-5af8505f9082" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153824Z:5ef82cb6-e125-4b13-897d-5af8505f9082" ],
+        "x-ms-correlation-request-id": [ "9c03b136-56ed-47bf-bdde-3845cae85710" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14984" ],
+        "x-ms-request-id": [ "9c03b136-56ed-47bf-bdde-3845cae85710" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224737Z:9c03b136-56ed-47bf-bdde-3845cae85710" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:38:23 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:47:37 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+/QXqNgBHXFOb/l5skTslVtfg4uhfn6qSElzhkG4ISmsJbItUCWPchHEV+TqvLwreVIFtcaLdDiqiBJkx+Kcs2uGbySwMo/tCfiXipbnfiFp/psjehpr3Twsqsxk+NZ8D6lwXObD2jPsIZ2c7gGi" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvFf3lkvNx5ps7hXFwJZvpnd+4O6Z0YarVyhKWjZFWk1EVUGU9GvOb7mYTL8zTD34MjFn11LG1GT0Rg084jqh6gESvfZwbDVBDABLSxSQ/ihBKhoYnjBA/eJuNmidDW4j/TH4vjdNokfq69kX6YOZy" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "48" ],
@@ -480,14 +564,14 @@
       "Content": "{\"properties\":{\"provisioningState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$POST+https://management.azure.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StopMaintenanceMode?api-version=2020-10-01+5": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$POST+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StopMaintenanceMode?api-version=2020-10-01+7": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StopMaintenanceMode?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09/StopMaintenanceMode?api-version=2020-10-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "46" ],
-        "x-ms-client-request-id": [ "7bca3220-d03b-4c5b-ae94-c2f4281dbca9" ],
+        "x-ms-unique-id": [ "1172" ],
+        "x-ms-client-request-id": [ "70648e21-b934-46d7-a056-6d6cecaaf2ab" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Enable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Enable-AzsScaleUnitNode_Stop" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -502,17 +586,17 @@
       "Headers": {
         "Pragma": [ "no-cache" ],
         "Retry-After": [ "60" ],
-        "x-ms-correlation-request-id": [ "0636a1b0-892c-4848-8685-cb516f252f4e" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1197" ],
-        "x-ms-request-id": [ "0636a1b0-892c-4848-8685-cb516f252f4e" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153825Z:0636a1b0-892c-4848-8685-cb516f252f4e" ],
+        "x-ms-correlation-request-id": [ "2e9951d9-eac6-472a-841d-4821c515ef18" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "2e9951d9-eac6-472a-841d-4821c515ef18" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224737Z:2e9951d9-eac6-472a-841d-4821c515ef18" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:38:25 GMT" ],
-        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/7bca3220-d03b-4c5b-ae94-c2f4281dbca9?api-version=2020-10-01" ],
+        "Date": [ "Wed, 02 Dec 2020 22:47:37 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/70648e21-b934-46d7-a056-6d6cecaaf2ab?api-version=2020-10-01" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvhRxG4kS3HHVb7F2HcQbxaUDL5amSY4JuRY+gV0kzzj8IuDFlOeFhQVmeX6VeK1+yuP0fDPQK7OT5hlnsPBWo8l1jbiEA5368FyjPWniUxVoDZMUm4rkZTbei9Dx73hFyOUs0WjvGmT4TqUzjjepD" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv4dO/Jw5Qv62hvq1ZIUPbnAnMJemdY9baO1YUZkav/UcnTIRWu0DtGsWishW5yv4/hnugKOn3NnNAcqAETGweVuojPmlBe7LNEgDfvEuoPKZ3LPx22HQRZ0/NNCMW9mUucrnTFIlXBvEwgzaV1qff" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -521,15 +605,15 @@
       "Content": null
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/7bca3220-d03b-4c5b-ae94-c2f4281dbca9?api-version=2020-10-01+6": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/70648e21-b934-46d7-a056-6d6cecaaf2ab?api-version=2020-10-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/7bca3220-d03b-4c5b-ae94-c2f4281dbca9?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/70648e21-b934-46d7-a056-6d6cecaaf2ab?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "47" ],
-        "x-ms-client-request-id": [ "7bca3220-d03b-4c5b-ae94-c2f4281dbca9" ],
+        "x-ms-unique-id": [ "1173" ],
+        "x-ms-client-request-id": [ "70648e21-b934-46d7-a056-6d6cecaaf2ab" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Enable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Enable-AzsScaleUnitNode_Stop" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -542,16 +626,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "63304bf6-54aa-4ca5-9632-1f8ad1d219a1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14895" ],
-        "x-ms-request-id": [ "63304bf6-54aa-4ca5-9632-1f8ad1d219a1" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153925Z:63304bf6-54aa-4ca5-9632-1f8ad1d219a1" ],
+        "x-ms-correlation-request-id": [ "1954222f-8675-447c-948c-0609971d6686" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14983" ],
+        "x-ms-request-id": [ "1954222f-8675-447c-948c-0609971d6686" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224838Z:1954222f-8675-447c-948c-0609971d6686" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:39:25 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:48:38 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvqSyhBc7rCyldv/cI7UdHxa4lt/gCjPnqCNWgY/Elv2lGhrsFaOeAr6nM/ONQgkM0uuXKY1TZv9f7q7yNKooXymlztSJ9aDdgXVqDjX17LMsU0PgasWodNEx7azwVO8pEOPp2DxIEPaeDKaSXiMkz" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvasOA4zuELLefJc2Ri2cnb272/QlDUjbNcR/jRlfqOKGQuftv28ebccwQadofl2t1L41dYqIq1n+mu2BePO7TGcmX507QnOileHpFdzuw2ziLswQRJALMF/yuUrXuZZIMtkrWeM3SWoCxyg8Lm0yX" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "48" ],
@@ -561,15 +645,15 @@
       "Content": "{\"properties\":{\"provisioningState\":\"Succeeded\"}}"
     }
   },
-  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/7bca3220-d03b-4c5b-ae94-c2f4281dbca9?api-version=2020-10-01+7": {
+  "Get-AzsScaleUnitNode+[NoContext]+TestStartStopMaintenanceModeUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/70648e21-b934-46d7-a056-6d6cecaaf2ab?api-version=2020-10-01+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/a5fe798c-eb99-4a8a-8998-16a7a759d31e/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/7bca3220-d03b-4c5b-ae94-c2f4281dbca9?api-version=2020-10-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/70648e21-b934-46d7-a056-6d6cecaaf2ab?api-version=2020-10-01",
       "Content": null,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "48" ],
-        "x-ms-client-request-id": [ "7bca3220-d03b-4c5b-ae94-c2f4281dbca9" ],
+        "x-ms-unique-id": [ "1174" ],
+        "x-ms-client-request-id": [ "70648e21-b934-46d7-a056-6d6cecaaf2ab" ],
         "CommandName": [ "Azs.Fabric.Admin.internal\\Enable-AzsScaleUnitNode" ],
         "FullCommandName": [ "Enable-AzsScaleUnitNode_Stop" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -582,16 +666,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "bd13240a-4785-4b3e-91d4-693d22f0e798" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14894" ],
-        "x-ms-request-id": [ "bd13240a-4785-4b3e-91d4-693d22f0e798" ],
-        "x-ms-routing-request-id": [ "REDMOND:20201030T153925Z:bd13240a-4785-4b3e-91d4-693d22f0e798" ],
+        "x-ms-correlation-request-id": [ "3d0a7f90-b003-4f01-a4a0-cd9de7073a0a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14982" ],
+        "x-ms-request-id": [ "3d0a7f90-b003-4f01-a4a0-cd9de7073a0a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T224838Z:3d0a7f90-b003-4f01-a4a0-cd9de7073a0a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 30 Oct 2020 15:39:25 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 22:48:38 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvySiKLOgJySvaAR6xT8wFnhgctiR5FYG9qb8bNs3xvTnji5OcCEneYwuJzBqncLW0gNE+JC1JZedGAT6MoznJdhz2+SOjqMpBVU0ICbHK5hLr3mSLNfTObO3v3AuDJkAh2QQnTFtgLdhUHxAZS9HO" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9ymz8AAg+VwpHNDiBWKlyeyeP3hr8afjqbPF1CeEljNX0lizFFEsjv57ewpb8/xJXP3C90TN7Db+nud9ZOxarMtLMcDjqWrqEq+e3ijAFa/EiSRMh9B0fc00FbZtizvsSh8b2+rvO+VDV2GbCXDD" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "48" ],
