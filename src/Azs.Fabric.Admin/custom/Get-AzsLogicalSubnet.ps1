@@ -156,6 +156,11 @@ process {
         {
             $PSBoundParameters['Name'] = $Name.Split("/")[-1]
         }
+
+		if ($null -ne $LogicalNetwork -and $LogicalNetwork.Contains('/'))
+        {
+            $PSBoundParameters['LogicalNetwork'] = $LogicalNetwork.Split("/")[-1]
+        }
     }
 
     Azs.Fabric.Admin.internal\Get-AzsLogicalSubnet @PSBoundParameters
