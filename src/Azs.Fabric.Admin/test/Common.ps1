@@ -1,5 +1,7 @@
 $global:SkippedTests = @(
-    "TestInfraRoleInstancePowerOnAll"
+    "TestInfraRoleInstancePowerOnAll",
+	"TestGetDriveByInputObject",
+	"TestSetAzsScaleUnit"
 )
 
 if ($global:TestMode -eq "Live") {
