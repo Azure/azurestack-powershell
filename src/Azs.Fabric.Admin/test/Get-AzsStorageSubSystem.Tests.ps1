@@ -13,7 +13,7 @@ while(-not $mockingPath) {
 
 Describe 'Get-AzsStorageSubSystem' {
 
-    . $PSScriptRoot\StorageCommon.ps1
+    . $PSScriptRoot\Common.ps1
 
     BeforeEach {
 
