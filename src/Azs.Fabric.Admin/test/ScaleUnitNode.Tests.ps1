@@ -184,12 +184,4 @@ Describe 'ScaleUnitNodeTest' {
         }
     }
 
-    It "TestAddScaleUnitNode" -Skip:$('TestAddScaleUnitNode' -in $global:SkippedTests) {
-        $global:TestName = "TestAddScaleUnitNode"
-
-        {
-           Add-AzsScaleUnitNode -BmciPv4Address "100.71.11.155" -ComputerName "ASRR1N31R12U25" -ScaleUnit "s-cluster"
-        } | Should throw
-
-    }
 }
