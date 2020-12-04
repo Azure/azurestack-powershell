@@ -28,7 +28,7 @@ Describe 'Repair-AzsScaleUnitNode' {
             $ScaleUnitNodes = Get-AzsScaleUnitNode -ResourceGroupName $global:ResourceGroupName -Location $global:Location
             $ScaleUnitNodes | Should Not Be $null
 			
-			Repair-AzsScaleUnitNode -Name $ScaleUnitNodes[0].Name -Force
+			Repair-AzsScaleUnitNode -Name $ScaleUnitNodes[0].Name -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Force
 		} | Should Not Throw
     }
 }

@@ -25,7 +25,7 @@ Describe 'Add-AzsScaleUnitNode' {
         $global:TestName = "TestAddScaleUnitNode"
 
         {
-           Add-AzsScaleUnitNode -BmciPv4Address "100.71.11.155" -ComputerName "ASRR1N31R12U25" -ScaleUnit "s-cluster"
+           Add-AzsScaleUnitNode -BmciPv4Address "100.71.11.155" -ComputerName "ASRR1N31R12U25" -ScaleUnit "s-cluster" -ResourceGroupName $global:ResourceGroupName -Location $global:Location
         } | Should not throw
     }
 }
