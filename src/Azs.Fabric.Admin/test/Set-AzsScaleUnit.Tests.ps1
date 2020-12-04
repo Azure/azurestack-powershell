@@ -78,7 +78,7 @@ Describe 'Set-AzsScaleUnit' {
 				
 			    Set-AzsScaleUnit -NumberOfGPUPartition $newSize -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Name $ScaleUnit.Name -Force -ErrorAction Stop
                 Start-Sleep -Seconds 300
-				$retrieved = Get-AzsScaleUnit -ResourceGroupName $global:ResourceGroupName -Location $Location -Name $ScaleUnit.Name
+				$retrieved = Get-AzsScaleUnit -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Name $ScaleUnit.Name
 
                 AssertScaleUnitNodesPropertiesChange -Original $ScaleUnit -Updated $retrieved -NewGpuPartitionSize $newSize
 			}
