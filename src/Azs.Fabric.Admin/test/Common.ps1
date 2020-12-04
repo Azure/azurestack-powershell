@@ -1,5 +1,4 @@
 $global:SkippedTests = @(
-    "TestInfraRoleInstancePowerOnAll",
 	"TestGetDriveByInputObject",
 	"TestSetAzsScaleUnit"
 )

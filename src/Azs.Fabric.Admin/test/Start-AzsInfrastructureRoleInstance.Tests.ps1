@@ -21,14 +21,14 @@ Describe 'Start-AzsInfrastructureRoleInstance' {
         $global:Client = $null
     }
 
-    It 'RepairSacleUnit' -skip:$('RepairSacleUnit' -in $global:SkippedTests) {
+    It 'StartAzsInfrastructureRoleInstance' -skip:$('StartAzsInfrastructureRoleInstance' -in $global:SkippedTests) {
         { 
 		    $global:TestName = 'RepairSacleUnit'
 
-            $InfraRoleInstances = Get-AzsInfrastructureRole -ResourceGroupName $global:ResourceGroupName -Location $global:Location
+            $InfraRoleInstances = Get-AzsInfrastructureRoleInstance -ResourceGroupName $global:ResourceGroupName -Location $global:Location
             $InfraRoleInstances | Should Not Be $null
 			
 			Start-AzsInfrastructureRoleInstance -Name $InfraRoleInstances[0].Name -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Force
-		} | Should Throw
+		} | Should Not Throw
     }
 }

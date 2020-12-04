@@ -113,13 +113,4 @@ Describe 'Get-AzsInfrastructureRoleInstance' {
             break
         }
     }
-    
-    It "TestInfraRoleInstancePowerOnAll" -Skip:$('TestInfraRoleInstancePowerOnAll' -in $global:SkippedTests) {
-        $global:TestName = 'TestInfraRoleInstancePowerOnAll'
-    
-        $InfrastructureRoleInstances = Get-AzsInfrastructureRoleInstance -ResourceGroupName $global:ResourceGroupName -Location $global:Location
-        foreach ($InfrastructureRoleInstance in $InfrastructureRoleInstances) {
-            Start-AzsInfrastructureRoleInstance -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Name $InfrastructureRoleInstance.Name -Force
-        }
-    }
  }
