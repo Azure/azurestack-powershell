@@ -158,6 +158,15 @@ process {
         }
     }
 
+    # Generated cmdlet does not support {prefix}/{LogicalNetwork} for LogicalNetwork name, so extract the {LogicalNetwork} part here
+    if ($PSBoundParameters.ContainsKey(('LogicalNetwork')))
+    {
+		if ($null -ne $LogicalNetwork -and $LogicalNetwork.Contains('/'))
+        {
+            $PSBoundParameters['LogicalNetwork'] = $LogicalNetwork.Split("/")[-1]
+        }
+    }
+
     Azs.Fabric.Admin.internal\Get-AzsLogicalSubnet @PSBoundParameters
 }
 }

@@ -1,12 +1,12 @@
 {
-  "Get-AzsInfrastructureLocation+[NoContext]+TestListFabricLocations+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
+  "Get-AzsInfrastructureLocation+[NoContext]+TestListFabricLocations+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "39" ],
-        "x-ms-client-request-id": [ "4f18b92f-e3c3-41ac-a5b3-dc5648688321" ],
+        "x-ms-unique-id": [ "486" ],
+        "x-ms-client-request-id": [ "450866e4-7197-44bf-acdd-2670393b2429" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -20,33 +20,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14892" ],
-        "x-ms-request-id": [ "5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:5216a7f6-8f5e-4974-8174-7ebef03a7377" ],
+        "x-ms-correlation-request-id": [ "57bd2383-657f-462c-b668-833d664c0ef1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14980" ],
+        "x-ms-request-id": [ "57bd2383-657f-462c-b668-833d664c0ef1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T072714Z:57bd2383-657f-462c-b668-833d664c0ef1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 23:32:59 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 07:27:14 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBNcT144E9EYJWq1E6GTtGa6JWEchSyEzjoMMAwoux8NG5yfpo5CYDIopjaHpqBjOCC3dIncdSwjJQ8ihU4X3xIcA8i1NoRWR9fUbdDtBR0IXErAsYhGEj53eiCNgtE4lrz2D5zw59Jw92dbyUcrF" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRva1mgaVogcjnKizEH8HzWtOGgOzPW5bx5gIWhNIb6DyezHvcFeBQaPCKqouXX1N3QJBPd8VTxUcNxPJT0Cb+C+4A4j2ECM2RhRnc9cVjEYCW/DAV/XUXp1uUVlYVnPGgIce3b7+ViE0gD4PJ2RW46" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "639" ],
+        "Content-Length": [ "699" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.6.224\",\"100.88.6.225\",\"100.88.6.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"0200274f-5ea2-41f1-93f9-31144ce0c975\",\"externalDNSIPAddress01\":\"n22r0903-ns01.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"n22r0903-ns02.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.101.224\",\"100.88.101.225\",\"100.88.101.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"2757c369-a32c-4981-8cb6-58e783b1c250\",\"stampCloudId\":\"9f636617-2548-41a9-be46-1466f35eb821\",\"externalDNSIPAddress01\":\"s45r1202-ns01.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"s45r1202-ns02.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
     }
   },
-  "Get-AzsInfrastructureLocation+[NoContext]+TestGetFabricLocation+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
+  "Get-AzsInfrastructureLocation+[NoContext]+TestGetFabricLocation+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "40" ],
-        "x-ms-client-request-id": [ "730ca7d4-6a2f-4fcf-91ff-5504bbfca105" ],
+        "x-ms-unique-id": [ "487" ],
+        "x-ms-client-request-id": [ "84788bf6-4f22-4f90-804f-4ea4710fe505" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -60,33 +60,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14891" ],
-        "x-ms-request-id": [ "832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:832d583b-4c81-4c9e-bbaa-2eafdb5715cd" ],
+        "x-ms-correlation-request-id": [ "4c095f21-51f4-4e14-b626-d9fc60553065" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14979" ],
+        "x-ms-request-id": [ "4c095f21-51f4-4e14-b626-d9fc60553065" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T072714Z:4c095f21-51f4-4e14-b626-d9fc60553065" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 07:27:14 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv9g3uSmDxnpkUI1g0fS+C9TXCQ06fuy+dC7xsTV/vklkE/aHMU0Zl2UvjK0hdgFPulTqngVdXOQJWRbQmOZw7pQkql3o6gAoZxPKdEcxM2Y49DN8FFtVD4zkG55M3e+t4SKO3DGkKvsdSHW2avQDc" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7DeaBRh36hmqybXO4mI/j4v/VQn62Mur+LgndjsVDsORyDfhz7VIHVVCE5q0t+q3upIAGlBjiSGojHNEhkI0ukZnitSMP8+8yP3gn+W23xzKg/YIEHTvn9dDqjjIcwqkKOA1XWmdYkinkZkk6PZu" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "639" ],
+        "Content-Length": [ "699" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.6.224\",\"100.88.6.225\",\"100.88.6.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"0200274f-5ea2-41f1-93f9-31144ce0c975\",\"externalDNSIPAddress01\":\"n22r0903-ns01.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"n22r0903-ns02.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.101.224\",\"100.88.101.225\",\"100.88.101.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"2757c369-a32c-4981-8cb6-58e783b1c250\",\"stampCloudId\":\"9f636617-2548-41a9-be46-1466f35eb821\",\"externalDNSIPAddress01\":\"s45r1202-ns01.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"s45r1202-ns02.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
     }
   },
-  "Get-AzsInfrastructureLocation+[NoContext]+TestGetFabricLocation+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+2": {
+  "Get-AzsInfrastructureLocation+[NoContext]+TestGetFabricLocation+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "41" ],
-        "x-ms-client-request-id": [ "1def560e-9d83-4123-addf-296a3a768a86" ],
+        "x-ms-unique-id": [ "488" ],
+        "x-ms-client-request-id": [ "f37109a5-9710-4ee7-a96a-fe37891b51c3" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -100,33 +100,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14890" ],
-        "x-ms-request-id": [ "c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T233300Z:c16efce5-4ea4-4498-8df0-faf79176ebd1" ],
+        "x-ms-correlation-request-id": [ "981ffeed-3020-45fb-bd73-d78566295655" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14978" ],
+        "x-ms-request-id": [ "981ffeed-3020-45fb-bd73-d78566295655" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T072715Z:981ffeed-3020-45fb-bd73-d78566295655" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 07:27:14 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZWWH8OnTix9yrrcjbASy/+EiQ9YCY8ClOoRR3/vBczZGur5O1jBSndw2mWN3OBu8WzP8q5G9W+ZADxprR3kL8FIH1NIJZuvoHQcbCPWskmmxSgcZACKiMsMfhy6/QXs0Z6jv1RIToZ/yJHsLV5a9" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuDmka0fqPoJmaPOS/Z2JOWUScz4UpMTNnUPO20TUdT+u9dN+hUFkvi87ZWtIirUCF0z09K2tFb/yY1hXhC7tsuCEB+o/cyHF5n3HDnLq36DvmBByU02L0H6vymssYkcjd6wxY/HeVn8sIGXULQEQ" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "639" ],
+        "Content-Length": [ "699" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.6.224\",\"100.88.6.225\",\"100.88.6.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"0200274f-5ea2-41f1-93f9-31144ce0c975\",\"externalDNSIPAddress01\":\"n22r0903-ns01.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"n22r0903-ns02.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.101.224\",\"100.88.101.225\",\"100.88.101.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"2757c369-a32c-4981-8cb6-58e783b1c250\",\"stampCloudId\":\"9f636617-2548-41a9-be46-1466f35eb821\",\"externalDNSIPAddress01\":\"s45r1202-ns01.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"s45r1202-ns02.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
     }
   },
-  "Get-AzsInfrastructureLocation+[NoContext]+TestGetAllFabricLocations+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
+  "Get-AzsInfrastructureLocation+[NoContext]+TestGetAllFabricLocations+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "42" ],
-        "x-ms-client-request-id": [ "a8d10abe-ea25-41c4-bdaf-0f491dcf5b78" ],
+        "x-ms-unique-id": [ "489" ],
+        "x-ms-client-request-id": [ "0a98b409-193a-41ae-90ee-dcba7274ae8f" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -140,33 +140,33 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "0cca7b83-cfb5-462a-9771-d5366f516665" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14889" ],
-        "x-ms-request-id": [ "0cca7b83-cfb5-462a-9771-d5366f516665" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T233301Z:0cca7b83-cfb5-462a-9771-d5366f516665" ],
+        "x-ms-correlation-request-id": [ "9c0cf750-96ec-40da-a84d-7c44c2c00a05" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14977" ],
+        "x-ms-request-id": [ "9c0cf750-96ec-40da-a84d-7c44c2c00a05" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T072715Z:9c0cf750-96ec-40da-a84d-7c44c2c00a05" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 07:27:15 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvm16NutzrTGVWU6bjnzLWwByTJfiH+WvRFwafxEh7474Kx99+LtbyEYjtAszY2h4OuN577JtFnoi08DTzWtdRk7Gsd6mx6ntHqWTRkKVfk+4OcsgJUGsRswqqRgMBc/dESW+aZNSuUAASqzVj7xW6" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJeh6zGdfxA6TxCo0moXbQCj+8qHV009/7PmQ0RavrSe7AtAuVVZI9qhC3+0WCL2kHH212l9ONPFYvzNXHYN+cTA/CnJxz9kqLT4UGLSLbtflBvrw9EDilu2dgenE2bfSem1XXaPtT3ZzDYBCCOK0" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "639" ],
+        "Content-Length": [ "699" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.6.224\",\"100.88.6.225\",\"100.88.6.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"0200274f-5ea2-41f1-93f9-31144ce0c975\",\"externalDNSIPAddress01\":\"n22r0903-ns01.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"n22r0903-ns02.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.101.224\",\"100.88.101.225\",\"100.88.101.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"2757c369-a32c-4981-8cb6-58e783b1c250\",\"stampCloudId\":\"9f636617-2548-41a9-be46-1466f35eb821\",\"externalDNSIPAddress01\":\"s45r1202-ns01.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"s45r1202-ns02.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
     }
   },
-  "Get-AzsInfrastructureLocation+[NoContext]+TestGetAllFabricLocations+$GET+https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+2": {
+  "Get-AzsInfrastructureLocation+[NoContext]+TestGetAllFabricLocations+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r0903.masd.stbtest.microsoft.com/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations?api-version=2016-05-01",
       "Content": null,
       "Headers": {
-        "x-ms-unique-id": [ "43" ],
-        "x-ms-client-request-id": [ "488eceb8-3223-4d1b-aad6-be568a87720b" ],
+        "x-ms-unique-id": [ "490" ],
+        "x-ms-client-request-id": [ "bde3dcc7-3192-4163-bb32-828b4ab66d5e" ],
         "CommandName": [ "Get-AzsInfrastructureLocation" ],
         "FullCommandName": [ "Get-AzsInfrastructureLocation_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -180,23 +180,23 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14888" ],
-        "x-ms-request-id": [ "eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200206T233301Z:eb058f1d-8272-4628-8e0e-5855b49fecf5" ],
+        "x-ms-correlation-request-id": [ "9d901a1d-4e32-45af-a792-08cd0403d4ed" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14976" ],
+        "x-ms-request-id": [ "9d901a1d-4e32-45af-a792-08cd0403d4ed" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201202T072715Z:9d901a1d-4e32-45af-a792-08cd0403d4ed" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 06 Feb 2020 23:33:00 GMT" ],
+        "Date": [ "Wed, 02 Dec 2020 07:27:15 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSnTrplZxG9AqiiaeVGUpKxBcLx2zDautJu+WkFbINjjVw4RWdrPP8RVCY38mh68OmJgDGTOMX2s8HPktkHPlXaK/qF5eoqAGQj9yJngQzZQOxoYo/UAxbmdHmRTktFd6NCkqHsdYfeaJUVkO+qTY" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvI+IweNdnX7Y/E+XJicWpSe+f2aRCeaxuZa2h9RRmwJrHVAwRuWrmIWwqukTyYUXCygO7JZHyXgMMF5PwJL6oQISvFgSR6s94Ti1exSnfRN4JgeMbJXr7MzqtFqSARJlhw0aXjp5t4iTfHZLOPLLh" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "639" ],
+        "Content-Length": [ "699" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/f7f5c0d1-e0a3-41f5-bf30-d27f13c9a3a7/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.6.224\",\"100.88.6.225\",\"100.88.6.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"0200274f-5ea2-41f1-93f9-31144ce0c975\",\"externalDNSIPAddress01\":\"n22r0903-ns01.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"n22r0903-ns02.redmond.ext-n22r0903.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"pepIpAddresses\":[\"100.88.101.224\",\"100.88.101.225\",\"100.88.101.226\"],\"timeServer\":\"10.10.240.20\",\"stampInformationId\":\"2757c369-a32c-4981-8cb6-58e783b1c250\",\"stampCloudId\":\"9f636617-2548-41a9-be46-1466f35eb821\",\"externalDNSIPAddress01\":\"s45r1202-ns01.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"externalDNSIPAddress02\":\"s45r1202-ns02.redmond.ext-s45r1202.masd.stbtest.microsoft.com\",\"exclusiveAdminOperationRunning\":false}}]}"
     }
   }
 }

@@ -6,7 +6,7 @@ Repairs a node of the cluster.
 .Example
 To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/repair-azsscaleunitnode
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IBareMetalNodeDescription
+Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20201001.IBareMetalNodeDescription
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 .Outputs
@@ -98,7 +98,7 @@ param(
     [Parameter(ParameterSetName='Repair', Mandatory, ValueFromPipeline)]
     [Parameter(ParameterSetName='RepairViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.IBareMetalNodeDescription]
+    [Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20201001.IBareMetalNodeDescription]
     # Description of a bare metal node used for ScaleOut operation on a cluster.
     # To construct, see NOTES section for BAREMETALNODE properties and create a hash table.
     ${BareMetalNode},
