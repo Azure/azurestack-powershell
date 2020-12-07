@@ -118,7 +118,7 @@ Describe 'ScaleUnitNodeTest' {
             {
                 Disable-AzsScaleUnitNode -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Name $ScaleUnitNode.Name -Force -ErrorAction Stop
                 Enable-AzsScaleUnitNode -ResourceGroupName $global:ResourceGroupName -Location $global:Location -Name $ScaleUnitNode.Name -Force -ErrorAction Stop
-            } | Should Throw
+            } | Should Not Throw
             break
         }
     }
@@ -184,12 +184,4 @@ Describe 'ScaleUnitNodeTest' {
         }
     }
 
-    It "TestAddScaleUnitNode" -Skip:$('TestAddScaleUnitNode' -in $global:SkippedTests) {
-        $global:TestName = "TestAddScaleUnitNode"
-
-        {
-           Add-AzsScaleUnitNode -BmciPv4Address "100.71.11.155" -ComputerName "ASRR1N31R12U25" -ScaleUnit "s-cluster"
-        } | Should not throw
-
-    }
 }

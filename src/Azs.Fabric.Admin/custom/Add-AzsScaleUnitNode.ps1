@@ -173,7 +173,7 @@ param(
 
 process {
 		
-		$NewNode = New-Object -TypeName Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20160501.ScaleOutScaleUnitParameters
+		$NewNode = New-Object -TypeName Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.Api20201001.ScaleOutScaleUnitParameters
         $NewNode.BmciPv4Address = ${BmciPv4Address}
         $NewNode.ComputerName = ${ComputerName}
         $PSBoundParameters['NodeList'] = $NewNode

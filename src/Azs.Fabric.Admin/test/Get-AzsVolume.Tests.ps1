@@ -13,7 +13,7 @@ while(-not $mockingPath) {
 
 Describe 'Get-AzsVolume' {
 
-    . $PSScriptRoot\StorageCommon.ps1
+    . $PSScriptRoot\Common.ps1
 
     BeforeEach {
 

@@ -1,0 +1,163 @@
+{
+  "Start-AzsInfrastructureRoleInstance+[NoContext]+StartAzsInfrastructureRoleInstance+$GET+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances?api-version=2016-05-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "377" ],
+        "x-ms-client-request-id": [ "03678e87-4ed8-484a-8c58-0657732706f5" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Get-AzsInfrastructureRoleInstance" ],
+        "FullCommandName": [ "Get-AzsInfrastructureRoleInstance_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "03ce844e-9be5-4688-ac7f-7eca68aa88ed" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14887" ],
+        "x-ms-request-id": [ "03ce844e-9be5-4688-ac7f-7eca68aa88ed" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T233629Z:03ce844e-9be5-4688-ac7f-7eca68aa88ed" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 23:36:29 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvEEqcRQHuoGPr0rtnO34rz/q8qc+0Hqf/3XriyGBc0QPjX8zF6WWxu6bqmEA/hMPjvraFvLthZt94jo6tiicniNNfpEEOw0Utx8RgI0sZv8I3FoLs9kYxXvH201mx4y2ao3ygvwJatBul03HQCV+e" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "18519" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ACS01\",\"name\":\"redmond/s45r1202-ACS01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":8.0,\"cores\":6},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ACS02\",\"name\":\"redmond/s45r1202-ACS02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":8.0,\"cores\":6},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ACS03\",\"name\":\"redmond/s45r1202-ACS03\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":8.0,\"cores\":6},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ADFS01\",\"name\":\"redmond/s45r1202-ADFS01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":4.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ADFS02\",\"name\":\"redmond/s45r1202-ADFS02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":4.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-CA01\",\"name\":\"redmond/s45r1202-CA01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":1.0,\"cores\":2},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Gwy01\",\"name\":\"redmond/s45r1202-Gwy01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":8.0,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Gwy02\",\"name\":\"redmond/s45r1202-Gwy02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":8.0,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Gwy03\",\"name\":\"redmond/s45r1202-Gwy03\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":8.0,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-NC01\",\"name\":\"redmond/s45r1202-NC01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":4.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-NC02\",\"name\":\"redmond/s45r1202-NC02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":4.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-NC03\",\"name\":\"redmond/s45r1202-NC03\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":4.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-PXE01\",\"name\":\"redmond/s45r1202-PXE01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":1.0,\"cores\":2},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-SLB01\",\"name\":\"redmond/s45r1202-SLB01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":8.0,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-SLB02\",\"name\":\"redmond/s45r1202-SLB02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":8.0,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Sql01\",\"name\":\"redmond/s45r1202-Sql01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":6.5,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Sql02\",\"name\":\"redmond/s45r1202-Sql02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":6.5,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-WAS01\",\"name\":\"redmond/s45r1202-WAS01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":10.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-WAS02\",\"name\":\"redmond/s45r1202-WAS02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":10.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-WASP01\",\"name\":\"redmond/s45r1202-WASP01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":12.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-WASP02\",\"name\":\"redmond/s45r1202-WASP02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":12.0,\"cores\":4},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Xrp01\",\"name\":\"redmond/s45r1202-Xrp01\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U09\",\"size\":{\"memoryGb\":15.5,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Xrp02\",\"name\":\"redmond/s45r1202-Xrp02\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U11\",\"size\":{\"memoryGb\":15.5,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Xrp03\",\"name\":\"redmond/s45r1202-Xrp03\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U13\",\"size\":{\"memoryGb\":15.5,\"cores\":8},\"state\":\"Running\"}},{\"id\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-Xrp04\",\"name\":\"redmond/s45r1202-Xrp04\",\"type\":\"Microsoft.Fabric.Admin/fabricLocations/infraRoleInstances\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"scaleUnit\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster\",\"scaleUnitNode\":\"/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/system.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnitNodes/ASRR1S45R12U15\",\"size\":{\"memoryGb\":15.5,\"cores\":8},\"state\":\"Running\"}}]}"
+    }
+  },
+  "Start-AzsInfrastructureRoleInstance+[NoContext]+StartAzsInfrastructureRoleInstance+$POST+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ACS01/PowerOn?api-version=2016-05-01+2": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/infraRoleInstances/s45r1202-ACS01/PowerOn?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "378" ],
+        "x-ms-client-request-id": [ "d7e711ec-91b5-40a7-a541-00456f918a0c" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Start-AzsInfrastructureRoleInstance" ],
+        "FullCommandName": [ "Start-AzsInfrastructureRoleInstance_PowerOn" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "60" ],
+        "x-ms-correlation-request-id": [ "7cd8ba3d-e27b-43e5-b110-d1ed6ce666a0" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1197" ],
+        "x-ms-request-id": [ "7cd8ba3d-e27b-43e5-b110-d1ed6ce666a0" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T233630Z:7cd8ba3d-e27b-43e5-b110-d1ed6ce666a0" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 23:36:29 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/d7e711ec-91b5-40a7-a541-00456f918a0c?api-version=2016-05-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvA6ebhsqox57ujaVQwe8xzmDgiw0wP5uxA5URLwGBpKW08GLxMsW6Zueebf6tj5etIYFjtsp4/rOtmEvFwu/nQwgK8RClnRHeAmJQMGgmi+muQecAyHsCFGsulFjymdNNCeBmjFebiTUkVMAmXVAt" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Start-AzsInfrastructureRoleInstance+[NoContext]+StartAzsInfrastructureRoleInstance+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/d7e711ec-91b5-40a7-a541-00456f918a0c?api-version=2016-05-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/d7e711ec-91b5-40a7-a541-00456f918a0c?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "379" ],
+        "x-ms-client-request-id": [ "d7e711ec-91b5-40a7-a541-00456f918a0c" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Start-AzsInfrastructureRoleInstance" ],
+        "FullCommandName": [ "Start-AzsInfrastructureRoleInstance_PowerOn" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "1f887a61-71a3-4c64-944d-e4edebeced8d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14883" ],
+        "x-ms-request-id": [ "1f887a61-71a3-4c64-944d-e4edebeced8d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T233730Z:1f887a61-71a3-4c64-944d-e4edebeced8d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 23:37:30 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvReTm6X2k5VmENq2q9sRPnEsJVf0blBK4oKdSK4BbwzbIVKoByPeHryVpzRduABsR5eGnbzCaPA4PU8luHkujnYkn2n4YIt0Se4KGAruN7IUXO7C6qCuRoNtepRmsqlP1CBra6nM6fZtQPSwOEBk1" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "48" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+    }
+  },
+  "Start-AzsInfrastructureRoleInstance+[NoContext]+StartAzsInfrastructureRoleInstance+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/d7e711ec-91b5-40a7-a541-00456f918a0c?api-version=2016-05-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/d7e711ec-91b5-40a7-a541-00456f918a0c?api-version=2016-05-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "380" ],
+        "x-ms-client-request-id": [ "d7e711ec-91b5-40a7-a541-00456f918a0c" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Start-AzsInfrastructureRoleInstance" ],
+        "FullCommandName": [ "Start-AzsInfrastructureRoleInstance_PowerOn" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "b9c6baa4-f80f-45ae-96a8-47e9321a3e9c" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14882" ],
+        "x-ms-request-id": [ "b9c6baa4-f80f-45ae-96a8-47e9321a3e9c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T233730Z:b9c6baa4-f80f-45ae-96a8-47e9321a3e9c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 23:37:30 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRveLwDeXJcuGZfErW28G3j+CG2b6uPttgkNUDZIZV4T3w8gukMokPoqMlezfVXcU4SGfmU/dhnqMNrCmThm6K97qn2YZzXSPxXBsX/y7f2CdW4xT8rWxWnNwlfgtEVd2n17xVT0WHVHSQvAd40vW5m" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "48" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Succeeded\"}}"
+    }
+  }
+}

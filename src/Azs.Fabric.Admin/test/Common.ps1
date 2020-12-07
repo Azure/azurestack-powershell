@@ -1,4 +1,6 @@
 $global:SkippedTests = @(
+	"TestGetDriveByInputObject",
+	"TestSetAzsScaleUnit"
 )
 
 if ($global:TestMode -eq "Live") {

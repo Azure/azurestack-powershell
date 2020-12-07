@@ -34,7 +34,7 @@ Describe 'Get-AzsLogicalSubnet' {
             <#
 			$LogicalSubnet.Metadata  | Should Not Be $null
 			#>
-            $LogicalSubnet.IpPools   | Should Not Be $null
+            $LogicalSubnet.IpPool    | Should Not Be $null
             $LogicalSubnet.IsPublic  | Should Not Be $null
         }
 
@@ -60,10 +60,10 @@ Describe 'Get-AzsLogicalSubnet' {
 
                 # Logical Network
                 if ($Expected -eq $null) {
-                    $Found.IpPools | Should be $null
+                    $Found.IpPool | Should be $null
                 }
                 else {
-                    $Found.IpPools.Count   | Should Be $Expected.IpPools.Count
+                    $Found.IpPool.Count   | Should Be $Expected.IpPool.Count
                 }
                 $Found.IsPublic  | Should Be $Expected.IsPublic
 
