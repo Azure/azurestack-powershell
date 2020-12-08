@@ -1,18 +1,19 @@
-### Example 1: {{ Add title here }}
+### Example 1: Prune external store
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Invoke-AzsPruneBackupLocationExternalStore
 
-{{ Add output here }}
+masbackup/progressivebackup/garbage
 ```
 
-{{ Add description here }}
+Prune external store
 
-### Example 2: {{ Add title here }}
+
+### Example 2: Perform a dry run that does not actually remove the garbage
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Invoke-AzsPruneBackupLocationExternalStore -OperationType DryRun
 
-{{ Add output here }}
+masbackup/progressivebackup/garbage
+
 ```
 
-{{ Add description here }}
-
+Perform a dry run that does not actually remove the garbage

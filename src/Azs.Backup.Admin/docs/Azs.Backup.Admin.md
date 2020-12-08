@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Backup.Admin
-Module Guid: 6b8410e2-074e-44c1-81f1-410accf696a5
+Module Guid: af181060-8c4d-4143-9bb9-2145377fd72c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin
 Help Version: 1.0.0.0
 Locale: en-US
