@@ -1,41 +1,34 @@
 ---
 external help file:
-Module Name: Azs.Backup.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/start-azsbackup
+Module Name: Azs.Fabric.Admin
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.fabric.admin/set-azsscaleunit
 schema: 2.0.0
 ---
 
-# Start-AzsBackup
+# Set-AzsScaleUnit
 
 ## SYNOPSIS
-Back up a specific location.
+Set GPU partition size.
 
 ## SYNTAX
 
-### Create (Default)
 ```
-Start-AzsBackup [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-Start-AzsBackup -InputObject <IBackupAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Set-AzsScaleUnit -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
+ [-Force] [-NumberOfGPUPartition <Int32>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Back up a specific location.
+Set GPU partition size.
 
 ## EXAMPLES
 
-### Example 1: Start azurestack backup
+### Example 1: Set GPU partition size.
 ```powershell
-PS C:\>Start-AzsBackup
+PS C:\> Set-AzsScaleUnit -Name "AZS01" -NumberOfGPUPartition 8
 
 ```
-
-Start an Azure Stack backup.
+Set GPU partition size.
 
 ## PARAMETERS
 
@@ -69,33 +62,47 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+### -Force
+
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
-Parameter Sets: CreateViaIdentity
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Location
-Name of the backup location.
+Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Name of the scale units.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -115,17 +122,47 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -NumberOfGPUPartition
+Number of GPU partitions
+
+```yaml
+Type: System.Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceGroupName
 Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: "system.$((Get-AzLocation)[0].Location)"
+Default value: -join("System.",(Get-AzLocation)[0].Location)
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -136,7 +173,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -182,27 +219,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.FabricAdmin.Models.IFabricAdminIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackup
+### System.Boolean
 
 ## NOTES
 
 ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
-  - `[Backup <String>]`: Name of the backup.
-  - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Name of the backup location.
-  - `[ResourceGroupName <String>]`: Name of the resource group.
-  - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
 
 ## RELATED LINKS
 

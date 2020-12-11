@@ -1,0 +1,160 @@
+{
+  "Add-AzsScaleUnitNode+[NoContext]+TestAddScaleUnitNode+$POST+https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/scaleOut?api-version=2020-10-01+1": {
+    "Request": {
+      "Method": "POST",
+      "RequestUri": "https://management.azure.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/scaleUnits/s-cluster/scaleOut?api-version=2020-10-01",
+      "Content": "{\r\n  \"nodeList\": [\r\n    {\r\n      \"bmcIpv4Address\": \"100.71.11.155\",\r\n      \"computerName\": \"ASRR1N31R12U25\"\r\n    }\r\n  ]\r\n}",
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "122" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "60" ],
+        "x-ms-correlation-request-id": [ "b107003f-121b-43c3-9db7-acff682b1be1" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "b107003f-121b-43c3-9db7-acff682b1be1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T192817Z:b107003f-121b-43c3-9db7-acff682b1be1" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 19:28:17 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrc7XoVA8NcWvncBFgicJoQ7QA4huD/VWHDCLqZ2fIfyFAnt5971VB0JefOOpbWNpRy8SgG2V4c3kbVk1lh235ReVHjcFL+48+R3BMB3oETd2bvHMqLAAJ+XqaTqNMtDet7CJWyiW4nw0E/4gHR8q" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Add-AzsScaleUnitNode+[NoContext]+TestAddScaleUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "327" ],
+        "x-ms-client-request-id": [ "a9c74d27-068c-423c-9d64-5789f6719997" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Add-AzsScaleUnitNode" ],
+        "FullCommandName": [ "Add-AzsScaleUnitNode_ScaleExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "60" ],
+        "x-ms-correlation-request-id": [ "5a93b4aa-49d0-41cc-a8cc-01b89351e85d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14995" ],
+        "x-ms-request-id": [ "5a93b4aa-49d0-41cc-a8cc-01b89351e85d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T192917Z:5a93b4aa-49d0-41cc-a8cc-01b89351e85d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 19:29:17 GMT" ],
+        "Location": [ "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvsyqJAy65P80/zh3KX+894nXWlZw8jMT6eYhS8Sebec/63xFZ/28WcpxnQgqvXMBKuwKHvBPW5kKRwV7n9yZVSOraRDwM9XS7z/9QSpoM2Jwy6n48WjWMGkormmnxIWvCZDJaAujmt0unpo/ThM9z" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "46" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Running\"}}"
+    }
+  },
+  "Add-AzsScaleUnitNode+[NoContext]+TestAddScaleUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "328" ],
+        "x-ms-client-request-id": [ "a9c74d27-068c-423c-9d64-5789f6719997" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Add-AzsScaleUnitNode" ],
+        "FullCommandName": [ "Add-AzsScaleUnitNode_ScaleExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 400,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "cc27b579-742b-4560-a64b-ec1a6a76bb21" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14994" ],
+        "x-ms-request-id": [ "cc27b579-742b-4560-a64b-ec1a6a76bb21" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T193017Z:cc27b579-742b-4560-a64b-ec1a6a76bb21" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 19:30:17 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8Yh4YubEJneXGIKHkgHn4Fpf+A794/xpvMPxdWJVad3wRESmMXz3ZMvXTGA3o8Fts7/vUZiRTVc6MII47rZLgyxdusnhj7xJkIo5XXejlbSMCcZyR6D+jYLKhLIiN/r3ZfEaqa6zv8njnuwisu3U" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "283" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Failed\"},\"error\":{\"code\":\"ArgumentError\",\"message\":\"The physical machine that you are attempting to add or repair has vendor: \u0027LENOVO\u0027. That does not match the vendor of this Azure Stack system. The vendor of this Azure Stack system is: \u0027DELL\u0027.\"}}"
+    }
+  },
+  "Add-AzsScaleUnitNode+[NoContext]+TestAddScaleUnitNode+$GET+https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-s45r1202.masd.stbtest.microsoft.com/subscriptions/1aea8c7b-4989-4d43-8aca-6a3349d4bb20/resourceGroups/System.redmond/providers/Microsoft.Fabric.Admin/fabricLocations/redmond/computeOperationResults/a9c74d27-068c-423c-9d64-5789f6719997?api-version=2020-10-01",
+      "Content": null,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "329" ],
+        "x-ms-client-request-id": [ "a9c74d27-068c-423c-9d64-5789f6719997" ],
+        "CommandName": [ "Azs.Fabric.Admin.internal\\Add-AzsScaleUnitNode" ],
+        "FullCommandName": [ "Add-AzsScaleUnitNode_ScaleExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 400,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a0068c8c-36eb-4072-87ae-e226c74175bb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14993" ],
+        "x-ms-request-id": [ "a0068c8c-36eb-4072-87ae-e226c74175bb" ],
+        "x-ms-routing-request-id": [ "REDMOND:20201204T193017Z:a0068c8c-36eb-4072-87ae-e226c74175bb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Fri, 04 Dec 2020 19:30:17 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuAgydwuCawoP6TmQYQv1vIoPHk0One3UBgnDUW1AsyTu0O1NAYLSOfoP/1Moo8q3hY+MCzA99Zfttm0UeEmfquUvKlsZIwm9iJhuryUS/r3AUZHTrowF8m5rVRl37tuYOMwWV6X/IX6wcc7q31uK" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "283" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"properties\":{\"provisioningState\":\"Failed\"},\"error\":{\"code\":\"ArgumentError\",\"message\":\"The physical machine that you are attempting to add or repair has vendor: \u0027LENOVO\u0027. That does not match the vendor of this Azure Stack system. The vendor of this Azure Stack system is: \u0027DELL\u0027.\"}}"
+    }
+  }
+}

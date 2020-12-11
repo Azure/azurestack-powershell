@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the FabricAdmin service.
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Module Requirements
-- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.6.0 or greater
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.8.1 or greater
 
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
@@ -61,8 +61,8 @@ input-file:
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/LogicalSubnet.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/MacAddressPool.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/NetworkOperationResults.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/ScaleUnit.json
-  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/ScaleUnitNode.json
+  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2020-10-01/ScaleUnit.json
+  - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2020-10-01/ScaleUnitNode.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/SlbMuxInstance.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/StorageOperationResults.json
   - $(repo)/specification/azsadmin/resource-manager/fabric/Microsoft.Fabric.Admin/preview/2016-05-01/FileShare.json
@@ -310,6 +310,31 @@ directive:
   # [ScaleUnit] Hide auto-generated
   - where:
       verb: Get
+      subject: ScaleUnit
+    hide: true
+
+  # [ScaleUnit] Rename Set-ScaleUnitGpuPartitionSize to Set-ScaleUnitGpuPartitionSize
+  - where:
+      subject: ScaleUnitGpuPartitionSize
+    set:
+      subject: ScaleUnit
+
+  # [ScaleUnit] Cmdlet parameter rename
+  - where:
+      subject: ScaleUnit
+      parameter-name: GpuPartitionSize
+    set:
+      parameter-name: NumberOfGPUPartition
+
+  - where:
+      subject: ScaleUnit
+      parameter-name: ScaleUnit
+    set:
+      parameter-name: Name
+
+  # [ScaleUnit] Hide auto-generated
+  - where:
+      verb: Set
       subject: ScaleUnit
     hide: true
 

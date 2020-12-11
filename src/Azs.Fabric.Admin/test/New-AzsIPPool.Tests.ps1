@@ -20,9 +20,7 @@ Describe 'New-AzsIPPool' {
             $EndIpAddress = "192.168.99.254"
             $AddressPrefix = "192.168.99.0/24"
 
-
-            $params = @($Location, $global:ResourceGroupName, $Name, $StartIpAddress, $EndIpAddress, $AddressPrefix)
-            $ipPool = New-AzsIpPool @params
+            $ipPool = New-AzsIpPool -Location $Location -ResourceGroupName $global:ResourceGroupName -Name $Name -StartIPAddress $StartIpAddress -EndIPAddress $EndIpAddress -AddressPrefix $AddressPrefix 
 
             $ipPool | Should not be $null
     }
