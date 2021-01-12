@@ -1,0 +1,25 @@
+{
+  "tool": "Credential Scanner",
+  "suppressions": [
+    {
+      "file": "src\\Azs.Backup.Admin\\test\\Common.ps1",
+      "_justification": "non live decryption key in test file"
+    },
+    {
+      "file": "src\\Azs.Compute.Admin\\tests\\Common.ps1",
+      "_justification": "inernal test environment sas url"
+    },
+    {
+      "file": "src\\Azs.Compute.Admin\\docs\\Add-AzsPlatformImage.md",
+      "_justification": "publicly known uri"
+    },
+    {
+      "file": "src\\Azs.Compute.Admin\\examples\\Add-AzsPlatformImage.md",
+      "_justification": "publicly known uri"
+    },
+    {
+      "file": "src\\Azs.Compute.Admin\\tests\\PlatformImage.Tests.Recording.json",
+      "_justification": "Test SAS URL, Not sensitive."
+    }
+  ]
+}
