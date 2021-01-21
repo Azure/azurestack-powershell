@@ -36,14 +36,13 @@ LABEL maintainer="AzureStack PowerShell Team <azsdevexp@microsoft.com>" \
 
 COPY scripts/* /
 
-RUN pwsh Install-AzureStackPowerShell.ps1 -REPOSITORY ${REPOSITORY} -AZURESTACK_PROFILE ${AZURESTACK_PROFILE} -AZURESTACK_VERSION ${AZURESTACK_VERSION}
+SHELL ["pwsh", "-Command"]
 
-RUN pwsh Install-AzureStackTools.ps1
-
-RUN pwsh -Command Install-Module -Name Microsoft.AzureStack.ReadinessChecker -RequiredVersion ${READINESS_CHECKER_VERSION} -AllowPrerelease
+RUN ./Install-AzureStackPowerShell.ps1 -REPOSITORY $Env:REPOSITORY -AZURESTACK_PROFILE $Env:AZURESTACK_PROFILE -AZURESTACK_VERSION $Env:AZURESTACK_VERSION
+RUN ./Install-AzureStackTools.ps1
+RUN Install-Module -Name Microsoft.AzureStack.ReadinessChecker -RequiredVersion $Env:READINESS_CHECKER_VERSION -AllowPrerelease -Force
 
 # create AzureRmContextSettings.json before it was generated
 COPY ${CONFIG}/${AZURERM_CONTEXT_SETTINGS} ${AZURE}/${AZURERM_CONTEXT_SETTINGS}
 
 CMD [ "pwsh" ]
-
