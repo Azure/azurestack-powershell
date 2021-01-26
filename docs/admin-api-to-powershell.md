@@ -5,7 +5,7 @@ AzureStack Hub Admin APIs are only for Operators. These APIs are exposed only vi
 Here is a recommended flow for developing an Admin API
 - Author Open API Spec and make a Pull Request
 - Notify azsdevexp alias for review
-- The PR is automatically reviewed by azure ARM team and SDK team for complicae
+- The PR is automatically reviewed by azure ARM team and SDK team for compliance
 - While the PR is in review, start developing the API. The PR could take more than a month to get it merged.
 - Start developing the Admin Powershell for the API from your fork. No need to wait until the Open API Spec PR is merged
 
