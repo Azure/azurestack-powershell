@@ -145,8 +145,8 @@ Describe 'Get-AzsDrive' {
         }
     }
 
-    It "TestGetInvaildDrive" -Skip:$('TestGetInvaildDrive' -in $global:SkippedTests) {
-        $global:TestName = 'TestGetInvaildDrive'
+    It "TestGetInvalidDrive" -Skip:$('TestGetInvalidDrive' -in $global:SkippedTests) {
+        $global:TestName = 'TestGetInvalidDrive'
 
         $scaleUnits = Get-AzsScaleUnit -ResourceGroupName $global:ResourceGroupName -Location $global:Location
         foreach ($scaleUnit in $scaleUnits) {

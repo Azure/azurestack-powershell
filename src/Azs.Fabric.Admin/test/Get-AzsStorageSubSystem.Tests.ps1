@@ -114,8 +114,8 @@ Describe 'Get-AzsStorageSubSystem' {
         }
     }
 
-    It "TestGetInvaildStorageSubSystem" -Skip:$('TestGetInvaildStorageSubSystem' -in $global:SkippedTests) {
-        $global:TestName = 'TestGetInvaildStorageSubSystem'
+    It "TestGetInvalidStorageSubSystem" -Skip:$('TestGetInvalidStorageSubSystem' -in $global:SkippedTests) {
+        $global:TestName = 'TestGetInvalidStorageSubSystem'
 
         $scaleUnits = Get-AzsScaleUnit -ResourceGroupName $global:ResourceGroupName -Location $global:Location
         foreach ($scaleUnit in $scaleUnits) {

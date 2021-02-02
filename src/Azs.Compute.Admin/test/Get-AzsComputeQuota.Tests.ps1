@@ -9,7 +9,7 @@ while (-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
-
+    . $PSScriptRoot\Common.ps1
     BeforeEach {
 
         function ValidateComputeQuota {
