@@ -52,7 +52,7 @@ In this directory, run AutoRest:
 azure: true
 powershell: true
 branch: stackadmin
-repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
+repo: https://github.com/TheOnlyWei/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation

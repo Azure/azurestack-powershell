@@ -5,7 +5,7 @@
 azure: true
 powershell: true
 branch: master
-repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
+repo: https://github.com/TheOnlyWei/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
