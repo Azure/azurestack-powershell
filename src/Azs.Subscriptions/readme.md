@@ -51,7 +51,7 @@ In this directory, run AutoRest:
 ``` yaml
 azure: true
 powershell: true
-branch: stackadmin
+branch: fix-Swagger-spec
 repo: https://github.com/TheOnlyWei/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation

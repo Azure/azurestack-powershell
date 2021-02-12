@@ -4,7 +4,7 @@
 ``` yaml
 azure: true
 powershell: true
-branch: master
+branch: fix-Swagger-spec
 repo: https://github.com/TheOnlyWei/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
