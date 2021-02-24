@@ -4,6 +4,19 @@
 
 # This module contains PowerShell commands providing an access to Deployment Provider functions.
 
+class CustomResponse {
+    [string]$StatusCode
+    [string]$AsyncOperationStatusUri
+    [string]$LocationUri
+    [string]$Content
+}
+
+class WaitResult {
+    [bool]$IsSuccess
+    [string]$ErrorCode
+    [String]$ErrorMessage
+}
+
 <#
 .SYNOPSIS
     Retrieves Resource Manager access token.
@@ -46,7 +59,10 @@ function Invoke-AzsResourceManager {
         [string] $AccessToken = "",
 
         [Parameter(Mandatory = $false)]
-        [switch] $ThrowOnError
+        [switch] $ThrowOnError,
+
+        [Parameter(Mandatory = $false)]
+        [switch] $RetryOnError
     )
 
     function Resolve-RequestUri {
@@ -170,7 +186,7 @@ function Invoke-AzsResourceManager {
     }
 
     #-----------------------------------------------------------------------
-
+    
     $ctx = Get-AzContext
 
     if ($null -eq $ctx.Environment) {
@@ -186,7 +202,11 @@ function Invoke-AzsResourceManager {
     [System.Net.Http.HttpRequestMessage] $request = $null
     [System.Net.Http.HttpResponseMessage] $response = $null
 
+    $retryable = $RetryOnError;
+    $attemptCount = 1;
+    $maxAttemptCount = 3;
     try {
+        do {
         $request = [System.Net.Http.HttpRequestMessage]::new()
         $request.Method = [System.Net.Http.HttpMethod]::new($Method)
         $request.RequestUri = $Uri
@@ -210,18 +230,40 @@ function Invoke-AzsResourceManager {
 
         Trace-HttpResponseMessage -Response $response -Content $responseContent
 
-        $result = [psobject]::new()
-        $result | Add-Member -MemberType NoteProperty -Name 'StatusCode' -Value $response.StatusCode
-        $result | Add-Member -MemberType NoteProperty -Name 'AsyncOperationStatusUri' -Value (Get-HeaderValue -Headers $response.Headers -Name 'Azure-AsyncOperation')
-        $result | Add-Member -MemberType NoteProperty -Name 'LocationUri' -Value (Get-HeaderValue -Headers $response.Headers -Name 'Location')
-        $result | Add-Member -MemberType NoteProperty -Name 'Content' -Value $responseContent
+        $result = [CustomResponse]::new()
+        $result.StatusCode = $response.StatusCode
 
+        if ($result.StatusCode -eq ""){
+            $result.StatusCode = "RequestTimeout"
+        } else {
+            $result.AsyncOperationStatusUri = Get-HeaderValue -Headers $response.Headers -Name 'Azure-AsyncOperation'
+            $result.LocationUri = Get-HeaderValue -Headers $response.Headers -Name 'Location'
+            $result.Content = $responseContent
+        }
+
+        $retriableError = IsRetryableError -StatusCode $result.StatusCode
+        if ($retryable -and $retriableError) {
+            [string] $statusCode = $result.StatusCode
+            Write-Verbose "Retryable error occured: ${statusCode}, retrying with attempt count number ${attemptCount}." -Verbose
+            # Progresive backoff in case of a retryable error.
+            $waitTime  = 5 * $attemptCount;
+            Start-Sleep -Seconds $waitTime
+
+            # Should the next attempt be retryable or not? After the
+            $attemptCount++;
+            $retryable = $attemptCount -le $maxAttemptCount
+            Write-Verbose "retryable: ${retryable}" -Verbose
+        } else {
         if ($ThrowOnError) {
             EnsureSuccessStatusCode -Response $result
         }
 
         return $result
     }
+
+     # loop until the retry attempts are exhausted
+    } until ($false);
+}
     catch [System.AggregateException] {
         throw $_.Exception.InnerException.Message
     }
@@ -263,18 +305,23 @@ function Wait-AzsAsyncOperation {
     $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
 
     while ($true) {
-        $response = Invoke-AzsResourceManager -Method GET -Uri $AsyncOperationStatusUri -AccessToken $AccessToken -Verbose
+        $response = Invoke-AzsResourceManager -Method GET -Uri $AsyncOperationStatusUri -AccessToken $AccessToken -Verbose -RetryOnError
 
         EnsureSuccessStatusCode -Response $response
 
         $operationResult = $response.Content | ConvertFrom-Json
 
         if (IsOperationResultTerminalState $operationResult.status) {
+            $result = [WaitResult]::new()
             if ($operationResult.status -eq 'Succeeded') {
-                return $true
+                $result.IsSuccess = $true
+                return  $result
             }
 
-            return $false
+            $result.IsSuccess = $false
+            $result.ErrorCode = $operationResult.error.code
+            $result.ErrorMessage = $operationResult.error.message
+            return $result
         }
 
         Write-Verbose "${OperationName}: Sleeping for 5 seconds, waiting time: $($stopwatch.Elapsed)"
@@ -313,6 +360,53 @@ function IsSuccessStatusCode {
     )
 
     return [int]$StatusCode -ge 200 -and [int]$StatusCode -le 299
+}
+
+<#
+.SYNOPSIS
+    Check if the status code is a retryable error
+
+.NOTES
+    List of retryable status code:
+    408 // RequestTimeout
+    429 // TooManyRequests (RFC 6585)
+    500 // InternalServerError
+    502 // BadGateway
+    503 // ServiceUnavailable
+    504 // GatewayTimeout
+    506..599
+#>
+function IsRetryableError {
+    param(
+        [Parameter(Mandatory = $true)]
+        [System.Net.HttpStatusCode] $StatusCode
+    )
+    switch([int]$statusCode)
+    {
+        408 {return $True}
+        429 {return $True}
+        500 {return $True}
+        502 {return $True}
+        503 {return $True}
+        504 {return $True}
+        {$_-ge 506 -and $_-le 599} {return $True}
+        default {return $False}
+    }
+}
+
+function ThrowOnError {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $true)]
+        [WaitResult] $WaitResult,
+
+        [Parameter(Mandatory = $true)]
+        [string] $ProblemDescription
+    )
+
+    if (-not ($WaitResult.IsSuccess)) {
+        throw "$ProblemDescription, errorCode: '$($WaitResult.ErrorCode)', errorMessage: '$($WaitResult.ErrorMessage)'"
+    }
 }
 
 #-----------------------------------------------------------------------
@@ -357,7 +451,7 @@ function Get-AzsFileContainer {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/fileContainers/$($FileContainerId)?api-version=$ApiVersion"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose -RetryOnError
 
     if ($response.StatusCode -eq [System.Net.HttpStatusCode]::NotFound) {
         return $null
@@ -420,9 +514,8 @@ function New-AzsFileContainer {
     $response = Invoke-AzsResourceManager -Method PUT -Uri $requestUri -Body $body -ThrowOnError -Verbose
 
     if (-not [string]::IsNullOrEmpty($response.AsyncOperationStatusUri)) {
-        if (-not (Wait-AzsAsyncOperation -OperationName 'New-AzsFileContainer' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-            throw 'Unable to create file container.'
-        }
+        $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'New-AzsFileContainer' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+        ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to create file container'
     }
 }
 
@@ -498,7 +591,7 @@ function Get-AzsProductPackage {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$($PackageId)?api-version=$ApiVersion"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose -RetryOnError
 
     if ($response.StatusCode -eq [System.Net.HttpStatusCode]::NotFound) {
         return $null
@@ -563,9 +656,8 @@ function New-AzsProductPackage {
     $response = Invoke-AzsResourceManager -Method PUT -Uri $requestUri -Body $body -ThrowOnError -Verbose
 
     if (-not [string]::IsNullOrEmpty($response.AsyncOperationStatusUri)) {
-        if (-not (Wait-AzsAsyncOperation -OperationName 'New-AzsProductPackage' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-            throw 'Unable to create product package.'
-        }
+        $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'New-AzsProductPackage' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+        ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to create product package'
     }
 }
 
@@ -637,7 +729,7 @@ function Get-AzsProductDeployment {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/$($ProductId)?api-version=2019-01-01"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose -RetryOnError
 
     if ($response.StatusCode -eq [System.Net.HttpStatusCode]::NotFound) {
         return $null
@@ -684,9 +776,8 @@ function Invoke-AzsProductBootstrapAction {
 
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -Body $body -ThrowOnError -Verbose
 
-    if (-not (Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductBootstrapAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-        throw "Unable to complete bootstrap operation."
-    }
+    $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductBootstrapAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+    ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to complete bootstrap operation'
 }
 
 <#
@@ -727,9 +818,8 @@ function Invoke-AzsProductDeployAction {
 
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -Body $body -ThrowOnError -Verbose
 
-    if (-not (Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductDeployAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-        throw "Unable to complete deploy operation."
-    }
+    $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductDeployAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+    ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to complete deploy operation'
 }
 
 <#
@@ -763,9 +853,8 @@ function Invoke-AzsProductExecuteRunnerAction {
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -Body $body -ThrowOnError -Verbose
 
     if (-not [string]::IsNullOrEmpty($response.AsyncOperationStatusUri)) {
-        if (-not (Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductExecuteRunnerAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-            throw "Unable to complete execute runner operation."
-        }
+        $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductExecuteRunnerAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+        ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to complete execute runner operation'
     }
 }
 
@@ -793,9 +882,8 @@ function Invoke-AzsProductRemoveAction {
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -ThrowOnError -Verbose
 
     if (-not [string]::IsNullOrEmpty($response.AsyncOperationStatusUri)) {
-        if (-not (Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductRemoveAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-            throw "Unable to complete remove operation."
-        }
+        $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductRemoveAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+        ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to complete remove operation'
     }
 }
 
@@ -823,9 +911,8 @@ function Invoke-AzsProductRotateSecretsAction {
     $response = Invoke-AzsResourceManager -Method POST -Uri $requestUri -ThrowOnError -Verbose
 
     if (-not [string]::IsNullOrEmpty($response.AsyncOperationStatusUri)) {
-        if (-not (Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductRotateSecretsAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose)) {
-            throw "Unable to complete rotate secrets operation."
-        }
+        $waitAsyncOperation = Wait-AzsAsyncOperation -OperationName 'Invoke-AzsProductRotateSecretsAction' -AsyncOperationStatusUri $response.AsyncOperationStatusUri -Verbose
+        ThrowOnError -WaitResult $waitAsyncOperation -ProblemDescription 'Unable to complete rotate secrets operation'
     }
 }
 
@@ -873,7 +960,7 @@ function Get-AzsProductSecret {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/productPackages/$($PackageId)/secrets/$($SecretName)?api-version=2019-01-01"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -Verbose -RetryOnError
 
     if ($response.StatusCode -eq [System.Net.HttpStatusCode]::NotFound) {
         return $null
@@ -1035,7 +1122,7 @@ function Get-AzsActionPlan {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans/$($PlanId)?api-version=2019-01-01"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose -RetryOnError
 
     if ($AsJson) {
         return $response.Content | ConvertFrom-Json | ConvertTo-Json -Depth 99
@@ -1082,7 +1169,7 @@ function Get-AzsActionPlanOperation {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans/$PlanId/operations/$($OperationId)?api-version=2019-01-01"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose -RetryOnError
 
     if ($AsJson) {
         return $response.Content | ConvertFrom-Json | ConvertTo-Json -Depth 99
@@ -1133,7 +1220,7 @@ function Get-AzsActionPlanAttempt {
         $requestUri = "/subscriptions/$subscriptionId/providers/Microsoft.Deployment.Admin/locations/global/actionplans/$PlanId/operations/$OperationId/attempts/$($AttemptNo)?api-version=2019-01-01"
     }
 
-    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose
+    $response = Invoke-AzsResourceManager -Method GET -Uri $requestUri -ThrowOnError -Verbose -RetryOnError
 
     if ($AsJson) {
         return $response.Content | ConvertFrom-Json | ConvertTo-Json -Depth 99
