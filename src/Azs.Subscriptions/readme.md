@@ -51,7 +51,7 @@ In this directory, run AutoRest:
 ``` yaml
 azure: true
 powershell: true
-branch: stackadmin
+branch: stackadmin2
 repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
