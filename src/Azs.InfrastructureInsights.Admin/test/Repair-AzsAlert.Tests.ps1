@@ -20,18 +20,8 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
         # Test repair for a non-existing alert
         Write-Verbose "Repairing alert with an invalid name"
 
-        Repair-AzsAlert -Name "wrongid" -ErrorVariable invalidAlertErr -ErrorAction SilentlyContinue
-
-        if(($invalidAlertErr.Count -ne 0) -and ($invalidAlertErr[0].ErrorDetails.Message.contains("Failed to remediate alert")))
-        {
-            Write-Verbose "As expected the repair operation failed"
-        }else
-        {
-            throw  $invalidAlertErr
-        }
-
+        { Repair-AzsAlert -Name "wrongid" -ErrorAction Stop } | Should Throw "Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)."
         $Alerts = Get-AzsAlert
-
         $Alerts | Should Not Be $null
 
         foreach ($Alert in $Alerts)
