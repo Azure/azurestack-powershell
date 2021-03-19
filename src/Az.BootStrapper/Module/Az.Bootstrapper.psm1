@@ -169,7 +169,20 @@ function Get-AzProfileMap
   [CmdletBinding()]
   param([Switch]$Update)
 
-  $Update = $PSBoundParameters.Update
+  $azBootStrapperLocalProfile = [System.Environment]::GetEnvironmentVariable("AzBootStrapperLocalProfile","Machine")
+  if ($azBootStrapperLocalProfile)
+  {
+    $scriptBlock = {
+        Get-Content -Path $azBootStrapperLocalProfile -ErrorAction stop | ConvertFrom-Json 
+    }
+    $ProfileMap = Invoke-CommandWithRetry -ScriptBlock $scriptBlock 
+    if(!$ProfileMap)
+    {
+        throw [System.IO.FileNotFoundException] "Local profile ${azBootStrapperLocalProfile} doesn't exist."
+    }
+    return $ProfileMap
+  }
+
   # If Update is present, download ProfileMap from online source
   if ($Update.IsPresent)
   {
