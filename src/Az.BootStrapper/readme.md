@@ -1,6 +1,29 @@
-   ## Run Generation
+## Run Generation
 In this directory, run AutoRest:
 > `autorest`
+
+## Installing Module
+Simply run:
+
+```
+Install-Module -Name Az.Bootstrapper -Repository <REPOSITORY_CONTAINING_AZ_BOOTSTRAPPER>
+```
+
+## Installing Profiles
+- To install from online or cached profile, simply run:
+
+```
+Set-BootStrapRepo -Repo <REPOSITORY>
+Install-AzProfile -Profile <PROFILE_VERSION>
+```
+
+- To install local profile, set the environment variable AzBootStrapperLocalProfile with the full path to the local profile on your system.
+
+```
+[Environment]::SetEnvironmentVariable("AzBootStrapperLocalProfile", <PATH_TO_PROFILE_JSON>, [System.EnvironmentVariableTarget]::Machine)
+Set-BootStrapRepo -Repo <REPOSITORY>
+Install-AzProfile -Profile <PROFILE_VERSION>
+```
 
 ---
 ### AutoRest Configuration
