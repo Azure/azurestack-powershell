@@ -91,7 +91,7 @@ PrivateData = @{
         Tags = 'AzureStack', 'ResourceManager', 'ARM', 'PSModule', 'DeploymentResourceProvider'
         LicenseUri = 'https://aka.ms/azps-license'
         ProjectUri = 'https://github.com/Azure/azurestack-powershell'
-        ReleaseNotes = 'AzureStack Hub Admin module - see https://aka.ms/azpshmigration for breaking changes'
+        ReleaseNotes = 'AzureStack Hub Admin module'
     }
 }
 
