@@ -169,10 +169,10 @@ directive:
 # Add release notes
   - from: Azs.Update.Admin.nuspec
     where: $
-    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell - see https://aka.ms/azpshmigration for breaking changes.</releaseNotes>');
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell.</releaseNotes>');
 
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Update.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="[2.1.2]" />\n      <dependency id="Az.Resources" version="[1.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.2.4" />\n      <dependency id="Az.Resources" version="[1.10.0]" />');
 ```

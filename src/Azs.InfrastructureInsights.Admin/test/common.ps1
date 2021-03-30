@@ -1,4 +1,6 @@
-﻿$global:SkippedTests = @()
+﻿$global:SkippedTests = @(
+    "TestRepairAlert"
+)
 
 function ValidateMetrics{
     param(

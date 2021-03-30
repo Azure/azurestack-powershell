@@ -13,7 +13,7 @@
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
     <tags>Azs.Deployment.Admin PSModule AzureStack</tags>
     <dependencies>
-      <dependency id="Az.Accounts" version="[2.1.2]" />
+      <dependency id="Az.Accounts" version="2.2.4" />
       <dependency id="Az.Resources" version="[1.10.0]" />
     </dependencies>
   </metadata>

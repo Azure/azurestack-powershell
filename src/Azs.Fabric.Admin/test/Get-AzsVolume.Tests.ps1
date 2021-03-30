@@ -131,8 +131,8 @@ Describe 'Get-AzsVolume' {
         }
     }
 
-    It "TestGetInvaildVolume" -Skip:$('TestGetInvaildVolume' -in $global:SkippedTests) {
-        $global:TestName = 'TestGetInvaildVolume'
+    It "TestGetInvalidVolume" -Skip:$('TestGetInvalidVolume' -in $global:SkippedTests) {
+        $global:TestName = 'TestGetInvalidVolume'
 
         $scaleUnits = Get-AzsScaleUnit -ResourceGroupName $global:ResourceGroupName -Location $global:Location
         foreach ($scaleUnit in $scaleUnits) {

@@ -50,7 +50,7 @@ CompatiblePSEditions = 'Core', 'Desktop'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.1.2'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '1.10.0'; })
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.2.4'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '1.10.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -88,11 +88,10 @@ AliasesToExport = @()
 # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
 PrivateData = @{
     PSData = @{
-        Prerelease = 'preview'
         Tags = 'AzureStack', 'ResourceManager', 'ARM', 'PSModule', 'DeploymentResourceProvider'
         LicenseUri = 'https://aka.ms/azps-license'
         ProjectUri = 'https://github.com/Azure/azurestack-powershell'
-        ReleaseNotes = 'AzureStack Hub Admin module - see https://aka.ms/azpshmigration for breaking changes'
+        ReleaseNotes = 'AzureStack Hub Admin module'
     }
 }
 
