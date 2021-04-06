@@ -22,6 +22,26 @@ The release containers derive from the [Powershell image][powershell image], and
 
 AzureStack PowerShell [release notes](https://aka.ms/azspsdocker)
 
+## Building Dockerfiles
+
+Using `Dockerfile-ubuntu-18.04` as an example, here is the command to build the docker file and at the same time tagging it `mcr.microsoft.com/powershell:ubuntu-18.04`:
+
+```sh
+docker build -f .\Dockerfile-ubuntu-18.04 -t mcr.microsoft.com/powershell:ubuntu-18.04 .
+```
+
+Tagging images is useful for organizing your images. It is currently not possible to tag docker images within a dockerfile, so you will have to tag your image manually after its creation:
+
+```sh
+docker tag <image id> mcr.microsoft.com/powershell:ubuntu-18.04
+```
+
+`WARNING`: docker builds seem to break very easily. If it fails at first, try building it several times from a clean state. The `--no-cache` option ensures a clean build that doesn't use cached steps:
+
+```sh
+docker build -f .\Dockerfile-debian-9 -t mcr.microsoft.com/powershell:ubuntu-18.04 . --no-cache
+```
+
 ## Examples 
 
 ### Download/Update the AzureStack Powershell image
@@ -34,19 +54,19 @@ docker pull mcr.microsoft.com/azurestack/powershell:<tag>
 
 ### Run AzureStack Powershell container 
 
-- To run AzureStack Powershell in a container in an interactive mode:
+- To run a new container with AzureStack resources from a docker image with Powershell Core as the interactive command interface:
 
 ```sh
 $ docker run -it mcr.microsoft.com/azurestack/powershell:0.1.0-ubuntu-18.04 pwsh 
 ```
 
-- To run AzureStack Powershell in a container:
+- To start an existing container containing AzureStack resources with Powershell Core as the interactive command interface:
 
 ```sh
 $ docker start -ia mcr.microsoft.com/azurestack/powershell:0.1.0-ubuntu-18.04 pwsh 
 ```
 
-- To run AzureStack Powershell from using a container in an interactive mode using host authentication: 
+- To run a container containing AzureStack resources from a docker image in an interactive Powershell Core interface using host authentication: 
 
     1. Make sure that `$HOME/.Azure` is present on the host (default location).
     2. You may need to grant access this location for the docker process.
@@ -64,7 +84,7 @@ docker run -it --rm -v ~/.Azure/AzureRmContext.json:/root/.Azure/AzureRmContext.
 ### Remove image
 
 ```sh
-docker rmi mcr.microsoft.com/azurestack/powershell
+docker rmi <image id>
 ```
 
 ### Testing
@@ -81,18 +101,18 @@ docker run
 Login using credentials:  
 ```sh
 ./Login-Environment.ps1 
-[-Name <String>]  # Defaults to 'AzureStack'
+[-EnvironmentName <String>]  # Defaults to 'AzureStack'
 -ResourceManagerEndpoint <System.Uri>  
--DirectoryTenantId <String>  
+-TenantId <String>  
 -Credential <PSCredential>  
 [-SubscriptionId <String>]
 ```
 Login using certificates:  
 ```sh
 ./Login-Environment.ps1  
-[-Name <String>]  # Defaults to 'AzureStack'
+[-EnvironmentName <String>]  # Defaults to 'AzureStack'
 -ResourceManagerEndpoint <System.Uri>  
--DirectoryTenantId <String>  
+-TenantId <String>  
 -ApplicationId <String>  
 -CertificateThumbprint <String>  
 [-SubscriptionId <String>]
@@ -110,7 +130,7 @@ Login using certificates:
 ```sh
 ./Test-AzsPowershell.ps1  
 [-ClientObjectId <String>]  # Defaults to $ENV:ClientObjectId
-[-resourceLocation <String>]  # Defaults to $ENV:Location
+[-Location <String>]  # Defaults to $ENV:Location
 ```
 
 ## Developing and Contributing
