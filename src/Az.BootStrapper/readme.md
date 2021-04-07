@@ -20,7 +20,7 @@ Install-AzProfile -Profile <PROFILE_VERSION>
 - To install local profile, set the environment variable AzBootStrapperLocalProfile with the full path to the local profile on your system.
 
 ```
-[Environment]::SetEnvironmentVariable("AzBootStrapperLocalProfile", <PATH_TO_PROFILE_JSON>, [System.EnvironmentVariableTarget]::Machine)
+Set-Item -Path Env:AzBootStrapperLocalProfile -Value <FULL_PATH_TO_PROFILE_JSON>
 Set-BootStrapRepo -Repo <REPOSITORY>
 Install-AzProfile -Profile <PROFILE_VERSION>
 ```

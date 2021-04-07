@@ -169,9 +169,11 @@ function Get-AzProfileMap
   [CmdletBinding()]
   param([Switch]$Update)
 
-  $azBootStrapperLocalProfile = [System.Environment]::GetEnvironmentVariable("AzBootStrapperLocalProfile","Machine")
+  # Must use Get-Item and not [Environment]::GetEnvironmentVariable since the latter doesn't work on Unix systems.
+  $azBootStrapperLocalProfile = Get-Item -Path Env:AzBootStrapperLocalProfile -ErrorAction SilentlyContinue
   if ($azBootStrapperLocalProfile)
   {
+    $azBootStrapperLocalProfile = $azBootStrapperLocalProfile.Value
     $scriptBlock = {
         Get-Content -Path $azBootStrapperLocalProfile -ErrorAction stop | ConvertFrom-Json 
     }
