@@ -71,7 +71,7 @@
         @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.155'; })
+        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.157'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()

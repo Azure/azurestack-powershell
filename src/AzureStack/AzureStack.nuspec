@@ -29,7 +29,7 @@
       <dependency id="Azs.Subscriptions" version="[1.0.0]" />
       <dependency id="Azs.Subscriptions.Admin" version="[1.0.0]" />
       <dependency id="Azs.Update.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Syndication.Admin" version="[0.1.155]" />
+      <dependency id="Azs.Syndication.Admin" version="[0.1.157]" />
     </dependencies>
   </metadata>
   <files>
