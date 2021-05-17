@@ -1,0 +1,28 @@
+# Pipeline for running Azure Stack SDK tests.
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Azs-SDK-Agents
+
+- task: PowerShell@2
+  displayName: Run Setup
+  inputs:
+    filePath: '$(Build.SourcesDirectory)\setup-test.ps1' 
+    pwsh: true
+
+- task: PowerShell@2
+  displayName: Run Test
+  inputs:
+    targetType: 'inline'
+    script: |
+      .\run-test.ps1 -Type "${env:Type}" `
+          -EnvironmentName "${env:EnvironmentName}" `
+          -TenantName "${env:TenantName}" `
+          -ResourceManagerUrl "${env:ResourceManagerUrl}" `
+          -ServicePrincipalClientId "${env:ServicePrincipalClientId}" `
+          -ServicePrincipalClientSecret (ConvertTo-SecureString -String $(ServicePrincipalClientSecret) -AsPlainText -Force) `
+          -SubscriptionName "${env:SubscriptionName}"
+    pwsh: true
