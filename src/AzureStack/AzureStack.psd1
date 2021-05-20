@@ -56,7 +56,7 @@
     # Modules that must be imported into the global environment prior to importing this module
     ### IMPORTANT - Note that the module names are case sensitive ###
     RequiredModules        = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.2.8'; },
-        @{ModuleName = 'Az.Resources'; RequiredVersion = '1.10.0'; },
+        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.11.0'; },
         @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.0'; },
@@ -71,7 +71,7 @@
         @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.0'; },
         @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.155'; })
+        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.157'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
