@@ -9,7 +9,7 @@
 @{
 
     # Root Module
-    RootModule = 'AzureStack.psm1'
+    # RootModule = ''
 
     # Version number of this module.
     ModuleVersion          = '2.1.0'
@@ -127,11 +127,11 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.2-preview,
-            * Bug Fix in Fabric Admin module
-                - Disable-AzsScaleUnitNode and Enable-AzsScaleUnitNode had operations reversed
-                - Replace parameter NodeList with BmciPAddress and ComputerName in cmd Add-AzsScaleUnitNode
-            * Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
+            ReleaseNotes = '* AzureStack Operator module version 2.1.0. Requires AzureStack Hub Update 2102+,
+            * Compatible with Az module version 1.10.0
+            * The indvidual module versions are updated to 1.0.0, marking GA
+            * Support for changing the default Gpu partition on a GPU enabled Azure Stack hub with Set-AzsScaleUnit -NumberOfGPUPartition X
+            * Please refer to https://aka.ms/azspsh210 for additional instructions'
 
         } # End of PSData hashtable
 

@@ -34,6 +34,5 @@
   </metadata>
   <files>
     <file src="AzureStack.psd1" />
-    <file src="AzureStack.psm1" />
   </files>
 </package>
