@@ -658,7 +658,7 @@ directive:
 # Add release notes
   - from: Azs.Fabric.Admin.nuspec
     where: $
-    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes> 1.Bug fix for switched cmdlets \"Enable-AzsScaleUnitNode\" and \"Disable-AzsScaleUnitNode\"; 2. Replace parameter \"NodeList\" with \"BmciPAddress\" and \"ComputerName\" in cmd \"Add-AzsScaleUnitNode\" </releaseNotes>');
+    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes> 1.Bug fix for switched cmdlets \"Enable-AzsScaleUnitNode\" and \"Disable-AzsScaleUnitNode\"; 2. Replace parameter \"NodeList\" with \"BmciPAddress\" and \"ComputerName\" in cmd \"Add-AzsScaleUnitNode\"; 3.Support for display GPU infomation from \"Get-AzsScaleUnit\" and \"Get-AzsScaleUnitNode\"; 4.Support for changing the default Gpu partition on a GPU enabled Azure Stack hub with \"Set-AzsScaleUnit -NumberOfGPUPartition X\"</releaseNotes>');
 
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Fabric.Admin.nuspec
