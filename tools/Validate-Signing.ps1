@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-   Validates signed files.
+   Validates signed files, mainly used for the signing pipeline with multiplier for each module (i.e., runs within the directory of each module folder).
 .DESCRIPTION
    Recursively validates folder for signed files.
 .NOTES
@@ -49,7 +49,7 @@ $exclude = @("Unprotect-SecureString.ps1")
 if (Test-Path -Path $pathToValidate -PathType Container)
 {
     $fileInfos = Get-ChildItem -Path $pathToValidate -File -Recurse `
-        | Where-Object { $_.Name -notin $exclude }
+        | Where-Object { $_.Name -notin $exclude } `
         | Where-Object { $_.Extension -in @('.dll','.exe','.msi','.cab','.ps1','.psm1','.psd1','.pssc','.ps1xml') } `
         | Where-Object { $_.FullName -notlike $(Join-Path -Path "*${moduleName}" -ChildPath "test*") }
 }
@@ -60,6 +60,11 @@ elseif (Test-Path -Path $pathToValidate -PathType Leaf)
 else
 {
     Write-Error -Message "Invalid path: ${pathToValidate}" -Category InvalidArgument
+}
+
+if (!$fileInfos)
+{
+    throw "ERROR: The path ${pathToValidate} contains no valid files to validate according to the filter in this code."
 }
 
 $filePaths = $fileInfos | ForEach-Object {$_.FullName}
