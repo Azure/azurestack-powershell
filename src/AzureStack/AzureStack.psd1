@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '1.8.2'
+    ModuleVersion          = '1.8.3'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -51,7 +51,7 @@
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.8.3'; },
+    RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.8.4'; },
         @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.4.3'; },
         @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.2.2'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.3.2'; },
@@ -122,9 +122,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = ' - Version 1.8.2
-            * Disable the prompt to download nuget packages for PSSwagger in Azs.Storage.Admin
-            '
+            ReleaseNotes = 'AzureRM Compatible AzureStack operator module. Bug fix for taking >= dependency on AzureRM.Profile module version 5.8.4'
 
             # External dependent modules of this module
             # ExternalModuleDependencies = ''
