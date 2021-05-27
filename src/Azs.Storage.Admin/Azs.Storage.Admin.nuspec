@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Azs.Storage.Admin</id>
-    <version>0.3.1</version>
+    <version>0.3.2</version>
     <authors>Microsoft Corporation</authors>
     <owners>Microsoft Corporation</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://aka.ms/azps-license</licenseUrl>
     <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
     <description>Microsoft Azure PowerShell: Azs.Storage.Admin cmdlets</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>Taking greater than our equal to dependency on AzureRM.Profile version 5.8.4</releaseNotes>
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
     <tags>Azs.Storage.Admin PSModule AzureStack</tags>
     <dependencies>
-      <dependency id="AzureRM.Profile" version="[5.8.3]" />
+      <dependency id="AzureRM.Profile" version="5.8.4" />
       <dependency id="AzureRM.Resources" version="[6.4.3]" />
     </dependencies>
   </metadata>
