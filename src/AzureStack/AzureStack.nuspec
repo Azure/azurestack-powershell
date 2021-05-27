@@ -25,7 +25,7 @@
       <dependency id="Azs.Infrastructureinsights.Admin" version="[0.3.2]" />
       <dependency id="Azs.Keyvault.Admin" version="[0.2.2]" />
       <dependency id="Azs.Network.Admin" version="[0.2.2]" />
-      <dependency id="Azs.Storage.Admin" version="[0.3.1]" />
+      <dependency id="Azs.Storage.Admin" version="[0.3.2]" />
       <dependency id="Azs.Subscriptions" version="[0.2.2]" />
       <dependency id="Azs.Subscriptions.Admin" version="[0.3.3]" />
       <dependency id="Azs.Update.Admin" version="[0.2.3]" />
