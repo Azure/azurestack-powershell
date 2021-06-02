@@ -17,7 +17,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 RootModule = 'Azs.Storage.Admin.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.3.1'
+ModuleVersion = '0.3.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
