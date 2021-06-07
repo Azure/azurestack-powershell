@@ -44,7 +44,8 @@ Write-Verbose -Message "Current path to check for unsigned files: ${pathToValida
 
 ################################# END EXTRACT NUPKG #################################
 
-$exclude = @("Unprotect-SecureString.ps1")
+# Add string of file name to $exclude hashtable to exclude specific files.
+$exclude = @()
 
 if (Test-Path -Path $pathToValidate -PathType Container)
 {
