@@ -11,7 +11,7 @@
 RootModule = 'Azs.Deployment.Admin.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.0.1'
 
 # ID used to uniquely identify this module
 GUID = 'a50d2cce-63a7-4c7b-980f-c4cead941544'

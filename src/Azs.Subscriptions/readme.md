@@ -71,7 +71,7 @@ prefix: Azs
 namespace: Microsoft.Azure.PowerShell.Cmdlets.$(service-name)
 
 subject-prefix: ''
-module-version: 1.0.0
+module-version: 1.0.1
 sanitize-names: false
 service-name: Subscription
 
