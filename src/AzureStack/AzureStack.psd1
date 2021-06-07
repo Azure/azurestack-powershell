@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '2.1.0'
+    ModuleVersion          = '2.1.1'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -57,20 +57,20 @@
     ### IMPORTANT - Note that the module names are case sensitive ###
     RequiredModules        = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.2.8'; },
         @{ModuleName = 'Az.Resources'; RequiredVersion = '0.11.0'; },
-        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.0.0'; },
+        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.0'; },
+        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.157'; })
 
     # Assemblies that must be loaded prior to importing this module
@@ -127,11 +127,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* AzureStack Operator module version 2.1.0. Requires AzureStack Hub Update 2102+,
-            * Compatible with Az module version 1.10.0
-            * The indvidual module versions are updated to 1.0.0, marking GA
-            * Support for changing the default Gpu partition on a GPU enabled Azure Stack hub with Set-AzsScaleUnit -NumberOfGPUPartition X
-            * Please refer to https://aka.ms/azspsh210 for additional instructions'
+            ReleaseNotes = '* Bug fix - Add signing for a file under utils folder in each of the module'
 
         } # End of PSData hashtable
 
