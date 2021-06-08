@@ -13,7 +13,7 @@
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
     <tags>AzureStack ResourceManager ARM PSModule Administrator</tags>
     <dependencies>
-      <dependency id="Az.Accounts" version="2.2.8" />
+      <dependency id="Az.Accounts" version="[2.2.8]" />
       <dependency id="Az.Resources" version="[0.11.0]" />
       <dependency id="Azs.Backup.Admin" version="[1.0.0]" />
       <dependency id="Azs.Azurebridge.Admin" version="[1.0.0]" />
