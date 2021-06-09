@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the ContainerRegistryAdmin ser
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Module Requirements
-- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.6.0 or greater
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.2.3 or greater
 
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
@@ -69,7 +69,33 @@ psm1: Azs.ContainerRegistry.Admin.psm1
 ### Parameter default values
 ``` yaml
 directive:
+    # Prepend ContainerRegistry for the Quota cmdlets
+  - where:
+      subject: Quota
+    set:
+      subject-prefix: ContainerRegistry
 
+    # Rename Set-AzsContainerRegistryQuota to Update-AzsContainerRegistryQuota
+  - where:
+      verb: Set
+      subject: ContainerRegistryQuota
+    set:
+      verb: Update
+
+    # Rename Set-AzsContainerRegistryConfiguration to Update-AzsContainerRegistryConfiguration
+  - where:
+      verb: Set
+      subject: ContainerRegistryConfiguration
+    set:
+      verb: Update
+
+    # Rename Get-AzsContainerRegistry to Read-AzsContainerRegistry
+  - where:
+      verb: Get
+      subject: ContainerRegistry
+    set:
+      verb: Read
+	  
 # Add release notes
   - from: Azs.ContainerRegistry.Admin.nuspec
     where: $
