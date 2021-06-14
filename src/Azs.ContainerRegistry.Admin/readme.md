@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.0.0
+module-version: 0.1.0
 service-name: ContainerRegistryAdmin
 
 ### File Renames
@@ -75,26 +75,19 @@ directive:
     set:
       subject-prefix: ContainerRegistry
 
-    # Rename Set-AzsContainerRegistryQuota to Update-AzsContainerRegistryQuota
-  - where:
-      verb: Set
-      subject: ContainerRegistryQuota
-    set:
-      verb: Update
-
-    # Rename Set-AzsContainerRegistryConfiguration to Update-AzsContainerRegistryConfiguration
-  - where:
-      verb: Set
-      subject: ContainerRegistryConfiguration
-    set:
-      verb: Update
-
     # Rename Get-AzsContainerRegistry to Read-AzsContainerRegistry
   - where:
       verb: Get
       subject: ContainerRegistry
     set:
       verb: Read
+
+    # Rename cmdlet parameter name in ContainerRegistrySetup
+  - where:
+      subject: ContainerRegistrySetup
+      parameter-name: SslCertBase64
+    set:
+      parameter-name: SslCert
 	  
 # Add release notes
   - from: Azs.ContainerRegistry.Admin.nuspec
@@ -104,12 +97,12 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.ContainerRegistry.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.2.4" />\n      <dependency id="Az.Resources" version="[1.10.0]" />');
+    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"1.6.0\" />', '<dependency id="Az.Accounts" version="2.2.8" />\n      <dependency id="Az.Resources" version="[0.11.0]" />');
 
 # PSD1 changes for RequiredModules
   - from: source-file-csharp
     where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.ContainerRegistry.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.ContainerRegistry.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.2.4\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'1.10.0\'; \}\}\)\"\);');
+    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.ContainerRegistry.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.ContainerRegistry.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; ModuleVersion = \'2.2.8\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.11.0\'; \}\}\)\"\);');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp
