@@ -15,20 +15,20 @@
     <dependencies>
       <dependency id="Az.Accounts" version="[2.2.8]" />
       <dependency id="Az.Resources" version="[0.11.0]" />
-      <dependency id="Azs.Backup.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Azurebridge.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Commerce.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Compute.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Fabric.Admin" version="[1.0.0]" />
+      <dependency id="Azs.Backup.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Azurebridge.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Commerce.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Compute.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Fabric.Admin" version="[1.0.1]" />
       <dependency id="Azs.Deployment.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Gallery.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Infrastructureinsights.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Keyvault.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Network.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Storage.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Subscriptions" version="[1.0.0]" />
-      <dependency id="Azs.Subscriptions.Admin" version="[1.0.0]" />
-      <dependency id="Azs.Update.Admin" version="[1.0.0]" />
+      <dependency id="Azs.Gallery.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Infrastructureinsights.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Keyvault.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Network.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Storage.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Subscriptions" version="[1.0.1]" />
+      <dependency id="Azs.Subscriptions.Admin" version="[1.0.1]" />
+      <dependency id="Azs.Update.Admin" version="[1.0.1]" />
       <dependency id="Azs.Syndication.Admin" version="[0.1.157]" />
     </dependencies>
   </metadata>
