@@ -118,7 +118,7 @@
             # Tags = @()
 
             # A URL to the license for this module.
-            LicenseUri   = 'https://aka.ms/azps-license'
+            LicenseUri   = 'https://aka.ms/azsps-license'
 
             # A URL to the main website for this project.
             ProjectUri   = 'https://github.com/Azure/azurestack-powershell'
