@@ -79,4 +79,7 @@ A simple example is to change the param type from String to SecureString, to ach
     3. Edit the copied .ps1 file to do the customization. Change the param type to SecureString, and convert to plaintext inside cmdlet, replace the PSBoundParameters with the converted value;
     4. Call the internal cmdlet with the updated PSBoundParameters https://github.com/azure/azurestack-powershell/blob/master/src/Azs.Backup.Admin/custom/Set-AzsBackupConfiguration.ps1
 
-
+### Tests
+    Pester tests are required to make sure that cmdlets are validated against a live azurestack environment. Also to make sure that the future changes are not breaking the cmdlets. We follow the record and playback framework used by the azure powershell team.
+    The docs for authoring the tests can be found at the following wiki
+    https://github.com/Azure/azure-powershell/wiki/How-to-On-Board-New-RP-with-Azure-PowerShell-Generator#test
