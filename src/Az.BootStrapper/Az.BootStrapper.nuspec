@@ -9,7 +9,7 @@
     <licenseUrl>https://aka.ms/azps-license</licenseUrl>
     <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
     <description>Microsoft Azure PowerShell: Az.BootStrapper cmdlets</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>BugFix - Updating Profile Map cache automatically for new profiles</releaseNotes>
     <copyright>Microsoft Corporation. All rights reserved.</copyright>
     <tags>Az.BootStrapper PSModule AzureStack</tags>
   </metadata>
