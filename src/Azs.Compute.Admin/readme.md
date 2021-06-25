@@ -309,6 +309,12 @@ directive:
       subject: DiskMigrationJob
       variant: CancelViaIdentity
     remove: true
+    
+  # Hide the auto-generated Get-AzsDisk and expose it through customized one
+  - where:
+      verb: Get
+      subject: Disk
+    hide: true
 
   # Hide the auto-generated New-AzsDiskMigrationJob and expose it through customized one
   - where:
