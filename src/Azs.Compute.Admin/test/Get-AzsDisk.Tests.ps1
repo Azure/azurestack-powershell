@@ -84,7 +84,7 @@ Describe 'Get-AzsDisk' {
         }
     }
 
-    It "TestListDisks" {
+    It "TestListDisks"  -Skip:$('TestListDisks' -in $global:SkippedTests) {
         $global:TestName = 'TestListDisks'
 
         $disks = Get-AzsDisk 
@@ -114,7 +114,7 @@ Describe 'Get-AzsDisk' {
         }
     }
 
-    It "TestGetDisk" {
+    It "TestGetDisk"  -Skip:$('TestGetDisk' -in $global:SkippedTests) {
         $global:TestName = 'TestGetDisk'
 
         $disks = Get-AzsDisk 

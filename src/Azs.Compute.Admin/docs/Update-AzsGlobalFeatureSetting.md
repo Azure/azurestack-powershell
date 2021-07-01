@@ -1,47 +1,66 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/remove-azsvmextension
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/update-azsglobalfeaturesetting
 schema: 2.0.0
 ---
 
-# Remove-AzsVMExtension
+# Update-AzsGlobalFeatureSetting
 
 ## SYNOPSIS
-Deletes specified Virtual Machine Extension Image.
+Update the feature settings.
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 ```
-Remove-AzsVMExtension -Publisher <String> -Type <String> -Version <String> [-Location <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-AzsGlobalFeatureSetting -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
+ [-GlobalFeatureState <GlobalFeatureState>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Update
 ```
-Remove-AzsVMExtension -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-AzsGlobalFeatureSetting -FeatureName <String> -GlobalFeatureSetting <IGlobalFeatureSettings>
+ [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-AzsGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
+ -GlobalFeatureSetting <IGlobalFeatureSettings> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-AzsGlobalFeatureSetting -InputObject <IComputeAdminIdentity> [-GlobalFeatureState <GlobalFeatureState>]
+ [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deletes specified Virtual Machine Extension Image.
+Update the feature settings.
 
 ## EXAMPLES
 
-### Example 1: Remove a VM Extension that Exists 
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type MicroExtension -Version 0.1.0
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-A successful call to remove a compute quota will not return any output
+{{ Add description here }}
 
-### Example 2: Remove a VM Extension that Does Not Exist
+### Example 2: {{ Add title here }}
 ```powershell
-PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type DoesntExist -Version 9.8.7
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-A successful call to remove a platform image that doesn't exist will not return any output
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -60,13 +79,59 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -FeatureName
+Name of the feature.
+
+```yaml
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GlobalFeatureSetting
+Higher-priority global feature flags.
+To construct, see NOTES section for GLOBALFEATURESETTING properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -GlobalFeatureState
+The state of the global feature.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Support.GlobalFeatureState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -81,7 +146,7 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: False
@@ -106,63 +171,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Publisher
-Name of the publisher.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SubscriptionId
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Type
-Type of extension.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Version
-The version of the resource.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -203,6 +223,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings
+
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 
 ## OUTPUTS
@@ -217,6 +239,9 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+GLOBALFEATURESETTING <IGlobalFeatureSettings>: Higher-priority global feature flags.
+  - `[GlobalFeatureState <GlobalFeatureState?>]`: The state of the global feature.
 
 INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
   - `[DiskId <String>]`: The disk guid as identity.

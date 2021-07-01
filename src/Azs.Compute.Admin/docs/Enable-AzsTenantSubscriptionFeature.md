@@ -1,47 +1,66 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/remove-azsvmextension
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/enable-azstenantsubscriptionfeature
 schema: 2.0.0
 ---
 
-# Remove-AzsVMExtension
+# Enable-AzsTenantSubscriptionFeature
 
 ## SYNOPSIS
-Deletes specified Virtual Machine Extension Image.
+Enable the tenant subscription feature.
 
 ## SYNTAX
 
-### Delete (Default)
+### EnableExpanded (Default)
 ```
-Remove-AzsVMExtension -Publisher <String> -Type <String> -Version <String> [-Location <String>]
+Enable-AzsTenantSubscriptionFeature -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
+ [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### Enable
+```
+Enable-AzsTenantSubscriptionFeature -FeatureName <String>
+ -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-Location <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### EnableViaIdentity
 ```
-Remove-AzsVMExtension -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Enable-AzsTenantSubscriptionFeature -InputObject <IComputeAdminIdentity>
+ -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-DefaultProfile <PSObject>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EnableViaIdentityExpanded
+```
+Enable-AzsTenantSubscriptionFeature -InputObject <IComputeAdminIdentity> [-TenantSubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Deletes specified Virtual Machine Extension Image.
+Enable the tenant subscription feature.
 
 ## EXAMPLES
 
-### Example 1: Remove a VM Extension that Exists 
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type MicroExtension -Version 0.1.0
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-A successful call to remove a compute quota will not return any output
+{{ Add description here }}
 
-### Example 2: Remove a VM Extension that Does Not Exist
+### Example 2: {{ Add title here }}
 ```powershell
-PS C:\> Remove-AzsVMExtension -Location local -Publisher Microsoft -Type DoesntExist -Version 9.8.7
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-A successful call to remove a platform image that doesn't exist will not return any output
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -60,13 +79,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -FeatureName
+Name of the feature.
+
+```yaml
+Type: System.String
+Parameter Sets: Enable, EnableExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: EnableViaIdentity, EnableViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -81,7 +115,7 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Enable, EnableExpanded
 Aliases:
 
 Required: False
@@ -106,28 +140,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Publisher
-Name of the publisher.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SubscriptionId
 Subscription credentials that uniquely identify Microsoft Azure subscription.
 The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Enable, EnableExpanded
 Aliases:
 
 Required: False
@@ -137,30 +156,31 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Type
-Type of extension.
+### -TenantSubscriptionFeatureSetting
+The feature settings for the tenant subscription.
+To construct, see NOTES section for TENANTSUBSCRIPTIONFEATURESETTING properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
+Parameter Sets: Enable, EnableViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Version
-The version of the resource.
+### -TenantSubscriptionId
+The tenant subscription identifier.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -203,6 +223,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
+
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 
 ## OUTPUTS
@@ -232,6 +254,9 @@ INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Type <String>]`: Type of extension.
   - `[Version <String>]`: The version of the resource.
+
+TENANTSUBSCRIPTIONFEATURESETTING <ITenantSubscriptionFeatureSettings>: The feature settings for the tenant subscription.
+  - `[TenantSubscriptionId <String>]`: The tenant subscription identifier.
 
 ## RELATED LINKS
 

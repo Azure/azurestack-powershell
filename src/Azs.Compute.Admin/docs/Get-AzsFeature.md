@@ -1,76 +1,56 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azscomputequota
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azsfeature
 schema: 2.0.0
 ---
 
-# Get-AzsComputeQuota
+# Get-AzsFeature
 
 ## SYNOPSIS
-Get an existing Compute Quota.
+Get an existing feature.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-AzsComputeQuota [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzsFeature [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
- [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzsFeature -Name <String> [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzsComputeQuota -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzsFeature -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get an existing Compute Quota.
+Get an existing feature.
 
 ## EXAMPLES
 
-### Example 1: Get All Compute Quotas
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Get-AzsComputeQuota
+PS C:\> {{ Add code here }}
 
-AvailabilitySetCount               : 10
-CoresLimit                         : 100
-Id                                 : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Ad
-                                     min/locations/local/quotas/ascancompquota433
-Location                           : local
-Name                               : ascancompquota433
-PremiumManagedDiskAndSnapshotSize  : 2048
-StandardManagedDiskAndSnapshotSize : 2048
-Type                               : Microsoft.Compute.Admin/quotas
-VMScaleSetCount                    : 100
-VirtualMachineCount                : 100
+{{ Add output here }}
 ```
 
-Run `Get-AzsComputeQuota` with no parameters to get a list of all Compute Quotas.
+{{ Add description here }}
 
-### Example 2: Get Compute Quota by Name
+### Example 2: {{ Add title here }}
 ```powershell
-PS C:\> Get-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
+PS C:\> {{ Add code here }}
 
-AvailabilitySetCount               : 10
-CoresLimit                         : 100
-Id                                 : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Ad
-                                     min/locations/local/quotas/ExampleComputeQuotaWithDefaultParameters
-Location                           : local
-Name                               : ExampleComputeQuotaWithDefaultParameters
-PremiumManagedDiskAndSnapshotSize  : 2048
-StandardManagedDiskAndSnapshotSize : 2048
-Type                               : Microsoft.Compute.Admin/quotas
-VMScaleSetCount                    : 0
-VirtualMachineCount                : 100
+{{ Add output here }}
 ```
 
-Specify the Quota's name on the command line to retrieve a specific quota.
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -121,12 +101,12 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the quota.
+Name of the feature.
 
 ```yaml
 Type: System.String
 Parameter Sets: Get
-Aliases: QuotaName
+Aliases: FeatureName
 
 Required: True
 Position: Named
@@ -160,7 +140,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IFeature
 
 ## NOTES
 

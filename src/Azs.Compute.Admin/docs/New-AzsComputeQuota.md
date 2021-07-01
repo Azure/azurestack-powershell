@@ -68,7 +68,8 @@ VMScaleSetCount                    : 2
 VirtualMachineCount                : 99
 ```
 
-Customize Quota with parameters. Any parameters not specified will have default value.
+Customize Quota with parameters.
+Any parameters not specified will have default value.
 
 ## PARAMETERS
 
@@ -85,7 +86,6 @@ Position: Named
 Default value: 10
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -CoresCount
@@ -101,7 +101,6 @@ Position: Named
 Default value: 100
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -DefaultProfile
@@ -117,7 +116,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Location
@@ -133,7 +131,6 @@ Position: Named
 Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Location1
@@ -149,7 +146,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Name
@@ -165,7 +161,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -NewQuota
@@ -173,7 +168,7 @@ Holds Compute quota information used to control resource allocation.
 To construct, see NOTES section for NEWQUOTA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 Parameter Sets: Create
 Aliases:
 
@@ -182,7 +177,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -PremiumManagedDiskAndSnapshotSize
@@ -198,7 +192,6 @@ Position: Named
 Default value: 2048
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -StandardManagedDiskAndSnapshotSize
@@ -214,7 +207,6 @@ Position: Named
 Default value: 2048
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
@@ -231,7 +223,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -VirtualMachineCount
@@ -247,7 +238,6 @@ Position: Named
 Default value: 100
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -VMScaleSetCount
@@ -263,7 +253,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Confirm
@@ -279,7 +268,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -WhatIf
@@ -296,7 +284,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -304,23 +291,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota
-
-## ALIASES
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 
 ## NOTES
 
-### COMPLEX PARAMETER PROPERTIES
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### NEWQUOTA <IQuota>: Holds Compute quota information used to control resource allocation.
+
+NEWQUOTA <IQuota>: Holds Compute quota information used to control resource allocation.
   - `[Location <String>]`: Location of the resource.
   - `[AvailabilitySetCount <Int32?>]`: Maximum number of availability sets allowed.
   - `[CoresLimit <Int32?>]`: Maximum number of cores allowed.
+  - `[DdagpuCount <Int32?>]`: Maximum number of dda gpus allowed.
+  - `[PartitionedGpuCount <Int32?>]`: Maximum number of partitioned gpus allowed.
   - `[PremiumManagedDiskAndSnapshotSize <Int32?>]`: Maximum number of managed disks and snapshots of type premium allowed.
   - `[StandardManagedDiskAndSnapshotSize <Int32?>]`: Maximum number of managed disks and snapshots of type standard allowed.
   - `[VMScaleSetCount <Int32?>]`: Maximum number of scale sets allowed.
