@@ -1,0 +1,5 @@
+# See for instructions on this file https://help.github.com/articles/about-codeowners/
+# For instructions on code review assignment for teams - https://docs.github.com/en/organizations/organizing-members-into-teams/managing-code-review-assignment-for-your-team
+# for a sample refer to https://github.com/Azure/azure-cli/blob/dev/.github/CODEOWNERS
+
+* @Azure/azurestack-powershell-write
