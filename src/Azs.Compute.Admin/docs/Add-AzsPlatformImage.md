@@ -60,10 +60,13 @@ ProvisioningState : Succeeded
 Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions
 ```
 
-Add a Platform Image from Blob Storage. Use the a SasUri to specify the location of the PlatformImage, or use a publicly accessible URL.
+Add a Platform Image from Blob Storage.
+Use the a SasUri to specify the location of the PlatformImage, or use a publicly accessible URL.
 
 ## PARAMETERS
 
+### -AsJob
+Run the command as a job
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
@@ -75,7 +78,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -BillingPartNumber
@@ -91,7 +93,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -DataDisks
@@ -108,7 +109,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -DefaultProfile
@@ -124,7 +124,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -InputObject
@@ -141,7 +140,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Location
@@ -157,7 +155,6 @@ Position: Named
 Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -NewImage
@@ -174,7 +171,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -NoWait
@@ -190,7 +186,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Offer
@@ -206,7 +201,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -OsType
@@ -222,7 +216,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -OsUri
@@ -238,7 +231,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -ProvisioningState
@@ -254,7 +246,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Publisher
@@ -270,7 +261,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Sku
@@ -286,7 +276,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
@@ -303,7 +292,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Version
@@ -319,7 +307,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Confirm
@@ -335,7 +322,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -WhatIf
@@ -352,7 +338,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -368,31 +353,35 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20151201Preview.IPlatformImage
 
-## ALIASES
-
 ## NOTES
 
-### COMPLEX PARAMETER PROPERTIES
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### DATADISKS <IDataDisk[]>: Data disks used by the platform image.
+
+DATADISKS <IDataDisk[]>: Data disks used by the platform image.
   - `[Lun <Int32?>]`: Logical unit number.
   - `[Uri <String>]`: Location of the disk template.
 
-#### INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
+INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
   - `[DiskId <String>]`: The disk guid as identity.
+  - `[FeatureName <String>]`: Name of the feature.
   - `[Id <String>]`: Resource identity path
   - `[Location <String>]`: Location of the resource.
   - `[MigrationId <String>]`: The migration job guid name.
   - `[Offer <String>]`: Name of the offer.
   - `[Publisher <String>]`: Name of the publisher.
   - `[QuotaName <String>]`: Name of the quota.
+  - `[ScaleUnitName <String>]`: Name of the scale unit.
   - `[Sku <String>]`: Name of the SKU.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Type <String>]`: Type of extension.
   - `[Version <String>]`: The version of the resource.
 
-#### NEWIMAGE <IPlatformImageParameters>: Parameters used to create a new platform image.
+NEWIMAGE <IPlatformImageParameters>: Parameters used to create a new platform image.
   - `[DataDisk <IDataDisk[]>]`: Data disks used by the platform image.
     - `[Lun <Int32?>]`: Logical unit number.
     - `[Uri <String>]`: Location of the disk template.
@@ -402,3 +391,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProvisioningState <ProvisioningState?>]`: Provisioning status of the platform image.
 
 ## RELATED LINKS
+

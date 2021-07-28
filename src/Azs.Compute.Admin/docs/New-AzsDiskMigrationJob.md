@@ -26,7 +26,7 @@ New-AzsDiskMigrationJob -Name <String> -TargetShare <String> -Disks <IDisk[]> [-
 ```
 
 ## DESCRIPTION
-
+Starts a managed disk migration job to migrate managed disks to the specified destination share.
 
 ## EXAMPLES
 
@@ -76,7 +76,7 @@ Create a disk migration job to migrate disks to the target share.
 ## PARAMETERS
 
 ### -DefaultProfile
-
+The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
 Type: System.Management.Automation.PSObject
@@ -88,14 +88,14 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Disks
+.
 To construct, see NOTES section for DISKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180730Preview.IDisk[]
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk[]
 Parameter Sets: (All)
 Aliases:
 
@@ -104,11 +104,10 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Location
-
+Location of the resource.
 
 ```yaml
 Type: System.String
@@ -120,11 +119,10 @@ Position: Named
 Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Name
-
+The migration job guid name.
 
 ```yaml
 Type: System.String
@@ -136,11 +134,11 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
-
+Subscription credentials that uniquely identify Microsoft Azure subscription.
+The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
@@ -152,11 +150,10 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -TargetScaleUnit
-
+The target scale unit name.
 
 ```yaml
 Type: System.String
@@ -168,11 +165,10 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -TargetShare
-
+The target share name.
 
 ```yaml
 Type: System.String
@@ -184,11 +180,10 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -TargetVolumeLabel
-
+The target volume label.
 
 ```yaml
 Type: System.String
@@ -200,7 +195,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Confirm
@@ -216,7 +210,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -WhatIf
@@ -233,7 +226,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -241,22 +233,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180730Preview.IDisk[]
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk[]
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180730Preview.IDiskMigrationJob
-
-## ALIASES
-
-### Start-AzsDiskMigrationJob
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob
 
 ## NOTES
 
-### COMPLEX PARAMETER PROPERTIES
+ALIASES
+
+### Start-AzsDiskMigrationJob
+
+COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### DISKS <IDisk[]>: 
+
+DISKS <IDisk[]>: .
   - `[Location <String>]`: Location of the resource.
   - `[DiskId <String>]`: The disk id.
   - `[SharePath <String>]`: The disk share path.
