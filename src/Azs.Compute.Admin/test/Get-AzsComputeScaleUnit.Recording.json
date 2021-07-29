@@ -1,0 +1,44 @@
+{
+  "Get-AzsComputeScaleUnit+[NoContext]+GetComputeScaleUnitTest+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "579" ],
+        "x-ms-client-request-id": [ "21bbb91a-dcfd-4c03-a836-2b8d6bff50f5" ],
+        "CommandName": [ "Get-AzsComputeScaleUnit" ],
+        "FullCommandName": [ "Get-AzsComputeScaleUnit_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14542" ],
+        "x-ms-request-id": [ "ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210729T225606Z:ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 29 Jul 2021 22:56:06 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+OYsbFO3iLEnsYinyddUUfN7k+N5Rb8P+8Y92/uojiPq0L6j50+PBc/cg570Q6iUy5Awwx4VPtV5209y9EP1G7n6U1AZJPH8fwG0vtRy8Jc9nnBQimazBow2ZBQZRB30RPwFprWfnCo9fswBKxKX" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "756" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/computeScaleUnits\",\"location\":\"redmond\",\"properties\":{\"scaleUnitName\":\"s-cluster\",\"lastUpdatedTime\":\"2021-07-29T22:53:17.236Z\",\"nodes\":[{\"nodeName\":\"ASRR1N25R05U26\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.845Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U27\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.845Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U25\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:17.236Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U28\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.814Z\",\"virtualMachines\":[]}]}}",
+      "isContentBase64": false
+    }
+  }
+}
