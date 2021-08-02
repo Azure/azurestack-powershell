@@ -354,21 +354,23 @@ function Install-SoftwareFromURL
     param
     (
         [Parameter(Mandatory = $true)]
-        [string] $DownloadURL,
+        [string]$DownloadURL,
         # Specify location to install files, currently only used for .exe files.
         [Parameter(Mandatory = $false)]
-        [string] $InstallDirectory,
+        [string]$InstallDirectory,
         # Used to name the downloaded file before installation. Must include extension. The last part of URL used as file name and extension by default.
         [Parameter(Mandatory = $false)]
-        [string] $DownloadedFileName,
-        # The likeness string is used to check if the software is already installed. This is not required.
+        [string]$DownloadedFileName,
+        # The likeness string is used to check if the software is already installed by looking at the uninstall registry for DisplayName similar to $RegistryDisplayNameLike.
+        # Example path of the uninstall registry:
+        # Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall
         [Parameter(Mandatory = $false)]
-        [string] $RegistryDisplayNameLike,
+        [string]$RegistryDisplayNameLike,
         [Parameter(Mandatory = $false)]
-        [string] $InstallLogFilePath,
+        [string]$InstallLogFilePath,
         # Force install doesn't work for msi files since windows will throw 1603 exit code error if the software already exists.
         [Parameter(Mandatory = $false)]
-        [switch] $ForceInstall
+        [switch]$ForceInstall
     )
 
     if ($DownloadedFileName -and $DownloadedFileName.Split(".").Count -lt 2 )
@@ -388,7 +390,7 @@ function Install-SoftwareFromURL
             Write-Verbose -Message "The software from ${DownloadURL} was already installed." -Verbose
         }
     }
-    if ($install)
+    if($install)
     {
         if ($ForceInstall)
         {
@@ -451,7 +453,7 @@ function Install-SoftwareFromURL
         ####################
         if ($extension -eq "exe")
         {
-            $arguments = "/SP- /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS InstallAllUsers=1 PrependPath=1"
+            $arguments = "/quiet /SP- /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS InstallAllUsers=1 PrependPath=1"
             if ($InstallDirectory)
             {
                 $arguments += " TargetDir=`"${InstallDirectory}`""

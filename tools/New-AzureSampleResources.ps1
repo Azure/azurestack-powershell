@@ -92,12 +92,12 @@ $certPfxPassword = [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($ce
 [System.Environment]::SetEnvironmentVariable('AZURE_TENANT_ID', $azureTenantId, [System.EnvironmentVariableTarget]::Machine)
 
 # Service principal application details
-[System.Environment]::SetEnvironmentVariable('AZURE_SP_APP_ID', $azureAppSpInfo["ClientId"], [System.EnvironmentVariableTarget]::Machine)
+[System.Environment]::SetEnvironmentVariable('AZURE_SP_APP_CLIENT_ID', $azureAppSpInfo["ClientId"], [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('AZURE_SP_APP_SECRET', [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($appSpBSTR), [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('AZURE_SP_APP_OBJECT_ID', $azureAppSpInfo["ObjectId"], [System.EnvironmentVariableTarget]::Machine)
 
 # Service principal certificate details
-[System.Environment]::SetEnvironmentVariable('AZURE_SP_CERT_ID', $azureCertSpInfo["ClientId"], [System.EnvironmentVariableTarget]::Machine)
+[System.Environment]::SetEnvironmentVariable('AZURE_SP_CERT_CLIENT_ID', $azureCertSpInfo["ClientId"], [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('AZURE_SP_CERT_THUMBPRINT', $azureCertSpInfo["CertificateThumbprint"], [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('AZURE_SP_CERT_OBJECT_ID', $azureCertSpInfo["ObjectId"], [System.EnvironmentVariableTarget]::Machine)
 [System.Environment]::SetEnvironmentVariable('AZURE_SP_CERT_PATH', $certPfxPath, [System.EnvironmentVariableTarget]::Machine)
