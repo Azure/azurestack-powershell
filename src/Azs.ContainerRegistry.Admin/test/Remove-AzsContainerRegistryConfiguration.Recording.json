@@ -1,0 +1,160 @@
+{
+  "Remove-AzsContainerRegistryConfiguration+[NoContext]+TestRemoveContainerRegistryConfiguration+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "12" ],
+        "x-ms-client-request-id": [ "a0b398de-8097-437b-b459-f0c62ca10f5d" ],
+        "CommandName": [ "Get-AzsContainerRegistryConfiguration" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryConfiguration_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "30c9906b-213b-4d91-be61-e4a6947ff267" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14798" ],
+        "x-ms-correlation-request-id": [ "44e7a83d-33b5-4394-8dfb-d2b348174606" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012109Z:44e7a83d-33b5-4394-8dfb-d2b348174606" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:08 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "290" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default\",\"name\":\"redmond/Default\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/configurations\",\"properties\":{\"maximumCapacityInGiB\":0}}]}",
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryConfiguration+[NoContext]+TestRemoveContainerRegistryConfiguration+$DELETE+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/default?api-version=2019-11-01-preview+2": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/default?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "13" ],
+        "x-ms-client-request-id": [ "e32de432-9ace-4775-8be4-b4b5a351e13e" ],
+        "CommandName": [ "Remove-AzsContainerRegistryConfiguration" ],
+        "FullCommandName": [ "Remove-AzsContainerRegistryConfiguration_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "1e25b505-291a-4bdf-aa43-a38c5028ce48" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14986" ],
+        "x-ms-correlation-request-id": [ "cfedd943-27cb-4dcc-9387-e6a1246cb7b1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012110Z:cfedd943-27cb-4dcc-9387-e6a1246cb7b1" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:10 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryConfiguration+[NoContext]+TestRemoveContainerRegistryConfiguration+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations?api-version=2019-11-01-preview+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "14" ],
+        "x-ms-client-request-id": [ "f98d0baa-2f56-40bc-95fd-70573736ed0c" ],
+        "CommandName": [ "Get-AzsContainerRegistryConfiguration" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryConfiguration_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "fe616b1d-4f76-4a05-935e-3044c64d26f2" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14795" ],
+        "x-ms-correlation-request-id": [ "4d70b824-6f2e-4299-977a-6c36a2e4e199" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012112Z:4d70b824-6f2e-4299-977a-6c36a2e4e199" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:12 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "290" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default\",\"name\":\"redmond/Default\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/configurations\",\"properties\":{\"maximumCapacityInGiB\":0}}]}",
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryConfiguration+[NoContext]+TestRemoveContainerRegistryConfiguration+$PUT+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/default?api-version=2019-11-01-preview+4": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/default?api-version=2019-11-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maximumCapacityInGiB\": 0\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "59" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "dfb78b85-acda-4de6-8a1d-986b9c8fe84b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1174" ],
+        "x-ms-correlation-request-id": [ "318d48e5-4f30-4876-abf3-f188c1c2bf2f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012113Z:318d48e5-4f30-4876-abf3-f188c1c2bf2f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:13 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "278" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default\",\"name\":\"redmond/Default\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/configurations\",\"properties\":{\"maximumCapacityInGiB\":0}}",
+      "isContentBase64": false
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "New-AzsContainerRegistryQuota+[NoContext]+TestCreateStorageQuota+$PUT+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-11-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"numberOfRegistries\": 20,\r\n    \"capacityPerRegistryInGiB\": 20\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "95" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "c7de1ba7-47e6-4a13-a0dd-2000c74ce26b" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1175" ],
+        "x-ms-correlation-request-id": [ "6e1ab911-1af6-46f0-b585-098f79aa0c0d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012104Z:6e1ab911-1af6-46f0-b585-098f79aa0c0d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:04 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "307" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestCreateQuota\",\"name\":\"redmond/TestCreateQuota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}",
+      "isContentBase64": false
+    }
+  },
+  "New-AzsContainerRegistryQuota+[NoContext]+TestCreateStorageQuota+$DELETE+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-11-01-preview+2": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestCreateQuota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "10" ],
+        "x-ms-client-request-id": [ "8422bac8-8062-41ee-8347-20ff4832f646" ],
+        "CommandName": [ "Remove-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Remove-AzsContainerRegistryQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "219eeb35-57ab-4d95-87f8-32630d6bca53" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14987" ],
+        "x-ms-correlation-request-id": [ "72ce9eec-c617-49f6-84d3-6c4045c3a028" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012106Z:72ce9eec-c617-49f6-84d3-6c4045c3a028" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:06 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  }
+}

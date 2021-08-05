@@ -1,0 +1,195 @@
+{
+  "Remove-AzsContainerRegistryQuota+[NoContext]+TestDeleteContainerRegistryQuota+$PUT+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"numberOfRegistries\": 100,\r\n    \"capacityPerRegistryInGiB\": 50\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "96" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "4bdae01d-13b6-4479-ad75-ec891ada41da" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1173" ],
+        "x-ms-correlation-request-id": [ "3faf5e76-1b47-4f23-81c9-aa9f6f99c1f9" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012116Z:3faf5e76-1b47-4f23-81c9-aa9f6f99c1f9" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:15 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "308" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota\",\"name\":\"redmond/TestDeleteQuota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":50,\"numberOfRegistries\":100}}",
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryQuota+[NoContext]+TestDeleteContainerRegistryQuota+$DELETE+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview+2": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "17" ],
+        "x-ms-client-request-id": [ "ef992567-a74e-4257-8605-efdaee539b36" ],
+        "CommandName": [ "Remove-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Remove-AzsContainerRegistryQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "b91d4be7-c304-4f0a-81d6-5d6ba8fe69c8" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14985" ],
+        "x-ms-correlation-request-id": [ "503b0d92-f5c6-4878-bec5-a611cec66fca" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012117Z:503b0d92-f5c6-4878-bec5-a611cec66fca" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:16 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryQuota+[NoContext]+TestDeleteContainerRegistryQuota+$PUT+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview",
+      "Content": "{\r\n  \"properties\": {\r\n    \"numberOfRegistries\": 100,\r\n    \"capacityPerRegistryInGiB\": 50\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "96" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "a9a6e22c-7faa-47e5-ae2d-78c903c7772e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1172" ],
+        "x-ms-correlation-request-id": [ "b5879ff5-2501-48cd-aaf5-90c9cf32b67f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012119Z:b5879ff5-2501-48cd-aaf5-90c9cf32b67f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:19 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "308" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota\",\"name\":\"redmond/TestDeleteQuota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":50,\"numberOfRegistries\":100}}",
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryQuota+[NoContext]+TestDeleteContainerRegistryQuota+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview+4": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "19" ],
+        "x-ms-client-request-id": [ "9f59ffca-5dbb-49a3-9ba2-32a4b7bcda41" ],
+        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryQuota_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "05b78f6b-d812-4cb9-916f-1fc64be90ea8" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14789" ],
+        "x-ms-correlation-request-id": [ "195efecd-b523-4162-8952-10862ed2800e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012120Z:195efecd-b523-4162-8952-10862ed2800e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:20 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "308" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota\",\"name\":\"redmond/TestDeleteQuota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":50,\"numberOfRegistries\":100}}",
+      "isContentBase64": false
+    }
+  },
+  "Remove-AzsContainerRegistryQuota+[NoContext]+TestDeleteContainerRegistryQuota+$DELETE+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview+5": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/TestDeleteQuota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "20" ],
+        "x-ms-client-request-id": [ "20321b4c-8672-4e7f-bf76-c5bea1a92929" ],
+        "CommandName": [ "Remove-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Remove-AzsContainerRegistryQuota_DeleteViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "64d6387e-13e0-472e-823b-6fa2ba9b4b02" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14984" ],
+        "x-ms-correlation-request-id": [ "e0f30a78-db60-48ca-8122-22bc93851e47" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012121Z:e0f30a78-db60-48ca-8122-22bc93851e47" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:21:20 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  }
+}
