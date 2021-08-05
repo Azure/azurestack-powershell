@@ -1,0 +1,43 @@
+{
+  "Get-AzsContainerRegistryCapacity+[NoContext]+TestGetContainerRegistryCapacity+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/capacities?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/capacities?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "6d2216ce-c1ed-4d4a-9e76-537a99939cd9" ],
+        "CommandName": [ "Get-AzsContainerRegistryCapacity" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryCapacity_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "4ae3898e-ce0f-4628-bd90-fc05b695bd2e" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14816" ],
+        "x-ms-correlation-request-id": [ "f8851610-9220-4e6e-aeda-1fd1e000d471" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210805T012053Z:f8851610-9220-4e6e-aeda-1fd1e000d471" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 05 Aug 2021 01:20:52 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "334" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/capacities/Default\",\"name\":\"redmond/Default\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/capacities\",\"properties\":{\"maximumCapacityInGiB\":0,\"registriesConsumptionInGiB\":0.00,\"allowPush\":false}}]}",
+      "isContentBase64": false
+    }
+  }
+}
