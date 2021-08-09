@@ -134,7 +134,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IScaleUnit
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210330.IScaleUnit
 
 ## NOTES
 

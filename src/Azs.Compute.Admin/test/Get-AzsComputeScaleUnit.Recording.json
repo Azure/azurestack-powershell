@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "579" ],
-        "x-ms-client-request-id": [ "21bbb91a-dcfd-4c03-a836-2b8d6bff50f5" ],
+        "x-ms-unique-id": [ "411" ],
+        "x-ms-client-request-id": [ "bb663fdc-b145-4d7b-bdba-7230ea369b65" ],
         "CommandName": [ "Get-AzsComputeScaleUnit" ],
         "FullCommandName": [ "Get-AzsComputeScaleUnit_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,23 +21,23 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14542" ],
-        "x-ms-request-id": [ "ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210729T225606Z:ab5070f1-1d89-4783-8dc7-0172e1f7cc93" ],
+        "x-ms-correlation-request-id": [ "c64844ce-93d5-47af-a254-43908466e9f5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14788" ],
+        "x-ms-request-id": [ "c64844ce-93d5-47af-a254-43908466e9f5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210809T213755Z:c64844ce-93d5-47af-a254-43908466e9f5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 29 Jul 2021 22:56:06 GMT" ],
+        "Date": [ "Mon, 09 Aug 2021 21:37:55 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+OYsbFO3iLEnsYinyddUUfN7k+N5Rb8P+8Y92/uojiPq0L6j50+PBc/cg570Q6iUy5Awwx4VPtV5209y9EP1G7n6U1AZJPH8fwG0vtRy8Jc9nnBQimazBow2ZBQZRB30RPwFprWfnCo9fswBKxKX" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvaMuA4x61d7ifV20fAjSP2UnpBwIP3h0WbaXzHhD0TaoHI3/Ox5e7eDJ2W40udBKjxYAggF3v/Ln3EU1DzVPe6TZb24fgAnzu9OPxYyFmJeR121bU+SVeLkHS7EU4g5kOxnpCNHbHAKescP7N1Hxj" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "756" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/computeScaleUnits\",\"location\":\"redmond\",\"properties\":{\"scaleUnitName\":\"s-cluster\",\"lastUpdatedTime\":\"2021-07-29T22:53:17.236Z\",\"nodes\":[{\"nodeName\":\"ASRR1N25R05U26\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.845Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U27\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.845Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U25\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:17.236Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U28\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-07-29T22:53:16.814Z\",\"virtualMachines\":[]}]}}",
+      "Content": "{\"id\":\"providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/computeScaleUnits\",\"location\":\"redmond\",\"properties\":{\"scaleUnitName\":\"s-cluster\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.622Z\",\"nodes\":[{\"nodeName\":\"ASRR1N25R05U26\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.527Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U27\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.606Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U25\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.622Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U28\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.511Z\",\"virtualMachines\":[]}]}}",
       "isContentBase64": false
     }
   }
