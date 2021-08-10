@@ -1,3 +1,8 @@
 $global:SkippedTests = @(
-    "TestDeleteNonExistingQuota"
+    "TestDeleteNonExistingQuota",
+    "TestListDisks",
+    "TestGetDisk",
+    "TestGetDiskMigrationJob",
+    "TestNewDiskMigrationJob",
+    "TestStopDiskMigrationJob"
 )
