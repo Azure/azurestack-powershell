@@ -11,7 +11,7 @@ param (
     $ClientObjectId = $ENV:ClientObjectId,
     [Parameter(HelpMessage = "The location of the resources for Azure Stack.")]
     [string]
-    $resourceLocation = $ENV:Location
+    $Location = $ENV:Location
 )
 
 $resourceGroup = "azurestack-container-rg"
@@ -109,7 +109,7 @@ $TestAzKeyVault =
 {
     $KeyVaultName = "azurestackContainerKV"
     Log -Message "Creating new key vault... (New-AzKeyVault)"
-    New-AzKeyVault -VaultName $KeyVaultName -ResourceGroupName $resourceGroup -Location $resourceLocation -Verbose -ErrorAction Stop
+    New-AzKeyVault -VaultName $KeyVaultName -ResourceGroupName $resourceGroup -Location $Location -Verbose -ErrorAction Stop
     Get-AzKeyVault -VaultName $KeyVaultName -ErrorAction Stop
     Set-AzKeyVaultAccessPolicy -VaultName $KeyVaultName -ResourceGroupName $resourceGroup -ObjectId $ClientObjectId -BypassObjectIdValidation -PermissionsToKeys all -PermissionsToSecrets all -ErrorAction Stop
     
@@ -171,7 +171,7 @@ $TestAzNetwork =
 {
     $networkSecurityGroup = "network-sg"
     Log -Message "Running New-AzNetworkSecurityGroup..."
-    New-AzNetworkSecurityGroup -ResourceGroupName $resourceGroup -Name $networkSecurityGroup -Location $resourceLocation
+    New-AzNetworkSecurityGroup -ResourceGroupName $resourceGroup -Name $networkSecurityGroup -Location $Location
     Log -Message "Running Get-AzNetworkSecurityGroup..."
     Get-AzNetworkSecurityGroup -ResourceGroupName $resourceGroup -Name $networkSecurityGroup | Format-Table -AutoSize | Out-String | Log
     Log -Message "Running Remove-AzNetworkSecurityGroup..."
@@ -190,7 +190,7 @@ $TestAzWebsites =
     Log -Message "Running New-AzAppServicePlan..."
     New-AzAppServicePlan -ResourceGroupName $resourceGroup `
         -Name $appName `
-        -Location $resourceLocation `
+        -Location $Location `
         -Tier "Free" `
         -NumberofWorkers 1 `
         -WorkerSize "Small" | Format-Table -AutoSize | Out-String | Log

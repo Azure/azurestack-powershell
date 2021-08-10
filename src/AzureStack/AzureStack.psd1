@@ -9,10 +9,10 @@
 @{
 
     # Root Module
-    RootModule = 'AzureStack.psm1'
+    # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '2.1.0'
+    ModuleVersion          = '2.1.1'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -55,23 +55,23 @@
 
     # Modules that must be imported into the global environment prior to importing this module
     ### IMPORTANT - Note that the module names are case sensitive ###
-    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.2.4'; },
-        @{ModuleName = 'Az.Resources'; RequiredVersion = '1.10.0'; },
-        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.0.0'; },
+    RequiredModules        = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.2.8'; },
+        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.11.0'; },
+        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.0'; },
-        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.155'; })
+        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.157'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
@@ -118,7 +118,7 @@
             # Tags = @()
 
             # A URL to the license for this module.
-            LicenseUri   = 'https://aka.ms/azps-license'
+            LicenseUri   = 'https://aka.ms/azsps-license'
 
             # A URL to the main website for this project.
             ProjectUri   = 'https://github.com/Azure/azurestack-powershell'
@@ -127,11 +127,7 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = 'Version 2.0.2-preview,
-            * Bug Fix in Fabric Admin module
-                - Disable-AzsScaleUnitNode and Enable-AzsScaleUnitNode had operations reversed
-                - Replace parameter NodeList with BmciPAddress and ComputerName in cmd Add-AzsScaleUnitNode
-            * Requires AzureStack Update 2002+, Please refer https://aka.ms/azpshmigration for breaking changes'
+            ReleaseNotes = '* Bug fix - Add signing for a file under utils folder in each of the module'
 
         } # End of PSData hashtable
 
