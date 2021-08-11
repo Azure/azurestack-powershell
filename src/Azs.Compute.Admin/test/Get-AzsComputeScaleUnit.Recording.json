@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "411" ],
-        "x-ms-client-request-id": [ "bb663fdc-b145-4d7b-bdba-7230ea369b65" ],
+        "x-ms-unique-id": [ "190" ],
+        "x-ms-client-request-id": [ "6f4a368a-18a4-460a-8181-ebf826c32855" ],
         "CommandName": [ "Get-AzsComputeScaleUnit" ],
         "FullCommandName": [ "Get-AzsComputeScaleUnit_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,23 +21,23 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "c64844ce-93d5-47af-a254-43908466e9f5" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14788" ],
-        "x-ms-request-id": [ "c64844ce-93d5-47af-a254-43908466e9f5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213755Z:c64844ce-93d5-47af-a254-43908466e9f5" ],
+        "x-ms-correlation-request-id": [ "2a7a5a5c-b93f-4862-8182-89bb2d6a37a6" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14787" ],
+        "x-ms-request-id": [ "2a7a5a5c-b93f-4862-8182-89bb2d6a37a6" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210811T204230Z:2a7a5a5c-b93f-4862-8182-89bb2d6a37a6" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:55 GMT" ],
+        "Date": [ "Wed, 11 Aug 2021 20:42:29 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvaMuA4x61d7ifV20fAjSP2UnpBwIP3h0WbaXzHhD0TaoHI3/Ox5e7eDJ2W40udBKjxYAggF3v/Ln3EU1DzVPe6TZb24fgAnzu9OPxYyFmJeR121bU+SVeLkHS7EU4g5kOxnpCNHbHAKescP7N1Hxj" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvAd91pQf3cyrN0NflFYAaVRHilx16O1FRCVqfIWfdSLG8XeV4i1hHo/Zv3U/AHuH1AlfxE9vP0hp6ri7/8ji7x58mKiQgPcuV4n2aiAWlunqMSDrGbbJU2ZAV7jfck0A/ZjZAsWasBpwP1kHwxUTD" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "756" ],
+        "Content-Length": [ "754" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/computeScaleUnits\",\"location\":\"redmond\",\"properties\":{\"scaleUnitName\":\"s-cluster\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.622Z\",\"nodes\":[{\"nodeName\":\"ASRR1N25R05U26\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.527Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U27\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.606Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U25\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.622Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U28\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-09T21:37:10.511Z\",\"virtualMachines\":[]}]}}",
+      "Content": "{\"id\":\"providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/computeScaleUnits\",\"location\":\"redmond\",\"properties\":{\"scaleUnitName\":\"s-cluster\",\"lastUpdatedTime\":\"2021-08-11T20:41:20.36Z\",\"nodes\":[{\"nodeName\":\"ASRR1N25R05U26\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-11T20:41:20.251Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U27\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-11T20:41:20.251Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U25\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-11T20:41:20.36Z\",\"virtualMachines\":[]},{\"nodeName\":\"ASRR1N25R05U28\",\"nodeHealthState\":\"Up\",\"lastUpdatedTime\":\"2021-08-11T20:41:20.251Z\",\"virtualMachines\":[]}]}}",
       "isContentBase64": false
     }
   }

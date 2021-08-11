@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "415" ],
-        "x-ms-client-request-id": [ "3ef10bf7-a046-45d8-9e7b-3389e3831ccd" ],
+        "x-ms-unique-id": [ "192" ],
+        "x-ms-client-request-id": [ "01c82ae9-dd73-4c2a-95ab-ba6c70f4e936" ],
         "CommandName": [ "Get-AzsDiskMigrationJob" ],
         "FullCommandName": [ "Get-AzsDiskMigrationJob_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -23,58 +23,15 @@
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "acde71cb-dede-4e0d-9c1b-4c6a8f24f12b" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14784" ],
-        "x-ms-request-id": [ "acde71cb-dede-4e0d-9c1b-4c6a8f24f12b" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213756Z:acde71cb-dede-4e0d-9c1b-4c6a8f24f12b" ],
+        "x-ms-correlation-request-id": [ "fe61070f-0875-45e8-9dbb-e00aa56e7910" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14785" ],
+        "x-ms-request-id": [ "fe61070f-0875-45e8-9dbb-e00aa56e7910" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210811T204231Z:fe61070f-0875-45e8-9dbb-e00aa56e7910" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:56 GMT" ],
+        "Date": [ "Wed, 11 Aug 2021 20:42:31 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJMLJeVNknb6SYNuZeE2fQPZC/8bgBQ3uh9LANaV1TUlUYTCpnXansddANtt/7a+l8a2rVjDfnD66i/fsNFXzlzGOes0zhi90dOQhk/VBkWXflfcQvHca1l6gxIdfaBXDTWSKeBsQFl/sQ1KH9OdP" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "19" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\r\n  \"value\": []\r\n}",
-      "isContentBase64": false
-    }
-  },
-  "Get-AzsDiskMigrationJob+[NoContext]+TestGetDiskMigrationJob+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs?api-version=2021-04-01+1": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs?api-version=2021-04-01",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "416" ],
-        "x-ms-client-request-id": [ "8de4fe89-a318-42ca-856d-3790c504463e" ],
-        "CommandName": [ "Get-AzsDiskMigrationJob" ],
-        "FullCommandName": [ "Get-AzsDiskMigrationJob_List" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "d62ba887-2426-4fd1-98ac-33586e49358c" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14783" ],
-        "x-ms-request-id": [ "d62ba887-2426-4fd1-98ac-33586e49358c" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213756Z:d62ba887-2426-4fd1-98ac-33586e49358c" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:56 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvTVFoReH4cJDFPaoK9VvezOuOTZ5bvCcK6pfrlVClGoHU8c+J2WfY3Dgv6/JfnRXWnSPqqOxSMnYjr7kV/MQGH0jxnTbWqvzjGThuclhAObGWvCOe3XMpZ8iomaEr9wju1BV7muApvhAeimMyb1tD" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvEqBe/oOhCQ/+Hboq1HUsyqQAGxL9G7xODlRteAQacC1FZ95Wj8o7P9eQn0ftOu+zDNqR5xcN0YHkENZLO4kjzXGm/f+b7TOZBxlispYWPhwiDAte7eSwQ3IKabUFHAdClE7uTfzBp9yUm8V+0ilF" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "19" ],

@@ -1,90 +1,4 @@
 {
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+1": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "412" ],
-        "x-ms-client-request-id": [ "de6d95b5-3ad0-431d-8ea4-fa52511ba15f" ],
-        "CommandName": [ "Get-AzsDisk" ],
-        "FullCommandName": [ "Get-AzsDisk_List" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "99a3ac03-6f5c-404f-8a2e-a054639d7272" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14787" ],
-        "x-ms-request-id": [ "99a3ac03-6f5c-404f-8a2e-a054639d7272" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213756Z:99a3ac03-6f5c-404f-8a2e-a054639d7272" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:55 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvNDzTB+jQTndgY8ZIwmhlpKXdywTE+YYSav2sCxmaSutqCQ5QYJL9z2uD4+C1sG+/HjJWfD0ftftfoOkIqHmuJNCkoshJ2HGmByAc6J5YtJxBzblUpuKucg9LNf5oFuFXCGXEjpBV08sAcBwMhrHR" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "19" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\r\n  \"value\": []\r\n}",
-      "isContentBase64": false
-    }
-  },
-  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+1": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "413" ],
-        "x-ms-client-request-id": [ "60a22686-1b5e-4075-9a7b-f2f09f13c688" ],
-        "CommandName": [ "Get-AzsDisk" ],
-        "FullCommandName": [ "Get-AzsDisk_List" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "3f5c47b2-5b02-4c17-8595-e09470604a91" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14786" ],
-        "x-ms-request-id": [ "3f5c47b2-5b02-4c17-8595-e09470604a91" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213756Z:3f5c47b2-5b02-4c17-8595-e09470604a91" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:55 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7vS2Gad84T7OANUBTCi8kcbZJ5i+Rt12AUF+FCtm1laXP4exolXijSizEdQPUbsTOQ32mhRMwR4pz4N6A99UIOMDggFbe+ceRQBbgCfR0X/u9I/PwAOGq0tGEiGalfZKqUCrmpc1hyCXlAmA/w5O" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "19" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\r\n  \"value\": []\r\n}",
-      "isContentBase64": false
-    }
-  },
   "Get-AzsDisk+[NoContext]+TestGetDiskInvalid+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-04-01+1": {
     "Request": {
       "Method": "GET",
@@ -92,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "414" ],
-        "x-ms-client-request-id": [ "7166e594-e351-4e38-a467-4e3c193e16bd" ],
+        "x-ms-unique-id": [ "191" ],
+        "x-ms-client-request-id": [ "725d9fc9-0349-4db4-a6f1-6f64192b3a0c" ],
         "CommandName": [ "Get-AzsDisk" ],
         "FullCommandName": [ "Get-AzsDisk_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -109,15 +23,15 @@
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "7855dce3-a117-431f-9ec7-849e9fc71246" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14785" ],
-        "x-ms-request-id": [ "7855dce3-a117-431f-9ec7-849e9fc71246" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210809T213756Z:7855dce3-a117-431f-9ec7-849e9fc71246" ],
+        "x-ms-correlation-request-id": [ "c23d06b6-2211-4f74-815a-663e22e6f32d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14786" ],
+        "x-ms-request-id": [ "c23d06b6-2211-4f74-815a-663e22e6f32d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210811T204231Z:c23d06b6-2211-4f74-815a-663e22e6f32d" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Mon, 09 Aug 2021 21:37:55 GMT" ],
+        "Date": [ "Wed, 11 Aug 2021 20:42:31 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvM0eGA9EKgBAOnya/M/aeZtY+s3J0z/0iVx1Itc0qMl0DoHKbqfwWPCubDqQvn9CNavSkCbLQD/iN1R6msSI7FoyAQOm6VJq8m6PKScl16+lsL1U4gfm1U9FXYG7Wq5j7bJkh4kRgsoZ/15y8nobB" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvg1OAYJ57bI24brYXq5oFWuVDR6LLcGUGKlGXSHR1MhlwnwQjg/M4otvm07mWtc5CBsboFAriplTU6zAjoZz6sqcaFsnLfbFJwlGaSHX3rQtokSxXh1jtVQ0mmqTGP/gE0t7E5hCMeoytJAR8RWOv" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "115" ],
