@@ -1,4 +1,8 @@
-. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
 
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsComputeScaleUnit.Recording.json'
 $currentPath = $PSScriptRoot
@@ -14,7 +18,7 @@ Describe 'Get-AzsComputeScaleUnit' {
     It 'GetComputeScaleUnitTest' -Skip:$('TestListDiskMigrationJobs' -in $global:SkippedTests) {
         $global:TestName = 'GetComputeScaleUnitTest'
 
-        $scaleUnitView = Get-AzsComputeScaleUnit -Name s-cluster
+        $scaleUnitView = Get-AzsComputeScaleUnit -Name s-cluster -Location $env.Location -SubscriptionId $env.SubscriptionId
 
         $scaleUnitView | Should Not Be $null
         $scaleUnitView.Id | Should Not Be $null
