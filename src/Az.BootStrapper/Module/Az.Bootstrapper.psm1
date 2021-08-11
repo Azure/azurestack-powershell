@@ -803,7 +803,8 @@ function Add-ScopeParam
 function Add-ProfileParam
 {
   param([System.Management.Automation.RuntimeDefinedParameterDictionary]$params, [string]$set = "__AllParameterSets")
-  $ProfileMap = (Get-AzProfileMap)
+  # Update Profile Map cache from the blob endpoint
+  $ProfileMap = (Get-AzProfileMap -Update)
   $AllProfiles = ($ProfileMap | Get-Member -MemberType NoteProperty).Name
   $profileAttribute = New-Object -Type System.Management.Automation.ParameterAttribute
   $profileAttribute.ParameterSetName = $set
@@ -1014,7 +1015,7 @@ function Use-AzProfile
   PROCESS 
   {
     $Force = $PSBoundParameters.Force
-    $ProfileMap = (Get-AzProfileMap -update)
+    $ProfileMap = Get-AzProfileMap
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = $PSBoundParameters.Module
@@ -1111,7 +1112,7 @@ function Install-AzProfile
   }
 
   PROCESS {
-    $ProfileMap = (Get-AzProfileMap -update)
+    $ProfileMap = Get-AzProfileMap
     $Profile = $PSBoundParameters.Profile
     $Scope = $PSBoundParameters.Scope
     $Modules = ($ProfileMap.$Profile | Get-Member -MemberType NoteProperty).Name
