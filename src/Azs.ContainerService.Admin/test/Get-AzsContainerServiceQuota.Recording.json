@@ -7,7 +7,7 @@
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "2" ],
-        "x-ms-client-request-id": [ "36418ebe-21a5-478b-ba41-41908b4d3778" ],
+        "x-ms-client-request-id": [ "9e7a786d-e8f4-479d-97d6-e859e405c608" ],
         "CommandName": [ "Get-AzsContainerServiceQuota" ],
         "FullCommandName": [ "Get-AzsContainerServiceQuota_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -22,14 +22,14 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "05b184d9-be1a-4996-bf75-d46d68c4f8b7" ],
+        "x-ms-request-id": [ "a2a8094b-52bc-4bab-9460-792473abbc0d" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14946" ],
-        "x-ms-correlation-request-id": [ "36f7ffbb-83f5-4f72-9ca5-c9f6a3887435" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210811T005100Z:36f7ffbb-83f5-4f72-9ca5-c9f6a3887435" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14988" ],
+        "x-ms-correlation-request-id": [ "f95c8f63-d22c-463b-b899-b24811dd70aa" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210816T232445Z:f95c8f63-d22c-463b-b899-b24811dd70aa" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Wed, 11 Aug 2021 00:51:00 GMT" ]
+        "Date": [ "Mon, 16 Aug 2021 23:24:45 GMT" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "270" ],

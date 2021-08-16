@@ -12,8 +12,26 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Get-AzsContainerServiceQuota' {
-    It 'List' {
-        $quotas = Get-AzsContainerServiceQuota
-        $quotas | Should -Not -BeNullOrEmpty    
+    BeforeEach {
+        function ValidateContainerServiceQuota {
+            param(
+                [Parameter(Mandatory = $true)]
+                $ManagedClustersQuota
+            )
+            $managedClustersQuota		| Should Not Be $null
+            $managedClustersQuota.name	| Should Not Be $null
+        }
+    }
+
+    AfterEach {
+        $global:Client = $null
+    }
+
+    It "TestGetContainerServiceQuota" -Skip:$('TestGetContainerServiceQuota' -in $global:SkippedTests) {
+        $global:TestName = 'TestGetContainerServiceQuota'
+
+        $result = Get-AzsContainerServiceQuota 
+        $result  | Should Not Be $null
+        ValidateContainerServiceQuota -ManagedClustersQuota $result
     }
 }

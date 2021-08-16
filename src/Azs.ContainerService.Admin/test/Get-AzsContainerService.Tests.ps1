@@ -19,8 +19,8 @@ Describe 'Get-AzsContainerService' {
                 $ManagedClusters
             )
             $managedClusters						| Should Not Be $null
-            $capacity.orchestratorVersion	        | Should Not Be $null
-            $capacity.provisioningState         	| Should Not Be $null
+            $managedClusters.orchestratorVersion	| Should Not Be $null
+            $managedClusters.provisioningState      | Should Not Be $null
         }
     }
 

@@ -7,7 +7,7 @@
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "1" ],
-        "x-ms-client-request-id": [ "86eb40c0-c30a-4e3a-a589-c975b26dbb0e" ],
+        "x-ms-client-request-id": [ "68b5e6e1-3d73-404d-8677-7a5bc94d2197" ],
         "CommandName": [ "Get-AzsContainerService" ],
         "FullCommandName": [ "Get-AzsContainerService_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -22,21 +22,21 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "56355ec8-c4b8-4849-bff3-4d2301a19faf" ],
+        "x-ms-request-id": [ "2b39b838-c46d-4ae4-9518-91903936a705" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14948" ],
-        "x-ms-correlation-request-id": [ "6711c76d-1675-493b-9d9a-0f010a865730" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210811T005058Z:6711c76d-1675-493b-9d9a-0f010a865730" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14990" ],
+        "x-ms-correlation-request-id": [ "50c0dbbe-bd7c-4ecb-9dfc-3ea57077d1d7" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210816T232443Z:50c0dbbe-bd7c-4ecb-9dfc-3ea57077d1d7" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Wed, 11 Aug 2021 00:50:58 GMT" ]
+        "Date": [ "Mon, 16 Aug 2021 23:24:43 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2499" ],
+        "Content-Length": [ "2491" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/demok8s\",\"name\":\"redmond/demok8s\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/demok8s/providers/Microsoft.ContainerService/managedClusters/demok8s\",\"name\":\"demok8s\",\"location\":\"redmond\",\"creationDate\":\"2021-08-05T20:49:51+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/moassafcluster\",\"name\":\"redmond/moassafcluster\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/moassafRG/providers/Microsoft.ContainerService/managedClusters/moassafcluster\",\"name\":\"moassafcluster\",\"location\":\"redmond\",\"creationDate\":\"2021-08-11T00:05:56+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.19.11\",\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/moassafclustercni\",\"name\":\"redmond/moassafclustercni\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/moassafRG/providers/Microsoft.ContainerService/managedClusters/moassafclustercni\",\"name\":\"moassafclustercni\",\"location\":\"redmond\",\"creationDate\":\"2021-08-03T17:39:40+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Failed\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/testdnscluster\",\"name\":\"redmond/testdnscluster\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/testdnsrg/providers/Microsoft.ContainerService/managedClusters/testdnscluster\",\"name\":\"testdnscluster\",\"location\":\"redmond\",\"creationDate\":\"2021-08-03T21:31:41+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Succeeded\"}}]}",
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/demok8s\",\"name\":\"redmond/demok8s\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/demok8s/providers/Microsoft.ContainerService/managedClusters/demok8s\",\"name\":\"demok8s\",\"location\":\"redmond\",\"creationDate\":\"2021-08-05T20:49:51+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/moassafakscni\",\"name\":\"redmond/moassafakscni\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/moassafRG/providers/Microsoft.ContainerService/managedClusters/moassafakscni\",\"name\":\"moassafakscni\",\"location\":\"redmond\",\"creationDate\":\"2021-08-11T18:21:30+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Failed\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/moassafclustercni\",\"name\":\"redmond/moassafclustercni\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/moassafRG/providers/Microsoft.ContainerService/managedClusters/moassafclustercni\",\"name\":\"moassafclustercni\",\"location\":\"redmond\",\"creationDate\":\"2021-08-03T17:39:40+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Failed\"}},{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/managedclusters/testdnscluster\",\"name\":\"redmond/testdnscluster\",\"type\":\"Microsoft.ContainerService.Admin/locations/managedclusters\",\"properties\":{\"id\":\"/subscriptions/650c424d-9945-4897-98ff-d33c9222be8b/resourcegroups/testdnsrg/providers/Microsoft.ContainerService/managedClusters/testdnscluster\",\"name\":\"testdnscluster\",\"location\":\"redmond\",\"creationDate\":\"2021-08-03T21:31:41+00:00\",\"subscriptionId\":\"650c424d-9945-4897-98ff-d33c9222be8b\",\"orchestratorVersion\":\"1.20.7\",\"provisioningState\":\"Succeeded\"}}]}",
       "isContentBase64": false
     }
   }
