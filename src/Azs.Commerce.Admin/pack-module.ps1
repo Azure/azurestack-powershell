@@ -11,18 +11,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ----------------------------------------------------------------------------------
-$envFile = 'env.json'
-if ($TestMode -eq 'live') {
-    $envFile = 'localEnv.json'
-}
-
-if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
-    $envFilePath = Join-Path $PSScriptRoot $envFile
-} else {
-    $envFilePath = Join-Path $PSScriptRoot '..\$envFile'
-}
-$env = @{}
-if (Test-Path -Path $envFilePath) {
-    $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
-    $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant}
-}
+Write-Host -ForegroundColor Green 'Packing module...'
+dotnet pack $PSScriptRoot --no-build /nologo
+Write-Host -ForegroundColor Green '-------------Done-------------'
