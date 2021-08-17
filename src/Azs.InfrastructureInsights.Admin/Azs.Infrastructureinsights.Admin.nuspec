@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Azs.Infrastructureinsights.Admin</id>
+    <version>1.0.1</version>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://aka.ms/azps-license</licenseUrl>
+    <projectUrl>https://github.com/Azure/azurestack-powershell</projectUrl>
+    <description>Microsoft AzureStack PowerShell: InfrastructureInsights Admin cmdlets</description>
+    <releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell.</releaseNotes>
+    <copyright>Microsoft Corporation. All rights reserved.</copyright>
+    <tags>AzureStack ResourceManager ARM PSModule</tags>
+    <dependencies>
+      <dependency id="Az.Accounts" version="[2.2.8]" />
+      <dependency id="Az.Resources" version="[0.11.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Azs.Infrastructureinsights.Admin.format.ps1xml" />
+    <file src="Azs.Infrastructureinsights.Admin.psd1" />
+    <file src="Azs.Infrastructureinsights.Admin.psm1" />
+    <!-- https://github.com/NuGet/Home/issues/3584 -->
+    <file src="bin/Azs.Infrastructureinsights.Admin.private.dll" target="bin" />
+    <file src="bin\Azs.Infrastructureinsights.Admin.private.deps.json" target="bin" />
+    <file src="internal\**\*.*" exclude="internal\readme.md" target="internal" />
+    <file src="custom\**\*.*" exclude="custom\readme.md;custom\**\*.cs" target="custom" />
+    <file src="docs\**\*.md" exclude="docs\readme.md" target="docs" />
+    <file src="exports\**\ProxyCmdletDefinitions.ps1" target="exports" />
+    <file src="utils\**\*.*" target="utils" />
+  </files>
+</package>
