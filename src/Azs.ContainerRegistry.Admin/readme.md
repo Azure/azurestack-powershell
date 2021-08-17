@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 0.1.0
+module-version: 0.2.0
 service-name: ContainerRegistryAdmin
 
 ### File Renames
