@@ -1,8 +1,8 @@
 {
-  "Quota+[NoContext]+TestListQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestListQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "2" ],
@@ -39,10 +39,10 @@
       "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota\",\"name\":\"AComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist\",\"name\":\"AComputeQuotaThatDoesNotExist\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2\",\"name\":\"AComputeQuotaThatDoesNotExist2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota\",\"name\":\"MyNewComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":99,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
     }
   },
-  "Quota+[NoContext]+TestGetQuota+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestGetQuota+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "3" ],
@@ -79,10 +79,10 @@
       "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota\",\"name\":\"AComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist\",\"name\":\"AComputeQuotaThatDoesNotExist\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2\",\"name\":\"AComputeQuotaThatDoesNotExist2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota\",\"name\":\"MyNewComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":99,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
     }
   },
-  "Quota+[NoContext]+TestGetQuota+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestGetQuota+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2021-01-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "4" ],
@@ -119,10 +119,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota\",\"name\":\"AComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "5" ],
@@ -159,10 +159,10 @@
       "Content": "{\"value\":[{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota\",\"name\":\"AComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist\",\"name\":\"AComputeQuotaThatDoesNotExist\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2\",\"name\":\"AComputeQuotaThatDoesNotExist2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota\",\"name\":\"MyNewComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":99,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}},{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}]}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2021-01-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "6" ],
@@ -199,10 +199,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuota\",\"name\":\"AComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist?api-version=2018-02-09+3": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist?api-version=2021-01-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "7" ],
@@ -239,10 +239,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist\",\"name\":\"AComputeQuotaThatDoesNotExist\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2?api-version=2021-01-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "8" ],
@@ -279,10 +279,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/AComputeQuotaThatDoesNotExist2\",\"name\":\"AComputeQuotaThatDoesNotExist2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota?api-version=2018-02-09+5": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota?api-version=2021-01-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default%20Quota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default%20Quota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "9" ],
@@ -319,10 +319,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/Default Quota\",\"name\":\"Default Quota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":20,\"coresLimit\":50,\"availabilitySetCount\":10,\"vmScaleSetCount\":20,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota?api-version=2018-02-09+6": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota?api-version=2021-01-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "10" ],
@@ -359,10 +359,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/MyNewComputeQuota\",\"name\":\"MyNewComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":99,\"coresLimit\":99,\"availabilitySetCount\":9,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":4096,\"maxAllocationPremiumManagedDisksAndSnapshots\":4096}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09+7": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2021-01-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "11" ],
@@ -399,10 +399,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/myQuota\",\"name\":\"myQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2018-02-09+8": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2021-01-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "12" ],
@@ -439,10 +439,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/TestingSettingsToZeroIssue\",\"name\":\"TestingSettingsToZeroIssue\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":25,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
     }
   },
-  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2018-02-09+9": {
+  "Quota+[NoContext]+TestGetAllQuotas+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2021-01-01+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "13" ],
@@ -479,10 +479,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/VaaSSDKTestComputeQuota\",\"name\":\"VaaSSDKTestComputeQuota\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":500,\"coresLimit\":400,\"availabilitySetCount\":2000,\"vmScaleSetCount\":2000,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "15" ],
@@ -521,10 +521,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0\",\"name\":\"testQuota0\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01+2": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "17" ],
@@ -563,10 +563,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1\",\"name\":\"testQuota1\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":1,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+3": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "19" ],
@@ -605,10 +605,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2\",\"name\":\"testQuota2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01+4": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "21" ],
@@ -647,10 +647,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3\",\"name\":\"testQuota3\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+5": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01+5": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "23" ],
@@ -689,10 +689,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4\",\"name\":\"testQuota4\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+6": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01+6": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "25" ],
@@ -731,10 +731,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5\",\"name\":\"testQuota5\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+7": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01+7": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "27" ],
@@ -773,10 +773,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6\",\"name\":\"testQuota6\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+8": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01+8": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 100,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 100,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 100,\r\n    \"virtualMachineCount\": 100,\r\n    \"vmScaleSetCount\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "29" ],
@@ -815,10 +815,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7\",\"name\":\"testQuota7\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":100,\"vmScaleSetCount\":100,\"maxAllocationStandardManagedDisksAndSnapshots\":100,\"maxAllocationPremiumManagedDisksAndSnapshots\":100}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+9": {
+  "Quota+[NoContext]+TestCreateQuota+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01+9": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1000,\r\n    \"coresLimit\": 1000,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1000,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1000,\r\n    \"virtualMachineCount\": 1000,\r\n    \"vmScaleSetCount\": 1000\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "31" ],
@@ -857,10 +857,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8\",\"name\":\"testQuota8\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1000,\"coresLimit\":1000,\"availabilitySetCount\":1000,\"vmScaleSetCount\":1000,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+10": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01+10": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "32" ],
@@ -896,10 +896,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+11": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01+11": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "33" ],
@@ -935,10 +935,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+12": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01+12": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "34" ],
@@ -974,10 +974,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+13": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01+13": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "35" ],
@@ -1013,10 +1013,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+14": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01+14": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "36" ],
@@ -1052,10 +1052,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+15": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01+15": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "37" ],
@@ -1091,10 +1091,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+16": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01+16": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "38" ],
@@ -1130,10 +1130,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+17": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01+17": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "39" ],
@@ -1169,10 +1169,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+18": {
+  "Quota+[NoContext]+TestCreateQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01+18": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "40" ],
@@ -1208,10 +1208,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "42" ],
@@ -1250,10 +1250,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0\",\"name\":\"testQuota0\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01+2": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "44" ],
@@ -1292,10 +1292,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1\",\"name\":\"testQuota1\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":1,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+3": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "46" ],
@@ -1334,10 +1334,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2\",\"name\":\"testQuota2\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":1,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01+4": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "48" ],
@@ -1376,10 +1376,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3\",\"name\":\"testQuota3\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+5": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01+5": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "50" ],
@@ -1418,10 +1418,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4\",\"name\":\"testQuota4\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+6": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01+6": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 0,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "52" ],
@@ -1460,10 +1460,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5\",\"name\":\"testQuota5\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":0}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+7": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01+7": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 0,\r\n    \"coresLimit\": 0,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 0,\r\n    \"virtualMachineCount\": 0,\r\n    \"vmScaleSetCount\": 0\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "54" ],
@@ -1502,10 +1502,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6\",\"name\":\"testQuota6\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":0,\"coresLimit\":0,\"availabilitySetCount\":0,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":0,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+8": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01+8": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 100,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 100,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 100,\r\n    \"virtualMachineCount\": 100,\r\n    \"vmScaleSetCount\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "56" ],
@@ -1544,10 +1544,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7\",\"name\":\"testQuota7\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":100,\"vmScaleSetCount\":100,\"maxAllocationStandardManagedDisksAndSnapshots\":100,\"maxAllocationPremiumManagedDisksAndSnapshots\":100}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+9": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01+9": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1000,\r\n    \"coresLimit\": 1000,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1000,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1000,\r\n    \"virtualMachineCount\": 1000,\r\n    \"vmScaleSetCount\": 1000\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "58" ],
@@ -1586,10 +1586,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8\",\"name\":\"testQuota8\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1000,\"coresLimit\":1000,\"availabilitySetCount\":1000,\"vmScaleSetCount\":1000,\"maxAllocationStandardManagedDisksAndSnapshots\":1000,\"maxAllocationPremiumManagedDisksAndSnapshots\":1000}}"
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09+10": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01+10": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota0?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "59" ],
@@ -1625,10 +1625,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09+11": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01+11": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota1?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "60" ],
@@ -1664,10 +1664,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09+12": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01+12": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota2?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "61" ],
@@ -1703,10 +1703,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09+13": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01+13": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota3?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "62" ],
@@ -1742,10 +1742,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09+14": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01+14": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota4?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "63" ],
@@ -1781,10 +1781,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09+15": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01+15": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota5?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "64" ],
@@ -1820,10 +1820,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09+16": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01+16": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota6?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "65" ],
@@ -1859,10 +1859,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09+17": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01+17": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota7?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "66" ],
@@ -1898,10 +1898,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09+18": {
+  "Quota+[NoContext]+TestCreateQuotaWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01+18": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuota8?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "67" ],
@@ -1937,10 +1937,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestDeleteNonExistingQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestDeleteNonExistingQuota+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2021-01-01+1": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/thisdoesnotexistandifitdoesoops?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "81" ],
@@ -1976,10 +1976,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 10,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 2048,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 2048,\r\n    \"virtualMachineCount\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "83" ],
@@ -2018,10 +2018,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":10,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "84" ],
@@ -2058,10 +2058,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":10,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+3": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "85" ],
@@ -2100,10 +2100,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "86" ],
@@ -2140,10 +2140,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+5": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+5": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "87" ],
@@ -2182,10 +2182,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+6": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "88" ],
@@ -2222,10 +2222,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+7": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+7": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "89" ],
@@ -2264,10 +2264,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+8": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "90" ],
@@ -2304,10 +2304,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+9": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+9": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 2\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "91" ],
@@ -2346,10 +2346,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+10": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+10": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "92" ],
@@ -2385,10 +2385,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDelete+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+4": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "92" ],
@@ -2424,10 +2424,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+4": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "92" ],
@@ -2463,10 +2463,10 @@
       "Content": null
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+1": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+1": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 10,\r\n    \"coresLimit\": 100,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 2048,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 2048,\r\n    \"virtualMachineCount\": 100\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "94" ],
@@ -2505,10 +2505,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":10,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+2": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "95" ],
@@ -2545,10 +2545,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":100,\"coresLimit\":100,\"availabilitySetCount\":10,\"vmScaleSetCount\":0,\"maxAllocationStandardManagedDisksAndSnapshots\":2048,\"maxAllocationPremiumManagedDisksAndSnapshots\":2048}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+3": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+3": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 1,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "96" ],
@@ -2587,10 +2587,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+4": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "97" ],
@@ -2627,10 +2627,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":1,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+5": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+5": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 1,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "98" ],
@@ -2669,10 +2669,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+6": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "99" ],
@@ -2709,10 +2709,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":1,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+7": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+7": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 1\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "100" ],
@@ -2751,10 +2751,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+8": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "101" ],
@@ -2791,10 +2791,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":1,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+9": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+9": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": "{\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"availabilitySetCount\": 2,\r\n    \"coresLimit\": 1,\r\n    \"maxAllocationPremiumManagedDisksAndSnapshots\": 1,\r\n    \"maxAllocationStandardManagedDisksAndSnapshots\": 1,\r\n    \"virtualMachineCount\": 2,\r\n    \"vmScaleSetCount\": 2\r\n  }\r\n}",
       "Headers": {
         "x-ms-unique-id": [ "102" ],
@@ -2833,10 +2833,10 @@
       "Content": "{\"id\":\"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete\",\"name\":\"testQuotaCreateUpdateDelete\",\"type\":\"Microsoft.Compute.Admin/quotas\",\"location\":\"northwest\",\"properties\":{\"virtualMachineCount\":2,\"coresLimit\":1,\"availabilitySetCount\":2,\"vmScaleSetCount\":2,\"maxAllocationStandardManagedDisksAndSnapshots\":1,\"maxAllocationPremiumManagedDisksAndSnapshots\":1}}"
     }
   },
-  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09+10": {
+  "Quota+[NoContext]+TestQuotaCreateUpdateDeleteWithAlias+$DELETE+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01+10": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2018-02-09",
+      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/quotas/testQuotaCreateUpdateDelete?api-version=2021-01-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "103" ],
