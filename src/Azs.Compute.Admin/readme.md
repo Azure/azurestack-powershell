@@ -68,6 +68,12 @@ psm1: Azs.Compute.Admin.psm1
 ### Parameter default values
 ``` yaml
 directive:
+    # Prepend Compute for the Feature cmdlets
+  - where:
+      subject: Feature*
+    set:
+      subject-prefix: Compute
+
     # Prepend Compute for the Quota cmdlets
   - where:
       subject: Quota
@@ -79,6 +85,12 @@ directive:
       subject: ScaleUnit
     set:
       subject-prefix: Compute
+
+    # Rename Tenant to User
+  - where:
+      subject: Tenant*
+    set:
+      subject: User
 
     # Rename New-AzsPlatformImage to Add-AzsPlatformImage
   - where:
