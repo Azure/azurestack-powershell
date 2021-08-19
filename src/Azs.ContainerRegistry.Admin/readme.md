@@ -75,13 +75,6 @@ directive:
     set:
       subject-prefix: ContainerRegistry
 
-    # Rename Get-AzsContainerRegistry to Read-AzsContainerRegistry
-  - where:
-      verb: Get
-      subject: ContainerRegistry
-    set:
-      verb: Read
-
     # Rename cmdlet parameter name in ContainerRegistrySetup
   - where:
       subject: ContainerRegistrySetup

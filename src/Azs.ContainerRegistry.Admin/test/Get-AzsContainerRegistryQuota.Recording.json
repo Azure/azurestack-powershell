@@ -1,54 +1,13 @@
 {
-  "Get-AzsContainerRegistryQuota+[NoContext]+TestListAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestListAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "3" ],
-        "x-ms-client-request-id": [ "709deaf3-7180-4d0e-8230-18c8baeee9b4" ],
-        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
-        "FullCommandName": [ "Get-AzsContainerRegistryQuota_List" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "8fd1eefa-aa3a-450c-bcf3-7b8dbb73e973" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14812" ],
-        "x-ms-correlation-request-id": [ "a25b38e0-2a04-4445-af53-4f07b57bbaa2" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210805T012056Z:a25b38e0-2a04-4445-af53-4f07b57bbaa2" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 05 Aug 2021 01:20:56 GMT" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "316" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota\",\"name\":\"redmond/Default Quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":100,\"numberOfRegistries\":10}}]}",
-      "isContentBase64": false
-    }
-  },
-  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetContainerRegistryQuota+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "4" ],
-        "x-ms-client-request-id": [ "9ce6286c-4c39-41f0-bbc3-3bdf10aa37b3" ],
+        "x-ms-client-request-id": [ "e8b858ac-2df0-4537-89b6-5523e6208374" ],
         "CommandName": [ "Get-AzsContainerRegistryQuota" ],
         "FullCommandName": [ "Get-AzsContainerRegistryQuota_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -63,74 +22,33 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "5c3bf296-9dcb-4790-97b7-f3f53f70b757" ],
+        "x-ms-request-id": [ "4e50191c-412d-4427-9236-4c31c346562c" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14810" ],
-        "x-ms-correlation-request-id": [ "00170810-3f4e-4c4b-95f5-625decb4e3aa" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210805T012058Z:00170810-3f4e-4c4b-95f5-625decb4e3aa" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14914" ],
+        "x-ms-correlation-request-id": [ "b8e640ba-49c0-44eb-96d4-4fd13a052eae" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181215Z:b8e640ba-49c0-44eb-96d4-4fd13a052eae" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 05 Aug 2021 01:20:57 GMT" ]
+        "Date": [ "Thu, 19 Aug 2021 18:12:14 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "316" ],
+        "Content-Length": [ "611" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota\",\"name\":\"redmond/Default Quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":100,\"numberOfRegistries\":10}}]}",
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota\",\"name\":\"redmond/Default quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}},{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota\",\"name\":\"redmond/testquota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}]}",
       "isContentBase64": false
     }
   },
-  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetContainerRegistryQuota+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota?api-version=2019-11-01-preview+2": {
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetContainerRegistryQuota+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default%20Quota?api-version=2019-11-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "5" ],
-        "x-ms-client-request-id": [ "4afc6765-644a-45e2-95f5-b0a967cba17f" ],
-        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
-        "FullCommandName": [ "Get-AzsContainerRegistryQuota_GetViaIdentity" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "f6081870-ea5a-48f1-84f6-70866f1dae90" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14809" ],
-        "x-ms-correlation-request-id": [ "4c4beea1-c91f-4a7e-99b3-357bdfdb4d95" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210805T012058Z:4c4beea1-c91f-4a7e-99b3-357bdfdb4d95" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 05 Aug 2021 01:20:57 GMT" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "304" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota\",\"name\":\"redmond/Default Quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":100,\"numberOfRegistries\":10}}",
-      "isContentBase64": false
-    }
-  },
-  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "6" ],
-        "x-ms-client-request-id": [ "127e8835-9ae4-4de9-8620-8610ecc68ca8" ],
+        "x-ms-client-request-id": [ "2352b38f-aaa8-484e-9347-7bebc0ee49db" ],
         "CommandName": [ "Get-AzsContainerRegistryQuota" ],
         "FullCommandName": [ "Get-AzsContainerRegistryQuota_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -145,33 +63,33 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "d639aefc-19f3-4336-b605-6b6d7ed3a6a0" ],
+        "x-ms-request-id": [ "d74350f5-5a1f-45d3-bbb8-9df1426aba09" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14807" ],
-        "x-ms-correlation-request-id": [ "85d764a5-e255-4264-9fbd-8f6b78a8d35d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210805T012100Z:85d764a5-e255-4264-9fbd-8f6b78a8d35d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14912" ],
+        "x-ms-correlation-request-id": [ "6918ba9f-0d78-42c7-8aba-9f7e13deffa9" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181217Z:6918ba9f-0d78-42c7-8aba-9f7e13deffa9" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 05 Aug 2021 01:21:00 GMT" ]
+        "Date": [ "Thu, 19 Aug 2021 18:12:17 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "316" ],
+        "Content-Length": [ "611" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"value\":[{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota\",\"name\":\"redmond/Default Quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":100,\"numberOfRegistries\":10}}]}",
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota\",\"name\":\"redmond/Default quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}},{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota\",\"name\":\"redmond/testquota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}]}",
       "isContentBase64": false
     }
   },
-  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota?api-version=2019-11-01-preview+2": {
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetContainerRegistryQuota+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota?api-version=2019-11-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default%20Quota?api-version=2019-11-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default%20quota?api-version=2019-11-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "7" ],
-        "x-ms-client-request-id": [ "3429871a-f70b-4091-8451-6915a29e6e0d" ],
+        "x-ms-unique-id": [ "6" ],
+        "x-ms-client-request-id": [ "d62ade18-9508-455e-8ed1-6d7ee85f8d39" ],
         "CommandName": [ "Get-AzsContainerRegistryQuota" ],
         "FullCommandName": [ "Get-AzsContainerRegistryQuota_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -186,21 +104,144 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-request-id": [ "e6b1ed8e-d791-4ee5-92e8-0da3ee31d260" ],
+        "x-ms-request-id": [ "50050688-d375-4e18-bf92-74684ed9c7f3" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14806" ],
-        "x-ms-correlation-request-id": [ "5a88e263-6c77-4a62-9928-dc634f7ebab3" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210805T012100Z:5a88e263-6c77-4a62-9928-dc634f7ebab3" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14911" ],
+        "x-ms-correlation-request-id": [ "e2661a4a-1fa8-424d-b177-41d7efdc48f4" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181217Z:e2661a4a-1fa8-424d-b177-41d7efdc48f4" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 05 Aug 2021 01:21:00 GMT" ]
+        "Date": [ "Thu, 19 Aug 2021 18:12:17 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "304" ],
+        "Content-Length": [ "303" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/80cc99fb-a34a-449e-a880-24f85d73cb04/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default Quota\",\"name\":\"redmond/Default Quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":100,\"numberOfRegistries\":10}}",
+      "Content": "{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota\",\"name\":\"redmond/Default quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "7" ],
+        "x-ms-client-request-id": [ "3386c1e8-f676-4ca9-8298-9a977a72385b" ],
+        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryQuota_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "445cbc18-93d8-4704-8975-8fc8ae1c5513" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14909" ],
+        "x-ms-correlation-request-id": [ "94462c49-851e-46d5-82a3-1b477b04fd27" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181219Z:94462c49-851e-46d5-82a3-1b477b04fd27" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 19 Aug 2021 18:12:18 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "611" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota\",\"name\":\"redmond/Default quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}},{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota\",\"name\":\"redmond/testquota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}]}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota?api-version=2019-11-01-preview+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default%20quota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "8" ],
+        "x-ms-client-request-id": [ "422bca38-314e-4049-8283-7d38d6fa4c52" ],
+        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryQuota_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "9205fa72-6c95-4809-adc1-7451e1dbe332" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14908" ],
+        "x-ms-correlation-request-id": [ "58c37d91-13a3-4709-8ca9-c31118e96307" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181219Z:58c37d91-13a3-4709-8ca9-c31118e96307" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 19 Aug 2021 18:12:18 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "303" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/Default quota\",\"name\":\"redmond/Default quota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsContainerRegistryQuota+[NoContext]+TestGetAllContainerRegistryQuotas+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota?api-version=2019-11-01-preview+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "9" ],
+        "x-ms-client-request-id": [ "6f768574-0f06-48ac-ba0f-aeb17cd5434a" ],
+        "CommandName": [ "Get-AzsContainerRegistryQuota" ],
+        "FullCommandName": [ "Get-AzsContainerRegistryQuota_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "334f6881-8abe-4020-888b-de1b24c2597c" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14907" ],
+        "x-ms-correlation-request-id": [ "1639c9a4-7503-48c5-9365-296c9605bf0f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181219Z:1639c9a4-7503-48c5-9365-296c9605bf0f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 19 Aug 2021 18:12:19 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "295" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota\",\"name\":\"redmond/testquota\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/quotas\",\"properties\":{\"capacityPerRegistryInGiB\":20,\"numberOfRegistries\":20}}",
       "isContentBase64": false
     }
   }
