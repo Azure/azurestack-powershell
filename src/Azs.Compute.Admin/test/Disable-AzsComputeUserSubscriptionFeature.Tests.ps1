@@ -15,7 +15,7 @@ Describe 'Disable-AzsComputeUserSubscriptionFeature' {
     It 'TestDisableComputeUserSubscriptionFeature' -Skip:$('TestDisableComputeUserSubscriptionFeature' -in $global:SkippedTests) {
         $global:TestName = 'TestDisableComputeUserSubscriptionFeature'
 
-        $tenantSubscriptionId = [guid]::NewGuid().ToString()
+        $tenantSubscriptionId = $env.TenantSubscriptionId
         $feature = Get-AzsComputeFeature -Name Microsoft.Compute.EmergencyVMAccess -Location $env.Location
         $originalLastSubscriptionId = $feature.EnabledTenantSubscriptionId[-1]
         Enable-AzsComputeUserSubscriptionFeature -TenantSubscriptionId $tenantSubscriptionId -FeatureName Microsoft.Compute.EmergencyVMAccess -Location $env.Location -SubscriptionId $env.SubscriptionId

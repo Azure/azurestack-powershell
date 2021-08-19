@@ -93,9 +93,9 @@ Describe 'Get-AzsPlatformImage' {
         $global:TestName = 'TestCreatePlatformImage'
 
         
-        $script:Publisher = "Canonical";
-        $script:Offer = "UbuntuServer";
-        $script:Sku = "16.04-LTS";
+        $script:Publisher = "MicrosoftCrpTeam";
+        $script:Offer = "CrpPester";
+        $script:Sku = "CrpPester";
         $script:Version = "1.0.0";
 
         $image = Add-AzsPlatformImage `
@@ -133,10 +133,10 @@ Describe 'Get-AzsPlatformImage' {
     It "TestCreateAndDeletePlatformImage" -Skip:$('TestCreateAndDeletePlatformImage' -in $global:SkippedTests) {
         $global:TestName = 'TestCreateAndDeletePlatformImage'
 
-        $script:Publisher = "Canonical";
-        $script:Offer = "UbuntuServer";
-        $script:Sku = "16.04-LTS";
-        $script:Version = "1.0.0";
+        $script:Publisher = "MicrosoftCrpTeam";
+        $script:Offer = "CrpPester";
+        $script:Sku = "CrpPester";
+        $script:Version = "1.0.1";
 
         $image = Add-AzsPlatformImage `
             -Publisher $script:Publisher `

@@ -15,11 +15,14 @@ Describe 'Enable-AzsComputeUserSubscriptionFeature' {
     It 'TestEnableComputeUserSubscriptionFeature' -Skip:$('TestEnableComputeUserSubscriptionFeature' -in $global:SkippedTests) {
         $global:TestName = 'TestEnableComputeUserSubscriptionFeature'
 
-        $tenantSubscriptionId = [guid]::NewGuid().ToString()
+        $tenantSubscriptionId = $env.TenantSubscriptionId
         $feature = Get-AzsComputeFeature -Name Microsoft.Compute.EmergencyVMAccess -Location $env.Location
         $feature.EnabledTenantSubscriptionId[-1] | Should Not Be $tenantSubscriptionId
         Enable-AzsComputeUserSubscriptionFeature  -TenantSubscriptionId $tenantSubscriptionId -FeatureName Microsoft.Compute.EmergencyVMAccess -Location $env.Location -SubscriptionId $env.SubscriptionId
         $feature = Get-AzsComputeFeature -Name Microsoft.Compute.EmergencyVMAccess -Location $env.Location -SubscriptionId $env.SubscriptionId
         $feature.EnabledTenantSubscriptionId[-1] | Should Be $tenantSubscriptionId
+        Disable-AzsComputeUserSubscriptionFeature -TenantSubscriptionId $tenantSubscriptionId -FeatureName Microsoft.Compute.EmergencyVMAccess -Location $env.Location -SubscriptionId $env.SubscriptionId
+        $feature = Get-AzsComputeFeature -Name Microsoft.Compute.EmergencyVMAccess -Location $env.Location
+        $feature.EnabledTenantSubscriptionId[-1] | Should Not Be $tenantSubscriptionId
     }
 }
