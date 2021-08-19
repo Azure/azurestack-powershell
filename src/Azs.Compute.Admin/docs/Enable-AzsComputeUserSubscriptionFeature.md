@@ -1,46 +1,46 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/disable-azstenantsubscriptionfeature
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/enable-azscomputeuserSubscriptionfeature
 schema: 2.0.0
 ---
 
-# Disable-AzsTenantSubscriptionFeature
+# Enable-AzsComputeUserSubscriptionFeature
 
 ## SYNOPSIS
-Disable the tenant subscription feature.
+Enable the tenant subscription feature.
 
 ## SYNTAX
 
-### DisableExpanded (Default)
+### EnableExpanded (Default)
 ```
-Disable-AzsTenantSubscriptionFeature -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
+Enable-AzsComputeUserSubscriptionFeature -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
  [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Disable
+### Enable
 ```
-Disable-AzsTenantSubscriptionFeature -FeatureName <String>
+Enable-AzsComputeUserSubscriptionFeature -FeatureName <String>
  -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-Location <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DisableViaIdentity
+### EnableViaIdentity
 ```
-Disable-AzsTenantSubscriptionFeature -InputObject <IComputeAdminIdentity>
+Enable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity>
  -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-DefaultProfile <PSObject>]
  [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DisableViaIdentityExpanded
+### EnableViaIdentityExpanded
 ```
-Disable-AzsTenantSubscriptionFeature -InputObject <IComputeAdminIdentity> [-TenantSubscriptionId <String>]
+Enable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity> [-TenantSubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Disable the tenant subscription feature.
+Enable the tenant subscription feature.
 
 ## EXAMPLES
 
@@ -84,7 +84,7 @@ Name of the feature.
 
 ```yaml
 Type: System.String
-Parameter Sets: Disable, DisableExpanded
+Parameter Sets: Enable, EnableExpanded
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: DisableViaIdentity, DisableViaIdentityExpanded
+Parameter Sets: EnableViaIdentity, EnableViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Disable, DisableExpanded
+Parameter Sets: Enable, EnableExpanded
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Disable, DisableExpanded
+Parameter Sets: Enable, EnableExpanded
 Aliases:
 
 Required: False
@@ -162,7 +162,7 @@ To construct, see NOTES section for TENANTSUBSCRIPTIONFEATURESETTING properties 
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
-Parameter Sets: Disable, DisableViaIdentity
+Parameter Sets: Enable, EnableViaIdentity
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ The tenant subscription identifier.
 
 ```yaml
 Type: System.String
-Parameter Sets: DisableExpanded, DisableViaIdentityExpanded
+Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
 Required: False
