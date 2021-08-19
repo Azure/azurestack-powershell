@@ -1,4 +1,8 @@
-. (Join-Path $PSScriptRoot 'loadEnvJson.ps1')
+$loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
+if (-Not (Test-Path -Path $loadEnvPath)) {
+    $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
+}
+. ($loadEnvPath)
 
 $TestRecordingFile = Join-Path $PSScriptRoot 'Add-AzsPlatformImage.Recording.json'
 $currentPath = $PSScriptRoot
@@ -73,7 +77,7 @@ Describe 'Get-AzsPlatformImage' {
             break
         }
     }
-<# A lot of recordings are missing from this test
+
     It "TestGetAllPlatformImages" -Skip:$('TestGetAllPlatformImages' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllPlatformImages'
 
@@ -84,9 +88,6 @@ Describe 'Get-AzsPlatformImage' {
             AssertSame -Expected $platformImage -Found $result
         }
     }
-#>
-
-<# TODO: UnComment once the test recordings are added for these tests.
 
     It "TestCreatePlatformImage" -Skip:$('TestCreatePlatformImage' -in $global:SkippedTests) {
         $global:TestName = 'TestCreatePlatformImage'
@@ -103,7 +104,7 @@ Describe 'Get-AzsPlatformImage' {
             -Sku $script:Sku `
             -Version $script:Version `
             -OsType "Linux" `
-            -OsUri $global:VHDUri
+            -OsUri $env.VHDUri
 
         $image | Should Not Be $null
         
@@ -112,8 +113,8 @@ Describe 'Get-AzsPlatformImage' {
         Write-Debug $image.OsUri
 
         Write-Debug "Global VHDUri:"
-        Write-Debug $global:VHDUri
-        $image.OsUri | Should be $global:VHDUri
+        Write-Debug $env.VHDUri
+        $image.OsUri | Should be $env.VHDUri
         $image.OsType | Should be "Linux"
 
         while ($image.ProvisioningState -eq "Creating") {
@@ -143,10 +144,10 @@ Describe 'Get-AzsPlatformImage' {
             -Sku $script:Sku `
             -Version $script:Version `
             -OsType "Linux" `
-            -OsUri $global:VHDUri
+            -OsUri $env.VHDUri
 
         $image | Should Not Be $null
-        $image.OsUri | Should be $global:VHDUri
+        $image.OsUri | Should be $env.VHDUri
 
         while ($image.ProvisioningState -ne "Succeeded") {
             $image = Get-AzsPlatformImage `
@@ -158,5 +159,4 @@ Describe 'Get-AzsPlatformImage' {
         $image.ProvisioningState | Should be "Succeeded"
         Remove-AzsPlatformImage -Publisher $script:Publisher -Offer $script:Offer -Version $script:version -Sku $script:Sku
     }
-    #>
 }
