@@ -4,7 +4,7 @@
 ``` yaml
 azure: true
 powershell: true
-branch: master
+branch: main
 repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
 metadata:
   authors: Microsoft Corporation
