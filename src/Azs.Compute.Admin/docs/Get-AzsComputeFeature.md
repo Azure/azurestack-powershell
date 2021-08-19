@@ -1,11 +1,11 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azsfeature
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azscomputefeature
 schema: 2.0.0
 ---
 
-# Get-AzsFeature
+# Get-AzsComputeFeature
 
 ## SYNOPSIS
 Get an existing feature.
@@ -14,19 +14,19 @@ Get an existing feature.
 
 ### List (Default)
 ```
-Get-AzsFeature [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzsComputeFeature [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-AzsFeature -Name <String> [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Get-AzsComputeFeature -Name <String> [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzsFeature -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzsComputeFeature -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
