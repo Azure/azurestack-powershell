@@ -1,7 +1,7 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/disable-azscomputeuserSubscriptionfeature
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/disable-azscomputeusersubscriptionfeature
 schema: 2.0.0
 ---
 
@@ -14,9 +14,9 @@ Disable the tenant subscription feature.
 
 ### DisableExpanded (Default)
 ```
-Disable-AzsComputeUserSubscriptionFeature -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
- [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Disable-AzsComputeUserSubscriptionFeature -FeatureName <String> [-Location <String>]
+ [-SubscriptionId <String>] [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Disable
@@ -35,8 +35,9 @@ Disable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity>
 
 ### DisableViaIdentityExpanded
 ```
-Disable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity> [-TenantSubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Disable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity>
+ [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,23 +45,12 @@ Disable the tenant subscription feature.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Disable-AzsComputeUserSubscriptionFeature -TenantSubscriptionId 4d105157-d6b2-42db-a3a3-56da6674183a -FeatureName Microsoft.Compute.EmergencyVMAccess -Location local
 ```
 
-{{ Add description here }}
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 

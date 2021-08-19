@@ -47,9 +47,10 @@ Create a Virtual Machine Extension Image with publisher, version.
 
 ## EXAMPLES
 
-### Example 1: Add-AzsVMExtension
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> Add-AzsVMExtension -Location "local" -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0" -ComputeRole "IaaS" -SourceBlob "https://github.com/Microsoft/PowerShell-DSC-for-Linux/archive/v1.1.1-294.zip" -SupportMultipleExtensions -VmOsType "Linux"
+Add-AzsVMExtension -Location "local" -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0" -ComputeRole "IaaS" -SourceBlob "https://github.com/Microsoft/PowerShell-DSC-for-Linux/archive/v1.1.1-294.zip" -SupportMultipleExtensions -VmOsType "Linux"
+```
 
 ExtensionType            : MicroExtension
 TypeHandlerVersion       : 0.1.0
@@ -66,9 +67,6 @@ SupportMultipleExtension : True
 Type                     : Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions
 VMScaleSetEnabled        : False
 VmosType                 : Linux
-```
-
-Use a publicly accessible link to provide the location of the extension, or the URI to an Azure Blob using the SasUri.
 
 ## PARAMETERS
 

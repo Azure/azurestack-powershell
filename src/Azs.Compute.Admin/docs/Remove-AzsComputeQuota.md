@@ -29,12 +29,12 @@ Delete an existing Compute quota.
 
 ## EXAMPLES
 
-### Example 1: Remove a Compute Quota
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> Remove-AzsComputeQuota -Name "AComputeQuota"
+Remove-AzsComputeQuota -Name "AComputeQuota"
 ```
 
-A successful call to remove a compute quota will not return any output
+
 
 ## PARAMETERS
 

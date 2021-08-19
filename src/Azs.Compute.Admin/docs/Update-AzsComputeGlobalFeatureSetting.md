@@ -1,11 +1,11 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/update-azsglobalfeaturesetting
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/update-azscomputeglobalfeaturesetting
 schema: 2.0.0
 ---
 
-# Update-AzsGlobalFeatureSetting
+# Update-AzsComputeGlobalFeatureSetting
 
 ## SYNOPSIS
 Update the feature settings.
@@ -14,29 +14,30 @@ Update the feature settings.
 
 ### UpdateExpanded (Default)
 ```
-Update-AzsGlobalFeatureSetting -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
+Update-AzsComputeGlobalFeatureSetting -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
  [-GlobalFeatureState <GlobalFeatureState>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-AzsGlobalFeatureSetting -FeatureName <String> -GlobalFeatureSetting <IGlobalFeatureSettings>
+Update-AzsComputeGlobalFeatureSetting -FeatureName <String> -GlobalFeatureSetting <IGlobalFeatureSettings>
  [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-AzsGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
+Update-AzsComputeGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
  -GlobalFeatureSetting <IGlobalFeatureSettings> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-AzsGlobalFeatureSetting -InputObject <IComputeAdminIdentity> [-GlobalFeatureState <GlobalFeatureState>]
- [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-AzsComputeGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
+ [-GlobalFeatureState <GlobalFeatureState>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,23 +45,12 @@ Update the feature settings.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+Update-AzsComputeGlobalFeatureSetting -FeatureName Microsoft.Compute.EmergencyVMAccess -GlobalFeatureState Enabled -Location local
 ```
 
-{{ Add description here }}
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 
 ## PARAMETERS
 

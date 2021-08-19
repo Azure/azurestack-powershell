@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Compute.Admin
-Module Guid: 062cd24f-2cc1-4efc-87e6-39a699410a31
+Module Guid: 0069b4df-ccd1-4ae6-bf57-75660b132ca2
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,23 +17,26 @@ Creates a new platform image with given publisher, offer, skus and version.
 ### [Add-AzsVMExtension](Add-AzsVMExtension.md)
 Create a Virtual Machine Extension Image with publisher, version.
 
-### [Disable-AzsTenantSubscriptionFeature](Disable-AzsTenantSubscriptionFeature.md)
+### [Disable-AzsComputeUserSubscriptionFeature](Disable-AzsComputeUserSubscriptionFeature.md)
 Disable the tenant subscription feature.
 
-### [Enable-AzsTenantSubscriptionFeature](Enable-AzsTenantSubscriptionFeature.md)
+### [Enable-AzsComputeUserSubscriptionFeature](Enable-AzsComputeUserSubscriptionFeature.md)
 Enable the tenant subscription feature.
+
+### [Get-AzsComputeFeature](Get-AzsComputeFeature.md)
+Get an existing feature.
 
 ### [Get-AzsComputeQuota](Get-AzsComputeQuota.md)
 Get an existing Compute Quota.
+
+### [Get-AzsComputeScaleUnit](Get-AzsComputeScaleUnit.md)
+Get the scale unit view.
 
 ### [Get-AzsDisk](Get-AzsDisk.md)
 Returns the disk.
 
 ### [Get-AzsDiskMigrationJob](Get-AzsDiskMigrationJob.md)
 Returns the requested disk migration job.
-
-### [Get-AzsFeature](Get-AzsFeature.md)
-Get an existing feature.
 
 ### [Get-AzsPlatformImage](Get-AzsPlatformImage.md)
 Returns the specific platform image matching publisher, offer, skus and version.
@@ -62,6 +65,6 @@ Creates or Updates a Compute Quota with the provided quota parameters.
 ### [Stop-AzsDiskMigrationJob](Stop-AzsDiskMigrationJob.md)
 Cancel a disk migration job.
 
-### [Update-AzsGlobalFeatureSetting](Update-AzsGlobalFeatureSetting.md)
+### [Update-AzsComputeGlobalFeatureSetting](Update-AzsComputeGlobalFeatureSetting.md)
 Update the feature settings.
 

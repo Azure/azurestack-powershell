@@ -34,9 +34,10 @@ Returns requested Virtual Machine Extension Image matching publisher, type, vers
 
 ## EXAMPLES
 
-### Example 1:  Get All VM Extensions
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> Get-AzsVMExtension
+Get-AzsVMExtension
+```
 
 ExtensionType            : IaaSDiagnostics
 TypeHandlerVersion       : 1.11.3.12
@@ -56,9 +57,6 @@ VMScaleSetEnabled        : False
 VmosType                 : Windows
 
 ...
-```
-
-Get a list of all VMExtensions by leaving all parameters blank.
 
 ## PARAMETERS
 
