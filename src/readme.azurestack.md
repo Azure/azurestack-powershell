@@ -6,7 +6,6 @@ azure: true
 powershell: true
 branch: stackadmin2
 repo: https://github.com/Azure/azure-rest-api-specs/tree/$(branch)
-
 metadata:
   authors: Microsoft Corporation
   owners: Microsoft Corporation
