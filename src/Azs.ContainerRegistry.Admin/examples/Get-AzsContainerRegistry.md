@@ -1,6 +1,6 @@
-### Example 1: Read List Azs Container Registries
+### Example 1: Get List Azs Container Registries
 ```powershell
-PS C:\> Read-AzsContainerRegistry
+PS C:\> Get-AzsContainerRegistry
 
 {
     "CreationDate":  "\/Date(1629160842681)\/",

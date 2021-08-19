@@ -3,7 +3,7 @@ if (-Not (Test-Path -Path $loadEnvPath)) {
     $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
 }
 . ($loadEnvPath)
-$TestRecordingFile = Join-Path $PSScriptRoot 'Read-AzsContainerRegistry.Recording.json'
+$TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsContainerRegistry.Recording.json'
 $currentPath = $PSScriptRoot
 while(-not $mockingPath) {
     $mockingPath = Get-ChildItem -Path $currentPath -Recurse -Include 'HttpPipelineMocking.ps1' -File
@@ -11,7 +11,7 @@ while(-not $mockingPath) {
 }
 . ($mockingPath | Select-Object -First 1).FullName
 
-Describe 'Read-AzsContainerRegistry' {
+Describe 'Get-AzsContainerRegistry' {
     BeforeEach {
 
         function ValidateRegistry {
@@ -37,10 +37,10 @@ Describe 'Read-AzsContainerRegistry' {
         $global:Client = $null
     }
 
-    It "TestGetContainerRegistryRegistry" -Skip:$('TestReadContainerRegistry' -in $global:SkippedTests) {
-        $global:TestName = 'TestReadContainerRegistry'
+    It "TestGetContainerRegistryRegistry" -Skip:$('TestGetContainerRegistry' -in $global:SkippedTests) {
+        $global:TestName = 'TestGetContainerRegistry'
 
-        $result = Read-AzsContainerRegistry  
+        $result = Get-AzsContainerRegistry  
         $result  | Should Not Be $null
         ValidateRegistry -Registry $result
     }
