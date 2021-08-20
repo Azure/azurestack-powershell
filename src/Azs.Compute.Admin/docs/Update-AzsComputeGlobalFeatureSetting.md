@@ -88,6 +88,8 @@ Accept wildcard characters: False
 Higher-priority global feature flags.
 To construct, see NOTES section for GLOBALFEATURESETTING properties and create a hash table.
 
+Possible string values of GlobalFeatureSetting are Enabled, Disabled, and TenantSubscriptionLevel. Enabled/Disabled will override features that are enabled with tenant subscription ID. TenantSubscriptionLevel will defer feature enablement to per tenant subscription ID enablement.
+
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings
 Parameter Sets: Update, UpdateViaIdentity
