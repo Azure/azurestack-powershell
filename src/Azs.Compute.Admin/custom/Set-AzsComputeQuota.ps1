@@ -6,9 +6,9 @@ Creates or Updates a Compute Quota with the provided quota parameters.
 .Example
 To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/set-azscomputequota
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota
+Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota
+Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -25,7 +25,7 @@ NEWQUOTA <IQuota>: Holds Compute quota information used to control resource allo
 https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/set-azscomputequota
 #>
 function Set-AzsComputeQuota {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota])]
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota])]
 [CmdletBinding(DefaultParameterSetName='Update', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter()]
@@ -38,7 +38,7 @@ param(
 
     [Parameter(Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20180209.IQuota]
+    [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota]
     # Holds Compute quota information used to control resource allocation.
     # To construct, see NOTES section for NEWQUOTA properties and create a hash table.
     ${NewQuota},
