@@ -22,13 +22,13 @@ param
 ###########
 # EXTRACT
 ###########
-$nupkgs = Get-ChildItem -Path $nupkgPath -Filter *.nupkg
+$nupkgs = Get-ChildItem -Path $NupkgsPath -Filter *.nupkg
 $nupkgs | Out-String
 
-New-Item -Path $extractionPath -ItemType Directory -Force
+New-Item -Path $ExtractionPath -ItemType Directory -Force
 
-$nupkgs | ForEach-Object {Expand-Archive -Path $_.FullName -DestinationPath $([System.IO.Path]::Combine($extractionPath,$_.BaseName)) -Force}
-Write-Host -Message "Extracted nupkg modules to ${extractionPath}."
+$nupkgs | ForEach-Object {Expand-Archive -Path $_.FullName -DestinationPath $([System.IO.Path]::Combine($ExtractionPath,$_.BaseName)) -Force}
+Write-Host -Message "Extracted nupkg modules to ${ExtractionPath}."
 
 ###########
 # VALIDATE
@@ -36,7 +36,7 @@ Write-Host -Message "Extracted nupkg modules to ${extractionPath}."
 
 # Add string of file name to $exclude hashtable to exclude specific files.
 $exclude = @()
-$fileInfos = Get-ChildItem -Path $extractionPath -File -Recurse `
+$fileInfos = Get-ChildItem -Path $ExtractionPath -File -Recurse `
     | Where-Object { $_.Name -notin $exclude } `
     | Where-Object { $_.Extension -in @('.dll','.exe','.msi','.cab','.ps1','.psm1','.psd1','.pssc','.ps1xml') }
 
@@ -45,7 +45,7 @@ Write-Host "Scanning files:`n"
 $filePaths | Out-String
 
 $authenticodeStatuses = $filePaths | Get-AuthenticodeSignature
-Write-Host "Statuses of files in the folder ${extractionPath}:`n"
+Write-Host "Statuses of files in the folder ${ExtractionPath}:`n"
 $authenticodeStatuses | Select-Object -Property Status, Path | Out-String -width 4096
 
 $unsignedFiles = $authenticodeStatuses | Where-Object {$_.Status -eq [System.Management.Automation.SignatureStatus]::NotSigned}
@@ -53,7 +53,7 @@ $unsignedFilesFormatted = $unsignedFiles  | Select-Object -Property Status, Path
 
 if ($unsignedFiles)
 {
-    Write-Host "ERROR: These files in ${extractionPath} are unsigned:"
+    Write-Host "ERROR: These files in ${ExtractionPath} are unsigned:"
     $unsignedFilesFormatted | Out-String -width 4096
     throw "ERROR: The module contains unsigned files."
 }

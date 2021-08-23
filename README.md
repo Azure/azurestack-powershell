@@ -1,4 +1,10 @@
 
+Welcome to AzureStack Powershell repository!
+
+The repository contains the powershell cmdlets for the AzureStack Hub Operator APIs. For the install instructions, please refer to https://aka.ms/azspsh. 
+
+The developer documentation can be found at https://github.com/Azure/azurestack-powershell/wiki/Getting-Started
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
