@@ -1,0 +1,43 @@
+{
+  "Get-AzsContainerRegistrySetupStatus+[NoContext]+TestGetContainerRegistrySetupStatus+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "10" ],
+        "x-ms-client-request-id": [ "a61ceec4-0ec9-4477-8d13-8c2ee3e9105b" ],
+        "CommandName": [ "Get-AzsContainerRegistrySetupStatus" ],
+        "FullCommandName": [ "Get-AzsContainerRegistrySetupStatus_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "62298517-8fe3-4abb-964f-63b5fec33119" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14905" ],
+        "x-ms-correlation-request-id": [ "257fcfb9-6eeb-4a09-a9b8-41dd6e9b764d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181222Z:257fcfb9-6eeb-4a09-a9b8-41dd6e9b764d" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 19 Aug 2021 18:12:22 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "252" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup/value\",\"name\":\"redmond/value\",\"type\":\"Microsoft.ContainerRegistry.Setup/locations/setup\",\"properties\":{\"status\":\"Completed\"}}",
+      "isContentBase64": false
+    }
+  }
+}
