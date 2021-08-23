@@ -1,37 +1,53 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/remove-azscomputequota
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/update-azscomputeglobalfeaturesetting
 schema: 2.0.0
 ---
 
-# Remove-AzsComputeQuota
+# Update-AzsComputeGlobalFeatureSetting
 
 ## SYNOPSIS
-Delete an existing Compute quota.
+Update the feature settings.
 
 ## SYNTAX
 
-### Delete (Default)
+### UpdateExpanded (Default)
 ```
-Remove-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-AzsComputeGlobalFeatureSetting -FeatureName <String> [-Location <String>] [-SubscriptionId <String>]
+ [-GlobalFeatureState <GlobalFeatureState>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Update
 ```
-Remove-AzsComputeQuota -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-AzsComputeGlobalFeatureSetting -FeatureName <String> -GlobalFeatureSetting <IGlobalFeatureSettings>
+ [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-AzsComputeGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
+ -GlobalFeatureSetting <IGlobalFeatureSettings> [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-AzsComputeGlobalFeatureSetting -InputObject <IComputeAdminIdentity>
+ [-GlobalFeatureState <GlobalFeatureState>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an existing Compute quota.
+Update the feature settings.
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Remove-AzsComputeQuota -Name "AComputeQuota"
+Update-AzsComputeGlobalFeatureSetting -FeatureName Microsoft.Compute.EmergencyVMAccess -GlobalFeatureState Enabled -Location local
 ```
 
 
@@ -53,13 +69,61 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -FeatureName
+Name of the feature.
+
+```yaml
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GlobalFeatureSetting
+Higher-priority global feature flags.
+To construct, see NOTES section for GLOBALFEATURESETTING properties and create a hash table.
+
+Possible string values of GlobalFeatureSetting are Enabled, Disabled, and TenantSubscriptionLevel. Enabled/Disabled will override features that are enabled with tenant subscription ID. TenantSubscriptionLevel will defer feature enablement to per tenant subscription ID enablement.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -GlobalFeatureState
+The state of the global feature.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Support.GlobalFeatureState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -74,27 +138,12 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-Name of the quota.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases: QuotaName
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -120,7 +169,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: False
@@ -166,6 +215,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings
+
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 
 ## OUTPUTS
@@ -180,6 +231,9 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+GLOBALFEATURESETTING <IGlobalFeatureSettings>: Higher-priority global feature flags.
+  - `[GlobalFeatureState <GlobalFeatureState?>]`: The state of the global feature.
 
 INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
   - `[DiskId <String>]`: The disk guid as identity.
