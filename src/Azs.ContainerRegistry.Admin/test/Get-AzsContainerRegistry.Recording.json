@@ -1,0 +1,43 @@
+{
+  "Get-AzsContainerRegistry+[NoContext]+TestGetContainerRegistryRegistry+$GET+https://management.azure.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/registries?api-version=2019-11-01-preview+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r1308.masd.stbtest.microsoft.com/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/registries?api-version=2019-11-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "16aa7e29-7714-4ecd-913a-97c229e7d2c2" ],
+        "CommandName": [ "Get-AzsContainerRegistry" ],
+        "FullCommandName": [ "Get-AzsContainerRegistry_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "51433578-a9f8-41b6-ae61-71232a896672" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14920" ],
+        "x-ms-correlation-request-id": [ "0323b032-4ec3-4492-abbe-6aa922153f1c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210819T181209Z:0323b032-4ec3-4492-abbe-6aa922153f1c" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 19 Aug 2021 18:12:09 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "641" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/registries/testregistry01\",\"name\":\"redmond/testregistry01\",\"type\":\"Microsoft.ContainerRegistry.Admin/locations/registries\",\"properties\":{\"registryId\":\"/subscriptions/72b77b1b-3e43-4d00-8b5b-be6beceb7f3a/resourceGroups/acrtenanttestrg/providers/Microsoft.ContainerRegistry/registries/testregistry01\",\"name\":\"testregistry01\",\"location\":\"redmond\",\"creationDate\":\"2021-08-17T00:40:42.6810944Z\",\"subscriptionId\":\"72b77b1b-3e43-4d00-8b5b-be6beceb7f3a\",\"resourceGroup\":\"acrtenanttestrg\",\"registrySizeInBytes\":3011}}]}",
+      "isContentBase64": false
+    }
+  }
+}
