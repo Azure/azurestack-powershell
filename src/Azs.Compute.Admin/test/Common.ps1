@@ -1,3 +1,3 @@
 $global:SkippedTests = @(
-    "TestDeleteNonExistingQuota",
+    "TestDeleteNonExistingQuota"
 )
