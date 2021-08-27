@@ -176,14 +176,18 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
         }
     }
 
-    <# TODO: Uncomment when test recordings for these tests are added 
-    # Apparently CRP will default to a place even if it does not exist
     It "TestListInvalidLocation" -Skip:$('TestListInvalidLocation' -in $global:SkippedTests) {
         $global:TestName = 'TestListInvalidLocation'
-        $quotas = Get-AzsComputeQuota -Location "thisisnotarealplace"
-        $quotas | Should Be $null
+
+        try{
+            $quotas = Get-AzsComputeQuota -Location "thisisnotarealplace" -ErrorAction Stop
+            throw "Expected exception was not thrown."
+        }
+        catch{
+            $_.Exception.Message | Should match "Unsupported quota location"
+        }
     }
-    #>
+    
 
     It "TestDeleteNonExistingQuota" -Skip:$('TestDeleteNonExistingQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestDeleteNonExistingQuota'
@@ -191,37 +195,22 @@ Describe "Quota" -Tags @('Quota', 'Azs.Compute.Admin') {
         { Remove-AzsComputeQuota -Name "thisdoesnotexistandifitdoesoops" -ErrorAction Stop } | Should Throw "The server responded with a Request Error, Status: NotFound"
     }
 
-    <# TODO: Uncomment when test recordings for these tests are added 
     It "TestCreateQuotaOnInvalidLocation" -Skip:$('TestCreateQuotaOnInvalidLocation' -in $global:SkippedTests) {
         $global:TestName = 'TestCreateQuotaOnInvalidLocation'
 
-        $quotaNamePrefix = "testQuota"
+        $name = "testQuota"
         $invalidLocation = "thislocationdoesnotexist"
 
-        $data = @(
-            @( 0, 0, 0, 0, 0, 0, 0 ),
-            @( 1, 0, 0, 0, 0, 0, 1 ),
-            @( 0, 1, 0, 0, 0, 0, 2 ),
-            @( 0, 0, 1, 0, 0, 0, 3 ),
-            @( 0, 0, 0, 1, 0, 0, 4 ),
-            @( 0, 0, 0, 0, 1, 0, 5 ),
-            @( 0, 0, 0, 0, 0, 1, 6 ),
-            @( 100, 100, 100, 100 , 100, 100, 7 ),
-            @( 1000, 1000, 1000, 1000, 1000, 1000, 8 )
-        )
-        $data | ForEach-Object {
-            $name = $quotaNamePrefix + $_[6]
-            New-AzsComputeQuota -Location $invalidLocation -Name $name -AvailabilitySetCount $_[0] -CoresCount $_[1] -VmScaleSetCount $_[2] -VirtualMachineCount $_[3] -StandardManagedDiskAndSnapshotSize $_[4] -PremiumManagedDiskAndSnapshotSize $_[5] | Should be $null
-            Get-AzsComputeQuota -Location $invalidLocation -Name $quota.Name | Should be $null
+        $data = @( 0, 0, 0, 0, 0, 0, 0 )
 
+        try{
+            New-AzsComputeQuota -Location $invalidLocation -Name $name -AvailabilitySetCount $data[0] -CoresCount $data[1] -VmScaleSetCount $data[2] -VirtualMachineCount $data[3] -StandardManagedDiskAndSnapshotSize $data[4] -PremiumManagedDiskAndSnapshotSize $data[5] -ErrorAction Stop
+            throw "Expected error not thrown"
         }
-
-        $data | ForEach-Object {
-            $name = $quotaNamePrefix + $_[4]
-            Get-AzsComputeQuota -Location | Where-Object { $_.Name -eq $name} | Should be $null
+        catch{
+            $_.Exception.Message | Should match "Unsupported quota location"
         }
     }
-#>
 
     It "TestQuotaCreateUpdateDelete" -Skip:$('TestQuotaCreateUpdateDelete' -in $global:SkippedTests) {
         $global:TestName = 'TestQuotaCreateUpdateDelete'

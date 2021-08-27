@@ -1,37 +1,53 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/remove-azscomputequota
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/disable-azscomputeusersubscriptionfeature
 schema: 2.0.0
 ---
 
-# Remove-AzsComputeQuota
+# Disable-AzsComputeUserSubscriptionFeature
 
 ## SYNOPSIS
-Delete an existing Compute quota.
+Disable the tenant subscription feature.
 
 ## SYNTAX
 
-### Delete (Default)
+### DisableExpanded (Default)
 ```
-Remove-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-AzsComputeQuota -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [-PassThru]
+Disable-AzsComputeUserSubscriptionFeature -FeatureName <String> [-Location <String>]
+ [-SubscriptionId <String>] [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
+### Disable
+```
+Disable-AzsComputeUserSubscriptionFeature -FeatureName <String>
+ -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-Location <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DisableViaIdentity
+```
+Disable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity>
+ -TenantSubscriptionFeatureSetting <ITenantSubscriptionFeatureSettings> [-DefaultProfile <PSObject>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DisableViaIdentityExpanded
+```
+Disable-AzsComputeUserSubscriptionFeature -InputObject <IComputeAdminIdentity>
+ [-TenantSubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Delete an existing Compute quota.
+Disable the tenant subscription feature.
 
 ## EXAMPLES
 
 ### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Remove-AzsComputeQuota -Name "AComputeQuota"
+Disable-AzsComputeUserSubscriptionFeature -TenantSubscriptionId 4d105157-d6b2-42db-a3a3-56da6674183a -FeatureName Microsoft.Compute.EmergencyVMAccess -Location local
 ```
 
 
@@ -53,13 +69,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -FeatureName
+Name of the feature.
+
+```yaml
+Type: System.String
+Parameter Sets: Disable, DisableExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DisableViaIdentity, DisableViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -74,27 +105,12 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Disable, DisableExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-Name of the quota.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases: QuotaName
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -120,12 +136,43 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Delete
+Parameter Sets: Disable, DisableExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantSubscriptionFeatureSetting
+The feature settings for the tenant subscription.
+To construct, see NOTES section for TENANTSUBSCRIPTIONFEATURESETTING properties and create a hash table.
+
+```yaml
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
+Parameter Sets: Disable, DisableViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -TenantSubscriptionId
+The tenant subscription identifier.
+
+```yaml
+Type: System.String
+Parameter Sets: DisableExpanded, DisableViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -166,6 +213,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.ITenantSubscriptionFeatureSettings
+
 ### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 
 ## OUTPUTS
@@ -195,6 +244,9 @@ INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
   - `[Type <String>]`: Type of extension.
   - `[Version <String>]`: The version of the resource.
+
+TENANTSUBSCRIPTIONFEATURESETTING <ITenantSubscriptionFeatureSettings>: The feature settings for the tenant subscription.
+  - `[TenantSubscriptionId <String>]`: The tenant subscription identifier.
 
 ## RELATED LINKS
 

@@ -73,7 +73,7 @@ Describe 'Get-AzsPlatformImage' {
             break
         }
     }
-<# A lot of recordings are missing from this test
+
     It "TestGetAllPlatformImages" -Skip:$('TestGetAllPlatformImages' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAllPlatformImages'
 
@@ -84,17 +84,14 @@ Describe 'Get-AzsPlatformImage' {
             AssertSame -Expected $platformImage -Found $result
         }
     }
-#>
-
-<# TODO: UnComment once the test recordings are added for these tests.
 
     It "TestCreatePlatformImage" -Skip:$('TestCreatePlatformImage' -in $global:SkippedTests) {
         $global:TestName = 'TestCreatePlatformImage'
 
         
-        $script:Publisher = "Canonical";
-        $script:Offer = "UbuntuServer";
-        $script:Sku = "16.04-LTS";
+        $script:Publisher = "MicrosoftCrpTeam";
+        $script:Offer = "CrpPester";
+        $script:Sku = "CrpPester";
         $script:Version = "1.0.0";
 
         $image = Add-AzsPlatformImage `
@@ -103,7 +100,7 @@ Describe 'Get-AzsPlatformImage' {
             -Sku $script:Sku `
             -Version $script:Version `
             -OsType "Linux" `
-            -OsUri $global:VHDUri
+            -OsUri $env.VHDUri
 
         $image | Should Not Be $null
         
@@ -112,8 +109,8 @@ Describe 'Get-AzsPlatformImage' {
         Write-Debug $image.OsUri
 
         Write-Debug "Global VHDUri:"
-        Write-Debug $global:VHDUri
-        $image.OsUri | Should be $global:VHDUri
+        Write-Debug $env.VHDUri
+        $image.OsUri | Should be $env.VHDUri
         $image.OsType | Should be "Linux"
 
         while ($image.ProvisioningState -eq "Creating") {
@@ -132,10 +129,10 @@ Describe 'Get-AzsPlatformImage' {
     It "TestCreateAndDeletePlatformImage" -Skip:$('TestCreateAndDeletePlatformImage' -in $global:SkippedTests) {
         $global:TestName = 'TestCreateAndDeletePlatformImage'
 
-        $script:Publisher = "Canonical";
-        $script:Offer = "UbuntuServer";
-        $script:Sku = "16.04-LTS";
-        $script:Version = "1.0.0";
+        $script:Publisher = "MicrosoftCrpTeam";
+        $script:Offer = "CrpPester";
+        $script:Sku = "CrpPester";
+        $script:Version = "1.0.1";
 
         $image = Add-AzsPlatformImage `
             -Publisher $script:Publisher `
@@ -143,10 +140,10 @@ Describe 'Get-AzsPlatformImage' {
             -Sku $script:Sku `
             -Version $script:Version `
             -OsType "Linux" `
-            -OsUri $global:VHDUri
+            -OsUri $env.VHDUri
 
         $image | Should Not Be $null
-        $image.OsUri | Should be $global:VHDUri
+        $image.OsUri | Should be $env.VHDUri
 
         while ($image.ProvisioningState -ne "Succeeded") {
             $image = Get-AzsPlatformImage `
@@ -158,5 +155,4 @@ Describe 'Get-AzsPlatformImage' {
         $image.ProvisioningState | Should be "Succeeded"
         Remove-AzsPlatformImage -Publisher $script:Publisher -Offer $script:Offer -Version $script:version -Sku $script:Sku
     }
-    #>
 }

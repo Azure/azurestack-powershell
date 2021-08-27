@@ -1,12 +1,17 @@
 {
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?api-version=2021-04-01+1": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "11" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "98" ],
+        "x-ms-client-request-id": [ "4d725649-0ef6-4acd-8de1-3a72f7f12ad1" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -15,35 +20,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "017b18ee-810a-43ff-8299-0579cf296b1d" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvFLZzIkEUge3dRNhwp91UlXWBie/yMr714eovb1R2Sg/e1yK3Tc+gCVR290aZOJJeqpipUT9JkXmPLZ1TSIN40NA6q9ratqqIKwggF2D1BUBAdk7WpYLQNdGVrtkuLOB1bVSk6sZgB2UX+wP7qqTG" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13735" ],
-        "x-ms-request-id": [ "017b18ee-810a-43ff-8299-0579cf296b1d" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174600Z:017b18ee-810a-43ff-8299-0579cf296b1d" ],
+        "x-ms-correlation-request-id": [ "3ff7e1e2-92a0-4d01-ba62-6c392e6619a3" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14877" ],
+        "x-ms-request-id": [ "3ff7e1e2-92a0-4d01-ba62-6c392e6619a3" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050901Z:3ff7e1e2-92a0-4d01-ba62-6c392e6619a3" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:00 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvLf0o4uG4OcDouQJ7tT5oJPBIkfevWvv6/ng0EGCiFJxMw5ozgJp9B827k+lF9DJK7c+zq4ANrxV8lWHWzjN27pxNJXLqVX6unbIFvZQL5BfvDmYIEqZxjjg02y4nG7K042+fJNCEnxxlagkcc7C9" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "11279" ],
+        "Content-Length": [ "816" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"name\": \"northwest/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"426b8945-8a24-42ad-acdc-c26f16202489\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"name\": \"northwest/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/sctetest2_OsDisk_1_a2ae46faad524f7ebd5d2b052b6c8f7e\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"name\": \"northwest/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 18,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/ANHWANTESTRG/providers/Microsoft.Compute/Disks/anhwanTestVm_OsDisk_1_17589ca413464adea2d772324a7de0c4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"name\": \"northwest/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE2_OsDisk_1_16c5cbad9f964d71b758329437ad2ca6\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"name\": \"northwest/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE3_OsDisk_1_6a3f1eb991154ba3b86f075619cc5125\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"name\": \"northwest/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/0a4ed41b-90cf-41b7-8225-ab252f776f16/resourceGroups/VAASRGE976/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"name\": \"northwest/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/d69dcf23-0c5a-4f87-87b9-b29d9184262b/resourceGroups/VAASRGC7B2/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"name\": \"northwest/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/Test4_OsDisk_1_8ad00e03fc5d424d981b9eeb03a4fdcc\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"name\": \"northwest/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/scte5_OsDisk_1_c0fba5b4c21b4b5fb59c33e4f6377ff4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"name\": \"northwest/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/7cd88a02-5f6a-48e0-a247-1b16cd61b5f7/resourceGroups/VAASRG012C/providers/Microsoft.Compute/Disks/simplelinuxvmv_disk3_0597b790e6124a868a9b6dac76cdb990\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"name\": \"northwest/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/a77ae262-efb2-4065-8284-c43da3f41d54/resourceGroups/VAASRG9ED1/providers/Microsoft.Compute/Disks/simplelinuxvmv-datadisk1\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\",\r\n        \"actualSizeGB\": 0,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?userSubscriptionId=74c72bdc-d917-431c-a377-8ca80f4238a0\u0026api-version=2021-04-01+2": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=47b53730-e95d-4594-b843-d378bdff793a\u0026api-version=2021-04-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?userSubscriptionId=74c72bdc-d917-431c-a377-8ca80f4238a0\u0026api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=47b53730-e95d-4594-b843-d378bdff793a\u0026api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "12" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "99" ],
+        "x-ms-client-request-id": [ "cd89f83c-d29b-4cf0-88b6-3fc5f3ee0429" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -52,35 +63,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "c169ebf5-adbd-42c7-82c1-0081c03b27a8" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvS+EbtebkTuMile0MrMuOb1fsLFNU3WA6kocLCCfNQHwE6NtIbv6HIjAVBYRMy0hSc124wot1F9XOn1F3EvAIsu/XdZLRdkAVJpwNOlCPJj0I5Q5lFwGUYGpJe0vvohl7VC8z3UzPJYL4ZpeaTBBh" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13734" ],
-        "x-ms-request-id": [ "c169ebf5-adbd-42c7-82c1-0081c03b27a8" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174600Z:c169ebf5-adbd-42c7-82c1-0081c03b27a8" ],
+        "x-ms-correlation-request-id": [ "ece43879-75ca-4ec9-b338-ad90606a7b57" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14876" ],
+        "x-ms-request-id": [ "ece43879-75ca-4ec9-b338-ad90606a7b57" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050901Z:ece43879-75ca-4ec9-b338-ad90606a7b57" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:00 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRveBr2+q6pF5Cpc8vq/gYIGnIlnyY0AxigQ+qsYEpybtdMznMSbg4u8OGtiqiKobHVKGXS5TnBj5NjFT7neqHMF1EZd20pb8wT8KjW1JsceS8S/x0kSUS9fFd9Q6drQzV+n0szwmtap2ZUyOKlZsCY" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "7881" ],
+        "Content-Length": [ "816" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"name\": \"northwest/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"426b8945-8a24-42ad-acdc-c26f16202489\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"name\": \"northwest/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/sctetest2_OsDisk_1_a2ae46faad524f7ebd5d2b052b6c8f7e\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"name\": \"northwest/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 18,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/ANHWANTESTRG/providers/Microsoft.Compute/Disks/anhwanTestVm_OsDisk_1_17589ca413464adea2d772324a7de0c4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"name\": \"northwest/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE2_OsDisk_1_16c5cbad9f964d71b758329437ad2ca6\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"name\": \"northwest/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE3_OsDisk_1_6a3f1eb991154ba3b86f075619cc5125\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"name\": \"northwest/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/Test4_OsDisk_1_8ad00e03fc5d424d981b9eeb03a4fdcc\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"name\": \"northwest/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/scte5_OsDisk_1_c0fba5b4c21b4b5fb59c33e4f6377ff4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\",\r\n        \"actualSizeGB\": 0,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?status=Unattached\u0026api-version=2021-04-01+3": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=ActiveSAS\u0026api-version=2021-04-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?status=Unattached\u0026api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=ActiveSAS\u0026api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "13" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "100" ],
+        "x-ms-client-request-id": [ "abf71911-7700-40ee-bcd3-a461d8a6a48b" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -89,35 +106,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "75c64846-9664-4b44-8543-56ab6481576e" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvLoKl8nONY/2Af+DBNHop8Qs0BVdAsXAortH9fUYuKXlg+V3P2C7dO/U7yvSi8WOWvBseX3OkgorCM01N5QjjjwMssaiCmv3BQiRmSjZEnSGSRYwAwONTDVf/wodaShRvU9wwzVHB0i5RaJ67GAQ5" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13733" ],
-        "x-ms-request-id": [ "75c64846-9664-4b44-8543-56ab6481576e" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174601Z:75c64846-9664-4b44-8543-56ab6481576e" ],
+        "x-ms-correlation-request-id": [ "d96079a1-387f-4e0e-99a0-25f28690d73d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14875" ],
+        "x-ms-request-id": [ "d96079a1-387f-4e0e-99a0-25f28690d73d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050901Z:d96079a1-387f-4e0e-99a0-25f28690d73d" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:00 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvQR0VocgL73WdyHRWhlbUShCSpOTcj9N64s+uVpn8imoAfbalx/B9IpN0nv9LS91eTgg4+TISQPoXBgTxkrlx7WdFqXCMlDzzWMep+H3prytoX62GqBEPKk4ku0scYql1mufhn0ErQK1dxFCyM+mA" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "11279" ],
+        "Content-Length": [ "816" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"name\": \"northwest/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"426b8945-8a24-42ad-acdc-c26f16202489\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"name\": \"northwest/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/sctetest2_OsDisk_1_a2ae46faad524f7ebd5d2b052b6c8f7e\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"name\": \"northwest/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 18,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/ANHWANTESTRG/providers/Microsoft.Compute/Disks/anhwanTestVm_OsDisk_1_17589ca413464adea2d772324a7de0c4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"name\": \"northwest/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE2_OsDisk_1_16c5cbad9f964d71b758329437ad2ca6\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"name\": \"northwest/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE3_OsDisk_1_6a3f1eb991154ba3b86f075619cc5125\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"name\": \"northwest/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/0a4ed41b-90cf-41b7-8225-ab252f776f16/resourceGroups/VAASRGE976/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"name\": \"northwest/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/d69dcf23-0c5a-4f87-87b9-b29d9184262b/resourceGroups/VAASRGC7B2/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"name\": \"northwest/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/Test4_OsDisk_1_8ad00e03fc5d424d981b9eeb03a4fdcc\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"name\": \"northwest/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/scte5_OsDisk_1_c0fba5b4c21b4b5fb59c33e4f6377ff4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"name\": \"northwest/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/7cd88a02-5f6a-48e0-a247-1b16cd61b5f7/resourceGroups/VAASRG012C/providers/Microsoft.Compute/Disks/simplelinuxvmv_disk3_0597b790e6124a868a9b6dac76cdb990\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"name\": \"northwest/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/a77ae262-efb2-4065-8284-c43da3f41d54/resourceGroups/VAASRG9ED1/providers/Microsoft.Compute/Disks/simplelinuxvmv-datadisk1\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\",\r\n        \"actualSizeGB\": 0,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?sharePath=\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\SU1_ObjStore_4&api-version=2021-04-01+4": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?sharePath=%5C%5CSU1FileServer.azs-long02-int.selfhost.corp.microsoft.com%5CSU1_ObjStore_4\u0026api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "14" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "101" ],
+        "x-ms-client-request-id": [ "9f1f8ed5-39cb-406e-949b-1f5eadf25a81" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -126,35 +149,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "b47d6d65-3fc2-43c7-b184-84e0edab7231" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvCNssDuKDTkHvcnEbyUixZKJulgd3Oo+atTWmomM60YY9jxssJ+XTMk4BxDHIAjcw67gEqt2SzBKPmTsQf00aws3/za8G8aWLeJ4K5tXKRHTQsQXMSoHK+A091vwNL1okNGC0fAltVYuExThCB9Dl" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13732" ],
-        "x-ms-request-id": [ "b47d6d65-3fc2-43c7-b184-84e0edab7231" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174601Z:b47d6d65-3fc2-43c7-b184-84e0edab7231" ],
+        "x-ms-correlation-request-id": [ "13d2a2de-dd10-4b54-af12-8fcbc291345f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14874" ],
+        "x-ms-request-id": [ "13d2a2de-dd10-4b54-af12-8fcbc291345f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050901Z:13d2a2de-dd10-4b54-af12-8fcbc291345f" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:01 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvV2moksK3eSnHJS2+EKEEt+1KSXkYDnAcF26AJ1qhI4QauSXqDHMdxDcOx4d2z4tEmJNTUAYA/1y0DNzLZmnDiVBYm9CSfZ7hXknF9GLy84e6s0yEPmJ3K/RawD++p4wK8ue6xTrQvvR2sM41jKdl" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "3508" ],
+        "Content-Length": [ "816" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"name\": \"northwest/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/Test4_OsDisk_1_8ad00e03fc5d424d981b9eeb03a4fdcc\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"name\": \"northwest/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/scte5_OsDisk_1_c0fba5b4c21b4b5fb59c33e4f6377ff4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\",\r\n        \"actualSizeGB\": 0,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?count=1\u0026start=1\u0026api-version=2021-04-01+5": {
+  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?count=1\u0026start=1\u0026api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "15" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "102" ],
+        "x-ms-client-request-id": [ "c3daa227-0f73-49af-918f-36e1e7bfe5b6" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -163,35 +192,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "3f5229a5-8f33-44e0-88b6-4e8af5a6df65" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3MBIXA/MjbhFXEvWlIOHnZD6x6I1RhPvikARggJX/3r16vE8vzAgWYIwyzfPaY6JVLjk0JKijjfSrMOVcWxx/ADmW0Hd6TdodjL1LlLj0p/YBRhZgmo+XiVDHbK4UllX0KJNtF+FtJw0StIOK1oG" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13731" ],
-        "x-ms-request-id": [ "3f5229a5-8f33-44e0-88b6-4e8af5a6df65" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174601Z:3f5229a5-8f33-44e0-88b6-4e8af5a6df65" ],
+        "x-ms-correlation-request-id": [ "6e05806c-5940-4077-a586-be4a000dcd22" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14873" ],
+        "x-ms-request-id": [ "6e05806c-5940-4077-a586-be4a000dcd22" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050902Z:6e05806c-5940-4077-a586-be4a000dcd22" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:01 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvxKWUZXaLU+Pqd5CBM3fexIp/tG/p1JskTyDDfmfHoIaSDj+I9Msh3eT85wasGmn99RUwjklcS3tgPmd/v2W44FNVt7DnA5u4ZvMjQEYUtthlUPs6C/WlIv6mTxN1GRWZJZpqtj6CUMEEzH5uVZFw" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "896" ],
+        "Content-Length": [ "816" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\",\r\n        \"actualSizeGB\": 0,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?api-version=2021-04-01+1": {
+  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b?api-version=2021-04-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks?api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "16" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "103" ],
+        "x-ms-client-request-id": [ "4e9512ca-4c8a-4235-ba90-0d855a5034a0" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -200,72 +235,41 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "48212f32-b487-4521-80a1-24b1b1cb87be" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvCjINKcBOXtfd8EEVj+rxya7uwIPYsmCVH6Z3Pfm5Qro92M6cmgzkuPNjUAySvGKKAuTBlklzrtmXGaZFoR8JHz8QwbMio+i0Tvy+siCFtQRm31h2LMPq5s9MpELxyBgCJS2qW4rab2tCkKjTcw8x" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13730" ],
-        "x-ms-request-id": [ "48212f32-b487-4521-80a1-24b1b1cb87be" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174602Z:48212f32-b487-4521-80a1-24b1b1cb87be" ],
+        "x-ms-correlation-request-id": [ "62ae949f-6b67-40b4-8943-8e6d5d471a68" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14872" ],
+        "x-ms-request-id": [ "62ae949f-6b67-40b4-8943-8e6d5d471a68" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050902Z:62ae949f-6b67-40b4-8943-8e6d5d471a68" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:01 GMT" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "11279" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"name\": \"northwest/38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"38a767e4-4ceb-49fb-a53c-48de9b08aaae\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTETest_OsDisk_1_38a767e44ceb49fba53c48de9b08aaae\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"name\": \"northwest/426b8945-8a24-42ad-acdc-c26f16202489\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"426b8945-8a24-42ad-acdc-c26f16202489\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"name\": \"northwest/a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"a2ae46fa-ad52-4f7e-bd5d-2b052b6c8f7e\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 24,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/sctetest2_OsDisk_1_a2ae46faad524f7ebd5d2b052b6c8f7e\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"name\": \"northwest/17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"17589ca4-1346-4ade-a2d7-72324a7de0c4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 18,\r\n        \"provisionSizeGB\": 127,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/ANHWANTESTRG/providers/Microsoft.Compute/Disks/anhwanTestVm_OsDisk_1_17589ca413464adea2d772324a7de0c4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"name\": \"northwest/16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"16c5cbad-9f96-4d71-b758-329437ad2ca6\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE2_OsDisk_1_16c5cbad9f964d71b758329437ad2ca6\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"name\": \"northwest/6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"6a3f1eb9-9115-4ba3-b86f-075619cc5125\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 16,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/SCTE/providers/Microsoft.Compute/Disks/SCTE3_OsDisk_1_6a3f1eb991154ba3b86f075619cc5125\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"name\": \"northwest/207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"207d840f-9ae1-43cb-ae81-ac982168b936\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/0a4ed41b-90cf-41b7-8225-ab252f776f16/resourceGroups/VAASRGE976/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"name\": \"northwest/ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"ff3b1b7f-2b3c-4b2d-8fb8-a336db6958a7\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/d69dcf23-0c5a-4f87-87b9-b29d9184262b/resourceGroups/VAASRGC7B2/providers/Microsoft.Compute/Disks/osdisk\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"name\": \"northwest/8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"8ad00e03-fc5d-424d-981b-9eeb03a4fdcc\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/Test4_OsDisk_1_8ad00e03fc5d424d981b9eeb03a4fdcc\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"name\": \"northwest/c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"c0fba5b4-c21b-4b5f-b59c-33e4f6377ff4\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n        \"actualSizeGB\": 2,\r\n        \"provisionSizeGB\": 30,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Compute/Disks/scte5_OsDisk_1_c0fba5b4c21b4b5fb59c33e4f6377ff4\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"name\": \"northwest/0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"0597b790-e612-4a86-8a9b-6dac76cdb990\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/7cd88a02-5f6a-48e0-a247-1b16cd61b5f7/resourceGroups/VAASRG012C/providers/Microsoft.Compute/Disks/simplelinuxvmv_disk3_0597b790e6124a868a9b6dac76cdb990\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"name\": \"northwest/268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"northwest\",\r\n      \"properties\": {\r\n        \"diskId\": \"268b29d2-a13d-481e-aedc-2dbed1255a20\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 10,\r\n        \"userResourceId\": \"/subscriptions/a77ae262-efb2-4065-8284-c43da3f41d54/resourceGroups/VAASRG9ED1/providers/Microsoft.Compute/Disks/simplelinuxvmv-datadisk1\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Standard_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
-    }
-  },
-  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06?api-version=2021-04-01+2": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06?api-version=2021-04-01",
-      "Content": null,
-      "Headers": {
-        "x-ms-unique-id": [ "17" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
         "Cache-Control": [ "no-cache" ],
-        "Pragma": [ "no-cache" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "97f94950-2edc-45b5-8a5f-e44b9184c275" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:01 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvOLGPkuY+UixIzl0FOk96kB/q11m0zrjw1HZHZME35iKXzzmYA27Mkm6ZYIWm/Uz9LLDq+FtnNe9w0ldJStXSa7IDlqn0WVVxCgKVpnXgZxbld5aImB0JEeg5I8Mz7mK2QPv8SEYXKzg+Vv9Mes8T" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13729" ],
-        "x-ms-request-id": [ "97f94950-2edc-45b5-8a5f-e44b9184c275" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174602Z:97f94950-2edc-45b5-8a5f-e44b9184c275" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:02 GMT" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvfrofbducY/Wzdnr3SBrV57rNdHjNrV30PhQpTrgufsz8sM0j7rKjbgaVBNW36eI0JMJr7dIzu00Fp155dg+WiQf26PlWvLtTl8+LbS22FD2Ls56X4S/yfZz1+dZL7sopKFZLgDSGC44JbCTLya9T" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "801" ],
+        "Content-Length": [ "723" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n  \"name\": \"northwest/20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n  \"location\": \"northwest\",\r\n  \"properties\": {\r\n    \"diskId\": \"20f1619e-4210-47f6-81e6-b89e3028df06\",\r\n    \"status\": \"Unattached\",\r\n    \"sharePath\": \"\\\\\\\\SU1FileServer.azs-long02-int.selfhost.corp.microsoft.com\\\\SU1_ObjStore_4\",\r\n    \"actualSizeGB\": 24,\r\n    \"provisionSizeGB\": 127,\r\n    \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/RG1/providers/Microsoft.Compute/Disks/TEST_OsDisk_1_20f1619e421047f681e6b89e3028df06\",\r\n    \"diskType\": \"Disk\",\r\n    \"diskSku\": \"Premium_LRS\"\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n  \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n    \"status\": \"ActiveSAS\",\r\n    \"sharePath\": \"\",\r\n    \"actualSizeGB\": 0,\r\n    \"provisionSizeGB\": 1023,\r\n    \"creationOption\": \"Empty\",\r\n    \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n    \"diskType\": \"Disk\",\r\n    \"diskSku\": \"Premium_LRS\"\r\n  }\r\n}",
+      "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestGetDiskInvalid+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-04-01+1": {
+  "Get-AzsDisk+[NoContext]+TestGetDiskInvalid+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-04-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/northwest/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-04-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "18" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "x-ms-unique-id": [ "104" ],
+        "x-ms-client-request-id": [ "42acea7e-49b8-4a48-b314-7435c325d00a" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
+        "FullCommandName": [ "Get-AzsDisk_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -274,25 +278,26 @@
     "Response": {
       "StatusCode": 404,
       "Headers": {
-        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "8815c142-8d62-40ae-89e2-08aba1a823ab" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIuDv39nYezPhLBMsiug1iLg81bSFQoRVC1WeFJVC5OSFFFVJflHUk+rf3Jlza57dPQqkS7UkxEMPb4vhd2M5GJ8pG0IBODMUKm8WnuhYmcmBkXEoWmPW5Xpob6T3bqsFjJ7Qep/jRfYBQzq9He7p" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13728" ],
-        "x-ms-request-id": [ "8815c142-8d62-40ae-89e2-08aba1a823ab" ],
-        "x-ms-routing-request-id": [ "NORTHWEST:20200214T174602Z:8815c142-8d62-40ae-89e2-08aba1a823ab" ],
+        "x-ms-correlation-request-id": [ "973aa4dd-2726-464a-8a05-658d04f60448" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14871" ],
+        "x-ms-request-id": [ "973aa4dd-2726-464a-8a05-658d04f60448" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T050902Z:973aa4dd-2726-464a-8a05-658d04f60448" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Fri, 14 Feb 2020 17:46:02 GMT" ]
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Tue, 24 Aug 2021 05:09:02 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvG0Cb7UNeAum/PfDZ2lck1mdPri6yd1eGKKVtPfU/IfCZaNfz43S4YNCfx2/Sw+D6zDARR0eTL2mf6pZr/VgD8qS85uruuPByxBzkBppqbKMxVyUtcrX2ldQkYSQV1fDTc5tJrzLuv/dIomczBgNu" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "115" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"error\": {\r\n    \"code\": \"NotFound\",\r\n    \"message\": \"The entity was not found in this Azure location.\"\r\n  }\r\n}"
+      "Content": "{\r\n  \"error\": {\r\n    \"code\": \"NotFound\",\r\n    \"message\": \"The entity was not found in this Azure location.\"\r\n  }\r\n}",
+      "isContentBase64": false
     }
   }
 }
