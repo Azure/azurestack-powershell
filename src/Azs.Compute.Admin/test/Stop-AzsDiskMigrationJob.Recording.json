@@ -1,16 +1,17 @@
 {
-  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$GET+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2018-07-30-preview+1": {
+  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2018-07-30-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "169" ],
-        "x-ms-client-request-id": [ "b4b841c9-2834-4ae5-9ae7-5f42cd34d039" ],
-        "CommandName": [ "Get-AzsDisk" ],
+        "x-ms-unique-id": [ "121" ],
+        "x-ms-client-request-id": [ "33c2344e-d53f-4cae-afa1-0da45972c23f" ],
+        "CommandName": [ "Azs.Compute.Admin.internal\\Get-AzsDisk" ],
         "FullCommandName": [ "Get-AzsDisk_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -22,41 +23,36 @@
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "38e92b49-5050-4e11-8025-ee67a64ebd3d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14952" ],
-        "x-ms-request-id": [ "38e92b49-5050-4e11-8025-ee67a64ebd3d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200226T113805Z:38e92b49-5050-4e11-8025-ee67a64ebd3d" ],
+        "x-ms-correlation-request-id": [ "976a25b4-59e1-4777-b32b-4f8447cdb32a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14842" ],
+        "x-ms-request-id": [ "976a25b4-59e1-4777-b32b-4f8447cdb32a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T060907Z:976a25b4-59e1-4777-b32b-4f8447cdb32a" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 26 Feb 2020 11:38:05 GMT" ],
+        "Date": [ "Tue, 24 Aug 2021 06:09:07 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvn2wdYQQqt2zOO36A2UaHksnoMFUYFKAMld+xfQ7AeAHtoEVl5chcQZ4uGqLSFNivN5w9LHGzn40lMrJ+MiLfWdqulavLubL+aL7Fz8VOg4CBhQzSoCFoJp4sax0Zwb11EHnyDhkX5uV4jw8WfZO5" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvEV6T8wGm3XefCa9g3/pLERQGjWwHN+ofJMJZFOgJuUAsDe6DAlc6aTzry1W5c1s1lrgQqEk/3a1OpeXcSiWv197oG5GZsGTP1CH1nHZ5+yvbThtMpwH5Ldu9DDl7QLt+fnCkjA1+wMDCBjq7eGQv" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1655" ],
+        "Content-Length": [ "885" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/disks/afdd2d42-586c-4358-b232-e036182ef32c\",\r\n      \"name\": \"redmond/afdd2d42-586c-4358-b232-e036182ef32c\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"afdd2d42-586c-4358-b232-e036182ef32c\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 32,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/TESTRG1/providers/Microsoft.Compute/Disks/diskt1\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/disks/d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\",\r\n      \"name\": \"redmond/d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 32,\r\n        \"userResourceId\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/TESTRG1/providers/Microsoft.Compute/Disks/disk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}"
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"name\": \"redmond/a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n        \"status\": \"ActiveSAS\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationOption\": \"Empty\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/POWERSHELLTEST/providers/Microsoft.Compute/Disks/disktest\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "isContentBase64": false
     }
   },
-  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$PUT+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration?targetScaleUnit=s-cluster\u0026targetVolumeLabel=ObjStore_2\u0026api-version=2018-07-30-preview+2": {
+  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$PUT+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration?targetScaleUnit=s-cluster\u0026targetVolumeLabel=ObjStore_2\u0026api-version=2021-04-01+2": {
     "Request": {
       "Method": "PUT",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration?targetScaleUnit=s-cluster\u0026targetVolumeLabel=ObjStore_2\u0026api-version=2018-07-30-preview",
-      "Content": "[\r\n  {\r\n    \"location\": \"redmond\",\r\n    \"properties\": {\r\n      \"diskId\": \"afdd2d42-586c-4358-b232-e036182ef32c\",\r\n      \"sharePath\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n      \"status\": \"Unattached\"\r\n    }\r\n  },\r\n  {\r\n    \"location\": \"redmond\",\r\n    \"properties\": {\r\n      \"diskId\": \"d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\",\r\n      \"sharePath\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n      \"status\": \"Unattached\"\r\n    }\r\n  }\r\n]",
+      "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration?targetScaleUnit=s-cluster\u0026targetVolumeLabel=ObjStore_2\u0026api-version=2021-04-01",
+      "Content": "[\r\n  {\r\n    \"location\": \"redmond\",\r\n    \"properties\": {\r\n      \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\",\r\n      \"status\": \"ActiveSAS\",\r\n      \"sharePath\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\"\r\n    }\r\n  }\r\n]",
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "170" ],
-        "x-ms-client-request-id": [ "c645fb14-f24f-429c-94ff-f75ca406c8f4" ],
-        "CommandName": [ "Azs.Compute.Admin.internal\\New-AzsDiskMigrationJob" ],
-        "FullCommandName": [ "New-AzsDiskMigrationJob_Create" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
         "Content-Type": [ "application/json" ],
-        "Content-Length": [ "497" ]
+        "Content-Length": [ "249" ]
       }
     },
     "Response": {
@@ -65,36 +61,38 @@
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "ec70d7ea-2d38-4e2e-af29-92fa4dd27fe0" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1195" ],
-        "x-ms-request-id": [ "ec70d7ea-2d38-4e2e-af29-92fa4dd27fe0" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200226T113806Z:ec70d7ea-2d38-4e2e-af29-92fa4dd27fe0" ],
+        "x-ms-correlation-request-id": [ "6d3a8a3a-391d-4e47-9541-e8d496e322c9" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1198" ],
+        "x-ms-request-id": [ "6d3a8a3a-391d-4e47-9541-e8d496e322c9" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T060907Z:6d3a8a3a-391d-4e47-9541-e8d496e322c9" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 26 Feb 2020 11:38:05 GMT" ],
+        "Date": [ "Tue, 24 Aug 2021 06:09:07 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbTmeJHbAuCI9VhRPIx/nSop9TKCYQUASK8eP2LYdBShWi+iMozPBCN5q+BdVjCxm0U6vwNCulxYKrZ/9A8zPFlXPlFS2lUFkcVM9Q+G8jaR63SBWsgenUAR+l1oc9vdzTawZtWJQ1Qh8vBxwDWKG" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8LYpw3hnLvdqputC86E0EzPQ4EYLXVwdXZUgXMhBm9HOkfQWAQsyzqit0m/7a8tTTm7h+KSkCr+1g63VHrKlMqXG/4FQQEOyAYaDwwRYJ3x2DPNiqCoP1F4XgBoCMZUQozB0ENkQU+VZVXSqwSYJ" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1538" ],
+        "Content-Length": [ "1049" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration\",\r\n  \"name\": \"redmond/TestStopDiskMigration\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/diskmigrationjobs\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"migrationId\": \"TestStopDiskMigration\",\r\n    \"status\": \"Pending\",\r\n    \"subtasks\": [\r\n      {\r\n        \"migrationSubTaskId\": \"5fe10f06-74f1-4063-b3fa-1d9ade60f301\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Pending\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n          \"targetDiskStateForMigration\": \"Unattached\",\r\n          \"diskId\": \"d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\"\r\n        }\r\n      },\r\n      {\r\n        \"migrationSubTaskId\": \"b465364e-cdf9-4492-b1aa-6c6721ef097c\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Pending\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"targetDiskStateForMigration\": \"Unattached\",\r\n          \"diskId\": \"afdd2d42-586c-4358-b232-e036182ef32c\"\r\n        }\r\n      }\r\n    ],\r\n    \"creationTime\": \"2020-02-26T11:38:06.0547291Z\",\r\n    \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\"\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration\",\r\n  \"name\": \"redmond/TestStopDiskMigration\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/diskmigrationjobs\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"migrationId\": \"TestStopDiskMigration\",\r\n    \"status\": \"Pending\",\r\n    \"subtasks\": [\r\n      {\r\n        \"migrationSubTaskId\": \"4f64e824-ad90-4f5f-a357-b70716ef3577\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Pending\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n          \"targetDiskStateForMigration\": \"ActiveSAS\",\r\n          \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\"\r\n        }\r\n      }\r\n    ],\r\n    \"creationTime\": \"2021-08-24T06:09:07.9106269Z\",\r\n    \"targetShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\"\r\n  }\r\n}",
+      "isContentBase64": false
     }
   },
-  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$POST+https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration/Cancel?api-version=2018-07-30-preview+3": {
+  "Stop-AzsDiskMigrationJob+[NoContext]+TestStopDiskMigrationJob+$POST+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskMigrationJobs/TestStopDiskMigration/cancel?api-version=2021-04-01+3": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration/Cancel?api-version=2018-07-30-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskMigrationJobs/TestStopDiskMigration/cancel?api-version=2021-04-01",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "171" ],
-        "x-ms-client-request-id": [ "04aaee02-0d3d-445d-9198-2f70a3f39998" ],
+        "x-ms-unique-id": [ "123" ],
+        "x-ms-client-request-id": [ "b9d4ab41-dca8-42c2-9f25-95347105f460" ],
         "CommandName": [ "Stop-AzsDiskMigrationJob" ],
         "FullCommandName": [ "Stop-AzsDiskMigrationJob_Cancel" ],
         "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -106,22 +104,23 @@
         "Pragma": [ "no-cache" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "x-ms-served-by": [ "00000000-0000-0000-0000-000000000000_0" ],
-        "x-ms-correlation-request-id": [ "944c5c8f-f7b5-44cc-be88-03944290a3e4" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1194" ],
-        "x-ms-request-id": [ "944c5c8f-f7b5-44cc-be88-03944290a3e4" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200226T113806Z:944c5c8f-f7b5-44cc-be88-03944290a3e4" ],
+        "x-ms-correlation-request-id": [ "3fef2ebe-2eb3-43eb-bf67-635643dd4a20" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "3fef2ebe-2eb3-43eb-bf67-635643dd4a20" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210824T060908Z:3fef2ebe-2eb3-43eb-bf67-635643dd4a20" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Wed, 26 Feb 2020 11:38:06 GMT" ],
+        "Date": [ "Tue, 24 Aug 2021 06:09:07 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvRIdAx0+xWFP2H0AWFjo3IB5yAelCTar6NPpHkvRpVCqKd1/d7hC56DpG8QHqGFHmlA5q7vAdc5ZAoZww77RgBEHTjAmDP79x0R1LTZsD+swIORRI9986j8cGQ8+YqD8SACSqjOCel5Ft4QJpn4Y+" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtK6h7sj/9pj/0l+FcWEorbKILSS6xaxi3pIwW21sm6HF58Wl1M9ZO5wu6G1CAZA7rkWZVS1kAnOlw08FRoRrg9nd5McI2I73IaAaMlgVt+qAhFPu1TZCegezBQT7M4T06PMfG63gq+6yKrNwEgJw" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2121" ],
+        "Content-Length": [ "1153" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration\",\r\n  \"name\": \"redmond/TestStopDiskMigration\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/diskmigrationjobs\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"migrationId\": \"TestStopDiskMigration\",\r\n    \"status\": \"Canceled\",\r\n    \"subtasks\": [\r\n      {\r\n        \"migrationSubTaskId\": \"5fe10f06-74f1-4063-b3fa-1d9ade60f301\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Skipped\",\r\n          \"reason\": \"Migrate disk d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8 skipped because other migration of this disk not finished. ConflictSubTask:47774498-6bc7-4ce2-98ca-738739ded2fc\",\r\n          \"startTime\": \"2020-02-26T11:38:06.0859894Z\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n          \"targetDiskStateForMigration\": \"Unattached\",\r\n          \"diskId\": \"d8a99b2a-d936-4b8f-8bc3-f80d7a34f0b8\"\r\n        }\r\n      },\r\n      {\r\n        \"migrationSubTaskId\": \"b465364e-cdf9-4492-b1aa-6c6721ef097c\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Skipped\",\r\n          \"reason\": \"Migrate disk afdd2d42-586c-4358-b232-e036182ef32c skipped because other migration of this disk not finished. ConflictSubTask:31d1ee7b-f74e-4eef-b134-72cd24b4bf42\",\r\n          \"startTime\": \"2020-02-26T11:38:06.1016107Z\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"targetDiskStateForMigration\": \"Unattached\",\r\n          \"diskId\": \"afdd2d42-586c-4358-b232-e036182ef32c\"\r\n        }\r\n      }\r\n    ],\r\n    \"creationTime\": \"2020-02-26T11:38:06.0547291Z\",\r\n    \"startTime\": \"2020-02-26T11:38:06.0703604Z\",\r\n    \"endTime\": \"2020-02-26T11:38:06.2891133Z\",\r\n    \"targetShare\": \"\\\\\\\\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\"\r\n  }\r\n}"
+      "Content": "{\r\n  \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/diskmigrationjobs/TestStopDiskMigration\",\r\n  \"name\": \"redmond/TestStopDiskMigration\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/diskmigrationjobs\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"migrationId\": \"TestStopDiskMigration\",\r\n    \"status\": \"Canceled\",\r\n    \"subtasks\": [\r\n      {\r\n        \"migrationSubTaskId\": \"4f64e824-ad90-4f5f-a357-b70716ef3577\",\r\n        \"properties\": {\r\n          \"migrationSubtaskStatus\": \"Canceled\",\r\n          \"endTime\": \"2021-08-24T06:09:08.1626194Z\",\r\n          \"targetShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\",\r\n          \"sourceShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_3\",\r\n          \"targetDiskStateForMigration\": \"ActiveSAS\",\r\n          \"diskId\": \"a298131b-6006-4c55-9960-a8cf7cddff7b\"\r\n        }\r\n      }\r\n    ],\r\n    \"creationTime\": \"2021-08-24T06:09:07.9106269Z\",\r\n    \"endTime\": \"2021-08-24T06:09:08.1716238Z\",\r\n    \"targetShare\": \"\\\\\\\\SU1FileServer.n25r0507.masd.stbtest.microsoft.com\\\\SU1_ObjStore_2\"\r\n  }\r\n}",
+      "isContentBase64": false
     }
   }
 }
