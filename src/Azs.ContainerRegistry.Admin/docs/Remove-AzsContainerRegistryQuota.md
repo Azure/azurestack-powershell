@@ -29,12 +29,13 @@ Delete an existing container registry quota
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Remove Azs ContainerRegistry Configuration
 ```powershell
-Remove-AzsContainerRegistryConfiguration -ConfigurationName default
+PS C:\> Remove-AzsContainerRegistryConfiguration -ConfigurationName default 
+
 ```
 
-
+Delete an existing container registry configuration.
 
 ## PARAMETERS
 

@@ -22,10 +22,9 @@ Returns a list of container registries present in all tenant location.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get List Azs Container Registries
 ```powershell
-Get-AzsContainerRegistry
-```
+PS C:\> Get-AzsContainerRegistry
 
 {
     "CreationDate":  "\/Date(1629160842681)\/",
@@ -39,6 +38,9 @@ Get-AzsContainerRegistry
     "SubscriptionId":  "72b77b1b-3e43-4d00-8b5b-be6beceb7f3a",
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/registries"
 }
+```
+
+Returns a list of container registries present in all tenant location.
 
 ## PARAMETERS
 

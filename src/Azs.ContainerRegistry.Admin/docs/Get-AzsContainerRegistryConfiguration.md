@@ -35,10 +35,9 @@ Returns the specified configuration details.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get AzsContainerRegistry Configuration
 ```powershell
-Get-AzsContainerRegistryConfiguration
-```
+PS C:\> Get-AzsContainerRegistryConfiguration
 
 {{
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default",
@@ -46,6 +45,9 @@ Get-AzsContainerRegistryConfiguration
     "Name":  "redmond/Default",
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/configurations"
 }
+```
+
+Returns the specified configuration details.
 
 ## PARAMETERS
 
