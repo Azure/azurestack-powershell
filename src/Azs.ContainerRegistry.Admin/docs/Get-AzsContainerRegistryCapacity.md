@@ -35,10 +35,9 @@ Returns container registry capacity property.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get Azs ContainerRegistry Capacity
 ```powershell
-Get-AzsContainerRegistryCapacity
-```
+PS C:\> Get-AzsContainerRegistryCapacity
 
 {
     "AllowPush":  true,
@@ -48,6 +47,9 @@ Get-AzsContainerRegistryCapacity
     "RegistriesConsumptionInGiB":  0,
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/capacities"
 }
+```
+
+Returns container registry capacity property.
 
 ## PARAMETERS
 

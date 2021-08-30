@@ -29,10 +29,9 @@ Returns the status of the container registry setup.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get Azs ContainerRegistry Setup Status
 ```powershell
-Get-AzsContainerRegistrySetupStatus
-```
+PS C:\> Get-AzsContainerRegistrySetupStatus
 
 {
   "id": "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup/value",
@@ -42,6 +41,9 @@ Get-AzsContainerRegistrySetupStatus
     "status": "Completed"
   }
 }
+```
+
+Returns the status of the container registry setup.
 
 ## PARAMETERS
 

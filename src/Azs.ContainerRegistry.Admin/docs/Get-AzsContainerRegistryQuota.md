@@ -35,10 +35,9 @@ Returns the specified container registry quota.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get List Azs ContainerRegistry Quotas
 ```powershell
-Get-AzsContainerRegistryQuota
-```
+PS C:\> Get-AzsContainerRegistryQuota
 
 [
     {
@@ -56,11 +55,13 @@ Get-AzsContainerRegistryQuota
         "Type":  "Microsoft.ContainerRegistry.Admin/locations/quotas"
     }
 ]
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-Get-AzsContainerRegistryQuota -Name "Default quota"
 ```
+
+Returns a list of container registry quotas at the given location.
+
+### Example 2: Get Azs ContainerRegistry Quota by Name
+```powershell
+PS C:\> Get-AzsContainerRegistryQuota -Name "Default quota"
 
 {
     "CapacityPerRegistryInGiB":  20,
@@ -69,6 +70,9 @@ Get-AzsContainerRegistryQuota -Name "Default quota"
     "NumberOfRegistry":  20,
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/quotas"
 }
+```
+
+Returns the specified container registry quota.
 
 ## PARAMETERS
 
