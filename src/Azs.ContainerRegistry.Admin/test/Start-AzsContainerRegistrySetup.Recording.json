@@ -13,7 +13,7 @@
       }
     },
     "Response": {
-      "StatusCode": 409,
+      "StatusCode": 201,
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
@@ -31,7 +31,7 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"error\":{\"code\":\"AcrAlreadyDeployed\",\"message\":\"Container registry deployment has already been successfully completed. It is not allowed to repeat deployment\"}}",
+      "Content": "{\"id\":\"/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup/value\",\"name\":\"redmond/value\",\"type\":\"Microsoft.ContainerRegistry.Setup/locations/setup\",\"properties\":{\"statusUri\":\"https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/731e84f5-d31e-4c6a-aa1d-546d6bfb2789/providers/Microsoft.ContainerRegistry.Setup/locations/local/setup?api-version=2019-11-01-preview\"}}",
       "isContentBase64": false
     }
   }
