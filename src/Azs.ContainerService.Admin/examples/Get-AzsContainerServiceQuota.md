@@ -7,3 +7,6 @@ PS C:\> Get-AzsContainerServiceQuota -Location "redmond" | ConvertTo-Json
   "PropertiesName": "Unlimited",
   "Type": "Microsoft.ContainerService.Admin/locations/quotas"
 }
+```
+
+Returns a quota for container service

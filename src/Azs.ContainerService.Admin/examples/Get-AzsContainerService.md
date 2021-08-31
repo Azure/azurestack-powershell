@@ -27,3 +27,6 @@ PS C:\> Get-AzsContainerService -Location "redmond" | ConvertTo-Json
     "Type": "Microsoft.ContainerService.Admin/locations/managedclusters"
   }
 ]
+```
+
+Returns a list of all tenant container service clusters
