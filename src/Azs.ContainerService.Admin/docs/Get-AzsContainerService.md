@@ -22,23 +22,19 @@ Returns a list of managed clusters present in all tenant location.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
+{{ Add code here }}
 ```
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
 {{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
-{{ Add description here }}
+{{ Add output here }}
 
 ## PARAMETERS
 

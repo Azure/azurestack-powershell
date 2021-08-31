@@ -31,7 +31,7 @@ Describe 'Get-AzsContainerService' {
     It "TestGetContainerService" -Skip:$('TestGetContainerService' -in $global:SkippedTests) {
         $global:TestName = 'TestGetContainerService'
 
-        $result = Get-AzsContainerService  
+        $result = Get-AzsContainerService -Location $env.Location
         $result  | Should Not Be $null
         ValidateContainerService -ManagedClusters $result
     }

@@ -30,7 +30,7 @@ Describe 'Get-AzsContainerServiceQuota' {
     It "TestGetContainerServiceQuota" -Skip:$('TestGetContainerServiceQuota' -in $global:SkippedTests) {
         $global:TestName = 'TestGetContainerServiceQuota'
 
-        $result = Get-AzsContainerServiceQuota 
+        $result = Get-AzsContainerServiceQuota -Location $env.Location
         $result  | Should Not Be $null
         ValidateContainerServiceQuota -ManagedClustersQuota $result
     }
