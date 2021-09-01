@@ -30,10 +30,9 @@ Create or update an existing container registry quota.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: New Azs ContainerRegistry Quota
 ```powershell
-New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistry 20
-```
+PS C:\> New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistry 20
 
 {
     "CapacityPerRegistryInGiB":  20,
@@ -42,6 +41,9 @@ New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 
     "NumberOfRegistry":  20,
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/quotas"
 }
+```
+
+Create or update an existing container registry quota.
 
 ## PARAMETERS
 

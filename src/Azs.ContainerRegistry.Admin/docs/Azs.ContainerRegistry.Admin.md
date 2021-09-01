@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.ContainerRegistry.Admin
-Module Guid: 27950488-3e83-458b-8797-6db82864cf62
+Module Guid: 900db1dd-8338-4e8f-a01c-81ab98484955
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.containerregistry.admin
 Help Version: 1.0.0.0
 Locale: en-US
