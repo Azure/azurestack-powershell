@@ -1,0 +1,43 @@
+{
+  "Get-AzsContainerServiceQuota+[NoContext]+TestGetContainerServiceQuota+$GET+https://management.azure.com/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/quotas?api-version=2019-11-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n31r1201.masd.stbtest.microsoft.com/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/quotas?api-version=2019-11-01",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "9e7a786d-e8f4-479d-97d6-e859e405c608" ],
+        "CommandName": [ "Get-AzsContainerServiceQuota" ],
+        "FullCommandName": [ "Get-AzsContainerServiceQuota_List" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-request-id": [ "a2a8094b-52bc-4bab-9460-792473abbc0d" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14988" ],
+        "x-ms-correlation-request-id": [ "f95c8f63-d22c-463b-b899-b24811dd70aa" ],
+        "x-ms-routing-request-id": [ "REDMOND:20210816T232445Z:f95c8f63-d22c-463b-b899-b24811dd70aa" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Mon, 16 Aug 2021 23:24:45 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "270" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"value\":[{\"id\":\"/subscriptions/40a8de27-eef0-47f4-b4e1-4168820581b8/providers/Microsoft.ContainerService.Admin/locations/redmond/quotas/Unlimited\",\"name\":\"redmond/Unlimited\",\"type\":\"Microsoft.ContainerService.Admin/locations/quotas\",\"properties\":{\"name\":\"Unlimited\"}}]}",
+      "isContentBase64": false
+    }
+  }
+}
