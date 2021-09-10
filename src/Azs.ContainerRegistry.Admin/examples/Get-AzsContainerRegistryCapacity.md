@@ -1,6 +1,6 @@
 ### Example 1: Get Azs ContainerRegistry Capacity
 ```powershell
-PS C:\> Get-AzsContainerRegistryCapacity
+PS C:\> Get-AzsContainerRegistryCapacity | ConvertTo-Json
 
 {
     "AllowPush":  true,
