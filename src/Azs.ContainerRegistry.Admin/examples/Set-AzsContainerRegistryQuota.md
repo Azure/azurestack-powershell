@@ -1,6 +1,6 @@
 ### Example 1: Set Azs ContainerRegistry Quota
 ```powershell
-PS C:\> Set-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 30 -NumberOfRegistry 30
+PS C:\> Set-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 30 -NumberOfRegistry 30 | ConvertTo-Json
 
 {
     "CapacityPerRegistryInGiB":  30,
