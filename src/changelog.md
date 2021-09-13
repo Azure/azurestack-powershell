@@ -7,7 +7,9 @@
 * AzureStack Container Registry admin power shell commands to setup and manage Container Registry admin operations
 ## Azs.Compute.Admin module
 * Added support for GPU Quotas (DDA and Partitioned GPU VM sizes) to limit tenant usage
+    * Affected cmdlets - Get\Set\New\Remove-AzsComputeQuota
 * Added support for globally enabling/disabling or locally enabling/disabling features for tenant subscription IDs.
+    * Affected cmdlets - Enable\Disable-AzsComputeUserSubscriptionFeature, Get-AzsComputeFeature, Update-AzsComputeGlobalFeatureSetting 
 * Get-AzsDisk - adds support for viewing managed disk creation source of returned objects in Get-AzsDisk.
 * Get-AzsDisk - adds support for querying the exclusive allocated size of a managed disk with Get-AzsDisk -DiskSizeDetail, AzureStack operator can use this size to estimate the space to be freed after migrating the specific disk.
 
