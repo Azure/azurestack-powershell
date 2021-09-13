@@ -1,8 +1,16 @@
 
 # Release 2.2.0
 * Requires AzureStack Update 2108+
-* New module Azs.ContainerRegistry.Admin has been included exposing the apis to setup container registry in AzureStack
-* New module Azs.ContainerService.Admin has been included exposing quota APIs
+## Azs.ContainerService.Admin module 
+* AzureStack AKS admin powershell commands to manage Container service admin operations
+## Azs.ContainerRegistry.Admin module
+* AzureStack Container Registry admin power shell commands to setup and manage Container Registry admin operations
+## Azs.Compute.Admin module
+* Added support for GPU Quotas (DDA and Partitioned GPU VM sizes) to limit tenant usage
+* Added support for globally enabling/disabling or locally enabling/disabling features for tenant subscription IDs.
+* Get-AzsDisk - adds support for viewing managed disk creation source of returned objects in Get-AzsDisk.
+* Get-AzsDisk - adds support for querying the exclusive allocated size of a managed disk with Get-AzsDisk -DiskSizeDetail, AzureStack operator can use this size to estimate the space to be freed after migrating the specific disk.
+
 
 # Release 2.1.1
 * AzureStack operator module GA version 2.1.1
