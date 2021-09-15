@@ -1,6 +1,6 @@
 ### Example 1: Get List Azs ContainerRegistry Quotas
 ```powershell
-PS C:\> Get-AzsContainerRegistryQuota
+PS C:\> Get-AzsContainerRegistryQuota | ConvertTo-Json
 
 [
     {
@@ -24,7 +24,7 @@ Returns a list of container registry quotas at the given location.
 
 ### Example 2: Get Azs ContainerRegistry Quota by Name
 ```powershell
-PS C:\> Get-AzsContainerRegistryQuota -Name "Default quota"
+PS C:\> Get-AzsContainerRegistryQuota -Name "Default quota" | ConvertTo-Json
 
 {
     "CapacityPerRegistryInGiB":  20,

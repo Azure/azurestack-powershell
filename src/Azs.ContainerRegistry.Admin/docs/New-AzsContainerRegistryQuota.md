@@ -32,7 +32,7 @@ Create or update an existing container registry quota.
 
 ### Example 1: New Azs ContainerRegistry Quota
 ```powershell
-PS C:\> New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistry 20
+PS C:\> New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistry 20 | ConvertTo-Json
 
 {
     "CapacityPerRegistryInGiB":  20,

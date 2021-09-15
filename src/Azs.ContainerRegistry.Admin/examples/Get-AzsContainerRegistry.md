@@ -1,6 +1,6 @@
 ### Example 1: Get List Azs Container Registries
 ```powershell
-PS C:\> Get-AzsContainerRegistry
+PS C:\> Get-AzsContainerRegistry | ConvertTo-Json
 
 {
     "CreationDate":  "\/Date(1629160842681)\/",
