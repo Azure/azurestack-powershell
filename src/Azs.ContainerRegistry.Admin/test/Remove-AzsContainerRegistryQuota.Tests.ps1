@@ -16,10 +16,10 @@ Describe 'Remove-AzsContainerRegistryQuota' {
         $global:TestName = 'TestDeleteContainerRegistryQuota'
 
         $name = "TestDeleteQuota"
-        $quota = New-AzsContainerRegistryQuota -CapacityPerRegistryInGib 50 -NumberOfRegistry 100  -Name $name
+        $quota = New-AzsContainerRegistryQuota -CapacityPerRegistryInGib 50 -NumberOfRegistries 100  -Name $name
         $quota      |    Should Not Be $null
         $quota.CapacityPerRegistryInGib | Should Be 50
-        $quota.NumberOfRegistry | Should Be 100
+        $quota.NumberOfRegistries       | Should Be 100
         Remove-AzsContainerRegistryQuota  -Name $name
         $quota | New-AzsContainerRegistryQuota -Name $name
         $retrievedQuota = Get-AzsContainerRegistryQuota -Name $name

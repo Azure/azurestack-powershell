@@ -24,7 +24,7 @@ Describe 'Set-AzsContainerRegistryQuota' {
 
             # Validate ContainerRegistry quota properties
             $containerRegistryQuota.CapacityPerRegistryInGib	| Should Not Be $null
-            $containerRegistryQuota.NumberOfRegistry	        | Should Not Be $null
+            $containerRegistryQuota.NumberOfRegistries	        | Should Not Be $null
             $containerRegistryQuota.Type	                    | Should Not Be $null
             $containerRegistryQuota.Id							| Should Not Be $null
             $containerRegistryQuota.Name						| Should Not Be $null
@@ -45,7 +45,7 @@ Describe 'Set-AzsContainerRegistryQuota' {
                 $found												    | Should Not Be $null
                 # Validate ContainerRegistry quota properties
                 $expected.CapacityPerRegistryInGib | Should Be $found.CapacityPerRegistryInGib
-                $expected.NumberOfRegistry         | Should Be $found.NumberOfRegistry
+                $expected.NumberOfRegistries       | Should Be $found.NumberOfRegistries
             }
         }
     }
@@ -68,16 +68,16 @@ Describe 'Set-AzsContainerRegistryQuota' {
 
         $updated = Set-AzsContainerRegistryQuota `
             -CapacityPerRegistryInGib $CapInGiB `
-            -NumberOfRegistry $NumOfRegistry `
+            -NumberOfRegistries $NumOfRegistry `
             -Name $name
 
         ValidateContainerRegistryQuota -containerRegistryQuota $updated
         $updated.CapacityPerRegistryInGib  | Should Be $CapInGiB
-        $updated.NumberOfRegistry          | Should Be $NumOfRegistry
+        $updated.NumberOfRegistries        | Should Be $NumOfRegistry
 
         Set-AzsContainerRegistryQuota `
             -CapacityPerRegistryInGib $quota.CapacityPerRegistryInGib `
-            -NumberOfRegistry $quota.NumberOfRegistry `
+            -NumberOfRegistries $quota.NumberOfRegistries `
             -Name $name
     }
 }
