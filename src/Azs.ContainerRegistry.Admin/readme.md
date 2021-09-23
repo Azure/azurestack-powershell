@@ -75,13 +75,53 @@ directive:
     set:
       subject-prefix: ContainerRegistry
 
+    # Rename cmdlet parameter name and set default value in ContainerRegistryQuota
+  - where:
+      verb: New
+      subject: Quota
+      parameter-name: capacityPerRegistryInGiB
+    set:
+      default:
+        script: '100'
+  - where:
+      subject: Quota
+      parameter-name: NumberOfRegistry
+    set:
+      parameter-name: NumberOfRegistries
+  - where:
+      verb: New
+      subject: Quota
+      parameter-name: NumberOfRegistries
+    set:
+      default:
+        script: '20'
+		
     # Rename cmdlet parameter name in ContainerRegistrySetup
   - where:
       subject: ContainerRegistrySetup
       parameter-name: SslCertBase64
     set:
       parameter-name: SslCert
+
+    # Rename model property names
+  - where:
+      model-name: ContainerRegistryQuota
+      property-name: NumberOfRegistry
+    set:
+      property-name: NumberOfRegistries
 	  
+    # Hide the auto-generated New-AzsContainerRegistryQuota and expose it through customized one
+  - where:
+      verb: New
+      subject: Quota
+    hide: true
+
+    # Hide the auto-generated Set-AzsContainerRegistryQuota and expose it through customized one
+  - where:
+      verb: Set
+      subject: Quota
+    hide: true
+	
 # Add release notes
   - from: Azs.ContainerRegistry.Admin.nuspec
     where: $
