@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '2.1.1'
+    ModuleVersion          = '2.2.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -60,8 +60,10 @@
         @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.1.0'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.0'; },
+        @{ModuleName = 'Azs.ContainerRegistry.Admin'; RequiredVersion = '0.2.0'; },
+        @{ModuleName = 'Azs.ContainerService.Admin'; RequiredVersion = '0.1.0'; },
         @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.1'; },
@@ -127,7 +129,8 @@
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '* Bug fix - Add signing for a file under utils folder in each of the module'
+            ReleaseNotes = '*Requires AzureStack update 2108
+            * Azs.ContainerRegistry.Admin and Azs.ContainerService.Admin modules has been added.'
 
         } # End of PSData hashtable
 
