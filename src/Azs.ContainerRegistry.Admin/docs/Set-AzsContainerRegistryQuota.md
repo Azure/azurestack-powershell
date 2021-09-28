@@ -15,7 +15,7 @@ Create or update an existing container registry quota.
 ### UpdateExpanded (Default)
 ```
 Set-AzsContainerRegistryQuota -Name <String> [-Location <String>] [-SubscriptionId <String>]
- [-CapacityPerRegistryInGiB <Int32>] [-NumberOfRegistry <Int32>] [-DefaultProfile <PSObject>] [-Confirm]
+ [-CapacityPerRegistryInGiB <Int32>] [-NumberOfRegistries <Int32>] [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
@@ -32,13 +32,13 @@ Create or update an existing container registry quota.
 
 ### Example 1: Set Azs ContainerRegistry Quota
 ```powershell
-PS C:\> Set-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 30 -NumberOfRegistry 30 | ConvertTo-Json
+PS C:\> Set-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 30 -NumberOfRegistries 30 | ConvertTo-Json
 
 {
     "CapacityPerRegistryInGiB":  30,
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota",
     "Name":  "redmond/testquota",
-    "NumberOfRegistry":  30,
+    "NumberOfRegistries":  30,
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/quotas"
 }
 ```
@@ -107,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NumberOfRegistry
+### -NumberOfRegistries
 Total number of container registry accounts.
 
 ```yaml
@@ -206,7 +206,7 @@ To create the parameters described below, construct a hash table containing the 
 
 QUOTAOBJECT <IContainerRegistryQuota>: Container registry quota.
   - `[CapacityPerRegistryInGiB <Int32?>]`: Storage capacity (GiB) of each registry.
-  - `[NumberOfRegistry <Int32?>]`: Total number of container registry accounts.
+  - `[NumberOfRegistries <Int32?>]`: Total number of container registry accounts.
 
 ## RELATED LINKS
 

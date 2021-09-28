@@ -16,10 +16,10 @@ Describe 'New-AzsContainerRegistryQuota' {
         $global:TestName = 'TestCreateContainerRegistryQuota'
 
         $name = "TestCreateQuota"
-        $quota = New-AzsContainerRegistryQuota  -CapacityPerRegistryInGib 20 -NumberOfRegistry 20  -Name $name
+        $quota = New-AzsContainerRegistryQuota  -CapacityPerRegistryInGib 20 -NumberOfRegistries 20  -Name $name
         $quota                          | Should Not Be $null
         $quota.CapacityPerRegistryInGib | Should Be 20
-        $quota.NumberOfRegistry         | Should Be 20
+        $quota.NumberOfRegistries       | Should Be 20
         Remove-AzsContainerRegistryQuota  -Name $name
     }
 }

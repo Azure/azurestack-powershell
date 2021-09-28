@@ -15,7 +15,7 @@ Create or update an existing container registry quota.
 ### CreateExpanded (Default)
 ```
 New-AzsContainerRegistryQuota -Name <String> [-Location <String>] [-SubscriptionId <String>]
- [-CapacityPerRegistryInGiB <Int32>] [-NumberOfRegistry <Int32>] [-DefaultProfile <PSObject>] [-Confirm]
+ [-CapacityPerRegistryInGiB <Int32>] [-NumberOfRegistries <Int32>] [-DefaultProfile <PSObject>] [-Confirm]
  [-WhatIf] [<CommonParameters>]
 ```
 
@@ -32,13 +32,13 @@ Create or update an existing container registry quota.
 
 ### Example 1: New Azs ContainerRegistry Quota
 ```powershell
-PS C:\> New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistry 20 | ConvertTo-Json
+PS C:\> New-AzsContainerRegistryQuota -QuotaName testquota -CapacityPerRegistryInGib 20 -NumberOfRegistries 20 | ConvertTo-Json
 
 {
     "CapacityPerRegistryInGiB":  20,
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/quotas/testquota",
     "Name":  "redmond/testquota",
-    "NumberOfRegistry":  20,
+    "NumberOfRegistries":  20,
     "Type":  "Microsoft.ContainerRegistry.Admin/locations/quotas"
 }
 ```
@@ -57,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 100
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -107,7 +107,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -NumberOfRegistry
+### -NumberOfRegistries
 Total number of container registry accounts.
 
 ```yaml
@@ -117,7 +117,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 20
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -206,7 +206,7 @@ To create the parameters described below, construct a hash table containing the 
 
 QUOTAOBJECT <IContainerRegistryQuota>: Container registry quota.
   - `[CapacityPerRegistryInGiB <Int32?>]`: Storage capacity (GiB) of each registry.
-  - `[NumberOfRegistry <Int32?>]`: Total number of container registry accounts.
+  - `[NumberOfRegistries <Int32?>]`: Total number of container registry accounts.
 
 ## RELATED LINKS
 
