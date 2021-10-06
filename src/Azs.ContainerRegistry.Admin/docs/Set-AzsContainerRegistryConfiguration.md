@@ -14,16 +14,15 @@ Configure container registry overall configuration properties.
 
 ### PutExpanded (Default)
 ```
-Set-AzsContainerRegistryConfiguration -ConfigurationName <String> [-Location <String>]
- [-SubscriptionId <String>] [-MaximumCapacityInGiB <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -Name <String> [-Location <String>] [-SubscriptionId <String>]
+ [-MaximumCapacityInGiB <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Put
 ```
-Set-AzsContainerRegistryConfiguration -ConfigurationName <String>
- -ConfigurationObject <IContainerRegistryConfiguration> [-Location <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -Name <String> -ConfigurationObject <IContainerRegistryConfiguration>
+ [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,21 +45,6 @@ PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -Configur
 Configure container registry overall configuration properties.
 
 ## PARAMETERS
-
-### -ConfigurationName
-The name of the configuration.
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ConfigurationObject
 Container registry configuration property.
@@ -117,6 +101,21 @@ Parameter Sets: PutExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The name of the configuration.
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
