@@ -14,8 +14,8 @@ Delete an existing container registry configuration
 
 ### Delete (Default)
 ```
-Remove-AzsContainerRegistryConfiguration -ConfigurationName <String> [-Location <String>]
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-AzsContainerRegistryConfiguration -Name <String> [-Location <String>] [-SubscriptionId <String>]
+ [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -38,21 +38,6 @@ PS C:\> Remove-AzsContainerRegistryConfiguration -ConfigurationName default
 Delete an existing container registry configuration.
 
 ## PARAMETERS
-
-### -ConfigurationName
-The name of the configuration.
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -DefaultProfile
 The credentials, account, tenant, and subscription used for communication with Azure.
@@ -96,6 +81,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The name of the configuration.
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
