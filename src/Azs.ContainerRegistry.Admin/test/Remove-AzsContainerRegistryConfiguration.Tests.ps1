@@ -17,10 +17,10 @@ Describe 'Remove-AzsContainerRegistryConfiguration' {
 
         $maxCapacityInGib = (Get-AzsContainerRegistryConfiguration ).MaximumCapacityInGib
         $targetCapacityInGib = 0
-        Remove-AzsContainerRegistryConfiguration -ConfigurationName default
+        Remove-AzsContainerRegistryConfiguration -Name default
         $result = Get-AzsContainerRegistryConfiguration
         $result                      | Should Not Be $null
         $result.MaximumCapacityInGib | Should Be $targetCapacityInGib
-        Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $maxCapacityInGib -ConfigurationName default
+        Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $maxCapacityInGib -Name default
     }
 }

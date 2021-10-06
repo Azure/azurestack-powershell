@@ -95,7 +95,14 @@ directive:
     set:
       default:
         script: '20'
-		
+        
+    # Rename cmdlet parameter name in ContainerRegistryConfiguration
+  - where:
+      subject: ContainerRegistryConfiguration
+      parameter-name: ConfigurationName
+    set:
+      parameter-name: Name
+        
     # Rename cmdlet parameter name in ContainerRegistrySetup
   - where:
       subject: ContainerRegistrySetup
@@ -109,7 +116,7 @@ directive:
       property-name: NumberOfRegistry
     set:
       property-name: NumberOfRegistries
-	  
+      
     # Hide the auto-generated New-AzsContainerRegistryQuota and expose it through customized one
   - where:
       verb: New
@@ -121,7 +128,7 @@ directive:
       verb: Set
       subject: Quota
     hide: true
-	
+    
 # Add release notes
   - from: Azs.ContainerRegistry.Admin.nuspec
     where: $
