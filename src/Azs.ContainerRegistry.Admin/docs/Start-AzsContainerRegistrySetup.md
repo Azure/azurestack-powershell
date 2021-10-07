@@ -14,8 +14,9 @@ Invokes container registry certificate uploading and service deployment.
 
 ### StartExpanded (Default)
 ```
-Start-AzsContainerRegistrySetup [-Location <String>] [-SubscriptionId <String>] [-Password <SecureString>]
- [-SslCertInputFile <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzsContainerRegistrySetup [-Location <String>] [-SubscriptionId <String>]
+ [-CertificateInputFile <String>] [-Password <SecureString>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Start
@@ -33,8 +34,9 @@ Start-AzsContainerRegistrySetup -InputObject <IContainerRegistryAdminIdentity>
 
 ### StartViaIdentityExpanded
 ```
-Start-AzsContainerRegistrySetup -InputObject <IContainerRegistryAdminIdentity> [-Password <SecureString>]
- [-SslCertInputFile <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzsContainerRegistrySetup -InputObject <IContainerRegistryAdminIdentity>
+ [-CertificateInputFile <String>] [-Password <SecureString>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +46,7 @@ Invokes container registry certificate uploading and service deployment.
 
 ### Example 1: Start Azs ContainerRegistry Setup
 ```powershell
-PS C:\> Start-AzsContainerRegistrySetup -Password $password -SslCertInputFile $pfx_cert_path | ConvertTo-Json
+PS C:\> Start-AzsContainerRegistrySetup -Password $password -CertificateInputFile $pfx_cert_path | ConvertTo-Json
 
 {
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Setup/locations/redmond/setup/value",
@@ -58,11 +60,11 @@ Invokes container registry certificate uploading and service deployment.
 
 ### Example 2: Start Azs ContainerRegistry Setup when another instance of Setup is already started
 ```powershell
-PS C:\> Start-AzsContainerRegistrySetup -Password $password -SslCertInputFile $pfx_cert_path | ConvertTo-Json
+PS C:\> Start-AzsContainerRegistrySetup -Password $password -CertificateInputFile $pfx_cert_path | ConvertTo-Json
 
 Start-AzsContainerRegistrySetup : Container registry deployment is still running. It is not allowed to repeat deployment at this stage.
 At line:1 char:1
-+ Start-AzsContainerRegistrySetup -Password $password -SslCertInputFile ...
++ Start-AzsContainerRegistrySetup -Password $password -CertificateInputFile ...
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidOperation: ({ SubscriptionI...SetupProperty }:<>f__AnonymousType7`3) [Start-AzsContai...p_StartExpanded], Exception
     + FullyQualifiedErrorId : AcrDeploymentStillRunning,Microsoft.Azure.PowerShell.Cmdlets.ContainerRegistryAdmin.Cmdlets.StartAzsContainerRegistrySetup_StartExpanded
@@ -71,6 +73,21 @@ At line:1 char:1
 Returns the error if another instance of Setup is already started.
 
 ## PARAMETERS
+
+### -CertificateInputFile
+Input File for Certificate (Ssl certificate in base64 format.)
+
+```yaml
+Type: System.String
+Parameter Sets: StartExpanded, StartViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DefaultProfile
 The credentials, account, tenant, and subscription used for communication with Azure.
@@ -123,21 +140,6 @@ Ssl certificate password.
 
 ```yaml
 Type: System.Security.SecureString
-Parameter Sets: StartExpanded, StartViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SslCertInputFile
-Input File for SslCert (Ssl certificate in base64 format.)
-
-```yaml
-Type: System.String
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 

@@ -17,9 +17,9 @@ Describe 'Set-AzsContainerRegistryConfiguration' {
 
         $maxCapacityInGib = (Get-AzsContainerRegistryConfiguration ).MaximumCapacityInGib
         $targetCapacityInGib = $originalDays + 1
-        $result = Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $targetCapacityInGib -Name default
+        $result = Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $targetCapacityInGib
         $result                      | Should Not Be $null
         $result.MaximumCapacityInGib | Should Be $targetCapacityInGib
-        Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $maxCapacityInGib -Name default
+        Set-AzsContainerRegistryConfiguration  -MaximumCapacityInGib $maxCapacityInGib
     }
 }

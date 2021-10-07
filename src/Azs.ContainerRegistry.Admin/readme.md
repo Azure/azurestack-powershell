@@ -102,13 +102,27 @@ directive:
       parameter-name: ConfigurationName
     set:
       parameter-name: Name
+  - where:
+      verb: Remove
+      subject: ContainerRegistryConfiguration
+      parameter-name: Name
+    set:
+      default:
+        script: Write-Output "default"
+  - where:
+      verb: Set
+      subject: ContainerRegistryConfiguration
+      parameter-name: Name
+    set:
+      default:
+        script: Write-Output "default"
         
     # Rename cmdlet parameter name in ContainerRegistrySetup
   - where:
       subject: ContainerRegistrySetup
       parameter-name: SslCertBase64
     set:
-      parameter-name: SslCert
+      parameter-name: Certificate
 
     # Rename model property names
   - where:
@@ -127,6 +141,12 @@ directive:
   - where:
       verb: Set
       subject: Quota
+    hide: true
+ 
+    # Hide the auto-generated Start-AzsContainerRegistrySetup and expose it through customized one
+  - where:
+      verb: Start
+      subject: ContainerRegistrySetup
     hide: true
     
 # Add release notes

@@ -14,15 +14,15 @@ Configure container registry overall configuration properties.
 
 ### PutExpanded (Default)
 ```
-Set-AzsContainerRegistryConfiguration -Name <String> [-Location <String>] [-SubscriptionId <String>]
+Set-AzsContainerRegistryConfiguration [-Location <String>] [-Name <String>] [-SubscriptionId <String>]
  [-MaximumCapacityInGiB <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Put
 ```
-Set-AzsContainerRegistryConfiguration -Name <String> -ConfigurationObject <IContainerRegistryConfiguration>
- [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -ConfigurationObject <IContainerRegistryConfiguration>
+ [-Location <String>] [-Name <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +32,7 @@ Configure container registry overall configuration properties.
 
 ### Example 1: Set Azs ContainerRegistry Configuration
 ```powershell
-PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -ConfigurationName default | ConvertTo-Json
+PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 | ConvertTo-Json
 
 {
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default",
@@ -115,9 +115,9 @@ Type: System.String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
-Default value: None
+Default value: Write-Output "default"
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

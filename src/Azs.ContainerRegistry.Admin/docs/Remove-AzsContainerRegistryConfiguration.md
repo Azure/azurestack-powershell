@@ -14,7 +14,7 @@ Delete an existing container registry configuration
 
 ### Delete (Default)
 ```
-Remove-AzsContainerRegistryConfiguration -Name <String> [-Location <String>] [-SubscriptionId <String>]
+Remove-AzsContainerRegistryConfiguration [-Location <String>] [-Name <String>] [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Delete an existing container registry configuration
 
 ### Example 1: Remove Azs ContainerRegistry Configuration
 ```powershell
-PS C:\> Remove-AzsContainerRegistryConfiguration -ConfigurationName default
+PS C:\> Remove-AzsContainerRegistryConfiguration
 
 ```
 
@@ -93,9 +93,9 @@ Type: System.String
 Parameter Sets: Delete
 Aliases:
 
-Required: True
+Required: False
 Position: Named
-Default value: None
+Default value: Write-Output "default"
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

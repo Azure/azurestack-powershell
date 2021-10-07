@@ -1,6 +1,6 @@
 ### Example 1: Remove Azs ContainerRegistry Configuration
 ```powershell
-PS C:\> Remove-AzsContainerRegistryConfiguration -ConfigurationName default
+PS C:\> Remove-AzsContainerRegistryConfiguration
 
 ```
 
