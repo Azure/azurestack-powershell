@@ -13,7 +13,7 @@ while(-not $mockingPath) {
 
 Describe 'Start-AzsContainerRegistrySetup' {
         $password = ConvertTo-SecureString "password" -AsPlainText -Force
-        $pfx_cert_path = Join-Path $PSScriptRoot 'SSL.pem'
+        $pfx_cert_path = Join-Path $PSScriptRoot 'SSL.pfx'
         
         { Start-AzsContainerRegistrySetup -Password $password -CertificateInputFile $pfx_cert_path } | Should Not Throw
 }

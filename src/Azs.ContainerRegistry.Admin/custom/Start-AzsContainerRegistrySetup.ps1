@@ -190,6 +190,7 @@ begin {
 
 process {
 
+    # Basic validation should be present in powershell for PFX file
     if ($PSBoundParameters.ContainsKey(('CertificateInputFile')))
     {
         if (!(Test-Path -Path $CertificateInputFile -PathType Leaf))
