@@ -243,8 +243,8 @@ INPUTOBJECT <IContainerRegistryAdminIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: The ID of the target subscription.
 
 STARTSETUPREQUEST <IContainerRegistrySetupProperty>: Container registry setup properties.
-  - `[Password <SecureString>]`: Ssl certificate password.
-  - `[SslCertBase64 <Byte[]>]`: Ssl certificate in base64 format.
+  - `Password <SecureString>`: Ssl certificate password.
+  - `SslCertBase64 <Byte[]>`: Ssl certificate in base64 format.
 
 ## RELATED LINKS
 

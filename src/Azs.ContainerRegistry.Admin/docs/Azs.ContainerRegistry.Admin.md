@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.ContainerRegistry.Admin
-Module Guid: 900db1dd-8338-4e8f-a01c-81ab98484955
+Module Guid: b0f249b1-a0b6-42a8-837c-d20801583692
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.containerregistry.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -28,9 +28,6 @@ Returns the status of the container registry setup.
 
 ### [New-AzsContainerRegistryQuota](New-AzsContainerRegistryQuota.md)
 Create or update an existing container registry quota.
-
-### [Remove-AzsContainerRegistryConfiguration](Remove-AzsContainerRegistryConfiguration.md)
-Delete an existing container registry configuration
 
 ### [Remove-AzsContainerRegistryQuota](Remove-AzsContainerRegistryQuota.md)
 Delete an existing container registry quota

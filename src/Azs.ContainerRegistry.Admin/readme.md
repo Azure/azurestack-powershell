@@ -106,6 +106,7 @@ directive:
       verb: Remove
       subject: ContainerRegistryConfiguration
       parameter-name: Name
+    hide: true
     set:
       default:
         script: Write-Output "default"
@@ -113,10 +114,15 @@ directive:
       verb: Set
       subject: ContainerRegistryConfiguration
       parameter-name: Name
+    hide: true
     set:
       default:
         script: Write-Output "default"
-        
+  - where:
+      verb: Remove
+      subject: ContainerRegistryConfiguration
+    hide: true
+    
     # Rename cmdlet parameter name in ContainerRegistrySetup
   - where:
       subject: ContainerRegistrySetup
@@ -132,21 +138,21 @@ directive:
       property-name: NumberOfRegistries
       
     # Hide the auto-generated New-AzsContainerRegistryQuota and expose it through customized one
-	# The customization makes the Quota parameters optional and add default values in case if parameter skiped
+    # The customization makes the Quota parameters optional and add default values in case if parameter skiped
   - where:
       verb: New
       subject: Quota
     hide: true
 
     # Hide the auto-generated Set-AzsContainerRegistryQuota and expose it through customized one
-	# The customization makes the Quota parameters optional and add existed values in case if parameter skiped
+    # The customization makes the Quota parameters optional and add existed values in case if parameter skiped
   - where:
       verb: Set
       subject: Quota
     hide: true
  
     # Hide the auto-generated Start-AzsContainerRegistrySetup and expose it through customized one
-	# The customization adds basic validation for PFX file
+    # The customization adds basic validation for PFX file
   - where:
       verb: Start
       subject: ContainerRegistrySetup
