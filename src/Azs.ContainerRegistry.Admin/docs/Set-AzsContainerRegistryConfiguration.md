@@ -14,15 +14,15 @@ Configure container registry overall configuration properties.
 
 ### PutExpanded (Default)
 ```
-Set-AzsContainerRegistryConfiguration [-Location <String>] [-Name <String>] [-SubscriptionId <String>]
- [-MaximumCapacityInGiB <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -MaximumCapacityInGiB <Int32> [-Location <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Put
 ```
 Set-AzsContainerRegistryConfiguration -ConfigurationObject <IContainerRegistryConfiguration>
- [-Location <String>] [-Name <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -100,24 +100,9 @@ Type: System.Int32
 Parameter Sets: PutExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-The name of the configuration.
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: Write-Output "default"
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -189,7 +174,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 CONFIGURATIONOBJECT <IContainerRegistryConfiguration>: Container registry configuration property.
-  - `[MaximumCapacityInGiB <Int32?>]`: Total storage capacity (GiB) which can used by the registry.
+  - `MaximumCapacityInGiB <Int32>`: Total storage capacity (GiB) which can used by the registry.
 
 ## RELATED LINKS
 
