@@ -80,7 +80,7 @@ directive:
     set:
       subject-prefix: Compute
 
-    # Prepend Compute for the Quota cmdlets
+    # Prepend Compute for the ScaleUnit cmdlets
   - where:
       subject: ScaleUnit
     set:
