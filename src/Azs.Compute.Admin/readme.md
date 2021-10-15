@@ -19,6 +19,9 @@ This module was primarily generated via [AutoRest](https://github.com/Azure/auto
 ## Module Requirements
 - [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.2.3 or greater
 
+## Module Requirements
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.2.3 or greater
+
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
@@ -55,7 +58,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.1.0
+module-version: 1.1.1
 service-name: ComputeAdmin
 
 ### File Renames
@@ -80,7 +83,7 @@ directive:
     set:
       subject-prefix: Compute
 
-    # Prepend Compute for the Quota cmdlets
+    # Prepend Compute for the ScaleUnit cmdlets
   - where:
       subject: ScaleUnit
     set:
@@ -112,6 +115,29 @@ directive:
       subject: DiskMigrationJob
     set:
       alias: Start-AzsDiskMigrationJob  
+
+    # Rename property name Node to Nodes
+  - where:
+      property-name: Node
+      model-name: ScaleUnit
+    set:
+      property-name: Nodes
+
+    # Format ScaleUnit returned object
+  - where:
+      model-name: ScaleUnit
+    set:
+      format-table:
+          properties:
+              - ScaleUnitName
+              - Location
+              - Nodes
+          labels:
+              ScaleUnitName: Scale Unit Name
+          width:
+              ScaleUnitName: 17
+              Location: 10
+              Nodes: 50
 
   # Default to Format-List for the VMExtension commandlets as there are many important fields
   - where:
