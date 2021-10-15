@@ -80,7 +80,7 @@ directive:
     set:
       subject-prefix: Compute
 
-    # Prepend Compute for the Quota cmdlets
+    # Prepend Compute for the ScaleUnit cmdlets
   - where:
       subject: ScaleUnit
     set:
@@ -112,6 +112,28 @@ directive:
       subject: DiskMigrationJob
     set:
       alias: Start-AzsDiskMigrationJob  
+
+  - where:
+      property-name: Node
+      model-name: ScaleUnit
+    set:
+      property-name: Nodes
+
+    # Format ScaleUnit returned object
+  - where:
+      model-name: ScaleUnit
+    set:
+      format-table:
+          properties:
+              - ScaleUnitName
+              - Location
+              - Nodes
+          labels:
+              ScaleUnitName: Scale Unit Name
+          width:
+              ScaleUnitName: 17
+              Location: 10
+              Nodes: 50
 
   # Default to Format-List for the VMExtension commandlets as there are many important fields
   - where:
