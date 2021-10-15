@@ -14,16 +14,15 @@ Configure container registry overall configuration properties.
 
 ### PutExpanded (Default)
 ```
-Set-AzsContainerRegistryConfiguration -ConfigurationName <String> [-Location <String>]
- [-SubscriptionId <String>] [-MaximumCapacityInGiB <Int32>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -MaximumCapacityInGiB <Int32> [-Location <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Put
 ```
-Set-AzsContainerRegistryConfiguration -ConfigurationName <String>
- -ConfigurationObject <IContainerRegistryConfiguration> [-Location <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-AzsContainerRegistryConfiguration -ConfigurationObject <IContainerRegistryConfiguration>
+ [-Location <String>] [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,7 +32,7 @@ Configure container registry overall configuration properties.
 
 ### Example 1: Set Azs ContainerRegistry Configuration
 ```powershell
-PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -ConfigurationName default | ConvertTo-Json
+PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 | ConvertTo-Json
 
 {
     "Id":  "/subscriptions/7e41090c-4aa7-40bc-856a-a993f8fbd215/providers/Microsoft.ContainerRegistry.Admin/locations/redmond/configurations/Default",
@@ -46,21 +45,6 @@ PS C:\> Set-AzsContainerRegistryConfiguration -MaximumCapacityInGib 30 -Configur
 Configure container registry overall configuration properties.
 
 ## PARAMETERS
-
-### -ConfigurationName
-The name of the configuration.
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ConfigurationObject
 Container registry configuration property.
@@ -116,7 +100,7 @@ Type: System.Int32
 Parameter Sets: PutExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -190,7 +174,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 CONFIGURATIONOBJECT <IContainerRegistryConfiguration>: Container registry configuration property.
-  - `[MaximumCapacityInGiB <Int32?>]`: Total storage capacity (GiB) which can used by the registry.
+  - `MaximumCapacityInGiB <Int32>`: Total storage capacity (GiB) which can used by the registry.
 
 ## RELATED LINKS
 
