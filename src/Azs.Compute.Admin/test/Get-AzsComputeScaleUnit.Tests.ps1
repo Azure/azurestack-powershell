@@ -23,11 +23,11 @@ Describe 'Get-AzsComputeScaleUnit' {
         $scaleUnitView | Should Not Be $null
         $scaleUnitView.Id | Should Not Be $null
         $scaleUnitView.LastUpdatedTime | Should Not Be $null
-        $scaleUnitView.Node | Should Not Be $null
+        $scaleUnitView.Nodes | Should Not Be $null
         $scaleUnitView.ScaleUnitName | Should Be s-cluster
         $scaleUnitView.Type | Should Not Be $null
 
-        foreach ($node in $scaleUnitView.Node){
+        foreach ($node in $scaleUnitView.Nodes){
             $node.LastUpdatedTime | Should Not Be $null
             $node.NodeHealthState | Should Not Be $null
             $node.NodeName | Should Not Be $null
