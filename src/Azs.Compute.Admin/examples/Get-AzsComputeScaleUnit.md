@@ -6,3 +6,5 @@ Scale Unit Name   Location   Nodes
 ---------------   --------   -----
 s-cluster         redmond    {AzSNode1,AzSNode2,AzSNode3,AzSNode4}
 ```
+
+Run `Get-AzsComputeScaleUnit` to get the compute scale unit.
