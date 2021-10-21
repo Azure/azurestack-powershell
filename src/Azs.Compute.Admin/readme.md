@@ -86,16 +86,6 @@ directive:
     set:
       subject-prefix: Compute
 
-    # Format ScaleUnit returned object
-    - where:
-        model-name: ScaleUnit
-      set:
-        format-table:
-            properties:
-                - ScaleUnitName
-                - Location
-                - Node
-
     # Rename Tenant to User
   - where:
       subject: Tenant*
