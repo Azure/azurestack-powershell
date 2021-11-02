@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Backup.Admin
-Module Guid: af181060-8c4d-4143-9bb9-2145377fd72c
+Module Guid: 8aa3e34d-0ec9-4787-accb-9eb57f3ff7fe
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft AzureStack PowerShell: Backup Admin cmdlets
 
 ## Azs.Backup.Admin Cmdlets
+### [Clear-AzsBackupConfiguration](Clear-AzsBackupConfiguration.md)
+Clear a backup location.
+
 ### [Get-AzsBackup](Get-AzsBackup.md)
 Returns a backup from a location based on name.
 
@@ -23,9 +26,9 @@ Prune the external backup store.
 ### [Restore-AzsBackup](Restore-AzsBackup.md)
 Restore a backup.
 
-### [Set-AzsBackupConfiguration](Set-AzsBackupConfiguration.md)
-Update a backup location.
-
 ### [Start-AzsBackup](Start-AzsBackup.md)
 Back up a specific location.
+
+### [Update-AzsBackupConfiguration](Update-AzsBackupConfiguration.md)
+Patch update a backup location.
 

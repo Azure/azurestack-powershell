@@ -1,41 +1,34 @@
 ---
 external help file:
 Module Name: Azs.Backup.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/start-azsbackup
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/clear-azsbackupconfiguration
 schema: 2.0.0
 ---
 
-# Start-AzsBackup
+# Clear-AzsBackupConfiguration
 
 ## SYNOPSIS
-Back up a specific location.
+Clear a backup location.
 
 ## SYNTAX
 
-### Create (Default)
 ```
-Start-AzsBackup [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
+Clear-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
  [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
-```
-Start-AzsBackup -InputObject <IBackupAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Back up a specific location.
+Clear a backup location.
 
 ## EXAMPLES
 
-### Example 1: Start azurestack backup
+### Example 1: Clear backup configuration
 ```powershell
-PS C:\>Start-AzsBackup
+PS C:\> Clear-AzsBackupConfiguration
 
 ```
 
-Start an Azure Stack backup.
+Clear Azure Stack backup configuration.
 
 ## PARAMETERS
 
@@ -69,28 +62,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
-Parameter Sets: CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -Location
 Name of the backup location.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -120,7 +97,7 @@ Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -136,7 +113,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -182,27 +159,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackup
+### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
 
 ## NOTES
 
 ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
-  - `[Backup <String>]`: Name of the backup.
-  - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Name of the backup location.
-  - `[ResourceGroupName <String>]`: Name of the resource group.
-  - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
 
 ## RELATED LINKS
 

@@ -1,18 +1,41 @@
+
+# ----------------------------------------------------------------------------------
+#
+# Copyright Microsoft Corporation
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# ----------------------------------------------------------------------------------
+
 <#
 .Synopsis
 Restore a backup.
 .Description
 Restore a backup.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/restore-azsbackup
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+.Example
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IRestoreOptions
+Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IRestoreOptions
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
 .Outputs
 System.Boolean
 .Notes
 COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
@@ -33,13 +56,6 @@ function Restore-AzsBackup {
 [OutputType([System.Boolean])]
 [CmdletBinding(DefaultParameterSetName='RestoreExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Restore', Mandatory)]
-    [Parameter(ParameterSetName='RestoreExpanded', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [System.String]
-    # Name of the backup.
-    ${Name},
-
     [Parameter(ParameterSetName='Restore')]
     [Parameter(ParameterSetName='RestoreExpanded')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
@@ -47,6 +63,13 @@ param(
     [System.String]
     # Name of the backup location.
     ${Location},
+
+    [Parameter(ParameterSetName='Restore', Mandatory)]
+    [Parameter(ParameterSetName='RestoreExpanded', Mandatory)]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
+    [System.String]
+    # Name of the backup.
+    ${Name},
 
     [Parameter(ParameterSetName='Restore')]
     [Parameter(ParameterSetName='RestoreExpanded')]
@@ -76,7 +99,7 @@ param(
     [Parameter(ParameterSetName='Restore', Mandatory)]
     [Parameter(ParameterSetName='RestoreViaIdentity', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IRestoreOptions]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IRestoreOptions]
     # Properties for restore options.
     # To construct, see NOTES section for RESTOREOPTION properties and create a hash table.
     ${RestoreOption},
