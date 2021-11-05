@@ -8,14 +8,14 @@ $global:passwordStr = "password"
 $global:path = "\\su1fileserver\SU1_Infrastructure_1\BackupStore"
 $global:blobStorageUrl = "https://pazsbcdrblobstore.blob.core.windows.net/211030-n42r1609-83cbfd32"
 $global:blobStorageKey = "hJW2t+LDs2JuF2uw=="
-$global:encryptionCertBase64 = "MIIDKcd3D3GOyBw=="
+$global:encryptionCertBase64 = "ZW5jcnlwdGlvbkNlcnQ="
 $global:encryptionCertPath = "$env:temp\encryptionCert.cer"
 $global:isBackupSchedulerEnabled = $false
 $global:backupFrequencyInHours = 10
 $global:backupRetentionPeriodInDays = 6
 $global:backupFrequencyInHoursDefaultValue = 12
 $global:backupRetentionPeriodInDaysDefaultValue = 7
-$global:decryptionCertBase64 = "MIIKqnlG/YCAgfQ"
+$global:decryptionCertBase64 = "ZGVjcnlwdGlvbkNlcnQ="
 $global:decryptionCertPath = "$env:temp\decryptionCert.pfx"
 $global:decryptionCertPassword = ConvertTo-SecureString -String "decryptionCertPassword" -AsPlainText -Force
 
