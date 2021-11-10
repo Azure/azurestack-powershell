@@ -126,6 +126,7 @@ param(
 )
 
 process {
+    # Restrict the cmdlet to being a blank PUT operation to clear the backup configuration
     $PSBoundParameters.Add('Location1', $Location)
     $PSBoundParameters.Add('UserName', $null)
 
