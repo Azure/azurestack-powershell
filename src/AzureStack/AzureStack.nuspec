@@ -22,6 +22,7 @@
       <dependency id="Azs.ContainerRegistry.Admin" version="[0.2.0]" />
       <dependency id="Azs.ContainerService.Admin" version="[0.1.0]" />
       <dependency id="Azs.Deployment.Admin" version="[1.0.0]" />
+      <dependency id="Azs.Fabric.Admin" version="[1.0.1]" />
       <dependency id="Azs.Gallery.Admin" version="[1.0.1]" />
       <dependency id="Azs.Infrastructureinsights.Admin" version="[1.0.1]" />
       <dependency id="Azs.Keyvault.Admin" version="[1.0.1]" />
