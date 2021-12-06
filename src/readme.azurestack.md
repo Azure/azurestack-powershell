@@ -30,6 +30,12 @@ clear-output-folder: true
 output-folder: .
 ```
 
+> Exclude some properties in table view
+``` yaml
+exclude-tableview-properties:
+  - Id
+```
+
 > Directives
 ``` yaml
 directive:
