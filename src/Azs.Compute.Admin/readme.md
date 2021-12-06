@@ -192,6 +192,12 @@ directive:
     set:
       suppress-format: true
 
+    # Default to Format-List for the MigrationSubTask Object model as there are many important fields
+  - where:
+      model-name: MigrationSubTask
+    set:
+      suppress-format: true
+
     # Rename DataDisk parameter to DataDisks in Add-AzsPlatformImage for back-compat
   - where:
       verb: Add
