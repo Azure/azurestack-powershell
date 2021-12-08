@@ -1,13 +1,13 @@
 <#
-    This script downloads artifacts from Azure Devops with build ID $buildId using your personal access token 
-    $personalAccessToken, and downloads the artifacts as zip files to $destinationFolder, where the .nupkg files will be
+    This script downloads artifacts from Azure Devops with build ID $BuildId using your personal access token 
+    $AzSdkPersonalAccessToken, and downloads the artifacts as zip files to $DestinationFolder, where the .nupkg files will be
     extracted.
     
-    $buildId: The numerical ID of the build. If empty, the latest build ID number will be used.
-    $destinationFolder: The destination folder to download the artifacts and extract the nupkg. Defaults to the current 
+    $BuildId: The numerical ID of the build. If empty, the latest build ID number will be used.
+    $DestinationFolder: The destination folder to download the artifacts and extract the nupkg. Defaults to the current 
         script's directory.
-    $personalAccessToken: The personal access token granted to you from Azure Devops. Defaults to environment variable 
-        named "PersonalAccessToken".
+    $AzSdkPersonalAccessToken: The personal access token granted to you from Azure Devops. Defaults to environment variable 
+        named "AzSdkPersonalAccessToken".
     
     Sample headers:
     
@@ -31,19 +31,19 @@
     
     Get all artifacts of a build:
     $listArtifactsReq = @{
-        Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/builds/${buildId}/artifacts?api-version=5.1"
+        Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/builds/${BuildId}/artifacts?api-version=5.1"
         Headers = $headers
     }
 #>
 
 Param (
-    [string]$buildId,
-    [string]$destinationFolder = $PSScriptRoot,
-    [string]$personalAccessToken = $env:PersonalAccessToken
+    [string]$BuildId,
+    [string]$DestinationFolder = $PSScriptRoot,
+    [string]$AzSdkPersonalAccessToken = $env:AzSdkPersonalAccessToken
 )
 
-$user = $personalAccessToken
-$pass = $personalAccessToken
+$user = $AzSdkPersonalAccessToken
+$pass = $AzSdkPersonalAccessToken
 $pair = "${user}:${pass}"
 $bytes = [System.Text.Encoding]::ASCII.GetBytes($pair)
 $base64 = [System.Convert]::ToBase64String($bytes)
@@ -51,8 +51,8 @@ $basicAuthValue = "Basic $base64"
 $headers = @{ Authorization = $basicAuthValue }
 $apiVersion = "5.1-preview"
 
-# If the $buildId is empty string, download from the latest build.
-if ($buildId -eq "")
+# If the $BuildId is empty string, download from the latest build.
+if ($BuildId -eq "")
 {
     $buildReq = @{
         Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/latest/azurestack-powershell%20-%20gen-sign?branchName=dev&api-version=${apiVersion}"
@@ -60,11 +60,11 @@ if ($buildId -eq "")
     }
     
     $result = Invoke-RestMethod @buildReq -Method Get
-    $buildId = $result.buildNumber
+    $BuildId = $result.buildNumber
 }
 
 $listArtifactsReq = @{
-    Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/builds/${buildId}/artifacts?api-version=${apiVersion}"
+    Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/builds/${BuildId}/artifacts?api-version=${apiVersion}"
     Headers = $headers
 }
 
@@ -82,8 +82,8 @@ foreach($resultValue in $result.value) {
         Uri = $resultValue.resource.downloadUrl
         Headers = $headers
     }
-    $downloadedModuleZips.add("${destinationFolder}\$($resultValue.name).zip")
-    Invoke-RestMethod @fileReq -Method Get -Outfile "${destinationFolder}\$($resultValue.name).zip"
+    $downloadedModuleZips.add("${DestinationFolder}\$($resultValue.name).zip")
+    Invoke-RestMethod @fileReq -Method Get -Outfile "${DestinationFolder}\$($resultValue.name).zip"
 }
 
 <#####################################
@@ -95,7 +95,7 @@ $extractedModulesFolder = New-Object System.Collections.Generic.List[System.Obje
 
 foreach($moduleZip in $downloadedModuleZips)
 {
-    $expanded = Expand-Archive -LiteralPath $moduleZip -DestinationPath $destinationFolder -Force -PassThru
+    $expanded = Expand-Archive -LiteralPath $moduleZip -DestinationPath $DestinationFolder -Force -PassThru
 
     foreach($expandedFolder in $expanded)
     {
@@ -119,7 +119,7 @@ foreach($extractedModuleFolder in $extractedModulesFolder)
     
     foreach($nupkg in $nupkgs)
     {
-        copy-item $nupkg -Destination $destinationFolder -Force
+        copy-item $nupkg.FullName -Destination $DestinationFolder -Force
     }
 
     Remove-Item -LiteralPath $extractedModuleFolder -Force -Recurse
