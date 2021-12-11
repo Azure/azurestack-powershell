@@ -16,6 +16,9 @@ This directory contains the PowerShell module for the BackupAdmin service.
 ## Detail
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
+## Module Requirements
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.2.3 or greater
+
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
@@ -179,11 +182,6 @@ directive:
   - from: Azs.Backup.Admin.nuspec
     where: $
     transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
-
-# PSD1 Changes for RequiredModules
-  - from: source-file-csharp
-    where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.AzureBridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.2.8\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.12.0\'; \}\}\)\"\);');
 
 # PSD1 Changes for ReleaseNotes
   - from: source-file-csharp
