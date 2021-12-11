@@ -166,7 +166,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.ContainerRegistry.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id=\"Az.Accounts\" version=\"2.3.0\" />', '<dependency id="Az.Accounts" version="2.2.8" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
+    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp
