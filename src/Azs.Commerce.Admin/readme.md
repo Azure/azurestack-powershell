@@ -54,7 +54,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.0.1
+module-version: 1.0.2
 service-name: CommerceAdmin
 ### File Renames
 ### IMPORTANT - Note that the following settings are case sensitive ###

@@ -72,7 +72,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.0.1
+module-version: 1.0.2
 service-name: FabricAdmin
 
 ### File Renames

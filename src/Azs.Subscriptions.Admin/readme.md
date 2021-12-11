@@ -51,7 +51,7 @@ metadata:
   description: 'Microsoft AzureStack PowerShell: Subscriptions Admin cmdlets'
 
 subject-prefix: ''
-module-version: 1.0.1
+module-version: 1.0.2
 sanitize-names: false
 service-name: SubscriptionsAdmin
 
