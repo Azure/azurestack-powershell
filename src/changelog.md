@@ -51,6 +51,8 @@
 * Get-AzsDisk - adds support for viewing managed disk creation source of returned objects in Get-AzsDisk.
 * Get-AzsDisk - adds support for querying the exclusive allocated size of a managed disk with Get-AzsDisk -DiskSizeDetail, AzureStack operator can use this size to estimate the space to be freed after migrating the specific disk.
 
+## All Modules
+* All the operator modules are updated for Az.Resources dependency. Az.Resources module version is updated to 0.12.0
 
 # Release 2.1.1
 * AzureStack operator module GA version 2.1.1

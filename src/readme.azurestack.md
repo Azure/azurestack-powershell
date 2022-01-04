@@ -15,6 +15,11 @@ metadata:
   requireLicenseAcceptance: true
   licenseUri: https://aka.ms/azps-license
   projectUri: https://github.com/Azure/azurestack-powershell
+  requiredModules:
+    - name: Az.Accounts
+      version: 2.2.8
+    - name: Az.Resources
+      version: 0.12.0      
 ```
 
 > Names
@@ -28,6 +33,12 @@ identity-correction-for-post: true
 ``` yaml
 clear-output-folder: true
 output-folder: .
+```
+
+> Exclude some properties in table view
+``` yaml
+exclude-tableview-properties:
+  - Id
 ```
 
 > Directives

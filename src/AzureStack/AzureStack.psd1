@@ -56,24 +56,24 @@
     # Modules that must be imported into the global environment prior to importing this module
     ### IMPORTANT - Note that the module names are case sensitive ###
     RequiredModules        = @(@{ModuleName = 'Az.Accounts'; RequiredVersion = '2.2.8'; },
-        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.11.0'; },
-        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.1'; },
+        @{ModuleName = 'Az.Resources'; RequiredVersion = '0.12.0'; },
+        @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.1.0'; },
-        @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.0'; },
+        @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.ContainerRegistry.Admin'; RequiredVersion = '0.2.0'; },
         @{ModuleName = 'Azs.ContainerService.Admin'; RequiredVersion = '0.1.0'; },
-        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.1'; },
-        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.157'; })
+        @{ModuleName = 'Azs.Fabric.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.161'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()

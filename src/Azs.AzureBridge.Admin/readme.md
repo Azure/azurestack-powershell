@@ -51,7 +51,7 @@ metadata:
   description: 'Microsoft AzureStack PowerShell: AzureBridge Admin cmdlets'
 
 subject-prefix: AzureBridge
-module-version: 1.0.1
+module-version: 1.0.2
 identity-correction-for-post: true
 service-name: BridgeAdmin
 
@@ -127,12 +127,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Azurebridge.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.11.0]" />');
-
-# PSD1 changes for RequiredModules
-  - from: source-file-csharp
-    where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Azurebridge.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Azurebridge.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.2.8\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.11.0\'; \}\}\)\"\);');
+    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp

@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: 'Keyvault'
-module-version: 1.0.1
+module-version: 1.0.2
 service-name: KeyvaultAdmin
 
 ### File Renames
@@ -74,12 +74,7 @@ directive:
 # Add Az.Accounts/Az.Resources as dependencies
   - from: Azs.Keyvault.Admin.nuspec
     where: $
-    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.11.0]" />');
-
-# PSD1 changes for RequiredModules
-  - from: source-file-csharp
-    where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Keyvault.Admin.private.dll\"\}\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}RequiredAssemblies = \'\{\"./bin/Azs.Keyvault.Admin.private.dll\"\}\'\"\);\n      sb.AppendLine\(\$@\"\{Indent\}RequiredModules = @\(@\{\{ModuleName = \'Az.Accounts\'; RequiredVersion = \'2.2.8\'; \}\}, @\{\{ModuleName = \'Az.Resources\'; RequiredVersion = \'0.11.0\'; \}\}\)\"\);');
+    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
 
 # PSD1 changes for ReleaseNotes
   - from: source-file-csharp
