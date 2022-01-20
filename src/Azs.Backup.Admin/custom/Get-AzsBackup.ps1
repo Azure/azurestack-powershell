@@ -19,14 +19,7 @@ Returns a backup from a location based on name.
 .Description
 Returns a backup from a location based on name.
 .Example
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-.Example
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-
+To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/get-azsbackup
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
 .Outputs
