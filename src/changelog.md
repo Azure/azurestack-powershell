@@ -1,5 +1,6 @@
-# Release 2.3.0
-* Requires AzureStack Update 2204+
+# Release 3.0.0
+* Requires AzureStack Update 2203+
+* Breaking changes in Azs.Backup.Admin module
 ## Azs.Backup.Admin module 
 * Adds support for configuring backup location as blob storage
 * Removes Set-AzsBackupconfiguration and newly supports Update\Clear-AzsBackupConfiguration
