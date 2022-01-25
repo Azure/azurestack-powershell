@@ -11,6 +11,8 @@ function setupEnv() {
     # as default. You could change them if needed.
     $env.SubscriptionId = (Get-AzContext).Subscription.Id
     $env.Tenant = (Get-AzContext).Tenant.Id
+    $env.ResourceGroup = "system.$((Get-AzLocation)[0].Location)"
+    $env.Location = (Get-AzLocation)[0].Location
     # For any resources you created for test, you should add it to $env here.
     $envFile = 'env.json'
     if ($TestMode -eq 'live') {
@@ -21,3 +23,4 @@ function setupEnv() {
 function cleanupEnv() {
     # Clean resources you create for testing
 }
+

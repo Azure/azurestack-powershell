@@ -15,82 +15,55 @@
 
 <#
 .Synopsis
-Returns a backup from a location based on name.
+Clear a backup location.
 .Description
-Returns a backup from a location based on name.
+Clear a backup location.
 .Example
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/get-azsbackup
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+.Example
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
+
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackup
+Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
-  [Backup <String>]: Name of the backup.
-  [Id <String>]: Resource identity path
-  [Location <String>]: Name of the backup location.
-  [ResourceGroupName <String>]: Name of the resource group.
-  [SubscriptionId <String>]: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/get-azsbackup
+https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/clear-azsbackupconfiguration
 #>
-function Get-AzsBackup {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackup])]
-[CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
+function Clear-AzsBackupConfiguration {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation])]
+[CmdletBinding(PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # Name of the backup location.
     ${Location},
 
-    [Parameter(ParameterSetName='Get', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [System.String]
-    # Name of the backup.
-    ${Name},
-
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='"system.$((Get-AzLocation)[0].Location)"')]
     [System.String]
     # Name of the resource group.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Get')]
-    [Parameter(ParameterSetName='List')]
+    [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String[]]
+    [System.String]
     # Subscription credentials that uniquely identify Microsoft Azure subscription.
     # The subscription ID forms part of the URI for every service call.
     ${SubscriptionId},
-
-    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Path')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity]
-    # Identity Parameter
-    # To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-    ${InputObject},
-
-    [Parameter(ParameterSetName='List')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Query')]
-    [System.String]
-    # OData skip parameter.
-    ${Skip},
-
-    [Parameter(ParameterSetName='List')]
-    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Query')]
-    [System.String]
-    # OData top parameter.
-    ${Top},
 
     [Parameter()]
     [Alias('AzureRMContext', 'AzureCredential')]
@@ -99,6 +72,12 @@ param(
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command as a job
+    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Runtime')]
@@ -119,6 +98,12 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
+
+    [Parameter()]
+    [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Runtime')]
+    [System.Management.Automation.SwitchParameter]
+    # Run the command asynchronously
+    ${NoWait},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Category('Runtime')]
@@ -141,15 +126,10 @@ param(
 )
 
 process {
-    # Generated SDK does not support {location}/{name} for nested resource name, so extract the {name} part here
-    if ($PSBoundParameters.ContainsKey(('Name')))
-    {
-        if ($null -ne $Name -and $Name.Contains('/'))
-        {
-            $PSBoundParameters['Name'] = $Name.Split("/")[-1]
-        }
-    }
+    # Restrict the cmdlet to being a blank PUT operation to clear the backup configuration
+    $PSBoundParameters.Add('Location1', $Location)
+    $PSBoundParameters.Add('UserName', $null)
 
-    Azs.Backup.Admin.internal\Get-AzsBackup @PSBoundParameters
+    Azs.Backup.Admin.internal\Clear-AzsBackupConfiguration @PSBoundParameters
 }
 }

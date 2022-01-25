@@ -5,3 +5,4 @@ PS C:\> Restore-AzsBackup -Name $backupResourceName -DecryptionCertPath $decrypt
 ```
 
 Restore from an Azure Stack backup.
+
