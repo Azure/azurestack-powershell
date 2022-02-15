@@ -136,7 +136,7 @@ UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGr
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk
+Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDisk
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
@@ -158,7 +158,7 @@ INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
 https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azsdisk
 #>
 function Get-AzsDisk {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk])]
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDisk])]
 [CmdletBinding(DefaultParameterSetName='List', PositionalBinding=$false)]
 param(
     [Parameter(ParameterSetName='Get')]
