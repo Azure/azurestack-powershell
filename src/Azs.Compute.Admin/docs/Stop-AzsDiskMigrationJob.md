@@ -22,10 +22,9 @@ Cancel a disk migration job.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1:
 ```powershell
-Stop-AzsDiskMigrationJob -Name TestJob
-```
+PS C:\> Stop-AzsDiskMigrationJob -Name TestJob
 
 CreationTime : 2/26/2020 11:06:40 AM
 EndTime      : 2/26/2020 11:07:24 AM
@@ -39,6 +38,9 @@ Status       : Canceled
 Subtask      : {47774498-6bc7-4ce2-98ca-738739ded2fc, b09ac623-f71d-480c-98bc-88fa3f603f2c}
 TargetShare  : \\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\SU1_ObjStore_4
 Type         : Microsoft.Compute.Admin/locations/diskmigrationjobs
+```
+
+Cancel a managed disk migration job.
 
 ## PARAMETERS
 
@@ -141,7 +143,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDiskMigrationJob
 
 ## NOTES
 
