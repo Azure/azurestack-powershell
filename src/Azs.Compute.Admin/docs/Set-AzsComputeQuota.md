@@ -22,14 +22,13 @@ Creates or Updates a Compute Quota with the provided quota parameters.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Set Properties on an Existing Compute Quota
 ```powershell
-$myComputeQuota = Get-AzsComputeQuota -Name MyComputeQuota
-```
+PS C:\> $myComputeQuota = Get-AzsComputeQuota -Name MyComputeQuota
 
-PS C:\\> $myComputeQuota.CoresLimit = 99; 
+PS C:\> $myComputeQuota.CoresLimit = 99; 
 
-PS C:\\> Set-AzsComputeQuota -NewQuota $myComputeQuota
+PS C:\> Set-AzsComputeQuota -NewQuota $myComputeQuota
 
 AvailabilitySetCount               : 10
 CoresLimit                         : 99
@@ -41,6 +40,10 @@ StandardManagedDiskAndSnapshotSize : 2048
 Type                               : Microsoft.Compute.Admin/quotas
 VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
+```
+
+Set the parameters specified in the NewQuota hash set.
+Any parameters not set will default to 0
 
 ## PARAMETERS
 

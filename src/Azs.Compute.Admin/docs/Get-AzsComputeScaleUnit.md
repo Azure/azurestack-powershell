@@ -28,7 +28,7 @@ Get the scale unit view.
 
 ## EXAMPLES
 
-### Example 1: Get
+### Example 1: Get Compute Scale Unit
 ```powershell
 PS C:\> Get-AzsComputeScaleUnit -Name s-cluster -Location redmond -SubscriptionId "DC773456-D727-484E-8292-AE8FACFDDDF5"
 

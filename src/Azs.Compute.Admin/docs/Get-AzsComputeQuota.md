@@ -34,10 +34,9 @@ Get an existing Compute Quota.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get All Compute Quotas
 ```powershell
-Get-AzsComputeQuota
-```
+PS C:\> Get-AzsComputeQuota
 
 AvailabilitySetCount               : 10
 CoresLimit                         : 100
@@ -50,11 +49,13 @@ StandardManagedDiskAndSnapshotSize : 2048
 Type                               : Microsoft.Compute.Admin/quotas
 VMScaleSetCount                    : 100
 VirtualMachineCount                : 100
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-Get-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
 ```
+
+Run `Get-AzsComputeQuota` with no parameters to get a list of all Compute Quotas.
+
+### Example 2: Get Compute Quota by Name
+```powershell
+PS C:\> Get-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
 
 AvailabilitySetCount               : 10
 CoresLimit                         : 100
@@ -67,6 +68,9 @@ StandardManagedDiskAndSnapshotSize : 2048
 Type                               : Microsoft.Compute.Admin/quotas
 VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
+```
+
+Specify the Quota's name on the command line to retrieve a specific quota.
 
 ## PARAMETERS
 
