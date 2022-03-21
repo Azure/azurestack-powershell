@@ -6,8 +6,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "2588" ],
-        "x-ms-client-request-id": [ "a8ef7586-d789-4468-a698-f894c8158176" ],
+        "x-ms-unique-id": [ "1512" ],
+        "x-ms-client-request-id": [ "d8d93384-ae06-4386-b8e2-8374be1ea6ac" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,16 +21,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "29969b36-05e9-4bdd-9ec8-74caac281ac3" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14008" ],
-        "x-ms-request-id": [ "29969b36-05e9-4bdd-9ec8-74caac281ac3" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:29969b36-05e9-4bdd-9ec8-74caac281ac3" ],
+        "x-ms-correlation-request-id": [ "96b8e020-352d-4495-b62a-24dd7c0b7a3f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13852" ],
+        "x-ms-request-id": [ "96b8e020-352d-4495-b62a-24dd7c0b7a3f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:96b8e020-352d-4495-b62a-24dd7c0b7a3f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:27 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:42 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/grS3mgVmLdXamU1l82TYNwn978QNkaTohyn5ckpvEV+88R1zqqDRKsEIDv/4Kk87kFp7QvCL72xIFcir2luNgv4TrxlWb+Dw780RGMk9aWod9u/ZIsKd1NuHXFmqaDLfKkyRZBtyhpM4/kjh5xi" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv2xtG5GntQ/+7CJIvajINP+Zx/8jv//PtjKPHYrqFqw2BkUM46pTNJXyWFfSdKxqyFtzrWKDRUqww5mR/hjr3f81T4YsNX/mrvWbwmyRgc713HINcA/6wLluVPaqoEXZmqnqJQiaw2EAAn5EBbyMZ" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "526" ],
@@ -58,16 +58,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "aa4cb94f-1fbb-49eb-893a-c1eab50b0354" ],
+        "x-ms-correlation-request-id": [ "737f2dcf-2992-409a-b587-56c5cdabec82" ],
         "x-ms-ratelimit-remaining-subscription-writes": [ "1162" ],
-        "x-ms-request-id": [ "aa4cb94f-1fbb-49eb-893a-c1eab50b0354" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:aa4cb94f-1fbb-49eb-893a-c1eab50b0354" ],
+        "x-ms-request-id": [ "737f2dcf-2992-409a-b587-56c5cdabec82" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:737f2dcf-2992-409a-b587-56c5cdabec82" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:42 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvG+N1wMryWoWuZMxu08E33EaBQvH+E2faQgFZKRVFSMmRx3EJM9wWjc9MxMrw//mevwKlr06vlvU8NE/ia0/kwleqM5XmNT0DUd6uiVZ239A7KydbEpmzDybHomLs06iPQ45IDPrPSB/ihe0on919" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbXGGf25X0gBEyCVeSkliwj2ThTgKHlHdFrvnForgaY34cuhdzpZhADpnpg4UiG9MvDiP1pANrxGFqJL3z2U3ZCB41FCh0UyGTCzw8AW18n+p227MWTXR8VdsCsseEXs8CrIIWe/E/jZiKARdgcXI" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -84,8 +84,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "2590" ],
-        "x-ms-client-request-id": [ "b9535c2e-e37e-4b1f-996c-9d06c90a34f7" ],
+        "x-ms-unique-id": [ "1514" ],
+        "x-ms-client-request-id": [ "0001f217-166f-4b7a-a0ee-af1884c8ed00" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -99,16 +99,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f4a194be-865c-4455-b38e-f93c2dfbfcd6" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14007" ],
-        "x-ms-request-id": [ "f4a194be-865c-4455-b38e-f93c2dfbfcd6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:f4a194be-865c-4455-b38e-f93c2dfbfcd6" ],
+        "x-ms-correlation-request-id": [ "0a655db2-cfca-41f1-95ea-67886f277ba8" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13851" ],
+        "x-ms-request-id": [ "0a655db2-cfca-41f1-95ea-67886f277ba8" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:0a655db2-cfca-41f1-95ea-67886f277ba8" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:42 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZPlwdwDbwfDgL17mCZ9pJ/HNGIl39tNwaaBG6gs9nxf7VNOM6wmTQjYWnqfs67pPXaPvA3LsuzDCDjkxPMxc0LgZgBkzAU6EjDsCG0NISNxK4CiYFz7fjIKu/UxLk8ZziV7uiHSQUIS5owDyo2ND" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3sL+GqHPYISOC0EVeMCOHZAcMV6JVqC1CqqQ8eZZw60qq3F70FYoPhnw2hgfFNBXJRdpleYRGLFLQ4ENW87tJ+qTQOONLKN2bsriyEMqX0ZzwWWPhX5Zk0wLAWCUuOwCV1UnsxJ35wrSacUnwJP/" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "511" ],
@@ -136,16 +136,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "c3e7dd5a-722a-4546-80d5-43a6ded097c5" ],
+        "x-ms-correlation-request-id": [ "9f75bfff-3b0a-4d54-8eda-3df165620ac7" ],
         "x-ms-ratelimit-remaining-subscription-writes": [ "1161" ],
-        "x-ms-request-id": [ "c3e7dd5a-722a-4546-80d5-43a6ded097c5" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:c3e7dd5a-722a-4546-80d5-43a6ded097c5" ],
+        "x-ms-request-id": [ "9f75bfff-3b0a-4d54-8eda-3df165620ac7" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:9f75bfff-3b0a-4d54-8eda-3df165620ac7" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:43 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrb1oXLrh8P3Hpk800EWdvp87lqxjpebC034FMGi62q8hLaL9ykI+G1R26xTTg4dKr5GCxlEgyPc0q91jrdwk0NXSnn1cVZarYKYCxT01gLfT/ZyaIWK4c3L8TBcfL6dek1d4ro5hZMWcPRW9bLlS" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv3k27dP5sOaL94fgZTti9mQITLs2AnoGE/ws0qHtcgDHA56p7McUx6pc196O0fClruPY4l++OUr6E2E0FmepCsoiagKsKhEAc+34KSEyOyay/0XuIYlFTuwkvE6Q4jZQ0a3qNOdrvh3sOHXtRUFSm" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -162,8 +162,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "2592" ],
-        "x-ms-client-request-id": [ "b811509f-3f11-45ea-b575-07bd4c0da19d" ],
+        "x-ms-unique-id": [ "1516" ],
+        "x-ms-client-request-id": [ "77ac40b3-f09f-4e60-9a4e-63d094c1ed57" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -177,16 +177,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "0af9da17-6288-4594-83d6-75e3612cc7b6" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14006" ],
-        "x-ms-request-id": [ "0af9da17-6288-4594-83d6-75e3612cc7b6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:0af9da17-6288-4594-83d6-75e3612cc7b6" ],
+        "x-ms-correlation-request-id": [ "79852497-232c-420e-b273-da57ab31224b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13850" ],
+        "x-ms-request-id": [ "79852497-232c-420e-b273-da57ab31224b" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:79852497-232c-420e-b273-da57ab31224b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:43 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvf2+ohtq1D42EDzx6g55aMnRUxbp8h6GxKMUQC33HKNusMtAnsJWXRsE0ijwIZAH5EsHJHUfAK5IZ0tJHjYGLCfEJo16qvu3pyLVHglZf64cY4qZ2qb14kJJRksJxIbC7ii4W1EbI4ya++CjEj15r" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZHFmcknFHsqa6rB0wT/WR3xGhfroGKKr3su14WSicE2FWqYXpRi3PCTydx3e0Q0rdCM7i4VAbiXXNB4D3EHQQlgC1+ix7mDP1/xyYFZ4KRFOoI187TxgL2GcTmKj2TEkNVGasy9XdfTm2F8y/7un" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "510" ],
@@ -214,16 +214,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "c45ef687-a1b4-4c4a-a954-4d5e534c010a" ],
+        "x-ms-correlation-request-id": [ "ef19345c-9589-4f00-b9f0-cd5b4665db8c" ],
         "x-ms-ratelimit-remaining-subscription-writes": [ "1160" ],
-        "x-ms-request-id": [ "c45ef687-a1b4-4c4a-a954-4d5e534c010a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:c45ef687-a1b4-4c4a-a954-4d5e534c010a" ],
+        "x-ms-request-id": [ "ef19345c-9589-4f00-b9f0-cd5b4665db8c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213943Z:ef19345c-9589-4f00-b9f0-cd5b4665db8c" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:43 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvmfRPZM+34n12UkpinOPNu0OsnAzNxkY5quiVSuYycv2tEr8jzqkAq3tnyljTMrzhsdB66FM7cJfnuj75r/6SOmMaP0cDfsG6wslQd6GP26TCI4MzA0XabWQNCo/3oVFeXOMTqiUQhICkVW8GwR0k" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvXN54Kq9rREw21Y/dIv3zZiCcBYVo3KDpyOH/1ZMTwcY2gpim4IWl3huk3lPxDXp1k5HxYWEDTqlsrVLN1GJuZdgBeVMlKdXVGtn7Phrb92GaD7pczz/uZc6FuMyjt2MJ+0ktq92WLRuKQYA+NvJQ" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -240,8 +240,8 @@
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "2594" ],
-        "x-ms-client-request-id": [ "6db8495d-9ba4-480c-a700-70fd1a53d70c" ],
+        "x-ms-unique-id": [ "1518" ],
+        "x-ms-client-request-id": [ "21403b04-8159-43d8-946f-6bed9a3f5f05" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -255,16 +255,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "226f4d5b-9611-48ae-94c8-79dcdf57efbb" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14005" ],
-        "x-ms-request-id": [ "226f4d5b-9611-48ae-94c8-79dcdf57efbb" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:226f4d5b-9611-48ae-94c8-79dcdf57efbb" ],
+        "x-ms-correlation-request-id": [ "80bae120-b9d3-4261-b427-9030ddf4a049" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13849" ],
+        "x-ms-request-id": [ "80bae120-b9d3-4261-b427-9030ddf4a049" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213944Z:80bae120-b9d3-4261-b427-9030ddf4a049" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:43 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvJuEdmUFpXYuBZsFPy1fIc5F3nOKq/z3G9yeVjbJ9wkCi1DibHTxZHgDg2DsmTgoCzNeAV3TjlrYAEAwXXVWGbkQ6Y0ZQiWCMhyM97hV2UZl3y9JaGmMxmbP4qg1AXmKh0KC7FTcQW9YuOkUtb9ME" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvL+0BBjMWpIadPvEwObnabHqTrPsOyb8SCtlPv5iiIyGxIMz2hjEoIW0pXbBstUJcGVFfVuSN9dim1XfEIPpex91HYtfU4nXYSpSH/yz5m+8HaAhVGVWX6Lj8uxyC+NYO/tgvDb1/fSnyCsYMcoA2" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "526" ],
@@ -292,16 +292,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "4c9d6f8e-50a6-4578-b1e9-5d8df91af26a" ],
+        "x-ms-correlation-request-id": [ "7e7032c2-c552-47f9-b524-0b990f4f626e" ],
         "x-ms-ratelimit-remaining-subscription-writes": [ "1159" ],
-        "x-ms-request-id": [ "4c9d6f8e-50a6-4578-b1e9-5d8df91af26a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220318T001328Z:4c9d6f8e-50a6-4578-b1e9-5d8df91af26a" ],
+        "x-ms-request-id": [ "7e7032c2-c552-47f9-b524-0b990f4f626e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213944Z:7e7032c2-c552-47f9-b524-0b990f4f626e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 18 Mar 2022 00:13:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:43 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvr3kiAcGSDuT8gRSKFCMlNxKKQX/HmuUXGYI5GtqJZDc0n8OnI1eUk4iu61NMlPom4NmafRqpyY5KdJQLTFswARZ4T3VUFfOhvc0JJ/99lLWqE8By1o9SEqQxL+BkOehCXup+15vwtyy7QnlpAnVI" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvPILA5E+A18ejY7FuM9B1kA/JKuVM3OhpwIJ1P6kRZ0o/nXyTNXIjeuEKJn2wzpLfJ/ROCTph2v5iDvAvu6vyKRLCW2+66tdtYcwX+Z+gMhWDBtUB97aghas0vm8nzzDniRfFLveL8mB2SVAEXSpJ" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
