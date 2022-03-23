@@ -1,8 +1,8 @@
 {
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+1": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -37,14 +37,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+2": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+2": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
+      "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
       "Content": "{\r\n  \"globalFeatureState\": \"Disabled\"\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -77,10 +77,10 @@
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+3": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -115,14 +115,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"Disabled\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"Disabled\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+4": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+4": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
+      "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
       "Content": "{\r\n  \"globalFeatureState\": \"Enabled\"\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -155,10 +155,10 @@
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+5": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -193,14 +193,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"Enabled\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"Enabled\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+6": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+6": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
+      "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
       "Content": "{\r\n  \"globalFeatureState\": \"TenantSubscriptionLevel\"\r\n}",
       "isContentBase64": false,
       "Headers": {
@@ -233,10 +233,10 @@
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+7": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -271,14 +271,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   },
-  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+8": {
+  "Update-AzsComputeGlobalFeatureSetting+[NoContext]+TestUpdateComputeGlobalFeatureSetting+$POST+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01+8": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
+      "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/updateGlobalFeatureSettings?api-version=2020-11-01",
       "Content": "{\r\n  \"globalFeatureState\": \"TenantSubscriptionLevel\"\r\n}",
       "isContentBase64": false,
       "Headers": {

@@ -1,8 +1,8 @@
 {
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01+1": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -38,14 +38,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c\u0026api-version=2021-09-01+2": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=47b53730-e95d-4594-b843-d378bdff793a\u0026api-version=2021-09-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c\u0026api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?userSubscriptionId=47b53730-e95d-4594-b843-d378bdff793a\u0026api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -81,14 +81,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=Unattached\u0026api-version=2021-09-01+3": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=Unattached\u0026api-version=2021-09-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=Unattached\u0026api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?status=Unattached\u0026api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -124,14 +124,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?sharePath=\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\SU1_ObjStore_1\u0026api-version=2021-09-01+4": {
+  "Get-AzsDisk+[NoContext]+TestListDisks+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?sharePath=\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\SU1_ObjStore_1\u0026api-version=2021-09-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?sharePath=%5C%5CSU1FileServer.n22r1006.masd.stbtest.microsoft.com%5CSU1_ObjStore_1\u0026api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?sharePath=%5C%5CSU1FileServer.n22r1006.masd.stbtest.microsoft.com%5CSU1_ObjStore_1\u0026api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -167,14 +167,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01+1": {
+  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks?api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -210,14 +210,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n      \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n      \"location\": \"redmond\",\r\n      \"properties\": {\r\n        \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n        \"status\": \"Unattached\",\r\n        \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n        \"actualSizeGB\": 1,\r\n        \"provisionSizeGB\": 1023,\r\n        \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n        \"creationOption\": \"Import\",\r\n        \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n        \"diskType\": \"Disk\",\r\n        \"diskSku\": \"Premium_LRS\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298?api-version=2021-09-01+2": {
+  "Get-AzsDisk+[NoContext]+TestGetDisk+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298?api-version=2021-09-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298?api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298?api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -253,14 +253,14 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"id\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n  \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n    \"status\": \"Unattached\",\r\n    \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n    \"actualSizeGB\": 1,\r\n    \"provisionSizeGB\": 1023,\r\n    \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n    \"creationOption\": \"Import\",\r\n    \"userResourceId\": \"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n    \"diskType\": \"Disk\",\r\n    \"diskSku\": \"Premium_LRS\"\r\n  }\r\n}",
+      "Content": "{\r\n  \"id\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n  \"name\": \"redmond/307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n  \"type\": \"Microsoft.Compute.Admin/locations/disks\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"diskId\": \"307e6436-f964-4a99-8a5b-c2f0e039f298\",\r\n    \"status\": \"Unattached\",\r\n    \"sharePath\": \"\\\\\\\\SU1FileServer.n22r1006.masd.stbtest.microsoft.com\\\\SU1_ObjStore_1\",\r\n    \"actualSizeGB\": 1,\r\n    \"provisionSizeGB\": 1023,\r\n    \"creationSourceUri\": \"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New Virtual Hard Disk.vhd\",\r\n    \"creationOption\": \"Import\",\r\n    \"userResourceId\": \"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/resourceGroups/TESTRG/providers/Microsoft.Compute/Disks/testdisk2\",\r\n    \"diskType\": \"Disk\",\r\n    \"diskSku\": \"Premium_LRS\"\r\n  }\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsDisk+[NoContext]+TestGetDiskInvalid+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-09-01+1": {
+  "Get-AzsDisk+[NoContext]+TestGetDiskInvalid+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-09-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-09-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/disks/454E5E28-8D5E-41F9-929E-BFF6A7E1A253?api-version=2021-09-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
