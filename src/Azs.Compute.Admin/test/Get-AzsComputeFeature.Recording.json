@@ -1,8 +1,8 @@
 {
-  "Get-AzsComputeFeature+[NoContext]+TestGetComputeFeature+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+1": {
+  "Get-AzsComputeFeature+[NoContext]+TestGetComputeFeature+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
@@ -37,7 +37,7 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   }

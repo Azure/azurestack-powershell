@@ -1,8 +1,8 @@
 {
-  "Get-AzsComputeScaleUnit+[NoContext]+GetComputeScaleUnitTest+$GET+https://management.azure.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30+1": {
+  "Get-AzsComputeScaleUnit+[NoContext]+GetComputeScaleUnitTest+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/67ddffc1-1bfa-4dd9-80a6-62ba2e348b6c/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/computeScaleUnits/s-cluster?api-version=2021-03-30",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
