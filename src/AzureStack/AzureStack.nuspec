@@ -18,7 +18,7 @@
       <dependency id="Azs.Backup.Admin" version="[2.0.0]" />
       <dependency id="Azs.Azurebridge.Admin" version="[1.0.2]" />
       <dependency id="Azs.Commerce.Admin" version="[1.0.2]" />
-      <dependency id="Azs.Compute.Admin" version="[1.1.0]" />
+      <dependency id="Azs.Compute.Admin" version="[1.2.0]" />
       <dependency id="Azs.ContainerRegistry.Admin" version="[0.2.0]" />
       <dependency id="Azs.ContainerService.Admin" version="[0.1.0]" />
       <dependency id="Azs.Deployment.Admin" version="[1.0.1]" />
