@@ -45,7 +45,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/enableTenantSubscriptionFeature?api-version=2020-11-01",
-      "Content": "{\r\n  \"tenantSubscriptionId\": \"4e1684d1-fc6f-42f4-8eb5-e7f3ae1c81aa\"\r\n}",
+      "Content": "{\r\n  \"tenantSubscriptionId\": \"95990F40-5F11-490D-B323-9317191D347A\"\r\n}",
       "isContentBase64": false,
       "Headers": {
       },
@@ -115,7 +115,7 @@
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\",\"4e1684d1-fc6f-42f4-8eb5-e7f3ae1c81aa\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\",\"95990F40-5F11-490D-B323-9317191D347A\"]}}",
       "isContentBase64": false
     }
   },
@@ -123,7 +123,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/disableTenantSubscriptionFeature?api-version=2020-11-01",
-      "Content": "{\r\n  \"tenantSubscriptionId\": \"4e1684d1-fc6f-42f4-8eb5-e7f3ae1c81aa\"\r\n}",
+      "Content": "{\r\n  \"tenantSubscriptionId\": \"95990F40-5F11-490D-B323-9317191D347A\"\r\n}",
       "isContentBase64": false,
       "Headers": {
       },
