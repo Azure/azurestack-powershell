@@ -33,7 +33,8 @@
     ```
     $location = Clear-AzsBackupConfiguration
     ```
-
+## Azs.Compute.Admin module
+* Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
 
 
 
