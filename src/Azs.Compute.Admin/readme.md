@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.1.1
+module-version: 1.2.0
 service-name: ComputeAdmin
 
 ### File Renames
