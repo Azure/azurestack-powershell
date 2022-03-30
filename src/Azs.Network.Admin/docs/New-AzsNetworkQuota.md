@@ -28,40 +28,57 @@ New-AzsNetworkQuota -Name <String> -Quota <IQuota> [-Location <String>] [-Subscr
  [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
-```
-New-AzsNetworkQuota -InputObject <INetworkAdminIdentity> -Quota <IQuota> [-DefaultProfile <PSObject>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-AzsNetworkQuota -InputObject <INetworkAdminIdentity> [-MaxLoadBalancersPerSubscription <Int64>]
- [-MaxNicsPerSubscription <Int64>] [-MaxPublicIpsPerSubscription <Int64>]
- [-MaxSecurityGroupsPerSubscription <Int64>] [-MaxVirtualNetworkGatewayConnectionsPerSubscription <Int64>]
- [-MaxVirtualNetworkGatewaysPerSubscription <Int64>] [-MaxVnetsPerSubscription <Int64>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
 ## DESCRIPTION
 Create or update a quota.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
-```
-New-AzsNetworkQuota -Name NetworkQuotaDefaultValues
+### Example 1: Default New
+```powershell
+PS C:\> New-AzsNetworkQuota -Name NetworkQuotaDefaultValues
+
+Id                                                 : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/Net
+                                                     workQuotaDefaultValues
+Location                                           : northwest
+MaxLoadBalancersPerSubscription                    : 50
+MaxNicsPerSubscription                             : 100
+MaxPublicIpsPerSubscription                        : 50
+MaxSecurityGroupsPerSubscription                   : 50
+MaxVirtualNetworkGatewayConnectionsPerSubscription : 2
+MaxVirtualNetworkGatewaysPerSubscription           : 1
+MaxVnetsPerSubscription                            : 50
+MigrationPhase                                     : None
+Name                                               : northwest/NetworkQuotaDefaultValues
+ProvisioningState                                  : Succeeded
+Tag                                                : Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.ResourceTags
+Type                                               : Microsoft.Network.Admin/quotas
 ```
 
 Create a new network quota with all the default values.
+Returns the created object's values.
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: Create new Quota with parameters
+```powershell
+PS C:\> New-AzsNetworkQuota -Name NetworkQuota1 -MaxNicsPerSubscription 150 -MaxPublicIpsPerSubscription 150
+
+Id                                                 : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/locations/northwest/quotas/Net
+                                                     workQuota1
+Location                                           : northwest
+MaxLoadBalancersPerSubscription                    : 50
+MaxNicsPerSubscription                             : 150
+MaxPublicIpsPerSubscription                        : 150
+MaxSecurityGroupsPerSubscription                   : 50
+MaxVirtualNetworkGatewayConnectionsPerSubscription : 2
+MaxVirtualNetworkGatewaysPerSubscription           : 1
+MaxVnetsPerSubscription                            : 50
+MigrationPhase                                     : None
+Name                                               : northwest/NetworkQuota1
+ProvisioningState                                  : Succeeded
+Tag                                                : Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.ResourceTags
+Type                                               : Microsoft.Network.Admin/quotas
 ```
-New-AzsNetworkQuota -Name NetworkQuota1 -MaxNicsPerSubscription 150 -MaxPublicIpsPerSubscription 150
-```
+
 Create a new network quota with non default values for quota.
-
-
 
 ## PARAMETERS
 
@@ -78,24 +95,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.INetworkAdminIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Location
@@ -103,15 +102,14 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: (Get-AzLocation)[0].Name
+Default value: (Get-AzLocation)[0].Location
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxLoadBalancersPerSubscription
@@ -119,7 +117,7 @@ Maximum number of load balancers a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -127,7 +125,6 @@ Position: Named
 Default value: 50
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxNicsPerSubscription
@@ -135,7 +132,7 @@ Maximum number of NICs a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -143,7 +140,6 @@ Position: Named
 Default value: 100
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxPublicIpsPerSubscription
@@ -151,7 +147,7 @@ Maximum number of public IP addresses a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -159,7 +155,6 @@ Position: Named
 Default value: 50
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxSecurityGroupsPerSubscription
@@ -167,7 +162,7 @@ Maximum number of security groups a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -175,7 +170,6 @@ Position: Named
 Default value: 50
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxVirtualNetworkGatewayConnectionsPerSubscription
@@ -183,7 +177,7 @@ Maximum number of virtual network gateway Connections a tenant subscription can 
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -191,7 +185,6 @@ Position: Named
 Default value: 2
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxVirtualNetworkGatewaysPerSubscription
@@ -199,7 +192,7 @@ Maximum number of virtual network gateways a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -207,7 +200,6 @@ Position: Named
 Default value: 1
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -MaxVnetsPerSubscription
@@ -215,7 +207,7 @@ Maximum number of virtual networks a tenant subscription can provision.
 
 ```yaml
 Type: System.Int64
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -223,7 +215,6 @@ Position: Named
 Default value: 50
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Name
@@ -231,7 +222,7 @@ Name of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -239,7 +230,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Quota
@@ -248,7 +238,7 @@ To construct, see NOTES section for QUOTA properties and create a hash table.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IQuota
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -256,7 +246,6 @@ Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
@@ -265,7 +254,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Create, CreateExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -273,7 +262,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Tag
@@ -281,7 +269,7 @@ List of key value pairs.
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -289,7 +277,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Confirm
@@ -305,7 +292,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -WhatIf
@@ -322,7 +308,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -332,26 +317,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IQuota
 
-### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.INetworkAdminIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IQuota
 
-## ALIASES
-
 ## NOTES
 
-### COMPLEX PARAMETER PROPERTIES
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-#### INPUTOBJECT <INetworkAdminIdentity>: Identity Parameter
-  - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Location of the resource.
-  - `[ResourceName <String>]`: Name of the resource.
-  - `[SubscriptionId <String>]`: Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
 
-#### QUOTA <IQuota>: Network quota resource.
+QUOTA <IQuota>: Network quota resource.
   - `[Tag <IResourceTags>]`: List of key value pairs.
     - `[(Any) <String>]`: This indicates any property can be added to this object.
   - `[MaxLoadBalancersPerSubscription <Int64?>]`: Maximum number of load balancers a tenant subscription can provision.
