@@ -4,6 +4,7 @@ obj
 generated
 internal
 exports
+src/**/utils
 src/**/tools
 src/**/resources
 .gitignore

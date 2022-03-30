@@ -1,34 +1,55 @@
 ---
 external help file:
 Module Name: Azs.Network.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.network.admin/get-azsvirtualnetwork
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.network.admin/get-azsloadbalancer
 schema: 2.0.0
 ---
 
-# Get-AzsVirtualNetwork
+# Get-AzsLoadBalancer
 
 ## SYNOPSIS
-Get a list of all virtual networks.
+Get a list of all load balancers.
 
 ## SYNTAX
 
 ```
-Get-AzsVirtualNetwork [-SubscriptionId <String[]>] [-Filter <String>] [-InlineCount <String>]
+Get-AzsLoadBalancer [-SubscriptionId <String[]>] [-Filter <String>] [-InlineCount <String>]
  [-OrderBy <String>] [-Skip <String>] [-Top <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a list of all virtual networks.
+Get a list of all load balancers.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Default Get
 ```powershell
-Get-AzsVirtualNetwork
-To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.network.admin/get-azsvirtualnetwork
+PS C:\> Get-AzsLoadBalancer
+
+Id                : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/resourceGroups/AppServiceLH01/providers/Microsoft.Network/loadBalancers/aps-sql-lb
+Location          : 
+Name              : aps-sql-lb
+ProvisioningState : Succeeded
+PublicIPAddress   : {}
+SubscriptionId    : 3ff3b1de-e7f5-43ad-b057-ace4767e7d01
+Tag               : Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.ResourceTags
+TenantResourceUri : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/resourceGroups/AppServiceLH01/providers/Microsoft.Network/loadBalancers/aps-sql-lb
+Type              : Microsoft.Network.Admin/adminLoadBalancers
+
+Id                : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/resourceGroups/AppServiceLH01/providers/Microsoft.Network/loadBalancers/FrontEndServersLoadBalanc
+                    er
+Location          : 
+Name              : FrontEndServersLoadBalancer
+ProvisioningState : Succeeded
+PublicIPAddress   : {100.81.128.40}
+SubscriptionId    : 3ff3b1de-e7f5-43ad-b057-ace4767e7d01
+Tag               : Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.ResourceTags
+TenantResourceUri : /subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/resourceGroups/AppServiceLH01/providers/Microsoft.Network/loadBalancers/FrontEndServersLoadBalanc
+                    er
+Type              : Microsoft.Network.Admin/adminLoadBalancers
 ```
 
-Return a list of virtual networks for the Azure Stack stamp.
+Returns all of the virtual networks.
 
 ## PARAMETERS
 
@@ -45,7 +66,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Filter
@@ -61,7 +81,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -InlineCount
@@ -77,7 +96,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -OrderBy
@@ -93,7 +111,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Skip
@@ -109,7 +126,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -SubscriptionId
@@ -126,7 +142,6 @@ Position: Named
 Default value: (Get-AzContext).Subscription.Id
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### -Top
@@ -142,7 +157,6 @@ Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
-Dynamic: False
 ```
 
 ### CommonParameters
@@ -152,11 +166,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.IVirtualNetwork
-
-## ALIASES
+### Microsoft.Azure.PowerShell.Cmdlets.NetworkAdmin.Models.Api20150615.ILoadBalancer
 
 ## NOTES
+
+ALIASES
 
 ## RELATED LINKS
 

@@ -1,16 +1,17 @@
 {
-  "Get-AzsNetworkAdminOverview+[NoContext]+TestGetAdminOverview+$GET+https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15+1": {
+  "Get-AzsNetworkAdminOverview+[NoContext]+TestGetAdminOverview+$GET+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://management.azure.com/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminOverview?api-version=2015-06-15",
       "Content": null,
+      "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "4" ],
-        "x-ms-client-request-id": [ "4210b97e-0e05-4974-a834-446b16a49785" ],
+        "x-ms-unique-id": [ "2" ],
+        "x-ms-client-request-id": [ "6097d670-6909-4256-86ce-7f025aca1703" ],
         "CommandName": [ "Get-AzsNetworkAdminOverview" ],
         "FullCommandName": [ "Get-AzsNetworkAdminOverview_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
         "Authorization": [ "[Filtered]" ]
       },
       "ContentHeaders": {
@@ -19,24 +20,26 @@
     "Response": {
       "StatusCode": 200,
       "Headers": {
+        "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "8bebaff7-698b-4770-8c2f-7dbea1c6fd64" ],
-        "x-ms-request-id": [ "b1b9a4b5-ec70-4779-8a7d-aea65992d311" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14823" ],
-        "x-ms-routing-request-id": [ "REDMOND:20200207T231517Z:8bebaff7-698b-4770-8c2f-7dbea1c6fd64" ],
+        "x-ms-correlation-request-id": [ "6d2683e5-5550-41f6-be83-19b7e998d95e" ],
+        "x-ms-request-id": [ "328c3979-e202-41b9-98d6-447ebdea96a5" ],
+        "x-ms-arm-service-request-id": [ "0c4fe5df-16e8-42ff-97cd-fb82ece78664" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8hNMgN3gF6rZVV0S9fCcIYbGOiCrm3SNAXrfS1pqR9vI9eI0pcMAIZyf3YVD2SIC150s1RLNIpGTULbLrlqqlfY6rJQNMVPMebQZlWyHLGrhyFyV64GZVaSJDfvSvFxcX4/Pb20MnXcqBFBs0zq1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14697" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232221Z:6d2683e5-5550-41f6-be83-19b7e998d95e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Fri, 07 Feb 2020 23:15:16 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvnCEdwfwP058QSgML7vGXI90e7vIODZiJTvdxwFLmS0rzue7Wl69CqgbGrkfpyvGXp2NYTSnTWP/TxGMkiudYFiQXCQPdSZMFScJg6jFBq9Stm0P9VgQdYaxbokz6fi542aqDwoK+2j+Uonxip6rN" ]
+        "Date": [ "Thu, 31 Mar 2022 23:22:20 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "1183" ],
+        "Content-Length": [ "1180" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"name\": \"\",\r\n  \"type\": \"Microsoft.Network.Admin/adminOverview\",\r\n  \"location\": \"\",\r\n  \"id\": \"/subscriptions/3ff3b1de-e7f5-43ad-b057-ace4767e7d01/providers/Microsoft.Network.Admin/adminOverview/\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualNetworkHealth\": {\r\n      \"totalResourceCount\": 22,\r\n      \"healthyResourceCount\": 0,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 22\r\n    },\r\n    \"loadBalancerMuxHealth\": {\r\n      \"totalResourceCount\": 2,\r\n      \"healthyResourceCount\": 2,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 0\r\n    },\r\n    \"virtualGatewayHealth\": {\r\n      \"totalResourceCount\": 3,\r\n      \"healthyResourceCount\": 2,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 1\r\n    },\r\n    \"publicIpAddressUsage\": {\r\n      \"totalResourceCount\": 1023,\r\n      \"inUseResourceCount\": 59\r\n    },\r\n    \"backendIpUsage\": {\r\n      \"totalResourceCount\": 282,\r\n      \"inUseResourceCount\": 23\r\n    },\r\n    \"macAddressUsage\": {\r\n      \"totalResourceCount\": 4063232,\r\n      \"inUseResourceCount\": 50\r\n    }\r\n  }\r\n}"
+      "Content": "{\r\n  \"name\": \"\",\r\n  \"type\": \"Microsoft.Network.Admin/adminOverview\",\r\n  \"location\": \"\",\r\n  \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminOverview/\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"virtualNetworkHealth\": {\r\n      \"totalResourceCount\": 10,\r\n      \"healthyResourceCount\": 0,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 10\r\n    },\r\n    \"loadBalancerMuxHealth\": {\r\n      \"totalResourceCount\": 2,\r\n      \"healthyResourceCount\": 0,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 2\r\n    },\r\n    \"virtualGatewayHealth\": {\r\n      \"totalResourceCount\": 3,\r\n      \"healthyResourceCount\": 2,\r\n      \"errorResourceCount\": 0,\r\n      \"warningResourceCount\": 0,\r\n      \"healthUnknownCount\": 1\r\n    },\r\n    \"publicIpAddressUsage\": {\r\n      \"totalResourceCount\": 127,\r\n      \"inUseResourceCount\": 71\r\n    },\r\n    \"backendIpUsage\": {\r\n      \"totalResourceCount\": 282,\r\n      \"inUseResourceCount\": 23\r\n    },\r\n    \"macAddressUsage\": {\r\n      \"totalResourceCount\": 65536,\r\n      \"inUseResourceCount\": 39\r\n    }\r\n  }\r\n}",
+      "isContentBase64": false
     }
   }
 }
