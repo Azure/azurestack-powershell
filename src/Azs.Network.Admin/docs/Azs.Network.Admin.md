@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Network.Admin
-Module Guid: 818c880d-2aa0-4aa3-961c-cc58c4ef12b2
+Module Guid: 70926bce-bc6d-44d9-9c7c-04173e27f5c9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.network.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -8,7 +8,7 @@ Locale: en-US
 
 # Azs.Network.Admin Module
 ## Description
-Preview release of the Network operators module which allows operators to monitor network resources and manage network quotas.
+Microsoft AzureStack PowerShell: Network Admin cmdlets
 
 ## Azs.Network.Admin Cmdlets
 ### [Get-AzsLoadBalancer](Get-AzsLoadBalancer.md)
@@ -25,6 +25,9 @@ List of public IP addresses.
 
 ### [Get-AzsVirtualNetwork](Get-AzsVirtualNetwork.md)
 Get a list of all virtual networks.
+
+### [Get-AzsVirtualNetworkGatewayConnection](Get-AzsVirtualNetworkGatewayConnection.md)
+Returns a list of all Virtual Network Gateway Connections.
 
 ### [New-AzsNetworkQuota](New-AzsNetworkQuota.md)
 Create or update a quota.

@@ -1,3 +1,8 @@
+# Release 2.4.0
+* Requires AzureStack Update 2301+
+## AzS.Network.Admin module
+* Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
+
 # Release 2.3.0
 * Requires AzureStack Update 2206+
 ## Azs.Compute.Admin module
