@@ -1,0 +1,252 @@
+{
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$DELETE+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15+1": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "40" ],
+        "x-ms-client-request-id": [ "47076143-11f6-4ee0-be13-26c0488bce02" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 204,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "13e69d06-27ac-412a-beba-d79ebd13129f" ],
+        "x-ms-request-id": [ "284f7fa2-36f8-43e4-9eac-7131e0f7d298" ],
+        "x-ms-arm-service-request-id": [ "a9c0cf32-0d1a-4000-9bf8-11505065410f" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv401vbF5ahwpk424PwQXYEPqvVvmmM8jMVZldeOc8/pb9MapB6YqZ2v6bVzeUWmVmaMNTA0iPRSXYH6ymRrXKFcytxW1vKWnC98kvEU5VSbm7X7/Q6DNeaMEyRgziaKIAAMvRgKQLFh5TAiRw6zuX" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14957" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232323Z:13e69d06-27ac-412a-beba-d79ebd13129f" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:22 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  },
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$PUT+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "342" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 201,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "9fe56907-7e84-4bbe-9995-69d6e2985a0e" ],
+        "x-ms-request-id": [ "47d81eba-1185-4d59-add5-4042a4141925" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/47d81eba-1185-4d59-add5-4042a4141925?api-version=2015-06-15" ],
+        "x-ms-arm-service-request-id": [ "a5306022-96c0-4567-9242-aab0da68d380" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHkncuOywGqye3rVSfD/r2lqP6mF3CvJrZ6FSL74lLxF3Io4P/um5xUtxP8yuOJi/hOXprJQ2PegDZfDEiVL45Ef/J1KNFuQPQc3nukzfB2AgE6/7vNWMcthfhpXRilvhav+yuFepSF+r3EalFE0j" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1166" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232324Z:9fe56907-7e84-4bbe-9995-69d6e2985a0e" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:24 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "711" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"redmond/TestQuotaSet\",\r\n  \"etag\": \"W/\\\"65c0ffd1-cdf6-456b-a2f4-81e656fe805c\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 50,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet\"\r\n}",
+      "isContentBase64": false
+    }
+  },
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$PUT+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15+3": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15",
+      "Content": "{\r\n  \"properties\": {\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 64,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50\r\n  }\r\n}",
+      "isContentBase64": false,
+      "Headers": {
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "342" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "9902c014-1c10-48c1-9cbf-699b54f9e0b1" ],
+        "x-ms-request-id": [ "e40f69f7-f195-4f22-9727-22beb3d44678" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/e40f69f7-f195-4f22-9727-22beb3d44678?api-version=2015-06-15" ],
+        "x-ms-arm-service-request-id": [ "d54de41d-3941-4327-a77d-bac318ea879a" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvK1ulkiG6yopX+ZD4O0nfAQmw3p1iSwQOGXUqF4bXkwtQ3GvO9hVJoVCQelWpHLt2D5DNKk5SdlLET5086xr42vBWdfA8VTn+itPFs+DbCfjwReAXgwWlas5sWyJub33Z4aCDIS93B5HrXiCeCzF2" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1165" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232325Z:9902c014-1c10-48c1-9cbf-699b54f9e0b1" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:24 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "711" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"name\": \"redmond/TestQuotaSet\",\r\n  \"etag\": \"W/\\\"084e2662-5d4b-4ed9-867e-d6db328e4a53\\\"\",\r\n  \"type\": \"Microsoft.Network.Admin/quotas\",\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\",\r\n    \"maxPublicIpsPerSubscription\": 50,\r\n    \"maxVnetsPerSubscription\": 64,\r\n    \"maxVirtualNetworkGatewaysPerSubscription\": 1,\r\n    \"maxVirtualNetworkGatewayConnectionsPerSubscription\": 2,\r\n    \"maxLoadBalancersPerSubscription\": 50,\r\n    \"maxNicsPerSubscription\": 100,\r\n    \"maxSecurityGroupsPerSubscription\": 50,\r\n    \"migrationPhase\": \"None\"\r\n  },\r\n  \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet\"\r\n}",
+      "isContentBase64": false
+    }
+  },
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$DELETE+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15+4": {
+    "Request": {
+      "Method": "DELETE",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/locations/redmond/quotas/TestQuotaSet?api-version=2015-06-15",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "44" ],
+        "x-ms-client-request-id": [ "16befa87-0687-428d-8a1c-360eaa578250" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operationResults/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15" ],
+        "Retry-After": [ "10" ],
+        "x-ms-correlation-request-id": [ "8a701a3a-ba4d-4cd0-9805-330b03108321" ],
+        "x-ms-request-id": [ "4d066a84-4d6f-4180-9f1e-46eaac81f709" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15" ],
+        "x-ms-arm-service-request-id": [ "5e6f6c3c-83dc-45c6-9a66-e9d1b0be508c" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvurCXKDUvt/IMJtphlK5T1bPodH/Y4NS7EPpWFL0iJU+3CZSqV6jRTXdxhHXpg1CEWXdCvui+EtD5uqx1ZQi4aAHdI7nylqPucEDw7wOHiHIEAn3la/JSdMOgPA9XWOZ1SI4rcx1PRhHYZPn1AQrP" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14956" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232325Z:8a701a3a-ba4d-4cd0-9805-330b03108321" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:24 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ],
+        "Content-Length": [ "0" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  },
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$GET+https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15+5": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "45" ],
+        "x-ms-client-request-id": [ "16befa87-0687-428d-8a1c-360eaa578250" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "93bba4a4-5caf-40bf-ba7f-a96fdc9f1219" ],
+        "x-ms-request-id": [ "21e9cd68-f165-47ef-8c89-77025f1cf560" ],
+        "x-ms-arm-service-request-id": [ "b2e80278-50e9-46a1-9164-524352fb8c0f" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvfZP1q9covttAWSAbW2473/YQ+97nRa3tNxZUzYyPRmVqBR35OrU3+6MkE7KQJuAq8PjfVw54tpapgCsSKaMm3VaM9gdagHkXDuG4JKIkh8A3jPDU0SUEGXuu5bDKChQPPLCL60KFQN2I7B5jdu54" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14667" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232335Z:93bba4a4-5caf-40bf-ba7f-a96fdc9f1219" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:34 GMT" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "29" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\r\n  \"status\": \"Succeeded\"\r\n}",
+      "isContentBase64": false
+    }
+  },
+  "Set-AzsNetworkQuota+[NoContext]+TestSetQuota+$GET+https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operationResults/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15+6": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operationResults/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "Authorization": [ "[Filtered]" ],
+        "x-ms-unique-id": [ "46" ],
+        "x-ms-client-request-id": [ "16befa87-0687-428d-8a1c-360eaa578250" ],
+        "CommandName": [ "Remove-AzsNetworkQuota" ],
+        "FullCommandName": [ "Remove-AzsNetworkQuota_Delete" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 204,
+      "Headers": {
+        "Cache-Control": [ "no-cache" ],
+        "Pragma": [ "no-cache" ],
+        "Location": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operationResults/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15" ],
+        "x-ms-correlation-request-id": [ "8a701a3a-ba4d-4cd0-9805-330b03108321" ],
+        "x-ms-request-id": [ "4d066a84-4d6f-4180-9f1e-46eaac81f709" ],
+        "Azure-AsyncOperation": [ "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network/locations/westus/operations/4d066a84-4d6f-4180-9f1e-46eaac81f709?api-version=2015-06-15" ],
+        "x-ms-arm-service-request-id": [ "5e6f6c3c-83dc-45c6-9a66-e9d1b0be508c" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvV3lQzB25kuo6qGcdjfDPHbkekECmLh9c/xSSIwVygBsL2Kabe8rjmn3UbWkWtTJI788PuXDodRr3qFMddL3Fc6F9u3rI/H91BmZUYDR803B8ZXPRKExFz6aCVcNcUFEzcB8g8SjKrxcksna9KjyB" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14666" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220331T232335Z:3d0d2595-2ca7-4f8f-8f6f-ea4443f8c3a0" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Date": [ "Thu, 31 Mar 2022 23:23:34 GMT" ]
+      },
+      "ContentHeaders": {
+        "Expires": [ "-1" ]
+      },
+      "Content": null,
+      "isContentBase64": false
+    }
+  }
+}

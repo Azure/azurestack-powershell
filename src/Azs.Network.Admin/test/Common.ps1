@@ -30,6 +30,9 @@ $global:TestQuotaMaxSecurityGroupsPerSubscription = 2
 $global:PutAndDeleteQuotaName = "TestQuotaForRemoval"
 $global:PutAndDeleteQuotaWithParamsName = "TestQuotaForRemovalWithParams"
 $global:CreateAndUpdateQuotaName = "TestQuotaUpdate"
+$global:PutNewQuotaName = "TestQuotaPutNew"
+$global:SetQuotaName = "TestQuotaSet"
+$global:DeleteQuotaName = "TestQuotaDelete"
 $global:MaxNicsPerSubscription = 8
 
 # Common functions
