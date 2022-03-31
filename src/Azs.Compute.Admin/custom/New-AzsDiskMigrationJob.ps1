@@ -6,9 +6,9 @@ Starts a managed disk migration job to migrate managed disks to the specified de
 .Example
 To view examples, please use the -Online parameter with Get-Help or navigate to: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/new-azsdiskmigrationjob
 .Inputs
-Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk[]
+Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDisk[]
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob
+Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDiskMigrationJob
 .Notes
 COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
@@ -23,7 +23,7 @@ https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/new-azsdisk
 #>
 function New-AzsDiskMigrationJob {
 [Alias('Start-AzsDiskMigrationJob')]
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob])]
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDiskMigrationJob])]
 [CmdletBinding(DefaultParameterSetName='Volume', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(Mandatory)]
@@ -68,7 +68,7 @@ param(
 
     [Parameter(Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk[]]
+    [Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDisk[]]
     # .
     # To construct, see NOTES section for DISKS properties and create a hash table.
     ${Disks},

@@ -1,76 +1,43 @@
 ---
 external help file:
 Module Name: Azs.Compute.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azscomputequota
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azscomputescaleunit
 schema: 2.0.0
 ---
 
-# Get-AzsComputeQuota
+# Get-AzsComputeScaleUnit
 
 ## SYNOPSIS
-Get an existing Compute Quota.
+Get the scale unit view.
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-AzsComputeQuota [-Location <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
- [<CommonParameters>]
-```
-
-### Get
-```
-Get-AzsComputeQuota -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
+Get-AzsComputeScaleUnit -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzsComputeQuota -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzsComputeScaleUnit -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get an existing Compute Quota.
+Get the scale unit view.
 
 ## EXAMPLES
 
-### Example 1: Get All Compute Quotas
+### Example 1: Get Compute Scale Unit
 ```powershell
-PS C:\> Get-AzsComputeQuota
+PS C:\> Get-AzsComputeScaleUnit -Name s-cluster -Location redmond -SubscriptionId "DC773456-D727-484E-8292-AE8FACFDDDF5"
 
-AvailabilitySetCount               : 10
-CoresLimit                         : 100
-Id                                 : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Ad
-                                     min/locations/local/quotas/ascancompquota433
-Location                           : local
-Name                               : ascancompquota433
-PremiumManagedDiskAndSnapshotSize  : 2048
-StandardManagedDiskAndSnapshotSize : 2048
-Type                               : Microsoft.Compute.Admin/quotas
-VMScaleSetCount                    : 100
-VirtualMachineCount                : 100
+Scale Unit Name   Location   Nodes
+---------------   --------   -----
+s-cluster         redmond    {AzSNode1,AzSNode2,AzSNode3,AzSNode4}
 ```
 
-Run `Get-AzsComputeQuota` with no parameters to get a list of all Compute Quotas.
-
-### Example 2: Get Compute Quota by Name
-```powershell
-PS C:\> Get-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
-
-AvailabilitySetCount               : 10
-CoresLimit                         : 100
-Id                                 : /subscriptions/3ae476e5-83d3-429d-a450-2f4f2fc67c5e/providers/Microsoft.Compute.Ad
-                                     min/locations/local/quotas/ExampleComputeQuotaWithDefaultParameters
-Location                           : local
-Name                               : ExampleComputeQuotaWithDefaultParameters
-PremiumManagedDiskAndSnapshotSize  : 2048
-StandardManagedDiskAndSnapshotSize : 2048
-Type                               : Microsoft.Compute.Admin/quotas
-VMScaleSetCount                    : 0
-VirtualMachineCount                : 100
-```
-
-Specify the Quota's name on the command line to retrieve a specific quota.
+Run `Get-AzsComputeScaleUnit` to get the compute scale unit.
 
 ## PARAMETERS
 
@@ -110,7 +77,7 @@ Location of the resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
+Parameter Sets: Get
 Aliases:
 
 Required: False
@@ -121,12 +88,12 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the quota.
+Name of the scale unit.
 
 ```yaml
 Type: System.String
 Parameter Sets: Get
-Aliases: QuotaName
+Aliases: ScaleUnitName
 
 Required: True
 Position: Named
@@ -141,7 +108,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: Get, List
+Parameter Sets: Get
 Aliases:
 
 Required: False
@@ -160,7 +127,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api202101.IQuota
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210330.IScaleUnit
 
 ## NOTES
 

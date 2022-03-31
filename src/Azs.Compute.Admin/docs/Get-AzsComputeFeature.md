@@ -34,10 +34,9 @@ Get an existing feature.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get a Feature
 ```powershell
-Get-AzsComputeFeature -Location local -Name Microsoft.Compute.EmergencyVMAccess | ConvertTo-Json
-```
+PS C:\> Get-AzsComputeFeature -Location local -Name Microsoft.Compute.EmergencyVMAccess | ConvertTo-Json
 
 {
     "EnabledTenantSubscriptionId":  [
@@ -60,6 +59,9 @@ Get-AzsComputeFeature -Location local -Name Microsoft.Compute.EmergencyVMAccess 
     "Name":  "Microsoft.Compute.EmergencyVMAccess",
     "Type":  "Microsoft.Compute.Admin/locations/features"
 }
+```
+
+Get a specific Feature.
 
 ## PARAMETERS
 

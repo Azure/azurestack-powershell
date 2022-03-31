@@ -2,12 +2,12 @@
   "Get-AzsPlatformImage+[NoContext]+TestListPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1626" ],
-        "x-ms-client-request-id": [ "aea803d9-6a15-4a69-8c33-a25ded04b591" ],
+        "x-ms-unique-id": [ "1554" ],
+        "x-ms-client-request-id": [ "e215a483-fb5a-46e6-b109-f308bdefd532" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,35 +21,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "3bb567fa-b0f9-476b-80ad-cca45ba1d1cb" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13777" ],
-        "x-ms-request-id": [ "3bb567fa-b0f9-476b-80ad-cca45ba1d1cb" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181411Z:3bb567fa-b0f9-476b-80ad-cca45ba1d1cb" ],
+        "x-ms-correlation-request-id": [ "6e65b297-0dd8-440d-962b-f414ff909325" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14183" ],
+        "x-ms-request-id": [ "6e65b297-0dd8-440d-962b-f414ff909325" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221438Z:6e65b297-0dd8-440d-962b-f414ff909325" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:10 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:38 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv4cYy/hbdVDvsiF6QJAcW0LMpiQIB62o5XWoxtD3gIcVEKWvVcWhJlInaoa6beSkcvn0eTLA1Bh2e8OV/sryNXSfqFWeKBRW91YvnL7EAce/cNxGvDeVtJK7goV7S5jlNuLiKdHdNbRVnsR3rOzr0" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvA1+ORfBc7eJq7BiBXgXJKBKrqZqiyCUvzlxufOJtTC0c6QscNXLxTPAv9ySlaGcxPyv1gWLSnsjtJdxykIOdnpYGoZD1j56xx/j8AaN/AW/ocA5J4Tgy48ZvQlSKqUzuK9J1GqYr91AaRxfPWlBD" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8344" ],
+        "Content-Length": [ "10742" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a37Z\u0026ske=2021-07-31T06%3a58%3a37Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a37Z\u0026se=2021-07-31T06%3a58%3a37Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/007efb466dc6418b8027b640626b427f%2FImage%2Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/c12f21f106244837acaafef12d14fc43%2FImage%2Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a13Z\u0026ske=2022-03-19T16%3a50%3a13Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a13Z\u0026se=2022-03-19T16%3a50%3a13Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/8c94657ef5184ca7a4c86b2805c29d81%2FImage%2F1911ecfdd5284c81b44abb999cf70242%252FImage%252Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a15Z\u0026ske=2022-03-19T16%3a50%3a15Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a15Z\u0026se=2022-03-19T16%3a50%3a15Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/e52f1319c8354093854767b37102c218%2FImage%2F1b76c9e2fd29468daace52f01d9ac267%252FImage%252Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetPlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1627" ],
-        "x-ms-client-request-id": [ "051fa40d-9406-4abb-97d2-550f88d47063" ],
+        "x-ms-unique-id": [ "1555" ],
+        "x-ms-client-request-id": [ "d0188447-aa02-4fed-bfcc-cce7a3c4dd5c" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -63,35 +63,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "467d9689-e04d-44de-a2cb-066a25001f6f" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13775" ],
-        "x-ms-request-id": [ "467d9689-e04d-44de-a2cb-066a25001f6f" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181413Z:467d9689-e04d-44de-a2cb-066a25001f6f" ],
+        "x-ms-correlation-request-id": [ "e534a180-1366-4b47-8c3e-59a91a82332d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14182" ],
+        "x-ms-request-id": [ "e534a180-1366-4b47-8c3e-59a91a82332d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221439Z:e534a180-1366-4b47-8c3e-59a91a82332d" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:13 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:38 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv0t5XQUg2Z37cug1S39hpLEF+XJzmd5Mw06twebsFQ2gYmfIgqW5ONQ897SMNKzS8qgEGCmEmzRG0u1XX+4rRMK0d7F1Vb8lOrc8AQk1pLcxYoqX19aQ+PRI7VD6JGA/2YoYm+IyV5carbnuftp1H" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRve6NmQ1YFb8FvLu/DOxwDWHi7UAm1+V+ES//dCeHVWxDnIqJ+BxMKFYGFe+MgLNLJUmrMCepiFTrCq5rS5RubQ7MjtlVkIeCDUcjF/CqknDHjOQYzHZquSKfCwyvLWs+bWEIh6duqamnZJSm9Nyp/" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8344" ],
+        "Content-Length": [ "10742" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a37Z\u0026ske=2021-07-31T06%3a58%3a37Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a37Z\u0026se=2021-07-31T06%3a58%3a37Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/007efb466dc6418b8027b640626b427f%2FImage%2Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/c12f21f106244837acaafef12d14fc43%2FImage%2Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a13Z\u0026ske=2022-03-19T16%3a50%3a13Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a13Z\u0026se=2022-03-19T16%3a50%3a13Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/8c94657ef5184ca7a4c86b2805c29d81%2FImage%2F1911ecfdd5284c81b44abb999cf70242%252FImage%252Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a15Z\u0026ske=2022-03-19T16%3a50%3a15Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a15Z\u0026se=2022-03-19T16%3a50%3a15Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/e52f1319c8354093854767b37102c218%2FImage%2F1b76c9e2fd29468daace52f01d9ac267%252FImage%252Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetPlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1628" ],
-        "x-ms-client-request-id": [ "8454cde2-4d6c-4f9b-b1eb-12e555fedf8e" ],
+        "x-ms-unique-id": [ "1556" ],
+        "x-ms-client-request-id": [ "40e0b65b-e788-435d-bb85-61d381e66368" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -105,35 +105,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e3bf1b6c-2559-4517-84d8-45fb11ab14c1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13773" ],
-        "x-ms-request-id": [ "e3bf1b6c-2559-4517-84d8-45fb11ab14c1" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181416Z:e3bf1b6c-2559-4517-84d8-45fb11ab14c1" ],
+        "x-ms-correlation-request-id": [ "a0b53498-d2e9-450d-9e1c-640b463d7da1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14181" ],
+        "x-ms-request-id": [ "a0b53498-d2e9-450d-9e1c-640b463d7da1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221439Z:a0b53498-d2e9-450d-9e1c-640b463d7da1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:15 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:39 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvp6xnj6IaMaM0zSCshzg9FLP8JkA01y6TLZ/Hp9x4RQGsbhqsy0PxEnRl176PdHzRQnajDfxw937wtxqyiqca04I1cKQVYJTyDk7D4cShkoFHBdVP+v/p7lhks0TPwJWc/cA29WVIdmTCCyxExY/e" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvcUBNxqZ7o9If5KQxdAak2nwmVSLlG79MA8huxtA9LKKnS6T6h78HGkju3mSrFXu8hg9OqrEwdehMlRhG/VV47keaJ5rFtGnTQQHoXMwEaoQYF3Wres26L4hrCU/lC7NvLCkyXwusuVHPNl9u03HB" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "601" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1629" ],
-        "x-ms-client-request-id": [ "8167c83b-e694-423b-ac05-6b682546a80d" ],
+        "x-ms-unique-id": [ "1557" ],
+        "x-ms-client-request-id": [ "9275f87c-c52d-474f-bae9-e9ac73720a06" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -147,35 +147,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "18c69083-e433-4fe3-86f4-4f65c535bbb9" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13771" ],
-        "x-ms-request-id": [ "18c69083-e433-4fe3-86f4-4f65c535bbb9" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181417Z:18c69083-e433-4fe3-86f4-4f65c535bbb9" ],
+        "x-ms-correlation-request-id": [ "1f2ac1c0-05e8-422d-9846-0b0f4fdbbcef" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14180" ],
+        "x-ms-request-id": [ "1f2ac1c0-05e8-422d-9846-0b0f4fdbbcef" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221439Z:1f2ac1c0-05e8-422d-9846-0b0f4fdbbcef" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:17 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:39 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv8SWjgf5nfldaaRgfuETdycV2OyA8JkauYw1aql7BgPuk5IuEjt5hhqthy5MmxG0cUdbb97OOawn27cf1j7L37mY8ZdVBt4NlrYGPtoERNofn6w8FFSZ1B2LImyCDimkjUi5zYsHBTxSySNFEK6qb" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvTMDvPKHov8MNXF4pw6Ka/u3YEfSUtDiSgrkys2cIau9EaO6M9oSpKQuAo4LbvVjXR1XM9qE6ZHtgJAM74BTou2nT67MGxvaPP9suhLJpNWVAgcfIn11IvGaKKvnwALFFSmu4p6gCENKrkxt7uI6q" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8344" ],
+        "Content-Length": [ "10742" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a37Z\u0026ske=2021-07-31T06%3a58%3a37Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a37Z\u0026se=2021-07-31T06%3a58%3a37Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/007efb466dc6418b8027b640626b427f%2FImage%2Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/c12f21f106244837acaafef12d14fc43%2FImage%2Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a13Z\u0026ske=2022-03-19T16%3a50%3a13Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a13Z\u0026se=2022-03-19T16%3a50%3a13Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azurestacktemplate.blob.core.windows.net/azurestacktemplate-public-container/WindowsServer2012R2DatacenterBYOL.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/8c94657ef5184ca7a4c86b2805c29d81%2FImage%2F1911ecfdd5284c81b44abb999cf70242%252FImage%252Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a15Z\u0026ske=2022-03-19T16%3a50%3a15Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a15Z\u0026se=2022-03-19T16%3a50%3a15Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/e52f1319c8354093854767b37102c218%2FImage%2F1b76c9e2fd29468daace52f01d9ac267%252FImage%252Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1630" ],
-        "x-ms-client-request-id": [ "af35efe4-fcea-4154-8592-699323cb6bda" ],
+        "x-ms-unique-id": [ "1558" ],
+        "x-ms-client-request-id": [ "1d9f4ece-c624-45b9-b3ec-9c02319c02c9" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -189,35 +189,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "4bbf4ef1-fe00-44a0-84d3-7709373fdd0d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13770" ],
-        "x-ms-request-id": [ "4bbf4ef1-fe00-44a0-84d3-7709373fdd0d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181417Z:4bbf4ef1-fe00-44a0-84d3-7709373fdd0d" ],
+        "x-ms-correlation-request-id": [ "0e5fb405-faf9-4a62-8c8f-8f9e4a7e2f72" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14179" ],
+        "x-ms-request-id": [ "0e5fb405-faf9-4a62-8c8f-8f9e4a7e2f72" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221439Z:0e5fb405-faf9-4a62-8c8f-8f9e4a7e2f72" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:17 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:39 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYIybNcP8zMlbazHDcmhfHMrcwVZcA84boMANfHXrSY1KCsh5GHdQBZIiITg7gkhIYH+ItBuB1ZYpQSMxYXSaatNCg/O27LKTLzUAs3wstscYMuowCCcHCNUCsUPXoGLDgmpCAMRSNy/WK/XVuhW1" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvUHE/rbNxW68qMQUpNb8QR2NFWSL9hrcIH4IpAcRfFNOLAM98FtsfpblWjtOnTGRW1CWbgB2Vypen7XVwAR/0QMG6+wPLdJFGADxwgBewTdB+RVcwE786fyj+LSG0jns5cK4JZZQhM4ymqFa7f1Hh" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "601" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Canonical/offers/UbuntuServer/skus/14.04.3-LTS/versions/14.04.201508050\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080?api-version=2015-12-01-preview+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1631" ],
-        "x-ms-client-request-id": [ "cb3459a4-30b2-4907-b217-2f52cade1895" ],
+        "x-ms-unique-id": [ "1559" ],
+        "x-ms-client-request-id": [ "4c0b5e74-29d5-41af-bc0f-a1a9fbf968ce" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -231,35 +231,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "18d6d739-01b2-40e0-b480-090904445f89" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13769" ],
-        "x-ms-request-id": [ "18d6d739-01b2-40e0-b480-090904445f89" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181418Z:18d6d739-01b2-40e0-b480-090904445f89" ],
+        "x-ms-correlation-request-id": [ "1ad33e86-38a9-40a6-a4da-f59ed2287978" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14178" ],
+        "x-ms-request-id": [ "1ad33e86-38a9-40a6-a4da-f59ed2287978" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221440Z:1ad33e86-38a9-40a6-a4da-f59ed2287978" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:17 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:39 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvxLx1mP/Or4ENEqGq+KVKm0r7kmyYlr18HrAaFyAvKXPTg4MqyMwDULwGc5Ypry8A5DnIjVO0hIsdUHCR7J92q1DfD8gW3T5eUcTHRyvrhjp1icR9PLZh+ZdJcdql0RNyaNh36X79EwTMqhAnCP4P" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHbuPf/t5ratN6jAMcOSGIEmVYaG7fCmHGC9mtBP4mqcPlXToA+gbeCbehfdqZqdPrwmMjaicH6wYliHS1RWeEdOg+aHfAJEUBm0fq2gjhEDpjUbensDZyVeCR2+oDhYVfx+Kxqgqsip028I4v7Q0" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "893" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/16.04-LTS/versions/16.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/aa4d60fd88fe46f9a97a75d2bf08c291%2FImage%2FUbuntu-16_04-LTS-amd64-server-20200708-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080?api-version=2015-12-01-preview+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1632" ],
-        "x-ms-client-request-id": [ "94c9706e-92e2-4122-a7f3-77e6f390b72a" ],
+        "x-ms-unique-id": [ "1560" ],
+        "x-ms-client-request-id": [ "5da5ab41-a2be-482e-b630-29eb276324d1" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -273,35 +273,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1d53df4c-408c-4fbf-8bab-6b2c83edfc8d" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13768" ],
-        "x-ms-request-id": [ "1d53df4c-408c-4fbf-8bab-6b2c83edfc8d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181418Z:1d53df4c-408c-4fbf-8bab-6b2c83edfc8d" ],
+        "x-ms-correlation-request-id": [ "88bb3941-b422-42fc-a371-316b50631e1b" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14177" ],
+        "x-ms-request-id": [ "88bb3941-b422-42fc-a371-316b50631e1b" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221440Z:88bb3941-b422-42fc-a371-316b50631e1b" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:17 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:39 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvlFbLXBfXY39NlI3ugsNLkfuPRl36fU8btF3kUYUHsIzlpU7sUpdfFGfJNogXqoaGLnftkt7emTgUM9PlLhhSjz0TM7NmD9u7Aai8ZAg3NOdtjgFfp7XfLjllLQRaoAJvc/us38qUkJ1x+cG7fzu3" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvp0RKNKDzSxb6t4I3EFFpP3PM3SLRX2usP6eMgi+DfX7gHBp1fvz3I0VEpyV1/1talBUSwDIu82TRovU1f7XHh7GmLtFZ7jNCRrnRUdQr2+1f5d6E5EUOGyluSP4NJ4K519+b3ePLQ82ws8WP9qgX" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "895" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a37Z\u0026ske=2021-07-31T06%3a58%3a37Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a37Z\u0026se=2021-07-31T06%3a58%3a37Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/canonical/offers/UbuntuServer/skus/18.04-LTS/versions/18.04.202007080\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/405c7160072b47e3b40def27399e3e9a%2FImage%2FUbuntu-18_04-LTS-amd64-server-20200708.1-en-us-30GB.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a13Z\u0026ske=2022-03-19T16%3a50%3a13Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a13Z\u0026se=2022-03-19T16%3a50%3a13Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0?api-version=2015-12-01-preview+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1633" ],
-        "x-ms-client-request-id": [ "da062418-5b78-4684-962f-82facf737985" ],
+        "x-ms-unique-id": [ "1561" ],
+        "x-ms-client-request-id": [ "ef3b776b-c7e0-4f9c-b8ec-d704479029d7" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -315,35 +315,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "a348d4d8-f3e1-4535-8143-99135a8f69ff" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13767" ],
-        "x-ms-request-id": [ "a348d4d8-f3e1-4535-8143-99135a8f69ff" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181418Z:a348d4d8-f3e1-4535-8143-99135a8f69ff" ],
+        "x-ms-correlation-request-id": [ "ca542354-ab2f-406a-b8e3-d0a7fbeb2986" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14176" ],
+        "x-ms-request-id": [ "ca542354-ab2f-406a-b8e3-d0a7fbeb2986" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221440Z:ca542354-ab2f-406a-b8e3-d0a7fbeb2986" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:18 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:40 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv0MBxy34OpzlhOHCH0Zy2sEj/YIMRkqQfp6UhA2rzoX2MzIteJRx4nQ89swwa6XFeptYffO/Ry5ip4nMds6n/qR5WCHGFBDrQ8UfsiPi557aDVVmUYKbc7uGKly60aaODwvsJHxsCR15pXUAtQyBi" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvvfIsCEmjEgtd9clZ+kgeKQ2Xfz0Fk8mvIe1ltMC0ylfC9yZCFcWRGPsR9fFh/NRQc7yZS9yi8A4ExWlwAavU6oKvmbpETA3zknIvXgyJaGZ2S1CSh1W1KjXxah2di99a00h23M08tLY2fqcum6tN" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "1127" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/CRP/offers/TestImage/skus/Dynamic/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825?api-version=2015-12-01-preview+6": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1634" ],
-        "x-ms-client-request-id": [ "8b84b113-bcaa-43ae-b188-392cfea4beaa" ],
+        "x-ms-unique-id": [ "1562" ],
+        "x-ms-client-request-id": [ "6ebd493d-ac9f-426c-8ff4-52623f1facfd" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -357,35 +357,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "5cf907bc-14f9-4b7c-aeaa-f98ddffa930a" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13766" ],
-        "x-ms-request-id": [ "5cf907bc-14f9-4b7c-aeaa-f98ddffa930a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181418Z:5cf907bc-14f9-4b7c-aeaa-f98ddffa930a" ],
+        "x-ms-correlation-request-id": [ "1cbb7892-6acb-43d8-aaa6-c8556785d438" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14175" ],
+        "x-ms-request-id": [ "1cbb7892-6acb-43d8-aaa6-c8556785d438" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221440Z:1cbb7892-6acb-43d8-aaa6-c8556785d438" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:18 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:40 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvRVyx3hbst5tA+KXqO/JWQKcK8vl+z2+j2x2/BWtslJjSTPrv9KQ+OyftX8mHoBlMeUD1iV3QAfesae1PKSr//rEiVKjYg3L5+iUCgcSXOa4xiEPnT58f8gEk3ZuHaUluLYFtJv46KB9hv+Gwl9/Y" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvT63biW+SzpW+Pe8cpwVLRj2yYcFzrWPJBQTri7UTA0/ybSdBAhAF4DrQHXzpWQyX6WWHK5ZiT6ZxDIHmFkZosl6lVO66IlNWa1XT+jOx/AhnwUVdYt+0/y6qtD/1d38aVEZDqYB9DP7tBbI3/8Fn" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "1178" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Microsoft/offers/WindowsServer/skus/2012-R2-Datacenter/versions/4.0.20150825\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/WindowsServer2012R2DatacenterEval.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0?api-version=2015-12-01-preview+7": {
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1635" ],
-        "x-ms-client-request-id": [ "0b391275-f2ea-4d78-a700-8607f47dfb31" ],
+        "x-ms-unique-id": [ "1563" ],
+        "x-ms-client-request-id": [ "4e8b337b-96e8-4b33-9511-1928b9be644f" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -399,16 +399,58 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "b5a24042-af67-4af2-a982-8f7dcd16368a" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13765" ],
-        "x-ms-request-id": [ "b5a24042-af67-4af2-a982-8f7dcd16368a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181418Z:b5a24042-af67-4af2-a982-8f7dcd16368a" ],
+        "x-ms-correlation-request-id": [ "d0574286-4ed7-468d-898a-0c0396200b30" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14174" ],
+        "x-ms-request-id": [ "d0574286-4ed7-468d-898a-0c0396200b30" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221440Z:d0574286-4ed7-468d-898a-0c0396200b30" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:18 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:40 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvKqQuaiKaZ3xbsgDvJuPERDAg+YPXq7DCJlJyn3Pt1JOocztMS7L06J2dWv7LoUOnmyoxoOTkm4ceNcCGPWwS5TMfGgw7lUgsLYEt7pnvYsG7m9Zd4zjcpyGuohtnzGT90+tzqpyQi9q4wjFZ3gdk" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv4WXr3AnwII4Oc9dswFQN6aY+EkyZr8p+9wuBURo2RqWJNTQc6x7vuqf/gY/jWwpjt9jzS2d+w4T05T+G5JFILvmsBfBIs3T7RLlkYqW1NygGiCVJPOzZM0LEH4QPcJFrN/ik3weUumXQLAi6jjI3" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "578" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0?api-version=2015-12-01-preview+8": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/WindowsServer/skus/2012-R2-Datacenter/versions/10.0.0?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1564" ],
+        "x-ms-client-request-id": [ "185a3073-4f60-4770-aae7-905dbee9438c" ],
+        "CommandName": [ "Get-AzsPlatformImage" ],
+        "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "346fcbe9-f77e-42c3-8f80-fda45a86fc51" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14173" ],
+        "x-ms-request-id": [ "346fcbe9-f77e-42c3-8f80-fda45a86fc51" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221441Z:346fcbe9-f77e-42c3-8f80-fda45a86fc51" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:40 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvZUFFGf/3LG+ePV6TRMbDFIvscECW/jRp/YE/ovIME615gSKJyBbkLx8sXyGg5XmnnanxPIn9LP4R5ZjGf3Yq8kt/95Y2DSvTGk46cCzIoXWLYJye8pirRi6fIW9sKOVoFifNEdMJavGk/dvlPvo5" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "615" ],
@@ -419,15 +461,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140?api-version=2015-12-01-preview+8": {
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648?api-version=2015-12-01-preview+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1636" ],
-        "x-ms-client-request-id": [ "c0fad328-5f06-40b9-ab12-603af6bdefd9" ],
+        "x-ms-unique-id": [ "1565" ],
+        "x-ms-client-request-id": [ "f0ac5db7-e95a-4bbe-8f7a-3813556958fb" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -441,35 +483,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "2d30ec04-63ed-46c8-8121-22a46835088b" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13764" ],
-        "x-ms-request-id": [ "2d30ec04-63ed-46c8-8121-22a46835088b" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181419Z:2d30ec04-63ed-46c8-8121-22a46835088b" ],
+        "x-ms-correlation-request-id": [ "8f77ae7e-0cbb-45a0-9fe7-27f56fed69d2" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14172" ],
+        "x-ms-request-id": [ "8f77ae7e-0cbb-45a0-9fe7-27f56fed69d2" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221441Z:8f77ae7e-0cbb-45a0-9fe7-27f56fed69d2" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:18 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:40 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbXXLFdHWWWGyhXef3W4jsQOjMCEMG5O2hsMP15fBMJiAsrh9dRjHyd64owDSlTSXiPAlI3ZSLMRJFJzdpXrizHwZ6q1YeEiwYAH9zyM1ZtJi3FQawmw6va61RAG2RjvARMKBpdKXldqIhVf/p+T4" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvfvB29M1fWcnlrhFBPa/9hABsGWqAfeT0E4O0h2+y/Rw7/rLM73DG3gf2YZaUFkZyAUSZi7F/VzJKX10iuOX4ZAAk4Nb1n8YBvG9PE6VE8y7XTmZ0aXwE64w20XMrj6Ulxyy0722SSFY/c4HOkHCm" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "952" ],
+        "Content-Length": [ "999" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.19847.2010090140\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/007efb466dc6418b8027b640626b427f%2FImage%2Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2012-R2-Datacenter-smalldisk/versions/9600.20120.2109130648\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/8c94657ef5184ca7a4c86b2805c29d81%2FImage%2F1911ecfdd5284c81b44abb999cf70242%252FImage%252Fvhd_2k12r2_server_serverdatacenter_vl_en-us_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a15Z\u0026ske=2022-03-19T16%3a50%3a15Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a15Z\u0026se=2022-03-19T16%3a50%3a15Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045?api-version=2015-12-01-preview+9": {
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103?api-version=2015-12-01-preview+10": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1637" ],
-        "x-ms-client-request-id": [ "2bca5586-92bb-499a-b220-574bb773e058" ],
+        "x-ms-unique-id": [ "1566" ],
+        "x-ms-client-request-id": [ "cad1be76-93d7-41f7-a995-e3491df5ec81" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -483,35 +525,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "bf5821a8-02db-44cf-9294-eec1c533fcb0" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13763" ],
-        "x-ms-request-id": [ "bf5821a8-02db-44cf-9294-eec1c533fcb0" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181419Z:bf5821a8-02db-44cf-9294-eec1c533fcb0" ],
+        "x-ms-correlation-request-id": [ "deaa6ff2-0dcb-4ff7-804c-5cae70aa7c0d" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14171" ],
+        "x-ms-request-id": [ "deaa6ff2-0dcb-4ff7-804c-5cae70aa7c0d" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221441Z:deaa6ff2-0dcb-4ff7-804c-5cae70aa7c0d" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:18 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:41 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtmawrhJ0pUPX01vsZCx2GU1GID9Pcf7FmFJ7vC9CdKRcWQiIetyRgrWCFelBr2eDKv+6EmKeQJ8X8WEwt/YBCKNCJgz8y3pA2HSsy/Q6fBGK6mykWCMUY+b+FKPUpJH+RgDmp9wEnezXfzlq5Mnl" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvWyuCVKbZWyHLLLOuc3jJ4VltKGU89Oq+Bvzntxu0g29b5YJmYEJe+f7vi6HjsuceyXriWdP7RMKqETyBSpx7nmm6W1k302QDmRKsAMWlgKQX4rUxDuF2nOAViImRntxvoNOb4VHR9Ou34zlQc0E4" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "942" ],
+        "Content-Length": [ "989" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.3986.2010070045\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/c12f21f106244837acaafef12d14fc43%2FImage%2Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2021-07-29T06%3a38%3a39Z\u0026ske=2021-07-31T06%3a58%3a39Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2021-07-29T06%3a58%3a39Z\u0026se=2021-07-31T06%3a58%3a39Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftWindowsServer/offers/windowsserver/skus/2016-Datacenter-smalldisk/versions/14393.4651.2109130103\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Windows\",\"uri\":\"https://azstmktprodwcu001.blob.core.windows.net/packages/e52f1319c8354093854767b37102c218%2FImage%2F1b76c9e2fd29468daace52f01d9ac267%252FImage%252Fvhd_server_serverdatacenter_en-us_vl_30gb_azuregallery_fixed.vhd?skoid=2d4f7bf2-3564-4014-ab3b-1df4cf7ca3d2\u0026sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d\u0026skt=2022-03-17T16%3a30%3a14Z\u0026ske=2022-03-19T16%3a50%3a14Z\u0026sks=b\u0026skv=2020-04-08\u0026sv=2020-04-08\u0026st=2022-03-17T16%3a50%3a14Z\u0026se=2022-03-19T16%3a50%3a14Z\u0026sr=b\u0026sp=r\"},\"dataDisks\":[],\"details\":{\"billingPartNumber\":\"\"},\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0?api-version=2015-12-01-preview+10": {
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0?api-version=2015-12-01-preview+11": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1638" ],
-        "x-ms-client-request-id": [ "22f294c9-6c07-4945-9580-b3b34c0b1011" ],
+        "x-ms-unique-id": [ "1567" ],
+        "x-ms-client-request-id": [ "c5e931f5-6e58-4631-943e-0184ae321f03" ],
         "CommandName": [ "Get-AzsPlatformImage" ],
         "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -525,23 +567,149 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "233490dc-0f7f-489a-9c50-c0bcf4c800ee" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13762" ],
-        "x-ms-request-id": [ "233490dc-0f7f-489a-9c50-c0bcf4c800ee" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181419Z:233490dc-0f7f-489a-9c50-c0bcf4c800ee" ],
+        "x-ms-correlation-request-id": [ "31180290-a5ce-47c6-b110-8b2dea477298" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14170" ],
+        "x-ms-request-id": [ "31180290-a5ce-47c6-b110-8b2dea477298" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221441Z:31180290-a5ce-47c6-b110-8b2dea477298" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:19 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:41 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv6hdQ+dhC1zKUJiBvwCm4fAjLW7uvS0QqIMWjUQfFEo7dm/cWqkn7nYp3lRRoHmFlSyxZI/L1UKOxQK/536WD25gHN8tcyXPg5DWLV7Rs7q111wrB8CpBC2O3VNiWNy9/mXzsPzYc9jO7kUi3GrpD" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvi30+QvySLTr90W7VnyO5ia/bI5b9FxGucAo6IVZ9Bv29CEtM0Ouw8M/PaAvbKomBiOV2VGairxi22Nn3DaITl6vYoOgNotnMMfWupaO4j7XpKrCcizSRLhl4EUpDWkATz+MGsnhJ5QvzGZbE4ae/" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "574" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1?api-version=2015-12-01-preview+12": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1568" ],
+        "x-ms-client-request-id": [ "f345936d-e329-48db-8e98-907584f00350" ],
+        "CommandName": [ "Get-AzsPlatformImage" ],
+        "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3f00f6c6-9ec5-4f4e-9f50-f8cbd4b9cc01" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14169" ],
+        "x-ms-request-id": [ "3f00f6c6-9ec5-4f4e-9f50-f8cbd4b9cc01" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221441Z:3f00f6c6-9ec5-4f4e-9f50-f8cbd4b9cc01" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:41 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvmfhhGIZOS2paMpbN3TBKhZi3wwO9HWjpXoxMKCO/2zwzOaNkt2IzPZW+4OMtGLOWQS67Yy93tCWvBy/k9tMWLY424KQpZRkemUOYdeiT4YRn0G8VcHrAEIEzqRtzAqQt+SQlUOYJpCPTF+jooWE5" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "574" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2?api-version=2015-12-01-preview+13": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1569" ],
+        "x-ms-client-request-id": [ "5e1579d7-31c7-4728-a525-ca21fc3b9d33" ],
+        "CommandName": [ "Get-AzsPlatformImage" ],
+        "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "be00d756-8735-42e3-b4fc-5273bac5b587" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14168" ],
+        "x-ms-request-id": [ "be00d756-8735-42e3-b4fc-5273bac5b587" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221442Z:be00d756-8735-42e3-b4fc-5273bac5b587" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:41 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvdSk1lAIZbpOOzdRjYsA7MCAB3h8vxqN6oH+IVvzF9plgWITF+B8P/HsHnkHNiYHqefoltIkNCUkzZDVRbkK968M6o3z1wZPA1YBCSJUX9Zoe8tkM6OKeCLtSWYEUV5NHn3Klq2LhawfGWWT9FYdG" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "574" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/travist/offers/travist/skus/travist/versions/1.0.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/vhds/New%20Virtual%20Hard%20Disk.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsPlatformImage+[NoContext]+TestGetAllPlatformImages+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0?api-version=2015-12-01-preview+14": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1570" ],
+        "x-ms-client-request-id": [ "944a5f02-6c2f-4044-b85c-39200d9615e6" ],
+        "CommandName": [ "Get-AzsPlatformImage" ],
+        "FullCommandName": [ "Get-AzsPlatformImage_GetViaIdentity" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "e7aa2be2-d4c2-4150-9697-5881d3e6cc33" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14167" ],
+        "x-ms-request-id": [ "e7aa2be2-d4c2-4150-9697-5881d3e6cc33" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221442Z:e7aa2be2-d4c2-4150-9697-5881d3e6cc33" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:41 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvnHyEX/lyX63QafJ9KTMLzMCfWm6RE7TiBMltEYcnhcbSE5EtJjVJVCzJhgPwnHqLq1L8Nr1cWwrPg93GsYYa5tg5XO8k6kQ+EVLwZF1xnANNQ1lSI7NvZoZf5IxmoU7psEGMpkU2csJyK2iFoL7a" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "1131" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/Ubuntu/offers/Desktop/skus/Enterprise/versions/1.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/UbuntuServer.vhd\"},\"dataDisks\":[{\"lun\":0,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk1.vhd\"},{\"lun\":1,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk2.vhd\"},{\"lun\":2,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk3.vhd\"},{\"lun\":3,\"uri\":\"https://azsaddvmimagesacrp.blob.redmond.ext-n22r1006.masd.stbtest.microsoft.com/azsaddvmimagecontainercrp/datadisk4.vhd\"}],\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
@@ -555,43 +723,43 @@
       },
       "ContentHeaders": {
         "Content-Type": [ "application/json" ],
-        "Content-Length": [ "211" ]
+        "Content-Length": [ "202" ]
       }
     },
     "Response": {
-      "StatusCode": 201,
+      "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "2229a853-ad6f-4db9-a5e6-d6275121b2a6" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1098" ],
-        "x-ms-request-id": [ "2229a853-ad6f-4db9-a5e6-d6275121b2a6" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181421Z:2229a853-ad6f-4db9-a5e6-d6275121b2a6" ],
+        "x-ms-correlation-request-id": [ "fbdb0d45-6cef-479b-ad29-b511f30fbb77" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1091" ],
+        "x-ms-request-id": [ "fbdb0d45-6cef-479b-ad29-b511f30fbb77" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221444Z:fbdb0d45-6cef-479b-ad29-b511f30fbb77" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:21 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:14:44 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHri+yfHeVzV5pr5wPzoqlKGCWPdETZg5kh+EMxhweoFkd4+8LVklk5CZdPven5dkmsq21xMIk6WjBNa2UOAeNfJGrvzbVkc5anXP2BsW5zdTDT/0l+MYzQLzpzDEeIM1+eOGDJm/TG57MUaB3C7v" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv79ZjeQGOHNd9Pp4Xb15Zz8oUfGLnSNFd1vMyAd3lGjEDfhJxS4N9jnict2wDsQ8Ck/N5IXbo2AWP4YREiruCKARJNEQNlQWhnoMgTkg7ssW4vz6BPXuFIs051BAPas0exR02jMLxFLBd1yzvVkcY" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "586" ],
+        "Content-Length": [ "578" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Creating\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions\",\"location\":\"redmond\",\"properties\":{\"osDisk\":{\"osType\":\"Linux\",\"uri\":\"https://computepestertests.blob.redmond.ext-n25r0507.masd.stbtest.microsoft.com/vhds/ComputeAdminPesterTestImage.vhd\"},\"dataDisks\":null,\"details\":null,\"replicate\":false,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
   "Get-AzsPlatformImage+[NoContext]+TestCreatePlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "1640" ],
-        "x-ms-client-request-id": [ "7ee77952-3953-46e1-a584-5be29c2b3b4d" ],
+        "x-ms-unique-id": [ "1572" ],
+        "x-ms-client-request-id": [ "a6e90a13-7bf7-4bc2-b3e5-3420d1b94348" ],
         "CommandName": [ "Add-AzsPlatformImage" ],
         "FullCommandName": [ "Add-AzsPlatformImage_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -604,19 +772,19 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "ca863b56-e040-4b46-a3f3-c26dd9cee65e" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13761" ],
-        "x-ms-request-id": [ "ca863b56-e040-4b46-a3f3-c26dd9cee65e" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181451Z:ca863b56-e040-4b46-a3f3-c26dd9cee65e" ],
+        "x-ms-correlation-request-id": [ "6f286065-2c80-413e-b72a-d191e9fe812f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14166" ],
+        "x-ms-request-id": [ "6f286065-2c80-413e-b72a-d191e9fe812f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221515Z:6f286065-2c80-413e-b72a-d191e9fe812f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:51 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:15 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvmWVoPv0d6psoAqXxvGCesCalUfF6Go9gm7T7YfsezSVNLFgKO10PSPX/5VaK6fbEb9Yw2BuWW48CkqIXTk1P3rBZUJPz04qRy+bAfulHTQmCSkQi2WycCA0ek4vFGwulgRGSp8Tg3OjNBeOf41D6" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvjjDULoS75u681faAya4aWnH3VED1Yxio8CXdNEBfVwLSVEMnEKZITiD60C+pQyWsnWplKc+qgsWKEcjc0rx5muq6nljGV+Mra5Pn0EeCC8U5VdMPDf56FHTV2h0NN2ArY6u7Og1HpgIEtirY9DId" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "587" ],
+        "Content-Length": [ "578" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
@@ -627,13 +795,13 @@
   "Get-AzsPlatformImage+[NoContext]+TestCreatePlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "1641" ],
-        "x-ms-client-request-id": [ "7ee77952-3953-46e1-a584-5be29c2b3b4d" ],
+        "x-ms-unique-id": [ "1573" ],
+        "x-ms-client-request-id": [ "a6e90a13-7bf7-4bc2-b3e5-3420d1b94348" ],
         "CommandName": [ "Add-AzsPlatformImage" ],
         "FullCommandName": [ "Add-AzsPlatformImage_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -646,19 +814,19 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "63e49426-f0ec-453b-a590-28a36aecd5be" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "13760" ],
-        "x-ms-request-id": [ "63e49426-f0ec-453b-a590-28a36aecd5be" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181451Z:63e49426-f0ec-453b-a590-28a36aecd5be" ],
+        "x-ms-correlation-request-id": [ "279da4d4-23c0-4d4d-8268-a5bb0b2f74c1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14165" ],
+        "x-ms-request-id": [ "279da4d4-23c0-4d4d-8268-a5bb0b2f74c1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221515Z:279da4d4-23c0-4d4d-8268-a5bb0b2f74c1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:51 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:15 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBX3ZYRmPzeuPfzne6nZaonY8ex5MNhrceUqEoxJa/0ejGL7eEDrhOQ7O6vRYDUNx/TqKDI1VPwPCQo+xw68M8yFaB3+gGXdFc+NB5iw44sS9FJhf6Rd0iWn47UYNYlrsy2zfyuYy4JOdqpTjBO0n" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv5E4xEJRTajVjjJZ9g2wNOgpTMiT31/VAS609bwae/oXgyVqMSTiNSw05BMfXwNOV7LW/6Ekbpl7shk2tvdzonmcNs4vl7qf45Fx0b7oRnxoKLfja01EKnBUKF4vSReYv1UGBI1/4xeq0gqenJq/b" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "587" ],
+        "Content-Length": [ "578" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
@@ -676,26 +844,26 @@
       },
       "ContentHeaders": {
         "Content-Type": [ "application/json" ],
-        "Content-Length": [ "211" ]
+        "Content-Length": [ "202" ]
       }
     },
     "Response": {
       "StatusCode": 201,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e4bdf50e-8344-47d4-95bc-cb0c74d6d39d" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1097" ],
-        "x-ms-request-id": [ "e4bdf50e-8344-47d4-95bc-cb0c74d6d39d" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181453Z:e4bdf50e-8344-47d4-95bc-cb0c74d6d39d" ],
+        "x-ms-correlation-request-id": [ "b31b74a8-5b25-486f-b3c2-7dc9d485984c" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1090" ],
+        "x-ms-request-id": [ "b31b74a8-5b25-486f-b3c2-7dc9d485984c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221515Z:b31b74a8-5b25-486f-b3c2-7dc9d485984c" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:14:53 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:15 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv6Tdgtusp1D1bItZqv4neD5/kBuFasQVZ4GFv+KOxdgV+Fae042Uy6B/D+jqQK9B7vFQ1qlGprAxQhAfNRgQ2MfqdAIqXez8Mohz9nVIWTyGrdkE8uRMusYwKLQ8+CVkxQqwfaCh73QJo6pJtrmjE" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvAdArx/5wHpYFzR7yT7iqY0sazHt0ld29PfjGdin8YBFFix8QqVC90CPMPgJC8CkFOJ9wCTg9RQBvH7pMsAW2f2gulzOv4qayjvWcfp52nHAROT5K/nPzetuov/7pFjlWyOZ5IBFt/HgkUeGYLNPT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "586" ],
+        "Content-Length": [ "577" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
@@ -706,13 +874,13 @@
   "Get-AzsPlatformImage+[NoContext]+TestCreateAndDeletePlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "1643" ],
-        "x-ms-client-request-id": [ "dd1cb50b-9e77-429e-8777-13b36de2559a" ],
+        "x-ms-unique-id": [ "1575" ],
+        "x-ms-client-request-id": [ "96713ea3-1b48-47dc-8e6b-3f06634f8ac6" ],
         "CommandName": [ "Add-AzsPlatformImage" ],
         "FullCommandName": [ "Add-AzsPlatformImage_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -725,19 +893,19 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "44e8916e-b16a-43a9-bc0c-7c925dea188c" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14092" ],
-        "x-ms-request-id": [ "44e8916e-b16a-43a9-bc0c-7c925dea188c" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181523Z:44e8916e-b16a-43a9-bc0c-7c925dea188c" ],
+        "x-ms-correlation-request-id": [ "029e0d6d-4264-46a2-922d-7ea87b299406" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14164" ],
+        "x-ms-request-id": [ "029e0d6d-4264-46a2-922d-7ea87b299406" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221546Z:029e0d6d-4264-46a2-922d-7ea87b299406" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:23 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:45 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/6cF8SC/oldlwjXp7jNMeaqVXHbH0TkHaxuhT5DWWdDjfZZ7agJ0+wd8aUk3GPVYAEH9SNkm9p1yPu6JefbsTNIoM8aR8XtnTbbLJDzDdKuGJiaRdAug0ZTG87VUamZgcHtVTZwfZ6+WiI2dEXEb" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvFrTLH5dIG6/brlKJXfE041lQlOXwAuSAXEeQJBhzFVAyp/XUG38OrAyOy15Zfafz2dU3wXa8xo/hDJkgne5GQl/GHONnT6e5hIylVPsSKr4liPQLpclMRCqkyYDsylmvHBKQ8ybEWqfybhc/jpX/" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "587" ],
+        "Content-Length": [ "578" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
@@ -748,13 +916,13 @@
   "Get-AzsPlatformImage+[NoContext]+TestCreateAndDeletePlatformImage+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "Authorization": [ "[Filtered]" ],
-        "x-ms-unique-id": [ "1644" ],
-        "x-ms-client-request-id": [ "dd1cb50b-9e77-429e-8777-13b36de2559a" ],
+        "x-ms-unique-id": [ "1576" ],
+        "x-ms-client-request-id": [ "96713ea3-1b48-47dc-8e6b-3f06634f8ac6" ],
         "CommandName": [ "Add-AzsPlatformImage" ],
         "FullCommandName": [ "Add-AzsPlatformImage_CreateExpanded" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -767,19 +935,19 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "97b488c8-aed1-4438-bcd2-106a279f7a85" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14091" ],
-        "x-ms-request-id": [ "97b488c8-aed1-4438-bcd2-106a279f7a85" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181524Z:97b488c8-aed1-4438-bcd2-106a279f7a85" ],
+        "x-ms-correlation-request-id": [ "cf8d4e44-e815-47a9-9bb5-5936b446b657" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14163" ],
+        "x-ms-request-id": [ "cf8d4e44-e815-47a9-9bb5-5936b446b657" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221546Z:cf8d4e44-e815-47a9-9bb5-5936b446b657" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:23 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:45 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvtqeUfXDU1ehz8e3rtDtnssFbBI2c5b3s++2T2QqXZVlUH26LYRpSbgEMG8JVuY5swp6uJDKviwkMCBS38Xoe7gFTzvfjBM3bgtHcKUu92AWjU9Vyhe7hfeulOb21jOJx7lZiyaUkxpopKdbmjD4B" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvE0EcXByGQBlIqQL9IcoBll8HZU/y/vuN8HEI71GSzHRG7wvnUKfZ2j0jgajGIKalp1gq11IwzRa/OcW8vW74V4YPyjf+Sv27JXvIoGxOhzjwVJ9GQqk9CZ/8R0LYyGnYbnPcdY3Y5VLnri3+/4Fb" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "587" ],
+        "Content-Length": [ "578" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
@@ -790,12 +958,12 @@
   "Get-AzsPlatformImage+[NoContext]+TestCreateAndDeletePlatformImage+$DELETE+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview+4": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/platformImage/publishers/MicrosoftCrpTeam/offers/CrpPester/skus/CrpPester/versions/1.0.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1645" ],
-        "x-ms-client-request-id": [ "b9349656-6df2-4a41-91b0-bdf2759bbff2" ],
+        "x-ms-unique-id": [ "1577" ],
+        "x-ms-client-request-id": [ "83a0074b-44cd-465a-bac3-9d29bffad81f" ],
         "CommandName": [ "Remove-AzsPlatformImage" ],
         "FullCommandName": [ "Remove-AzsPlatformImage_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -809,16 +977,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "21fb3434-55c4-4594-bf40-0e97cb788482" ],
-        "x-ms-ratelimit-remaining-subscription-deletes": [ "14933" ],
-        "x-ms-request-id": [ "21fb3434-55c4-4594-bf40-0e97cb788482" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181526Z:21fb3434-55c4-4594-bf40-0e97cb788482" ],
+        "x-ms-correlation-request-id": [ "bdceb78f-38be-4077-baef-a6e661676e4a" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14911" ],
+        "x-ms-request-id": [ "bdceb78f-38be-4077-baef-a6e661676e4a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T221546Z:bdceb78f-38be-4077-baef-a6e661676e4a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:25 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 22:15:45 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvGe0tNRZ0KfJ+P/md9weYvWwi1taC5qjUqBxOEbdmZg4cWYs2XVohRRynoPM8uh7Et9mKWZhms62rExpmlfxAyWP3Llz0tNoyTIlG+VtL4O2l54rMmOHxADZQsUwSFaZTAFI966NK9DLNDi80B79k" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvj6fBTb5keqf0My0biQXfAcuXy9y7wMK04eWxsQt4xQTxgJ6tH/8WnDpUgJSz7FhjEb1scRk2mj24NMTNsTGtmuv0LqZfgH3CBwmH9ub2OksQWH1YWJ6QrQHItKcrbQdim2UPsPjCv1pkq5jJT45G" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
