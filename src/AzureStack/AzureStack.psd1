@@ -60,7 +60,7 @@
         @{ModuleName = 'Azs.Azurebridge.Admin'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '2.0.0'; },
         @{ModuleName = 'Azs.Commerce.Admin'; RequiredVersion = '1.0.2'; },
-        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.1.0'; },
+        @{ModuleName = 'Azs.Compute.Admin'; RequiredVersion = '1.2.0'; },
         @{ModuleName = 'Azs.Deployment.Admin'; RequiredVersion = '1.0.1'; },
         @{ModuleName = 'Azs.ContainerRegistry.Admin'; RequiredVersion = '0.2.0'; },
         @{ModuleName = 'Azs.ContainerService.Admin'; RequiredVersion = '0.1.0'; },

@@ -36,17 +36,16 @@ Returns the disk.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get All Disks 
 ```powershell
-Get-AzsDisk
+PS C:\> Get-AzsDisk
 ```
 
+Without any parameters, `Get-AzsDisk` will list all Disks.
 
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: Get a Disk by Name
 ```powershell
-Get-AzsDisk -Name "426b8945-8a24-42ad-acdc-c26f16202489"
-```
+PS C:\> Get-AzsDisk -Name "426b8945-8a24-42ad-acdc-c26f16202489"
 
 ActualSizeGb    : 24
 DiskId          : 426b8945-8a24-42ad-acdc-c26f16202489
@@ -63,11 +62,13 @@ Status          : Unattached
 Type            : Microsoft.Compute.Admin/locations/disks
 UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Comput
                   e/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489
-
-### -------------------------- EXAMPLE 3 --------------------------
-```powershell
-Get-AzsDisk -Count 3
 ```
+
+Specify a disk by its `Name` to retrieve it.
+
+### Example 3: Get a Specified number of Disks
+```powershell
+PS C:\>  Get-AzsDisk -Count 3
 
 ActualSizeGb    : 24
 DiskId          : 20f1619e-4210-47f6-81e6-b89e3028df06
@@ -116,11 +117,13 @@ Status          : Unattached
 Type            : Microsoft.Compute.Admin/locations/disks
 UserResourceId  : /subscriptions/74c72bdc-d917-431c-a377-8ca80f4238a0/resourceGroups/LADTEST/providers/Microsoft.Comput
                   e/Disks/TEST_OsDisk_1_426b89458a2442adacdcc26f16202489
-
-### -------------------------- EXAMPLE 4 --------------------------
-```powershell
-Get-AzsDisk -Status All -ScaleUnit s-cluster -VolumeLabel Objstore_4
 ```
+
+Use the `Count` parameter to retrieve a specific number of disks.
+
+### Example 4: Get all disks in specific location
+```powershell
+PS C:\> Get-AzsDisk -Status All -ScaleUnit s-cluster -VolumeLabel Objstore_4
 
 ActualSizeGb    : 2
 DiskId          : e4732f76-0753-40ec-80f5-8effdd0b437d
@@ -163,6 +166,9 @@ SharePath       : \\SU1FileServer.s11r0401.masd.stbtest.microsoft.com\SU1_ObjSto
 Status          : Reserved
 Type            : Microsoft.Compute.Admin/locations/disks
 UserResourceId  : /subscriptions/7829c784-cd3f-464a-b195-3be83c964c9c/resourceGroups/RBACTEST/providers/Microsoft.Compute/Disks/testdd
+```
+
+Use the `ScaleUnit` or `VolumeLabel` parameter to list all disks in specific location
 
 ## PARAMETERS
 
@@ -372,7 +378,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDisk
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDisk
 
 ## NOTES
 

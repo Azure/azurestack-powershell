@@ -34,10 +34,9 @@ Returns the specific platform image matching publisher, offer, skus and version.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Get All Platform Images
 ```powershell
-Get-AzsPlatformImage
-```
+PS C:\> Get-AzsPlatformImage
 
 BillingPartNumber :
 DataDisks         :
@@ -50,11 +49,13 @@ OsUri             : https://asdf.blob.local.azurestack.external/asdf/UbuntuServe
                     wdlacup&se=2020-02-13T13:25:58Z&st=2020-02-13T05:25:58Z&spr=https
 ProvisioningState : Succeeded
 Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-Get-AzsPlatformImage -Offer ExampleOffer -Publisher ExamplePublisher -Location local -Sku ExampleSku -Version 1.0.0
 ```
+
+Get a list of all Platform Images by leaving all parameters blank.
+
+### Example 2: Get Specific Platform Image
+```powershell
+PS C:\> Get-AzsPlatformImage -Offer ExampleOffer -Publisher ExamplePublisher -Location local -Sku ExampleSku -Version 1.0.0
 
 BillingPartNumber :
 DataDisks         :
@@ -67,6 +68,9 @@ OsUri             : https://asdf.blob.local.azurestack.external/asdf/UbuntuServe
                     e=2020-02-13T13:25:58Z&st=2020-02-13T05:25:58Z&spr=https
 ProvisioningState : Succeeded
 Type              : Microsoft.Compute.Admin/locations/artifactTypes/publishers/offers/skus/versions
+```
+
+Specify the Offer, Publisher, Location, Sku, and Version to retrieve a Platform Image.
 
 ## PARAMETERS
 

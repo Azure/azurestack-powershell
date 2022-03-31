@@ -34,17 +34,16 @@ Returns the requested disk migration job.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1:
 ```powershell
-Get-AzsDiskMigrationJob
+PS C:\> Get-AzsDiskMigrationJob
 ```
 
+Returns a list of managed disk migration jobs at the location local.
 
-
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2:
 ```powershell
-Get-AzsDiskMigrationJob -Name TestNewDiskMigrationJob
-```
+PS C:\> Get-AzsDiskMigrationJob -Name TestNewDiskMigrationJob
 
 CreationTime : 2/26/2020 10:45:41 AM
 EndTime      : 2/26/2020 10:46:32 AM
@@ -57,6 +56,9 @@ Status       : Succeeded
 Subtask      : {edacd0f6-760a-43f9-a188-8833751f89ce, f1ee38a4-5c27-4728-a12b-36976c565042}
 TargetShare  : \\SU1FileServer.s31r1801.masd.stbtest.microsoft.com\SU1_ObjStore_1
 Type         : Microsoft.Compute.Admin/locations/diskmigrationjobs
+```
+
+Get a specific managed disk migration job.
 
 ## PARAMETERS
 
@@ -161,7 +163,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210401.IDiskMigrationJob
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210901.IDiskMigrationJob
 
 ## NOTES
 

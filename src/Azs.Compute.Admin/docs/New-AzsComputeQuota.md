@@ -32,10 +32,9 @@ Creates or Updates a Compute Quota with the provided quota parameters.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Create a Compute Quota with Default Parameters
 ```powershell
-New-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
-```
+PS C:\> New-AzsComputeQuota -Name ExampleComputeQuotaWithDefaultParameters
 
 AvailabilitySetCount               : 10
 CoresLimit                         : 100
@@ -48,11 +47,13 @@ StandardManagedDiskAndSnapshotSize : 2048
 Type                               : Microsoft.Compute.Admin/quotas
 VMScaleSetCount                    : 0
 VirtualMachineCount                : 100
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-New-AzsComputeQuota -Name ExampleComputeQuotaWithCustomParameters -Location local -AvailabilitySetCount 9 -CoresCount 99 -PremiumManagedDiskAndSnapshotSize 1024 -StandardManagedDiskAndSnapshotSize 1024 -VirtualMachineCount 99 -VMScaleSetCount 2
 ```
+
+Any parameters that are not specified will be set to their default parameter, shown above.
+
+### Example 2: Create a Compute Quota with Custom Parameters
+```powershell
+PS C:\>  New-AzsComputeQuota -Name ExampleComputeQuotaWithCustomParameters -Location local -AvailabilitySetCount 9 -CoresCount 99 -PremiumManagedDiskAndSnapshotSize 1024 -StandardManagedDiskAndSnapshotSize 1024 -VirtualMachineCount 99 -VMScaleSetCount 2
 
 AvailabilitySetCount               : 9
 CoresLimit                         : 99
@@ -65,6 +66,10 @@ StandardManagedDiskAndSnapshotSize : 1024
 Type                               : Microsoft.Compute.Admin/quotas
 VMScaleSetCount                    : 2
 VirtualMachineCount                : 99
+```
+
+Customize Quota with parameters.
+Any parameters not specified will have default value.
 
 ## PARAMETERS
 
