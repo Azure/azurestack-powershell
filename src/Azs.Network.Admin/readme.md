@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.0.2
+module-version: 1.1.0
 service-name: NetworkAdmin
 
 ### File Renames
