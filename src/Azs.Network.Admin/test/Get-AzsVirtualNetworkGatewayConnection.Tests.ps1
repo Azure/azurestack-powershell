@@ -12,6 +12,7 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Get-AzsVirtualNetworkGatewayConnection' {
+
     . $PSScriptRoot\Common.ps1
 
     BeforeEach {
@@ -70,8 +71,7 @@ Describe 'Get-AzsVirtualNetworkGatewayConnection' {
 
     It "TestGetAllVirtualNetworkGatewayConnectionsOData" -Skip:$("TestGetAllVirtualNetworkGatewayConnectionsOData" -in $global:SkippedTests) {
         $global:TestName = "TestGetAllVirtualNetworkGatewayConnectionsOData"
-
-        $connections = Get-AzSVirtualNetworkGatewayConnection -Filter "Name eq 'Tokyo-Hub-Conn'"
+        $connections = Get-AzSVirtualNetworkGatewayConnection -Top 1
         foreach ($conn in $connections) {
             ValidateResourceInfo $conn
             ValidateConnectionState $conn

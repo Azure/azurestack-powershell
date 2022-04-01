@@ -36,7 +36,8 @@
 ## Azs.Compute.Admin module
 * Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
 
-
+## AzS.Network.Admin module
+* Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
 
 
 # Release 2.2.0
