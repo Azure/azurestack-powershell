@@ -45,12 +45,12 @@ Update the feature settings.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: Update the Global Feature Settings
 ```powershell
-Update-AzsComputeGlobalFeatureSetting -FeatureName Microsoft.Compute.EmergencyVMAccess -GlobalFeatureState Enabled -Location local
+PS C:\> Update-AzsComputeGlobalFeatureSetting -FeatureName Microsoft.Compute.EmergencyVMAccess -GlobalFeatureState Enabled -Location local
 ```
 
-
+A successful call to update a feature's global settings will not return any output
 
 ## PARAMETERS
 
@@ -87,8 +87,6 @@ Accept wildcard characters: False
 ### -GlobalFeatureSetting
 Higher-priority global feature flags.
 To construct, see NOTES section for GLOBALFEATURESETTING properties and create a hash table.
-
-Possible string values of GlobalFeatureSetting are Enabled, Disabled, and TenantSubscriptionLevel. Enabled/Disabled will override features that are enabled with tenant subscription ID. TenantSubscriptionLevel will defer feature enablement to per tenant subscription ID enablement.
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20201101.IGlobalFeatureSettings

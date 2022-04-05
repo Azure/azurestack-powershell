@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Compute.Admin
-Module Guid: 0069b4df-ccd1-4ae6-bf57-75660b132ca2
+Module Guid: addb0a1f-16ad-492e-8cde-0fffb53e0645
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin
 Help Version: 1.0.0.0
 Locale: en-US
