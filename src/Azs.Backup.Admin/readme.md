@@ -54,7 +54,7 @@ metadata:
   description: 'Microsoft AzureStack PowerShell: Backup Admin cmdlets'
 
 subject-prefix: ''
-module-version: 2.0.0
+module-version: 1.0.2
 service-name: BackupAdmin
 
 ### File Renames
@@ -146,34 +146,10 @@ directive:
       parameter-name: BackupRetentionPeriodInDay
     set:
       parameter-name: BackupRetentionPeriodInDays
-  - where:
-      verb: Update
-      subject: BackupConfiguration
-      parameter-name: ^ExternalStoreDefault(.+)
-    set:
-      parameter-name: $1
-  - where:
-      verb: Update
-      subject: BackupConfiguration
-      parameter-name: BackupFrequencyInHour
-    set:
-      parameter-name: BackupFrequencyInHours
-  - where:
-      verb: Update
-      subject: BackupConfiguration
-      parameter-name: BackupRetentionPeriodInDay
-    set:
-      parameter-name: BackupRetentionPeriodInDays
 
     # Hide the auto-generated Set-AzsBackupConfiguration and expose it through customized one
   - where:
       verb: Set
-      subject: BackupConfiguration
-    hide: true
-
-  # Hide the auto-generated Update-AzsBackupConfiguration and expose it through customized one
-  - where:
-      verb: Update
       subject: BackupConfiguration
     hide: true
 
@@ -196,14 +172,6 @@ directive:
     set:
       verb: Start
       subject: Backup
-
-    # Rename Set-AzsBackupConfiguration to Clear-AzsBackupConfiguration
-  - where:
-      verb: Set
-      subject: BackupConfiguration
-    set:
-      verb: Clear
-      subject: BackupConfiguration
 
 # Add release notes
   - from: Azs.Backup.Admin.nuspec
