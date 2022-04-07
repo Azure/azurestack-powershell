@@ -1,0 +1,208 @@
+{
+  "Set-AzsBackupConfiguration+[NoContext]+TestUpdateBackupLocationExpanded+$PUT+https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01+1": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01",
+      "Content": "{\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"externalStoreDefault\": {\r\n      \"path\": \"\\\\\\\\su1fileserver\\\\SU1_Infrastructure_1\\\\BackupStore\",\r\n      \"backupFrequencyInHours\": 10,\r\n      \"backupRetentionPeriodInDays\": 6,\r\n      \"encryptionCertBase64\": \"ZW5jcnlwdGlvbkNlcnQ=\",\r\n      \"isBackupSchedulerEnabled\": false,\r\n      \"password\": \"password\",\r\n      \"userName\": \"AzureStackAdmin\"\r\n    }\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "1" ],
+        "x-ms-client-request-id": [ "033548c3-427c-4dd0-b777-214a2c4afc46" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration" ],
+        "FullCommandName": [ "Set-AzsBackupConfiguration_UpdateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "1506" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "5" ],
+        "x-ms-correlation-request-id": [ "28dc5876-f4d8-42b5-a19a-c42349e643ff" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1198" ],
+        "x-ms-request-id": [ "28dc5876-f4d8-42b5-a19a-c42349e643ff" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200305T011625Z:28dc5876-f4d8-42b5-a19a-c42349e643ff" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 05 Mar 2020 01:16:25 GMT" ],
+        "Location": [ "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/6034df7e-6d95-4551-b146-b6a7a101794d?api-version=2018-09-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvX4hvVS6CSDpzzm9+I0C5nrjDbmdJdo2Dxc9KZeGlWxot47mfZo0bFPnvp/LtoP/kJJ+ilDO2eE6FrWYDAoyk+j7DeAv+wbtLZn3I3QZH5mTvM7pVuWqG5gO8hT68sICLaFHl6XF5Pu5gZyOqqbB8" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Set-AzsBackupConfiguration+[NoContext]+TestUpdateBackupLocationExpanded+$GET+https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/6034df7e-6d95-4551-b146-b6a7a101794d?api-version=2018-09-01+2": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/6034df7e-6d95-4551-b146-b6a7a101794d?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "1", "2" ],
+        "x-ms-client-request-id": [ "033548c3-427c-4dd0-b777-214a2c4afc46", "033548c3-427c-4dd0-b777-214a2c4afc46" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration", "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration" ],
+        "FullCommandName": [ "Set-AzsBackupConfiguration_UpdateExpanded", "Set-AzsBackupConfiguration_UpdateExpanded" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "0e04461f-02a5-45e6-89d2-953dc8182b23" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14991" ],
+        "x-ms-request-id": [ "0e04461f-02a5-45e6-89d2-953dc8182b23" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200305T011630Z:0e04461f-02a5-45e6-89d2-953dc8182b23" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 05 Mar 2020 01:16:30 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvgiy9p0LaeYPBlI36qGgSZl0x9GyZLp2sONpzpO12rJvAH6l6JWvLhMmJ22r+qceRUD8rnWPjFxWo+WhRDFnHihftZ/iy95+jt97VpV8JkDxRX65C2YTx8WIq3Nqu+98rVJXjbNZlRcruO74w+Skv" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "707" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Backup.Admin/backupLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"externalStoreDefault\":{\"path\":\"\\\\\\\\su1fileserver\\\\SU1_Infrastructure_1\\\\BackupStore\",\"userName\":\"AzureStackAdmin\",\"password\":null,\"encryptionCertBase64\":null,\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"backupFrequencyInHours\":10,\"availableCapacity\":\"0.99 TB\",\"isBackupSchedulerEnabled\":false,\"nextBackupTime\":\"2020-03-05T07:19:27.0052095Z\",\"lastBackupTime\":\"2020-03-04T12:42:50.0310854Z\",\"backupRetentionPeriodInDays\":6}}}"
+    }
+  },
+  "Set-AzsBackupConfiguration+[NoContext]+TestUpdateBackupLocation+$GET+https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01+1": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "3" ],
+        "x-ms-client-request-id": [ "2b68e104-7623-41e2-9aea-424fb8d26282" ],
+        "CommandName": [ "Get-AzsBackupConfiguration" ],
+        "FullCommandName": [ "Get-AzsBackupConfiguration_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "24b26cee-4867-4fe1-9a43-912c915aaebb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14988" ],
+        "x-ms-request-id": [ "24b26cee-4867-4fe1-9a43-912c915aaebb" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200305T011634Z:24b26cee-4867-4fe1-9a43-912c915aaebb" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 05 Mar 2020 01:16:33 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuR5+4vZ+JJFJsRRK48LvoT2/1V2q4tcpcZofFErCb3nSLCjE4rNgONz+b3Qh0FPRkxoKaMgeD67oQ4FPZIVFeiyFiJtsQe24NVfIon2TnFbPMfFe7c0aGxQ0PFMsgAnjij8EJNXDshK0d+xwdhU3" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "707" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Backup.Admin/backupLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"externalStoreDefault\":{\"path\":\"\\\\\\\\su1fileserver\\\\SU1_Infrastructure_1\\\\BackupStore\",\"userName\":\"AzureStackAdmin\",\"password\":null,\"encryptionCertBase64\":null,\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"backupFrequencyInHours\":10,\"availableCapacity\":\"0.99 TB\",\"isBackupSchedulerEnabled\":false,\"nextBackupTime\":\"2020-03-05T07:19:27.0052095Z\",\"lastBackupTime\":\"2020-03-04T12:42:50.0310854Z\",\"backupRetentionPeriodInDays\":6}}}"
+    }
+  },
+  "Set-AzsBackupConfiguration+[NoContext]+TestUpdateBackupLocation+$PUT+https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01+2": {
+    "Request": {
+      "Method": "PUT",
+      "RequestUri": "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond?api-version=2018-09-01",
+      "Content": "{\r\n  \"location\": \"redmond\",\r\n  \"properties\": {\r\n    \"externalStoreDefault\": {\r\n      \"path\": \"\\\\\\\\su1fileserver\\\\SU1_Infrastructure_1\\\\BackupStore\",\r\n      \"backupFrequencyInHours\": 10,\r\n      \"backupRetentionPeriodInDays\": 6,\r\n      \"encryptionCertBase64\": \"ZW5jcnlwdGlvbkNlcnQ=\",\r\n      \"isBackupSchedulerEnabled\": false,\r\n      \"password\": \"password\",\r\n      \"userName\": \"AzureStackAdmin\"\r\n    }\r\n  }\r\n}",
+      "Headers": {
+        "x-ms-unique-id": [ "4" ],
+        "x-ms-client-request-id": [ "50d88b2d-9163-4e7e-aabd-3a330e2f1fbd" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration" ],
+        "FullCommandName": [ "Set-AzsBackupConfiguration_Update" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+        "Content-Type": [ "application/json" ],
+        "Content-Length": [ "1506" ]
+      }
+    },
+    "Response": {
+      "StatusCode": 202,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "Retry-After": [ "5" ],
+        "x-ms-correlation-request-id": [ "d4bbf42c-100e-44d3-92ce-7a7164179a45" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1197" ],
+        "x-ms-request-id": [ "d4bbf42c-100e-44d3-92ce-7a7164179a45" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200305T011636Z:d4bbf42c-100e-44d3-92ce-7a7164179a45" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 05 Mar 2020 01:16:36 GMT" ],
+        "Location": [ "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/c530454c-8ec6-473b-b693-6ccc21dfe70a?api-version=2018-09-01" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuZzfQNjzCs+zOjIau6A0j1bXWqVxtMwgaB1osWG8ZggHN50PO+susMYFlFLhyJHt4O17Y08y3YW6/BDlJOx8CELs33dRBmUuoOreoi2jr66F/Lr/8q0ikfad3xt5jtXHkpbwE95JMP5yVLJmtAso" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "0" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": null
+    }
+  },
+  "Set-AzsBackupConfiguration+[NoContext]+TestUpdateBackupLocation+$GET+https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/c530454c-8ec6-473b-b693-6ccc21dfe70a?api-version=2018-09-01+3": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://management.azure.com/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond/operationResults/c530454c-8ec6-473b-b693-6ccc21dfe70a?api-version=2018-09-01",
+      "Content": null,
+      "Headers": {
+        "x-ms-unique-id": [ "4", "5" ],
+        "x-ms-client-request-id": [ "50d88b2d-9163-4e7e-aabd-3a330e2f1fbd", "50d88b2d-9163-4e7e-aabd-3a330e2f1fbd" ],
+        "CommandName": [ "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration", "Azs.Backup.Admin.internal\\Set-AzsBackupConfiguration" ],
+        "FullCommandName": [ "Set-AzsBackupConfiguration_Update", "Set-AzsBackupConfiguration_Update" ],
+        "ParameterSetName": [ "__AllParameterSets", "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowerShell/Az4.0.0-preview", "AzurePowerShell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "a16fadc8-aa31-4110-a524-a3be922224f6" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14985" ],
+        "x-ms-request-id": [ "a16fadc8-aa31-4110-a524-a3be922224f6" ],
+        "x-ms-routing-request-id": [ "REDMOND:20200305T011641Z:a16fadc8-aa31-4110-a524-a3be922224f6" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Thu, 05 Mar 2020 01:16:41 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvVZ4fxv7EMq5ymnSYz8ODmLvp5tF5d148FKhjflzkPIpzEXcclFYWw4JNlX71B5X5HjBO1mu81m//NZyzZnpyvrE9W4khXBKonaoVc9OrTG4HS1ieh9iAaDiPIe8HFX0tTA2ROUbDHBnzM1MBcurd" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "707" ],
+        "Content-Type": [ "application/json" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/05101DAF-F50D-4436-A2AC-495E5C4864C2/resourceGroups/system.redmond/providers/Microsoft.Backup.Admin/backupLocations/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.Backup.Admin/backupLocations\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"externalStoreDefault\":{\"path\":\"\\\\\\\\su1fileserver\\\\SU1_Infrastructure_1\\\\BackupStore\",\"userName\":\"AzureStackAdmin\",\"password\":null,\"encryptionCertBase64\":null,\"encryptionCertThumbprint\":\"126B334D833C9E3AA9C1429B9B2A3C7CF3215FB0\",\"backupFrequencyInHours\":10,\"availableCapacity\":\"0.99 TB\",\"isBackupSchedulerEnabled\":false,\"nextBackupTime\":\"2020-03-05T07:19:27.0052095Z\",\"lastBackupTime\":\"2020-03-04T12:42:50.0310854Z\",\"backupRetentionPeriodInDays\":6}}}"
+    }
+  }
+}
