@@ -1,20 +1,20 @@
 ---
 external help file:
 Module Name: Azs.Backup.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/update-azsbackupconfiguration
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/set-azsbackupconfiguration
 schema: 2.0.0
 ---
 
-# Update-AzsBackupConfiguration
+# Set-AzsBackupConfiguration
 
 ## SYNOPSIS
-Patch update a backup location.
+Update a backup location.
 
 ## SYNTAX
 
-### UpdateFileshareViaIdentityExpanded (Default)
+### UpdateExpanded (Default)
 ```
-Update-AzsBackupConfiguration [-InputObject <IBackupAdminIdentity>] [-Location <String>]
+Set-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
  [-BackupFrequencyInHours <Int32>] [-BackupRetentionPeriodInDays <Int32>] [-EncryptionCertPath <String>]
  [-IsBackupSchedulerEnabled] [-Password <SecureString>] [-Path <String>] [-Tag <Hashtable>]
  [-UserName <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
@@ -23,62 +23,23 @@ Update-AzsBackupConfiguration [-InputObject <IBackupAdminIdentity>] [-Location <
 
 ### Update
 ```
-Update-AzsBackupConfiguration -Backup <IBackupLocation> [-Location <String>] [-ResourceGroupName <String>]
+Set-AzsBackupConfiguration -Backup <IBackupLocation> [-Location <String>] [-ResourceGroupName <String>]
  [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateBlobExpanded
-```
-Update-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-BackupFrequencyInHours <Int32>] [-BackupRetentionPeriodInDays <Int32>] [-BlobStorageKey <String>]
- [-BlobStorageUrl <String>] [-EncryptionCertPath <String>] [-IsBackupSchedulerEnabled] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateBlobViaIdentityExpanded
-```
-Update-AzsBackupConfiguration [-InputObject <IBackupAdminIdentity>] [-Location <String>]
- [-BackupFrequencyInHours <Int32>] [-BackupRetentionPeriodInDays <Int32>] [-BlobStorageKey <String>]
- [-BlobStorageUrl <String>] [-EncryptionCertPath <String>] [-IsBackupSchedulerEnabled] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateFileshareExpanded
-```
-Update-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-BackupFrequencyInHours <Int32>] [-BackupRetentionPeriodInDays <Int32>] [-EncryptionCertPath <String>]
- [-IsBackupSchedulerEnabled] [-Password <SecureString>] [-Path <String>] [-Tag <Hashtable>]
- [-UserName <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-AzsBackupConfiguration -InputObject <IBackupAdminIdentity> -Backup <IBackupLocation>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Patch update a backup location.
+Update a backup location.
 
 ## EXAMPLES
 
-### Example 1: Update backup configuration which uses fileshare as backup location
+### Example 1: Set backup configuration
 ```powershell
-PS C:\> Update-AzsBackupConfiguration -Path "\\***.***.***.***\Share" -Username "asdomain1\azurestackadmin" -Password $password  -EncryptionCertPath $encryptionCertPath
+PS C:\> Set-AzsBackupConfiguration -Path "\\***.***.***.***\Share" -Username "asdomain1\azurestackadmin" -Password $password  -EncryptionCertPath $encryptionCertPath
 
 ```
 
-Set Azure Stack backup configuration to use fileshare as backup location.
-
-### Example 2: Update backup configuration which uses blob as backup location
-```powershell
-PS C:\> Update-AzsBackupConfiguration -BlobStorageUrl $blobStorageUrl -BlobStorageKey $blobStorageKey -EncryptionCertPath $encryptionCertPath
-
-```
-
-Set Azure Stack backup configuration to use blob storage as backup location.
+Set Azure Stack backup configuration.
 
 ## PARAMETERS
 
@@ -102,8 +63,8 @@ Information about the backup location.
 To construct, see NOTES section for BACKUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
-Parameter Sets: Update, UpdateViaIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -118,7 +79,7 @@ The interval, in hours, for the frequency that the scheduler takes a backup.
 
 ```yaml
 Type: System.Int32
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -133,37 +94,7 @@ The retention period, in days, for backs in the storage location.
 
 ```yaml
 Type: System.Int32
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BlobStorageKey
-Key to access the blob location.
-
-```yaml
-Type: System.String
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BlobStorageUrl
-Url to the update blob location
-
-```yaml
-Type: System.String
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -193,7 +124,7 @@ Path to the encryption cert file with public key (.cer).
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -203,28 +134,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
-Parameter Sets: UpdateBlobViaIdentityExpanded, UpdateFileshareViaIdentityExpanded, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -IsBackupSchedulerEnabled
 True if the backup scheduler is enabled.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -239,7 +154,7 @@ Name of the backup location.
 
 ```yaml
 Type: System.String
-Parameter Sets: Update, UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -265,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Password to access the fileshare location.
+Password to access the location.
 
 ```yaml
 Type: System.Security.SecureString
-Parameter Sets: UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -280,11 +195,11 @@ Accept wildcard characters: False
 ```
 
 ### -Path
-Path to the update fileshare location
+Path to the update location
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -299,7 +214,7 @@ Name of the resource group.
 
 ```yaml
 Type: System.String
-Parameter Sets: Update, UpdateBlobExpanded, UpdateFileshareExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -315,7 +230,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String
-Parameter Sets: Update, UpdateBlobExpanded, UpdateFileshareExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -330,7 +245,7 @@ List of key value pairs.
 
 ```yaml
 Type: System.Collections.Hashtable
-Parameter Sets: UpdateBlobExpanded, UpdateBlobViaIdentityExpanded, UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -341,11 +256,11 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-Username to access the fileshare location.
+Username to access the location.
 
 ```yaml
 Type: System.String
-Parameter Sets: UpdateFileshareExpanded, UpdateFileshareViaIdentityExpanded
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -391,13 +306,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
-
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IBackupLocation
+### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
 
 ## NOTES
 
@@ -414,20 +327,11 @@ BACKUP <IBackupLocation>: Information about the backup location.
     - `[(Any) <String>]`: This indicates any property can be added to this object.
   - `[BackupFrequencyInHours <Int32?>]`: The interval, in hours, for the frequency that the scheduler takes a backup.
   - `[BackupRetentionPeriodInDays <Int32?>]`: The retention period, in days, for backs in the storage location.
-  - `[BlobStorageKey <String>]`: Key to access the blob location.
-  - `[BlobStorageUrl <String>]`: Url to the update blob location
   - `[EncryptionCertBase64 <String>]`: The base64 raw data for the backup encryption certificate.
   - `[IsBackupSchedulerEnabled <Boolean?>]`: True if the backup scheduler is enabled.
-  - `[Password <String>]`: Password to access the fileshare location.
-  - `[Path <String>]`: Path to the update fileshare location
-  - `[UserName <String>]`: Username to access the fileshare location.
-
-INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
-  - `[Backup <String>]`: Name of the backup.
-  - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Name of the backup location.
-  - `[ResourceGroupName <String>]`: Name of the resource group.
-  - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
+  - `[Password <String>]`: Password to access the location.
+  - `[Path <String>]`: Path to the update location
+  - `[UserName <String>]`: Username to access the location.
 
 ## RELATED LINKS
 
