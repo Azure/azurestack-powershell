@@ -1,47 +1,43 @@
 ---
 external help file:
-Module Name: Azs.Backup.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.backup.admin/get-azsbackupconfiguration
+Module Name: Azs.Compute.Admin
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.compute.admin/get-azscomputescaleunit
 schema: 2.0.0
 ---
 
-# Get-AzsBackupConfiguration
+# Get-AzsComputeScaleUnit
 
 ## SYNOPSIS
-Returns a specific backup location based on name.
+Get the scale unit view.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-AzsBackupConfiguration [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
+Get-AzsComputeScaleUnit -Name <String> [-Location <String>] [-SubscriptionId <String[]>]
  [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-AzsBackupConfiguration -InputObject <IBackupAdminIdentity> [-DefaultProfile <PSObject>]
- [<CommonParameters>]
-```
-
-### List
-```
-Get-AzsBackupConfiguration [-ResourceGroupName <String>] [-SubscriptionId <String[]>] [-Skip <String>]
- [-Top <String>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+Get-AzsComputeScaleUnit -InputObject <IComputeAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Returns a specific backup location based on name.
+Get the scale unit view.
 
 ## EXAMPLES
 
-### Example 1: Get-AzsBackupConfiguration
+### Example 1: Get Compute Scale Unit
 ```powershell
-PS C:\> Get-AzsBackupConfiguration
+PS C:\> Get-AzsComputeScaleUnit -Name s-cluster -Location redmond -SubscriptionId "DC773456-D727-484E-8292-AE8FACFDDDF5"
 
+Scale Unit Name   Location   Nodes
+---------------   --------   -----
+s-cluster         redmond    {AzSNode1,AzSNode2,AzSNode3,AzSNode4}
 ```
 
-Get Azure Stack backup configuration.
+Run `Get-AzsComputeScaleUnit` to get the compute scale unit.
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+Type: Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -77,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -Location
-Name of the backup location.
+Location of the resource.
 
 ```yaml
 Type: System.String
@@ -91,30 +87,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceGroupName
-Name of the resource group.
+### -Name
+Name of the scale unit.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
-Aliases:
+Parameter Sets: Get
+Aliases: ScaleUnitName
 
-Required: False
-Position: Named
-Default value: "system.$((Get-AzLocation)[0].Location)"
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-OData skip parameter.
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -127,7 +108,7 @@ The subscription ID forms part of the URI for every service call.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: Get, List
+Parameter Sets: Get
 Aliases:
 
 Required: False
@@ -137,31 +118,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-OData top parameter.
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.IBackupAdminIdentity
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.IComputeAdminIdentity
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IBackupLocation
+### Microsoft.Azure.PowerShell.Cmdlets.ComputeAdmin.Models.Api20210330.IScaleUnit
 
 ## NOTES
 
@@ -172,12 +138,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IBackupAdminIdentity>: Identity Parameter
-  - `[Backup <String>]`: Name of the backup.
+INPUTOBJECT <IComputeAdminIdentity>: Identity Parameter
+  - `[DiskId <String>]`: The disk guid as identity.
+  - `[FeatureName <String>]`: Name of the feature.
   - `[Id <String>]`: Resource identity path
-  - `[Location <String>]`: Name of the backup location.
-  - `[ResourceGroupName <String>]`: Name of the resource group.
+  - `[Location <String>]`: Location of the resource.
+  - `[MigrationId <String>]`: The migration job guid name.
+  - `[Offer <String>]`: Name of the offer.
+  - `[Publisher <String>]`: Name of the publisher.
+  - `[QuotaName <String>]`: Name of the quota.
+  - `[ScaleUnitName <String>]`: Name of the scale unit.
+  - `[Sku <String>]`: Name of the SKU.
   - `[SubscriptionId <String>]`: Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.
+  - `[Type <String>]`: Type of extension.
+  - `[Version <String>]`: The version of the resource.
 
 ## RELATED LINKS
 

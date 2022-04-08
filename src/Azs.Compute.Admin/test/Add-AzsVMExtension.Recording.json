@@ -2,12 +2,12 @@
   "Get-AzsVMExtension+[NoContext]+TestListVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1646" ],
-        "x-ms-client-request-id": [ "ed1105a0-e65c-482d-b387-013cdf7a91ef" ],
+        "x-ms-unique-id": [ "1300" ],
+        "x-ms-client-request-id": [ "b525b6e3-26c3-4b87-ae38-4402a8a1ac19" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,35 +21,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "9b3675f9-34fa-4559-874c-4dcf4b441c6a" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14089" ],
-        "x-ms-request-id": [ "9b3675f9-34fa-4559-874c-4dcf4b441c6a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181526Z:9b3675f9-34fa-4559-874c-4dcf4b441c6a" ],
+        "x-ms-correlation-request-id": [ "c6d16e26-f91d-4e21-8346-12981ea31c9e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14014" ],
+        "x-ms-request-id": [ "c6d16e26-f91d-4e21-8346-12981ea31c9e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213901Z:c6d16e26-f91d-4e21-8346-12981ea31c9e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:26 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:01 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv5saxwJbesw4KWYNwSNQXR80d4wl1ur9yuzmwH8bIAFymZG7LA9ICotx+Jph2qUODF+ObsLrz9RMHgMAqW9zpwJ+H1YTTBqffYAv37qw+JMa+HbzpqrbfTUJqdbs/5R4eNTsG7WJTps/Aro90hO3m" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvB0buI9hh3fkjdxGkG9NjSh9/lQdM1aMxrEIe/4VW/jGeUT+jbCQZInCncAaicGeREYCrit7rDoA3MSEEPEu4EOyzNR+lgGvU/V5rjAo5tgzUJ4qEUkhRzpXwRksRUYv62X++gRCRxRKtPMxbOcp0" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8730" ],
+        "Content-Length": [ "9382" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.9.3\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"1.5.5\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.2\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Extensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"2.0.6.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.10.13.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.7.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.9.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.CPlat.Core\",\"extensionType\":\"RunCommandForLinux\",\"typeHandlerVersion\":\"1.0.1.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.11.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsVMExtension+[NoContext]+TestGetVMExtension+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1647" ],
-        "x-ms-client-request-id": [ "c804408e-677e-4385-b962-26529781009f" ],
+        "x-ms-unique-id": [ "1301" ],
+        "x-ms-client-request-id": [ "03b8d082-4f93-41ab-84fa-07688919122c" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -63,35 +63,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "33dfca8d-796b-4028-82e7-e96f3f09c66b" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14088" ],
-        "x-ms-request-id": [ "33dfca8d-796b-4028-82e7-e96f3f09c66b" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181526Z:33dfca8d-796b-4028-82e7-e96f3f09c66b" ],
+        "x-ms-correlation-request-id": [ "8722a7a5-9479-4d79-97eb-499ddf058cb7" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14013" ],
+        "x-ms-request-id": [ "8722a7a5-9479-4d79-97eb-499ddf058cb7" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213901Z:8722a7a5-9479-4d79-97eb-499ddf058cb7" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:26 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:01 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBTsBn8+7hEjFDkjXboljwGaOJ69YY8AMNOSZ8y+7LfhCgpXz7rWmWVOxmFGJTay22WDldHJu0E/hzI1MswrLcXUVuNAkjoCvJlpo0oMe8BfQ/Nz61YkVdAz2XbJL7LN+VG+2QSV6xKcRlE446yeJ" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYUbuwYYOzHWp4ns3qxdGqEbX0QZUzpFxP8WCWbQOSZzRKOgpDMEOQbsuFspJWEjz/4AQtl692x+zv+HhcW6WcmQBiD0Br2mTASc/FVFSwRVuGbJF7muXRLqaTVD1aCiHIWjaKlq5/UoN+rr/2/LK" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8730" ],
+        "Content-Length": [ "9382" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.9.3\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"1.5.5\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.2\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Extensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"2.0.6.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.10.13.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.7.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.9.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.CPlat.Core\",\"extensionType\":\"RunCommandForLinux\",\"typeHandlerVersion\":\"1.0.1.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.11.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1648" ],
-        "x-ms-client-request-id": [ "c6db8bd0-3e39-431c-8ae7-6b539e8c0a47" ],
+        "x-ms-unique-id": [ "1302" ],
+        "x-ms-client-request-id": [ "b3845797-1a90-4624-9fa7-33ccc89dcaae" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -105,35 +105,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "7b895566-b645-4739-833f-62d60e93886f" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14087" ],
-        "x-ms-request-id": [ "7b895566-b645-4739-833f-62d60e93886f" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181527Z:7b895566-b645-4739-833f-62d60e93886f" ],
+        "x-ms-correlation-request-id": [ "9c44e78e-b61b-4e8a-bbcd-b2e72e967a88" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14012" ],
+        "x-ms-request-id": [ "9c44e78e-b61b-4e8a-bbcd-b2e72e967a88" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213902Z:9c44e78e-b61b-4e8a-bbcd-b2e72e967a88" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:26 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:01 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+88ztV3gghzSPqB2vtqVPXcpmm5POQ5e56IdbxX7/YBEcGv8bgt+fKiX1kYQOCZ5ierXkX8RmklZ0fZ86A8RumuXIZUULXFwoSmxgaKWfMJ8T4BZzthM0Xmq/kpaodlcgEA+zzpdmM20SVteHigM" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvD0YzWAROK0tWSB/xz5ebxEbywYQKN/7ExPNqAThOz8HOfiPQSqgSLKXS1gqwovWMOgA+JsaI5SrbBvDtA5ReI6bcZFz9PyT83RaccKYNusN+kY48LFTL8XX6zsFD/3Vz0DTZ3F/b7gUvQ5Ot9shT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "8730" ],
+        "Content-Length": [ "9382" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.9.3\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"1.5.5\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.2\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
+      "Content": "[{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"BGInfo\",\"typeHandlerVersion\":\"2.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"IaaSDiagnostics\",\"typeHandlerVersion\":\"1.18.0.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Diagnostics\",\"extensionType\":\"LinuxDiagnostic\",\"typeHandlerVersion\":\"3.0.121\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Extensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"2.0.6.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Security\",\"extensionType\":\"IaaSAntimalware\",\"typeHandlerVersion\":\"1.5.5.9\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.10.13.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.7.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.9.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.CPlat.Core\",\"extensionType\":\"RunCommandForLinux\",\"typeHandlerVersion\":\"1.0.1.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.EnterpriseCloud.Monitoring\",\"extensionType\":\"MicrosoftMonitoringAgent\",\"typeHandlerVersion\":\"1.0.11081.5\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"AmdGpuDriverWindows\",\"typeHandlerVersion\":\"1.0.4.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverLinux\",\"typeHandlerVersion\":\"1.3.1.0\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.HpcCompute\",\"extensionType\":\"NvidiaGpuDriverWindows\",\"typeHandlerVersion\":\"1.3.2.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.11.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}},{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Powershell\",\"extensionType\":\"DSC\",\"typeHandlerVersion\":\"2.77.0.0\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}]",
       "isContentBase64": false
     }
   },
   "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1?api-version=2015-12-01-preview+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/BGInfo/versions/2.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1649" ],
-        "x-ms-client-request-id": [ "63eaae3e-0399-42e3-a2dd-32e503f33907" ],
+        "x-ms-unique-id": [ "1303" ],
+        "x-ms-client-request-id": [ "6d396339-24a5-4187-9391-b53909aa093f" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -147,16 +147,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "14f53f72-2763-4707-9c30-44bcf6a5b75b" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14086" ],
-        "x-ms-request-id": [ "14f53f72-2763-4707-9c30-44bcf6a5b75b" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181527Z:14f53f72-2763-4707-9c30-44bcf6a5b75b" ],
+        "x-ms-correlation-request-id": [ "4e903248-a347-40ff-993d-28a2a95b7f15" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14011" ],
+        "x-ms-request-id": [ "4e903248-a347-40ff-993d-28a2a95b7f15" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213902Z:4e903248-a347-40ff-993d-28a2a95b7f15" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:27 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:01 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvllcTh/Rg8s1iBUV7IRL21xs+3rfcBydUsAnn7KhxI9Azw35RXFZz6W5C9I+8RHWpQsr0YdOl//w5vNxWr7oIDqv7xtWh6luQJG6VrN+UpjAViz6/b3zu0qH32w4qBQu8mpPriJW68JUJ+MCfZcZd" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvycb2eNtobD+45MK/foHAHl65CwZ3eMHwfKhVDn4Ejpui+LlTi6L7P5YV6AAsAU6T6OnhVjHLasqY8bcSdqAK/MVRwzDjN3wsaNrF+aAL6syoyQSKuT/lFJcWmEApzJCzkdWHjJCvRw5126NpAWb3" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "585" ],
@@ -170,12 +170,12 @@
   "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5?api-version=2015-12-01-preview+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/IaaSDiagnostics/versions/1.18.0.5?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1650" ],
-        "x-ms-client-request-id": [ "c7a551ea-7952-432f-989b-7d9852292f5d" ],
+        "x-ms-unique-id": [ "1304" ],
+        "x-ms-client-request-id": [ "c557641f-d6af-49c3-bd1f-aaa165e1ae58" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -189,16 +189,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "d2fc75e0-998a-43c4-9253-d99dffefd527" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14085" ],
-        "x-ms-request-id": [ "d2fc75e0-998a-43c4-9253-d99dffefd527" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181527Z:d2fc75e0-998a-43c4-9253-d99dffefd527" ],
+        "x-ms-correlation-request-id": [ "4fa0a0a2-fe3f-4846-b25f-5533597d1d01" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14010" ],
+        "x-ms-request-id": [ "4fa0a0a2-fe3f-4846-b25f-5533597d1d01" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213902Z:4fa0a0a2-fe3f-4846-b25f-5533597d1d01" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:27 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:02 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv98EMkKIYdoe/dLCKKMNQx/X5aMjnUPsfnyxofSDx7aSlVn9+NJZxiYrP7fanpzNqzBBB45foq+H7u0jrjJS0KzfnB6R7TLm6D2tGXI7zcbcrWRrxouKnSdGfNuBwfjXb8R+R+gA7fx9IQ9s+yvyY" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvrRgQY7hzP2XCuOQf+YhBb5F2y9jU9UVnsqKS9BtgfZBlygkzo5rGUk0MyE9tEFcSBf8DZxQ2xV7WD+VuKRurBhHtDVpFdht4y2LfP8Hrz5RqM32Q1bHQb2B/af9lDdCdqBK1VdSNycwHJ1diW9SE" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "633" ],
@@ -212,12 +212,12 @@
   "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121?api-version=2015-12-01-preview+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Diagnostics/types/LinuxDiagnostic/versions/3.0.121?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1651" ],
-        "x-ms-client-request-id": [ "0ac0dff5-dcc3-47d5-a211-64c81f1260f7" ],
+        "x-ms-unique-id": [ "1305" ],
+        "x-ms-client-request-id": [ "dfa57c1c-ea5e-42c0-9b65-6b57bd320027" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -231,16 +231,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "d56e89b9-43ea-47a1-a010-d20e46208667" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14084" ],
-        "x-ms-request-id": [ "d56e89b9-43ea-47a1-a010-d20e46208667" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181528Z:d56e89b9-43ea-47a1-a010-d20e46208667" ],
+        "x-ms-correlation-request-id": [ "7b889361-b0b0-4bd2-bf7d-9b6f01f2527c" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14009" ],
+        "x-ms-request-id": [ "7b889361-b0b0-4bd2-bf7d-9b6f01f2527c" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213903Z:7b889361-b0b0-4bd2-bf7d-9b6f01f2527c" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:27 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:02 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvhX/BTS4atlo9cFK6lzKGwg4JzQZcEKFn9AQOKdBf9Wq3fi9NqusEvayiDUI4EUDJb/NxxBu4MQQKL2YHsnFlKi70CsKcJrHSGcVmRPxo0r0n5Y9cqZZL0dTrZ+9UZpEtKWDoeWJpt6b2wOfRNhCo" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvcKd6kIMo5kwehDe3V7EBbk4lyMob2Em/YPW/hXNXF2PNH5p+JhbQ0Cj4Zf8lE0RysEA53GB2dIUWLeE5Sux07wBv3bP1R5FKFlN5xAivNSZf2g6QgBZLkxSPBt1p6sTGscpzVnZI6uaZr+yQ/9RI" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "629" ],
@@ -251,15 +251,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9?api-version=2015-12-01-preview+5": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1?api-version=2015-12-01-preview+5": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1652" ],
-        "x-ms-client-request-id": [ "c95583e7-2998-4a06-9237-72a8cf4659b3" ],
+        "x-ms-unique-id": [ "1306" ],
+        "x-ms-client-request-id": [ "617bc441-fcd5-4177-a1b5-6c9f2aecabfd" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -273,16 +273,58 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "a363c1d1-76b0-4598-994e-c0027f0f930c" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14083" ],
-        "x-ms-request-id": [ "a363c1d1-76b0-4598-994e-c0027f0f930c" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181528Z:a363c1d1-76b0-4598-994e-c0027f0f930c" ],
+        "x-ms-correlation-request-id": [ "2e3bb894-e312-4bff-b40b-05a1b27b62af" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14008" ],
+        "x-ms-request-id": [ "2e3bb894-e312-4bff-b40b-05a1b27b62af" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213903Z:2e3bb894-e312-4bff-b40b-05a1b27b62af" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:27 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:02 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvs66C6OPeGinUN+9xYF8hTAR7UPUf/zcSbLfcqGtgYpyNkGBLwoKLee6u5o32ZBcKSIwDjits97htzyFMdG9DuVL75BiRlymS3/qsNDp0ya2Qss7067+sJDXVIs2BJcQxfxtHlxF5emm+h9RuK0AK" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvcjh7hP0E9u69qo23nw/a5HR4BgzXBOpqRO7HCN59F01yl9SxX1AUML3AZoCstqoRAkgCqFbFYCQlRHZ/4yYD0AyAfY2rMWWorN5jgSLhXDCWZQ5RePOD1sLPd+hHcb0k3NeIN4TZgaqSRVmTWC5X" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "637" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Extensions/types/CustomScriptForLinux/versions/2.0.6.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Azure.Extensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"2.0.6.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9?api-version=2015-12-01-preview+6": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Azure.Security/types/IaaSAntimalware/versions/1.5.5.9?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1307" ],
+        "x-ms-client-request-id": [ "44c5f220-9e9a-4cb2-865f-17fa75a4d918" ],
+        "CommandName": [ "Get-AzsVMExtension" ],
+        "FullCommandName": [ "Get-AzsVMExtension_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "3ea971da-bbee-410f-985f-a1dfa1410295" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14007" ],
+        "x-ms-request-id": [ "3ea971da-bbee-410f-985f-a1dfa1410295" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213903Z:3ea971da-bbee-410f-985f-a1dfa1410295" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:03 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvQzfaVwcHKNCrBw6D8GR58tm0c3NKoKScsbzlJUBgLF+x+ws0ZEQ44YZ1V2qdBZfr8QGArJiijjCtbOXRVMHyHkNUoxmUFqTlZIaaTytDLhePodynM1fxHOUJgyRcOoTLxZmC8gFkNsMFs45qms1+" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "625" ],
@@ -293,15 +335,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3?api-version=2015-12-01-preview+6": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1?api-version=2015-12-01-preview+7": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1653" ],
-        "x-ms-client-request-id": [ "1f86c839-9c46-48fb-a0fb-7ccfc1b7400a" ],
+        "x-ms-unique-id": [ "1308" ],
+        "x-ms-client-request-id": [ "c7bd72c0-2e74-469e-a62a-78d0bbb7cb45" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -315,35 +357,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "d1b76ac5-ebe8-4465-aebd-9187582d9b5b" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14082" ],
-        "x-ms-request-id": [ "d1b76ac5-ebe8-4465-aebd-9187582d9b5b" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181528Z:d1b76ac5-ebe8-4465-aebd-9187582d9b5b" ],
+        "x-ms-correlation-request-id": [ "a056f92a-51fb-4cbd-b2ac-6b4d47f17c7f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14006" ],
+        "x-ms-request-id": [ "a056f92a-51fb-4cbd-b2ac-6b4d47f17c7f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213903Z:a056f92a-51fb-4cbd-b2ac-6b4d47f17c7f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:03 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvBfjMNT/v9oBfjPh1p4tlLbSS0dhxgMLswFpHwOIeCVg7YbVHDwczNtsIp9d5G6y4ye6oE7yVIneR/rqwVws8x3XivAtn2RFi3g1wOqI4uuRCAMjZTK5BAnZUxJqH/zjjrxu5kpgK3YuHwi+9QLhZ" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvCqogwou5iYnK5Srlgf8AbNFBrT0cWH/9tVpHOT8cKMxNhgIXRokgOzOZmV9BI23a8WZ0kIpaeisAyI4FGp+syy7CYx++Z/jZnsX2XCwe6gH7Q4wqpJscmgSLgqbiXrQcBQnAZDKBcgOSVK50q3fK" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "619" ],
+        "Content-Length": [ "627" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.9.3\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.9.3\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/CustomScriptExtension/versions/1.10.13.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"CustomScriptExtension\",\"typeHandlerVersion\":\"1.10.13.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4?api-version=2015-12-01-preview+7": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1?api-version=2015-12-01-preview+8": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1654" ],
-        "x-ms-client-request-id": [ "d8f869d0-b69f-4215-88de-262812aa9fc0" ],
+        "x-ms-unique-id": [ "1309" ],
+        "x-ms-client-request-id": [ "4b437db0-bdc3-4004-9c80-0949de8729d9" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -357,35 +399,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "4edd644b-5170-4897-9a2f-223297050046" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14081" ],
-        "x-ms-request-id": [ "4edd644b-5170-4897-9a2f-223297050046" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181528Z:4edd644b-5170-4897-9a2f-223297050046" ],
+        "x-ms-correlation-request-id": [ "8aedf28f-5717-4396-ac7c-634a70f4300f" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14005" ],
+        "x-ms-request-id": [ "8aedf28f-5717-4396-ac7c-634a70f4300f" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213904Z:8aedf28f-5717-4396-ac7c-634a70f4300f" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:03 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvx46P31AwSbdHFPfu8Lyvc3rXp7HbAmiCaMikITEdW/Ad2doREh9z1Q4dLd1lgyTSn+ItAaGYWxT885jdzuWvzS56im5UILBNEUEnkZxN2KVNULCzm8C00mWbouw/w04QjlQZMFLyhch/L56d1MyG" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvAcgxJcDJ4JHgTIiEGLZGF8AeLO6mGTiJPeFdXNLjgpPryAhCR4TE2nqpu8UOm+PcGW+br//6CPcB7NPkX3fWyQ+QsE8plBcPA7C2Y2J9B7/dPr+jpoNpI+tOd3YCvvACKU57EEAnnQ5Crdeh2QzT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "620" ],
+        "Content-Length": [ "624" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/JsonADDomainExtension/versions/1.3.7.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"JsonADDomainExtension\",\"typeHandlerVersion\":\"1.3.7.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"IaaS\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4?api-version=2015-12-01-preview+8": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1?api-version=2015-12-01-preview+9": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1655" ],
-        "x-ms-client-request-id": [ "c8384681-0bdf-4b88-bd37-7e77f06b8f63" ],
+        "x-ms-unique-id": [ "1310" ],
+        "x-ms-client-request-id": [ "44c34b9e-52fb-4043-ac07-cc6f1a8f5942" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -399,35 +441,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "c49b1ccf-d45e-41b3-9de3-107b3e710a85" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14080" ],
-        "x-ms-request-id": [ "c49b1ccf-d45e-41b3-9de3-107b3e710a85" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181529Z:c49b1ccf-d45e-41b3-9de3-107b3e710a85" ],
+        "x-ms-correlation-request-id": [ "4c603739-965c-44a6-98a4-2230166753e5" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14004" ],
+        "x-ms-request-id": [ "4c603739-965c-44a6-98a4-2230166753e5" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213904Z:4c603739-965c-44a6-98a4-2230166753e5" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:03 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvx10ZEFcz747s7OHZ6CmN/5b6HOwF3tnfoS1dZ6WQkzjL1pWWSlksvGdLw02nPF0Rum19JKWF1WT29NqWQkpyIaPn9RRBgCOEJV7PD6bu69EhCqY86/ncniWYhQyfH+dr1TPp/fqQFA1xrGs2yInz" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvKChVmY6lRBRdiJQx5qz8D2KIToTvKWWo9FUTmS0eBCmnTDAP16ukGOlaBzk9wPM3Uh8z3sp+TZSy3h8IEGCcxiYG1QZ9pkwcavuC0myHdUN33XUmh1ySvkY6AB4N93dTAudfGpcm/ORC/LUQwoLM" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "603" ],
+        "Content-Length": [ "607" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.4\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.4\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Compute/types/VMAccessAgent/versions/2.4.9.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.Compute\",\"extensionType\":\"VMAccessAgent\",\"typeHandlerVersion\":\"2.4.9.1\",\"vmOsType\":\"Windows\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5?api-version=2015-12-01-preview+9": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1?api-version=2015-12-01-preview+10": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1656" ],
-        "x-ms-client-request-id": [ "dfa96a21-0c4d-4984-85c1-693fe156524d" ],
+        "x-ms-unique-id": [ "1311" ],
+        "x-ms-client-request-id": [ "098f0e2d-5fd0-407d-bcc0-cb90f6396609" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -441,16 +483,58 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f588f107-aebb-413f-9bc0-a8386a20d522" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14079" ],
-        "x-ms-request-id": [ "f588f107-aebb-413f-9bc0-a8386a20d522" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181529Z:f588f107-aebb-413f-9bc0-a8386a20d522" ],
+        "x-ms-correlation-request-id": [ "aafde7ae-96d3-4a82-a484-b5864329ff33" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14003" ],
+        "x-ms-request-id": [ "aafde7ae-96d3-4a82-a484-b5864329ff33" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213904Z:aafde7ae-96d3-4a82-a484-b5864329ff33" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:28 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:04 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvIUVsGMlfRxiLCJf3iBBo/3XeaZmF321QQ8iFzjUeYCeNorG+WiLn9cMGl0rlXZiKqjsbb8nFMGPczvHuHQeVF3PXr9+gmO0uIkIyZUbpdj0VHkRTD4rPsmriiowCuJErMqVdp9S4ai7GMSKlMaVs" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv+6wQrIM0zLdTMKuKBWTZYR2KmHeUJouAzd4osGFAIryGFgXw7g5Almxr3RG0b5zooVACHnHI/Jpn8sn5aCG1cZnP6JzvRQBp8KGWoyZ75ohUmfonrGoONADkQmWCmYVa3il+1Z71EeEj8C4FnSDF" ]
+      },
+      "ContentHeaders": {
+        "Content-Length": [ "621" ],
+        "Content-Type": [ "application/json; charset=utf-8" ],
+        "Expires": [ "-1" ]
+      },
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.CPlat.Core/types/RunCommandForLinux/versions/1.0.1.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.CPlat.Core\",\"extensionType\":\"RunCommandForLinux\",\"typeHandlerVersion\":\"1.0.1.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "isContentBase64": false
+    }
+  },
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5?api-version=2015-12-01-preview+11": {
+    "Request": {
+      "Method": "GET",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.EnterpriseCloud.Monitoring/types/MicrosoftMonitoringAgent/versions/1.0.11081.5?api-version=2015-12-01-preview",
+      "Content": null,
+      "isContentBase64": false,
+      "Headers": {
+        "x-ms-unique-id": [ "1312" ],
+        "x-ms-client-request-id": [ "edcc97b5-4700-43eb-965b-7999b47bee3a" ],
+        "CommandName": [ "Get-AzsVMExtension" ],
+        "FullCommandName": [ "Get-AzsVMExtension_Get" ],
+        "ParameterSetName": [ "__AllParameterSets" ],
+        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
+        "Authorization": [ "[Filtered]" ]
+      },
+      "ContentHeaders": {
+      }
+    },
+    "Response": {
+      "StatusCode": 200,
+      "Headers": {
+        "Pragma": [ "no-cache" ],
+        "x-ms-correlation-request-id": [ "cf0776b5-ac1a-4303-89df-9d47f91b8307" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14002" ],
+        "x-ms-request-id": [ "cf0776b5-ac1a-4303-89df-9d47f91b8307" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213904Z:cf0776b5-ac1a-4303-89df-9d47f91b8307" ],
+        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
+        "X-Content-Type-Options": [ "nosniff" ],
+        "Cache-Control": [ "no-cache" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:04 GMT" ],
+        "Server": [ "Microsoft-HTTPAPI/2.0" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvI6P4xzw9OXS3bRFXgV9lPuLDQ7is7fAHgNA3SIPc501ffPIFAi2dJTb8wUz9JuQEJGMgvji0+udb1xkItBKz3r1ngcWIwb54zhtKfLaZBJAAcHYL6nAo0Q5G5vIXcYMeN1gLb157BmFWohTo677w" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "675" ],
@@ -461,15 +545,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0?api-version=2015-12-01-preview+10": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0?api-version=2015-12-01-preview+12": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/AmdGpuDriverWindows/versions/1.0.4.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1657" ],
-        "x-ms-client-request-id": [ "88dbf7f1-a76d-4c52-9a46-0b5e99d14686" ],
+        "x-ms-unique-id": [ "1313" ],
+        "x-ms-client-request-id": [ "edeb6680-8675-4b09-83fd-24218a9d5f1b" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -483,16 +567,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "1bfc7a29-0fd2-47c2-b014-21f376713b70" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14078" ],
-        "x-ms-request-id": [ "1bfc7a29-0fd2-47c2-b014-21f376713b70" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181529Z:1bfc7a29-0fd2-47c2-b014-21f376713b70" ],
+        "x-ms-correlation-request-id": [ "78f2b3a4-0e50-4945-a759-67e9dcdb4acb" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14001" ],
+        "x-ms-request-id": [ "78f2b3a4-0e50-4945-a759-67e9dcdb4acb" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213905Z:78f2b3a4-0e50-4945-a759-67e9dcdb4acb" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:29 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:04 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYb7fk17xJ2O2EwjmnP+KO+nQBRjHi2hAUv8Bwp4h1mdMrZQRWsXs4Eiq6LpfXS5hBNvqc/ZEdzc5rJdTjHQNS6dpTgmmfYcYAT4WdMJloelJfZXxCYxKtB29CrGqe64odHni2N2S53eozbKtoBzF" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvSjIsY1PRM2GkNpIGKBQ0OMCYK9V/bGCAihfgr62xHLwkZLYKOftIpQ/cEMXt/tY8AQZVM9Uhq/GufMiSuSNu3u0X6B8B6P4KKGnojOUzbzUmohOlTUzr9fcp69WqCw63L3j6Vxymyk/Guegre+xp" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "625" ],
@@ -503,15 +587,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0?api-version=2015-12-01-preview+11": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0?api-version=2015-12-01-preview+13": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverLinux/versions/1.3.1.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1658" ],
-        "x-ms-client-request-id": [ "f4d444e2-a7bc-43c9-b6ff-95053f767d83" ],
+        "x-ms-unique-id": [ "1314" ],
+        "x-ms-client-request-id": [ "4a9335f4-9daf-4328-b85f-b60a53db29ee" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -525,16 +609,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "f864b39c-0400-4cda-a1e8-8593bf7368e1" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14077" ],
-        "x-ms-request-id": [ "f864b39c-0400-4cda-a1e8-8593bf7368e1" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181530Z:f864b39c-0400-4cda-a1e8-8593bf7368e1" ],
+        "x-ms-correlation-request-id": [ "95ccf4c9-e538-474b-8cbd-3933e73674e3" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14000" ],
+        "x-ms-request-id": [ "95ccf4c9-e538-474b-8cbd-3933e73674e3" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213905Z:95ccf4c9-e538-474b-8cbd-3933e73674e3" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:29 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:04 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvt/HTwoEzXeYwKyzbXibjpf2+FPdMqSX+8vCR26si2BjfEao0XgPmyKiLv6wfZT29MflfcMqTGc8e8VtXhaStA3/LPI8Ax8cKnkFb3KvdAFdaluWZ5s/Mf62b9eWt3kcC62nXkVfVfqMUfrYTmyMr" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvn8pWxkiIwpUh7gmux0f6KVraGEiD+YIc7HHtIQwrE5JVP2JBFsY6ehjhmmcWnOKklJuA9zmSkf3o5uE/JvZ3pKDbm4pbGwxi1LH1o3gGWUyn/tDKZD0YPNKRhIYxoupkYsqBrNOgSYjGP8R1waa7" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "625" ],
@@ -545,15 +629,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0?api-version=2015-12-01-preview+12": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0?api-version=2015-12-01-preview+14": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.HpcCompute/types/NvidiaGpuDriverWindows/versions/1.3.2.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1659" ],
-        "x-ms-client-request-id": [ "512435f1-c351-428c-860b-d9ac10f5be9e" ],
+        "x-ms-unique-id": [ "1315" ],
+        "x-ms-client-request-id": [ "89b64d94-cf91-40e9-9263-460ce594b4bf" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -567,16 +651,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "54c62c82-6fcd-4f29-9680-492d7fd16b38" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14076" ],
-        "x-ms-request-id": [ "54c62c82-6fcd-4f29-9680-492d7fd16b38" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181530Z:54c62c82-6fcd-4f29-9680-492d7fd16b38" ],
+        "x-ms-correlation-request-id": [ "3fe27772-2558-4fa8-a165-0bdf8bfa7a56" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13999" ],
+        "x-ms-request-id": [ "3fe27772-2558-4fa8-a165-0bdf8bfa7a56" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213905Z:3fe27772-2558-4fa8-a165-0bdf8bfa7a56" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:29 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:05 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvRwcfuEcC21jGeCtMu3qiOOZsaiLu9aaVo/070j/RWZqkl30JnSLN/Ese03cQ/3lXiaYiu1Cg+IsxMuG2zgho2eVGqvy6uFFyYHunF4OUxXow1oeZKdXk8aDxcanZBt7FI1P5aKDGt0qKjbbwohiU" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvS7QxRsGpYa9VSZoEqvjKN062fxa8DwqplkqNy9eYbjK1S/l/0stxAGcAlMfU3qPehYaG2L53NSXuN9psnIt2c411N+Is7tIcV/yNrkQY32jvXNDKN7tXrW15r/J+DR25d1aem0aJOckSMKZ1p/Xc" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "631" ],
@@ -587,15 +671,15 @@
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5?api-version=2015-12-01-preview+13": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1?api-version=2015-12-01-preview+15": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1660" ],
-        "x-ms-client-request-id": [ "f91d5206-4787-4a7c-bb19-bd7ea4fb721b" ],
+        "x-ms-unique-id": [ "1316" ],
+        "x-ms-client-request-id": [ "fe02c5f6-4f09-4c98-ac70-521829aad2ea" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -609,35 +693,35 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "9dab0054-d266-4f5d-b468-ebb6a411498a" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14075" ],
-        "x-ms-request-id": [ "9dab0054-d266-4f5d-b468-ebb6a411498a" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181530Z:9dab0054-d266-4f5d-b468-ebb6a411498a" ],
+        "x-ms-correlation-request-id": [ "303acd1e-e354-4aad-b8c9-1cefe0b1529a" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13998" ],
+        "x-ms-request-id": [ "303acd1e-e354-4aad-b8c9-1cefe0b1529a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213906Z:303acd1e-e354-4aad-b8c9-1cefe0b1529a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:29 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:05 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv5/IZukG5VnK8bpv8Z7+0VrEAbgknPkVTq0HvoEQ3OprW84CHsdS9LCpQLJljTqyY5nxH0Q48Y/N1cEXqiTPYpULXiCmWAeIbaTlGooW9R5XK4AFFfD00v15LfloFbNOQZspKGy+dJTRgb4t7+ief" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvVQIeu5D5CXl98n9xbjtLkNjkF2Yb6T6avRfQT+a7KOosB3i2jP0Tzvy+huOoyxaAccNBPdBe9+yUc24G0sLcTaPeuYSeJpul1VzjZBJVEgcl+IBnaQf4OjhOhrWGvDu4p8m773D4BiwoQSSV2X82" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "629" ],
+        "Content-Length": [ "627" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/CustomScriptForLinux/versions/1.5.5\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"CustomScriptForLinux\",\"typeHandlerVersion\":\"1.5.5\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.11.1\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.11.1\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
       "isContentBase64": false
     }
   },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2?api-version=2015-12-01-preview+14": {
+  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0?api-version=2015-12-01-preview+16": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1661" ],
-        "x-ms-client-request-id": [ "30dfd3d1-1426-406e-ae70-5017bf38b1b4" ],
+        "x-ms-unique-id": [ "1317" ],
+        "x-ms-client-request-id": [ "4fe2879d-0732-4f8e-a110-bd67d18dc3f6" ],
         "CommandName": [ "Get-AzsVMExtension" ],
         "FullCommandName": [ "Get-AzsVMExtension_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -651,58 +735,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "0faebf9a-c769-472a-826c-364145acf189" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14074" ],
-        "x-ms-request-id": [ "0faebf9a-c769-472a-826c-364145acf189" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181530Z:0faebf9a-c769-472a-826c-364145acf189" ],
+        "x-ms-correlation-request-id": [ "ce567351-7408-433d-b363-4eaf8e09a9e1" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "13997" ],
+        "x-ms-request-id": [ "ce567351-7408-433d-b363-4eaf8e09a9e1" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213906Z:ce567351-7408-433d-b363-4eaf8e09a9e1" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:30 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:05 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvITYJYsB32h4Ur9TnYiUOEKK/QYUmHYi/3FH8EMymqkcWZrPBaR8k3iJJOejI7t0tcqqp+OEM+Tn8Wv7FyApgPcJugYRDgmI2fpsdKRPgS0e/X0ShPdW+tZ0Du5TgnuC7KbrxlZgh49VGHNqR41zR" ]
-      },
-      "ContentHeaders": {
-        "Content-Length": [ "621" ],
-        "Content-Type": [ "application/json; charset=utf-8" ],
-        "Expires": [ "-1" ]
-      },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.OSTCExtensions/types/VMAccessForLinux/versions/1.5.2\",\"name\":null,\"type\":\"Microsoft.Compute.Admin/locations/artifactTypes/publishers/types/versions\",\"location\":\"redmond\",\"properties\":{\"publisher\":\"Microsoft.OSTCExtensions\",\"extensionType\":\"VMAccessForLinux\",\"typeHandlerVersion\":\"1.5.2\",\"vmOsType\":\"Linux\",\"computeRole\":\"N/A\",\"vmScaleSetEnabled\":false,\"supportMultipleExtensions\":false,\"isSystemExtension\":false,\"sourceBlob\":null,\"provisioningState\":\"Succeeded\"}}",
-      "isContentBase64": false
-    }
-  },
-  "Get-AzsVMExtension+[NoContext]+TestGetAllVMExtensions+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0?api-version=2015-12-01-preview+15": {
-    "Request": {
-      "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft.Powershell/types/DSC/versions/2.77.0.0?api-version=2015-12-01-preview",
-      "Content": null,
-      "isContentBase64": false,
-      "Headers": {
-        "x-ms-unique-id": [ "1662" ],
-        "x-ms-client-request-id": [ "69168b25-8842-4e90-8c7a-bd5f13ded15e" ],
-        "CommandName": [ "Get-AzsVMExtension" ],
-        "FullCommandName": [ "Get-AzsVMExtension_Get" ],
-        "ParameterSetName": [ "__AllParameterSets" ],
-        "User-Agent": [ "AzurePowershell/Az4.0.0-preview" ],
-        "Authorization": [ "[Filtered]" ]
-      },
-      "ContentHeaders": {
-      }
-    },
-    "Response": {
-      "StatusCode": 200,
-      "Headers": {
-        "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "e2e350eb-39e3-4815-b1db-6da60a0a9921" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14073" ],
-        "x-ms-request-id": [ "e2e350eb-39e3-4815-b1db-6da60a0a9921" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181531Z:e2e350eb-39e3-4815-b1db-6da60a0a9921" ],
-        "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
-        "X-Content-Type-Options": [ "nosniff" ],
-        "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:30 GMT" ],
-        "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvsGcXLxbMwKGxiCRBoGpDudGxQPUpvrEJ4hqrNxO5Nwi/WgaXwGawCGiqaPqCZM4K8T9GMutjZEH7VGaIi0kSWItp087SWa6TrYGykHCxmTjXXuGqEnGVnqvyckOnmaeSf1gzKyg35uJyS6IWHkwi" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvQuCRQNvw+GoJ3k43mS5UFDOx1VyCyKIPDPROTTMyyz6ek59rwE3J8ClswNPMw7ZGzwizf3zL8Wyojs79yQA9u0dVEMK3W2HrlXc0ewhsrdPFW5jozkjllelcQPVKyJg9qcQHx7GsAFXV3/JNAH3M" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "595" ],
@@ -730,16 +772,16 @@
       "StatusCode": 201,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "141186ac-9788-408c-ae0b-011f3b360daf" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1119" ],
-        "x-ms-request-id": [ "141186ac-9788-408c-ae0b-011f3b360daf" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181532Z:141186ac-9788-408c-ae0b-011f3b360daf" ],
+        "x-ms-correlation-request-id": [ "1bcc8117-789c-49f8-a4dc-79e8d368fa41" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1061" ],
+        "x-ms-request-id": [ "1bcc8117-789c-49f8-a4dc-79e8d368fa41" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213907Z:1bcc8117-789c-49f8-a4dc-79e8d368fa41" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:32 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:06 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvuz/tNZSENNiXAZYgEgA2EmPVezdiGYuU/6g2XscnF49QYczF9Rc47YJgZZf5oVyMg7/p6EL78pRy4Vna/rXEaVU5QKbhTnjxaJDJEXu68gg9fVH2rbtQcE/O1WfxsHUJwH1yc5xCUAqU+oV8y+UX" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv14WD1VR79wDKxI9m+DPM7mdHsZ3tjaYe3hixL1lLL60e5HriHeeuH5G8nwTbWGAq05GNYZsOIdmxWSrRY2NxwHEnj+RsVtq2n6aZE8Delt3ZxGH/wNJOgwWnIepUfx58mymIpxVA57GKK5Is1jA8" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "668" ],
@@ -753,12 +795,12 @@
   "Get-AzsVMExtension+[NoContext]+TestDeleteVMExtension+$DELETE+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0?api-version=2015-12-01-preview+1": {
     "Request": {
       "Method": "DELETE",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0?api-version=2015-12-01-preview",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/artifactTypes/VMExtension/publishers/Microsoft/types/MicroExtension/versions/0.1.0?api-version=2015-12-01-preview",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "1664" ],
-        "x-ms-client-request-id": [ "9aec5fd0-4fbc-4930-ae20-7cd28fe45dcf" ],
+        "x-ms-unique-id": [ "1319" ],
+        "x-ms-client-request-id": [ "b0114e56-442c-47e8-a72a-d06e42f866f2" ],
         "CommandName": [ "Remove-AzsVMExtension" ],
         "FullCommandName": [ "Remove-AzsVMExtension_Delete" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -772,16 +814,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "38f2d0bb-1b54-4544-a0ca-5222525e337f" ],
-        "x-ms-ratelimit-remaining-subscription-deletes": [ "14932" ],
-        "x-ms-request-id": [ "38f2d0bb-1b54-4544-a0ca-5222525e337f" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T181533Z:38f2d0bb-1b54-4544-a0ca-5222525e337f" ],
+        "x-ms-correlation-request-id": [ "ee5782b7-d0b9-44b5-bc88-417183cf236a" ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [ "14888" ],
+        "x-ms-request-id": [ "ee5782b7-d0b9-44b5-bc88-417183cf236a" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220321T213907Z:ee5782b7-d0b9-44b5-bc88-417183cf236a" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 18:15:33 GMT" ],
+        "Date": [ "Mon, 21 Mar 2022 21:39:07 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv7VFzErhyFnjXBsXxyWJhpulJJUc1bclPFa0gqtoDF1+oERobam4MQwxtwcqB7v4E/2LAFbfo4NUeMHUWIuixuo6f2nyr6v9L1KDhv96SkUW1v0eJyGhbjUt4txR2+GGjJSR5IONTsoeKfPZGJFP6" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvzpfFUwMTHSDc3iAqrOMquC1L8zgTMHIFfjaWSjBA0/JL8oppyMbQtv3Jyj8eqzUMxuq8ZjaVNXaG93BkqES+uhtm22DIhixnKihO90HC9Lkx9XeSGWMVbVaPSdginienSzU5Gl7v/DmnvSygKeEG" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],

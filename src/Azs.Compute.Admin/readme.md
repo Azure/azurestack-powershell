@@ -55,7 +55,7 @@ metadata:
 
 ### PSD1 metadata changes
 subject-prefix: ''
-module-version: 1.1.0
+module-version: 1.2.0
 service-name: ComputeAdmin
 
 ### File Renames
@@ -80,7 +80,7 @@ directive:
     set:
       subject-prefix: Compute
 
-    # Prepend Compute for the Quota cmdlets
+    # Prepend Compute for the ScaleUnit cmdlets
   - where:
       subject: ScaleUnit
     set:
@@ -112,6 +112,29 @@ directive:
       subject: DiskMigrationJob
     set:
       alias: Start-AzsDiskMigrationJob  
+
+    # Rename property name Node to Nodes
+  - where:
+      property-name: Node
+      model-name: ScaleUnit
+    set:
+      property-name: Nodes
+
+    # Format ScaleUnit returned object
+  - where:
+      model-name: ScaleUnit
+    set:
+      format-table:
+          properties:
+              - ScaleUnitName
+              - Location
+              - Nodes
+          labels:
+              ScaleUnitName: Scale Unit Name
+          width:
+              ScaleUnitName: 17
+              Location: 10
+              Nodes: 50
 
   # Default to Format-List for the VMExtension commandlets as there are many important fields
   - where:
@@ -371,7 +394,6 @@ directive:
   - from: Azs.Compute.Admin.nuspec
     where: $
     transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
-
 
 # PSD1 Changes for ReleaseNotes
   - from: source-file-csharp

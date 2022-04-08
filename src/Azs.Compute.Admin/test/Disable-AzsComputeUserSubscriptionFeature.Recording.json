@@ -2,12 +2,12 @@
   "Disable-AzsComputeUserSubscriptionFeature+[NoContext]+TestDisableComputeUserSubscriptionFeature+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "3321" ],
-        "x-ms-client-request-id": [ "6e9ccc44-e8dd-4c03-a880-954e471ad3b7" ],
+        "x-ms-unique-id": [ "1966" ],
+        "x-ms-client-request-id": [ "8c2a79bf-9f98-4f90-9829-f59705c74ba5" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -21,23 +21,23 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "dac88c58-c349-42ee-820d-35f45629e342" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14132" ],
-        "x-ms-request-id": [ "dac88c58-c349-42ee-820d-35f45629e342" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T192403Z:dac88c58-c349-42ee-820d-35f45629e342" ],
+        "x-ms-correlation-request-id": [ "56a7b8db-17aa-4fb2-8523-edfcfb37fbe6" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14874" ],
+        "x-ms-request-id": [ "56a7b8db-17aa-4fb2-8523-edfcfb37fbe6" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220323T222217Z:56a7b8db-17aa-4fb2-8523-edfcfb37fbe6" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 19:24:02 GMT" ],
+        "Date": [ "Wed, 23 Mar 2022 22:22:17 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvHAwqQ17ix23Ma/oOCLl1DHAfK35l0OaNmp1eob7t6eCygPyvQkNBrbx6cqsX0t1b30MWYFfhWMnNfwM0LmiVmUHD0XJ4caTHLXnD8PyHIAqu23neJK0ZDAG4Gplm9P+V3opCYtxX+7NZPC3eSqdX" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv1JCzqEojJNoThOZ0wkDJWaAkkawVBaghKetgNfsdTukMvp4yngbJ6ls8aFo4mG1E/0Y7Pl2Kb0AVd3gLmJOkfUSFO6EFnDcRbdyN+oAsORmgC21JnNL1d5nCzS/1jG7zcjGgjLzAiRaTY+R8CHFc" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "682" ],
+        "Content-Length": [ "526" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"2ae3aec2-7ccc-45f1-ac30-bdd9cfac47dc\",\"a9f15e55-76e4-41a4-a6ee-393fac684772\",\"efa7a43e-984e-4f38-b0f9-9d010040b2b0\",\"4d021d6d-06f5-4443-b47a-69a71bd5c24a\",\"c4311e6e-91fb-4795-835d-29a19a69640a\",\"6be96ba7-bcf0-4637-80ee-8f2367393c33\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   },
@@ -45,7 +45,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/enableTenantSubscriptionFeature?api-version=2020-11-01",
-      "Content": "{\r\n  \"tenantSubscriptionId\": \"95990F40-5F11-490D-B323-9317191D347A\"\r\n}",
+      "Content": "{\r\n  \"tenantSubscriptionId\": \"4e1684d1-fc6f-42f4-8eb5-e7f3ae1c81aa\"\r\n}",
       "isContentBase64": false,
       "Headers": {
       },
@@ -58,16 +58,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "bc119376-ecf6-40c5-bcc9-ff31c6510dbb" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1174" ],
-        "x-ms-request-id": [ "bc119376-ecf6-40c5-bcc9-ff31c6510dbb" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T192403Z:bc119376-ecf6-40c5-bcc9-ff31c6510dbb" ],
+        "x-ms-correlation-request-id": [ "1b17b632-323f-41dc-bbdd-510bd56eaaa7" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1199" ],
+        "x-ms-request-id": [ "1b17b632-323f-41dc-bbdd-510bd56eaaa7" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220323T222217Z:1b17b632-323f-41dc-bbdd-510bd56eaaa7" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 19:24:03 GMT" ],
+        "Date": [ "Wed, 23 Mar 2022 22:22:17 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvWPHBac1igd1UcPmh9lKqs6exb/ir8kFdB0tHy9laZZwqaHATRE/9N/rZnqolqBIiYTQzYow01MH77zzyWhCvWd7S9BN/1tKzPilLbAZjV/qIkwId+uyLtCIaF2HRSYbw6uo7lNQtSD9FtktMynED" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvYz+DUewAD1r9+DpyiJsAwFRb34UD+J88kzh8KsG4z6MpyufSgnfoT2jWOcNPsLqMyP9haW5N/OfcwFkaGqeQtv07IaJgw2RFuYA3Xd2+ocErhZb7Vdtz//eTizibDEOb98YoTxavrN7hjOEntlnZ" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -81,7 +81,7 @@
     "Request": {
       "Method": "POST",
       "RequestUri": "https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess/disableTenantSubscriptionFeature?api-version=2020-11-01",
-      "Content": "{\r\n  \"tenantSubscriptionId\": \"95990F40-5F11-490D-B323-9317191D347A\"\r\n}",
+      "Content": "{\r\n  \"tenantSubscriptionId\": \"4e1684d1-fc6f-42f4-8eb5-e7f3ae1c81aa\"\r\n}",
       "isContentBase64": false,
       "Headers": {
       },
@@ -94,16 +94,16 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "4bf7911d-7b93-4127-b0bc-c45b8a8e2069" ],
-        "x-ms-ratelimit-remaining-subscription-writes": [ "1173" ],
-        "x-ms-request-id": [ "4bf7911d-7b93-4127-b0bc-c45b8a8e2069" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T192403Z:4bf7911d-7b93-4127-b0bc-c45b8a8e2069" ],
+        "x-ms-correlation-request-id": [ "0f9419a8-5a82-4eb4-bcdd-862939c9037e" ],
+        "x-ms-ratelimit-remaining-subscription-writes": [ "1198" ],
+        "x-ms-request-id": [ "0f9419a8-5a82-4eb4-bcdd-862939c9037e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220323T222217Z:0f9419a8-5a82-4eb4-bcdd-862939c9037e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 19:24:03 GMT" ],
+        "Date": [ "Wed, 23 Mar 2022 22:22:17 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvdH9U+5YhP5uBSSH2dGAnZSb08RTaM4/dQCD7o6/Fk48xGkAM6T0ZzAjOCKXPRZ9rzLk2HaZdZvpTrDcL7aPPenRasoXUyqT5UzJ20auYUD2nO6yRM8lHvxi6YrqrX1nG9Wd8TNiS87BwJwYGv35f" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv/85B6Yj9PzST7pf4lKoLScRiy6Zd5CH5qGx6cmJX4uyUyEKiCnoPxW7dScUrkG8L2svpNBoR6msOSlJHa72a2voNbdYTHyu1FTFUcU00FMVhOF2pd2LBCFbPluf6N10eWKjS9yu7V4uMOcR987k/" ]
       },
       "ContentHeaders": {
         "Content-Length": [ "0" ],
@@ -116,12 +116,12 @@
   "Disable-AzsComputeUserSubscriptionFeature+[NoContext]+TestDisableComputeUserSubscriptionFeature+$GET+https://management.azure.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n25r0507.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1006.masd.stbtest.microsoft.com/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess?api-version=2020-11-01",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
-        "x-ms-unique-id": [ "3324" ],
-        "x-ms-client-request-id": [ "9864a8e3-9cbb-4288-8198-6d36e1a99345" ],
+        "x-ms-unique-id": [ "1969" ],
+        "x-ms-client-request-id": [ "bbceb1b2-7a5f-4ea3-afea-0116dabf48ec" ],
         "CommandName": [ "Get-AzsComputeFeature" ],
         "FullCommandName": [ "Get-AzsComputeFeature_Get" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -135,23 +135,23 @@
       "StatusCode": 200,
       "Headers": {
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "b0763a38-d9db-4084-99aa-50f2e768ca0c" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14131" ],
-        "x-ms-request-id": [ "b0763a38-d9db-4084-99aa-50f2e768ca0c" ],
-        "x-ms-routing-request-id": [ "REDMOND:20210819T192404Z:b0763a38-d9db-4084-99aa-50f2e768ca0c" ],
+        "x-ms-correlation-request-id": [ "2390c755-eacf-46f3-8dc7-48566967c51e" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14873" ],
+        "x-ms-request-id": [ "2390c755-eacf-46f3-8dc7-48566967c51e" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220323T222217Z:2390c755-eacf-46f3-8dc7-48566967c51e" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
-        "Date": [ "Thu, 19 Aug 2021 19:24:03 GMT" ],
+        "Date": [ "Wed, 23 Mar 2022 22:22:17 GMT" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRv06U54elrequ55LN/0Hv21ykMH4q7E/qEBzrUmY0jOz00QD9gHZ88V++mkJ84/fRvLFTU6/uvz75/ccRuQjz//MT/y5Qku1uEntX/r9Ytswmk8PwgjXMG7xn7KQKL5HvmMnnqzC06eBAhUzhTDQTU" ]
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvbj3mXxgFGXFdnHJrj8fIwUbg9idSNe/0Os9Ef1OVk+KyOA85rsCYhHnNNBYXAY5Njaj9fECxe2yF92tQpoCD5I6nWO/5PRwPA7jffDbW9FNtzUIqKJRvV2HZKpGm6UH/MUzxquW9Zjh2hOd8WIZE" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "682" ],
+        "Content-Length": [ "526" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"2ae3aec2-7ccc-45f1-ac30-bdd9cfac47dc\",\"a9f15e55-76e4-41a4-a6ee-393fac684772\",\"efa7a43e-984e-4f38-b0f9-9d010040b2b0\",\"4d021d6d-06f5-4443-b47a-69a71bd5c24a\",\"c4311e6e-91fb-4795-835d-29a19a69640a\",\"6be96ba7-bcf0-4637-80ee-8f2367393c33\"]}}",
+      "Content": "{\"id\":\"/subscriptions/47b53730-e95d-4594-b843-d378bdff793a/providers/Microsoft.Compute.Admin/locations/redmond/features/Microsoft.Compute.EmergencyVMAccess\",\"name\":\"Microsoft.Compute.EmergencyVMAccess\",\"type\":\"Microsoft.Compute.Admin/locations/features\",\"location\":\"redmond\",\"properties\":{\"featureName\":\"Microsoft.Compute.EmergencyVMAccess\",\"globalFeatureSettings\":{\"globalFeatureState\":\"TenantSubscriptionLevel\"},\"enabledTenantSubscriptionIds\":[\"612d862b-243b-480c-8ebd-c233dff7bb2b\",\"1286a2e6-0566-41e6-8c45-59ecea6cb60e\"]}}",
       "isContentBase64": false
     }
   }

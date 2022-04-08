@@ -14,11 +14,11 @@ Describe 'Invoke-AzsPruneBackupLocationExternalStore' {
 
         $res = Invoke-AzsPruneBackupLocationExternalStore -OperationType DryRun
         $res | Should Not Be $null
-        $res[0] | Should Be "MASBackup/progressivebackup/1.2108.0.32/BackupEncryptionCert.pfx"
+        $res[0] | Should Be "masbackup/progressivebackup/BackupEncryptionCert.pfx"
 
         $res = Invoke-AzsPruneBackupLocationExternalStore
         $res | Should Not Be $null
-        $res[0] | Should Be "MASBackup/progressivebackup/1.2108.0.32/BackupEncryptionCert.pfx"
+        $res[0] | Should Be "masbackup/progressivebackup/BackupEncryptionCert.pfx"
 
         $res = Invoke-AzsPruneBackupLocationExternalStore
         $res | Should Be $null
