@@ -227,7 +227,7 @@ Properties for restore options.
 To construct, see NOTES section for RESTOREOPTION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20210901.IRestoreOptions
+Type: Microsoft.Azure.PowerShell.Cmdlets.BackupAdmin.Models.Api20180901.IRestoreOptions
 Parameter Sets: Restore, RestoreViaIdentity
 Aliases:
 

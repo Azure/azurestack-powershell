@@ -1,44 +1,9 @@
 # Release 3.0.0
 * Requires AzureStack Update 2203+
-* Breaking changes in Azs.Backup.Admin module
-## Azs.Backup.Admin module 
-* Adds support for configuring backup location as blob storage
-* Removes Set-AzsBackupconfiguration and newly supports Update\Clear-AzsBackupConfiguration
-* Update-AzsBackupConfiguration - either updates a part of the backup location configuration or sets it as a whole
-    * Migration examples
-        * Set backup location configuration as a whole
-            * Old usage
-            ```
-            $location = Set-AzsBackupConfiguration -Username $username -Password $password -Path $path -EncryptionCertPath $encryptionCertPath -IsBackupSchedulerEnabled:$isBackupSchedulerEnabled -BackupFrequencyInHours $backupFrequencyInHours -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-            ```
-            * New usage
-            ```
-            $location = Update-AzsBackupConfiguration -Username $username -Password $password -Path $path -EncryptionCertPath $encryptionCertPath -IsBackupSchedulerEnabled:$isBackupSchedulerEnabled -BackupFrequencyInHours $backupFrequencyInHours -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-
-            $location = Update-AzsBackupConfiguration -BlobStorageUrl $blobStorageUrl -BlobStorageKey $blobStorageKey -EncryptionCertPath $encryptionCertPath -IsBackupSchedulerEnabled:$isBackupSchedulerEnabled -BackupFrequencyInHours $backupFrequencyInHours -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-            ```
-        * Update a part of the backup location configuration
-            * Old usage
-            ```
-            $location = Set-AzsBackupConfiguration -Path $path -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-            ```
-            * New usage
-            ```
-            $location = Update-AzsBackupConfiguration -Path $path -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-
-            $location = Update-AzsBackupConfiguration -BlobStorageUrl $blobStorageUrl -BackupRetentionPeriodInDays $backupRetentionPeriodInDays
-            ```
-* Clear-AzsBackupConfiguration - clears the backup location configuration
-    * Usage
-    ```
-    $location = Clear-AzsBackupConfiguration
-    ```
 ## Azs.Compute.Admin module
 * Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
-
 ## AzS.Network.Admin module
 * Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
-
 
 # Release 2.2.0
 * Requires AzureStack Update 2108+
