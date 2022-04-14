@@ -1,0 +1,183 @@
+name: Test
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'docker/**'
+    branches:
+      - master
+      - dev
+  workflow_dispatch:
+    inputs:
+      modules:
+        description: 'Comma-separated list of modules to run tests for. Leave empty to run all modules. E.g., an input could be "Azs.AzureBridge.Admin,Azs.Backup.Admin,Azs.Commerce.Admin".'
+        required: false
+
+jobs:
+  Prepare:
+    runs-on: windows-2019
+    steps:
+      - name: Checkout ${{ github.repository }}.
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+ 
+      - name: Resolve modules to run.
+        id: resolve_modules_to_run
+        shell: pwsh
+        run: |
+          Import-Module -Name ([System.IO.Path]::Combine("${{ github.workspace }}", "tools", "WorkflowUtility.psm1"))
+          [string[]] $excludeDirectories = @("Az.BootStrapper", "Azs.Deployment.Admin", "AzureStack")
+          $excludeDirectoriesSet = [System.Collections.Generic.HashSet[string]]::new($excludeDirectories, [StringComparer]::InvariantCultureIgnoreCase)
+          $validModules = New-Object System.Collections.Generic.HashSet[string]
+          Get-ChildItem -Path ([System.IO.Path]::Combine("${{ github.workspace }}", "src")) -Directory `
+              | Where-Object {!$excludeDirectoriesSet.Contains($_.Name)} `
+              | Foreach-Object {$validModules.Add($_.Name) | Out-Null}
+          $modulesToRun = @()
+          Write-Host "Github event name: ${{ github.event_name }}"
+          if ("${{ github.event_name }}" -eq "pull_request")
+          {
+            Write-Host "Resolving modules for pull request..."
+            Push-Location -Path "${{ github.workspace }}"
+            # Get modified files.
+            $modifiedModules = New-Object System.Collections.Generic.HashSet[string]
+            git fetch origin ${{ github.event.pull_request.base.ref }}
+            git diff --name-only origin/${{ github.event.pull_request.base.ref }} `
+              | Where-Object {$_ -like "*Azs.*"} `
+              | ForEach-Object {($_ -split "/",3)[1]} `
+              | Where-Object {!$excludeDirectoriesSet.Contains($_)} `
+              | ForEach-Object {$modifiedModules.Add($_) | Out-Null}
+            Pop-Location
+
+            if ($modifiedModules.Count)
+            {
+              $modulesToRun = [String[]] $modifiedModules
+            }
+          }
+          elseif ("${{ github.event.inputs.modules }}")
+          {
+            # Run modules input by the user.
+            Write-Host "Resolving modules from user input..."
+            $userInputModules = "${{ github.event.inputs.modules }}" -Split ","
+            # Check for invalid modules. Excluded modules are also invalid.
+            $invalidModules = $userInputModules | Where-Object {!$validModules.Contains($_)}
+            if ($invalidModules)
+            {
+              throw "Error: invalid modules in input. Note that some modules are excluded from running. Invalid modules:`n$($invalidModules | Out-Host)"
+            }
+            $modulesToRun = $userInputModules
+          }
+          elseif ("${{ github.event_name }}" -eq "workflow_dispatch")
+          {
+            # If workflow_dispatch is kicked off but input is empty, default is to run all valid modules.
+            Write-Host "Running all valid modules in the src directory..."
+            $modulesToRun = [String[]] $validModules
+          }
+
+          if(!$modulesToRun -or !$modulesToRun.Count)
+          {
+            Write-Host "No modules to run, testing will be skipped!"
+          }
+          else
+          {
+            Write-Host "Running the following modules:"
+            $modulesToRun | Out-Host
+          }
+
+          $modulesToRun = Convert-FromArrayToJsonArrayString -ArrayOfStrings $modulesToRun
+          echo "::set-output name=MODULES_TO_RUN::${modulesToRun}"
+
+    outputs:
+      MODULES_TO_RUN: ${{ steps.resolve_modules_to_run.outputs.MODULES_TO_RUN }}
+
+  Test:
+    runs-on: windows-2019
+    needs: Prepare
+    if: ${{ needs.Prepare.outputs.MODULES_TO_RUN != '[]' && needs.Prepare.outputs.MODULES_TO_RUN != '' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        MODULES_TO_RUN: ${{ fromJson(needs.Prepare.outputs.MODULES_TO_RUN) }}
+    steps:
+      - name: Checkout ${{ github.repository }}.
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Run Azure Stack PowerShell tests.
+        id: run_tests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          Write-Host "Node JS version: $(node --version)"
+          Write-Host "Starting autorest tests..."
+          Write-Host "Installing autorest..."
+          #INSTALL AUTOREST (requires Node JS for npm command)
+          npm install -g autorest@latest
+
+          $modulePath = [System.IO.Path]::Combine("${{ github.workspace }}", "src", "${{ matrix.MODULES_TO_RUN }}")
+          Push-Location -Path $modulePath
+          
+          #GENERATE
+          $env:NODE_OPTIONS="--max-old-space-size=16684"
+          Write-Host "Running autorest..."
+          autorest
+
+          #BUILD
+          dotnet add package PowerShellStandard.Library --version 5.1.0
+          $azAccountsVersion = "2.2.8"
+          Write-Host "Installing Az.Accounts ${azAccountsVersion}..."
+          Install-Module -Name Az.Accounts -Repository PSGallery -RequiredVersion $azAccountsVersion -Force -Scope CurrentUser
+          Import-Module -Name Az.Accounts -RequiredVersion $azAccountsVersion
+          Write-Host "Running build-module.ps1..."
+          ./build-module.ps1
+          if ($LASTEXITCODE)
+          {
+            throw "Error while running build-module.ps1."
+          }
+
+          #TEST
+          Remove-Module Pester -Force -ErrorAction SilentlyContinue
+          Uninstall-Module Pester -Force -ErrorAction SilentlyContinue
+          Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
+          $azResourcesVersion = "0.12.0"
+          Write-Host "Installing Az.Resources ${azResourcesVersion}..."
+          Install-Module -Name Az.Resources -Repository PSGallery -RequiredVersion $azResourcesVersion -Force -Scope CurrentUser
+          Import-Module -Name Az.Resources -RequiredVersion $azResourcesVersion
+
+          $pesterVersion = "4.10.1"
+          Write-Host "Installing Pester ${pesterVersion}..."
+          Install-Module -Name Pester -RequiredVersion $pesterVersion -Force -SkipPublisherCheck
+          Import-Module -Name Pester -RequiredVersion $pesterVersion
+
+          Write-Host "Running test-module.ps1..."
+          ./test-module.ps1
+          if ($LASTEXITCODE)
+          {
+            throw "Error while running test-module.ps1."
+          }
+
+          #PACKAGE
+          Write-Host "Running pack-module.ps1..."
+          ./pack-module.ps1
+          if ($LASTEXITCODE)
+          {
+            throw "Error while running pack-module.ps1."
+          }
+
+          echo "::set-output name=MODULE_PATH::${modulePath}"
+          Pop-Location
+          Write-Host "Ending autorest tests."
+
+      - name: Upload module nupkgs.
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ github.run_id }}-${{ matrix.MODULES_TO_RUN }}
+          path: ${{ steps.run_tests.outputs.MODULE_PATH }}/bin/*.nupkg
+
+          
+
+          
+
