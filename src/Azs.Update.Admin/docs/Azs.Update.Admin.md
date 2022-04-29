@@ -1,6 +1,6 @@
 ---
 Module Name: Azs.Update.Admin
-Module Guid: 3f7f32a5-5fe8-4593-ac9a-3e696d01b5ed
+Module Guid: f4bffb17-7095-497f-aeed-8c870e708b3d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin
 Help Version: 1.0.0.0
 Locale: en-US
@@ -8,7 +8,7 @@ Locale: en-US
 
 # Azs.Update.Admin Module
 ## Description
-Microsoft Azure PowerShell: UpdateAdmin cmdlets
+
 
 ## Azs.Update.Admin Cmdlets
 ### [Get-AzsUpdate](Get-AzsUpdate.md)
@@ -25,4 +25,10 @@ Apply a specific update at an update location.
 
 ### [Resume-AzsUpdateRun](Resume-AzsUpdateRun.md)
 Resume a failed update.
+
+### [Start-AzsUpdateHealthCheck](Start-AzsUpdateHealthCheck.md)
+Run health check for a specified update at an update location.
+
+### [Start-AzsUpdatePreparation](Start-AzsUpdatePreparation.md)
+Prepare a specified update at an update location.
 
