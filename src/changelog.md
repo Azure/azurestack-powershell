@@ -1,7 +1,11 @@
 # Release 2.4.0
 * Requires AzureStack Update 2301+
-## AzS.Network.Admin module
-* Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
+## Azs.Network.Admin module
+* Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp.
+## Azs.Update.Admin module
+* Added support for update preparation that can be done without starting the installation process.
+  * Start-AzsUpdatePreparation cmdlet can be used to start an update preparation.
+  * Start-AzsUpdateHealthCheck cmdlet can be used to retry an update health check for a prepared update.
 
 # Release 2.3.0
 * Requires AzureStack Update 2206+
