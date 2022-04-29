@@ -16,6 +16,9 @@ This directory contains the PowerShell module for the UpdateAdmin service.
 ## Detail
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
+## Module Requirements
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.2.3 or greater
+
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
 
@@ -45,17 +48,15 @@ In this directory, run AutoRest:
 ``` yaml
 require:
   - $(this-folder)/../readme.azurestack.md
-  - $(repo)/specification/azsadmin/resource-manager/update/readme.azsautogen.md
+  - $(repo)/specification/azsadmin/resource-manager/update/readme.md
+
+subject-prefix: ''
+module-version: 1.1.0
 
 metadata:
   description: 'Microsoft AzureStack PowerShell: Update Admin cmdlets'
 
-subject-prefix: ''
-module-version: 1.0.2
-service-name: UpdateAdmin
-
 ### File Renames
-### IMPORTANT - Note that the following settings are case sensitive ###
 module-name: Azs.Update.Admin
 csproj: Azs.Update.Admin.csproj
 psd1: Azs.Update.Admin.psd1
@@ -67,114 +68,117 @@ sanitize-names: true
 ``` yaml
 directive:
   - where:
-      parameter-name: UpdateLocation
-    set:
-      parameter-name: Location
-  - where:
       parameter-name: ResourceGroupName
     set:
       default:
         script: -join("System.",(Get-AzLocation)[0].Location)
+
+# UpdateLocation
+  - where:
+      parameter-name: UpdateLocation
+    set:
+      parameter-name: Location
+
+  - where:
+      subject: UpdateLocation
+      parameter-name: Location
+    set:
+      parameter-name: Name
+      default:
+        script: (Get-AzLocation)[0].Location
+
+  - where:
+      subject: UpdateLocation
+    hide: true
+
+# Update
   - where:
       verb: Add
     set:
       verb: Install
+
+  - where:
+      subject: Update
+    hide: true
+
   - where:
       verb: Invoke
       subject: RerunUpdateRun
     set:
       verb: Resume
       subject: UpdateRun
+
   - where:
-      subject: Update 
-      parameter-name: Location
-    clear-alias: true
+      verb: Invoke
+      subject: PrepareUpdate
+    set:
+      verb: Start
+      subject: UpdatePreparation
+
   - where:
-      subject: Update 
-      parameter-name: Name
-    clear-alias: true
+      subject: UpdatePreparation
+    hide: true
+
   - where:
-      subject: UpdateLocation 
-      parameter-name: Location
+      subject: Update
+      parameter-name: UpdateName
     set:
       parameter-name: Name
-      default:
-        script: (Get-AzLocation)[0].Location
+
+  - where:
+      verb: Test
+      subject: UpdateHealth
+    set:
+      verb: Start
+      subject: UpdateHealthCheck
+
+  - where:
+      subject: UpdateHealthCheck
+    hide: true
+
+  - where:
+      subject: UpdateHealthCheck
+      parameter-name: UpdateName
+    set:
+      parameter-name: Name
+
+  - where:
+      subject: Update
+      parameter-name: Location
+    clear-alias: true
+
+  - where:
+      subject: Update
+      parameter-name: Name
+    clear-alias: true
+
+  - where:
+      verb: Prepare
+      subject: Update
+    hide: true
+
+  - where:
+      subject: UpdateRunTopLevel
+    hide: true
+
+# Upate Run
+  - where:
+      subject: UpdateRun
+      parameter-name: RunName
+    set:
+      parameter-name: Name
+
+  - where:
+      subject: UpdateRun
+    hide: true
+
+  - where:
+      subject: UpdateRunTopLevel
+    hide: true
+
   - where:
       subject: (.*)Run$
       parameter-name: RunName
     set:
-      parameter-name: Name
-    # Hide the auto-generated Get-AzsUpdateRun and Resume-AzsUpdateRUn and expose it through customized one
-  - where:
-      subject: UpdateRun
-    hide: true
-    # Hide the auto-generated Get-AzsUpdateRunTopLevel. This will effectively remove the commandlet since we dont have a customized one
-  - where:
-      subject: UpdateRunTopLevel
-    remove: true
-    # Hide the auto-generated Install-AzsUpdate and Get-AzsUpdate and exposte it through customized one
-  - where:
-      subject: Update
-    hide: true
-    # Format Output Values
-  - where:
-      model-name: Update
-    set:
-      format-table:
-        properties:
-          - Location
-          - DisplayName
-          - Name
-          - State
-          - Publisher
-        width:
-          Location: 15
-          DisplayName: 30
-          Name: 40
-          State: 20
-          Publisher: 15
-  - where:
-      model-name: UpdateLocation
-    set:
-      format-table:
-        properties:
-          - Name
-          - CurrentVersion
-          - CurrentOemVersion
-          - State
-        width:
-          Name: 20
-          CurrentVersion: 20
-          CurrentOemVersion: 20
-          State: 20
-  - where:
-      model-name: UpdateRun
-    set:
-      format-table:
-        properties:
-          - Name
-          - State
-          - ProgressStartTimeUtc
-          - ProgressEndTimeUtc
-        width:
-          Name: 40
-          State: 15
-          ProgressStartTimeUtc: 25
-          ProgressEndTimeUtcate: 25
-
-# Add release notes
-  - from: Azs.Update.Admin.nuspec
-    where: $
-    transform: $ = $.replace('<releaseNotes></releaseNotes>', '<releaseNotes>AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell.</releaseNotes>');
-
-# Add Az.Accounts/Az.Resources as dependencies
-  - from: Azs.Update.Admin.nuspec
-    where: $
-    transform: $ = $.replace('<dependency id="Az.Accounts" version="2.2.3" />', '<dependency id="Az.Accounts" version="[2.2.8]" />\n      <dependency id="Az.Resources" version="[0.12.0]" />');
-
-# PSD1 changes for ReleaseNotes
-  - from: source-file-csharp
-    where: $
-    transform: $ = $.replace('sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'\'\"\);', 'sb.AppendLine\(\$@\"\{Indent\}\{Indent\}\{Indent\}ReleaseNotes = \'AzureStack Hub Admin module generated with https://github.com/Azure/autorest.powershell\'\"\);' );
+      parameter-name: RunId
 ```
