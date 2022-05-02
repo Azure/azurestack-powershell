@@ -12,6 +12,7 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Get-AzsUpdateLocation' {
+    . $PSScriptRoot\Common.ps1
 
      function ValidateScaleUnit {
             param(

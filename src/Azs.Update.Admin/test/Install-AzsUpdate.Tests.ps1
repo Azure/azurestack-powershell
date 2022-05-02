@@ -12,6 +12,8 @@ while(-not $mockingPath) {
 . ($mockingPath | Select-Object -First 1).FullName
 
 Describe 'Install-AzsUpdate' {
+    . $PSScriptRoot\Common.ps1
+
     It 'TestInstallAzsUpdate' -skip:$('TestInstallAzsUpdate' -in $global:SkippedTests) {
         $global:TestName = 'TestInstallAzsUpdate'
         #$updates = Get-AzsUpdate -ResourceGroupName $global:ResourceGroupName -Location $Location | Where-Object -Property State -in "PreparationFailed","Ready","ReadyToInstall"

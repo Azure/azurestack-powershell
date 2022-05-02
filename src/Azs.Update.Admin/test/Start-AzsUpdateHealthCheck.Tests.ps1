@@ -15,6 +15,8 @@ if(($null -eq $TestName) -or ($TestName -contains 'Start-AzsUpdateHealthCheck'))
 }
 
 Describe 'Start-AzsUpdateHealthCheck' {
+    . $PSScriptRoot\Common.ps1
+
     It 'TestStartAzsUpdateHealthCheck' -skip:$('TestStartAzsUpdateHealthCheck' -in $global:SkippedTests) {
         $global:TestName = 'TestStartAzsUpdateHealthCheck'
         $updates = Get-AzsUpdate | Where-Object -Property State -in "PreparationFailed","Ready","HealthCheckFailed"

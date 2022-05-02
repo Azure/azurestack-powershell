@@ -15,6 +15,8 @@ if(($null -eq $TestName) -or ($TestName -contains 'Prepare-AzsUpdate'))
 }
 
 Describe 'Prepare-AzsUpdate' {
+    . $PSScriptRoot\Common.ps1
+
     It 'TestPrepareAzsUpdate' -skip:$('TestPrepareAzsUpdate' -in $global:SkippedTests) {
         $global:TestName = 'TestPrepareAzsUpdate'
         $updates = Get-AzsUpdate | Where-Object -Property State -in "PreparationFailed","Ready","HealthCheckFailed","DownloadFailed"
