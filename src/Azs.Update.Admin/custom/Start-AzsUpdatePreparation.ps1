@@ -35,9 +35,9 @@ INPUTOBJECT <IUpdateAdminIdentity>: Identity Parameter
   [UpdateLocation <String>]: The name of the update location.
   [UpdateName <String>]: Name of the update.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/prepare-azsupdate
+https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/start-azsupdatepreparation
 #>
-function Prepare-AzsUpdate {
+function Start-AzsUpdatePreparation {
 [OutputType([System.Boolean])]
 [CmdletBinding(DefaultParameterSetName='Prepare', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
@@ -47,12 +47,6 @@ param(
     [System.String]
     # The name of the update location.
     ${Location},
-
-    [Parameter(ParameterSetName='Prepare', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
-    [System.String]
-    # Name of the update.
-    ${Name},
 
     [Parameter(ParameterSetName='Prepare')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
@@ -68,6 +62,12 @@ param(
     [System.String]
     # The ID of the target subscription.
     ${SubscriptionId},
+
+    [Parameter(ParameterSetName='Prepare', Mandatory)]
+    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
+    [System.String]
+    # Name of the update.
+    ${UpdateName},
 
     [Parameter(ParameterSetName='PrepareViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]

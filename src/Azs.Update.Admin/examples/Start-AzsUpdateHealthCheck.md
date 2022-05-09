@@ -1,18 +1,10 @@
-### Example 1: {{ Add title here }}
+### Example 1: Start-AzsUpdateHealthCheck By Name
 ```powershell
-PS C:\> {{ Add code here }}
+PS C:\> Start-AzsUpdateHealthCheck -Name Microsoft1.2203.0.10
 
-{{ Add output here }}
 ```
 
-{{ Add description here }}
+Commandlet allows you to run healthcheck for a specific updates by name.
+Note that there is a requirement that the update version is strictly greater than the current version.
 
-### Example 2: {{ Add title here }}
-```powershell
-PS C:\> {{ Add code here }}
-
-{{ Add output here }}
-```
-
-{{ Add description here }}
 

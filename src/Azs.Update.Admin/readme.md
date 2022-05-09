@@ -109,8 +109,8 @@ directive:
       verb: Invoke
       subject: PrepareUpdate
     set:
-      verb: Prepare
-      subject: Update
+      verb: Start
+      subject: UpdatePreparation
 
   - where:
       subject: Update

@@ -30,19 +30,21 @@ Run health check for a specified update at an update location.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### Example 1: {{ Add title here }}
 ```powershell
-{{ Add code here }}
+PS C:\> Start-AzsUpdateHealthCheck -Name Microsoft1.2203.0.10
 ```
 
-{{ Add output here }}
+Start health check for a specified update
 
-### -------------------------- EXAMPLE 2 --------------------------
+### Example 2: {{ Add title here }}
 ```powershell
-{{ Add code here }}
+PS C:\> {{ Add code here }}
+
+{{ Add output here }}
 ```
 
-{{ Add output here }}
+{{ Add description here }}
 
 ## PARAMETERS
 
