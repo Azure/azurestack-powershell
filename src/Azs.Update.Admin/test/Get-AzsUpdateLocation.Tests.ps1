@@ -44,7 +44,7 @@ Describe 'Get-AzsUpdateLocation' {
 
     It 'TestGetAzsUpdateLocation' -skip:$('TestGetAzsUpdateLocation' -in $global:SkippedTests) {
         $global:TestName = 'TestGetAzsUpdateLocation'
-        $updatelocations = Get-AzsUpdateLocation -ResourceGroupName $global:ResourceGroupName -Location $Location
+        $updatelocations = Get-AzsUpdateLocation -ResourceGroupName $global:ResourceGroupName -Location redmond
         $updatelocations | Should Not Be $null
         foreach ($updatelocation in $updatelocations) {
             ValidateScaleUnit -UpdateLocation $updatelocation
