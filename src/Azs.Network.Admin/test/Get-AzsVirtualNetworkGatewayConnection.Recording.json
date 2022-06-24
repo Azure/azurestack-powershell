@@ -7,7 +7,7 @@
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "25" ],
-        "x-ms-client-request-id": [ "d86803b5-1ef2-4bf8-9bf6-f18d0d669b5a" ],
+        "x-ms-client-request-id": [ "22a71fb0-f5ba-4760-9f54-615e7913e8cf" ],
         "CommandName": [ "Get-AzSVirtualNetworkGatewayConnection" ],
         "FullCommandName": [ "Get-AzsVirtualNetworkGatewayConnection_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -22,35 +22,35 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "08ed5c97-4b32-420c-a1b2-a19f23aa798a" ],
-        "x-ms-request-id": [ "9f836c09-7b74-4672-9f0a-fc647c775361" ],
-        "x-ms-arm-service-request-id": [ "02607143-6c7a-4e9e-9150-990e4a583a3d" ],
+        "x-ms-correlation-request-id": [ "c20b785d-29c6-467a-81f1-65bfbbc2bad8" ],
+        "x-ms-request-id": [ "6ea58fd9-3e43-4803-96cc-371a958e94c6" ],
+        "x-ms-arm-service-request-id": [ "df9802e6-2f4e-4511-9d26-a2195d52af0a" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvDTkVa1TTELklPFgynFmN3Ba3oPhEkT41CUwIES9fyOaWRRMLB+NgE/0qvBfSojYQzle86KNShvKUMeARLx27gn5GW9fQF14i+cTYai3g3LOTyvO0XqGCuOr9AzTATcZu048NIH5nFTAM09Dulq60" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14681" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220331T232256Z:08ed5c97-4b32-420c-a1b2-a19f23aa798a" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvb2s5VMF1f1TY0HdAzqBneURsovkXEGvz+vizwvNoShiM4aCWfb5EQw4cjdJFuQLt2bEeoyEhyYhSKRxn/vnh9jX8tTUdvMs8nFBZ46cUMYG069NHyBa7wzoU+gXxRsyeOmZVonrBqIlQZ3YXkwOl" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14805" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220401T164805Z:c20b785d-29c6-467a-81f1-65bfbbc2bad8" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 31 Mar 2022 23:22:56 GMT" ]
+        "Date": [ "Fri, 01 Apr 2022 16:48:04 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "2186" ],
+        "Content-Length": [ "1810" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"conn1\",\r\n      \"type\": \"Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections\",\r\n      \"location\": \"\",\r\n      \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/resourceGroups/VPNRG1/providers/Microsoft.Network/connections/conn1\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"connectionState\": {\r\n          \"status\": \"Connected\",\r\n          \"activeGateway\": \"n22r1603-Gwy02\"\r\n        },\r\n        \"subscriptionId\": \"5b3555c5-5833-471a-87ea-3c3d9b7a63ba\",\r\n        \"resourceGroup\": \"VPNRG1\",\r\n        \"localNetworkGatewayIPAddress\": \"10.10.54.52\",\r\n        \"localNetworkGatewayName\": \"LNG1\",\r\n        \"virtualNetworkGatewayIPAddress\": \"100.74.97.2\",\r\n        \"virtualNetworkGatewayName\": \"VNG\",\r\n        \"sku\": \"HighPerformance\",\r\n        \"capacityReserved\": 400,\r\n        \"totalStampCapacity\": 4000\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"conn2\",\r\n      \"type\": \"Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections\",\r\n      \"location\": \"\",\r\n      \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/resourceGroups/VPNRG1/providers/Microsoft.Network/connections/conn2\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"connectionState\": {\r\n          \"status\": \"Disconnected\",\r\n          \"activeGateway\": \"n22r1603-Gwy01\",\r\n          \"connectionError\": {\r\n            \"status\": \"Failure\",\r\n            \"lastUpdatedTime\": \"2022-03-31T23:11:46.1872178+00:00\",\r\n            \"detailedInfo\": [\r\n              {\r\n                \"source\": \"Network Controller\",\r\n                \"code\": \"13801\",\r\n                \"message\": \"IKE authentication credentials are unacceptable.\"\r\n              }\r\n            ]\r\n          }\r\n        },\r\n        \"subscriptionId\": \"5b3555c5-5833-471a-87ea-3c3d9b7a63ba\",\r\n        \"resourceGroup\": \"VPNRG1\",\r\n        \"localNetworkGatewayIPAddress\": \"10.10.54.53\",\r\n        \"localNetworkGatewayName\": \"LNG2\",\r\n        \"virtualNetworkGatewayIPAddress\": \"100.74.97.2\",\r\n        \"virtualNetworkGatewayName\": \"VNG\",\r\n        \"sku\": \"HighPerformance\",\r\n        \"capacityReserved\": 400,\r\n        \"totalStampCapacity\": 4000\r\n      }\r\n    }\r\n  ]\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"conn1\",\r\n      \"type\": \"Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections\",\r\n      \"location\": \"\",\r\n      \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/resourceGroups/VPNRG1/providers/Microsoft.Network/connections/conn1\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"connectionState\": {\r\n          \"status\": \"Connected\",\r\n          \"activeGateway\": \"n22r1603-Gwy02\"\r\n        },\r\n        \"subscriptionId\": \"5b3555c5-5833-471a-87ea-3c3d9b7a63ba\",\r\n        \"resourceGroup\": \"VPNRG1\",\r\n        \"localNetworkGatewayIPAddress\": \"10.10.54.52\",\r\n        \"localNetworkGatewayName\": \"LNG1\",\r\n        \"virtualNetworkGatewayIPAddress\": \"100.74.97.2\",\r\n        \"virtualNetworkGatewayName\": \"VNG\",\r\n        \"sku\": \"HighPerformance\",\r\n        \"capacityReserved\": 400,\r\n        \"totalStampCapacity\": 4000\r\n      }\r\n    },\r\n    {\r\n      \"name\": \"Tokyo-Hub-Conn\",\r\n      \"type\": \"Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections\",\r\n      \"location\": \"\",\r\n      \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/resourceGroups/VPNRG1/providers/Microsoft.Network/connections/Tokyo-Hub-Conn\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"connectionState\": {\r\n          \"status\": \"Connected\",\r\n          \"activeGateway\": \"n22r1603-Gwy01\"\r\n        },\r\n        \"subscriptionId\": \"5b3555c5-5833-471a-87ea-3c3d9b7a63ba\",\r\n        \"resourceGroup\": \"VPNRG1\",\r\n        \"localNetworkGatewayIPAddress\": \"10.10.54.53\",\r\n        \"localNetworkGatewayName\": \"LNG2\",\r\n        \"virtualNetworkGatewayIPAddress\": \"100.74.97.2\",\r\n        \"virtualNetworkGatewayName\": \"VNG\",\r\n        \"sku\": \"HighPerformance\",\r\n        \"capacityReserved\": 400,\r\n        \"totalStampCapacity\": 4000\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   },
-  "Get-AzsVirtualNetworkGatewayConnection+[NoContext]+TestGetAllVirtualNetworkGatewayConnectionsOData+$GET+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections?api-version=2022-02-01\u0026$filter=Name eq %27Tokyo-Hub-Conn%27+1": {
+  "Get-AzsVirtualNetworkGatewayConnection+[NoContext]+TestGetAllVirtualNetworkGatewayConnectionsOData+$GET+https://management.azure.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections?api-version=2022-02-01\u0026$top=1+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections?api-version=2022-02-01\u0026$filter=Name%20eq%20%27Tokyo-Hub-Conn%27",
+      "RequestUri": "https://adminmanagement.redmond.ext-n22r1603.masd.stbtest.microsoft.com/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/providers/Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections?api-version=2022-02-01\u0026$top=1",
       "Content": null,
       "isContentBase64": false,
       "Headers": {
         "x-ms-unique-id": [ "26" ],
-        "x-ms-client-request-id": [ "66c2a597-26b1-4dad-935a-7a8315539660" ],
+        "x-ms-client-request-id": [ "5aa4e2ba-00f5-42e7-b43d-78284f8c78fa" ],
         "CommandName": [ "Get-AzSVirtualNetworkGatewayConnection" ],
         "FullCommandName": [ "Get-AzsVirtualNetworkGatewayConnection_List" ],
         "ParameterSetName": [ "__AllParameterSets" ],
@@ -65,23 +65,23 @@
       "Headers": {
         "Cache-Control": [ "no-cache" ],
         "Pragma": [ "no-cache" ],
-        "x-ms-correlation-request-id": [ "b44f902a-e24a-450b-82d4-53c186508f31" ],
-        "x-ms-request-id": [ "e1866268-a32e-4aa9-81f1-312061467053" ],
-        "x-ms-arm-service-request-id": [ "9e67914a-eab8-4787-b136-90e791bd76cb" ],
+        "x-ms-correlation-request-id": [ "5185b442-22db-4f50-941b-f930e91946a9" ],
+        "x-ms-request-id": [ "041f1318-73ce-4ece-afe7-00e26783e6d2" ],
+        "x-ms-arm-service-request-id": [ "4e74490a-57d6-46bd-a447-96d1cb437786" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
-        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvzKH1+4QOpwqwX5OwMXUYV4F+r2cr4HPzBswBNVK9J58pfDQ73ENZLBR2OD88JvQRhuNtdS1ElYD4PngaZ3tHsow0LbKXS0oIDh1s5Lm49eLA8IOlqdIRUSD4sMTUbxsAnDB5Ig5woIFVTYWemM3R" ],
-        "x-ms-ratelimit-remaining-subscription-reads": [ "14680" ],
-        "x-ms-routing-request-id": [ "REDMOND:20220331T232256Z:b44f902a-e24a-450b-82d4-53c186508f31" ],
+        "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvvNbSmqUHxXhe1pdffe+lQC+8Rrs98a5n/UPdWyeYlhFtclS0mnrPlEzYFhqID5LALomWNRoNetNiBmQm9W89B+vagFyGR4t8HCj5nRr8nHxkldbxklUpsEsU03eSHXL8pbUdYul8G5WPOIsh7WEr" ],
+        "x-ms-ratelimit-remaining-subscription-reads": [ "14804" ],
+        "x-ms-routing-request-id": [ "REDMOND:20220401T164805Z:5185b442-22db-4f50-941b-f930e91946a9" ],
         "Strict-Transport-Security": [ "max-age=31536000; includeSubDomains" ],
         "X-Content-Type-Options": [ "nosniff" ],
-        "Date": [ "Thu, 31 Mar 2022 23:22:56 GMT" ]
+        "Date": [ "Fri, 01 Apr 2022 16:48:04 GMT" ]
       },
       "ContentHeaders": {
-        "Content-Length": [ "19" ],
+        "Content-Length": [ "907" ],
         "Content-Type": [ "application/json; charset=utf-8" ],
         "Expires": [ "-1" ]
       },
-      "Content": "{\r\n  \"value\": []\r\n}",
+      "Content": "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"conn1\",\r\n      \"type\": \"Microsoft.Network.Admin/adminVirtualNetworkGatewayConnections\",\r\n      \"location\": \"\",\r\n      \"id\": \"/subscriptions/5b3555c5-5833-471a-87ea-3c3d9b7a63ba/resourceGroups/VPNRG1/providers/Microsoft.Network/connections/conn1\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\",\r\n        \"connectionState\": {\r\n          \"status\": \"Connected\",\r\n          \"activeGateway\": \"n22r1603-Gwy02\"\r\n        },\r\n        \"subscriptionId\": \"5b3555c5-5833-471a-87ea-3c3d9b7a63ba\",\r\n        \"resourceGroup\": \"VPNRG1\",\r\n        \"localNetworkGatewayIPAddress\": \"10.10.54.52\",\r\n        \"localNetworkGatewayName\": \"LNG1\",\r\n        \"virtualNetworkGatewayIPAddress\": \"100.74.97.2\",\r\n        \"virtualNetworkGatewayName\": \"VNG\",\r\n        \"sku\": \"HighPerformance\",\r\n        \"capacityReserved\": 400,\r\n        \"totalStampCapacity\": 4000\r\n      }\r\n    }\r\n  ]\r\n}",
       "isContentBase64": false
     }
   }

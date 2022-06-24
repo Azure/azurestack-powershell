@@ -2,7 +2,12 @@
 * Requires AzureStack Update 2203+
 ## Azs.Compute.Admin module
 * Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
-
+## AzS.Network.Admin module
+* Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
+## AzS.Update.Admin module
+* Add new model to support API2021-07-01
+* Start-AzsUpdatePreparation - Add new operation for prepare an update
+* Start-AzsUpdateHealthCheck - Add new operation for check update health
 # Release 2.2.0
 * Requires AzureStack Update 2108+
 ## Azs.ContainerService.Admin module 
