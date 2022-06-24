@@ -6,9 +6,9 @@
 
 <#
 .Synopsis
-Apply a specific update at an update location.
+Run health check for a specified update at an update location.
 .Description
-Apply a specific update at an update location.
+Run health check for a specified update at an update location.
 .Example
 PS C:\> {{ Add code here }}
 
@@ -35,26 +35,26 @@ INPUTOBJECT <IUpdateAdminIdentity>: Identity Parameter
   [UpdateLocation <String>]: The name of the update location.
   [UpdateName <String>]: Name of the update.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/install-azsupdate
+https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/start-azsupdatehealthcheck
 #>
-function Install-AzsUpdate {
+function Start-AzsUpdateHealthCheck {
 [OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='Apply', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+[CmdletBinding(DefaultParameterSetName='Check', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Check')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # The name of the update location.
     ${Location},
 
-    [Parameter(ParameterSetName='Apply', Mandatory)]
+    [Parameter(ParameterSetName='Check', Mandatory)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [System.String]
     # Name of the update.
     ${Name},
 
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Check')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
@@ -62,14 +62,14 @@ param(
     # The name is case insensitive.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Check')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
     [System.String]
     # The ID of the target subscription.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='ApplyViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='CheckViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity]
     # Identity Parameter
@@ -138,6 +138,7 @@ param(
 
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
+
     if ($PSBoundParameters.ContainsKey(('Name')))
     {
         if ($null -ne $Name -and $Name.Contains('/'))
@@ -146,13 +147,12 @@ process {
         }
     }
 
-
-    $update = Get-AzsUpdate  -Name  $PSBoundParameters['Name']
+    $update = Get-AzsUpdate  -Name $PSBoundParameters['Name']
 
     if($null -eq $update){
         Throw "Update package " + $PSBoundParameters['Name'] + " does not exist."
     }
 
-    Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters
+    Azs.Update.Admin.internal\Start-AzsUpdateHealthCheck @PSBoundParameters
 }
 }

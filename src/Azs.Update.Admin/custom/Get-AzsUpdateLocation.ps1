@@ -6,9 +6,9 @@
 
 <#
 .Synopsis
-Apply a specific update at an update location.
+Get an update location based on name.
 .Description
-Apply a specific update at an update location.
+Get an update location based on name.
 .Example
 PS C:\> {{ Add code here }}
 
@@ -21,7 +21,7 @@ PS C:\> {{ Add code here }}
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity
 .Outputs
-System.Boolean
+Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.Api20210701.IUpdateLocation
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
@@ -35,26 +35,21 @@ INPUTOBJECT <IUpdateAdminIdentity>: Identity Parameter
   [UpdateLocation <String>]: The name of the update location.
   [UpdateName <String>]: Name of the update.
 .Link
-https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/install-azsupdate
+https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/get-azsupdatelocation
 #>
-function Install-AzsUpdate {
-[OutputType([System.Boolean])]
-[CmdletBinding(DefaultParameterSetName='Apply', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
+function Get-AzsUpdateLocation {
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.Api20210701.IUpdateLocation])]
+[CmdletBinding(DefaultParameterSetName='Get', PositionalBinding=$false)]
 param(
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Get')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzLocation)[0].Location')]
     [System.String]
     # The name of the update location.
-    ${Location},
-
-    [Parameter(ParameterSetName='Apply', Mandatory)]
-    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
-    [System.String]
-    # Name of the update.
     ${Name},
 
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Get')]
+    [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='-join("System.",(Get-AzLocation)[0].Location)')]
     [System.String]
@@ -62,14 +57,15 @@ param(
     # The name is case insensitive.
     ${ResourceGroupName},
 
-    [Parameter(ParameterSetName='Apply')]
+    [Parameter(ParameterSetName='Get')]
+    [Parameter(ParameterSetName='List')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.DefaultInfo(Script='(Get-AzContext).Subscription.Id')]
-    [System.String]
+    [System.String[]]
     # The ID of the target subscription.
     ${SubscriptionId},
 
-    [Parameter(ParameterSetName='ApplyViaIdentity', Mandatory, ValueFromPipeline)]
+    [Parameter(ParameterSetName='GetViaIdentity', Mandatory, ValueFromPipeline)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Path')]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity]
     # Identity Parameter
@@ -83,12 +79,6 @@ param(
     [System.Management.Automation.PSObject]
     # The credentials, account, tenant, and subscription used for communication with Azure.
     ${DefaultProfile},
-
-    [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
-    [System.Management.Automation.SwitchParameter]
-    # Run the command as a job
-    ${AsJob},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
@@ -109,12 +99,6 @@ param(
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Runtime.SendAsyncStep[]]
     # SendAsync Pipeline Steps to be prepended to the front of the pipeline
     ${HttpPipelinePrepend},
-
-    [Parameter()]
-    [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
-    [System.Management.Automation.SwitchParameter]
-    # Run the command asynchronously
-    ${NoWait},
 
     [Parameter(DontShow)]
     [Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Category('Runtime')]
@@ -138,6 +122,7 @@ param(
 
 process {
     # Generated cmdlet does not support {prefix}/{name} for Gateway name, so extract the {name} part here
+
     if ($PSBoundParameters.ContainsKey(('Name')))
     {
         if ($null -ne $Name -and $Name.Contains('/'))
@@ -146,13 +131,6 @@ process {
         }
     }
 
-
-    $update = Get-AzsUpdate  -Name  $PSBoundParameters['Name']
-
-    if($null -eq $update){
-        Throw "Update package " + $PSBoundParameters['Name'] + " does not exist."
-    }
-
-    Azs.Update.Admin.internal\Install-AzsUpdate @PSBoundParameters
+	Azs.Update.Admin.internal\Get-AzsUpdateLocation @PSBoundParameters
 }
 }

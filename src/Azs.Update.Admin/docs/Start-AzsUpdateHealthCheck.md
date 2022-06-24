@@ -1,62 +1,67 @@
 ---
 external help file:
 Module Name: Azs.Update.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/get-azsupdatelocation
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/start-azsupdatehealthcheck
 schema: 2.0.0
 ---
 
-# Get-AzsUpdateLocation
+# Start-AzsUpdateHealthCheck
 
 ## SYNOPSIS
-Get an update location based on name.
+Run health check for a specified update at an update location.
 
 ## SYNTAX
 
-### Get (Default)
+### Check (Default)
 ```
-Get-AzsUpdateLocation [-Name <String>] [-ResourceGroupName <String>] [-SubscriptionId <String[]>]
- [-DefaultProfile <PSObject>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-AzsUpdateLocation -InputObject <IUpdateAdminIdentity> [-DefaultProfile <PSObject>] [<CommonParameters>]
-```
-
-### List
-```
-Get-AzsUpdateLocation [-ResourceGroupName <String>] [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+Start-AzsUpdateHealthCheck -Name <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
+### CheckViaIdentity
+```
+Start-AzsUpdateHealthCheck -InputObject <IUpdateAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Get an update location based on name.
+Run health check for a specified update at an update location.
 
 ## EXAMPLES
 
-### Example 1: Get All Updates Locations
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Get-AzsUpdateLocation
-
-Name                 CurrentVersion       CurrentOemVersion    State
-----                 --------------       -----------------    -----
-northwest            1.1912.0.30          2.1.1907.4           AppliedSuccessfully
+PS C:\> Start-AzsUpdateHealthCheck -Name Microsoft1.2203.0.10
 ```
 
-Without any parameters, this commandlet will retrieve all update locations
+Start health check for a specified update
 
-### Example 2: Get All Updates Locations by Name
+### Example 2: {{ Add title here }}
 ```powershell
-PS C:\> Get-AzsUpdateLocation -Name northwest
+PS C:\> {{ Add code here }}
 
-Name                 CurrentVersion       CurrentOemVersion    State
-----                 --------------       -----------------    -----
-northwest            1.1912.0.30          2.1.1907.4           AppliedSuccessfully
+{{ Add output here }}
 ```
 
-Will retrieve all update locations that matches the specified Name parameter
+{{ Add description here }}
 
 ## PARAMETERS
+
+### -AsJob
+Run the command as a job
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -DefaultProfile
 The credentials, account, tenant, and subscription used for communication with Azure.
@@ -79,7 +84,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: CheckViaIdentity
 Aliases:
 
 Required: True
@@ -89,17 +94,47 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Name
+### -Location
 The name of the update location.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get
+Parameter Sets: Check
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+Name of the update.
+
+```yaml
+Type: System.String
+Parameter Sets: Check
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoWait
+Run the command asynchronously
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -110,7 +145,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: Get, List
+Parameter Sets: Check
 Aliases:
 
 Required: False
@@ -124,13 +159,44 @@ Accept wildcard characters: False
 The ID of the target subscription.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: Get, List
+Type: System.String
+Parameter Sets: Check
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -144,7 +210,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.Api20210701.IUpdateLocation
+### System.Boolean
 
 ## NOTES
 

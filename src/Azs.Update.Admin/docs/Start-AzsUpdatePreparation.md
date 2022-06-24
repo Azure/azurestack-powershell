@@ -1,41 +1,54 @@
 ---
 external help file:
 Module Name: Azs.Update.Admin
-online version: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/install-azsupdate
+online version: https://docs.microsoft.com/en-us/powershell/module/azs.update.admin/start-azsupdatepreparation
 schema: 2.0.0
 ---
 
-# Install-AzsUpdate
+# Start-AzsUpdatePreparation
 
 ## SYNOPSIS
-Apply a specific update at an update location.
+Prepare a specified update at an update location.
 
 ## SYNTAX
 
-### Apply (Default)
+### Prepare (Default)
 ```
-Install-AzsUpdate -Name <String> [-Location <String>] [-ResourceGroupName <String>] [-SubscriptionId <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf] [<CommonParameters>]
+Start-AzsUpdatePreparation -UpdateName <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### ApplyViaIdentity
+### Prepare (Default)
 ```
-Install-AzsUpdate -InputObject <IUpdateAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+Start-AzsUpdatePreparation -UpdateName <String> [-Location <String>] [-ResourceGroupName <String>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### PrepareViaIdentity
+```
+Start-AzsUpdatePreparation -InputObject <IUpdateAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PrepareViaIdentity
+```
+Start-AzsUpdatePreparation -InputObject <IUpdateAdminIdentity> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
  [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Apply a specific update at an update location.
+Prepare a specified update at an update location.
 
 ## EXAMPLES
 
-### Example 1: Install-AzsUpdate By Name
+### Example 1: {{ Add title here }}
 ```powershell
-PS C:\> Install-AzsUpdate -Name Microsoft1.1907.0.10
+PS C:\> Start-AzsUpdatePreparation -Name Microsoft1.2203.0.10
 ```
 
-Commandlet allows you to install specific updates by name.
-Note that there is a requirement that the update version is strictly greater than the current version.
+Start preparation for a specified update
 
 ## PARAMETERS
 
@@ -75,7 +88,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.UpdateAdmin.Models.IUpdateAdminIdentity
-Parameter Sets: ApplyViaIdentity
+Parameter Sets: PrepareViaIdentity, PrepareViaIdentity
 Aliases:
 
 Required: True
@@ -90,27 +103,12 @@ The name of the update location.
 
 ```yaml
 Type: System.String
-Parameter Sets: Apply
+Parameter Sets: Prepare, Prepare
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzLocation)[0].Location
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-Name of the update.
-
-```yaml
-Type: System.String
-Parameter Sets: Apply
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -136,7 +134,7 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: Apply
+Parameter Sets: Prepare, Prepare
 Aliases:
 
 Required: False
@@ -151,12 +149,27 @@ The ID of the target subscription.
 
 ```yaml
 Type: System.String
-Parameter Sets: Apply
+Parameter Sets: Prepare, Prepare
 Aliases:
 
 Required: False
 Position: Named
 Default value: (Get-AzContext).Subscription.Id
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdateName
+Name of the update.
+
+```yaml
+Type: System.String
+Parameter Sets: Prepare, Prepare
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
