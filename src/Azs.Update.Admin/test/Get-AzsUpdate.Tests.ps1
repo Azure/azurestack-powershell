@@ -48,7 +48,7 @@ Describe 'Get-AzsUpdate' {
     }
 
     AfterEach {
-        $global:Client = $null
+        #$global:Client = $null
     }
 
     It 'TestListAzsUpdates' -skip:$('TestListAzsUpdate' -in $global:SkippedTests) {
