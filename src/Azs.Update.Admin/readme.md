@@ -113,6 +113,10 @@ directive:
       subject: UpdatePreparation
 
   - where:
+      subject: UpdatePreparation
+    hide: true
+
+  - where:
       subject: Update
       parameter-name: UpdateName
     set:
