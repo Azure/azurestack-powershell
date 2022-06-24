@@ -53,6 +53,9 @@ require:
 subject-prefix: ''
 module-version: 0.0.1
 
+metadata:
+  description: 'Microsoft AzureStack PowerShell: Update Admin cmdlets'
+
 ### File Renames
 module-name: Azs.Update.Admin
 csproj: Azs.Update.Admin.csproj
