@@ -1,5 +1,10 @@
 $global:SkippedTests = @(
-
+    "TestGetAzsUpdateLocation",
+    "TestGetAzsUpdateRun",
+    "TestPrepareAzsUpdate",
+    "TestInstallAzsUpdate",
+    "TestResumeAzsUpdateRun",
+    "TestStartAzsUpdateHealthCheck"	
 )
 
 if ($global:TestMode -eq "Live") {
