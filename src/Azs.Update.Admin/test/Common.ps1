@@ -1,5 +1,5 @@
 $global:SkippedTests = @(
-    "TestGetAzsUpdateLocation",
+    "TestGetAzsUpdateLocation", 
     "TestGetAzsUpdateRun",
     "TestPrepareAzsUpdate",
     "TestInstallAzsUpdate",
