@@ -51,7 +51,7 @@ require:
   - $(repo)/specification/azsadmin/resource-manager/update/readme.md
 
 subject-prefix: ''
-module-version: 0.0.1
+module-version: 1.0.3
 
 metadata:
   description: 'Microsoft AzureStack PowerShell: Update Admin cmdlets'
