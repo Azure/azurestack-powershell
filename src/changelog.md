@@ -4,6 +4,10 @@
 * Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
 ## AzS.Network.Admin module
 * Get-AzsVirtualNetworkGatewayConnection - Added support for admin to view all VPN resources created on the stamp
+## AzS.Update.Admin module
+* Added support for update preparation that can be done without starting the installation process.
+  * Start-AzsUpdatePreparation cmdlet can be used to start an update preparation.
+  * Start-AzsUpdateHealthCheck cmdlet can be used to retry an update health check for a prepared update.
 
 # Release 2.2.0
 * Requires AzureStack Update 2108+
