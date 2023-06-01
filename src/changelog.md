@@ -1,5 +1,5 @@
-# Release 3.0.0
-* Requires AzureStack Update 2203+
+# Release 2.3.0
+* Requires AzureStack Update 2206+
 ## Azs.Compute.Admin module
 * Get-AzsComputeScaleUnit - Added admin support to view the tenant VM and compute node information of a target scale unit
 
