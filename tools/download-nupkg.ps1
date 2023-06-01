@@ -39,12 +39,11 @@
 Param (
     [string]$BuildId,
     [string]$DestinationFolder = $PSScriptRoot,
-    [string]$AzSdkPersonalAccessToken = $env:AzSdkPersonalAccessToken
+    [string]$AzSdkPersonalAccessToken = ([Environment]::GetEnvironmentVariable("AzSdkPersonalAccessToken", "user"))
 )
 
-$user = $AzSdkPersonalAccessToken
 $pass = $AzSdkPersonalAccessToken
-$pair = "${user}:${pass}"
+$pair = ":${pass}"
 $bytes = [System.Text.Encoding]::ASCII.GetBytes($pair)
 $base64 = [System.Convert]::ToBase64String($bytes)
 $basicAuthValue = "Basic $base64"
@@ -55,7 +54,7 @@ $apiVersion = "5.1-preview"
 if ($BuildId -eq "")
 {
     $buildReq = @{
-        Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/latest/azurestack-powershell%20-%20gen-sign?branchName=dev&api-version=${apiVersion}"
+        Uri = "https://dev.azure.com/azclitools/internal/_apis/build/latest/azurestack-powershell%20-%20gen-sign?branchName=dev&api-version=${apiVersion}"
         Headers = $headers
     }
     
@@ -64,7 +63,7 @@ if ($BuildId -eq "")
 }
 
 $listArtifactsReq = @{
-    Uri = "https://dev.azure.com/azure-sdk/internal/_apis/build/builds/${BuildId}/artifacts?api-version=${apiVersion}"
+    Uri = "https://dev.azure.com/azclitools/internal/_apis/build/builds/${BuildId}/artifacts?api-version=${apiVersion}"
     Headers = $headers
 }
 
