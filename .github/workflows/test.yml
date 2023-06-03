@@ -126,7 +126,7 @@ jobs:
 
           #BUILD
           dotnet add package PowerShellStandard.Library --version 5.1.0
-          $azAccountsVersion = "2.2.8"
+          $azAccountsVersion = "2.7.5"
           Write-Host "Installing Az.Accounts ${azAccountsVersion}..."
           Install-Module -Name Az.Accounts -Repository PSGallery -RequiredVersion $azAccountsVersion -Force -Scope CurrentUser
           Import-Module -Name Az.Accounts -RequiredVersion $azAccountsVersion
