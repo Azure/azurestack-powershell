@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '2.3.0'
+    ModuleVersion          = '2.4.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -68,11 +68,11 @@
         @{ModuleName = 'Azs.Gallery.Admin'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Infrastructureinsights.Admin'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Keyvault.Admin'; RequiredVersion = '1.0.2'; },
-        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Network.Admin'; RequiredVersion = '1.1.0'; },
         @{ModuleName = 'Azs.Storage.Admin'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Subscriptions'; RequiredVersion = '1.0.2'; },
         @{ModuleName = 'Azs.Subscriptions.Admin'; RequiredVersion = '1.0.2'; },
-        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.0.2'; },
+        @{ModuleName = 'Azs.Update.Admin'; RequiredVersion = '1.1.0'; },
         @{ModuleName = 'Azs.Syndication.Admin'; RequiredVersion = '0.1.161'; })
 
     # Assemblies that must be loaded prior to importing this module
