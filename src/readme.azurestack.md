@@ -17,9 +17,9 @@ metadata:
   projectUri: https://github.com/Azure/azurestack-powershell
   requiredModules:
     - name: Az.Accounts
-      version: 2.2.8
+      version: 2.12.5
     - name: Az.Resources
-      version: 0.12.0      
+      version: 6.9.0      
 ```
 
 > Names

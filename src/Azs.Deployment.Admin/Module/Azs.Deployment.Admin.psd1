@@ -50,7 +50,7 @@ CompatiblePSEditions = 'Core', 'Desktop'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.2.8'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '0.12.0'; })
+RequiredModules = @(@{ModuleName = 'Az.Accounts'; ModuleVersion = '2.12.5'; }, @{ModuleName = 'Az.Resources'; RequiredVersion = '6.9.0'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
