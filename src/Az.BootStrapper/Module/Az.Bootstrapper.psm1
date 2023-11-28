@@ -91,7 +91,7 @@ function Get-StorageBlob
     Invoke-WebRequest -uri $PSProfileMapEndpoint -UseBasicParsing -TimeoutSec 120 -ErrorVariable RestError
   }
 
-  $WebResponse = Invoke-CommandWithRetry -ScriptBlock $ScriptBlock    
+  $WebResponse = Invoke-CommandWithRetry -ScriptBlock $ScriptBlock
   return $WebResponse
 }
 
@@ -104,8 +104,8 @@ function Get-AzProfileMapFromEndpoint
   # Get online profile data using Web request
   $WebResponse = Get-StorageBlob  
 
-  # Get ETag value for OnlineProfileMap
-  $OnlineProfileMapETag = $WebResponse.Headers["ETag"]
+  # Get ETag value for OnlineProfileMap and remove symbols that cannot be in a filename.
+  $OnlineProfileMapETag = $WebResponse.Headers["ETag"] -replace "[/\?%*:|`"<>]",""
 
   # If profilemap json exists, compare online Etag and cached Etag; if not different, don't replace cache.
   if (($null -ne $script:LatestProfileMapPath) -and ($script:LatestProfileMapPath -match "(\d+)-(.*.json)"))
@@ -132,7 +132,7 @@ function Get-AzProfileMapFromEndpoint
     $LargestNoFromCache = 0
   }
   
-  $ChildPathName = ($LargestNoFromCache+1).ToString() + '-' + ($OnlineProfileMapETag) + ".json"
+  $ChildPathName = (($LargestNoFromCache+1).ToString() + '-' + ($OnlineProfileMapETag) + ".json")
   $CacheFilePath = (Join-Path $ProfileCache -ChildPath $ChildPathName)
   $OnlineProfileMap = RetrieveProfileMap -WebResponse $WebResponse
   $OnlineProfileMap | ConvertTo-Json -Compress | Out-File -FilePath $CacheFilePath
