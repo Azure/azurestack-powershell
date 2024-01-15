@@ -86,7 +86,7 @@ jobs:
           }
 
           $modulesToRun = Convert-FromArrayToJsonArrayString -ArrayOfStrings $modulesToRun
-          echo "::set-output name=MODULES_TO_RUN::${modulesToRun}"
+          echo "MODULES_TO_RUN=${modulesToRun}" >> $GITHUB_OUTPUT
 
     outputs:
       MODULES_TO_RUN: ${{ steps.resolve_modules_to_run.outputs.MODULES_TO_RUN }}
@@ -167,7 +167,7 @@ jobs:
             throw "Error while running pack-module.ps1."
           }
 
-          echo "::set-output name=MODULE_PATH::${modulePath}"
+          echo "MODULE_PATH=${modulePath}" >> $GITHUB_OUTPUT
           Pop-Location
           Write-Host "Ending autorest tests."
 
